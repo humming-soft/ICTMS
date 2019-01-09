@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   id="svg2"
+   viewBox="0 0 423.01547 422.93432"
+   height="119.36147mm"
+   width="119.38436mm">
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-149.65632,-123.11379)"
+     id="layer1" />
+  <g
+     transform="matrix(0.45291157,0,0,0.45291157,27.820448,37.219128)"
+     id="g2380">
+    <g
+       id="graph-35">
+      <polygon
+         style="fill:#3bafda"
+         points="826.364,729.166 20.82,729.166 20.82,0 0,0 0,750.002 826.364,750.002 "
+         id="polygon2362" />
+    </g>
+    <g
+       id="Layer_1" />
+  </g>
+  <g
+     id="g893"
+     transform="matrix(0,1.5087306,-1.2747888,0,476.03396,48.482741)">
+    <g
+       id="layer1-9"
+       transform="translate(-149.65632,-123.11379)" />
+    <g
+       id="g2489"
+       transform="matrix(0.40045969,0,0,0.40045969,10.714287,58.85294)">
+      <g
+         id="graph-1">
+        <rect
+           id="rect2428"
+           height="113.29577"
+           width="40.840488"
+           style="fill:#48cfad;stroke-width:0.46821934"
+           y="567.49628"
+           x="78.88652" />
+        <rect
+           id="rect2430"
+           height="407.664"
+           width="44.105545"
+           style="fill:#ffce54;stroke-width:1.16369116"
+           y="273.55899"
+           x="131.99017" />
+        <rect
+           id="rect2432"
+           height="542.04498"
+           width="43.021858"
+           style="fill:#fc6e51;stroke-width:1.14992416"
+           y="139.17799"
+           x="190.31458" />
+        <rect
+           id="rect2434"
+           height="133.44"
+           width="42.971859"
+           style="fill:#3bafda;stroke-width:1.15013981"
+           y="547.78302"
+           x="266.19803" />
+        <rect
+           id="rect2436"
+           height="303.53299"
+           width="42.418629"
+           style="fill:#48cfad;stroke-width:1.14243031"
+           y="377.69101"
+           x="321.22934" />
+        <rect
+           id="rect2438"
+           height="247.188"
+           width="43.03986"
+           style="fill:#ffce54;stroke-width:1.14984667"
+           y="434.03601"
+           x="375.62247" />
+        <rect
+           id="rect2440"
+           height="447.75"
+           width="47.200603"
+           style="fill:#fc6e51;stroke-width:1.20477283"
+           y="233.47301"
+           x="431.35721" />
+        <rect
+           id="rect2456"
+           height="505.12"
+           width="44.332527"
+           style="fill:#fc6e51;stroke-width:1.16851282"
+           y="176.10303"
+           x="20.951887" />
+        <rect
+           x="-36.629498"
+           y="438.66794"
+           style="fill:#48cfad;stroke-width:1.0396539"
+           width="44.365528"
+           height="240.34473"
+           id="rect897" />
+      </g>
+      <g
+         id="Layer_1-9" />
+    </g>
+  </g>
+</svg>

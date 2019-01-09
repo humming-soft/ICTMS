@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   id="svg2"
+   viewBox="0 0 423.01547 422.93432"
+   height="119.36147mm"
+   width="119.38436mm">
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-149.65632,-123.11379)"
+     id="layer1" />
+  <g
+     transform="matrix(0.45291157,0,0,0.45291157,27.820448,37.219128)"
+     id="g2380">
+    <g
+       id="graph-35">
+      <polygon
+         style="fill:#3bafda"
+         points="826.364,729.166 20.82,729.166 20.82,0 0,0 0,750.002 826.364,750.002 "
+         id="polygon2362" />
+    </g>
+    <g
+       id="Layer_1" />
+  </g>
+  <g
+     id="layer1-2"
+     transform="matrix(0.80019316,0,0,1.1267292,-73.14016,-183.43349)">
+    <g
+       id="g2336"
+       transform="matrix(0.45542354,0,0,0.45542354,152.51744,192.72569)">
+      <g
+         id="graph-24">
+        <g
+           id="g2279">
+          <polygon
+             id="polygon2269"
+             points="239.093,114.124 348.845,213.765 463.685,117.523 566.726,212.073 678.202,117.506 789.643,212.073 894.373,211.646 894.373,603.89 11.922,599.415 11.922,254.293 122.561,311.714 "
+             style="fill:#fc6e51" />
+          <polygon
+             id="polygon2271"
+             points="235.729,119.829 124.252,308.845 124.252,599.978 235.729,600.559 "
+             style="fill:#e9573f" />
+          <polygon
+             id="polygon2273"
+             points="678.202,117.506 570.107,209.222 570.107,602.233 678.202,602.796 "
+             style="fill:#e9573f" />
+          <polygon
+             id="polygon2275"
+             points="791.368,212.073 791.368,603.377 894.373,603.89 894.373,211.646 "
+             style="fill:#e9573f" />
+          <polygon
+             id="polygon2277"
+             points="461.994,118.94 348.845,213.765 348.845,601.104 461.994,601.704 "
+             style="fill:#e9573f" />
+        </g>
+        <g
+           id="g2291">
+          <polygon
+             id="polygon2281"
+             points="239.52,231.988 347.153,334.601 464.983,135.729 568.843,333.353 679.038,268.726 786.706,332.056 894.373,231.988 894.373,618.339 11.922,619.739 12.775,331.236 122.953,358.665 "
+             style="fill:#48cfad" />
+          <polygon
+             id="polygon2283"
+             points="238.239,233.388 122.953,358.665 122.953,619.585 238.239,619.38 "
+             style="fill:#37bc9b" />
+          <polygon
+             id="polygon2285"
+             points="463.685,137.881 350.962,328.179 350.962,619.209 463.685,619.022 "
+             style="fill:#37bc9b" />
+          <polygon
+             id="polygon2287"
+             points="679.038,268.726 570.107,332.602 570.107,618.851 679.038,618.68 "
+             style="fill:#37bc9b" />
+          <polygon
+             id="polygon2289"
+             points="791.762,327.359 791.762,618.509 894.373,618.339 894.373,231.988 "
+             style="fill:#37bc9b" />
+        </g>
+        <g
+           id="g2303">
+          <polygon
+             id="polygon2293"
+             points="240.783,332.056 349.698,432.123 464.983,334.601 568.416,433.422 680.284,429.612 791.762,480.27 894.373,332.056 894.373,618.339 11.922,619.739 11.922,430.876 121.707,473.934 "
+             style="fill:#ffce54" />
+          <polygon
+             id="polygon2295"
+             points="240.783,332.056 122.561,472.925 122.561,619.585 240.783,619.38 "
+             style="fill:#f6bb42" />
+          <polygon
+             id="polygon2297"
+             points="681.583,430.193 680.284,429.612 570.107,433.353 570.107,618.851 681.583,618.663 "
+             style="fill:#f6bb42" />
+          <polygon
+             id="polygon2299"
+             points="793.043,478.425 793.043,618.509 894.373,618.339 894.373,332.056 "
+             style="fill:#f6bb42" />
+          <polygon
+             id="polygon2301"
+             points="463.685,335.676 350.536,431.406 350.536,619.209 463.685,619.022 "
+             style="fill:#f6bb42" />
+        </g>
+      </g>
+      <g
+         id="Layer_1-9" />
+    </g>
+  </g>
+</svg>

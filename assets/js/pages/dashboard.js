@@ -191,7 +191,7 @@ var Dashboard = function() {
                     '<div class="media-body"><h6 class="mb-0">'+employee+'</h6><span class="text-muted">'+post+'</span></div></div></div></div>' );
         });  
     };
-
+ 
     var _componentModal = function(onload,p,pc) {
         if(onload){
             $('.hmwks-modal.show-on-load').modal('show');
@@ -259,6 +259,7 @@ var Dashboard = function() {
             }
         });
     };
+    
 
     return {
         init: function() {

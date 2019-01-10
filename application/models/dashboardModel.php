@@ -41,4 +41,16 @@ Class dashboardModel extends CI_Model
         $query = $this->db->query($sql);
         return $query->result();
     }
+    function select_target_group()
+    {
+        $sql = "SELECT target_group_id, target_group_name FROM \"pjt-target-group\";";
+        $query = $this->db->query($sql);
+        return $query->result();
+    }
+    function select_position()
+    {
+        $sql = "SELECT position_id, position_name FROM \"position\";";
+        $query = $this->db->query($sql);
+        return $query->result();
+    }
 }

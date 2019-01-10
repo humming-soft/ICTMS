@@ -559,7 +559,7 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group text-left"><label for="">Start Date (Planned)</label>
-                                        <input type="text" class="form-control" read-only>
+                                        <input type="text" class="form-control" id="datepicker">
                                     </div>
                                 </div>
                             </div>
@@ -595,37 +595,43 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group text-left"><label for="">Target Group.</label>
-                                        <select class=" form-control m-b">
-                                            <option>SELECT</option>
-                                            <option>Dato’ Zailani Safari</option>
-                                            <option>Mazmi bin Mohamad</option>
-                                            <option>Zulhaimi bin Mat Hussin</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group text-left"><label for="">Name</label>
-                                        <input type="text" class="form-control" placeholder="Enter Name">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group text-left"><label for="">Value</label>
-                                        <input type="text" class="form-control" placeholder="Enter Value">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group text-left"><label for="">Location</label>
-                                        <select class=" form-control m-b">
-                                            <option>SELECT</option>
-                                            <option>Dato’ Zailani Safari</option>
-                                            <option>Mazmi bin Mohamad</option>
-                                            <option>Zulhaimi bin Mat Hussin</option>
-                                        </select>
+                            <div class="repeater-default"> 
+                            <a class="float-right text-right link-modal" data-repeater-create  href="#"><i class="icon-plus2 mr-1"></i><span>Add</span></a>         
+                                <div data-repeater-list="car">
+                                    <div data-repeater-item>
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="form-group text-left"><label for="">Target Group</label>
+                                                    <select class=" form-control m-b">
+                                                        <option>SELECT</option>
+                                                        <option>Dato’ Zailani Safari</option>
+                                                        <option>Mazmi bin Mohamad</option>
+                                                        <option>Zulhaimi bin Mat Hussin</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group text-left"><label for="">Name</label>
+                                                    <input type="text" class="form-control" placeholder="Enter Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group text-left">
+                                                    <label for="">Location</label>
+                                                    <div class="input-group">
+                                                        <select class=" form-control m-b">
+                                                            <option>SELECT</option>
+                                                            <option>Dato’ Zailani Safari</option>
+                                                            <option>Mazmi bin Mohamad</option>
+                                                            <option>Zulhaimi bin Mat Hussin</option>
+                                                        </select>
+                                                        <span class="input-group-append">
+                                                            <button data-repeater-delete type="button" class="btn btn-danger btn-icon ml-2"><i class="icon-bin"></i></button>                                                     
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

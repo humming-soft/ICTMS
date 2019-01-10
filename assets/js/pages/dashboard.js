@@ -200,7 +200,7 @@ var Dashboard = function() {
             pc.slick({
             dots: true,
             infinite: false,
-            adaptiveHeight: true,
+            adaptiveHeight: false,
             slidesToShow: 1,
             slidesToScroll: 1
             });
@@ -208,6 +208,32 @@ var Dashboard = function() {
                 pc.slick('setPosition');
             });
         }
+    };
+
+    var _componentPikaday = function () {
+        if (typeof Pikaday == 'undefined') {
+            console.warn('Warning - Pikaday.js is not loaded.');
+            return;
+        }
+        p_data_date = new Pikaday({
+            field:$('#datepicker')[0],
+            format: 'DD-MMM-YYYY',
+            onSelect: function() {
+                //console.log(this.getMoment().format('Do MMMM YYYY'));
+            }
+        });
+    };
+
+    var _componentRepeater = function(){
+        $('.repeater-default').repeater({
+            isFirstItemUndeletable: true,
+            show: function () {
+                $(this).slideDown();
+            },
+            hide: function (deleteElement) {
+                $(this).slideUp(deleteElement);
+            }
+        });
     };
 
     var _checkboxStatusBO = function(){
@@ -237,6 +263,8 @@ var Dashboard = function() {
             _componentModal(false,$('#hmwks-adtm'),$('#hmwks-adtm .hmwks-slider-w'));
             _checkboxStatusBO();
             _checkboxStatusR();
+            _componentPikaday();
+            _componentRepeater();
 
             var datascource = {
                 'name': 'Norehan binti Yahya',

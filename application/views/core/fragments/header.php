@@ -39,6 +39,9 @@
     <?php if(in_array("uniform",$support)){ ?>
     <script src="<?=site_url('assets/js/plugins/forms/styling/uniform.min.js')?>"></script>
     <?php } ?>
+    <?php if(in_array("repeater",$support)){ ?>
+    <script src="<?=site_url('assets/js/plugins/forms/repeater/jquery.repeater.min.js')?>"></script>
+    <?php } ?>
     <?php if(in_array("pikadate",$support)){ ?>
     <script src="<?=site_url('assets/js/plugins/pickers/pikaday/moment.min.js')?>"></script>
     <script src="<?=site_url('assets/js/plugins/pickers/pikaday/pikaday.min.js')?>"></script>

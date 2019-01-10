@@ -16,6 +16,8 @@ application/logs/*
 !application/logs/.htaccess
 /vendor/
 
+/.idea/*
+.idea/*
 system/application/cache/*
 
 */config/config.php

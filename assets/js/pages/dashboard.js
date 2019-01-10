@@ -200,7 +200,7 @@ var Dashboard = function() {
             pc.slick({
             dots: true,
             infinite: false,
-            adaptiveHeight: false,
+            adaptiveHeight: true,
             slidesToShow: 1,
             slidesToScroll: 1
             });
@@ -229,9 +229,13 @@ var Dashboard = function() {
             isFirstItemUndeletable: true,
             show: function () {
                 $(this).slideDown();
+                $('#hmwks-cnp .hmwks-slider-w').find('.slick-slide.slick-active').css("padding-bottom",'80px');
+                $('#hmwks-cnp .hmwks-slider-w')[0].slick.animateHeight();
             },
             hide: function (deleteElement) {
                 $(this).slideUp(deleteElement);
+                $('#hmwks-cnp .hmwks-slider-w').find('.slick-slide.slick-active').css("padding-bottom",'');
+                $('#hmwks-cnp .hmwks-slider-w')[0].slick.animateHeight();
             }
         });
     };

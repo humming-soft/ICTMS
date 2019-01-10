@@ -23,7 +23,7 @@ class Dashboard extends ICTMS_Controller {
         {
             $message='';
         }
-        $_header["support"] = array("uniform","slick");
+        $_header["support"] = array("uniform","slick","orgchart");
         $_header["page_js"] = "dashboard";
         $this->load->view('core/fragments/header',$_header);
         $this->load->view('core/fragments/main_navbar',$data1);

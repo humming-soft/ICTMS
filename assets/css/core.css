@@ -15245,8 +15245,7 @@ body.sidebar-visualization-hidden #components{
 }
 
 .hmwks-modal .hmwks-content.with-gradient {
-    padding: 70px 50px 40px;
-    background-image: url(../img/hmwks-gradient-hor.png);
+    padding: 50px 40px 40px;
     background-size: 100% auto;
     background-position: top center;
     background-repeat: no-repeat
@@ -15254,7 +15253,7 @@ body.sidebar-visualization-hidden #components{
 
 .hmwks-modal .hmwks-content h1,.hmwks-modal .hmwks-content h2,.hmwks-modal .hmwks-content h3,.hmwks-modal .hmwks-content h4 {
     color: #047bf8;
-    margin-bottom: 1.5rem
+    margin-bottom: 0.5rem
 }
 
 .hmwks-modal .hmwks-content .hmwks-text {
@@ -15326,7 +15325,6 @@ body.sidebar-visualization-hidden #components{
 
 .hmwks-modal .hmwks-side-by-side .hmwks-content.with-gradient {
     padding: 70px 70px 60px;
-    background-image: url(../img/hmwks-gradient-ver.png);
     background-size: auto 100%;
     background-position: center left;
     background-repeat: no-repeat
@@ -15569,4 +15567,11 @@ body.sidebar-visualization-hidden #components{
 }
 .va-top{
     vertical-align: top !important;
+}
+.link-modal{
+    outline: none;
+    font-weight: 500;
+    font-size: .9rem;
+    color: #046fdf;
+    letter-spacing: 1px;
 }

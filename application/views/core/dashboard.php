@@ -331,7 +331,7 @@
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
         <div class="modal-content"><button aria-label="Close" class="close" data-dismiss="modal"
                 type="button"><span class="close-label">Close</span><span class="icon-cross"></span></button>
-                <form action="">
+            <?=form_open('project/add', array('id'=>'hm_l_f')) ?>
             <div class="hmwks-slider-w">
                     <div class="hmwks-slide">
                         <div class="hmwks-content with-gradient text-center">
@@ -343,7 +343,7 @@
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <!-- <label for="p_name">Project Name</label> -->
-                                        <input type="text" id="p_name" class="form-control form-control-lg" placeholder="Enter Project Name">
+                                        <input type="text" id="p_name" name="pjt_name" class="form-control form-control-lg" placeholder="Enter Project Name">
                                     </div>
                                 </div>
                             </div>
@@ -356,24 +356,24 @@
                                 <div class="row text-left">
                                     <div class="col-sm-6">
                                         <div class="form-group"><label for="">Project Owner</label>
-                                            <input type="text" class="form-control" disabled value="Ministry Of Transport">
+                                            <input type="text" class="form-control" disabled value="Ministry Of Transport" name="pjt_ownerStr">
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group"><label for="">Project Director</label>
-                                            <input type="text" class="form-control" placeholder="Enter Name of Project Director..">
+                                            <input type="text" class="form-control" name="pjt_directorStr" placeholder="Enter Name of Project Director..">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row text-left">
                                     <div class="col-sm-6">
                                         <div class="form-group"><label for="">Project Manager</label>
-                                            <input type="text" class="form-control" disabled value="Mr. Idrul Fairuz Ali Khan">
+                                            <input type="text" class="form-control" disabled value="Mr. Idrul Fairuz Ali Khan" name="pjt_managerStr">
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group"><label for="">Date Prepared</label>
-                                            <input type="text" class="form-control" disabled value="<?=strtoupper(date('d-M-Y'))?>">
+                                            <input type="text" class="form-control" disabled value="<?=strtoupper(date('d-M-Y'))?>" name="pjt_preparedDate">
                                         </div>
                                     </div>
                                 </div>
@@ -392,7 +392,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group" id="rd_resolvable_txt" style="display:block;">
-                                            <textarea rows="3" cols="3" class="form-control" placeholder="Type Here.."></textarea>
+                                            <textarea rows="3" cols="3" class="form-control" name="rosolvableStr" placeholder="Type Here.."></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -411,7 +411,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group" id="rd_benefit_org_txt" style="display:block;">
-                                            <textarea rows="3" cols="3" class="form-control" placeholder="Type Here.."></textarea>
+                                            <textarea rows="3" cols="3" class="form-control" name="benefitStr" placeholder="Type Here.."></textarea>
                                         </div>
                                     </div>
                                 </div> -->
@@ -517,9 +517,13 @@
                                     <div class="form-group text-left"><label for="">Location</label>
                                         <select class=" form-control m-b">
                                             <option>SELECT</option>
-                                            <option>Dato’ Zailani Safari</option>
-                                            <option>Mazmi bin Mohamad</option>
-                                            <option>Zulhaimi bin Mat Hussin</option>
+                                            <?php
+                                            foreach ($location as $loc):
+                                                ?>
+                                                <option value="<?php echo $loc->pjt_location_id; ?>"><?php echo $loc->pjt_location_name; ?></option>
+                                                <?php
+                                            endforeach;
+                                            ?>
                                         </select>
                                     </div>
                                 </div>
@@ -529,19 +533,27 @@
                                     <div class="form-group text-left"><label for="">Category.</label>
                                         <select class=" form-control m-b">
                                             <option>SELECT</option>
-                                            <option>Dato’ Zailani Safari</option>
-                                            <option>Mazmi bin Mohamad</option>
-                                            <option>Zulhaimi bin Mat Hussin</option>
+                                            <?php
+                                            foreach ($category as $category):
+                                                ?>
+                                                <option value="<?php echo $category->pjt_category_id; ?>"><?php echo $category->pjt_category_name; ?></option>
+                                                <?php
+                                            endforeach;
+                                            ?>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group text-left"><label for="">Sector</label>
-                                        <select class=" form-control m-b">
+                                        <select class=" form-control m-b" id="sector" name="sector">
                                             <option>SELECT</option>
-                                            <option>Dato’ Zailani Safari</option>
-                                            <option>Mazmi bin Mohamad</option>
-                                            <option>Zulhaimi bin Mat Hussin</option>
+                                            <?php
+                                            foreach ($sector as $sector):
+                                                ?>
+                                                <option value="<?php echo $sector->pjt_sector_id; ?>"><?php echo $sector->pjt_sector_name; ?></option>
+                                                <?php
+                                            endforeach;
+                                            ?>
                                         </select>
                                     </div>
                                 </div>
@@ -549,11 +561,9 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group text-left"><label for="">Sub-Sector.</label>
-                                        <select class=" form-control m-b">
+                                        <select class=" form-control m-b" id="subsector" name="subsector">
                                             <option>SELECT</option>
-                                            <option>Dato’ Zailani Safari</option>
-                                            <option>Mazmi bin Mohamad</option>
-                                            <option>Zulhaimi bin Mat Hussin</option>
+
                                         </select>
                                     </div>
                                 </div>
@@ -572,25 +582,22 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="form-group text-left"><label for="">Six Strategic Thrusts</label>
-                                        <select class=" form-control m-b" id="thrust">
+                                        <select class=" form-control m-b" id="thrust" name="thrust">
                                             <option>SELECT</option>
-                                            <option value="1">THRUST 1 - Enhancing inclusiveness towards an equitable society</option>
-                                            <option value="2">THRUST 2 -Improving wellbeing for all</option>
-                                            <option value="3">THRUST 3 - Accelerating human capital development for an advanced nation</option>
-                                            <option value="4">THRUST 4 - Pursuing green growth for sustainability and resilience</option>
-                                            <option value="5">THRUST 5 - Strengthening infrastructure to support economic expansion </option>
-                                            <option value="6">THRUST 6 - Re-engineering economic growth for greater prosperity</option>
+                                            <?php
+                                            foreach ($thrust as $thrust):
+                                                ?>
+                                                <option value="<?php echo $thrust->thrust_id; ?>"><?php echo $thrust->thrust; ?></option>
+                                                <?php
+                                            endforeach;
+                                            ?>
                                         </select>
                                     </div>
 
                                     <div class="form-group text-left" id="thrusttext1" disabled><label for="">Focus Area</label>
-                                        <select class=" form-control m-b" id="focus_area">
+                                        <select class=" form-control m-b" id="focus_area" name="focus_area">
                                             <option>SELECT</option>
-                                            <option value="1">Focus Area A - Uplifting the B40 Households towards a Middle-Class Society</option>
-                                            <option value="2">Focus Area B - Empowering Communities for a Productive and Prosperous Society</option>
-                                            <option value="3">Focus Area C - Transforming Rural Areas to Uplift Wellbeing of Rural Communities</option>
-                                            <option value="2">Focus Area D - Accelerating Regional Growth for Better Geographical Balance</option>
-                                            <option value="3">Focus Area E - Enhancing Bumiputera Economic Community (BEC) Opportunities to Increase Wealth Ownership</option>
+
                                         </select>
                                     </div>
                                 </div>
@@ -642,7 +649,7 @@
                         </div>
                     </div>                          
                 </div>
-            </form>     
+            <?php echo form_close();?>
         </div>
     </div>
 </div>
@@ -734,4 +741,34 @@
 </div>
 <script type ="text/javascript">
 
+        $(document).on("change","#sector",function(){
+            var subSector = $(this).val();
+            $.ajax({
+                url:'<?=base_url()?>dashboard/get_subsector',
+                method: 'post',
+                data: {subSector: subSector},
+                dataType: 'json',
+                success: function(response){
+                    $('#subsector').find('option').not(':first').remove();
+                    $.each(response,function(index,data){
+                        $('#subsector').append('<option value="'+ data['pjt_sub_sector_id'] +'">'+ data['pjt_sub_sector_name'] +'</option>');
+                    });
+                }
+            });
+        });
+        $(document).on("change","#thrust",function(){
+            var thrust = $(this).val();
+            $.ajax({
+                url:'<?=base_url()?>dashboard/get_focusarea',
+                method: 'post',
+                data: {thrust: thrust},
+                dataType: 'json',
+                success: function(response){
+                    $('#focus_area').find('option').not(':first').remove();
+                    $.each(response,function(index,data){
+                        $('#focus_area').append('<option value="'+ data['focus_area_id'] +'">'+ data['focus_area'] +'</option>');
+                    });
+                }
+            });
+        });
 </script>

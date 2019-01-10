@@ -12107,7 +12107,7 @@ textarea#HandsontableCopyPaste {
     display: block;
 }
 .pika-single {
-    z-index: 1000;
+    z-index: 1060;
     display: block;
     position: relative;
     background-color: #fff;

@@ -2,128 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4438246e-27b5-42bb-a4dc-2ae6da717c3b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ictms.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/project.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/dashboardModel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/projectModel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/application/cache/ictms_sessionr6us16sfk42em6tit6vk6c9gfao7a6hk" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session02159on60g208ki6nsnef24c6d37dqff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session05hsgtlafl8rbsr3p9r8k67qme178vit" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session099tbdefr6au5bhdqbi1i068kp97ms8c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session0aumnfervleh9gockfo372f7i25jlbv9" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session0buej8pnh8mi8oi4blrupndlii9mqlg1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session0pjf91cr95guvlm3njh5m8plsbkca49m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session1alkd6klfl9kglpp4o9l1qf70rcv44ja" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session1fr8vcb72e171fksofu785kpmbqua3lv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session1qe6mkhefugte9fpr4s0kongfnr7gdsf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session22iha52inhgtdlp5goh8ojp2d7ssp0b3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session28qkabcuouah9q9brvbmo5alqkneug3d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session37lk6gntb4ca6ac6so3co9ljo27k3vhh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session3h9ujldap61juc4nls67ah5mttdat2c3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session3l3h0l30j4advdbs5c81okvkt5jussug" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session4lctfqnooimre2212v580813qtd339cv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session4p8rh0q65pss0e1e6an7lbgevmlhgi08" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session4pjvpkhs813thr1rnl3nhk2ofaf8iue9" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session4q65bngiomme0ves4r770fkrm1f29io6" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session4tgv3fa62p98srrengo4aggi9655vbnr" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session5egthhmfbpvtg1j2q0ear1rehfikva1c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session5hgtcn08cd1569dt8opqg2p8fd1m0939" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session5m1j12tfbse9rqucejju6krlfqqqn5om" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session5t2m55p89mbdh55ag9fl64td8eir6i1c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session664btdcuj77pfgh75ksbql9ggblnji0p" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session6832es6u9ib803mnpq7fs10m85v4aaiv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session6olrs40d7suunem3u2se1q7eds0va622" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session6s1kfqnhh5j02ns58gl7lnrgo94im35o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session775fq2oanloneb5grl8aqb2us3a2akgk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session7c93shcs0j9ai0irp65jt89ph2vdcejq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session7npts0d73nqpssvs24emeebg459qrnlm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session7o78vtcqsg11g6e1ohnc95pngt88jhiq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session7ucg6rkqsmfbaqjlt0l91cfrsqb6kgpd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session8cupfbdpqnbm4rtjg97ti3dcre1t1bj1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session8pjfrekjavi65vfia4un23j0ou9p0s1k" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session939pdpdltip1pbug99ic40etbgfkaafl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session9if0999t4fshddovjoevf0fvc33nn7j0" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session9nql7ng4g0k09i61318jhd41uhf6jfr4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionangukqu3mnqbhieo6ajkn9tbqj3v1h7j" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionasd73pn87l3pt7cc2j2qmj5jpuaqaiv5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionb2dealoqtmv0giluobu3c5a1n7g2ir1f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionb3g98gdrh7q0f74gvk5rmk5j6lq1ntff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionb46nosje5m808tbscukhe74u1d7eldun" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionbc129f1ff4rufqiilvmtlluje1nrj5rk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionbd34pmm4e9d58n8n7k6doc4mavi3k63l" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionc8ieomlvn560e894pu240cdedlvce7lt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessioncd8uv0euc0ntols044ksl88gj3ugchdk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessiond7a1svo1icbh6qtmo2tbrmfqa36jukf4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessiondoqptea164ldejofntp0vrhr7dka206b" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessiondup8aoqfhmfjgvg4k9dl77flk4e5g155" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessione23btmg8paeimecb4qthikcbkrusr3so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessione3kt076g0s3vd6jm1rhc6llv7n9kocku" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessione6o42srj2ipcl280s7pkmkc8djtj9vg8" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessione6qsp675l7aml74glon0bvdpspmrpiku" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessione9d35q5l11ek9vlh3augcj2p2saim2r5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessione9q8do8epahahnv8eebpgosvahslemjn" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionef40l4i136n1mdh08j7iecp8vr2lputf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionehjfomjt5468le9s892at3130har50um" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionen4a0lfbmbb47skmm31ud0fqm5eahn2n" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionenqriuepttq3mhglmutfpoe4d6rl5hqp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionf30iq6e69dgeaj5dus4j8fevff2a34go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionf38miukecr51c3g4gvhe90iaia6b2sum" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionf7rkhhga39efpe2mp940oh0rm5hvp46t" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionflq3nbus1cl2c8b3jsesgdnfbf0f9mv8" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessiong7r6pvni87qt4fu3ms99s26roukc29nh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessiongb57p65kn0sbi9o7dtma4g32i71m80ga" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessiongoidq1u5fipqqe19t9384b1aggvtbhgl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionh7egsflbrt5tgkm8rpq89pn745hi02fr" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionhi06ov6amptp934aumg1irc0lpq00spb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionhlmlc0von2bjhdo4b54bsqe8ufofmscf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionhrlncmeclkf6dd73vsh7dldqac5mdjf7" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionhv2hsmv5ifeisc1kq3v0c3ed3qik17q3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessioni6dfgqammmqjbtji12kmphc9jee9n18a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessioniclhqhcf7n4h1s5ilrpbt1a3eoop21gg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionit0vfl1s377g54267ifdg0eurhegk1et" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessioniu154e0ihk1gjitsga69er9ufvk77ki8" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionj4f2tt6488774ifmtvulvpeifbh2cfbr" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionjle4bnd3j6kf39j7osn04u1d062n12l8" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionkiihrcc27g95elpj13407fentr1n6gmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionkv27399dhe7v877q1pspnp7rrko8l678" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionl0fkhq5hrurmbttqfihooginnfboauqg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionlb3cgo9sf2v6o5ti63rs9m7nm32roacn" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionlbkhiec04f6sdqujjnuppi95m0taemo3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionlsal56o0qstuog58tt2l0o42lkobfa3s" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionluo1qn5958qgf5su94m4nc7ugav4mhlr" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionm2g2rtogc30er20rsoar5r6g481hacsb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionmei2c2kkoppus6dcpdilpn1ah0ujrfad" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionmktolhhjentad820fu83s3abugk9rinn" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionmoqot1fcl6d8dchg2kf7m5chsaa9et4n" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionms2bvv99dog9ndaijkt32aasvp52kp6q" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionntbi1tfccluml1sec8coip986isu7ber" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionnvb7b3h8emgi9g2gr3pe6sqbgjitfpjv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionolakli3gao4g4266e1r9npmlk5kv5eco" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionovmdohkt5m13efimsr8f4qbldeff62qn" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionpcbcrl123kmaavt4f5vsih9ipj6irruv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionpff4i6ut7cf8jtfp49h9sjrslvpgi0t1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionph4b8bn3vca45hqqjmrp6d01aec69ql4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionq0qrrd4fbvqa3ck1dj3t2e15kku3hi2j" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionqs1b87egc17rbtf03ng2u84j3it684ib" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionrdtc0j8cfq5trpkvh4vdd9igs7nkn300" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionrlc2519p4lirmebnvlp1mgltpgc4nj3j" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionrlnqfj37tebp4ic8sfer795693ie6q2f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessions89ud3k2849paiiotvb4e6ajsdqe04td" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionsdhgt7ep3m1cjk65qqntrtueef6rtb18" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionsfhaqfk2qn91v38in45nu01mhv9eilro" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionsfsp23vom2p19vq48g5tnkbf3ct5925f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionsh35t7c78rkbmao1hajpldcsd1i97iu4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionteiqdnrelmftn6jp3u1r0le5lol7tvsq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessiontm0ucbf8v49v7in33imtme7la00f5i9a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessiontqlmb3gfckgfj9k7et6l6rij4nij2jsk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionua0p5vfgcraupjoau994a6qnnffq8ejd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionvv5e0m611dvsd96hs54670rs544kst05" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/dashboard.php" afterPath="$PROJECT_DIR$/application/controllers/dashboard.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/core/dashboard.php" afterPath="$PROJECT_DIR$/application/views/core/dashboard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/core.css" afterPath="$PROJECT_DIR$/assets/css/core.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/pages/dashboard.js" afterPath="$PROJECT_DIR$/assets/js/pages/dashboard.js" />
     </list>
     <ignored path="ictms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -178,85 +62,10 @@
       <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/core/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1938">
-              <caret line="33" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="599" selection-end-column="9" />
+            <state relative-caret-position="-5956">
+              <caret line="362" column="102" selection-start-line="362" selection-start-column="102" selection-end-line="362" selection-end-column="102" />
               <folding>
-                <marker date="1547028296100" expanded="true" signature="20582:23628" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="20628:21682" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="20706:21655" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="20835:21086" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="21142:21624" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="21198:21589" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="21259:21550" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="21728:23628" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="21806:23628" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="22058:22888" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="22117:22451" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="22182:22408" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="22510:22849" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="22575:22806" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="22948:23628" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="23007:23349" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="23072:23306" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="23408:23628" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="23473:23628" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="23844:25451" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="23904:25412" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="23992:25059" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="24224:24569" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="24678:25012" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="25170:25369" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="25501:27183" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="25561:27144" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="25649:26793" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="25950:26299" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="26408:26746" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="26905:27101" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="27287:27658" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="27365:27631" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="27488:27600" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="27704:31912" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="27782:31885" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="27914:28026" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="28072:29019" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="28128:28984" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="28199:28945" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="28304:28902" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="29065:30965" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="29120:29992" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="29191:29953" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="29297:29910" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="30047:30930" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="30118:30891" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="30247:30848" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="31011:31854" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="31066:31478" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="31137:31439" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="31277:31396" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="31533:31819" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="31604:31780" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="31958:36221" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="32036:36194" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="32286:33663" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="32342:33628" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="32413:33188" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="32557:33145" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="33286:33589" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="33427:33546" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="33709:34766" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="33764:34391" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="33835:34352" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="33945:34309" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="34446:34731" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="34517:34692" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="34812:35866" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="34867:35154" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="34938:35115" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="35209:35831" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="35280:35792" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="35385:35749" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="35919:36163" placeholder="..." />
-                <marker date="1547028296100" expanded="true" signature="36376:37731" placeholder="..." />
+                <marker date="1547083818651" expanded="true" signature="48790:50145" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -266,7 +75,7 @@
         <entry file="file://$PROJECT_DIR$/application/controllers/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="722">
-              <caret line="49" column="63" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="63" />
+              <caret line="50" column="32" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -612,15 +421,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1547001887232</updated>
-      <workItem from="1547001890550" duration="16933000" />
+      <workItem from="1547001890550" duration="17619000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16933000" />
+    <option name="totallyTimeSpent" value="17619000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12760417" sideWeight="0.5" order="-1" side_tool="false" content_ui="combo" />
@@ -735,92 +544,17 @@
     <entry file="file://$PROJECT_DIR$/application/controllers/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="722">
-          <caret line="49" column="63" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="63" />
+          <caret line="50" column="32" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/core/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1938">
-          <caret line="33" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="599" selection-end-column="9" />
+        <state relative-caret-position="-5956">
+          <caret line="362" column="102" selection-start-line="362" selection-start-column="102" selection-end-line="362" selection-end-column="102" />
           <folding>
-            <marker date="1547028296100" expanded="true" signature="20582:23628" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="20628:21682" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="20706:21655" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="20835:21086" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="21142:21624" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="21198:21589" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="21259:21550" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="21728:23628" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="21806:23628" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="22058:22888" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="22117:22451" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="22182:22408" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="22510:22849" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="22575:22806" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="22948:23628" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="23007:23349" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="23072:23306" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="23408:23628" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="23473:23628" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="23844:25451" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="23904:25412" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="23992:25059" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="24224:24569" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="24678:25012" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="25170:25369" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="25501:27183" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="25561:27144" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="25649:26793" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="25950:26299" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="26408:26746" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="26905:27101" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="27287:27658" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="27365:27631" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="27488:27600" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="27704:31912" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="27782:31885" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="27914:28026" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="28072:29019" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="28128:28984" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="28199:28945" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="28304:28902" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="29065:30965" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="29120:29992" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="29191:29953" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="29297:29910" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="30047:30930" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="30118:30891" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="30247:30848" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="31011:31854" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="31066:31478" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="31137:31439" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="31277:31396" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="31533:31819" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="31604:31780" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="31958:36221" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="32036:36194" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="32286:33663" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="32342:33628" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="32413:33188" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="32557:33145" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="33286:33589" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="33427:33546" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="33709:34766" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="33764:34391" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="33835:34352" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="33945:34309" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="34446:34731" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="34517:34692" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="34812:35866" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="34867:35154" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="34938:35115" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="35209:35831" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="35280:35792" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="35385:35749" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="35919:36163" placeholder="..." />
-            <marker date="1547028296100" expanded="true" signature="36376:37731" placeholder="..." />
+            <marker date="1547083818651" expanded="true" signature="48790:50145" placeholder="..." />
           </folding>
         </state>
       </provider>

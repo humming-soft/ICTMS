@@ -328,7 +328,7 @@
 </div>
 
 <div id="hmwks-cnp" class="hmwks-modal modal fade animated show-on-load" role="dialog" aria-hidden="true" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
         <div class="modal-content"><button aria-label="Close" class="close" data-dismiss="modal"
                 type="button"><span class="close-label">Close</span><span class="icon-cross"></span></button>
             <?=form_open('project/add', array('id'=>'hm_l_f')) ?>
@@ -336,9 +336,9 @@
                     <div class="hmwks-slide">
                         <div class="hmwks-content with-gradient text-center">
                             <h4 class="hmwks-title">Create New Project</h4>
-                            <div class="hmwks-text">This is an example of a multistep hmwks screen, you
-                                can use it to introduce your customers to your app, or collect additional
-                                information from them before they start using your app.</div>
+                            <div class="hmwks-text">This is a multistep project creation process, you
+                                can use it to provide project information which includes scope, objective of the project
+                                and project team etc. before you start your project.</div>
                             <div class="row text-left">
                                 <div class="col-sm-12">
                                     <div class="form-group">
@@ -361,7 +361,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group"><label for="">Project Director</label>
-                                            <input type="text" class="form-control" disabled value="Dato’ Zailani Safari" name="pjt_directorStr">
+                                            <input type="text" class="form-control" name="pjt_directorStr" placeholder="Enter Name of Project Director..">
                                         </div>
                                     </div>
                                 </div>
@@ -377,7 +377,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
+                                <!-- <div class="row">
                                     <div class="col-sm-12">
                                         <div class="form-group mb-4 mb-md-4 text-left">
                                             <label class="d-block">Is that problem that is required to be resolved?</label>
@@ -414,14 +414,97 @@
                                             <textarea rows="3" cols="3" class="form-control" name="benefitStr" placeholder="Type Here.."></textarea>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                         </div>
                     </div>
                     <div class="hmwks-slide">
                         <div class="hmwks-content with-gradient text-center">
                             <h4 class="hmwks-title">Project Team</h4>
-                            <div class="hmwks-text">In this example you can showcase some of the features of
-                                your application.</div>
+                            <div class="hmwks-text">Add individuals who will be contributing to this Project
+                            <a class="float-right text-right link-modal" data-target="#hmwks-adtm" data-toggle="modal" data-dismiss="modal" href="#"><i class="icon-plus2 mr-1"></i><span>Add Member</span></a>
+                            </div>
+                            
+                            <div class="row" id="p-team">
+                                <div class="col-xl-4 col-md-6">
+                                    <div class="card card-body">
+                                        <div class="media">
+                                            <div class="card-img-actions d-inline-block">
+                                                <img class="img-fluid rounded-circle" src="<?=site_url('assets/img/avatar/av1.png')?>" width="42" height="42" alt="">
+                                                <div class="card-img-actions-overlay card-img rounded-circle">
+                                                    <a href="#" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round">
+                                                        <i class="icon-bin"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="media-body">
+                                                <h6 class="mb-0">Amirul Bin Ahamed</h6>
+                                                <span class="text-muted">Lead Developer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-4 col-md-6">
+                                    <div class="card card-body">
+                                        <div class="media">
+                                            <div class="card-img-actions d-inline-block">
+                                                <img class="img-fluid rounded-circle" src="<?=site_url('assets/img/avatar/av2.png')?>" width="42" height="42" alt="">
+                                                <div class="card-img-actions-overlay card-img rounded-circle">
+                                                    <a href="#" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round">
+                                                        <i class="icon-bin"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="media-body">
+                                                <h6 class="mb-0">Isrul Bin Fairuz</h6>
+                                                <span class="text-muted">Network Engineer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-4 col-md-6">
+                                    <div class="card card-body">
+                                        <div class="media">
+                                            <div class="card-img-actions d-inline-block">
+                                                <img class="img-fluid rounded-circle" src="<?=site_url('assets/img/avatar/av4.png')?>" width="42" height="42" alt="">
+                                                <div class="card-img-actions-overlay card-img rounded-circle">
+                                                    <a href="#" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round">
+                                                        <i class="icon-bin"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="media-body">
+                                                <h6 class="mb-0">Siti Binti Ahamed</h6>
+                                                <span class="text-muted">Front-End Developer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-4 col-md-6">
+                                    <div class="card card-body">
+                                        <div class="media">
+                                            <div class="card-img-actions d-inline-block">
+                                                <img class="img-fluid rounded-circle" src="<?=site_url('assets/img/avatar/av3.png')?>" width="42" height="42" alt="">
+                                                <div class="card-img-actions-overlay card-img rounded-circle">
+                                                    <a href="#" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round">
+                                                        <i class="icon-bin"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="media-body">
+                                                <h6 class="mb-0">Fahmi Bin Faaris</h6>
+                                                <span class="text-muted">Business Analyst</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="hmwks-slide">
@@ -554,7 +637,7 @@
                                 </div>
                             </div>
                             <div class="text-right">
-                                <button type="submit" class="btn btn-light">Cancel <i class="icon-cross2 ml-2"></i></button>
+                                <button type="button" class="btn btn-light" data-dismiss="modal">Cancel <i class="icon-cross2 ml-2"></i></button>
 								<button type="submit" class="btn btn-primary">Save <i class="icon-paperplane ml-2"></i></button>
 							</div>
                         </div>
@@ -564,7 +647,92 @@
         </div>
     </div>
 </div>
+<div id="hmwks-adtm" class="hmwks-modal modal fade animated" role="dialog" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-full modal-dialog-centered" role="document">
+        <div class="modal-content"><button aria-label="Close" class="close" data-target="#hmwks-cnp" data-toggle="modal" data-dismiss="modal"
+                type="button"><span class="close-label">Close</span><span class="icon-cross"></span></button>
+            <form action="">
+                <div class="hmwks-slider-w">
+                    <div class="hmwks-slide">
+                        <div class="hmwks-content with-gradient text-center">
+                            <h4 class="hmwks-title">Organizational Chart</h4>
+                            <div class="hmwks-text">This is a multistep project creation process, you
+                                can use it to provide project information which includes scope, objective of the project
+                                and project team etc. before you start your project.</div>
+                            <div class="row text-left">
+                                <div class="col-sm-9">
+                                    <div id="orgchart-container"></div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card">
+                                        <div class="card-header header-elements-inline p-3">
+                                            <h6 class="card-title"><i class="icon-plus2 mr-2"></i>ADD NEW</h6>
+                                        </div>
+                                        
+                                        <div class="card-body">
+                                            <form action="#">
+                                                <fieldset>
+                                                    <div class="form-group">
+                                                        <label>Selected Hirachy:</label>
+                                                        <input type="text" class="form-control selected-node-group" id="selected-node" disabled="">
+                                                        <input type="text" id="position-node" hidden="">
+                                                    </div>
 
+                                                    <div class="form-group" id="new-nodelist">
+                                                        <label>Employee:</label>
+                                                        <input type="text" class="form-control new-node" placeholder="Enter Emloyee Name">
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label>Position:</label>
+                                                        <select class=" form-control" id="position">
+                                                            <option>Senior Manager</option>
+                                                            <option>Junior Engeneer</option>
+                                                            <option>Accountant</option>
+                                                            <option>Finance Manager</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label class="d-block">Position Type:</label>
+
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" class="custom-control-input pos_type" value="1" name="pos_type" id="pos_type_parent" checked>
+                                                            <label class="custom-control-label" for="pos_type_parent">Parent</label>
+                                                        </div>
+
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" class="custom-control-input pos_type" value="2" name="pos_type" id="pos_type_sibling">
+                                                            <label class="custom-control-label" for="pos_type_sibling">Sibling</label>
+                                                        </div>
+
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" class="custom-control-input pos_type" value="2" name="pos_type" id="pos_type_child">
+                                                            <label class="custom-control-label" for="pos_type_child">Child</label>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+
+                                                <div class="text-center mb-2">
+                                                    <button type="button" class="btn btn-success btn-block" id="btn-add-nodes"><i class="icon-paper-plan mr-2"></i>Save</button>
+                                                    <button type="button" class="btn btn-danger btn-block" id="btn-delete-nodes"><i class="icon-bin mr-2"></i>Delete</button>
+                                                </div>
+                                                <hr>
+                                                <div class="text-center">
+                                                    <button type="button" class="btn btn-primary  btn-block" id="saveProject" data-target="#hmwks-cnp" data-toggle="modal" data-dismiss="modal"><i class="icon-plus2 mr-2"></i>Add Selected</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                      
+                </div>
+            </form>     
+        </div>
+    </div>
+</div>
 <script type ="text/javascript">
 
         $(document).on("change","#sector",function(){

@@ -17,8 +17,9 @@ class Dashboard extends ICTMS_Controller {
         $data['location']=$this->dashboardModel->select_location();
         $data['category']=$this->dashboardModel->select_category();
         $data['sector']=$this->dashboardModel->select_sector();
-        
         $data['thrust']=$this->dashboardModel->select_thrust();
+        $data['position']=$this->dashboardModel->select_position();
+        $data['targetGroup']=$this->dashboardModel->select_target_group();
         if($this->session->userdata('message'))
         {
             $messagehrecord=$this->session->userdata('message');

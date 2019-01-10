@@ -356,7 +356,7 @@
                                 <div class="row text-left">
                                     <div class="col-sm-6">
                                         <div class="form-group"><label for="">Project Owner</label>
-                                            <input type="text" class="form-control" disabled value="Ministry Of Transport" name="pjt_ownerStr">
+                                            <input type="text" class="form-control" readonly value="Ministry Of Transport" name="pjt_ownerStr">
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
@@ -368,53 +368,15 @@
                                 <div class="row text-left">
                                     <div class="col-sm-6">
                                         <div class="form-group"><label for="">Project Manager</label>
-                                            <input type="text" class="form-control" disabled value="Mr. Idrul Fairuz Ali Khan" name="pjt_managerStr">
+                                            <input type="text" class="form-control" readonly value="Mr. Idrul Fairuz Ali Khan" name="pjt_managerStr">
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group"><label for="">Date Prepared</label>
-                                            <input type="text" class="form-control" disabled value="<?=strtoupper(date('d-M-Y'))?>" name="pjt_preparedDate">
+                                            <input type="text" class="form-control" readonly value="<?=strtoupper(date('d-M-Y'))?>" name="pjt_preparedDate">
                                         </div>
                                     </div>
                                 </div>
-                                <!-- <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="form-group mb-4 mb-md-4 text-left">
-                                            <label class="d-block">Is that problem that is required to be resolved?</label>
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" class="custom-control-input rd_resolvable" value="1" name="rd_resolvable" id="rd_resolvable_yes" checked>
-                                                <label class="custom-control-label" for="rd_resolvable_yes">YES</label>
-                                            </div>
-
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" class="custom-control-input rd_resolvable" value="0" name="rd_resolvable" id="rd_resolvable_no">
-                                                <label class="custom-control-label" for="rd_resolvable_no">NO</label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group" id="rd_resolvable_txt" style="display:block;">
-                                            <textarea rows="3" cols="3" class="form-control" name="rosolvableStr" placeholder="Type Here.."></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="form-group mb-3 mb-md-4 text-left">
-                                            <label class="d-block text-left">Is it an opportunity that is required to be created that will enhance or bring benefit to the organization?</label>
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" class="custom-control-input rd_benefit_org" value="1" name="rd_benefit_org" id="rd_benefit_org_yes" checked>
-                                                <label class="custom-control-label" for="rd_benefit_org_yes">YES</label>
-                                            </div>
-
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" class="custom-control-input rd_benefit_org" value="0" name="rd_benefit_org" id="rd_benefit_org_no">
-                                                <label class="custom-control-label" for="rd_benefit_org_no">NO</label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group" id="rd_benefit_org_txt" style="display:block;">
-                                            <textarea rows="3" cols="3" class="form-control" name="benefitStr" placeholder="Type Here.."></textarea>
-                                        </div>
-                                    </div>
-                                </div> -->
                         </div>
                     </div>
                     <div class="hmwks-slide">
@@ -515,7 +477,7 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="form-group text-left"><label for="">Location</label>
-                                        <select class=" form-control m-b">
+                                        <select class=" form-control m-b" id="location" name="location">
                                             <option>SELECT</option>
                                             <?php
                                             foreach ($location as $loc):
@@ -531,7 +493,7 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group text-left"><label for="">Category.</label>
-                                        <select class=" form-control m-b">
+                                        <select class=" form-control m-b" id="category" name="category">
                                             <option>SELECT</option>
                                             <?php
                                             foreach ($category as $category):
@@ -569,7 +531,7 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group text-left"><label for="">Start Date (Planned)</label>
-                                        <input type="text" class="form-control" read-only>
+                                        <input type="text" class="form-control datepicker" placeholder="Pick a date&hellip;">
                                     </div>
                                 </div>
                             </div>
@@ -597,7 +559,6 @@
                                     <div class="form-group text-left" id="thrusttext1" disabled><label for="">Focus Area</label>
                                         <select class=" form-control m-b" id="focus_area" name="focus_area">
                                             <option>SELECT</option>
-
                                         </select>
                                     </div>
                                 </div>
@@ -605,11 +566,15 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group text-left"><label for="">Target Group.</label>
-                                        <select class=" form-control m-b">
+                                        <select class=" form-control m-b" id="target_group" name="target_group" >
                                             <option>SELECT</option>
-                                            <option>Dato’ Zailani Safari</option>
-                                            <option>Mazmi bin Mohamad</option>
-                                            <option>Zulhaimi bin Mat Hussin</option>
+                                            <?php
+                                            foreach ($targetGroup as $targetGroup):
+                                                ?>
+                                                <option value="<?php echo $targetGroup->target_group_id; ?>"><?php echo $targetGroup->target_group_name; ?></option>
+                                                <?php
+                                            endforeach;
+                                            ?>
                                         </select>
                                     </div>
                                 </div>
@@ -627,11 +592,15 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group text-left"><label for="">Location</label>
-                                        <select class=" form-control m-b">
+                                        <select class=" form-control m-b" id="target_loc" name="target_loc">
                                             <option>SELECT</option>
-                                            <option>Dato’ Zailani Safari</option>
-                                            <option>Mazmi bin Mohamad</option>
-                                            <option>Zulhaimi bin Mat Hussin</option>
+                                            <?php
+                                            foreach ($location as $loc):
+                                                ?>
+                                                <option value="<?php echo $loc->pjt_location_id; ?>"><?php echo $loc->pjt_location_name; ?></option>
+                                                <?php
+                                            endforeach;
+                                            ?>
                                         </select>
                                     </div>
                                 </div>
@@ -686,10 +655,14 @@
                                                     <div class="form-group">
                                                         <label>Position:</label>
                                                         <select class=" form-control" id="position">
-                                                            <option>Senior Manager</option>
-                                                            <option>Junior Engeneer</option>
-                                                            <option>Accountant</option>
-                                                            <option>Finance Manager</option>
+                                                            <option>SELECT</option>
+                                                            <?php
+                                                            foreach ($position as $position):
+                                                                ?>
+                                                                <option value="<?php echo $position->position_id; ?>"><?php echo $position->position_name; ?></option>
+                                                                <?php
+                                                            endforeach;
+                                                            ?>
                                                         </select>
                                                     </div>
 
@@ -734,7 +707,6 @@
     </div>
 </div>
 <script type ="text/javascript">
-
         $(document).on("change","#sector",function(){
             var subSector = $(this).val();
             $.ajax({
@@ -765,4 +737,5 @@
                 }
             });
         });
+
 </script>

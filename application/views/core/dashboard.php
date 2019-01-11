@@ -531,7 +531,7 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group text-left"><label for="">Start Date (Planned)</label>
-                                        <input type="text" class="form-control" id="datepicker">
+                                        <input type="text" class="form-control" id="datepicker" name="planned_date">
                                     </div>
                                 </div>
                             </div>
@@ -566,7 +566,7 @@
 
                             <div class="repeater-default"> 
                             <a class="float-right text-right link-modal" data-repeater-create  href="#"><i class="icon-plus2 mr-1"></i><span>Add</span></a>         
-                                <div data-repeater-list="car">
+                                <div data-repeater-list="target">
                                     <div data-repeater-item>
                                         <div class="row">
                                             <div class="col-sm-4">
@@ -585,7 +585,7 @@
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="form-group text-left"><label for="">Name</label>
-                                                    <input type="text" class="form-control" placeholder="Enter Name">
+                                                    <input type="text" class="form-control" placeholder="Enter Name" name="target_name">
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">

@@ -51,31 +51,20 @@
 						<i class="icon-task mr-2"></i> Milestones
 					</a>
 				</li>
-				<li class="nav-item">
-					<a href="<?=site_url('projects/02849/deliverables')?>" class="navbar-nav-link">
-						<i class="icon-inbox mr-2"></i> Deliverables
+				<li class="nav-item dropdown">
+					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-menu"></i>
+						<span class="d-md-none ml-2">More</span>
 					</a>
+
+					<div class="dropdown-menu">
+						<a href="<?=site_url('projects/02849/deliverables')?>" class="dropdown-item"><i class="icon-inbox"></i> Deliverables</a>
+						<a href="<?=site_url('projects/02849/resources')?>" class="dropdown-item"><i class="icon-man-woman"></i> Resources</a>
+						<a href="<?=site_url('projects/02849/cost')?>" class="dropdown-item"><i class="icon-cash4"></i> Cost</a>
+						<a href="<?=site_url('projects/02849/risk')?>" class="dropdown-item"><i class="icon-menu6"></i> Risk Register</a>
+						<a href="<?=site_url('projects/02849/org')?>" class="dropdown-item"><i class="icon-tree6"></i> Org. Strucure</a>
+					</div>
 				</li>
-				<li class="nav-item">
-					<a href="<?=site_url('projects/02849/resources')?>" class="navbar-nav-link">
-						<i class="icon-make-group mr-2"></i> Resources
-					</a>
-				</li>
-				<!-- <li class="nav-item">
-					<a href="<?=site_url('projects/02849/cost')?>" class="navbar-nav-link">
-						<i class="icon-make-group mr-2"></i> Cost
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="<?=site_url('projects/02849/risk')?>" class="navbar-nav-link">
-						<i class="icon-make-group mr-2"></i> Risk Register
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="<?=site_url('projects/02849/org')?>" class="navbar-nav-link">
-						<i class="icon-make-group mr-2"></i> Organization
-					</a>
-				</li> -->
 			</ul>
 
 			<ul class="navbar-nav ml-md-auto">

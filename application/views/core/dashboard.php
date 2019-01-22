@@ -570,7 +570,7 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group text-left"><label for="">Start Date (Planned)</label>
-                                        <input type="text" class="form-control" id="datepicker">
+                                        <input type="text" class="form-control" id="datepicker" name="planned_date">
                                     </div>
                                 </div>
                             </div>
@@ -626,7 +626,7 @@
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="form-group text-left"><label for="">Name</label>
-                                                    <input type="text" class="form-control" placeholder="Enter Name">
+                                                    <input type="text" class="form-control" placeholder="Enter Name" name="target_name">
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">

@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/assets/js/pages/dashboard.js" line="177" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="4438246e-27b5-42bb-a4dc-2ae6da717c3b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/plugins/forms/repeater/jquery.repeater.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/dashboard.php" afterPath="$PROJECT_DIR$/application/controllers/dashboard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/language/en/dashboard_lang.php" afterPath="$PROJECT_DIR$/application/language/en/dashboard_lang.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/core/dashboard.php" afterPath="$PROJECT_DIR$/application/views/core/dashboard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/core/fragments/header.php" afterPath="$PROJECT_DIR$/application/views/core/fragments/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/core/fragments/footer.php" afterPath="$PROJECT_DIR$/application/views/core/fragments/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/core/fragments/main_navbar.php" afterPath="$PROJECT_DIR$/application/views/core/fragments/main_navbar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/core/projects/fragments/secondary_navbar.php" afterPath="$PROJECT_DIR$/application/views/core/projects/fragments/secondary_navbar.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/core.css" afterPath="$PROJECT_DIR$/assets/css/core.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/pages/dashboard.js" afterPath="$PROJECT_DIR$/assets/js/pages/dashboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/pages/milestones.js" afterPath="$PROJECT_DIR$/assets/js/pages/milestones.js" />
     </list>
     <ignored path="ictms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,11 +33,11 @@
     <favorites_list name="ictms" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="289">
               <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
               <folding />
             </state>
@@ -52,11 +57,19 @@
       <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/core/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1541">
-              <caret line="610" column="46" selection-start-line="610" selection-start-column="46" selection-end-line="610" selection-end-column="46" />
-              <folding>
-                <marker date="1547110081457" expanded="true" signature="47416:48771" placeholder="..." />
-              </folding>
+            <state relative-caret-position="382">
+              <caret line="605" column="59" selection-start-line="605" selection-start-column="59" selection-end-line="605" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/pages/dashboard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2210">
+              <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -64,8 +77,8 @@
       <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+            <state relative-caret-position="629">
+              <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -74,22 +87,23 @@
       <file leaf-file-name="dashboardModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/dashboardModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="54" selection-start-line="0" selection-start-column="0" selection-end-line="55" selection-end-column="1" />
+            <state relative-caret-position="799">
+              <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
               <folding>
-                <marker date="1547104225009" expanded="true" signature="167:230" placeholder="SELECT pjt_l... pjt-location" />
-                <marker date="1547104225009" expanded="true" signature="366:429" placeholder="SELECT pjt_c... pjt-category" />
-                <marker date="1547104225009" expanded="true" signature="563:620" placeholder="SELECT pjt_s... pjt-sector" />
-                <marker date="1547104225009" expanded="true" signature="807:913" placeholder="SELECT pjt_s... pjt-sub-sector" />
-                <marker date="1547104225009" expanded="true" signature="807:914" placeholder="SELECT pjt_s... pjt-sub-sector" />
-                <marker date="1547104225009" expanded="true" signature="807:921" placeholder="SELECT pjt_s... pjt-sub-sector" />
-                <marker date="1547104225009" expanded="true" signature="1055:1091" placeholder="SELECT thrus... thrust" />
-                <marker date="1547104225009" expanded="true" signature="1276:1283" placeholder="SELECT pjt_s... pjt-sub-sector" />
-                <marker date="1547104225009" expanded="true" signature="1276:1358" placeholder="SELECT focus... focus-area" />
-                <marker date="1547104225009" expanded="true" signature="1276:1365" placeholder="SELECT focus... focus-area" />
-                <marker date="1547104225009" expanded="true" signature="1505:1512" placeholder="SELECT focus... focus-area" />
-                <marker date="1547104225009" expanded="true" signature="1505:1572" placeholder="SELECT targe... pjt-target-group" />
-                <marker date="1547104225009" expanded="true" signature="1709:1760" placeholder="SELECT posit... position" />
+                <marker date="1547521371611" expanded="true" signature="167:230" placeholder="SELECT pjt_l... pjt-location" />
+                <marker date="1547521371611" expanded="true" signature="366:429" placeholder="SELECT pjt_c... pjt-category" />
+                <marker date="1547521371611" expanded="true" signature="563:620" placeholder="SELECT pjt_s... pjt-sector" />
+                <marker date="1547521371611" expanded="true" signature="807:913" placeholder="SELECT pjt_s... pjt-sub-sector" />
+                <marker date="1547521371611" expanded="true" signature="807:914" placeholder="SELECT pjt_s... pjt-sub-sector" />
+                <marker date="1547521371611" expanded="true" signature="807:921" placeholder="SELECT pjt_s... pjt-sub-sector" />
+                <marker date="1547521371611" expanded="true" signature="1055:1091" placeholder="SELECT thrus... thrust" />
+                <marker date="1547521371611" expanded="true" signature="1276:1283" placeholder="SELECT pjt_s... pjt-sub-sector" />
+                <marker date="1547521371611" expanded="true" signature="1276:1358" placeholder="SELECT focus... focus-area" />
+                <marker date="1547521371611" expanded="true" signature="1276:1365" placeholder="SELECT focus... focus-area" />
+                <marker date="1547521371611" expanded="true" signature="1505:1512" placeholder="SELECT focus... focus-area" />
+                <marker date="1547521371611" expanded="true" signature="1505:1572" placeholder="SELECT targe... pjt-target-group" />
+                <marker date="1547521371611" expanded="true" signature="1709:1760" placeholder="SELECT posit... position" />
+                <marker date="1547521371611" expanded="true" signature="1905:2057" placeholder="SELECT emplo... employee" />
               </folding>
             </state>
           </provider>
@@ -98,8 +112,8 @@
       <file leaf-file-name="project.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/project.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+            <state relative-caret-position="714">
+              <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -108,9 +122,12 @@
       <file leaf-file-name="projectModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/projectModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="187">
+              <caret line="11" column="40" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="40" />
+              <folding>
+                <marker date="1547169320245" expanded="true" signature="251:336" placeholder="SELECT max(p... pjt-master" />
+                <marker date="1547169320245" expanded="true" signature="330:336" placeholder="select journ... journal_master" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,7 +135,7 @@
       <file leaf-file-name="Project.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/projects/Project.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="255">
               <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
               <folding />
             </state>
@@ -143,11 +160,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/js/pages/dashboard.js" />
-        <option value="$PROJECT_DIR$/application/controllers/dashboard.php" />
-        <option value="$PROJECT_DIR$/application/models/dashboardModel.php" />
-        <option value="$PROJECT_DIR$/application/models/projectModel.php" />
         <option value="$PROJECT_DIR$/application/controllers/project.php" />
+        <option value="$PROJECT_DIR$/application/models/projectModel.php" />
+        <option value="$PROJECT_DIR$/assets/js/pages/dashboard.js" />
+        <option value="$PROJECT_DIR$/application/models/dashboardModel.php" />
+        <option value="$PROJECT_DIR$/application/controllers/dashboard.php" />
         <option value="$PROJECT_DIR$/application/views/core/dashboard.php" />
       </list>
     </option>
@@ -193,6 +210,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -315,29 +333,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="errors" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ictms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ictms" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
+              <option name="myItemId" value="fragments" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -373,7 +369,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
+              <option name="myItemId" value="libraries" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -391,43 +387,21 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ictms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ictms" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ICTM" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\ictms\application\libraries" />
       <recent name="C:\wamp\www\ictms\application\config" />
     </key>
   </component>
@@ -447,6 +421,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -470,25 +450,29 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1547001887232</updated>
-      <workItem from="1547001890550" duration="25529000" />
+      <workItem from="1547001890550" duration="56916000" />
+      <workItem from="1547526341873" duration="2032000" />
+      <workItem from="1547541728722" duration="1239000" />
+      <workItem from="1548133997758" duration="60000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25529000" />
+    <option name="totallyTimeSpent" value="60247000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12760417" sideWeight="0.5" order="-1" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12760417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10782241" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -503,22 +487,22 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/application/models/projectModel.php</url>
+          <line>11</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/config/database.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="103" column="2" selection-start-line="103" selection-start-column="2" selection-end-line="103" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="289">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -531,19 +515,295 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
+    <entry file="file://$PROJECT_DIR$/application/views/core/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/pages/dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="270" column="29" selection-start-line="270" selection-start-column="29" selection-end-line="270" selection-end-column="29" />
+        <state relative-caret-position="2210">
+          <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/dashboardModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+          <folding>
+            <marker date="1547521371611" expanded="true" signature="167:230" placeholder="SELECT pjt_l... pjt-location" />
+            <marker date="1547521371611" expanded="true" signature="366:429" placeholder="SELECT pjt_c... pjt-category" />
+            <marker date="1547521371611" expanded="true" signature="563:620" placeholder="SELECT pjt_s... pjt-sector" />
+            <marker date="1547521371611" expanded="true" signature="807:913" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1547521371611" expanded="true" signature="807:914" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1547521371611" expanded="true" signature="807:921" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1547521371611" expanded="true" signature="1055:1091" placeholder="SELECT thrus... thrust" />
+            <marker date="1547521371611" expanded="true" signature="1276:1283" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1547521371611" expanded="true" signature="1276:1358" placeholder="SELECT focus... focus-area" />
+            <marker date="1547521371611" expanded="true" signature="1276:1365" placeholder="SELECT focus... focus-area" />
+            <marker date="1547521371611" expanded="true" signature="1505:1512" placeholder="SELECT focus... focus-area" />
+            <marker date="1547521371611" expanded="true" signature="1505:1572" placeholder="SELECT targe... pjt-target-group" />
+            <marker date="1547521371611" expanded="true" signature="1709:1760" placeholder="SELECT posit... position" />
+            <marker date="1547521371611" expanded="true" signature="1905:2057" placeholder="SELECT emplo... employee" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/projectModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="40" />
+          <folding>
+            <marker date="1547169320245" expanded="true" signature="251:336" placeholder="SELECT max(p... pjt-master" />
+            <marker date="1547169320245" expanded="true" signature="330:336" placeholder="select journ... journal_master" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/projects/Project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="30" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/core/ICTMS_Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/core/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/pages/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2210">
+          <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/dashboardModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+          <folding>
+            <marker date="1547521371611" expanded="true" signature="167:230" placeholder="SELECT pjt_l... pjt-location" />
+            <marker date="1547521371611" expanded="true" signature="366:429" placeholder="SELECT pjt_c... pjt-category" />
+            <marker date="1547521371611" expanded="true" signature="563:620" placeholder="SELECT pjt_s... pjt-sector" />
+            <marker date="1547521371611" expanded="true" signature="807:913" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1547521371611" expanded="true" signature="807:914" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1547521371611" expanded="true" signature="807:921" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1547521371611" expanded="true" signature="1055:1091" placeholder="SELECT thrus... thrust" />
+            <marker date="1547521371611" expanded="true" signature="1276:1283" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1547521371611" expanded="true" signature="1276:1358" placeholder="SELECT focus... focus-area" />
+            <marker date="1547521371611" expanded="true" signature="1276:1365" placeholder="SELECT focus... focus-area" />
+            <marker date="1547521371611" expanded="true" signature="1505:1512" placeholder="SELECT focus... focus-area" />
+            <marker date="1547521371611" expanded="true" signature="1505:1572" placeholder="SELECT targe... pjt-target-group" />
+            <marker date="1547521371611" expanded="true" signature="1709:1760" placeholder="SELECT posit... position" />
+            <marker date="1547521371611" expanded="true" signature="1905:2057" placeholder="SELECT emplo... employee" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/projectModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="40" />
+          <folding>
+            <marker date="1547169320245" expanded="true" signature="251:336" placeholder="SELECT max(p... pjt-master" />
+            <marker date="1547169320245" expanded="true" signature="330:336" placeholder="select journ... journal_master" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/projects/Project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="30" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/core/ICTMS_Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/core/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6613">
+          <caret line="389" column="34" selection-start-line="389" selection-start-column="34" selection-end-line="389" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/pages/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2210">
+          <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/dashboardModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+          <folding>
+            <marker date="1547521371611" expanded="true" signature="167:230" placeholder="SELECT pjt_l... pjt-location" />
+            <marker date="1547521371611" expanded="true" signature="366:429" placeholder="SELECT pjt_c... pjt-category" />
+            <marker date="1547521371611" expanded="true" signature="563:620" placeholder="SELECT pjt_s... pjt-sector" />
+            <marker date="1547521371611" expanded="true" signature="807:913" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1547521371611" expanded="true" signature="807:914" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1547521371611" expanded="true" signature="807:921" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1547521371611" expanded="true" signature="1055:1091" placeholder="SELECT thrus... thrust" />
+            <marker date="1547521371611" expanded="true" signature="1276:1283" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1547521371611" expanded="true" signature="1276:1358" placeholder="SELECT focus... focus-area" />
+            <marker date="1547521371611" expanded="true" signature="1276:1365" placeholder="SELECT focus... focus-area" />
+            <marker date="1547521371611" expanded="true" signature="1505:1512" placeholder="SELECT focus... focus-area" />
+            <marker date="1547521371611" expanded="true" signature="1505:1572" placeholder="SELECT targe... pjt-target-group" />
+            <marker date="1547521371611" expanded="true" signature="1709:1760" placeholder="SELECT posit... position" />
+            <marker date="1547521371611" expanded="true" signature="1905:2057" placeholder="SELECT emplo... employee" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/projectModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="40" />
+          <folding>
+            <marker date="1547169320245" expanded="true" signature="251:336" placeholder="SELECT max(p... pjt-master" />
+            <marker date="1547169320245" expanded="true" signature="330:336" placeholder="select journ... journal_master" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/projects/Project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="30" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="103" column="2" selection-start-line="103" selection-start-column="2" selection-end-line="103" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -551,7 +811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-9911">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -565,65 +824,91 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/projects/Project.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="255">
           <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/dashboard.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+        <state relative-caret-position="289">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/dashboardModel.php">
+    <entry file="file://$PROJECT_DIR$/application/core/ICTMS_Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="54" selection-start-line="0" selection-start-column="0" selection-end-line="55" selection-end-column="1" />
-          <folding>
-            <marker date="1547104225009" expanded="true" signature="167:230" placeholder="SELECT pjt_l... pjt-location" />
-            <marker date="1547104225009" expanded="true" signature="366:429" placeholder="SELECT pjt_c... pjt-category" />
-            <marker date="1547104225009" expanded="true" signature="563:620" placeholder="SELECT pjt_s... pjt-sector" />
-            <marker date="1547104225009" expanded="true" signature="807:913" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1547104225009" expanded="true" signature="807:914" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1547104225009" expanded="true" signature="807:921" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1547104225009" expanded="true" signature="1055:1091" placeholder="SELECT thrus... thrust" />
-            <marker date="1547104225009" expanded="true" signature="1276:1283" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1547104225009" expanded="true" signature="1276:1358" placeholder="SELECT focus... focus-area" />
-            <marker date="1547104225009" expanded="true" signature="1276:1365" placeholder="SELECT focus... focus-area" />
-            <marker date="1547104225009" expanded="true" signature="1505:1512" placeholder="SELECT focus... focus-area" />
-            <marker date="1547104225009" expanded="true" signature="1505:1572" placeholder="SELECT targe... pjt-target-group" />
-            <marker date="1547104225009" expanded="true" signature="1709:1760" placeholder="SELECT posit... position" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/projectModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state relative-caret-position="578">
+          <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/project.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+        <state relative-caret-position="714">
+          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/projectModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="40" />
+          <folding>
+            <marker date="1547169320245" expanded="true" signature="251:336" placeholder="SELECT max(p... pjt-master" />
+            <marker date="1547169320245" expanded="true" signature="330:336" placeholder="select journ... journal_master" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/dashboardModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+          <folding>
+            <marker date="1547521371611" expanded="true" signature="167:230" placeholder="SELECT pjt_l... pjt-location" />
+            <marker date="1547521371611" expanded="true" signature="366:429" placeholder="SELECT pjt_c... pjt-category" />
+            <marker date="1547521371611" expanded="true" signature="563:620" placeholder="SELECT pjt_s... pjt-sector" />
+            <marker date="1547521371611" expanded="true" signature="807:913" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1547521371611" expanded="true" signature="807:914" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1547521371611" expanded="true" signature="807:921" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1547521371611" expanded="true" signature="1055:1091" placeholder="SELECT thrus... thrust" />
+            <marker date="1547521371611" expanded="true" signature="1276:1283" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1547521371611" expanded="true" signature="1276:1358" placeholder="SELECT focus... focus-area" />
+            <marker date="1547521371611" expanded="true" signature="1276:1365" placeholder="SELECT focus... focus-area" />
+            <marker date="1547521371611" expanded="true" signature="1505:1512" placeholder="SELECT focus... focus-area" />
+            <marker date="1547521371611" expanded="true" signature="1505:1572" placeholder="SELECT targe... pjt-target-group" />
+            <marker date="1547521371611" expanded="true" signature="1709:1760" placeholder="SELECT posit... position" />
+            <marker date="1547521371611" expanded="true" signature="1905:2057" placeholder="SELECT emplo... employee" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/pages/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2210">
+          <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/core/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1541">
-          <caret line="610" column="46" selection-start-line="610" selection-start-column="46" selection-end-line="610" selection-end-column="46" />
-          <folding>
-            <marker date="1547110081457" expanded="true" signature="47416:48771" placeholder="..." />
-          </folding>
+        <state relative-caret-position="382">
+          <caret line="605" column="59" selection-start-line="605" selection-start-column="59" selection-end-line="605" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>

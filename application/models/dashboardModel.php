@@ -53,4 +53,11 @@ Class dashboardModel extends CI_Model
         $query = $this->db->query($sql);
         return $query->result();
     }
+    function get_child($employee_id)
+    {
+        $sql3 = " SELECT employee_id, agency_id, position_id, employee_name, employee_post_name,  emloyee_email, parent_id FROM employee where agency_id=2 and parent_id= $employee_id;";
+        $query3 = $this->db->query($sql3);
+        return $query3->result();
+    }
+ 
 }

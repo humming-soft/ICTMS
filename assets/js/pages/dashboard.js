@@ -24,20 +24,17 @@ var Dashboard = function() {
                 $node[0].id = getId();
             }
         });
-
         oc.$chartContainer.on('click', '.node', function () {
             var $this = $(this);
             $('#selected-node').val($this.find('.title').text()).data('node', $this);
             var position = $this.find('.content').text();
             $("#position-node").val(position);    
         });
-
         oc.$chartContainer.on('click', '.orgchart', function (event) {
             if (!$(event.target).closest('.node').length) {
                 $('#selected-node').val('');
             }
         });
-
         $('input[name="chart-state"]').on('click', function () {
             $('.orgchart').toggleClass('edit-state', this.value !== 'view');
             $('#edit-panel').toggleClass('edit-state', this.value === 'view');
@@ -49,7 +46,6 @@ var Dashboard = function() {
                 $('#btn-reset').trigger('click');
             }
         });
-
         $('input[name="node-type"]').on('click', function () {
             var $this = $(this);
             if ($this.val() === 'parent') {
@@ -59,20 +55,13 @@ var Dashboard = function() {
                 $('#edit-panel').removeClass('edit-parent-node');
             }
         });
-
-        /*  $('#btn-add-input').on('click', function() {
-         $('#new-nodelist').append('<li><input type="text" class="new-node"></li>');
-         });*/
-
         $('#btn-remove-input').on('click', function () {
             var inputs = $('#new-nodelist').children('li');
             if (inputs.length > 1) {
                 inputs.last().remove();
             }
         });
-
         $('#btn-add-nodes').on('click', function () {
-
             var $chartContainer = $('#orgchart-container');
             var nodeVals = [];
             var position = $("#position").val();
@@ -140,8 +129,6 @@ var Dashboard = function() {
                     }));
                 }
             }
-
-
         });
 
         $('#btn-delete-nodes').on('click', function () {
@@ -188,7 +175,7 @@ var Dashboard = function() {
                     '<div class="card-img-actions d-inline-block">'+
                         '<img class="img-fluid rounded-circle" src="'+base_url+'assets/img/avatar/av5.png" width="42" height="42" alt="">'+
                         '<div class="card-img-actions-overlay card-img rounded-circle"><a href="#" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round"><i class="icon-bin"></i></a></div></div>'+
-                    '<div class="media-body"><h6 class="mb-0">'+employee+'</h6><span class="text-muted">'+post+'</span></div></div></div></div>' );
+                    '<div class="media-body">  <input type="hidden" class="form-control" value="1" name="userid[]"><h6 class="mb-0">'+employee+'</h6><span class="text-muted">'+post+'</span></div></div></div></div>' );
         });  
     };
  

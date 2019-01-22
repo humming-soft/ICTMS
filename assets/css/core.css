@@ -15575,3 +15575,28 @@ body.sidebar-visualization-hidden #components{
     color: #046fdf;
     letter-spacing: 1px;
 }
+.projects-list .project .project-users {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 220px;
+    flex: 0 0 220px;
+}
+.projects-list .project .project-users .avatar {
+    width: 35px;
+    border-radius: 35px;
+    -webkit-box-shadow: 0px 0px 0px 5px #fff;
+    box-shadow: 0px 0px 0px 5px #fff;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.projects-list .project .project-users .more {
+    background-color: #047bf8;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    left: -10px;
+    padding: 2px 7px;
+    border-radius: 12px;
+    color: #fff;
+    font-size: .63rem;
+}

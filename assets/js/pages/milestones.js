@@ -622,7 +622,7 @@ var Milestones = function() {
         gantt.config.scale_unit = "month";
         gantt.config.date_scale = "%m - %Y";
         gantt.config.date_grid = "%d-%M-%Y";
-        ganttModules.zoom.setZoom(4);
+        // ganttModules.zoom.setZoom(4);
         gantt.init("wbs_milestones");
         gantt.load(base_url+"assets/js/pages/resource_project_multiple_owners.json");
     

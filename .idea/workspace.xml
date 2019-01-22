@@ -5,32 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4438246e-27b5-42bb-a4dc-2ae6da717c3b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session0cnm2l2sjgm3i4ecld6ptf6mtl15uihk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session21c2l8224p67ak899iq3i5qc3sbhai1b" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session38g2r4a17kiphbn7ol3ru6mp1pt63dch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session3eicarsqqe441d8d4urg7b8o29do1roj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session4a1atgrg2mhh3d40dhsdijplnhdp9p7b" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session5d9eenbf15n7cgmjlmm8mngun451e1c7" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session7fu9anfgor57r8uh52s9imd6rvgi6e9o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session7ni6nn8rls09gdfvlrmcvt944dv4sc9p" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session8hablffp5pmth2fkjnqqk88gnqpva84i" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_session9i6ogjad2nk8k1gscmnjr0m95u1qm64s" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessiona7bmmgactb67favq0vq2gs1elt4cm4vt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionalqnkl8fgpjht3aimbko1ksbimg6rar8" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionctoqkqg8jb55e5ovs6qhvuavb79qp66n" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionii2bjv5ka9vkc9f3gbrvn0hqu0jt71bo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionljelo4ohjhvdvg7p1fbdcul63u6k9fos" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionlqj83btkv01h55iubfq7lfrlg7gdr7tn" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessiono5pfr4hlpq6sq888jbol786u0v4jbmk1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionqp8s6r3v5k7dueconigejqrff3bo0tin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionr6us16sfk42em6tit6vk6c9gfao7a6hk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionruv7do79mddpft6dqjtve0s9c27e16qi" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessiont0720ffemj5q74odun7o13tfiphubgmv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessiont4lsov7n8dknv72ik30er311dt6ii0mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/application/cache/ictms_sessionun19r16s79m7s7as75a16respa0gqhiu" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/dashboardModel.php" afterPath="$PROJECT_DIR$/application/models/dashboardModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/pages/dashboard.js" afterPath="$PROJECT_DIR$/assets/js/pages/dashboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/language/en/dashboard_lang.php" afterPath="$PROJECT_DIR$/application/language/en/dashboard_lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/core/dashboard.php" afterPath="$PROJECT_DIR$/application/views/core/dashboard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/core/fragments/footer.php" afterPath="$PROJECT_DIR$/application/views/core/fragments/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/core/fragments/main_navbar.php" afterPath="$PROJECT_DIR$/application/views/core/fragments/main_navbar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/core/projects/fragments/secondary_navbar.php" afterPath="$PROJECT_DIR$/application/views/core/projects/fragments/secondary_navbar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/core.css" afterPath="$PROJECT_DIR$/assets/css/core.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/pages/milestones.js" afterPath="$PROJECT_DIR$/assets/js/pages/milestones.js" />
     </list>
     <ignored path="ictms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,8 +57,8 @@
       <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/core/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="861">
-              <caret line="734" column="61" selection-start-line="734" selection-start-column="61" selection-end-line="734" selection-end-column="61" />
+            <state relative-caret-position="382">
+              <caret line="605" column="59" selection-start-line="605" selection-start-column="59" selection-end-line="605" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -180,10 +162,10 @@
       <list>
         <option value="$PROJECT_DIR$/application/controllers/project.php" />
         <option value="$PROJECT_DIR$/application/models/projectModel.php" />
-        <option value="$PROJECT_DIR$/application/views/core/dashboard.php" />
         <option value="$PROJECT_DIR$/assets/js/pages/dashboard.js" />
         <option value="$PROJECT_DIR$/application/models/dashboardModel.php" />
         <option value="$PROJECT_DIR$/application/controllers/dashboard.php" />
+        <option value="$PROJECT_DIR$/application/views/core/dashboard.php" />
       </list>
     </option>
   </component>
@@ -227,6 +209,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -409,8 +393,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -471,17 +453,18 @@
       <workItem from="1547001890550" duration="56916000" />
       <workItem from="1547526341873" duration="2032000" />
       <workItem from="1547541728722" duration="1239000" />
+      <workItem from="1548133997758" duration="60000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60187000" />
+    <option name="totallyTimeSpent" value="60247000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12760417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12760417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10782241" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -516,6 +499,104 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/core/ICTMS_Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/core/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/pages/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2210">
+          <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/dashboardModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+          <folding>
+            <marker date="1547521371611" expanded="true" signature="167:230" placeholder="SELECT pjt_l... pjt-location" />
+            <marker date="1547521371611" expanded="true" signature="366:429" placeholder="SELECT pjt_c... pjt-category" />
+            <marker date="1547521371611" expanded="true" signature="563:620" placeholder="SELECT pjt_s... pjt-sector" />
+            <marker date="1547521371611" expanded="true" signature="807:913" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1547521371611" expanded="true" signature="807:914" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1547521371611" expanded="true" signature="807:921" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1547521371611" expanded="true" signature="1055:1091" placeholder="SELECT thrus... thrust" />
+            <marker date="1547521371611" expanded="true" signature="1276:1283" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1547521371611" expanded="true" signature="1276:1358" placeholder="SELECT focus... focus-area" />
+            <marker date="1547521371611" expanded="true" signature="1276:1365" placeholder="SELECT focus... focus-area" />
+            <marker date="1547521371611" expanded="true" signature="1505:1512" placeholder="SELECT focus... focus-area" />
+            <marker date="1547521371611" expanded="true" signature="1505:1572" placeholder="SELECT targe... pjt-target-group" />
+            <marker date="1547521371611" expanded="true" signature="1709:1760" placeholder="SELECT posit... position" />
+            <marker date="1547521371611" expanded="true" signature="1905:2057" placeholder="SELECT emplo... employee" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/projectModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="40" />
+          <folding>
+            <marker date="1547169320245" expanded="true" signature="251:336" placeholder="SELECT max(p... pjt-master" />
+            <marker date="1547169320245" expanded="true" signature="330:336" placeholder="select journ... journal_master" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/projects/Project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="30" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -825,8 +906,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/core/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="861">
-          <caret line="734" column="61" selection-start-line="734" selection-start-column="61" selection-end-line="734" selection-end-column="61" />
+        <state relative-caret-position="382">
+          <caret line="605" column="59" selection-start-line="605" selection-start-column="59" selection-end-line="605" selection-end-column="59" />
           <folding />
         </state>
       </provider>

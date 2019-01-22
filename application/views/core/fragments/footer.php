@@ -8,7 +8,7 @@
 
         <ul class="fab-menu-inner">
             <li>
-                <div data-fab-label="Compose email">
+                <div data-fab-label="Create Project">
                     <a href="#" class="btn btn-light rounded-round btn-icon btn-float">
                         <i class="icon-pencil"></i>
                     </a>
@@ -20,14 +20,6 @@
                         <i class="icon-bubbles3"></i>
                     </a>
                     <span class="badge bg-primary-400">5</span>
-                </div>
-            </li>
-            <li>
-                <div data-fab-label="Chat with Jack">
-                    <a href="#" class="btn bg-pink-400 rounded-round btn-icon btn-float">
-                        <img src="../../../../global_assets/images/demo/users/face23.jpg" class="img-fluid rounded-circle" alt="">
-                    </a>
-                    <span class="badge badge-mark border-pink-400"></span>
                 </div>
             </li>
         </ul>

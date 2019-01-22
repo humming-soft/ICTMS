@@ -102,11 +102,11 @@
                     </div>
                 </div>
                 <!-- /filter toolbar -->
-                <div class="row m-0">
+                <div class="row m-0 projects-list">
                     <div class="col-sm-6">
 
                         <!-- Clean blog layout #1 -->
-                        <div class="card">
+                        <div class="card project">
                             <div class="card-header header-elements-inline">
                                 <h6 class="card-title font-weight-semibold">
                                     <a href="#"><i class="icon-box mr-1"></i> INTEGRATED LABOUR MARKET ANALYSIS AND REPORTING</a>
@@ -121,8 +121,18 @@
                                     <b class="font-weight-semibold">Date Initiated : <span class="d_init p-1">07-NOV-2018</span></b>
                                 </div>
                                 <div class="mb-3">
-                                    <b class="font-weight-semibold">Project Description :</b>
+                                    <b class="font-weight-semibold">Project Objective :</b>
                                     <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+                                </div>
+                                <div class="mb-3">
+                                    <b class="font-weight-semibold pb-2">Project Team :</b>
+                                    <div class="project-users">
+                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36"  src="<?=site_url('assets/img/avatar/av3.png')?>"></div>
+                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36" src="<?=site_url('assets/img/avatar/av6.png')?>"></div>
+                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36" src="<?=site_url('assets/img/avatar/av5.png')?>"></div>
+                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36" src="<?=site_url('assets/img/avatar/av1.png')?>"></div>
+                                        <div class="more">+ 5 More</div>
+                                    </div>
                                 </div>
                                 <div class="mb-3">
                                     <b class="font-weight-semibold">Project Progress :</b>
@@ -156,7 +166,7 @@
                     <div class="col-sm-6">
 
                         <!-- Clean blog layout #3 -->
-                        <div class="card">
+                        <div class="card project">
                             <div class="card-header header-elements-inline">
                                 <h6 class="card-title font-weight-semibold">
                                     <a href="#"><i class="icon-box mr-1"></i> MALAYSIAN MARINE DEPARTMENT INFORMATION SYSTEM</a>
@@ -173,6 +183,15 @@
                                 <div class="mb-3">
                                     <b class="font-weight-semibold">Project Description :</b>
                                     <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+                                </div>
+                                <div class="mb-3">
+                                    <b class="font-weight-semibold pb-2">Project Team :</b>
+                                    <div class="project-users">
+                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36"  src="<?=site_url('assets/img/avatar/av2.png')?>"></div>
+                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36" src="<?=site_url('assets/img/avatar/av3.png')?>"></div>
+                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36" src="<?=site_url('assets/img/avatar/av4.png')?>"></div>
+                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36" src="<?=site_url('assets/img/avatar/av6.png')?>"></div>
+                                    </div>
                                 </div>
                                 <div class="mb-3">
                                     <b class="font-weight-semibold">Project Progress :</b>
@@ -202,11 +221,11 @@
 
                     </div>
                 </div>
-                <div class="row m-0">
+                <div class="row m-0 projects-list">
                     <div class="col-sm-6">
 
                         <!-- Clean blog layout #1 -->
-                        <div class="card">
+                        <div class="card project">
                             <div class="card-header header-elements-inline">
                                 <h6 class="card-title font-weight-semibold">
                                     <a href="#"><i class="icon-box mr-1"></i> EDUCATION NATIONAL REGISTRY </a>
@@ -223,6 +242,16 @@
                                 <div class="mb-3">
                                     <b class="font-weight-semibold">Project Description :</b>
                                     <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+                                </div>
+                                <div class="mb-3">
+                                    <b class="font-weight-semibold pb-2">Project Team :</b>
+                                    <div class="project-users">
+                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36"  src="<?=site_url('assets/img/avatar/av1.png')?>"></div>
+                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36" src="<?=site_url('assets/img/avatar/av2.png')?>"></div>
+                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36" src="<?=site_url('assets/img/avatar/av4.png')?>"></div>
+                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36" src="<?=site_url('assets/img/avatar/av6.png')?>"></div>
+                                        <div class="more">+ 2 More</div>
+                                    </div>
                                 </div>
                                 <div class="mb-3">
                                     <b class="font-weight-semibold">Project Progress :</b>
@@ -256,7 +285,7 @@
                     <div class="col-sm-6">
 
                         <!-- Clean blog layout #3 -->
-                        <div class="card">
+                        <div class="card project">
                             <div class="card-header header-elements-inline">
                                 <h6 class="card-title font-weight-semibold">
                                     <a href="#"><i class="icon-box mr-1"></i> TOLL INFORMATION SYSTEM </a>
@@ -273,6 +302,16 @@
                                 <div class="mb-3">
                                     <b class="font-weight-semibold">Project Description :</b>
                                     <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+                                </div>
+                                <div class="mb-3">
+                                    <b class="font-weight-semibold pb-2">Project Team :</b>
+                                    <div class="project-users">
+                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36"  src="<?=site_url('assets/img/avatar/av5.png')?>"></div>
+                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36" src="<?=site_url('assets/img/avatar/av4.png')?>"></div>
+                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36" src="<?=site_url('assets/img/avatar/av2.png')?>"></div>
+                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36" src="<?=site_url('assets/img/avatar/av6.png')?>"></div>
+                                        <div class="more">+ 6 More</div>
+                                    </div>
                                 </div>
                                 <div class="mb-3">
                                     <b class="font-weight-semibold">Project Progress :</b>
@@ -565,8 +604,10 @@
                             </div>
 
                             <div class="repeater-default"> 
-                            <a class="float-right text-right link-modal" data-repeater-create  href="#"><i class="icon-plus2 mr-1"></i><span>Add</span></a>         
-                                <div data-repeater-list="target">
+                                <div class="d-flex flex-column">
+                                    <a class="float-right text-right link-modal" data-repeater-create  href="#"><i class="icon-plus2 mr-1"></i><span>Add</span></a>  
+                                </div>       
+                                <div data-repeater-list="car">
                                     <div data-repeater-item>
                                         <div class="row">
                                             <div class="col-sm-4">

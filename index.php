@@ -57,11 +57,11 @@
 	switch($_SERVER["HTTP_HOST"]){
         case "localhost":
             define('ENVIRONMENT', 'development');
-            define('BASEURL', 'http://localhost/ictms/');
+            define('BASEURL', 'http://'.$_SERVER['HTTP_HOST'].'/ictms');
 		break;
         default:
             define('ENVIRONMENT', 'production');
-            define('BASEURL', 'https://ictms.com.my'); /* Define production url */
+            define('BASEURL', 'http://'.$_SERVER['HTTP_HOST'].'/ictms'); /* Define production url */
         break;
     }
 

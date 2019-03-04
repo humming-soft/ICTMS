@@ -391,7 +391,7 @@
                     <div class="hmwks-slide">
                         <div class="hmwks-content with-gradient text-center">
                             <h4 class="hmwks-title">Project Information</h4>
-                            <div class="hmwks-text">In this example you can see a form where you can request</div>
+                            <div class="hmwks-text">Please provide the following project information.</div>
                                 <div class="row text-left">
                                     <div class="col-sm-6">
                                         <div class="form-group"><label for="">Project Owner</label>
@@ -440,53 +440,12 @@
                                             </div>
 
                                             <div class="media-body">
-                                                <h6 class="mb-0">Amirul Bin Ahamed</h6>
-                                                <span class="text-muted">Lead Developer</span>
+                                                <h6 class="mb-0">Mr. Idrul Fairuz Ali Khan</h6>
+                                                <span class="text-muted">Project Manager</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="col-xl-4 col-md-6">
-                                    <div class="card card-body">
-                                        <div class="media">
-                                            <div class="card-img-actions d-inline-block">
-                                                <img class="img-fluid rounded-circle" src="<?=site_url('assets/img/avatar/av2.png')?>" width="42" height="42" alt="">
-                                                <div class="card-img-actions-overlay card-img rounded-circle">
-                                                    <a href="#" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round">
-                                                        <i class="icon-bin"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-
-                                            <div class="media-body">
-                                                <h6 class="mb-0">Isrul Bin Fairuz</h6>
-                                                <span class="text-muted">Network Engineer</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-xl-4 col-md-6">
-                                    <div class="card card-body">
-                                        <div class="media">
-                                            <div class="card-img-actions d-inline-block">
-                                                <img class="img-fluid rounded-circle" src="<?=site_url('assets/img/avatar/av4.png')?>" width="42" height="42" alt="">
-                                                <div class="card-img-actions-overlay card-img rounded-circle">
-                                                    <a href="#" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round">
-                                                        <i class="icon-bin"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-
-                                            <div class="media-body">
-                                                <h6 class="mb-0">Siti Binti Ahamed</h6>
-                                                <span class="text-muted">Front-End Developer</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                                 <div class="col-xl-4 col-md-6">
                                     <div class="card card-body">
                                         <div class="media">
@@ -500,8 +459,8 @@
                                             </div>
 
                                             <div class="media-body">
-                                                <h6 class="mb-0">Fahmi Bin Faaris</h6>
-                                                <span class="text-muted">Business Analyst</span>
+                                                <h6 class="mb-0">Sharoul Ali</h6>
+                                                <span class="text-muted">Project Director</span>
                                             </div>
                                         </div>
                                     </div>
@@ -512,8 +471,7 @@
                     <div class="hmwks-slide">
                         <div class="hmwks-content with-gradient text-center">
                             <h4 class="hmwks-title">Project Categorization</h4>
-                            <div class="hmwks-text">In this example you can showcase some of the features of
-                                your application.</div>
+                            <div class="hmwks-text">Please provide the following project information.</div>
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="form-group text-left"><label for="">Location</label>

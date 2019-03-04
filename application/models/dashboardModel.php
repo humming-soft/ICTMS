@@ -5,51 +5,66 @@ Class dashboardModel extends CI_Model
 {
     function select_location()
     {
-        $sql = "SELECT pjt_location_id, pjt_location_name FROM \"pjt-location\"";
+        $sql = "SELECT pjt_location_id, pjt_location_name FROM tbl_pjt_location";
         $query = $this->db->query($sql);
         return $query->result();
     }
     function select_category()
     {
-        $sql = "SELECT pjt_category_id, pjt_category_name FROM \"pjt-category\"";
+        $sql = "SELECT pjt_category_id, pjt_category_name FROM tbl_pjt_category";
         $query = $this->db->query($sql);
         return $query->result();
     }
     function select_sector()
     {
-        $sql = "SELECT pjt_sector_id, pjt_sector_name FROM \"pjt-sector\"";
+        $sql = "SELECT pjt_sector_id, pjt_sector_name FROM tbl_pjt_sector order by pjt_sector_name";
         $query = $this->db->query($sql);
         return $query->result();
     }
     function select_sub_sector($sectorId)
     {
         $values=$sectorId['subSector'];
-        $sql = "SELECT pjt_sub_sector_id, pjt_sector_id, pjt_sub_sector_name FROM \"pjt-sub-sector\" where pjt_sector_id = $values";
+        $sql = "SELECT pjt_sub_sector_id, pjt_sector_id, pjt_sub_sector_name FROM tbl_pjt_sub_sector where pjt_sector_id = $values order by pjt_sub_sector_name";
         $query = $this->db->query($sql);
         return $query->result();
     }
     function select_thrust()
     {
-        $sql = "SELECT thrust_id, thrust FROM thrust";
+        $sql = "SELECT thrust_id, thrust FROM tbl_thrust";
         $query = $this->db->query($sql);
         return $query->result();
     }
     function select_focusarea($thrustId)
     {
         $values = $thrustId['thrust'];
-        $sql = "SELECT focus_area_id, thrust_id, focus_area FROM \"focus-area\" where thrust_id = $values";
+        $sql = "SELECT focus_area_id, thrust_id, focus_area FROM tbl_focus_area where thrust_id = $values";
         $query = $this->db->query($sql);
         return $query->result();
     }
+    function get_outcomes($thrustId)
+    {
+        $values = $thrustId['thrust'];
+        $sql = "SELECT outcomes_id, outcomes FROM tbl_outcomes where thrust_id = '$values'";
+        $query = $this->db->query($sql);
+        return $query->result();
+    }
+    function get_strategies($focusareaId)
+    {
+        $values = $focusareaId['focusarea'];
+        $sql = "SELECT strategies_id,strategy  FROM tbl_strategies where focus_area_id = $values";
+        $query = $this->db->query($sql);
+        return $query->result();
+    }
+
     function select_target_group()
     {
-        $sql = "SELECT target_group_id, target_group_name FROM \"pjt-target-group\";";
+        $sql = "SELECT target_group_id, target_group_name FROM tbl_pjt_target_group";
         $query = $this->db->query($sql);
         return $query->result();
     }
     function select_position()
     {
-        $sql = "SELECT position_id, position_name FROM \"position\";";
+        $sql = "SELECT sec_role_id, sec_role_name FROM sec_role;";
         $query = $this->db->query($sql);
         return $query->result();
     }
@@ -59,5 +74,39 @@ Class dashboardModel extends CI_Model
         $query3 = $this->db->query($sql3);
         return $query3->result();
     }
- 
+    public function get_ogchart( $userid)
+    {
+        $data = array();
+        $parentKey = $userid;
+        $sql3 = " SELECT user_id, user_name, user_full_name,  sec_role_name,  agency_id,  parent_user_id FROM sec_user join  sec_role on sec_role.sec_role_id=sec_user.sec_role_id and agency_id=1 and parent_user_id is null";
+        $query3 = $this->db->query($sql3);
+        $result= $query3->result();
+        foreach($result as $key => $value)
+        {
+            $data['id'] = $value->user_id;
+            $data['name'] = $value->user_full_name;
+            $data['title'] = $value->sec_role_name;
+            $data['children'] = $this->membersTree($parentKey);
+        }
+         return $data;
+       }
+        function membersTree($parentKey)
+        {
+            $row1 =array();
+            $sql3 = " SELECT user_id as id, user_name, user_full_name as name,  sec_role_name,  agency_id,  parent_user_id FROM sec_user join  sec_role on sec_role.sec_role_id=sec_user.sec_role_id and agency_id=1 and parent_user_id = $parentKey";
+            $query3 = $this->db->query($sql3);
+            $row = $query3->result();
+            foreach($row as $key => $value)
+            {
+                $id = $value->id;
+                $row1[$key]['id'] = $value->id;
+                $row1[$key]['name'] = $value->name;
+                $row1[$key]['title'] = $value->sec_role_name;
+                $row1[$key]['children'] = array_values($this->membersTree($value->id));
+            }
+
+            return $row1;
+        }
+
+
 }

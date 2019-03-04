@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/assets/js/pages/dashboard.js" line="177" />
+    <bookmark url="file://$PROJECT_DIR$/assets/js/pages/dashboard.js" line="192" />
+    <bookmark url="file://$PROJECT_DIR$/assets/js/pages/dashboard.js" line="269" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4438246e-27b5-42bb-a4dc-2ae6da717c3b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/language/en/dashboard_lang.php" afterPath="$PROJECT_DIR$/application/language/en/dashboard_lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/dashboard.php" afterPath="$PROJECT_DIR$/application/controllers/dashboard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/login.php" afterPath="$PROJECT_DIR$/application/controllers/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/project.php" afterPath="$PROJECT_DIR$/application/controllers/project.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/dashboardModel.php" afterPath="$PROJECT_DIR$/application/models/dashboardModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/projectModel.php" afterPath="$PROJECT_DIR$/application/models/projectModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/user.php" afterPath="$PROJECT_DIR$/application/models/user.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/core/dashboard.php" afterPath="$PROJECT_DIR$/application/views/core/dashboard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/core/fragments/footer.php" afterPath="$PROJECT_DIR$/application/views/core/fragments/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/core/fragments/main_navbar.php" afterPath="$PROJECT_DIR$/application/views/core/fragments/main_navbar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/core/projects/fragments/secondary_navbar.php" afterPath="$PROJECT_DIR$/application/views/core/projects/fragments/secondary_navbar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/core.css" afterPath="$PROJECT_DIR$/assets/css/core.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/pages/milestones.js" afterPath="$PROJECT_DIR$/assets/js/pages/milestones.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/core/fragments/header.php" afterPath="$PROJECT_DIR$/application/views/core/fragments/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/pages/dashboard.js" afterPath="$PROJECT_DIR$/assets/js/pages/dashboard.js" />
     </list>
     <ignored path="ictms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,51 +37,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ICTMS_Controller.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/core/ICTMS_Controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/core/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="605" column="59" selection-start-line="605" selection-start-column="59" selection-end-line="605" selection-end-column="59" />
+            <state relative-caret-position="221">
+              <caret line="625" column="63" selection-start-line="625" selection-start-column="63" selection-end-line="625" selection-end-column="63" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/pages/dashboard.js">
+      <file leaf-file-name="project.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/controllers/project.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2210">
-              <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/dashboard.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+            <state relative-caret-position="211">
+              <caret line="48" column="70" selection-start-line="48" selection-start-column="70" selection-end-line="48" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -87,34 +60,35 @@
       <file leaf-file-name="dashboardModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/dashboardModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+            <state relative-caret-position="306">
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding>
-                <marker date="1547521371611" expanded="true" signature="167:230" placeholder="SELECT pjt_l... pjt-location" />
-                <marker date="1547521371611" expanded="true" signature="366:429" placeholder="SELECT pjt_c... pjt-category" />
-                <marker date="1547521371611" expanded="true" signature="563:620" placeholder="SELECT pjt_s... pjt-sector" />
-                <marker date="1547521371611" expanded="true" signature="807:913" placeholder="SELECT pjt_s... pjt-sub-sector" />
-                <marker date="1547521371611" expanded="true" signature="807:914" placeholder="SELECT pjt_s... pjt-sub-sector" />
-                <marker date="1547521371611" expanded="true" signature="807:921" placeholder="SELECT pjt_s... pjt-sub-sector" />
-                <marker date="1547521371611" expanded="true" signature="1055:1091" placeholder="SELECT thrus... thrust" />
-                <marker date="1547521371611" expanded="true" signature="1276:1283" placeholder="SELECT pjt_s... pjt-sub-sector" />
-                <marker date="1547521371611" expanded="true" signature="1276:1358" placeholder="SELECT focus... focus-area" />
-                <marker date="1547521371611" expanded="true" signature="1276:1365" placeholder="SELECT focus... focus-area" />
-                <marker date="1547521371611" expanded="true" signature="1505:1512" placeholder="SELECT focus... focus-area" />
-                <marker date="1547521371611" expanded="true" signature="1505:1572" placeholder="SELECT targe... pjt-target-group" />
-                <marker date="1547521371611" expanded="true" signature="1709:1760" placeholder="SELECT posit... position" />
-                <marker date="1547521371611" expanded="true" signature="1905:2057" placeholder="SELECT emplo... employee" />
+                <marker date="1551673784461" expanded="true" signature="167:230" placeholder="SELECT pjt_l... pjt-location" />
+                <marker date="1551673784461" expanded="true" signature="366:429" placeholder="SELECT pjt_c... pjt-category" />
+                <marker date="1551673784461" expanded="true" signature="563:645" placeholder="SELECT pjt_s... pjt-sector" />
+                <marker date="1551673784461" expanded="true" signature="832:938" placeholder="SELECT pjt_s... pjt-sub-sector" />
+                <marker date="1551673784461" expanded="true" signature="832:939" placeholder="SELECT pjt_s... pjt-sub-sector" />
+                <marker date="1551673784461" expanded="true" signature="832:946" placeholder="SELECT pjt_s... pjt-sub-sector" />
+                <marker date="1551673784461" expanded="true" signature="832:975" placeholder="SELECT pjt_s... pjt-sub-sector" />
+                <marker date="1551673784461" expanded="true" signature="1109:1149" placeholder="SELECT thrus... thrust" />
+                <marker date="1551673784461" expanded="true" signature="1334:1341" placeholder="SELECT pjt_s... pjt-sub-sector" />
+                <marker date="1551673784461" expanded="true" signature="1334:1416" placeholder="SELECT focus... focus-area" />
+                <marker date="1551673784461" expanded="true" signature="1334:1423" placeholder="SELECT focus... focus-area" />
+                <marker date="1551673784461" expanded="true" signature="1604:1666" placeholder="SELECT outco... outcomes" />
+                <marker date="1551673784461" expanded="true" signature="1604:1668" placeholder="SELECT outco... outcomes" />
+                <marker date="1551673784461" expanded="true" signature="1604:1678" placeholder="SELECT outco... outcomes" />
+                <marker date="1551673784461" expanded="true" signature="1870:1943" placeholder="SELECT strat... strategies" />
+                <marker date="1551673784461" expanded="true" signature="2091:2098" placeholder="SELECT focus... focus-area" />
+                <marker date="1551673784461" expanded="true" signature="2091:2138" placeholder="SELECT targe... pjt-target-group" />
+                <marker date="1551673784461" expanded="true" signature="2091:2158" placeholder="SELECT targe... tbl_pjt_target_group" />
+                <marker date="1551673784461" expanded="true" signature="2294:2341" placeholder="SELECT posit... position" />
+                <marker date="1551673784461" expanded="true" signature="2486:2638" placeholder="SELECT emplo... employee" />
+                <marker date="1551673784461" expanded="true" signature="2858:2865" placeholder="SELECT emplo... employee" />
+                <marker date="1551673784461" expanded="true" signature="2858:3054" placeholder="SELECT user_... sec_user" />
+                <marker date="1551673784461" expanded="true" signature="2858:3061" placeholder="SELECT user_... sec_user" />
+                <marker date="1551673784461" expanded="true" signature="3550:3761" placeholder="SELECT user_... sec_user" />
+                <marker date="1551673784461" expanded="true" signature="3550:3762" placeholder="SELECT user_... sec_user" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="project.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/project.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -122,31 +96,77 @@
       <file leaf-file-name="projectModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/projectModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="40" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="40" />
+            <state relative-caret-position="629">
+              <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
               <folding>
-                <marker date="1547169320245" expanded="true" signature="251:336" placeholder="SELECT max(p... pjt-master" />
-                <marker date="1547169320245" expanded="true" signature="330:336" placeholder="select journ... journal_master" />
+                <marker date="1551675918448" expanded="true" signature="255:340" placeholder="SELECT max(p... tbl_pjt_master" />
+                <marker date="1551675918448" expanded="true" signature="909:952" placeholder="SELECT max(u... sec_user" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Project.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/projects/Project.php">
+      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+            <state relative-caret-position="245">
+              <caret line="15" column="44" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/config/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-102">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/user.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+              <folding>
+                <marker date="1551675617062" expanded="true" signature="834:916" placeholder="update sec_u... " />
+                <marker date="1551675617062" expanded="true" signature="1597:1679" placeholder="update sec_u... " />
+                <marker date="1551675617062" expanded="true" signature="3498:3807" placeholder="select a.sec... sec_group" />
+                <marker date="1551675617062" expanded="true" signature="4019:4078" placeholder="SELECT sec_r... sec_role" />
+                <marker date="1551675617062" expanded="true" signature="4334:4568" placeholder="SELECT tbl_m... tbl_agency" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="expected_benefits.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/core/projects/expected_benefits.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/config/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="99" column="24" selection-start-line="99" selection-start-column="24" selection-end-line="99" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/login.php">
+        <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="55" column="30" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="30" />
+            <state relative-caret-position="424">
+              <caret line="275" column="78" selection-start-line="275" selection-start-column="69" selection-end-line="275" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -160,12 +180,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/controllers/project.php" />
-        <option value="$PROJECT_DIR$/application/models/projectModel.php" />
-        <option value="$PROJECT_DIR$/assets/js/pages/dashboard.js" />
-        <option value="$PROJECT_DIR$/application/models/dashboardModel.php" />
+        <option value="$PROJECT_DIR$/application/views/fragments/header_non_auth.php" />
+        <option value="$PROJECT_DIR$/application/controllers/login.php" />
+        <option value="$PROJECT_DIR$/application/views/core/fragments/header.php" />
         <option value="$PROJECT_DIR$/application/controllers/dashboard.php" />
+        <option value="$PROJECT_DIR$/assets/js/pages/dashboard.js" />
+        <option value="$PROJECT_DIR$/application/config/database.php" />
+        <option value="$PROJECT_DIR$/application/models/dashboardModel.php" />
+        <option value="$PROJECT_DIR$/application/models/user.php" />
+        <option value="$PROJECT_DIR$/application/models/projectModel.php" />
         <option value="$PROJECT_DIR$/application/views/core/dashboard.php" />
+        <option value="$PROJECT_DIR$/application/controllers/project.php" />
       </list>
     </option>
   </component>
@@ -179,10 +204,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="1" />
+    <option name="y" value="1" />
+    <option name="width" value="1918" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -279,6 +304,140 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="visualization" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orgchart" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ictms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ictms" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="visualization" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ictms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ictms" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ictms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ictms" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forms" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ictms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ictms" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forms" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repeater" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ictms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ictms" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -351,6 +510,110 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ictms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ictms" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ictms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ictms" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fragments" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ictms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ictms" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fragments" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ictms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ictms" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="models" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -387,6 +650,46 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ictms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ictms" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ictms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ictms" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="config" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -396,7 +699,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../imas" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
@@ -453,26 +756,41 @@
       <workItem from="1547001890550" duration="56916000" />
       <workItem from="1547526341873" duration="2032000" />
       <workItem from="1547541728722" duration="1239000" />
-      <workItem from="1548133997758" duration="60000" />
+      <workItem from="1548133997758" duration="659000" />
+      <workItem from="1548234834781" duration="33130000" />
+      <workItem from="1548408702892" duration="132000" />
+      <workItem from="1548643075497" duration="8780000" />
+      <workItem from="1548732890144" duration="5970000" />
+      <workItem from="1549264803545" duration="1257000" />
+      <workItem from="1549505280130" duration="18000" />
+      <workItem from="1549506998710" duration="371000" />
+      <workItem from="1549519839101" duration="39000" />
+      <workItem from="1549524313818" duration="1835000" />
+      <workItem from="1549606879317" duration="3271000" />
+      <workItem from="1550552200969" duration="2904000" />
+      <workItem from="1550799427811" duration="593000" />
+      <workItem from="1550802973373" duration="754000" />
+      <workItem from="1551667302150" duration="4000" />
+      <workItem from="1551667335579" duration="5979000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60247000" />
+    <option name="totallyTimeSpent" value="125883000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1" y="1" width="1918" height="1038" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12760417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16508938" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10782241" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.106681034" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -488,22 +806,22 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/application/models/projectModel.php</url>
-          <line>11</line>
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/application/views/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="30" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -511,7 +829,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -535,7 +852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -544,20 +860,31 @@
         <state relative-caret-position="799">
           <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
           <folding>
-            <marker date="1547521371611" expanded="true" signature="167:230" placeholder="SELECT pjt_l... pjt-location" />
-            <marker date="1547521371611" expanded="true" signature="366:429" placeholder="SELECT pjt_c... pjt-category" />
-            <marker date="1547521371611" expanded="true" signature="563:620" placeholder="SELECT pjt_s... pjt-sector" />
-            <marker date="1547521371611" expanded="true" signature="807:913" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1547521371611" expanded="true" signature="807:914" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1547521371611" expanded="true" signature="807:921" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1547521371611" expanded="true" signature="1055:1091" placeholder="SELECT thrus... thrust" />
-            <marker date="1547521371611" expanded="true" signature="1276:1283" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1547521371611" expanded="true" signature="1276:1358" placeholder="SELECT focus... focus-area" />
-            <marker date="1547521371611" expanded="true" signature="1276:1365" placeholder="SELECT focus... focus-area" />
-            <marker date="1547521371611" expanded="true" signature="1505:1512" placeholder="SELECT focus... focus-area" />
-            <marker date="1547521371611" expanded="true" signature="1505:1572" placeholder="SELECT targe... pjt-target-group" />
-            <marker date="1547521371611" expanded="true" signature="1709:1760" placeholder="SELECT posit... position" />
-            <marker date="1547521371611" expanded="true" signature="1905:2057" placeholder="SELECT emplo... employee" />
+            <marker date="1551673784461" expanded="true" signature="167:230" placeholder="SELECT pjt_l... pjt-location" />
+            <marker date="1551673784461" expanded="true" signature="366:429" placeholder="SELECT pjt_c... pjt-category" />
+            <marker date="1551673784461" expanded="true" signature="563:645" placeholder="SELECT pjt_s... pjt-sector" />
+            <marker date="1551673784461" expanded="true" signature="832:938" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551673784461" expanded="true" signature="832:939" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551673784461" expanded="true" signature="832:946" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551673784461" expanded="true" signature="832:975" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551673784461" expanded="true" signature="1109:1149" placeholder="SELECT thrus... thrust" />
+            <marker date="1551673784461" expanded="true" signature="1334:1341" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551673784461" expanded="true" signature="1334:1416" placeholder="SELECT focus... focus-area" />
+            <marker date="1551673784461" expanded="true" signature="1334:1423" placeholder="SELECT focus... focus-area" />
+            <marker date="1551673784461" expanded="true" signature="1604:1666" placeholder="SELECT outco... outcomes" />
+            <marker date="1551673784461" expanded="true" signature="1604:1668" placeholder="SELECT outco... outcomes" />
+            <marker date="1551673784461" expanded="true" signature="1604:1678" placeholder="SELECT outco... outcomes" />
+            <marker date="1551673784461" expanded="true" signature="1870:1943" placeholder="SELECT strat... strategies" />
+            <marker date="1551673784461" expanded="true" signature="2091:2098" placeholder="SELECT focus... focus-area" />
+            <marker date="1551673784461" expanded="true" signature="2091:2138" placeholder="SELECT targe... pjt-target-group" />
+            <marker date="1551673784461" expanded="true" signature="2091:2158" placeholder="SELECT targe... tbl_pjt_target_group" />
+            <marker date="1551673784461" expanded="true" signature="2294:2341" placeholder="SELECT posit... position" />
+            <marker date="1551673784461" expanded="true" signature="2486:2638" placeholder="SELECT emplo... employee" />
+            <marker date="1551673784461" expanded="true" signature="2858:2865" placeholder="SELECT emplo... employee" />
+            <marker date="1551673784461" expanded="true" signature="2858:3054" placeholder="SELECT user_... sec_user" />
+            <marker date="1551673784461" expanded="true" signature="2858:3061" placeholder="SELECT user_... sec_user" />
+            <marker date="1551673784461" expanded="true" signature="3550:3761" placeholder="SELECT user_... sec_user" />
+            <marker date="1551673784461" expanded="true" signature="3550:3762" placeholder="SELECT user_... sec_user" />
           </folding>
         </state>
       </provider>
@@ -574,10 +901,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="40" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="40" />
-          <folding>
-            <marker date="1547169320245" expanded="true" signature="251:336" placeholder="SELECT max(p... pjt-master" />
-            <marker date="1547169320245" expanded="true" signature="330:336" placeholder="select journ... journal_master" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -585,7 +908,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -593,7 +915,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
           <caret line="55" column="30" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -601,7 +922,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -609,105 +929,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/core/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/pages/dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2210">
-          <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/dashboardModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
-          <folding>
-            <marker date="1547521371611" expanded="true" signature="167:230" placeholder="SELECT pjt_l... pjt-location" />
-            <marker date="1547521371611" expanded="true" signature="366:429" placeholder="SELECT pjt_c... pjt-category" />
-            <marker date="1547521371611" expanded="true" signature="563:620" placeholder="SELECT pjt_s... pjt-sector" />
-            <marker date="1547521371611" expanded="true" signature="807:913" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1547521371611" expanded="true" signature="807:914" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1547521371611" expanded="true" signature="807:921" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1547521371611" expanded="true" signature="1055:1091" placeholder="SELECT thrus... thrust" />
-            <marker date="1547521371611" expanded="true" signature="1276:1283" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1547521371611" expanded="true" signature="1276:1358" placeholder="SELECT focus... focus-area" />
-            <marker date="1547521371611" expanded="true" signature="1276:1365" placeholder="SELECT focus... focus-area" />
-            <marker date="1547521371611" expanded="true" signature="1505:1512" placeholder="SELECT focus... focus-area" />
-            <marker date="1547521371611" expanded="true" signature="1505:1572" placeholder="SELECT targe... pjt-target-group" />
-            <marker date="1547521371611" expanded="true" signature="1709:1760" placeholder="SELECT posit... position" />
-            <marker date="1547521371611" expanded="true" signature="1905:2057" placeholder="SELECT emplo... employee" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/project.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/projectModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="40" />
-          <folding>
-            <marker date="1547169320245" expanded="true" signature="251:336" placeholder="SELECT max(p... pjt-master" />
-            <marker date="1547169320245" expanded="true" signature="330:336" placeholder="select journ... journal_master" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/projects/Project.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="30" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/core/ICTMS_Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -731,7 +952,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -740,20 +960,31 @@
         <state relative-caret-position="799">
           <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
           <folding>
-            <marker date="1547521371611" expanded="true" signature="167:230" placeholder="SELECT pjt_l... pjt-location" />
-            <marker date="1547521371611" expanded="true" signature="366:429" placeholder="SELECT pjt_c... pjt-category" />
-            <marker date="1547521371611" expanded="true" signature="563:620" placeholder="SELECT pjt_s... pjt-sector" />
-            <marker date="1547521371611" expanded="true" signature="807:913" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1547521371611" expanded="true" signature="807:914" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1547521371611" expanded="true" signature="807:921" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1547521371611" expanded="true" signature="1055:1091" placeholder="SELECT thrus... thrust" />
-            <marker date="1547521371611" expanded="true" signature="1276:1283" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1547521371611" expanded="true" signature="1276:1358" placeholder="SELECT focus... focus-area" />
-            <marker date="1547521371611" expanded="true" signature="1276:1365" placeholder="SELECT focus... focus-area" />
-            <marker date="1547521371611" expanded="true" signature="1505:1512" placeholder="SELECT focus... focus-area" />
-            <marker date="1547521371611" expanded="true" signature="1505:1572" placeholder="SELECT targe... pjt-target-group" />
-            <marker date="1547521371611" expanded="true" signature="1709:1760" placeholder="SELECT posit... position" />
-            <marker date="1547521371611" expanded="true" signature="1905:2057" placeholder="SELECT emplo... employee" />
+            <marker date="1551673784461" expanded="true" signature="167:230" placeholder="SELECT pjt_l... pjt-location" />
+            <marker date="1551673784461" expanded="true" signature="366:429" placeholder="SELECT pjt_c... pjt-category" />
+            <marker date="1551673784461" expanded="true" signature="563:645" placeholder="SELECT pjt_s... pjt-sector" />
+            <marker date="1551673784461" expanded="true" signature="832:938" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551673784461" expanded="true" signature="832:939" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551673784461" expanded="true" signature="832:946" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551673784461" expanded="true" signature="832:975" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551673784461" expanded="true" signature="1109:1149" placeholder="SELECT thrus... thrust" />
+            <marker date="1551673784461" expanded="true" signature="1334:1341" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551673784461" expanded="true" signature="1334:1416" placeholder="SELECT focus... focus-area" />
+            <marker date="1551673784461" expanded="true" signature="1334:1423" placeholder="SELECT focus... focus-area" />
+            <marker date="1551673784461" expanded="true" signature="1604:1666" placeholder="SELECT outco... outcomes" />
+            <marker date="1551673784461" expanded="true" signature="1604:1668" placeholder="SELECT outco... outcomes" />
+            <marker date="1551673784461" expanded="true" signature="1604:1678" placeholder="SELECT outco... outcomes" />
+            <marker date="1551673784461" expanded="true" signature="1870:1943" placeholder="SELECT strat... strategies" />
+            <marker date="1551673784461" expanded="true" signature="2091:2098" placeholder="SELECT focus... focus-area" />
+            <marker date="1551673784461" expanded="true" signature="2091:2138" placeholder="SELECT targe... pjt-target-group" />
+            <marker date="1551673784461" expanded="true" signature="2091:2158" placeholder="SELECT targe... tbl_pjt_target_group" />
+            <marker date="1551673784461" expanded="true" signature="2294:2341" placeholder="SELECT posit... position" />
+            <marker date="1551673784461" expanded="true" signature="2486:2638" placeholder="SELECT emplo... employee" />
+            <marker date="1551673784461" expanded="true" signature="2858:2865" placeholder="SELECT emplo... employee" />
+            <marker date="1551673784461" expanded="true" signature="2858:3054" placeholder="SELECT user_... sec_user" />
+            <marker date="1551673784461" expanded="true" signature="2858:3061" placeholder="SELECT user_... sec_user" />
+            <marker date="1551673784461" expanded="true" signature="3550:3761" placeholder="SELECT user_... sec_user" />
+            <marker date="1551673784461" expanded="true" signature="3550:3762" placeholder="SELECT user_... sec_user" />
           </folding>
         </state>
       </provider>
@@ -770,10 +1001,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="40" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="40" />
-          <folding>
-            <marker date="1547169320245" expanded="true" signature="251:336" placeholder="SELECT max(p... pjt-master" />
-            <marker date="1547169320245" expanded="true" signature="330:336" placeholder="select journ... journal_master" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -781,7 +1008,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -789,14 +1015,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
           <caret line="55" column="30" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="103" column="2" selection-start-line="103" selection-start-column="2" selection-end-line="103" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -807,34 +1025,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9911">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="30" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/projects/Project.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -842,72 +1036,245 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/fragments/header_non_auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="71" selection-start-line="0" selection-start-column="71" selection-end-line="0" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/core/fragments/main_navbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="173" column="42" selection-start-line="173" selection-start-column="33" selection-end-line="173" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/web-forms.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="97" column="22" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/pages/org.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/plugins/visualization/orgchart/jquery.orgchart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/core/fragments/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="66" column="50" selection-start-line="66" selection-start-column="50" selection-end-line="66" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/core/projects/org.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/core/projects/overview.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7803">
+          <caret line="459" column="14" selection-start-line="459" selection-start-column="14" selection-end-line="459" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/core/projects/milestones.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/pages/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4811">
+          <caret line="283" column="9" selection-start-line="283" selection-start-column="9" selection-end-line="283" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/project.php">
+    <entry file="file://$PROJECT_DIR$/application/views/core/projects/business_options.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/core/projects/approach.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/core/projects/architecture.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/core/projects/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/core/projects/deliverables.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/core/projects/expected_benefits.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="99" column="24" selection-start-line="99" selection-start-column="24" selection-end-line="99" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="275" column="78" selection-start-line="275" selection-start-column="69" selection-end-line="275" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+          <folding>
+            <marker date="1551675617062" expanded="true" signature="834:916" placeholder="update sec_u... " />
+            <marker date="1551675617062" expanded="true" signature="1597:1679" placeholder="update sec_u... " />
+            <marker date="1551675617062" expanded="true" signature="3498:3807" placeholder="select a.sec... sec_group" />
+            <marker date="1551675617062" expanded="true" signature="4019:4078" placeholder="SELECT sec_r... sec_role" />
+            <marker date="1551675617062" expanded="true" signature="4334:4568" placeholder="SELECT tbl_m... tbl_agency" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/projectModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="40" />
+        <state relative-caret-position="629">
+          <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
           <folding>
-            <marker date="1547169320245" expanded="true" signature="251:336" placeholder="SELECT max(p... pjt-master" />
-            <marker date="1547169320245" expanded="true" signature="330:336" placeholder="select journ... journal_master" />
+            <marker date="1551675918448" expanded="true" signature="255:340" placeholder="SELECT max(p... tbl_pjt_master" />
+            <marker date="1551675918448" expanded="true" signature="909:952" placeholder="SELECT max(u... sec_user" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+        <state relative-caret-position="245">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/dashboardModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+        <state relative-caret-position="306">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
-            <marker date="1547521371611" expanded="true" signature="167:230" placeholder="SELECT pjt_l... pjt-location" />
-            <marker date="1547521371611" expanded="true" signature="366:429" placeholder="SELECT pjt_c... pjt-category" />
-            <marker date="1547521371611" expanded="true" signature="563:620" placeholder="SELECT pjt_s... pjt-sector" />
-            <marker date="1547521371611" expanded="true" signature="807:913" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1547521371611" expanded="true" signature="807:914" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1547521371611" expanded="true" signature="807:921" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1547521371611" expanded="true" signature="1055:1091" placeholder="SELECT thrus... thrust" />
-            <marker date="1547521371611" expanded="true" signature="1276:1283" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1547521371611" expanded="true" signature="1276:1358" placeholder="SELECT focus... focus-area" />
-            <marker date="1547521371611" expanded="true" signature="1276:1365" placeholder="SELECT focus... focus-area" />
-            <marker date="1547521371611" expanded="true" signature="1505:1512" placeholder="SELECT focus... focus-area" />
-            <marker date="1547521371611" expanded="true" signature="1505:1572" placeholder="SELECT targe... pjt-target-group" />
-            <marker date="1547521371611" expanded="true" signature="1709:1760" placeholder="SELECT posit... position" />
-            <marker date="1547521371611" expanded="true" signature="1905:2057" placeholder="SELECT emplo... employee" />
+            <marker date="1551673784461" expanded="true" signature="167:230" placeholder="SELECT pjt_l... pjt-location" />
+            <marker date="1551673784461" expanded="true" signature="366:429" placeholder="SELECT pjt_c... pjt-category" />
+            <marker date="1551673784461" expanded="true" signature="563:645" placeholder="SELECT pjt_s... pjt-sector" />
+            <marker date="1551673784461" expanded="true" signature="832:938" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551673784461" expanded="true" signature="832:939" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551673784461" expanded="true" signature="832:946" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551673784461" expanded="true" signature="832:975" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551673784461" expanded="true" signature="1109:1149" placeholder="SELECT thrus... thrust" />
+            <marker date="1551673784461" expanded="true" signature="1334:1341" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551673784461" expanded="true" signature="1334:1416" placeholder="SELECT focus... focus-area" />
+            <marker date="1551673784461" expanded="true" signature="1334:1423" placeholder="SELECT focus... focus-area" />
+            <marker date="1551673784461" expanded="true" signature="1604:1666" placeholder="SELECT outco... outcomes" />
+            <marker date="1551673784461" expanded="true" signature="1604:1668" placeholder="SELECT outco... outcomes" />
+            <marker date="1551673784461" expanded="true" signature="1604:1678" placeholder="SELECT outco... outcomes" />
+            <marker date="1551673784461" expanded="true" signature="1870:1943" placeholder="SELECT strat... strategies" />
+            <marker date="1551673784461" expanded="true" signature="2091:2098" placeholder="SELECT focus... focus-area" />
+            <marker date="1551673784461" expanded="true" signature="2091:2138" placeholder="SELECT targe... pjt-target-group" />
+            <marker date="1551673784461" expanded="true" signature="2091:2158" placeholder="SELECT targe... tbl_pjt_target_group" />
+            <marker date="1551673784461" expanded="true" signature="2294:2341" placeholder="SELECT posit... position" />
+            <marker date="1551673784461" expanded="true" signature="2486:2638" placeholder="SELECT emplo... employee" />
+            <marker date="1551673784461" expanded="true" signature="2858:2865" placeholder="SELECT emplo... employee" />
+            <marker date="1551673784461" expanded="true" signature="2858:3054" placeholder="SELECT user_... sec_user" />
+            <marker date="1551673784461" expanded="true" signature="2858:3061" placeholder="SELECT user_... sec_user" />
+            <marker date="1551673784461" expanded="true" signature="3550:3761" placeholder="SELECT user_... sec_user" />
+            <marker date="1551673784461" expanded="true" signature="3550:3762" placeholder="SELECT user_... sec_user" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/pages/dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2210">
-          <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/core/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="605" column="59" selection-start-line="605" selection-start-column="59" selection-end-line="605" selection-end-column="59" />
+        <state relative-caret-position="221">
+          <caret line="625" column="63" selection-start-line="625" selection-start-column="63" selection-end-line="625" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="48" column="70" selection-start-line="48" selection-start-column="70" selection-end-line="48" selection-end-column="70" />
           <folding />
         </state>
       </provider>

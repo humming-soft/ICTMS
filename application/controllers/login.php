@@ -161,8 +161,11 @@ class Login extends ICTMS_Controller {
                         if($result)
                         {
                             $sess_array = array();
+
                             foreach($result as $row)
                             {
+                                $agency_id=$row->agency_id;
+                                $result2 = $this->user->get_owner_name($row->agency_id);
                                 if(($row->lock_by_pwd !=0 and $row->lock_by_pwd > $row->no_pwd_attempt) or $row->lock_by_pwd==0 )
                                 {
                                     $result1 = $this->user->show_permission_data($row->sec_role_id);
@@ -174,6 +177,9 @@ class Login extends ICTMS_Controller {
                                         'id' => $row->user_id,
                                         'username' => $row->email_id,
                                         'name' => $row->user_name,
+                                        'user'=>$row->user_full_name,
+                                        'owner'=>$result2,
+                                        'agency'=>$agency_id,
                                         'roleid' => $row->sec_role_id,
                                         'datap' => $datap
                                     );
@@ -266,6 +272,8 @@ class Login extends ICTMS_Controller {
                     $sess_array = array();
                     foreach($result as $row)
                     {
+                        $agency_id=$row->agency_id;
+                        $result2 = $this->user->get_owner_name($row->agency_id);
                         if(($row->lock_by_pwd !=0 and $row->lock_by_pwd > $row->no_pwd_attempt) or $row->lock_by_pwd==0 )
                         {
                             $result1 = $this->user->show_permission_data($row->sec_role_id);
@@ -277,6 +285,9 @@ class Login extends ICTMS_Controller {
                                 'id' => $row->user_id,
                                 'username' => $row->email_id,
                                 'name' => $row->user_name,
+                                'user'=>$row->user_full_name,
+                                'owner'=>$result2,
+                                'agency'=>$agency_id,
                                 'roleid' => $row->sec_role_id,
                                 'datap' => $datap
                             );

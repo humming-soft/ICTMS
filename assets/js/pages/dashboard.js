@@ -17,18 +17,21 @@ var Dashboard = function() {
             'data': datascource,
             'chartClass': 'edit-state',
             'nodeContent': 'title',
+            'nodeID': 'id',
             'exportButton': false,
             'exportFilename': 'SportsChart',
-            'parentNodeSymbol': 'fa-th-large',
-            'createNode': function ($node, data) {
+            'parentNodeSymbol': 'fa-th-large'
+            /*'createNode': function ($node, data) {
+                console.log(data);
                 $node[0].id = getId();
-            }
+            }*/
         });
         oc.$chartContainer.on('click', '.node', function () {
             var $this = $(this);
             $('#selected-node').val($this.find('.title').text()).data('node', $this);
             var position = $this.find('.content').text();
-            $("#position-node").val(position);    
+            $("#position-node").val(position);
+            $("#parent-id").val($this.attr('id'));
         });
         oc.$chartContainer.on('click', '.orgchart', function (event) {
             if (!$(event.target).closest('.node').length) {
@@ -64,8 +67,11 @@ var Dashboard = function() {
         $('#btn-add-nodes').on('click', function () {
             var $chartContainer = $('#orgchart-container');
             var nodeVals = [];
-            var position = $("#position").val();
+            var position = $("#position").find(":selected").text();
+            var positionid = $("#position").val();
             var nodev = $('#selected-node').val();
+            var parent_id = $('#parent-id').val();
+            var userMail = $('.new-node-email').val();
             var newnodev = $('.new-node').val();
             $("#editable1").append('<tr> <td> '+ newnodev + ' -'+ position +' </td> <td> <div class="col-md-8"> Day </div> </td> <td> <div class="col-md-8"> '+ nodev +' </div> </td> <td> <div class="col-md-8">Email </div> </td> </tr>');
             $('#new-nodelist').find('.new-node').each(function (index, item) {
@@ -129,6 +135,15 @@ var Dashboard = function() {
                     }));
                 }
             }
+            $.ajax({
+                url:base_url+'project/newOgchartUser',
+                method: 'post',
+                data: {userName : newnodev ,parentId: parent_id,userMail:userMail,position : positionid },
+                dataType: 'json',
+                success: function(response){
+                    alert("inserted");
+                }
+            });
         });
 
         $('#btn-delete-nodes').on('click', function () {
@@ -246,10 +261,17 @@ var Dashboard = function() {
             }
         });
     };
-    
-
+    var _componentMultiselect = function() {
+        if (!$().multiselect) {
+            console.warn('Warning - bootstrap-multiselect.js is not loaded.');
+            return;
+        }
+        $('.multiselect').multiselect({
+            maxHeight: 120
+        });
+    };
     return {
-        init: function() {
+        init: function(ogchart) {
             _componentUniform();
             _componentModal(true,$('#hmwks-cnp'),$('#hmwks-cnp .hmwks-slider-w'));
             _componentModal(false,$('#hmwks-adtm'),$('#hmwks-adtm .hmwks-slider-w'));
@@ -257,43 +279,10 @@ var Dashboard = function() {
             _checkboxStatusR();
             _componentPikaday();
             _componentRepeater();
-
-            var datascource = {
-                'name': 'Norehan binti Yahya',
-                'title': 'General manager',
-                'children': [
-                    {
-                        'name': 'Mohd Nizam bin Morad', 'title': 'Department manager',
-                        'children': [
-                            {'name': 'Mazmi bin Mohamad', 'title': 'Senior engineer'},
-                            {
-                                'name': 'Roslan bin Ramli', 'title': 'Senior engineer',
-                                'children': [
-                                    {'name': 'Syafiqa binti Talib', 'title': 'Engineer'},
-                                    {'name': 'Faizal bin Osman', 'title': 'Engineer'},
-                                    {'name': 'Zulhaimi bin Mat Hussin', 'title': 'Engineer'}
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        'name': 'Marni binti Hasmar', 'title': 'Department manager',
-                        'children': [
-                            {'name': 'Mat Hussin', 'title': 'Senior engineer'},
-                            {
-                                'name': 'Roslan bin Ramli', 'title': 'Senior engineer',
-                                'children': [
-                                    {'name': 'Xiang Xiang', 'title': 'UE engineer'},
-                                    {'name': 'Maszlee bin Malik', 'title': 'Engineer'},
-                                    {'name': 'Rohani binti Karim', 'title': 'Engineer'}
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            };
-            _buildOrg(datascource);
+            _buildOrg(ogchart);
+            _componentMultiselect();
         }
+
     }
 }();
 
@@ -301,6 +290,3 @@ var Dashboard = function() {
 // Initialize module
 // ------------------------------
 
-document.addEventListener('DOMContentLoaded', function() {
-    Dashboard.init();
-});

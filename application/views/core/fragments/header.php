@@ -64,6 +64,9 @@
     <link href="<?=site_url('assets/js/plugins/visualization/orgchart/jquery.orgchart.css')?>" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="<?=site_url('assets/js/plugins/visualization/orgchart/jquery.orgchart.js')?>"></script>
     <?php } ?>
+    <?php if(in_array("multiselect",$support)){ ?>
+        <script src="<?=site_url('assets/js/plugins/forms/selects/bootstrap_multiselect.js')?>"></script>
+    <?php } ?>
     <?php if(in_array("slick",$support)){ ?>
     <link href="<?=site_url('assets/js/plugins/ui/slick/slick.css')?>" rel="stylesheet" type="text/css">
     <script src="<?=site_url('assets/js/plugins/ui/slick/slick.min.js')?>"></script>

@@ -375,7 +375,7 @@
                     <div class="hmwks-slide">
                         <div class="hmwks-content with-gradient text-center">
                             <h4 class="hmwks-title">Create New Project</h4>
-                            <div class="hmwks-text">This is a multistep project creation process, you
+                            <div class="hmwks-text">This is a multi step project creation process, you
                                 can use it to provide project information which includes scope, objective of the project
                                 and project team etc. before you start your project.</div>
                             <div class="row text-left">
@@ -395,7 +395,8 @@
                                 <div class="row text-left">
                                     <div class="col-sm-6">
                                         <div class="form-group"><label for="">Project Owner</label>
-                                            <input type="text" class="form-control" readonly value="Ministry Of Transport" name="pjt_ownerStr">
+                                            <input type="hidden" name="datasourse[]"  id="one" value="<?=$ogchart; ?>">
+                                            <input type="text" class="form-control" readonly value="<?=$owner_name; ?>" name="pjt_ownerStr">
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
@@ -407,7 +408,7 @@
                                 <div class="row text-left">
                                     <div class="col-sm-6">
                                         <div class="form-group"><label for="">Project Manager</label>
-                                            <input type="text" class="form-control" readonly value="Mr. Idrul Fairuz Ali Khan" name="pjt_managerStr">
+                                            <input type="text" class="form-control" readonly value="<?=$userfullname; ?>" name="pjt_managerStr">
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
@@ -595,19 +596,34 @@
                                         </select>
                                     </div>
 
-                                    <div class="form-group text-left" id="thrusttext1" disabled><label for="">Focus Area</label>
+                                    <div class="form-group text-left" id="thrusttext1" ><label for="">Focus Area</label>
                                         <select class=" form-control m-b" id="focus_area" name="focus_area">
                                             <option>SELECT</option>
                                         </select>
                                     </div>
                                 </div>
+                                    <div class="col-md-6"  id="strategiesDiv">
+                                        <div class="form-group text-left" id="stratagies1" ><label for="">Strategy</label>
+                                            <select class=" form-control m-b" id="stratagies" name="stratagies">
+                                                <option>SELECT</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6"   id="outcomesDiv">
+                                        <div class="form-group">
+                                            <label>Outcomes</label>
+                                            <select class="form-control multiselect" multiple="multiple" id="outcomes" name="outcomes[]" data-fouc>
+                                            </select>
+                                        </div>
+                                    </div>
+
                             </div>
 
-                            <div class="repeater-default"> 
+                            <div class="repeater-default">
                                 <div class="d-flex flex-column">
                                     <a class="float-right text-right link-modal" data-repeater-create  href="#"><i class="icon-plus2 mr-1"></i><span>Add</span></a>  
                                 </div>       
-                                <div data-repeater-list="car">
+                                <div data-repeater-list="target">
                                     <div data-repeater-item>
                                         <div class="row">
                                             <div class="col-sm-4">
@@ -693,13 +709,17 @@
                                                         <label>Selected Hirachy:</label>
                                                         <input type="text" class="form-control selected-node-group" id="selected-node" disabled="">
                                                         <input type="text" id="position-node" hidden="">
+                                                        <input type="text" id="parent-id" hidden="">
                                                     </div>
 
                                                     <div class="form-group" id="new-nodelist">
                                                         <label>Employee:</label>
                                                         <input type="text" class="form-control new-node" placeholder="Enter Emloyee Name">
                                                     </div>
-
+                                                    <div class="form-group" id="new-nodelist">
+                                                        <label>Email:</label>
+                                                        <input type="text" class="form-control new-node-email" placeholder="Enter Email">
+                                                    </div>
                                                     <div class="form-group">
                                                         <label>Position:</label>
                                                         <select class=" form-control" id="position">
@@ -707,7 +727,7 @@
                                                             <?php
                                                             foreach ($position as $position):
                                                                 ?>
-                                                                <option value="<?php echo $position->position_id; ?>"><?php echo $position->position_name; ?></option>
+                                                                <option value="<?php echo $position->sec_role_id; ?>"><?php echo $position->sec_role_name; ?></option>
                                                                 <?php
                                                             endforeach;
                                                             ?>
@@ -718,17 +738,17 @@
                                                         <label class="d-block">Position Type:</label>
 
                                                         <div class="custom-control custom-radio custom-control-inline">
-                                                            <input type="radio" class="custom-control-input pos_type" value="1" name="pos_type" id="pos_type_parent" checked>
+                                                            <input type="radio" class="custom-control-input pos_type" value="1" name="node-type" id="pos_type_parent" checked>
                                                             <label class="custom-control-label" for="pos_type_parent">Parent</label>
                                                         </div>
 
                                                         <div class="custom-control custom-radio custom-control-inline">
-                                                            <input type="radio" class="custom-control-input pos_type" value="2" name="pos_type" id="pos_type_sibling">
+                                                            <input type="radio" class="custom-control-input pos_type" value="2" name="node-type" id="pos_type_sibling">
                                                             <label class="custom-control-label" for="pos_type_sibling">Sibling</label>
                                                         </div>
 
                                                         <div class="custom-control custom-radio custom-control-inline">
-                                                            <input type="radio" class="custom-control-input pos_type" value="2" name="pos_type" id="pos_type_child">
+                                                            <input type="radio" class="custom-control-input pos_type" value="2" name="node-type" id="pos_type_child">
                                                             <label class="custom-control-label" for="pos_type_child">Child</label>
                                                         </div>
                                                     </div>
@@ -755,6 +775,10 @@
     </div>
 </div>
 <script type ="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            ogchart = <?php echo $ogchart; ?>;
+            Dashboard.init(ogchart);
+        });
         $(document).on("change","#sector",function(){
             var subSector = $(this).val();
             $.ajax({
@@ -779,11 +803,40 @@
                 dataType: 'json',
                 success: function(response){
                     $('#focus_area').find('option').not(':first').remove();
+                    $('#stratagies').find('option').not(':first').remove();
                     $.each(response,function(index,data){
                         $('#focus_area').append('<option value="'+ data['focus_area_id'] +'">'+ data['focus_area'] +'</option>');
                     });
                 }
             });
+            $.ajax({
+                url:'<?=base_url()?>dashboard/get_outcomes',
+                method: 'post',
+                data: {thrust: thrust},
+                dataType: 'json',
+                success: function(response){
+                        $('#outcomes').find('option').remove();
+                        $.each(response,function(index,data){
+                            $('#outcomes').append('<option value="'+ data['outcomes_id'] +'">'+ data['outcomes'] +'</option>');
+                        });
+                        $('.multiselect').multiselect('destroy');
+                        $('.multiselect').multiselect('rebuild');
+                }
+            });
         });
-
+        $(document).on("change","#focus_area",function(){
+            var focusarea = $(this).val();
+            $.ajax({
+                url:'<?=base_url()?>dashboard/get_strategies',
+                method: 'post',
+                data: {focusarea: focusarea},
+                dataType: 'json',
+                success: function(response){
+                    $('#stratagies').find('option').not(':first').remove();
+                    $.each(response,function(index,data){
+                        $('#stratagies').append('<option value="'+ data['strategies_id'] +'">'+ data['strategy'] +'</option>');
+                    });
+                }
+            });
+        });
 </script>

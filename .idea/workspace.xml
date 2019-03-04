@@ -7,15 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4438246e-27b5-42bb-a4dc-2ae6da717c3b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/dashboard.php" afterPath="$PROJECT_DIR$/application/controllers/dashboard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/login.php" afterPath="$PROJECT_DIR$/application/controllers/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/project.php" afterPath="$PROJECT_DIR$/application/controllers/project.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/dashboardModel.php" afterPath="$PROJECT_DIR$/application/models/dashboardModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/projectModel.php" afterPath="$PROJECT_DIR$/application/models/projectModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/user.php" afterPath="$PROJECT_DIR$/application/models/user.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/core/dashboard.php" afterPath="$PROJECT_DIR$/application/views/core/dashboard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/core/fragments/header.php" afterPath="$PROJECT_DIR$/application/views/core/fragments/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/pages/dashboard.js" afterPath="$PROJECT_DIR$/assets/js/pages/dashboard.js" />
     </list>
     <ignored path="ictms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,21 +29,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/core/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="625" column="63" selection-start-line="625" selection-start-column="63" selection-end-line="625" selection-end-column="63" />
+            <state relative-caret-position="459">
+              <caret line="513" column="61" selection-start-line="513" selection-start-column="61" selection-end-line="513" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="project.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="project.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/project.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="48" column="70" selection-start-line="48" selection-start-column="70" selection-end-line="48" selection-end-column="70" />
+            <state relative-caret-position="534">
+              <caret line="67" column="48" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -189,8 +181,8 @@
         <option value="$PROJECT_DIR$/application/models/dashboardModel.php" />
         <option value="$PROJECT_DIR$/application/models/user.php" />
         <option value="$PROJECT_DIR$/application/models/projectModel.php" />
-        <option value="$PROJECT_DIR$/application/views/core/dashboard.php" />
         <option value="$PROJECT_DIR$/application/controllers/project.php" />
+        <option value="$PROJECT_DIR$/application/views/core/dashboard.php" />
       </list>
     </option>
   </component>
@@ -771,12 +763,12 @@
       <workItem from="1550799427811" duration="593000" />
       <workItem from="1550802973373" duration="754000" />
       <workItem from="1551667302150" duration="4000" />
-      <workItem from="1551667335579" duration="5979000" />
+      <workItem from="1551667335579" duration="6106000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125883000" />
+    <option name="totallyTimeSpent" value="126010000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1918" height="1038" extended-state="1" />
@@ -1263,18 +1255,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/core/dashboard.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/project.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="625" column="63" selection-start-line="625" selection-start-column="63" selection-end-line="625" selection-end-column="63" />
+        <state relative-caret-position="534">
+          <caret line="67" column="48" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/project.php">
+    <entry file="file://$PROJECT_DIR$/application/views/core/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="48" column="70" selection-start-line="48" selection-start-column="70" selection-end-line="48" selection-end-column="70" />
+        <state relative-caret-position="459">
+          <caret line="513" column="61" selection-start-line="513" selection-start-column="61" selection-end-line="513" selection-end-column="61" />
           <folding />
         </state>
       </provider>

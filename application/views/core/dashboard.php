@@ -511,7 +511,7 @@
                     </div>
                     <div class="hmwks-slide">
                         <div class="hmwks-content with-gradient text-center">
-                            <h4 class="hmwks-title">Showcase App Features</h4>
+                            <h4 class="hmwks-title">Project Categorization</h4>
                             <div class="hmwks-text">In this example you can showcase some of the features of
                                 your application.</div>
                             <div class="row">

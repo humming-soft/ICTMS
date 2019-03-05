@@ -272,8 +272,8 @@ class Login extends ICTMS_Controller {
                     $sess_array = array();
                     foreach($result as $row)
                     {
-                        $agency_id=$row->agency_id;
-                        $result2 = $this->user->get_owner_name($row->agency_id);
+                        $agency_id=$row->ministry_id;
+                        $result2 = $this->user->get_owner_name($row->ministry_id);
                         if(($row->lock_by_pwd !=0 and $row->lock_by_pwd > $row->no_pwd_attempt) or $row->lock_by_pwd==0 )
                         {
                             $result1 = $this->user->show_permission_data($row->sec_role_id);

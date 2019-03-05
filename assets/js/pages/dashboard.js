@@ -184,14 +184,28 @@ var Dashboard = function() {
             var employee =$("#selected-node").val();
             var sector = $("#sector").val();
             var unit = $("#units").val();
-            $("#p-team").append('<div class="col-xl-4 col-md-6">'+
-            '<div class="card card-body">'+
-                '<div class="media">'+
+            if($targets == 1){
+                $("#pjt_directorStr").val(employee);
+                $("#pjt_directorID").val(employee);
+                $(".director").html(" ");
+                $(".director").append(
+                    '<div class="card card-body">'+
+                    '<div class="media">'+
                     '<div class="card-img-actions d-inline-block">'+
-                        '<img class="img-fluid rounded-circle" src="'+base_url+'assets/img/avatar/av5.png" width="42" height="42" alt="">'+
-                        '<div class="card-img-actions-overlay card-img rounded-circle"><a href="#" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round"><i class="icon-bin"></i></a></div></div>'+
+                    '<img class="img-fluid rounded-circle" src="'+base_url+'assets/img/avatar/av5.png" width="42" height="42" alt="">'+
+                    '<div class="card-img-actions-overlay card-img rounded-circle"><a href="#" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round"><i class="icon-bin"></i></a></div></div>'+
+                    '<div class="media-body">  <input type="hidden" class="form-control" value="1" name="userid[]"><h6 class="mb-0">'+employee+'</h6><span class="text-muted">'+post+'</span></div></div></div>' );
+             }else{
+                $("#p-team").append('<div class="col-xl-4 col-md-6">'+
+                    '<div class="card card-body">'+
+                    '<div class="media">'+
+                    '<div class="card-img-actions d-inline-block">'+
+                    '<img class="img-fluid rounded-circle" src="'+base_url+'assets/img/avatar/av5.png" width="42" height="42" alt="">'+
+                    '<div class="card-img-actions-overlay card-img rounded-circle"><a href="#" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round"><i class="icon-bin"></i></a></div></div>'+
                     '<div class="media-body">  <input type="hidden" class="form-control" value="1" name="userid[]"><h6 class="mb-0">'+employee+'</h6><span class="text-muted">'+post+'</span></div></div></div></div>' );
-        });  
+            }
+
+        });
     };
  
     var _componentModal = function(onload,p,pc) {
@@ -270,6 +284,10 @@ var Dashboard = function() {
             maxHeight: 120
         });
     };
+    $(document).on("click",".ogchartShow",function(){
+        $targets=$(this).data('org');
+        $('#hmwks-adtm').modal('show');
+    });
     return {
         init: function(ogchart) {
             _componentUniform();

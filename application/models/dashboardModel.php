@@ -62,6 +62,12 @@ Class dashboardModel extends CI_Model
         $query = $this->db->query($sql);
         return $query->result();
     }
+    function select_departments($dept)
+    {
+        $sql = "SELECT department_id, department_name FROM tbl_department where ministry_id=$dept";
+        $query = $this->db->query($sql);
+        return $query->result();
+    }
     function select_position()
     {
         $sql = "SELECT sec_role_id, sec_role_name FROM sec_role;";
@@ -70,7 +76,7 @@ Class dashboardModel extends CI_Model
     }
     function get_child($employee_id)
     {
-        $sql3 = " SELECT employee_id, agency_id, position_id, employee_name, employee_post_name,  emloyee_email, parent_id FROM employee where agency_id=2 and parent_id= $employee_id;";
+        $sql3 = " SELECT employee_id, ministry_id, position_id, employee_name, employee_post_name,  emloyee_email, parent_id FROM employee where ministry_id=2 and parent_id= $employee_id;";
         $query3 = $this->db->query($sql3);
         return $query3->result();
     }
@@ -78,7 +84,7 @@ Class dashboardModel extends CI_Model
     {
         $data = array();
         $parentKey = $userid;
-        $sql3 = " SELECT user_id, user_name, user_full_name,  sec_role_name,  agency_id,  parent_user_id FROM sec_user join  sec_role on sec_role.sec_role_id=sec_user.sec_role_id and agency_id=1 and parent_user_id is null";
+        $sql3 = " SELECT user_id, user_name, user_full_name,  sec_role_name,  ministry_id,  parent_user_id FROM sec_user join  sec_role on sec_role.sec_role_id=sec_user.sec_role_id and ministry_id=20 and parent_user_id is null";
         $query3 = $this->db->query($sql3);
         $result= $query3->result();
         foreach($result as $key => $value)
@@ -93,7 +99,7 @@ Class dashboardModel extends CI_Model
         function membersTree($parentKey)
         {
             $row1 =array();
-            $sql3 = " SELECT user_id as id, user_name, user_full_name as name,  sec_role_name,  agency_id,  parent_user_id FROM sec_user join  sec_role on sec_role.sec_role_id=sec_user.sec_role_id and agency_id=1 and parent_user_id = $parentKey";
+            $sql3 = " SELECT user_id as id, user_name, user_full_name as name,  sec_role_name,  ministry_id,  parent_user_id FROM sec_user join  sec_role on sec_role.sec_role_id=sec_user.sec_role_id and ministry_id=20 and parent_user_id = $parentKey";
             $query3 = $this->db->query($sql3);
             $row = $query3->result();
             foreach($row as $key => $value)

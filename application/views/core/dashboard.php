@@ -381,11 +381,17 @@
                             <div class="row text-left">
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        <!-- <label for="p_name">Project Name</label> -->
                                         <input type="text" id="p_name" name="pjt_name" class="form-control form-control-lg" placeholder="Enter Project Name">
                                     </div>
                                 </div>
                             </div>
+                           <!-- <div class="row text-left">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <textarea  id="p_objective" name="pjt_objective" class="form-control form-control-lg" placeholder="Enter project Objective"></textarea>
+                                    </div>
+                                </div>
+                            </div>-->
                         </div>
                     </div>
                     <div class="hmwks-slide">
@@ -401,29 +407,52 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group"><label for="">Project Director</label>
-                                            <input type="text" class="form-control" name="pjt_directorStr" placeholder="Enter Name of Project Director..">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="pjt_directorStr" name="pjt_directorStr" disabled placeholder="Add Project Director..">
+                                                <input type="hidden" class="form-control" id="pjt_directorID" name="pjt_directorID" >
+                                                <span class="input-group-append">
+                                                 <a class="input-group-text ogchartShow" data-org="1" data-toggle="modal" data-dismiss="modal" href="#"><i class="icon-add"></i></a>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row text-left">
                                     <div class="col-sm-6">
                                         <div class="form-group"><label for="">Project Manager</label>
-                                            <input type="text" class="form-control" readonly value="<?=$userfullname; ?>" name="pjt_managerStr">
+                                             <input type="text" class="form-control" readonly value="<?=$userfullname; ?>" name="pjt_managerStr">
+                                             <input type="hidden" class="form-control" readonly value="<?=$userid; ?>" name="pjt_managerID">
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
-                                        <div class="form-group"><label for="">Date Prepared</label>
-                                            <input type="text" class="form-control" readonly value="<?=strtoupper(date('d-M-Y'))?>" name="pjt_preparedDate">
+                                        <div class="form-group"><label for="">Project Implementers</label>
+                                            <select class=" form-control m-b" id="implementers" name="implementers">
+                                                <option>SELECT</option>
+                                                <?php
+                                                foreach ($department as $department):
+                                                    ?>
+                                                    <option value="<?php echo $department->department_id; ?>"><?php echo $department->department_name; ?></option>
+                                                    <?php
+                                                endforeach;
+                                                ?>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
+                            <div class="row text-left">
+                                <div class="col-sm-12">
+                                    <div class="form-group"><label for="">Date Prepared</label>
+                                        <input type="text" class="form-control" readonly value="<?=strtoupper(date('d-M-Y'))?>" name="pjt_preparedDate">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="hmwks-slide">
                         <div class="hmwks-content with-gradient text-center">
                             <h4 class="hmwks-title">Project Team</h4>
                             <div class="hmwks-text">Add individuals who will be contributing to this Project
-                            <a class="float-right text-right link-modal" data-target="#hmwks-adtm" data-toggle="modal" data-dismiss="modal" href="#"><i class="icon-plus2 mr-1"></i><span>Add Member</span></a>
+                            <a class="float-right text-right link-modal ogchartShow" data-toggle="modal" data-org="2" data-dismiss="modal" href="#"><i class="icon-plus2 mr-1"></i><span>Add Member</span></a>
                             </div>
                             
                             <div class="row" id="p-team">
@@ -440,30 +469,14 @@
                                             </div>
 
                                             <div class="media-body">
-                                                <h6 class="mb-0">Mr. Idrul Fairuz Ali Khan</h6>
+                                                <h6 class="mb-0"><?=$userfullname; ?></h6>
                                                 <span class="text-muted">Project Manager</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 col-md-6">
-                                    <div class="card card-body">
-                                        <div class="media">
-                                            <div class="card-img-actions d-inline-block">
-                                                <img class="img-fluid rounded-circle" src="<?=site_url('assets/img/avatar/av3.png')?>" width="42" height="42" alt="">
-                                                <div class="card-img-actions-overlay card-img rounded-circle">
-                                                    <a href="#" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round">
-                                                        <i class="icon-bin"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
+                                <div class="col-xl-4 col-md-6 director">
 
-                                            <div class="media-body">
-                                                <h6 class="mb-0">Sharoul Ali</h6>
-                                                <span class="text-muted">Project Director</span>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>

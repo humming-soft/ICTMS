@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/assets/js/pages/dashboard.js" line="192" />
-    <bookmark url="file://$PROJECT_DIR$/assets/js/pages/dashboard.js" line="269" />
+    <bookmark url="file://$PROJECT_DIR$/assets/js/pages/dashboard.js" line="283" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4438246e-27b5-42bb-a4dc-2ae6da717c3b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/dashboard.php" afterPath="$PROJECT_DIR$/application/controllers/dashboard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/login.php" afterPath="$PROJECT_DIR$/application/controllers/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/project.php" afterPath="$PROJECT_DIR$/application/controllers/project.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/dashboardModel.php" afterPath="$PROJECT_DIR$/application/models/dashboardModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/user.php" afterPath="$PROJECT_DIR$/application/models/user.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/core/dashboard.php" afterPath="$PROJECT_DIR$/application/views/core/dashboard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/pages/dashboard.js" afterPath="$PROJECT_DIR$/assets/js/pages/dashboard.js" />
     </list>
     <ignored path="ictms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,87 +36,18 @@
       <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/core/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2380">
-              <caret line="369" column="4" selection-start-line="369" selection-start-column="4" selection-end-line="369" selection-end-column="4" />
+            <state relative-caret-position="653">
+              <caret line="431" column="85" selection-start-line="431" selection-start-column="85" selection-end-line="431" selection-end-column="85" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="project.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/project.php">
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="67" column="48" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboardModel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/dashboardModel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-              <folding>
-                <marker date="1551673784461" expanded="true" signature="167:230" placeholder="SELECT pjt_l... pjt-location" />
-                <marker date="1551673784461" expanded="true" signature="366:429" placeholder="SELECT pjt_c... pjt-category" />
-                <marker date="1551673784461" expanded="true" signature="563:645" placeholder="SELECT pjt_s... pjt-sector" />
-                <marker date="1551673784461" expanded="true" signature="832:938" placeholder="SELECT pjt_s... pjt-sub-sector" />
-                <marker date="1551673784461" expanded="true" signature="832:939" placeholder="SELECT pjt_s... pjt-sub-sector" />
-                <marker date="1551673784461" expanded="true" signature="832:946" placeholder="SELECT pjt_s... pjt-sub-sector" />
-                <marker date="1551673784461" expanded="true" signature="832:975" placeholder="SELECT pjt_s... pjt-sub-sector" />
-                <marker date="1551673784461" expanded="true" signature="1109:1149" placeholder="SELECT thrus... thrust" />
-                <marker date="1551673784461" expanded="true" signature="1334:1341" placeholder="SELECT pjt_s... pjt-sub-sector" />
-                <marker date="1551673784461" expanded="true" signature="1334:1416" placeholder="SELECT focus... focus-area" />
-                <marker date="1551673784461" expanded="true" signature="1334:1423" placeholder="SELECT focus... focus-area" />
-                <marker date="1551673784461" expanded="true" signature="1604:1666" placeholder="SELECT outco... outcomes" />
-                <marker date="1551673784461" expanded="true" signature="1604:1668" placeholder="SELECT outco... outcomes" />
-                <marker date="1551673784461" expanded="true" signature="1604:1678" placeholder="SELECT outco... outcomes" />
-                <marker date="1551673784461" expanded="true" signature="1870:1943" placeholder="SELECT strat... strategies" />
-                <marker date="1551673784461" expanded="true" signature="2091:2098" placeholder="SELECT focus... focus-area" />
-                <marker date="1551673784461" expanded="true" signature="2091:2138" placeholder="SELECT targe... pjt-target-group" />
-                <marker date="1551673784461" expanded="true" signature="2091:2158" placeholder="SELECT targe... tbl_pjt_target_group" />
-                <marker date="1551673784461" expanded="true" signature="2294:2341" placeholder="SELECT posit... position" />
-                <marker date="1551673784461" expanded="true" signature="2486:2638" placeholder="SELECT emplo... employee" />
-                <marker date="1551673784461" expanded="true" signature="2858:2865" placeholder="SELECT emplo... employee" />
-                <marker date="1551673784461" expanded="true" signature="2858:3054" placeholder="SELECT user_... sec_user" />
-                <marker date="1551673784461" expanded="true" signature="2858:3061" placeholder="SELECT user_... sec_user" />
-                <marker date="1551673784461" expanded="true" signature="3550:3761" placeholder="SELECT user_... sec_user" />
-                <marker date="1551673784461" expanded="true" signature="3550:3762" placeholder="SELECT user_... sec_user" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="projectModel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/projectModel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
-              <folding>
-                <marker date="1551675918448" expanded="true" signature="255:340" placeholder="SELECT max(p... tbl_pjt_master" />
-                <marker date="1551675918448" expanded="true" signature="909:952" placeholder="SELECT max(u... sec_user" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/dashboard.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="15" column="44" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/config/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-102">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="611">
+              <caret line="289" column="53" selection-start-line="289" selection-start-column="53" selection-end-line="289" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -120,24 +56,102 @@
       <file leaf-file-name="user.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="36" column="85" selection-start-line="36" selection-start-column="85" selection-end-line="36" selection-end-column="85" />
               <folding>
-                <marker date="1551675617062" expanded="true" signature="834:916" placeholder="update sec_u... " />
-                <marker date="1551675617062" expanded="true" signature="1597:1679" placeholder="update sec_u... " />
-                <marker date="1551675617062" expanded="true" signature="3498:3807" placeholder="select a.sec... sec_group" />
-                <marker date="1551675617062" expanded="true" signature="4019:4078" placeholder="SELECT sec_r... sec_role" />
-                <marker date="1551675617062" expanded="true" signature="4334:4568" placeholder="SELECT tbl_m... tbl_agency" />
+                <marker date="1551762311962" expanded="true" signature="836:918" placeholder="update sec_u... " />
+                <marker date="1551762311962" expanded="true" signature="1601:1683" placeholder="update sec_u... " />
+                <marker date="1551762311962" expanded="true" signature="3502:3811" placeholder="select a.sec... sec_group" />
+                <marker date="1551762311962" expanded="true" signature="4023:4082" placeholder="SELECT sec_r... sec_role" />
+                <marker date="1551762311962" expanded="true" signature="4340:4574" placeholder="SELECT tbl_m... tbl_agency" />
+                <marker date="1551762311962" expanded="true" signature="4775:4834" placeholder="SELECT minis... tbl_ministry" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="expected_benefits.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/core/projects/expected_benefits.php">
+      <file leaf-file-name="milestones.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/pages/milestones.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+            <state relative-caret-position="-918">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="org.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/pages/org.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2891">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/pages/dashboard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="187" column="52" selection-start-line="187" selection-start-column="52" selection-end-line="187" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="project.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/project.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1122">
+              <caret line="69" column="47" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboardModel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/dashboardModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="415">
+              <caret line="66" column="53" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="53" />
+              <folding>
+                <marker date="1551763021090" expanded="true" signature="167:230" placeholder="SELECT pjt_l... pjt-location" />
+                <marker date="1551763021090" expanded="true" signature="366:429" placeholder="SELECT pjt_c... pjt-category" />
+                <marker date="1551763021090" expanded="true" signature="563:645" placeholder="SELECT pjt_s... pjt-sector" />
+                <marker date="1551763021090" expanded="true" signature="832:938" placeholder="SELECT pjt_s... pjt-sub-sector" />
+                <marker date="1551763021090" expanded="true" signature="832:939" placeholder="SELECT pjt_s... pjt-sub-sector" />
+                <marker date="1551763021090" expanded="true" signature="832:946" placeholder="SELECT pjt_s... pjt-sub-sector" />
+                <marker date="1551763021090" expanded="true" signature="832:975" placeholder="SELECT pjt_s... pjt-sub-sector" />
+                <marker date="1551763021090" expanded="true" signature="1109:1149" placeholder="SELECT thrus... thrust" />
+                <marker date="1551763021090" expanded="true" signature="1334:1341" placeholder="SELECT pjt_s... pjt-sub-sector" />
+                <marker date="1551763021090" expanded="true" signature="1334:1416" placeholder="SELECT focus... focus-area" />
+                <marker date="1551763021090" expanded="true" signature="1334:1423" placeholder="SELECT focus... focus-area" />
+                <marker date="1551763021090" expanded="true" signature="1604:1666" placeholder="SELECT outco... outcomes" />
+                <marker date="1551763021090" expanded="true" signature="1604:1668" placeholder="SELECT outco... outcomes" />
+                <marker date="1551763021090" expanded="true" signature="1604:1678" placeholder="SELECT outco... outcomes" />
+                <marker date="1551763021090" expanded="true" signature="1870:1943" placeholder="SELECT strat... strategies" />
+                <marker date="1551763021090" expanded="true" signature="2091:2098" placeholder="SELECT focus... focus-area" />
+                <marker date="1551763021090" expanded="true" signature="2091:2138" placeholder="SELECT targe... pjt-target-group" />
+                <marker date="1551763021090" expanded="true" signature="2091:2158" placeholder="SELECT targe... tbl_pjt_target_group" />
+                <marker date="1551763021090" expanded="true" signature="2302:2378" placeholder="SELECT depar... tbl_department" />
+                <marker date="1551763021090" expanded="true" signature="2519:2566" placeholder="SELECT posit... position" />
+                <marker date="1551763021090" expanded="true" signature="2711:2867" placeholder="SELECT emplo... employee" />
+                <marker date="1551763021090" expanded="true" signature="3087:3094" placeholder="SELECT emplo... employee" />
+                <marker date="1551763021090" expanded="true" signature="3087:3288" placeholder="SELECT user_... sec_user" />
+                <marker date="1551763021090" expanded="true" signature="3087:3295" placeholder="SELECT user_... sec_user" />
+                <marker date="1551763021090" expanded="true" signature="3784:4000" placeholder="SELECT user_... sec_user" />
+                <marker date="1551763021090" expanded="true" signature="3784:4001" placeholder="SELECT user_... sec_user" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/dashboard.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="24" column="25" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -153,16 +167,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="275" column="78" selection-start-line="275" selection-start-column="69" selection-end-line="275" selection-end-column="78" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -172,15 +176,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/application/views/fragments/header_non_auth.php" />
-        <option value="$PROJECT_DIR$/application/controllers/login.php" />
         <option value="$PROJECT_DIR$/application/views/core/fragments/header.php" />
-        <option value="$PROJECT_DIR$/application/controllers/dashboard.php" />
-        <option value="$PROJECT_DIR$/assets/js/pages/dashboard.js" />
         <option value="$PROJECT_DIR$/application/config/database.php" />
-        <option value="$PROJECT_DIR$/application/models/dashboardModel.php" />
-        <option value="$PROJECT_DIR$/application/models/user.php" />
         <option value="$PROJECT_DIR$/application/models/projectModel.php" />
+        <option value="$PROJECT_DIR$/assets/js/pages/dashboard.js" />
         <option value="$PROJECT_DIR$/application/controllers/project.php" />
+        <option value="$PROJECT_DIR$/application/models/user.php" />
+        <option value="$PROJECT_DIR$/application/controllers/login.php" />
+        <option value="$PROJECT_DIR$/application/models/dashboardModel.php" />
+        <option value="$PROJECT_DIR$/application/controllers/dashboard.php" />
         <option value="$PROJECT_DIR$/application/views/core/dashboard.php" />
       </list>
     </option>
@@ -762,12 +766,12 @@
       <workItem from="1550799427811" duration="593000" />
       <workItem from="1550802973373" duration="754000" />
       <workItem from="1551667302150" duration="4000" />
-      <workItem from="1551667335579" duration="7101000" />
+      <workItem from="1551667335579" duration="21515000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127005000" />
+    <option name="totallyTimeSpent" value="141419000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1918" height="1038" extended-state="1" />
@@ -797,18 +801,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/views/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="30" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -851,31 +848,32 @@
         <state relative-caret-position="799">
           <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
           <folding>
-            <marker date="1551673784461" expanded="true" signature="167:230" placeholder="SELECT pjt_l... pjt-location" />
-            <marker date="1551673784461" expanded="true" signature="366:429" placeholder="SELECT pjt_c... pjt-category" />
-            <marker date="1551673784461" expanded="true" signature="563:645" placeholder="SELECT pjt_s... pjt-sector" />
-            <marker date="1551673784461" expanded="true" signature="832:938" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1551673784461" expanded="true" signature="832:939" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1551673784461" expanded="true" signature="832:946" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1551673784461" expanded="true" signature="832:975" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1551673784461" expanded="true" signature="1109:1149" placeholder="SELECT thrus... thrust" />
-            <marker date="1551673784461" expanded="true" signature="1334:1341" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1551673784461" expanded="true" signature="1334:1416" placeholder="SELECT focus... focus-area" />
-            <marker date="1551673784461" expanded="true" signature="1334:1423" placeholder="SELECT focus... focus-area" />
-            <marker date="1551673784461" expanded="true" signature="1604:1666" placeholder="SELECT outco... outcomes" />
-            <marker date="1551673784461" expanded="true" signature="1604:1668" placeholder="SELECT outco... outcomes" />
-            <marker date="1551673784461" expanded="true" signature="1604:1678" placeholder="SELECT outco... outcomes" />
-            <marker date="1551673784461" expanded="true" signature="1870:1943" placeholder="SELECT strat... strategies" />
-            <marker date="1551673784461" expanded="true" signature="2091:2098" placeholder="SELECT focus... focus-area" />
-            <marker date="1551673784461" expanded="true" signature="2091:2138" placeholder="SELECT targe... pjt-target-group" />
-            <marker date="1551673784461" expanded="true" signature="2091:2158" placeholder="SELECT targe... tbl_pjt_target_group" />
-            <marker date="1551673784461" expanded="true" signature="2294:2341" placeholder="SELECT posit... position" />
-            <marker date="1551673784461" expanded="true" signature="2486:2638" placeholder="SELECT emplo... employee" />
-            <marker date="1551673784461" expanded="true" signature="2858:2865" placeholder="SELECT emplo... employee" />
-            <marker date="1551673784461" expanded="true" signature="2858:3054" placeholder="SELECT user_... sec_user" />
-            <marker date="1551673784461" expanded="true" signature="2858:3061" placeholder="SELECT user_... sec_user" />
-            <marker date="1551673784461" expanded="true" signature="3550:3761" placeholder="SELECT user_... sec_user" />
-            <marker date="1551673784461" expanded="true" signature="3550:3762" placeholder="SELECT user_... sec_user" />
+            <marker date="1551763021090" expanded="true" signature="167:230" placeholder="SELECT pjt_l... pjt-location" />
+            <marker date="1551763021090" expanded="true" signature="366:429" placeholder="SELECT pjt_c... pjt-category" />
+            <marker date="1551763021090" expanded="true" signature="563:645" placeholder="SELECT pjt_s... pjt-sector" />
+            <marker date="1551763021090" expanded="true" signature="832:938" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551763021090" expanded="true" signature="832:939" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551763021090" expanded="true" signature="832:946" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551763021090" expanded="true" signature="832:975" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551763021090" expanded="true" signature="1109:1149" placeholder="SELECT thrus... thrust" />
+            <marker date="1551763021090" expanded="true" signature="1334:1341" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551763021090" expanded="true" signature="1334:1416" placeholder="SELECT focus... focus-area" />
+            <marker date="1551763021090" expanded="true" signature="1334:1423" placeholder="SELECT focus... focus-area" />
+            <marker date="1551763021090" expanded="true" signature="1604:1666" placeholder="SELECT outco... outcomes" />
+            <marker date="1551763021090" expanded="true" signature="1604:1668" placeholder="SELECT outco... outcomes" />
+            <marker date="1551763021090" expanded="true" signature="1604:1678" placeholder="SELECT outco... outcomes" />
+            <marker date="1551763021090" expanded="true" signature="1870:1943" placeholder="SELECT strat... strategies" />
+            <marker date="1551763021090" expanded="true" signature="2091:2098" placeholder="SELECT focus... focus-area" />
+            <marker date="1551763021090" expanded="true" signature="2091:2138" placeholder="SELECT targe... pjt-target-group" />
+            <marker date="1551763021090" expanded="true" signature="2091:2158" placeholder="SELECT targe... tbl_pjt_target_group" />
+            <marker date="1551763021090" expanded="true" signature="2302:2378" placeholder="SELECT depar... tbl_department" />
+            <marker date="1551763021090" expanded="true" signature="2519:2566" placeholder="SELECT posit... position" />
+            <marker date="1551763021090" expanded="true" signature="2711:2867" placeholder="SELECT emplo... employee" />
+            <marker date="1551763021090" expanded="true" signature="3087:3094" placeholder="SELECT emplo... employee" />
+            <marker date="1551763021090" expanded="true" signature="3087:3288" placeholder="SELECT user_... sec_user" />
+            <marker date="1551763021090" expanded="true" signature="3087:3295" placeholder="SELECT user_... sec_user" />
+            <marker date="1551763021090" expanded="true" signature="3784:4000" placeholder="SELECT user_... sec_user" />
+            <marker date="1551763021090" expanded="true" signature="3784:4001" placeholder="SELECT user_... sec_user" />
           </folding>
         </state>
       </provider>
@@ -951,31 +949,32 @@
         <state relative-caret-position="799">
           <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
           <folding>
-            <marker date="1551673784461" expanded="true" signature="167:230" placeholder="SELECT pjt_l... pjt-location" />
-            <marker date="1551673784461" expanded="true" signature="366:429" placeholder="SELECT pjt_c... pjt-category" />
-            <marker date="1551673784461" expanded="true" signature="563:645" placeholder="SELECT pjt_s... pjt-sector" />
-            <marker date="1551673784461" expanded="true" signature="832:938" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1551673784461" expanded="true" signature="832:939" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1551673784461" expanded="true" signature="832:946" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1551673784461" expanded="true" signature="832:975" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1551673784461" expanded="true" signature="1109:1149" placeholder="SELECT thrus... thrust" />
-            <marker date="1551673784461" expanded="true" signature="1334:1341" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1551673784461" expanded="true" signature="1334:1416" placeholder="SELECT focus... focus-area" />
-            <marker date="1551673784461" expanded="true" signature="1334:1423" placeholder="SELECT focus... focus-area" />
-            <marker date="1551673784461" expanded="true" signature="1604:1666" placeholder="SELECT outco... outcomes" />
-            <marker date="1551673784461" expanded="true" signature="1604:1668" placeholder="SELECT outco... outcomes" />
-            <marker date="1551673784461" expanded="true" signature="1604:1678" placeholder="SELECT outco... outcomes" />
-            <marker date="1551673784461" expanded="true" signature="1870:1943" placeholder="SELECT strat... strategies" />
-            <marker date="1551673784461" expanded="true" signature="2091:2098" placeholder="SELECT focus... focus-area" />
-            <marker date="1551673784461" expanded="true" signature="2091:2138" placeholder="SELECT targe... pjt-target-group" />
-            <marker date="1551673784461" expanded="true" signature="2091:2158" placeholder="SELECT targe... tbl_pjt_target_group" />
-            <marker date="1551673784461" expanded="true" signature="2294:2341" placeholder="SELECT posit... position" />
-            <marker date="1551673784461" expanded="true" signature="2486:2638" placeholder="SELECT emplo... employee" />
-            <marker date="1551673784461" expanded="true" signature="2858:2865" placeholder="SELECT emplo... employee" />
-            <marker date="1551673784461" expanded="true" signature="2858:3054" placeholder="SELECT user_... sec_user" />
-            <marker date="1551673784461" expanded="true" signature="2858:3061" placeholder="SELECT user_... sec_user" />
-            <marker date="1551673784461" expanded="true" signature="3550:3761" placeholder="SELECT user_... sec_user" />
-            <marker date="1551673784461" expanded="true" signature="3550:3762" placeholder="SELECT user_... sec_user" />
+            <marker date="1551763021090" expanded="true" signature="167:230" placeholder="SELECT pjt_l... pjt-location" />
+            <marker date="1551763021090" expanded="true" signature="366:429" placeholder="SELECT pjt_c... pjt-category" />
+            <marker date="1551763021090" expanded="true" signature="563:645" placeholder="SELECT pjt_s... pjt-sector" />
+            <marker date="1551763021090" expanded="true" signature="832:938" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551763021090" expanded="true" signature="832:939" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551763021090" expanded="true" signature="832:946" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551763021090" expanded="true" signature="832:975" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551763021090" expanded="true" signature="1109:1149" placeholder="SELECT thrus... thrust" />
+            <marker date="1551763021090" expanded="true" signature="1334:1341" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551763021090" expanded="true" signature="1334:1416" placeholder="SELECT focus... focus-area" />
+            <marker date="1551763021090" expanded="true" signature="1334:1423" placeholder="SELECT focus... focus-area" />
+            <marker date="1551763021090" expanded="true" signature="1604:1666" placeholder="SELECT outco... outcomes" />
+            <marker date="1551763021090" expanded="true" signature="1604:1668" placeholder="SELECT outco... outcomes" />
+            <marker date="1551763021090" expanded="true" signature="1604:1678" placeholder="SELECT outco... outcomes" />
+            <marker date="1551763021090" expanded="true" signature="1870:1943" placeholder="SELECT strat... strategies" />
+            <marker date="1551763021090" expanded="true" signature="2091:2098" placeholder="SELECT focus... focus-area" />
+            <marker date="1551763021090" expanded="true" signature="2091:2138" placeholder="SELECT targe... pjt-target-group" />
+            <marker date="1551763021090" expanded="true" signature="2091:2158" placeholder="SELECT targe... tbl_pjt_target_group" />
+            <marker date="1551763021090" expanded="true" signature="2302:2378" placeholder="SELECT depar... tbl_department" />
+            <marker date="1551763021090" expanded="true" signature="2519:2566" placeholder="SELECT posit... position" />
+            <marker date="1551763021090" expanded="true" signature="2711:2867" placeholder="SELECT emplo... employee" />
+            <marker date="1551763021090" expanded="true" signature="3087:3094" placeholder="SELECT emplo... employee" />
+            <marker date="1551763021090" expanded="true" signature="3087:3288" placeholder="SELECT user_... sec_user" />
+            <marker date="1551763021090" expanded="true" signature="3087:3295" placeholder="SELECT user_... sec_user" />
+            <marker date="1551763021090" expanded="true" signature="3784:4000" placeholder="SELECT user_... sec_user" />
+            <marker date="1551763021090" expanded="true" signature="3784:4001" placeholder="SELECT user_... sec_user" />
           </folding>
         </state>
       </provider>
@@ -1058,13 +1057,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/pages/org.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/plugins/visualization/orgchart/jquery.orgchart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1104,14 +1096,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/pages/dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4811">
-          <caret line="283" column="9" selection-start-line="283" selection-start-column="9" selection-end-line="283" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1163,28 +1147,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="275" column="78" selection-start-line="275" selection-start-column="69" selection-end-line="275" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
-          <folding>
-            <marker date="1551675617062" expanded="true" signature="834:916" placeholder="update sec_u... " />
-            <marker date="1551675617062" expanded="true" signature="1597:1679" placeholder="update sec_u... " />
-            <marker date="1551675617062" expanded="true" signature="3498:3807" placeholder="select a.sec... sec_group" />
-            <marker date="1551675617062" expanded="true" signature="4019:4078" placeholder="SELECT sec_r... sec_role" />
-            <marker date="1551675617062" expanded="true" signature="4334:4568" placeholder="SELECT tbl_m... tbl_agency" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/projectModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -1196,59 +1158,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/dashboardModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <marker date="1551673784461" expanded="true" signature="167:230" placeholder="SELECT pjt_l... pjt-location" />
-            <marker date="1551673784461" expanded="true" signature="366:429" placeholder="SELECT pjt_c... pjt-category" />
-            <marker date="1551673784461" expanded="true" signature="563:645" placeholder="SELECT pjt_s... pjt-sector" />
-            <marker date="1551673784461" expanded="true" signature="832:938" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1551673784461" expanded="true" signature="832:939" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1551673784461" expanded="true" signature="832:946" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1551673784461" expanded="true" signature="832:975" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1551673784461" expanded="true" signature="1109:1149" placeholder="SELECT thrus... thrust" />
-            <marker date="1551673784461" expanded="true" signature="1334:1341" placeholder="SELECT pjt_s... pjt-sub-sector" />
-            <marker date="1551673784461" expanded="true" signature="1334:1416" placeholder="SELECT focus... focus-area" />
-            <marker date="1551673784461" expanded="true" signature="1334:1423" placeholder="SELECT focus... focus-area" />
-            <marker date="1551673784461" expanded="true" signature="1604:1666" placeholder="SELECT outco... outcomes" />
-            <marker date="1551673784461" expanded="true" signature="1604:1668" placeholder="SELECT outco... outcomes" />
-            <marker date="1551673784461" expanded="true" signature="1604:1678" placeholder="SELECT outco... outcomes" />
-            <marker date="1551673784461" expanded="true" signature="1870:1943" placeholder="SELECT strat... strategies" />
-            <marker date="1551673784461" expanded="true" signature="2091:2098" placeholder="SELECT focus... focus-area" />
-            <marker date="1551673784461" expanded="true" signature="2091:2138" placeholder="SELECT targe... pjt-target-group" />
-            <marker date="1551673784461" expanded="true" signature="2091:2158" placeholder="SELECT targe... tbl_pjt_target_group" />
-            <marker date="1551673784461" expanded="true" signature="2294:2341" placeholder="SELECT posit... position" />
-            <marker date="1551673784461" expanded="true" signature="2486:2638" placeholder="SELECT emplo... employee" />
-            <marker date="1551673784461" expanded="true" signature="2858:2865" placeholder="SELECT emplo... employee" />
-            <marker date="1551673784461" expanded="true" signature="2858:3054" placeholder="SELECT user_... sec_user" />
-            <marker date="1551673784461" expanded="true" signature="2858:3061" placeholder="SELECT user_... sec_user" />
-            <marker date="1551673784461" expanded="true" signature="3550:3761" placeholder="SELECT user_... sec_user" />
-            <marker date="1551673784461" expanded="true" signature="3550:3762" placeholder="SELECT user_... sec_user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/project.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="67" column="48" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/config/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-102">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/pages/milestones.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-918">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/pages/org.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2891">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1262,10 +1190,92 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="69" column="47" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="36" column="85" selection-start-line="36" selection-start-column="85" selection-end-line="36" selection-end-column="85" />
+          <folding>
+            <marker date="1551762311962" expanded="true" signature="836:918" placeholder="update sec_u... " />
+            <marker date="1551762311962" expanded="true" signature="1601:1683" placeholder="update sec_u... " />
+            <marker date="1551762311962" expanded="true" signature="3502:3811" placeholder="select a.sec... sec_group" />
+            <marker date="1551762311962" expanded="true" signature="4023:4082" placeholder="SELECT sec_r... sec_role" />
+            <marker date="1551762311962" expanded="true" signature="4340:4574" placeholder="SELECT tbl_m... tbl_agency" />
+            <marker date="1551762311962" expanded="true" signature="4775:4834" placeholder="SELECT minis... tbl_ministry" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/pages/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="187" column="52" selection-start-line="187" selection-start-column="52" selection-end-line="187" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="289" column="53" selection-start-line="289" selection-start-column="53" selection-end-line="289" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/dashboardModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="66" column="53" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="53" />
+          <folding>
+            <marker date="1551763021090" expanded="true" signature="167:230" placeholder="SELECT pjt_l... pjt-location" />
+            <marker date="1551763021090" expanded="true" signature="366:429" placeholder="SELECT pjt_c... pjt-category" />
+            <marker date="1551763021090" expanded="true" signature="563:645" placeholder="SELECT pjt_s... pjt-sector" />
+            <marker date="1551763021090" expanded="true" signature="832:938" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551763021090" expanded="true" signature="832:939" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551763021090" expanded="true" signature="832:946" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551763021090" expanded="true" signature="832:975" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551763021090" expanded="true" signature="1109:1149" placeholder="SELECT thrus... thrust" />
+            <marker date="1551763021090" expanded="true" signature="1334:1341" placeholder="SELECT pjt_s... pjt-sub-sector" />
+            <marker date="1551763021090" expanded="true" signature="1334:1416" placeholder="SELECT focus... focus-area" />
+            <marker date="1551763021090" expanded="true" signature="1334:1423" placeholder="SELECT focus... focus-area" />
+            <marker date="1551763021090" expanded="true" signature="1604:1666" placeholder="SELECT outco... outcomes" />
+            <marker date="1551763021090" expanded="true" signature="1604:1668" placeholder="SELECT outco... outcomes" />
+            <marker date="1551763021090" expanded="true" signature="1604:1678" placeholder="SELECT outco... outcomes" />
+            <marker date="1551763021090" expanded="true" signature="1870:1943" placeholder="SELECT strat... strategies" />
+            <marker date="1551763021090" expanded="true" signature="2091:2098" placeholder="SELECT focus... focus-area" />
+            <marker date="1551763021090" expanded="true" signature="2091:2138" placeholder="SELECT targe... pjt-target-group" />
+            <marker date="1551763021090" expanded="true" signature="2091:2158" placeholder="SELECT targe... tbl_pjt_target_group" />
+            <marker date="1551763021090" expanded="true" signature="2302:2378" placeholder="SELECT depar... tbl_department" />
+            <marker date="1551763021090" expanded="true" signature="2519:2566" placeholder="SELECT posit... position" />
+            <marker date="1551763021090" expanded="true" signature="2711:2867" placeholder="SELECT emplo... employee" />
+            <marker date="1551763021090" expanded="true" signature="3087:3094" placeholder="SELECT emplo... employee" />
+            <marker date="1551763021090" expanded="true" signature="3087:3288" placeholder="SELECT user_... sec_user" />
+            <marker date="1551763021090" expanded="true" signature="3087:3295" placeholder="SELECT user_... sec_user" />
+            <marker date="1551763021090" expanded="true" signature="3784:4000" placeholder="SELECT user_... sec_user" />
+            <marker date="1551763021090" expanded="true" signature="3784:4001" placeholder="SELECT user_... sec_user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/core/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2380">
-          <caret line="369" column="4" selection-start-line="369" selection-start-column="4" selection-end-line="369" selection-end-column="4" />
+        <state relative-caret-position="653">
+          <caret line="431" column="85" selection-start-line="431" selection-start-column="85" selection-end-line="431" selection-end-column="85" />
           <folding />
         </state>
       </provider>

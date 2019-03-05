@@ -7,7 +7,7 @@ Class User extends CI_Model
 function login($username, $password)
 {
 
-	$this -> db -> select('user_id, user_name, sec_role_id, user_full_name,agency_id,email_id, pwd_txt,lock_by_pwd,no_pwd_attempt,change_pwd_opt');
+	$this -> db -> select('user_id, user_name, sec_role_id, user_full_name,ministry_id,email_id, pwd_txt,lock_by_pwd,no_pwd_attempt,change_pwd_opt');
 	$this -> db -> from('sec_user');
 	if(filter_var($username, FILTER_VALIDATE_EMAIL)) {
         $this -> db -> where('email_id', $username);
@@ -34,7 +34,7 @@ function login($username, $password)
 //login bypass
 function login_bypass($username)
 {
-	$this -> db -> select('user_id, user_name, sec_role_id,user_full_name,agency_id, email_id, pwd_txt,lock_by_pwd,no_pwd_attempt,change_pwd_opt');
+	$this -> db -> select('user_id, user_name, sec_role_id,user_full_name,ministry_id, email_id, pwd_txt,lock_by_pwd,no_pwd_attempt,change_pwd_opt');
 	$this -> db -> from('sec_user');
 	if(filter_var($username, FILTER_VALIDATE_EMAIL)) {
         $this -> db -> where('email_id', $username);
@@ -147,7 +147,7 @@ function chkuser($username, $email)
         }
 	}
 
-	function get_owner_name($ownerid)
+	/*function get_owner_name($ownerid)
 	{
 
 		$query = "SELECT  tbl_ministry.ministry_name as owner_name FROM tbl_agency join tbl_department on  tbl_department.department_id=tbl_agency.department_id join tbl_ministry on tbl_ministry.ministry_id = tbl_department.ministry_id and agency_id = $ownerid";
@@ -157,7 +157,16 @@ function chkuser($username, $email)
 		} else {
 			return false;
 		}
+	}*/
+	function get_owner_name($ownerid)
+	{
+		$query = "SELECT ministry_name FROM tbl_ministry where ministry_id = $ownerid";
+		$row =  $this->db->query($query)->row();
+		if(!empty($row->ministry_name)){
+			return $row->ministry_name;
+		} else {
+			return false;
+		}
 	}
-
 }
 ?>

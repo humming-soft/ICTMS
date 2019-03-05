@@ -204,7 +204,8 @@ var Dashboard = function() {
             infinite: false,
             adaptiveHeight: true,
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            draggable: false
             });
             p.on('shown.bs.modal', function (e) {
                 pc.slick('setPosition');

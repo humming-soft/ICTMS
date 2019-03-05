@@ -26,7 +26,7 @@
 						<i class="icon-stack2 mr-2"></i> Overview
 					</a>
 				</li>
-				<li class="nav-item">
+				<!-- <li class="nav-item">
 					<a href="<?=site_url('projects/02849/business')?>" class="navbar-nav-link">
 						<i class="icon-split mr-2"></i> Business Options
 					</a>
@@ -64,7 +64,7 @@
 						<a href="<?=site_url('projects/02849/risk')?>" class="dropdown-item"><i class="icon-menu6"></i> Risk Register</a>
 						<a href="<?=site_url('projects/02849/org')?>" class="dropdown-item"><i class="icon-tree6"></i> Org. Strucure</a>
 					</div>
-				</li>
+				</li> -->
 			</ul>
 
 			<ul class="navbar-nav ml-md-auto">

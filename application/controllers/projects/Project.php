@@ -57,6 +57,30 @@ class Project extends ICTMS_Controller {
         $this->load->view('core/fragments/footer');
     }
 
+    public function stakeholder_analysis($pid=null){
+        $session_data = $this->session->userdata('logged_in');
+        $data['username'] =$data1['username'] = $session_data['username'];
+
+        if($this->session->userdata('message'))
+        {
+            $messagehrecord=$this->session->userdata('message');
+            $message=$messagehrecord['message'];
+            $this->session->unset_userdata('message');
+        }
+        else
+        {
+            $message='';
+        }
+        $_header["support"] = array("footable");
+        $_header["page_js"] = "stakeholder_analysis";
+
+        $this->load->view('core/fragments/header',$_header);
+        $this->load->view('core/projects/fragments/main_navbar',$data1);
+        $this->load->view('core/projects/fragments/secondary_navbar');
+        $this->load->view('core/projects/stakeholder_analysis');
+        $this->load->view('core/fragments/footer');
+    }
+
     public function business($pid=null){
         $session_data = $this->session->userdata('logged_in');
         $data['username'] =$data1['username'] = $session_data['username'];

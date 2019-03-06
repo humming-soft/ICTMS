@@ -84,7 +84,8 @@ Class dashboardModel extends CI_Model
     {
         $data = array();
         $parentKey = $userid;
-        $sql3 = " SELECT user_id, user_name, user_full_name,  sec_role_name,  ministry_id,  parent_user_id FROM sec_user join  sec_role on sec_role.sec_role_id=sec_user.sec_role_id and ministry_id=20 and parent_user_id is null";
+     
+        $sql3 = " SELECT user_id, user_name, user_full_name,  sec_role_name,  parent_id FROM tbl_pjt_user join  sec_role on sec_role.sec_role_id=tbl_pjt_user.sec_role_id and parent_id is null";
         $query3 = $this->db->query($sql3);
         $result= $query3->result();
         foreach($result as $key => $value)
@@ -99,7 +100,7 @@ Class dashboardModel extends CI_Model
         function membersTree($parentKey)
         {
             $row1 =array();
-            $sql3 = " SELECT user_id as id, user_name, user_full_name as name,  sec_role_name,  ministry_id,  parent_user_id FROM sec_user join  sec_role on sec_role.sec_role_id=sec_user.sec_role_id and ministry_id=20 and parent_user_id = $parentKey";
+            $sql3 = "SELECT user_id as id,user_name, user_full_name as name,  sec_role_name, parent_id FROM tbl_pjt_user join  sec_role on sec_role.sec_role_id=tbl_pjt_user.sec_role_id and parent_id = $parentKey";
             $query3 = $this->db->query($sql3);
             $row = $query3->result();
             foreach($row as $key => $value)

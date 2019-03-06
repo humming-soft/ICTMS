@@ -13,6 +13,7 @@ var Dashboard = function() {
     };
 
      var _buildOrg = function(datascource) {
+
         var oc = $('#orgchart-container').orgchart({
             'data': datascource,
             'chartClass': 'edit-state',
@@ -38,7 +39,7 @@ var Dashboard = function() {
                 $('#selected-node').val('');
             }
         });
-        $('input[name="chart-state"]').on('click', function () {
+         $('input[name="chart-state"]').on('click', function () {
             $('.orgchart').toggleClass('edit-state', this.value !== 'view');
             $('#edit-panel').toggleClass('edit-state', this.value === 'view');
             if ($(this).val() === 'edit') {
@@ -135,15 +136,13 @@ var Dashboard = function() {
                     }));
                 }
             }
-            $.ajax({
-                url:base_url+'project/newOgchartUser',
-                method: 'post',
-                data: {userName : newnodev ,parentId: parent_id,userMail:userMail,position : positionid },
-                dataType: 'json',
-                success: function(response){
-                    alert("inserted");
+            $.post(base_url+'project/newOgchartUser',{"userName":newnodev,"parentId": parent_id,"userMail":userMail,"position" : positionid}, function(d) {
+                if(d.status == 1) {
+                    var datasoursenew= d.ogchartNew;
+                    console.log(d.ogchartNew);
+                    oc.init({ 'data': datasoursenew});
                 }
-            });
+            }, 'json');
         });
 
         $('#btn-delete-nodes').on('click', function () {
@@ -181,12 +180,18 @@ var Dashboard = function() {
 
         $(document).on("click","#saveProject",function(){
             var post =$("#position-node").val();
+            var $node = $('#selected-node').data('node');
             var employee =$("#selected-node").val();
             var sector = $("#sector").val();
             var unit = $("#units").val();
+            var parent_id = $('#parent-id').val();
+            var userid = $node[0].id;
+            console.log("|||||||||||||||||||||||||||||||||||||");
+            console.log($node.parent());
+            console.log("|||||||||||||||||||||||||||||||||||||");
             if($targets == 1){
                 $("#pjt_directorStr").val(employee);
-                $("#pjt_directorID").val(employee);
+                $("#pjt_directorID").val(userid);
                 $(".director").html(" ");
                 $(".director").append(
                     '<div class="card card-body">'+
@@ -194,7 +199,7 @@ var Dashboard = function() {
                     '<div class="card-img-actions d-inline-block">'+
                     '<img class="img-fluid rounded-circle" src="'+base_url+'assets/img/avatar/av5.png" width="42" height="42" alt="">'+
                     '<div class="card-img-actions-overlay card-img rounded-circle"><a href="#" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round"><i class="icon-bin"></i></a></div></div>'+
-                    '<div class="media-body">  <input type="hidden" class="form-control" value="1" name="userid[]"><h6 class="mb-0">'+employee+'</h6><span class="text-muted">'+post+'</span></div></div></div>' );
+                    '<div class="media-body"> <input type="hidden" class="form-control" value="'+userid+'" name="userid[]"><h6 class="mb-0">'+employee+'</h6><span class="text-muted">'+post+'</span></div></div></div>' );
              }else{
                 $("#p-team").append('<div class="col-xl-4 col-md-6">'+
                     '<div class="card card-body">'+
@@ -202,12 +207,12 @@ var Dashboard = function() {
                     '<div class="card-img-actions d-inline-block">'+
                     '<img class="img-fluid rounded-circle" src="'+base_url+'assets/img/avatar/av5.png" width="42" height="42" alt="">'+
                     '<div class="card-img-actions-overlay card-img rounded-circle"><a href="#" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round"><i class="icon-bin"></i></a></div></div>'+
-                    '<div class="media-body">  <input type="hidden" class="form-control" value="1" name="userid[]"><h6 class="mb-0">'+employee+'</h6><span class="text-muted">'+post+'</span></div></div></div></div>' );
+                    '<div class="media-body">  <input type="hidden" class="form-control" value="'+userid+'" name="userid[]"><h6 class="mb-0">'+employee+'</h6><span class="text-muted">'+post+'</span></div></div></div></div>' );
             }
 
         });
     };
- 
+
     var _componentModal = function(onload,p,pc) {
         if(onload){
             $('.hmwks-modal.show-on-load').modal('show');

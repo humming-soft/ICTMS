@@ -26,6 +26,11 @@ Class projectModel extends CI_Model
         $this->db->insert('sec_user', $data);
         return true;
     }
+    function add_ogchart_user($data)
+    {
+        $this->db->insert('tbl_pjt_user', $data);
+        return true;
+    }
     function getUserID()
     {
         $query=$this->db->query("SELECT max(user_id) as userId FROM sec_user");
@@ -34,5 +39,15 @@ Class projectModel extends CI_Model
             $user_id=  $row->userId + 1;
         endforeach;
         return $user_id;
+    }
+    function update_projectID($userid,$data){
+        $this->db->where('user_id', $userid);
+        $this->db->update('tbl_pjt_user',$data);
+        $updated_status = $this->db->affected_rows();
+        if($updated_status){
+            return $userid;
+        }else{
+            return 0;
+        }
     }
 }

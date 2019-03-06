@@ -173,7 +173,7 @@
                                 </h6>
                                 <div class="header-elements">
                                     <span class="badge bg-secondary ml-2">INITIATED</span>
-								</div>                        
+								</div>
                             </div>
 
                             <div class="card-body">
@@ -232,7 +232,7 @@
                                 </h6>
                                 <div class="header-elements">
                                     <span class="badge bg-success ml-2">IMPLIMENTED</span>
-								</div>                        
+								</div>
                             </div>
 
                             <div class="card-body">
@@ -292,7 +292,7 @@
                                 </h6>
                                 <div class="header-elements">
                                     <span class="badge bg-success ml-2">IMPLIMENTED</span>
-								</div>                        
+								</div>
                             </div>
 
                             <div class="card-body">
@@ -567,30 +567,29 @@
                                         </select>
                                     </div>
 
-                                    <div class="form-group text-left" id="thrusttext1" ><label for="">Focus Area</label>
-                                        <select class=" form-control m-b" id="focus_area" name="focus_area">
+                                    <div class="form-group text-left" id="thrusttext1" " ><label for="">Focus Area</label>
+                                        <select class=" form-control m-b" id="focus_area" disabled="true" name="focus_area">
                                             <option>SELECT</option>
                                         </select>
                                     </div>
                                 </div>
-                                    <div class="col-md-6"  id="strategiesDiv">
+                                    <div class="col-md-12"  id="strategiesDiv">
                                         <div class="form-group text-left" id="stratagies1" ><label for="">Strategy</label>
-                                            <select class=" form-control m-b" id="stratagies" name="stratagies">
+                                            <select class=" form-control m-b" id="stratagies"  disabled="true" name="stratagies">
                                                 <option>SELECT</option>
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-md-6"   id="outcomesDiv">
-                                        <div class="form-group">
-                                            <label>Outcomes</label>
-                                            <select class="form-control multiselect" multiple="multiple" id="outcomes" name="outcomes[]" data-fouc>
+                                    <div class="col-md-12"   id="outcomesDiv">
+                                        <div class="form-group text-left"><label for="">Outcomes</label>
+                                            <select class="form-control multiselect" multiple="multiple" disabled="true" id="outcomes" name="outcomes[]"  data-fouc>
                                             </select>
                                         </div>
                                     </div>
 
                             </div>
 
-                            <div class="repeater-default">
+                <!--            <div class="repeater-default">
                                 <div class="d-flex flex-column">
                                     <a class="float-right text-right link-modal" data-repeater-create  href="#"><i class="icon-plus2 mr-1"></i><span>Add</span></a>  
                                 </div>       
@@ -602,12 +601,12 @@
                                                     <select class=" form-control m-b" id="target_group" name="target_group" >
                                                         <option>SELECT</option>
                                                         <?php
-                                                        foreach ($targetGroup as $targetGroup):
-                                                            ?>
-                                                            <option value="<?php echo $targetGroup->target_group_id; ?>"><?php echo $targetGroup->target_group_name; ?></option>
+/*                                                        foreach ($targetGroup as $targetGroup):
+                                                            */?>
+                                                            <option value="<?php /*echo $targetGroup->target_group_id; */?>"><?php /*echo $targetGroup->target_group_name; */?></option>
                                                             <?php
-                                                        endforeach;
-                                                        ?>
+/*                                                        endforeach;
+                                                        */?>
                                                     </select>
                                                 </div>
                                             </div>
@@ -623,12 +622,12 @@
                                                         <select class=" form-control m-b" id="target_loc" name="target_loc">
                                                             <option>SELECT</option>
                                                             <?php
-                                                            foreach ($location as $loc):
-                                                                ?>
-                                                                <option value="<?php echo $loc->pjt_location_id; ?>"><?php echo $loc->pjt_location_name; ?></option>
+/*                                                            foreach ($location as $loc):
+                                                                */?>
+                                                                <option value="<?php /*echo $loc->pjt_location_id; */?>"><?php /*echo $loc->pjt_location_name; */?></option>
                                                                 <?php
-                                                            endforeach;
-                                                            ?>
+/*                                                            endforeach;
+                                                            */?>
                                                         </select>
                                                         <span class="input-group-append">
                                                             <button data-repeater-delete type="button" class="btn btn-danger btn-icon ml-2"><i class="icon-bin"></i></button>                                                     
@@ -639,7 +638,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
                             <div class="text-right">
                                 <button type="button" class="btn btn-light" data-dismiss="modal">Cancel <i class="icon-cross2 ml-2"></i></button>
 								<button type="submit" class="btn btn-primary">Save <i class="icon-paperplane ml-2"></i></button>
@@ -767,6 +766,8 @@
         });
         $(document).on("change","#thrust",function(){
             var thrust = $(this).val();
+            $("#focus_area").attr("disabled",false);
+            $("#outcomes").attr("disabled",false);
             $.ajax({
                 url:'<?=base_url()?>dashboard/get_focusarea',
                 method: 'post',
@@ -797,6 +798,7 @@
         });
         $(document).on("change","#focus_area",function(){
             var focusarea = $(this).val();
+            $("#stratagies").attr("disabled",false);
             $.ajax({
                 url:'<?=base_url()?>dashboard/get_strategies',
                 method: 'post',

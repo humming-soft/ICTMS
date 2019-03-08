@@ -25,7 +25,10 @@ class Dashboard extends ICTMS_Controller {
         $data['department']=$this->dashboardModel->select_departments($session_data['agency']);
         $data['targetGroup']=$this->dashboardModel->select_target_group();
         $data['ogchart']=json_encode( $this->dashboardModel->get_ogchart(1));
-     /*   $data['projects']=$this->dashboardModel->select_current_projects();*/
+        $data['projects']=$this->dashboardModel->select_current_projects();
+        /*
+        print_r( $data['projects']);
+        exit;*/
         if($this->session->userdata('message'))
         {
             $messagehrecord=$this->session->userdata('message');

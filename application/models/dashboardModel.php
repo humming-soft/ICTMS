@@ -28,6 +28,12 @@ Class dashboardModel extends CI_Model
         $query = $this->db->query($sql);
         return $query->result();
     }
+    function select_current_projects()
+    {
+        $sql = "SELECT m.pjt_master_id, m.pjt_name,m. pjt_objective, m.pjt_progress,m.pjt_planned_date,m.pjt_estimate_cost,mini.ministry_name, dep.department_name FROM tbl_pjt_master m join tbl_ministry  mini on m.pjt_owner_id=mini.ministry_id join tbl_department dep on  dep.department_id=m.pjt_implementer_id";
+        $query = $this->db->query($sql);
+        return $query->result();
+    }
     function select_thrust()
     {
         $sql = "SELECT thrust_id, thrust FROM tbl_thrust";
@@ -84,7 +90,7 @@ Class dashboardModel extends CI_Model
     {
         $data = array();
         $parentKey = $userid;
-     
+
         $sql3 = " SELECT user_id, user_name, user_full_name,  sec_role_name,  parent_id FROM tbl_pjt_user join  sec_role on sec_role.sec_role_id=tbl_pjt_user.sec_role_id and parent_id is null";
         $query3 = $this->db->query($sql3);
         $result= $query3->result();

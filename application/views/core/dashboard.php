@@ -122,7 +122,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <b class="font-weight-semibold">Project Objective :</b>
-                                    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+                                    <p>The inclusion of migrants in the labour market is key to ensure their effective integration into the host societies and their positive impact on the EU economy; this entails fully using their skills and realising their economic potential. They can contribute to addressing skills shortages in certain sectors at all skills levels.</p>
                                 </div>
                                 <div class="mb-3">
                                     <b class="font-weight-semibold pb-2">Project Team :</b>
@@ -182,7 +182,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <b class="font-weight-semibold">Project Description :</b>
-                                    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+                                    <p> Marine Department has gone through major transformations, evolving into becoming a lead agency in maritime safety in this country. The three Marine Departments of Peninsular Malaysia, Sabah and Sarawak, that previously operated quite independently, are now integrated as one Marine Department of Malaysia.</p>
                                 </div>
                                 <div class="mb-3">
                                     <b class="font-weight-semibold pb-2">Project Team :</b>
@@ -241,7 +241,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <b class="font-weight-semibold">Project Description :</b>
-                                    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+                                    <p>Maintain the National Register of Higher Education Providers in accordance with the Tertiary Education Quality and Standards.</p>
                                 </div>
                                 <div class="mb-3">
                                     <b class="font-weight-semibold pb-2">Project Team :</b>
@@ -301,7 +301,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <b class="font-weight-semibold">Project Description :</b>
-                                    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+                                    <p>The Multi Lane Free Flow (MLFF) is an electronic toll collection system that allows free flow high speed toll system highway for all its users.</p>
                                 </div>
                                 <div class="mb-3">
                                     <b class="font-weight-semibold pb-2">Project Team :</b>
@@ -376,8 +376,8 @@
                         <div class="hmwks-content with-gradient text-center">
                             <h4 class="hmwks-title">Create New Project</h4>
                             <div class="hmwks-text">This is a multi step project creation process, you
-                                can use it to provide project information which includes scope, objective of the project
-                                and project team etc. before you start your project.</div>
+                                can use it to provide project information which includes sector, thrusts of the project controllers
+                                and working committee etc. before you start your project.</div>
                             <div class="row text-left">
                                 <div class="col-sm-12">
                                     <div class="form-group">
@@ -425,7 +425,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
-                                        <div class="form-group"><label for="">Project Implementers</label>
+                                        <div class="form-group"><label for="">Project Controllers</label>
                                             <select class=" form-control m-b" id="implementers" name="implementers">
                                                 <option>SELECT</option>
                                                 <?php
@@ -450,11 +450,10 @@
                     </div>
                     <div class="hmwks-slide">
                         <div class="hmwks-content with-gradient text-center">
-                            <h4 class="hmwks-title">Project Team</h4>
+                            <h4 class="hmwks-title">Working Committee </h4>
                             <div class="hmwks-text">Add individuals who will be contributing to this Project
                             <a class="float-right text-right link-modal ogchartShow" data-toggle="modal" data-org="2" data-dismiss="modal" href="#"><i class="icon-plus2 mr-1"></i><span>Add Member</span></a>
                             </div>
-                            
                             <div class="row" id="p-team">
                                 <div class="col-xl-4 col-md-6">
                                     <div class="card card-body">

@@ -29,8 +29,8 @@
                                                 <div class="bonus-extra-item" data-percent="30" style="width: 30%;"><span class="bonus-extra-amount">20 ETH</span><span
                                                         class="bonus-extra-percent">100%</span></div>
                                             </div>
-                                    </div>
-                                </div> -->
+                                        </div>
+                                    </div> -->
 
                                     <ul class="nav nav-pills ictms-nav-pills nav-pills-bordered">
                                         <li class="nav-item"><a href="#bordered-pill1" class="nav-link active show no-loader" data-toggle="tab"><i class="icon-circles mr-1"></i> Initiation</a></li>
@@ -47,7 +47,9 @@
                                                         <div class="step-number current">01</div>
                                                         <div class="step-head-text">
                                                             <h4>Stakeholder Analysis</h4>
-                                                            <p>Your simple personal information required for identification</p>
+                                                            <p>Your simple personal information required for identification.</p>
+                                                            
+                                                            <a href="<?=site_url('projects/02849/stakeholder-analysis')?>">Complete Step →</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -57,6 +59,7 @@
                                                         <div class="step-head-text">
                                                             <h4>Problem Analaysis</h4>
                                                             <p>Your simple personal information required for identification</p>
+                                                            <!-- <a href="#">Complete Step →</a> -->
                                                         </div>
                                                     </div>
                                                 </div>
@@ -66,6 +69,7 @@
                                                         <div class="step-head-text">
                                                             <h4>Objective Analaysis</h4>
                                                             <p>Your simple personal information required for identification</p>
+                                                            <!-- <a href="#">Complete Step →</a> -->
                                                         </div>
                                                     </div>
                                                 </div>
@@ -75,6 +79,7 @@
                                                         <div class="step-head-text">
                                                             <h4>Strategic Analaysis</h4>
                                                             <p>Your simple personal information required for identification</p>
+                                                            <!-- <a href="#">Complete Step →</a> -->
                                                         </div>
                                                     </div>
                                                 </div>
@@ -205,15 +210,7 @@
                             <div class="col-12 col-md-12 col-lg-12 p-0">
                                 <div class="card">
                                     <div class="card-header header-elements-sm-inline p-3">
-                                        <h5 class="card-title"><i class="icon-stack2 mr-2"></i>PROJECT OVERVIEW
-                                            <a href="javascript:;" class="header-elements-toggle text-default d-sm-none"><i class="icon-more"></i></a>
-                                        </h5>
-                                        <div class="header-elements">
-                                            <div class="list-icons">                                    
-                                                <a class="list-icons-item btn bg-blue btn-icon" data-action="collapse"></a>
-                                                <a class="list-icons-item btn bg-pink-400 btn-icon" data-action="fullscreen"></a>
-                                            </div>
-                                        </div>
+                                        <h5 class="card-title"><i class="icon-stack2 mr-2"></i>PROJECT OVERVIEW</h5>
                                     </div>
                                     
                                     <div class="card-body">
@@ -330,12 +327,6 @@
                                 <div class="card">
                                     <div class="card-header header-elements-inline p-3">
                                         <h5 class="card-title"><i class="icon-stats-growth mr-2"></i>PROJECT PROGRESS</h5>
-                                        <div class="header-elements">
-                                            <div class="list-icons">                                    
-                                                <a class="list-icons-item btn bg-blue btn-icon" data-action="collapse"></a>
-                                                <a class="list-icons-item btn bg-pink-400 btn-icon" data-action="fullscreen"></a>
-                                            </div>
-                                        </div>
                                     </div>
                                     
                                     <div class="card-body">
@@ -366,12 +357,6 @@
                                 <div class="card">
                                     <div class="card-header header-elements-inline p-3">
                                         <h5 class="card-title"><i class="icon-man-woman mr-2"></i>PROJECT TEAM</h5>
-                                        <div class="header-elements">
-                                            <div class="list-icons">                                    
-                                                <a class="list-icons-item btn bg-blue btn-icon" data-action="collapse"></a>
-                                                <a class="list-icons-item btn bg-pink-400 btn-icon" data-action="fullscreen"></a>
-                                            </div>
-                                        </div>
                                     </div>
                                     
                                     <div class="card-body">
@@ -518,12 +503,6 @@
                                 <div class="card">
                                     <div class="card-header header-elements-inline p-3">
                                         <h5 class="card-title"><i class="icon-file-text2 mr-2"></i>DOCUMENTS ATTACHED</h5>
-                                        <div class="header-elements">
-                                            <div class="list-icons">                                    
-                                                <a class="list-icons-item btn bg-blue btn-icon" data-action="collapse"></a>
-                                                <a class="list-icons-item btn bg-pink-400 btn-icon" data-action="fullscreen"></a>
-                                            </div>
-                                        </div>
                                     </div>
                                     
                                     <div class="card-body">

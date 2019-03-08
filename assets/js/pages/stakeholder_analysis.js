@@ -1,3 +1,5 @@
+// Default resources are included in grapheditor resources
+mxLoadResources = false;
 var StakeholderAnalysis = function() {
 
     var _componentFootable = function() {

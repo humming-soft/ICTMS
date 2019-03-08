@@ -59,7 +59,7 @@
                                                         <div class="step-head-text">
                                                             <h4>Problem Analaysis</h4>
                                                             <p>Your simple personal information required for identification</p>
-                                                            <!-- <a href="#">Complete Step →</a> -->
+                                                            <a href="<?=site_url('projects/02849/prob-analysis')?>">Complete Step →</a>
                                                         </div>
                                                     </div>
                                                 </div>

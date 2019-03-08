@@ -73,193 +73,199 @@
                                         </ul>
                                     </div>
                                 </div>
-                              <hr>
-                              <div>
-								<table class="table table-togglable">
-									<thead>
-										<tr>
-											<th data-toggle="true" class="text-uppercase" width="15%">Stakeholder</th>
-											<th data-hide="phone,tablet" class="text-uppercase">Contributions</th>
-											<th data-hide="phone,tablet" class="text-center text-uppercase">Positive Impact</th>
-											<th data-hide="phone,tablet" class="text-center text-uppercase">Negative Impact</th>
-                                        </tr>
-									</thead>
-									<tbody>
-										<tr class="table-active table-border-double">
-											<td colspan="4"><i class="icon-arrow-right13 mr-1"></i> Beneficiary & Implementer</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center">
-													<div>
-														<a href="#" class="text-default font-weight-semibold">Ministry of Transport</a>
-														<div class="text-muted font-size-sm">
-															<span class="badge badge-mark border-blue mr-1"></span>
-															Beneficiary
-														</div>
-													</div>
-												</div>
-											</td>
-											<td>
-                                                <ul class="list list-unstyled mb-3">
-                                                    <li>
-                                                        <i class="icon-arrow-right5 mr-2"></i>
-                                                        Building an  integrated need-based transport system
-                                                    </li>
-                                                    <li>
-                                                        <i class="icon-arrow-right5 mr-2"></i>
-                                                        Unleashing growth of logistics and enhancing trade facilitation
-                                                    </li>
-                                                </ul>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="Enter Contributions..">
-                                                    <span class="input-group-append"><button class="btn btn-success" type="button">Add</button></span>
-                                                </div>
-                                            </td>
-											<td>
-                                                <ul class="list list-unstyled mb-3">
-                                                    <li>
-                                                        <i class="icon-arrow-right5 mr-2"></i>
-                                                        Building an  integrated need-based transport system
-                                                    </li>
-                                                    <li>
-                                                        <i class="icon-arrow-right5 mr-2"></i>
-                                                        Unleashing growth of logistics and enhancing trade facilitation
-                                                    </li>
-                                                </ul>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="Enter Positive Impacts..">
-                                                    <span class="input-group-append"><button class="btn btn-success" type="button">Add</button></span>
-                                                </div>
-                                            </td>
-											<td>
-                                                <ul class="list list-unstyled mb-3">
-                                                    <li>
-                                                        <i class="icon-arrow-right5 mr-2"></i>
-                                                        Building an  integrated need-based transport system
-                                                    </li>
-                                                    <li>
-                                                        <i class="icon-arrow-right5 mr-2"></i>
-                                                        Unleashing growth of logistics and enhancing trade facilitation
-                                                    </li>
-                                                </ul>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="Enter Negative Impacts..">
-                                                    <span class="input-group-append"><button class="btn btn-success" type="button">Add</button></span>
-                                                </div>
-                                            </td>											
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center">
-													<div>
-														<a href="#" class="text-default font-weight-semibold">Prasarana</a>
-														<div class="text-muted font-size-sm">
-															<span class="badge badge-mark border-danger mr-1"></span>
-                                                            Implementer
-														</div>
-													</div>
-												</div>
-											</td>
-											<td>
-                                                <ul class="list list-unstyled mb-3">
-                                                    <li>
-                                                        <i class="icon-arrow-right5 mr-2"></i>
-                                                        Building an  integrated need-based transport system
-                                                    </li>
-                                                    <li>
-                                                        <i class="icon-arrow-right5 mr-2"></i>
-                                                        Unleashing growth of logistics and enhancing trade facilitation
-                                                    </li>
-                                                </ul>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="Enter Contributions..">
-                                                    <span class="input-group-append"><button class="btn btn-success" type="button">Add</button></span>
-                                                </div>
-                                            </td>
-											<td>
-                                                <ul class="list list-unstyled mb-3">
-                                                    <li>
-                                                        <i class="icon-arrow-right5 mr-2"></i>
-                                                        Building an  integrated need-based transport system
-                                                    </li>
-                                                    <li>
-                                                        <i class="icon-arrow-right5 mr-2"></i>
-                                                        Unleashing growth of logistics and enhancing trade facilitation
-                                                    </li>
-                                                </ul>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="Enter Positive Impacts..">
-                                                    <span class="input-group-append"><button class="btn btn-success" type="button">Add</button></span>
-                                                </div>                                                
-                                            </td>
-											<td>
-                                                <ul class="list list-unstyled mb-3">
-                                                    <li>
-                                                        <i class="icon-arrow-right5 mr-2"></i>
-                                                        Building an  integrated need-based transport system
-                                                    </li>
-                                                    <li>
-                                                        <i class="icon-arrow-right5 mr-2"></i>
-                                                        Unleashing growth of logistics and enhancing trade facilitation
-                                                    </li>
-                                                </ul>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="Enter Negative Impacts..">
-                                                    <span class="input-group-append"><button class="btn btn-success" type="button">Add</button></span>
-                                                </div>                                                
-                                            </td>
-											
-										</tr>									
-                                    </tbody>
-                                </table>
-                                <table class="table table-togglable">
-									<!-- <thead>
-										<tr>
-											<th data-toggle="true" class="text-uppercase" width="15%">Stakeholder</th>
-											<th data-hide="phone,tablet" class="text-uppercase">Contributions</th>
-											<th data-hide="phone,tablet" class="text-center text-uppercase">Positive Impact</th>
-											<th data-hide="phone,tablet" class="text-center text-uppercase">Negative Impact</th>
-                                        </tr>
-									</thead> -->
-									<tbody>
-										<tr class="table-active table-border-double">
-											<td colspan="3"><i class="icon-arrow-right13 mr-1"></i> Target Group</td>
-											<td class="text-right"><a class="btn btn-primary btn-sm" href="#"><i class="icon-plus3 mr-1"></i> New Target Group</a></td>
-										</tr>
-										<tr>
-                                            <td width="15%">
-												<div class="d-flex align-items-center">
-													<div>
-														<a href="#" class="text-default font-weight-semibold">Indian Community</a>
-														<div class="text-muted font-size-sm">
-                                                            Community
-														</div>
-													</div>
-												</div>
-											</td>
-											<td>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="Enter Contributions..">
-                                                    <span class="input-group-append"><button class="btn btn-success" type="button">Add</button></span>
-                                                </div>
-                                            </td>
-											<td>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="Enter Positive Impacts..">
-                                                    <span class="input-group-append"><button class="btn btn-success" type="button">Add</button></span>
-                                                </div>                                                
-                                            </td>
-											<td>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="Enter Negative Impacts..">
-                                                    <span class="input-group-append"><button class="btn btn-success" type="button">Add</button></span>
-                                                </div>                                                
-                                            </td>
-										</tr>										
-									</tbody>
-								</table>
-							</div>
+                                <hr>
+                                <div>
+                                    <table class="table table-togglable">
+                                        <thead>
+                                            <tr>
+                                                <th data-toggle="true" class="text-uppercase" width="15%">Stakeholder</th>
+                                                <th data-hide="phone,tablet" class="text-uppercase">Contributions</th>
+                                                <th data-hide="phone,tablet" class="text-center text-uppercase">Positive Impact</th>
+                                                <th data-hide="phone,tablet" class="text-center text-uppercase">Negative Impact</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="table-active table-border-double">
+                                                <td colspan="4"><i class="icon-arrow-right13 mr-1"></i> Beneficiary & Implementer</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div>
+                                                            <a href="#" class="text-default font-weight-semibold">Ministry of Transport</a>
+                                                            <div class="text-muted font-size-sm">
+                                                                <span class="badge badge-mark border-blue mr-1"></span>
+                                                                Beneficiary
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <ul class="list list-unstyled mb-3">
+                                                        <li>
+                                                            <i class="icon-arrow-right5 mr-2"></i>
+                                                            Building an  integrated need-based transport system
+                                                        </li>
+                                                        <li>
+                                                            <i class="icon-arrow-right5 mr-2"></i>
+                                                            Unleashing growth of logistics and enhancing trade facilitation
+                                                        </li>
+                                                    </ul>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="Enter Contributions..">
+                                                        <span class="input-group-append"><button class="btn btn-success" type="button">Add</button></span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <ul class="list list-unstyled mb-3">
+                                                        <li>
+                                                            <i class="icon-arrow-right5 mr-2"></i>
+                                                            Building an  integrated need-based transport system
+                                                        </li>
+                                                        <li>
+                                                            <i class="icon-arrow-right5 mr-2"></i>
+                                                            Unleashing growth of logistics and enhancing trade facilitation
+                                                        </li>
+                                                    </ul>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="Enter Positive Impacts..">
+                                                        <span class="input-group-append"><button class="btn btn-success" type="button">Add</button></span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <ul class="list list-unstyled mb-3">
+                                                        <li>
+                                                            <i class="icon-arrow-right5 mr-2"></i>
+                                                            Building an  integrated need-based transport system
+                                                        </li>
+                                                        <li>
+                                                            <i class="icon-arrow-right5 mr-2"></i>
+                                                            Unleashing growth of logistics and enhancing trade facilitation
+                                                        </li>
+                                                    </ul>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="Enter Negative Impacts..">
+                                                        <span class="input-group-append"><button class="btn btn-success" type="button">Add</button></span>
+                                                    </div>
+                                                </td>											
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div>
+                                                            <a href="#" class="text-default font-weight-semibold">Prasarana</a>
+                                                            <div class="text-muted font-size-sm">
+                                                                <span class="badge badge-mark border-danger mr-1"></span>
+                                                                Implementer
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <ul class="list list-unstyled mb-3">
+                                                        <li>
+                                                            <i class="icon-arrow-right5 mr-2"></i>
+                                                            Building an  integrated need-based transport system
+                                                        </li>
+                                                        <li>
+                                                            <i class="icon-arrow-right5 mr-2"></i>
+                                                            Unleashing growth of logistics and enhancing trade facilitation
+                                                        </li>
+                                                    </ul>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="Enter Contributions..">
+                                                        <span class="input-group-append"><button class="btn btn-success" type="button">Add</button></span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <ul class="list list-unstyled mb-3">
+                                                        <li>
+                                                            <i class="icon-arrow-right5 mr-2"></i>
+                                                            Building an  integrated need-based transport system
+                                                        </li>
+                                                        <li>
+                                                            <i class="icon-arrow-right5 mr-2"></i>
+                                                            Unleashing growth of logistics and enhancing trade facilitation
+                                                        </li>
+                                                    </ul>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="Enter Positive Impacts..">
+                                                        <span class="input-group-append"><button class="btn btn-success" type="button">Add</button></span>
+                                                    </div>                                                
+                                                </td>
+                                                <td>
+                                                    <ul class="list list-unstyled mb-3">
+                                                        <li>
+                                                            <i class="icon-arrow-right5 mr-2"></i>
+                                                            Building an  integrated need-based transport system
+                                                        </li>
+                                                        <li>
+                                                            <i class="icon-arrow-right5 mr-2"></i>
+                                                            Unleashing growth of logistics and enhancing trade facilitation
+                                                        </li>
+                                                    </ul>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="Enter Negative Impacts..">
+                                                        <span class="input-group-append"><button class="btn btn-success" type="button">Add</button></span>
+                                                    </div>                                                
+                                                </td>
+                                                
+                                            </tr>									
+                                        </tbody>
+                                    </table>
+                                    <table class="table table-togglable">
+                                        <!-- <thead>
+                                            <tr>
+                                                <th data-toggle="true" class="text-uppercase" width="15%">Stakeholder</th>
+                                                <th data-hide="phone,tablet" class="text-uppercase">Contributions</th>
+                                                <th data-hide="phone,tablet" class="text-center text-uppercase">Positive Impact</th>
+                                                <th data-hide="phone,tablet" class="text-center text-uppercase">Negative Impact</th>
+                                            </tr>
+                                        </thead> -->
+                                        <tbody>
+                                            <tr class="table-active table-border-double">
+                                                <td colspan="3"><i class="icon-arrow-right13 mr-1"></i> Target Group</td>
+                                                <td class="text-right"><a class="btn btn-primary btn-sm" href="#"><i class="icon-plus3 mr-1"></i> New Target Group</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td width="15%">
+                                                    <div class="d-flex align-items-center">
+                                                        <div>
+                                                            <a href="#" class="text-default font-weight-semibold">Indian Community</a>
+                                                            <div class="text-muted font-size-sm">
+                                                                Community
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="Enter Contributions..">
+                                                        <span class="input-group-append"><button class="btn btn-success" type="button">Add</button></span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="Enter Positive Impacts..">
+                                                        <span class="input-group-append"><button class="btn btn-success" type="button">Add</button></span>
+                                                    </div>                                                
+                                                </td>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="Enter Negative Impacts..">
+                                                        <span class="input-group-append"><button class="btn btn-success" type="button">Add</button></span>
+                                                    </div>                                                
+                                                </td>
+                                            </tr>										
+                                        </tbody>
+                                    </table>
+							    </div>
+                                <hr>
+                                <fieldset class="card-body text-right">
+                                    <a href="<?=site_url('projects/02849')?>" class="btn btn-light ml-3">Cancel</a>
+									<a href="<?=site_url('projects/02849')?>" class="btn bg-success"><i class="icon-paperplane mr-1"></i> Save</a>
+                                    <a href="<?=site_url('projects/02849/prob-analysis')?>" class="btn bg-blue">Save And Continue - Problem Analysis <i class="icon-arrow-right7 ml-1"></i></a>
+								</fieldset>
                             </div>
                         </div>
                     </div>

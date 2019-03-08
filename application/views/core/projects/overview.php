@@ -57,9 +57,9 @@
                                                     <div class="step-head">
                                                         <div class="step-number">02</div>
                                                         <div class="step-head-text">
-                                                            <h4>Problem Analaysis</h4>
+                                                            <h4>Problem Analysis</h4>
                                                             <p>Your simple personal information required for identification</p>
-                                                            <!-- <a href="#">Complete Step →</a> -->
+                                                            <a href="<?=site_url('projects/02849/prob-analysis')?>">Complete Step →</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -67,7 +67,7 @@
                                                     <div class="step-head">
                                                         <div class="step-number">03</div>
                                                         <div class="step-head-text">
-                                                            <h4>Objective Analaysis</h4>
+                                                            <h4>Objective Analysis</h4>
                                                             <p>Your simple personal information required for identification</p>
                                                             <!-- <a href="#">Complete Step →</a> -->
                                                         </div>
@@ -77,7 +77,7 @@
                                                     <div class="step-head">
                                                         <div class="step-number">04</div>
                                                         <div class="step-head-text">
-                                                            <h4>Strategic Analaysis</h4>
+                                                            <h4>Strategic Analysis</h4>
                                                             <p>Your simple personal information required for identification</p>
                                                             <!-- <a href="#">Complete Step →</a> -->
                                                         </div>

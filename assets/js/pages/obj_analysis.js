@@ -1,5 +1,5 @@
 var ProbAnalysis = function() {
-    var _componentMxMain = function(container) {
+    var _componentMxMain = function(container, container2) {
         // // Checks if the browser is supported
         // if (!mxClient.isBrowserSupported())
         // {
@@ -74,6 +74,7 @@ var ProbAnalysis = function() {
             
             // Main
             new EditorUi(new Editor(urlParams['chrome'] == '0', themes),container,null,'problem','causes','effects');
+            new EditorUi(new Editor(urlParams['chrome'] == '0', themes),container2,null,'problem','causes','effects');
         }, function()
         {
             document.body.innerHTML = '<center style="margin-top:10%;">Error loading resource files. Please check browser console.</center>';
@@ -81,7 +82,7 @@ var ProbAnalysis = function() {
     };
     return {
         init: function() {
-            _componentMxMain(document.getElementById('graphContainer'));
+            _componentMxMain(document.getElementById('graphContainer'),document.getElementById('graphContainer2'));
         }
 
     }

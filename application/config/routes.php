@@ -58,6 +58,7 @@ $route['projects/create'] = 'projects/project/create';
 $route['projects/(:num)'] = 'projects/project/index/$1';
 $route['projects/(:num)/stakeholder-analysis'] = 'projects/project/stakeholder_analysis/$1';
 $route['projects/(:num)/prob-analysis'] = 'projects/project/prob_analysis/$1';
+$route['projects/(:num)/obj-analysis'] = 'projects/project/obj_analysis/$1';
 $route['projects/(:num)/business'] = 'projects/project/business/$1';
 $route['projects/(:num)/benefits'] = 'projects/project/benefits/$1';
 $route['projects/(:num)/approach'] = 'projects/project/approach/$1';

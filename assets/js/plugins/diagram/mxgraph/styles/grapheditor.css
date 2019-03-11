@@ -268,6 +268,7 @@
 	cursor:pointer;
 	opacity:0.6;
 	filter:alpha(opacity=60);
+	box-sizing: initial;
 }
 .geToolbarContainer .geButton:hover {
 	border:1px solid gray;
@@ -290,6 +291,7 @@ div.mxWindow .geButton {
 	border:1px solid transparent;
 	opacity:0.6;
 	filter:alpha(opacity=60);
+	box-sizing: initial
 }
 .geToolbarContainer .geLabel:hover {
 	border:1px solid gray;
@@ -372,6 +374,7 @@ div.mxWindow .geButton {
 	border:1px solid transparent;
 	border-radius:2px;
 	cursor: move;
+	box-sizing: initial;
 }
 .geSidebar .geItem:hover {
 	border:1px solid gray !important;

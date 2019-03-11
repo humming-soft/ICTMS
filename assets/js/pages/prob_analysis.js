@@ -1,61 +1,13 @@
 var ProbAnalysis = function() {
-    var _componentMxMain = function(container) {
-        // // Checks if the browser is supported
-        // if (!mxClient.isBrowserSupported())
-        // {
-        //     mxUtils.error('Browser is not supported!', 200, false);
-        // }
-        // else
-        // {
-        //     // Creates the graph inside the given container
-        //     var graph = new mxGraph(container);
-
-        //     // Enables rubberband selection
-        //     new mxRubberband(graph);
-
-        //     // Gets the default parent for inserting new cells. This
-        //     // is normally the first child of the root (ie. layer 0).
-        //     var parent = graph.getDefaultParent();
-
-        //     // Adds cells to the model in a single step
-        //     graph.getModel().beginUpdate();
-        //     try
-        //     {
-        //         var v1 = graph.insertVertex(parent, null,
-        //                 'Hello,', 20, 20, 80, 30);
-        //         var v2 = graph.insertVertex(parent, null,
-        //                 'World!', 200, 150, 80, 30);
-        //         var e1 = graph.insertEdge(parent, null, '', v1, v2);
-        //     }
-        //     finally
-        //     {
-        //         // Updates the display
-        //         graph.getModel().endUpdate();
-        //     }
-        // }
+    var _componentMxMain = function(container, menuLabels) {
 
         var editorUiInit = EditorUi.prototype.init;
 			
         EditorUi.prototype.init = function()
         {
             editorUiInit.apply(this, arguments);
-            this.actions.get('export').setEnabled(false);
-
-            // Updates action states which require a backend
-            if (!Editor.useLocalStorage)
-            {
-                mxUtils.post(OPEN_URL, '', mxUtils.bind(this, function(req)
-                {
-                    var enabled = req.getStatus() != 404;
-                    this.actions.get('open').setEnabled(enabled || Graph.fileSupport);
-                    this.actions.get('import').setEnabled(enabled || Graph.fileSupport);
-                    this.actions.get('save').setEnabled(enabled);
-                    this.actions.get('saveAs').setEnabled(enabled);
-                    this.actions.get('export').setEnabled(enabled);
-                }));
-            }
+            this.actions.get('export').setEnabled(true);
         };
-        
         // Adds required resources (disables loading of fallback properties, this can only
         // be used if we know that all keys are defined in the language specific file)
         mxResources.loadDefaultBundle = false;
@@ -73,7 +25,81 @@ var ProbAnalysis = function() {
             themes[Graph.prototype.defaultThemeName] = xhr[1].getDocumentElement(); 
             
             // Main
-            new EditorUi(new Editor(urlParams['chrome'] == '0', themes),container,null,'problem','causes','effects');
+            var editorUi = new EditorUi(new Editor(urlParams['chrome'] == '0', themes),container,null,menuLabels);
+            editorUi.setPageFormat(mxConstants.PAGE_FORMAT_LETTER_LANDSCAPE);
+            mxUtils.post(OPEN_URL, '', mxUtils.bind(this, function(req)
+            {
+                if (req.request.response.length > 0) {
+                    editorUi.editor.graph.model.beginUpdate();
+                    try {
+                        var xmlElem = mxUtils.parseXml(req.request.response).documentElement;
+                        editorUi.editor.setGraphXml(xmlElem);
+    
+                    }
+                    catch (e) {
+                        console.error(e);
+                    }
+                    finally {
+                        editorUi.editor.graph.model.endUpdate();
+                    }
+                }
+            }));
+            $('.gx_save').click(function(){
+                    var xml = mxUtils.getXml(editorUi.editor.getGraphXml());
+                    $.ajax({
+                        url: SAVE_URL, data: xml, type: 'POST', contentType:"text/xml", dataType: "xml",
+                        success : function(r){
+                            $xml = $(r);
+                            if($xml.find("status").text()==1){
+                                // alert($xml.find("msg").text())
+                            }else{
+                                // alert($xml.find("msg").text())
+                            }
+                        }, error : function (xhr, ajaxOptions, thrownError){
+                            alert($xml.find("msg").text())
+                        } 
+                    }); 
+            });
+
+            function exportFile(format)
+            {
+                var bg = '#ffffff';
+                var scale = 1;
+                var b = 1;
+                
+                var imgExport = new mxImageExport();
+                var bounds = editorUi.editor.graph.getGraphBounds();
+                var vs = editorUi.editor.graph.view.scale;
+                
+                // New image export
+                var xmlDoc = mxUtils.createXmlDocument();
+                var root = xmlDoc.createElement('output');
+                xmlDoc.appendChild(root);
+                
+                // Renders graph. Offset will be multiplied with state's scale when painting state.
+                var xmlCanvas = new mxXmlCanvas2D(root);
+                xmlCanvas.translate(Math.floor((b / scale - bounds.x) / vs), Math.floor((b / scale - bounds.y) / vs));
+                xmlCanvas.scale(scale / vs);
+                
+                imgExport.drawState(editorUi.editor.graph.getView().getState(editorUi.editor.graph.model.root), xmlCanvas);
+                // Puts request data together
+                var w = Math.ceil(bounds.width * scale / vs + 2 * b);
+                var h = Math.ceil(bounds.height * scale / vs + 2 * b);
+                
+                var xml = mxUtils.getXml(root);
+                    
+                if (bg != null)
+                {
+                    bg = '&bg=' + bg;
+                }
+                
+                new mxXmlRequest('prob-analysis/export', 'format=' + format +
+                    bg + '&w=' + w + '&h=' + h + '&xml=' + encodeURIComponent(xml)).
+                    simulate(document, '_blank');
+            }
+            $('.export').click(function(){
+                exportFile('png');
+            });
         }, function()
         {
             document.body.innerHTML = '<center style="margin-top:10%;">Error loading resource files. Please check browser console.</center>';
@@ -81,7 +107,7 @@ var ProbAnalysis = function() {
     };
     return {
         init: function() {
-            _componentMxMain(document.getElementById('graphContainer'));
+            _componentMxMain(document.getElementById('graphContainer'),['problem','causes','effects']);
         }
 
     }

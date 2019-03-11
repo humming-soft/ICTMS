@@ -136,7 +136,7 @@ Sidebar.prototype.dragPreviewBorder = '1px dashed black';
 /**
  * Specifies if tooltips should be visible. Default is true.
  */
-Sidebar.prototype.enableTooltips = true;
+Sidebar.prototype.enableTooltips = false;
 
 /**
  * Specifies the delay for the tooltip. Default is 16 px.
@@ -967,7 +967,7 @@ Sidebar.prototype.addGeneralPalette = function(expand)
 	 	// this.createEdgeTemplateEntry('endArrow=classic;html=1;', 50, 50, '', 'Directional Connector', null, lineTags + 'directional directed')
 	];
 	
-	this.addPaletteFunctions('problem', mxResources.get('problem'), (expand != null) ? expand : true, fns);
+	this.addPaletteFunctions(this.editorUi.menuLabels[0], mxResources.get(this.editorUi.menuLabels[0]), (expand != null) ? expand : true, fns);
 };
 
 
@@ -979,7 +979,7 @@ Sidebar.prototype.addCausesPalette = function(expand)
 	 	this.createVertexTemplateEntry('rounded=1;whiteSpace=wrap;html=1;strokeColor=#2196f3;fillColor=#2196f3;fontColor=#ffffff;', 120, 60, '', 'Causes', null, null, 'rounded rect rectangle box')
 	];
 	
-	this.addPaletteFunctions('causes', mxResources.get('causes'), (expand != null) ? expand : true, fns);
+	this.addPaletteFunctions(this.editorUi.menuLabels[1], mxResources.get(this.editorUi.menuLabels[1]), (expand != null) ? expand : true, fns);
 };
 
 Sidebar.prototype.addEffectsPalette = function(expand)
@@ -990,7 +990,7 @@ Sidebar.prototype.addEffectsPalette = function(expand)
 	 	this.createVertexTemplateEntry('rounded=1;whiteSpace=wrap;html=1;strokeColor=#66bb6a;fillColor=#66bb6a;fontColor=#ffffff;', 120, 60, '', 'Effects', null, null, 'rounded rect rectangle box')
 	];
 	
-	this.addPaletteFunctions('effects', mxResources.get('effects'), (expand != null) ? expand : true, fns);
+	this.addPaletteFunctions(this.editorUi.menuLabels[2], mxResources.get(this.editorUi.menuLabels[2]), (expand != null) ? expand : true, fns);
 };
 
 

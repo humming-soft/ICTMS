@@ -32,9 +32,7 @@ class ICTMS_Controller extends CI_Controller
     }
 
     private function check_status(){
-        if($this->session->userdata('logged_in')) {
-            //$this->load->model('alertreminder','',TRUE);
-        }else{
+        if(!$this->session->userdata('logged_in')) {
             redirect('login', 'refresh');
         }
     }

@@ -95,7 +95,10 @@ class Project extends ICTMS_Controller {
         {
             $message='';
         }
+
         $_header["support"] = array("diagram");
+        $_header["pid"] = "02849";
+        $_header["page"] = "prob-analysis";
         $_header["page_js"] = "prob_analysis";
 
         $this->load->view('core/fragments/header',$_header);
@@ -103,6 +106,66 @@ class Project extends ICTMS_Controller {
         $this->load->view('core/projects/fragments/secondary_navbar');
         $this->load->view('core/projects/prob_analysis');
         $this->load->view('core/fragments/footer');
+    }
+
+    public function prob_analysis_open($pid=null){
+        header("Content-type: text/xml");
+        $file_location = APPPATH . "views";
+        $xml_file = file_get_contents($file_location."/resources/_pj/02849/prob_a/001.xml");
+        echo $xml_file;
+    }
+
+    public function prob_analysis_save($pid=null){
+        $xml_file = file_get_contents('php://input');
+        if(strlen($xml_file) > 0){
+            $file_location = APPPATH . "views";
+            $file_path = $file_location."/resources/_pj/02849/prob_a/001.xml";
+            $file_instance = fopen($file_path, 'w');
+            fwrite($file_instance, $xml_file);
+            fclose($file_instance);
+        }
+        echo $this->arrayToXml(array('status'=>1, 'msg'=>"Problem Tree saved successfully"));
+    }
+
+    /**
+     * @param array $array the array to be converted
+     * @param string? $rootElement if specified will be taken as root element, otherwise defaults to 
+     *                <root>
+     * @param SimpleXMLElement? if specified content will be appended, used for recursion
+     * @return string XML version of $array
+     */
+    function arrayToXml($array, $rootElement = null, $xml = null) {
+        $_xml = $xml;
+    
+        if ($_xml === null) {
+            $_xml = new SimpleXMLElement($rootElement !== null ? $rootElement : '<root/>');
+        }
+    
+        foreach ($array as $k => $v) {
+            if (is_array($v)) { //nested array
+                arrayToXml($v, $k, $_xml->addChild($k));
+            } else {
+                $_xml->addChild($k, $v);
+            }
+        }
+    
+        return $_xml->asXML();
+    }
+
+    public function prob_analysis_export($pid=null){
+        $this->load->library('mxdiagram');
+        $format = $this->input->post('format');
+        $xml = urldecode($this->input->post("xml"));
+        if (isset($xml))
+        {
+            if (isset($format))
+	        {
+                $mxd= new MxDiagram($xml,$format);
+                $file_location = APPPATH . "views";
+                $file_path = $file_location."/resources/_pj/02849/prob_a/001.xml";
+                $mxd->exportToImage($xml);
+            }
+        }
     }
 
     public function obj_analysis($pid=null){
@@ -119,14 +182,86 @@ class Project extends ICTMS_Controller {
         {
             $message='';
         }
+        $file_location = APPPATH . "views";
+        $xml = file_get_contents($file_location."/resources/_pj/02849/prob_a/001.xml");
+        $data['p_a_xml'] = htmlspecialchars($xml);
         $_header["support"] = array("diagram");
+        $_header["pid"] = "02849";
+        $_header["page"] = "obj-analysis";
         $_header["page_js"] = "obj_analysis";
 
         $this->load->view('core/fragments/header',$_header);
         $this->load->view('core/projects/fragments/main_navbar',$data1);
         $this->load->view('core/projects/fragments/secondary_navbar');
-        $this->load->view('core/projects/obj_analysis');
+        $this->load->view('core/projects/obj_analysis',$data);
         $this->load->view('core/fragments/footer');
+    }
+
+    public function obj_analysis_open($pid=null){
+        header("Content-type: text/xml");
+        $file_location = APPPATH . "views";
+        $file_path = $file_location .'/resources/_pj/'. $pid . '/obj_a/002.xml';
+        if(file_exists($file_path)){
+            $xml_file = file_get_contents($file_path);
+            echo $xml_file;
+        }else{
+            echo "";
+        }
+    }
+
+    public function stat_analysis($pid=null){
+        $session_data = $this->session->userdata('logged_in');
+        $data['username'] =$data1['username'] = $session_data['username'];
+
+        if($this->session->userdata('message'))
+        {
+            $messagehrecord=$this->session->userdata('message');
+            $message=$messagehrecord['message'];
+            $this->session->unset_userdata('message');
+        }
+        else
+        {
+            $message='';
+        }
+        $_header["support"] = array();
+        $_header["page_js"] = "stat_analysis";
+
+        $this->load->view('core/fragments/header',$_header);
+        $this->load->view('core/projects/fragments/main_navbar',$data1);
+        $this->load->view('core/projects/fragments/secondary_navbar');
+        $this->load->view('core/projects/strategic_analysis',$data);
+        $this->load->view('core/fragments/footer');
+    }
+
+    public function obj_analysis_save($pid = null){
+        $xml_file = file_get_contents('php://input');
+        if(strlen($xml_file) > 0){
+            $file_location = APPPATH . "views";
+            if(!is_dir($file_location .'/resources')) {
+                mkdir($file_location .'/resources', 0777, true);
+            }
+            if(!is_dir($file_location .'/resources/_pj')) {
+                mkdir($file_location .'/resources/_pj', 0777, true);
+            }
+            if(!is_dir($file_location .'/resources/_pj/'. $pid)) {
+                mkdir($file_location .'/resources/_pj/'. $pid, 0777, true);
+            }
+            if(!is_dir($file_location .'/resources/_pj/'. $pid . '/obj_a')) {
+                mkdir($file_location .'/resources/_pj/'. $pid . '/obj_a', 0777, true);
+            }
+            $file_path = $file_location .'/resources/_pj/'. $pid . '/obj_a/002.xml';
+            $file_instance;
+            if(!file_exists($file_path)){
+                $file_instance = fopen($file_path, 'w');
+                fwrite($file_instance, $xml_file);
+                fclose($file_instance);
+            }else{
+                $file_instance = fopen($file_path, 'w');
+                fwrite($file_instance, $xml_file);
+                fclose($file_instance);
+            }
+        }
+        echo $this->arrayToXml(array('status'=>1, 'msg'=>"Objective Tree saved successfully"));
     }
 
 

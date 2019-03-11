@@ -26,6 +26,20 @@
 						<i class="icon-stack2 mr-2"></i> Overview
 					</a>
 				</li>
+				<li class="nav-item dropdown">
+					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+						<i class="icon-briefcase mr-2"></i>
+						Initiation
+					</a>
+
+					<div class="dropdown-menu">
+						<div class="dropdown-header">PROJECT INITIATION (LFA)</div>
+						<a href="<?=site_url('projects/02849/stakeholder-analysis')?>" class="dropdown-item"><i class="icon-people"></i> Stakeholder Analysis</a>
+						<a href="<?=site_url('projects/02849/prob-analysis')?>" class="dropdown-item"><i class="icon-tree7"></i> Problem Analysis</a>
+						<a href="<?=site_url('projects/02849/business')?>" class="dropdown-item"><i class="icon-list2"></i> Objective Analysis</a>
+						<a href="<?=site_url('projects/02849/business')?>" class="dropdown-item"><i class="icon-strategy"></i> Strategic Analysis</a>
+					</div>
+				</li>
 				<!-- <li class="nav-item">
 					<a href="<?=site_url('projects/02849/business')?>" class="navbar-nav-link">
 						<i class="icon-split mr-2"></i> Business Options

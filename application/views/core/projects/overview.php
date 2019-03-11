@@ -47,7 +47,7 @@
                                                         <div class="step-number current">01</div>
                                                         <div class="step-head-text">
                                                             <h4>Stakeholder Analysis</h4>
-                                                            <p>Your simple personal information required for identification.</p>
+                                                            <p><b>Stakeholder Analysis</b> is the process of identifying and analysing stakeholders, and plan for their participation.</p>
                                                             
                                                             <a href="<?=site_url('projects/02849/stakeholder-analysis')?>">Complete Step →</a>
                                                         </div>
@@ -58,7 +58,7 @@
                                                         <div class="step-number">02</div>
                                                         <div class="step-head-text">
                                                             <h4>Problem Analysis</h4>
-                                                            <p>Your simple personal information required for identification</p>
+                                                            <p><b>Problem Analysis</b> involves identifying what the main problems are and establishing the cause and effect relationships.</p>
                                                             <a href="<?=site_url('projects/02849/prob-analysis')?>">Complete Step →</a>
                                                         </div>
                                                     </div>
@@ -67,9 +67,9 @@
                                                     <div class="step-head">
                                                         <div class="step-number">03</div>
                                                         <div class="step-head-text">
-                                                            <h4>Objective Analysis</h4>
-                                                            <p>Your simple personal information required for identification</p>
-                                                            <!-- <a href="#">Complete Step →</a> -->
+                                                            <h4>Objectives Analysis</h4>
+                                                            <p><b>Objectives Analysis</b> is a methodological approach to describe the situation in the future once identified problems have been remedied.</p>
+                                                            <a href="<?=site_url('projects/02849/obj-analysis')?>">Complete Step →</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -78,8 +78,8 @@
                                                         <div class="step-number">04</div>
                                                         <div class="step-head-text">
                                                             <h4>Strategic Analysis</h4>
-                                                            <p>Your simple personal information required for identification</p>
-                                                            <!-- <a href="#">Complete Step →</a> -->
+                                                            <p><b>Strategic Analysis</b> is used to find possible interventions in order to determine the scope of the project, i.e. what should/can be included within the project.</p>
+                                                            <a href="<?=site_url('projects/02849/stat-analysis')?>">Complete Step →</a>
                                                         </div>
                                                     </div>
                                                 </div>

@@ -68,7 +68,7 @@
                                                         <div class="step-number">03</div>
                                                         <div class="step-head-text">
                                                             <h4>Objectives Analysis</h4>
-                                                            <p><b>Objectives Analysis</b> is a methodological approach to describe the situation in the future once identified problems have been remedied.</p>
+                                                            <p><b>Objectives Analysis</b> is a methodological approach to describe the situation in the future once identified problems resolved.</p>
                                                             <a href="<?=site_url('projects/02849/obj-analysis')?>">Complete Step →</a>
                                                         </div>
                                                     </div>
@@ -78,7 +78,7 @@
                                                         <div class="step-number">04</div>
                                                         <div class="step-head-text">
                                                             <h4>Strategic Analysis</h4>
-                                                            <p><b>Strategic Analysis</b> is used to find possible interventions in order to determine the scope of the project, i.e. what should/can be included within the project.</p>
+                                                            <p><b>Strategic Analysis</b> is used to find possible interventions in order to determine the scope of the project.</p>
                                                             <a href="<?=site_url('projects/02849/stat-analysis')?>">Complete Step →</a>
                                                         </div>
                                                     </div>

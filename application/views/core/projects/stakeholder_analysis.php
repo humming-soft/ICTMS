@@ -79,14 +79,14 @@
                                         <thead>
                                             <tr>
                                                 <th data-toggle="true" class="text-uppercase" width="15%">Stakeholder</th>
-                                                <th data-hide="phone,tablet" class="text-uppercase">Contributions</th>
-                                                <th data-hide="phone,tablet" class="text-center text-uppercase">Positive Impact</th>
-                                                <th data-hide="phone,tablet" class="text-center text-uppercase">Negative Impact</th>
+                                                <th data-hide="phone,tablet" class="text-uppercase">Terms of reference (TOR)</th>
+                                                <th data-hide="phone,tablet" class="text-center text-uppercase">Impact</th>
+                                              <!--  <th data-hide="phone,tablet" class="text-center text-uppercase">Negative Impact</th>-->
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr class="table-active table-border-double">
-                                                <td colspan="4"><i class="icon-arrow-right13 mr-1"></i> Beneficiary & Implementer</td>
+                                                <td colspan="4"><i class="icon-arrow-right13 mr-1"></i> Beneficiary & Controller</td>
                                             </tr>
                                             <tr>
                                                 <td>
@@ -112,8 +112,8 @@
                                                         </li>
                                                     </ul>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" placeholder="Enter Contributions..">
-                                                        <span class="input-group-append"><button class="btn btn-success" type="button">Add</button></span>
+                                                        <input type="text" class="form-control" placeholder="Enter Terms of reference..">
+                                                        <span class="input-group-append"><button class="btn btn-outline-info" type="button">Add</button></span>
                                                     </div>
                                                 </td>
                                                 <td>
@@ -128,26 +128,10 @@
                                                         </li>
                                                     </ul>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" placeholder="Enter Positive Impacts..">
-                                                        <span class="input-group-append"><button class="btn btn-success" type="button">Add</button></span>
+                                                        <input type="text" class="form-control" placeholder="Enter Impacts..">
+                                                        <span class="input-group-append"><button class="btn btn-outline-info" type="button">Add</button></span>
                                                     </div>
                                                 </td>
-                                                <td>
-                                                    <ul class="list list-unstyled mb-3">
-                                                        <li>
-                                                            <i class="icon-arrow-right5 mr-2"></i>
-                                                            Building an  integrated need-based transport system
-                                                        </li>
-                                                        <li>
-                                                            <i class="icon-arrow-right5 mr-2"></i>
-                                                            Unleashing growth of logistics and enhancing trade facilitation
-                                                        </li>
-                                                    </ul>
-                                                    <div class="input-group">
-                                                        <input type="text" class="form-control" placeholder="Enter Negative Impacts..">
-                                                        <span class="input-group-append"><button class="btn btn-success" type="button">Add</button></span>
-                                                    </div>
-                                                </td>											
                                             </tr>
                                             <tr>
                                                 <td>
@@ -173,8 +157,8 @@
                                                         </li>
                                                     </ul>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" placeholder="Enter Contributions..">
-                                                        <span class="input-group-append"><button class="btn btn-success" type="button">Add</button></span>
+                                                        <input type="text" class="form-control" placeholder="Enter Terms of reference..">
+                                                        <span class="input-group-append"><button class="btn btn-outline-info" type="button">Add</button></span>
                                                     </div>
                                                 </td>
                                                 <td>
@@ -189,31 +173,14 @@
                                                         </li>
                                                     </ul>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" placeholder="Enter Positive Impacts..">
-                                                        <span class="input-group-append"><button class="btn btn-success" type="button">Add</button></span>
+                                                        <input type="text" class="form-control" placeholder="Enter Impacts..">
+                                                        <span class="input-group-append"><button class="btn btn-outline-info" type="button">Add</button></span>
                                                     </div>                                                
                                                 </td>
-                                                <td>
-                                                    <ul class="list list-unstyled mb-3">
-                                                        <li>
-                                                            <i class="icon-arrow-right5 mr-2"></i>
-                                                            Building an  integrated need-based transport system
-                                                        </li>
-                                                        <li>
-                                                            <i class="icon-arrow-right5 mr-2"></i>
-                                                            Unleashing growth of logistics and enhancing trade facilitation
-                                                        </li>
-                                                    </ul>
-                                                    <div class="input-group">
-                                                        <input type="text" class="form-control" placeholder="Enter Negative Impacts..">
-                                                        <span class="input-group-append"><button class="btn btn-success" type="button">Add</button></span>
-                                                    </div>                                                
-                                                </td>
-                                                
                                             </tr>									
                                         </tbody>
                                     </table>
-                                    <table class="table table-togglable">
+                                    <table class="table table-togglable target">
                                         <!-- <thead>
                                             <tr>
                                                 <th data-toggle="true" class="text-uppercase" width="15%">Stakeholder</th>
@@ -222,13 +189,13 @@
                                                 <th data-hide="phone,tablet" class="text-center text-uppercase">Negative Impact</th>
                                             </tr>
                                         </thead> -->
-                                        <tbody>
+                                        <tbody >
                                             <tr class="table-active table-border-double">
-                                                <td colspan="3"><i class="icon-arrow-right13 mr-1"></i> Target Group</td>
-                                                <td class="text-right"><a class="btn btn-primary btn-sm" href="#"><i class="icon-plus3 mr-1"></i> New Target Group</a></td>
+                                                <td colspan="2"><i class="icon-arrow-right13 mr-1"></i> Target Group</td>
+                                                <td class="text-right"><a class="btn btn-primary btn-sm" href="#"  data-toggle="modal" data-target="#target_group" data-dismiss="modal"><i class="icon-plus3 mr-1"></i> New Target Group</a></td>
                                             </tr>
                                             <tr>
-                                                <td width="15%">
+                                                <td width="15%" >
                                                     <div class="d-flex align-items-center">
                                                         <div>
                                                             <a href="#" class="text-default font-weight-semibold">Indian Community</a>
@@ -240,20 +207,14 @@
                                                 </td>
                                                 <td>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" placeholder="Enter Contributions..">
-                                                        <span class="input-group-append"><button class="btn btn-success" type="button">Add</button></span>
+                                                        <input type="text" class="form-control" placeholder="Enter Terms of reference..">
+                                                        <span class="input-group-append"><button class="btn btn-outline-info" type="button">Add</button></span>
                                                     </div>
                                                 </td>
                                                 <td>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" placeholder="Enter Positive Impacts..">
-                                                        <span class="input-group-append"><button class="btn btn-success" type="button">Add</button></span>
-                                                    </div>                                                
-                                                </td>
-                                                <td>
-                                                    <div class="input-group">
-                                                        <input type="text" class="form-control" placeholder="Enter Negative Impacts..">
-                                                        <span class="input-group-append"><button class="btn btn-success" type="button">Add</button></span>
+                                                        <input type="text" class="form-control" placeholder="Enter Impacts..">
+                                                        <span class="input-group-append"><button class="btn btn-outline-info" type="button">Add</button></span>
                                                     </div>                                                
                                                 </td>
                                             </tr>										
@@ -279,7 +240,7 @@
     <!-- /content area -->
     </div>
 </div>
-<div class="hmwks-modal modal animated" id="edit-sha" tabindex="-1">
+<div class="hmwks-modal modal animated" id="target_group" tabindex="-1">
         <div class="modal-dialog modal-dialog-md modal-dialog-centered">
             <div class="modal-content">
                 <a href="#" class="modal-close" data-dismiss="modal" aria-label="Close"><em class="icon icon-cross2"></em></a>
@@ -287,24 +248,31 @@
                     <div class="hmwks-slider-w">
                         <div class="hmwks-slide">
                             <div class="hmwks-content with-gradient text-center">
-                                <h4 class="hmwks-title">Create New Project</h4>
-                                <div class="hmwks-text">This is a multi step project creation process, you
-                                    can use it to provide project information which includes scope, objective of the project
-                                    and project team etc. before you start your project.</div>
-                                <div class="row text-left">
+                                <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <input type="text" id="p_name" name="pjt_name" class="form-control form-control-lg" placeholder="Enter Project Name">
+                                        <div class="form-group text-left"><label for="">Target Group</label>
+                                            <select class=" form-control m-b" id="target_group" name="target_group" >
+                                                <option>SELECT</option>
+                                                <option>Individuals</option>
+                                                <option>Family</option>
+                                                <option>Community</option>
+                                                <option>Association</option>
+                                                <option>Enterprise</option>
+                                                <option>Local Authority</option>
+                                                <option>Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group text-left"><label for="">Name</label>
+                                            <input type="text" class="form-control" placeholder="Enter target group name.." id="target_name" name="target_name">
                                         </div>
                                     </div>
                                 </div>
-                            <!-- <div class="row text-left">
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <textarea  id="p_objective" name="pjt_objective" class="form-control form-control-lg" placeholder="Enter project Objective"></textarea>
-                                        </div>
-                                    </div>
-                                </div>-->
+                                <div class="text-right">
+                                    <button type="button" class="btn btn-light" data-dismiss="modal">Cancel <i class="icon-cross2 ml-2"></i></button>
+                                    <button type="submit" class="btn btn-primary"  data-dismiss="modal" id="addNewTarget" >Add <i class="icon-paperplane ml-2"></i></button>
+                                </div>
                             </div>
                         </div>
                     </div>           

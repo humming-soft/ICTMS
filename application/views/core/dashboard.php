@@ -425,7 +425,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
-                                        <div class="form-group"><label for="">Project Controllers</label>
+                                        <div class="form-group"><label for="">Project Controller</label>
                                             <select class=" form-control m-b" id="implementers" name="implementers">
                                                 <option>SELECT</option>
                                                 <?php
@@ -717,7 +717,7 @@
                                                         </div>
 
                                                         <div class="custom-control custom-radio custom-control-inline">
-                                                            <input type="radio" class="custom-control-input pos_type" value="2" name="node-type" id="pos_type_child">
+                                                            <input type="radio" class="custom-control-input pos_type" value="3" name="node-type" id="pos_type_child">
                                                             <label class="custom-control-label" for="pos_type_child">Child</label>
                                                         </div>
                                                     </div>

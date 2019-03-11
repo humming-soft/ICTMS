@@ -99,7 +99,8 @@ var Dashboard = function() {
                 alert('Please select one node in orgchart');
                 return;
             }
-            if (nodeType.val() === 'parent') {
+            console.log(nodeType.val());
+            if (nodeType.val() === '1') {
                 if (!$chartContainer.children('.orgchart').length) {// if the original chart has been deleted
                     oc = $chartContainer.orgchart({
                         'data': {'name': nodeVals[0]},
@@ -113,9 +114,9 @@ var Dashboard = function() {
                     });
                     oc.$chart.addClass('view-state');
                 } else {
-                    oc.addParent($chartContainer.find('.node:first'), {'name': nodeVals[0], 'id': getId()});
+                    oc.addParent($chartContainer.find('.node:first'), {'name': nodeVals[0], 'title': position,'id': getId()});
                 }
-            } else if (nodeType.val() === 'siblings') {
+            } else if (nodeType.val() === '2') {
                 if ($node[0].id === oc.$chart.find('.node:first')[0].id) {
                     alert('You are not allowed to directly add sibling nodes to root node');
                     return;
@@ -136,13 +137,12 @@ var Dashboard = function() {
                     }));
                 }
             }
-            $.post(base_url+'project/newOgchartUser',{"userName":newnodev,"parentId": parent_id,"userMail":userMail,"position" : positionid}, function(d) {
+        /*    $.post(base_url+'project/newOgchartUser',{"userName":newnodev,"parentId": parent_id,"userMail":userMail,"position" : positionid}, function(d) {
                 if(d.status == 1) {
                     var datasoursenew= d.ogchartNew;
-                    console.log(d.ogchartNew);
                     oc.init({ 'data': datasoursenew});
                 }
-            }, 'json');
+            }, 'json');*/
         });
 
         $('#btn-delete-nodes').on('click', function () {
@@ -186,9 +186,6 @@ var Dashboard = function() {
             var unit = $("#units").val();
             var parent_id = $('#parent-id').val();
             var userid = $node[0].id;
-            console.log("|||||||||||||||||||||||||||||||||||||");
-            console.log($node.parent());
-            console.log("|||||||||||||||||||||||||||||||||||||");
             if($targets == 1){
                 $("#pjt_directorStr").val(employee);
                 $("#pjt_directorID").val(userid);

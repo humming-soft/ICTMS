@@ -101,7 +101,7 @@
                                                     <div class="step-head">
                                                         <div class="step-number">02</div>
                                                         <div class="step-head-text">
-                                                            <h4>Activities and Delivarables</h4>
+                                                            <h4>Activities and Deliverables</h4>
                                                             <p>Your simple personal information required for identification</p>
                                                         </div>
                                                     </div>
@@ -133,7 +133,7 @@
                                                     <div class="step-head">
                                                         <div class="step-number">02</div>
                                                         <div class="step-head-text">
-                                                            <h4>Stakeholder Analaysis</h4>
+                                                            <h4>Stakeholder Analysis</h4>
                                                             <p>Your simple personal information required for identification</p>
                                                         </div>
                                                     </div>
@@ -174,7 +174,7 @@
                                                     <div class="step-head">
                                                         <div class="step-number">02</div>
                                                         <div class="step-head-text">
-                                                            <h4>Stakeholder Analaysis</h4>
+                                                            <h4>Stakeholder Analysis</h4>
                                                             <p>Your simple personal information required for identification</p>
                                                         </div>
                                                     </div>

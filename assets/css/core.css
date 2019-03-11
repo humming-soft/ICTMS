@@ -16302,3 +16302,6 @@ body.sidebar-visualization-hidden #components{
         padding-bottom:0
     }
 }
+.border-light-gray{
+    border-color: #ececec;
+}

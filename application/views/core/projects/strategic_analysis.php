@@ -11,17 +11,10 @@
                     <div class="col-sm-12">
                         <div class="card">
                             <div class="card-header header-elements-inline p-3">
-                                <h5 class="card-title text-uppercase"><i class="icon-stack2 mr-2"></i>Problem Analysis</h5>
+                                <h5 class="card-title text-uppercase"><i class="icon-stack2 mr-2"></i>Strategic Analysis</h5>
                                 <div class="header-elements">
                                     <div class="list-icons">                                    
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Export</button>
-                                            <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; transform: translate3d(-73px, 36px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                                <a href="#" class="dropdown-item"><i class="icon-menu7"></i> PNG</a>
-                                                <a href="#" class="dropdown-item"><i class="icon-screen-full"></i> JPEG</a>
-                                                <a href="#" class="dropdown-item"><i class="icon-mail5"></i> PDF</a>
-                                            </div>
-                                        </div>
+                                        <a href="#"  data-toggle="modal" data-target="#edit-sha"><i class="icon-pencil5 mr-1"></i> Edit</a>
                                     </div>
                                 </div>
                             </div>
@@ -29,18 +22,13 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-12 col-md-12 col-lg-12">
-                                    <p class="mb-3">Build the visualisation of the core problem in form of a diagram, called “problem tree” to help analyse and clarify cause-effect relationships.</p>
+                                    <hr>
+                                    <fieldset class="card-body text-right">
+                                        <a href="<?=site_url('projects/02849')?>" class="btn btn-light ml-3">Cancel</a>
+                                        <a href="<?=site_url('projects/02849')?>" class="btn bg-success"><i class="icon-paperplane mr-1"></i> Save</a>
+                                    </fieldset>
                                     </div>
-                                    <div class="col-12 col-md-12 col-lg-12">
-                                        <div id="graphContainer" style="height:800px;"></div>
-                                    </div>
-							    </div>
-                                <hr>
-                                <fieldset class="card-body text-right">
-                                    <a href="<?=site_url('projects/02849')?>" class="btn btn-light ml-3">Cancel</a>
-									<a href="#" class="btn bg-success gx_save"><i class="icon-paperplane mr-1"></i> Save</a>
-                                    <a href="<?=site_url('projects/02849/obj-analysis')?>" class="btn bg-blue gx_save">Save And Continue - Objective Analysis <i class="icon-arrow-right7 ml-1"></i></a>
-								</fieldset>
+                                <div>
                             </div>
                         </div>
                     </div>
@@ -73,6 +61,13 @@
                                         </div>
                                     </div>
                                 </div>
+                            <!-- <div class="row text-left">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <textarea  id="p_objective" name="pjt_objective" class="form-control form-control-lg" placeholder="Enter project Objective"></textarea>
+                                        </div>
+                                    </div>
+                                </div>-->
                             </div>
                         </div>
                     </div>           
@@ -81,10 +76,7 @@
         </div><!-- .modal-dialog -->
     </div><!-- Modal End -->
 <script type ="text/javascript">
-
-</script>
-<script type ="text/javascript">
     document.addEventListener('DOMContentLoaded', function() {
-        ProbAnalysis.init();
+        StrategicAnalysis.init();
     });
 </script>

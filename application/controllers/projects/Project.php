@@ -223,7 +223,7 @@ class Project extends ICTMS_Controller {
         {
             $message='';
         }
-        $_header["support"] = array();
+        $_header["support"] = array("steps","uniform","jqueryUi");
         $_header["page_js"] = "stat_analysis";
 
         $this->load->view('core/fragments/header',$_header);

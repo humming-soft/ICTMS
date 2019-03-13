@@ -138,8 +138,15 @@
         <script type="text/javascript" src="<?=site_url('assets/js/plugins/diagram/mxgraph/js/Toolbar.js')?>"></script>
         <script type="text/javascript" src="<?=site_url('assets/js/plugins/diagram/mxgraph/js/Dialogs.js')?>"></script>
     <?php } ?>
+    <?php if(in_array("steps",$support)){ ?>
+        <script src="<?=site_url('assets/js/plugins/forms/wizards/steps.min.js')?>"></script>
+    <?php } ?>
     <?php if(in_array("multiselect",$support)){ ?>
         <script src="<?=site_url('assets/js/plugins/forms/selects/bootstrap_multiselect.js')?>"></script>
+    <?php } ?>
+    <?php if(in_array("jqueryUi",$support)){ ?>
+        <script src="<?=site_url('assets/js/plugins/extensions/jquery_ui/interactions.min.js')?>"></script>
+        <script src="<?=site_url('assets/js/plugins/extensions/jquery_ui/touch.min.js')?>"></script>
     <?php } ?>
     <?php if(in_array("slick",$support)){ ?>
     <link href="<?=site_url('assets/js/plugins/ui/slick/slick.css')?>" rel="stylesheet" type="text/css">

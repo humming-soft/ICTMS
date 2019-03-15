@@ -93,12 +93,29 @@ var StatAnalysis = function() {
             _componentSortable();
         });
     };
+
+    var _componentAddCriteria = function(s,t){
+        s.click(function(){
+            $crit = $("#crit_name").val();
+            $s_opts = $('#dif_opt').val(); 
+            t.each(function(index,v){
+                $opts = '';
+                jQuery.each($s_opts,function(i,v){
+                    $opts += '<div class="form-check form-check-inline"><label class="form-check-label"><input type="radio" name="new_c['+index+']['+index+']" class="form-input-styled" data-fouc>'+v+'</label></div>';
+                });
+                $c = ' <li><div class="data-details-des">'+ $crit+'<div class="form-group mb-0">'+$opts+'</div></div></li>';
+                $(this).append($c);
+            });
+            _componentUniform();
+        });
+    };
     return {
         init: function() {
             _componentWizard();
             _componentUniform();
             _componentSortable();
             _componentAddOp($("#add-strategy"),$("#strat-groups"));
+            _componentAddCriteria($("#add_crit"),$(".list-criteria"));
         }
     }
 }();

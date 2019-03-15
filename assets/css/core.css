@@ -16336,3 +16336,252 @@ body.sidebar-visualization-hidden #components{
 .ictms-table tbody tr td{
     padding: 14px 20px;
 }
+.pay-option-label {
+    width: 100%;
+    background: #e6effb;
+    border: 2px solid #e6effb;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all .4s ease;
+    text-align: center;
+    margin-bottom: 15px
+}
+
+.pay-option-label:after {
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: #2c80ff;
+    content: '';
+    top: 0;
+    right: -5px;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all .4s ease
+}
+
+.pay-option-check {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    opacity: 0
+}
+
+.pay-option-check:checked ~ label {
+    border-color: #2c80ff
+}
+
+.pay-option-check:checked ~ label:after {
+    transform: translate(-50%, -50%) scale(1)
+}
+
+.pay-list {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.pay-item {
+    width: 100%
+}
+
+.pay-check {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    opacity: 0
+}
+
+.pay-check-label {
+    position: relative;
+    padding: 50px 25px 5px;
+    border: 2px solid #d2dde9;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    transition: all .4s ease
+}
+
+.pay-check-label:before {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    border: 2px solid #d2dde9;
+    content: '';
+    top: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .4s ease
+}
+
+.pay-check-label:after {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #2c80ff;
+    content: '';
+    top: 26px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all .4s ease
+}
+
+.pay-check-label img {
+    height: 60px
+}
+
+.pay-check:checked ~ label {
+    border-color: #2c80ff
+}
+
+.pay-check:checked ~ label:before {
+    border-color: #2c80ff
+}
+
+.pay-check:checked ~ label:after {
+    opacity: 1
+}
+
+.pay-amount {
+    display: block
+}
+
+.pay-icon {
+    padding-right: 10px;
+    font-size: 22px;
+    line-height: 30px;
+    width: 30px;
+    text-align: center
+}
+
+.pay-icon.cf-ltc {
+    font-size: 18px
+}
+
+.pay-title {
+    display: inline-flex;
+    align-items: center
+}
+
+.pay-cur {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 700
+}
+
+.pay-info-list li {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase
+}
+
+.pay-info-list li span {
+    color: #758698
+}
+
+.pay-status .ti {
+    display: inline-block;
+    height: 90px;
+    width: 90px;
+    line-height: 82px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 50%;
+    font-size: 36px
+}
+
+.pay-status-success .ti {
+    border-color: #00d285;
+    color: #00d285
+}
+
+.pay-status-warning .ti {
+    border-color: #ffc100;
+    color: #ffc100
+}
+
+.pay-status-error .ti {
+    border-color: #ff6868;
+    color: #ff6868
+}
+
+.pay-button {
+    width: 100%;
+    padding: 10px 0
+}
+
+.pay-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 11px 0
+}
+
+.pay-button:first-child {
+    padding-left: 0
+}
+
+.pay-button:last-child {
+    padding-right: 0
+}
+
+.pay-button-sap {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    color: #758698;
+    text-transform: uppercase
+}
+
+.pay-notes {
+    margin-top: 14px;
+    padding-top: 30px;
+    border-top: 1px solid #e0e8f3;
+    line-height: 1.5;
+    padding-bottom: 5px
+}
+
+@media (min-width: 480px) {
+    .pay-option-label {
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px
+    }
+
+    .pay-item {
+        width: 50%
+    }
+}
+
+@media (min-width: 576px) {
+    .pay-item {
+        width:auto
+    }
+}
+
+@media (min-width: 768px) {
+    .pay-button {
+        width:auto;
+        padding: 10px 20px
+    }
+
+    .pay-button:first-child {
+        padding-left: 0
+    }
+
+    .pay-button:last-child {
+        padding-right: 0
+    }
+
+    .pay-button-sap {
+        width: auto
+    }
+}

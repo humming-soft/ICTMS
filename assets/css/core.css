@@ -16324,3 +16324,15 @@ body.sidebar-visualization-hidden #components{
     border-left: 3px solid #f8ac59;
     margin-bottom: 10px;
   }
+.step-title{
+    color: #047bf8;
+    margin-bottom: 0.5rem;
+    letter-spacing: -.015em;
+}
+.ictms-table{
+    border-radius: 5px;
+}
+
+.ictms-table tbody tr td{
+    padding: 14px 20px;
+}

@@ -22,9 +22,16 @@
                                             <fieldset>
                                                 <div class="row">
                                                     <div class="col-12 col-md-12 col-lg-12">
-                                                        <div class="mb-2">
-                                                            <h4 class="hmwks-title text-center text-primary">STEP 01 : Prioritize the Outcome(s)</h4>
-                                                            <div class="hmwks-text text-center">Please select the priority of the outcome(s) i.e, result of the intervention projects</div>
+                                                        <div class="media flex-column flex-md-row mb-4">
+                                                            <div class="media-body text-center p-2">
+                                                                <h4 class="media-title step-title">STEP 01 : Prioritize the Outcome(s)</h4>
+                                                                <ul class="list-inline list-inline-dotted mb-0">
+                                                                    <li class="list-inline-item">Please select the priority of the outcome(s) i.e, result of the intervention projects.</li>
+                                                                </ul>
+                                                            </div>
+<!-- 
+                                                            <div class="ml-3">
+                                                            </div> -->
                                                         </div>
                                                         <ul class="data-details-list sortable-list">
                                                             <li>
@@ -93,8 +100,8 @@
                                                             <div class="col-12 col-md-12 col-lg-12">
                                                                 <div class="media flex-column flex-md-row mb-4">
                                                                     <div class="media-body text-center p-2">
-                                                                        <h4 class="media-title font-weight-semibold text-primary">STEP 02 : Categorize the Outcome(s)</h4>
-                                                                        <ul class="list-inline list-inline-dotted text-muted mb-0">
+                                                                        <h4 class="media-title step-title">STEP 02 : Categorize the Outcome(s)</h4>
+                                                                        <ul class="list-inline list-inline-dotted mb-0">
                                                                             <li class="list-inline-item">Please categorize the similer outcomes into group or strategy.</li>
                                                                         </ul>
                                                                     </div>
@@ -137,100 +144,640 @@
                                             <h6>Your education</h6>
                                             <fieldset>
                                                 <div class="row">
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label>University:</label>
-                                                            <input type="text" name="university" placeholder="University name" class="form-control">
+                                                    <div class="col-12 col-md-12 col-lg-12">
+                                                        <div class="media flex-column flex-md-row mb-4">
+                                                            <div class="media-body text-center p-2">
+                                                                <h4 class="media-title step-title">STEP 03 : Find the most Benefitted Strategy(ies)</h4>
+                                                                <ul class="list-inline list-inline-dotted mb-0">
+                                                                    <li class="list-inline-item">Please answer the following questions to to  rule-out those strategies which can not be covered in this project.</li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
-                                                    </div>
-
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label>Country:</label>
-                                                            <select name="university-country" data-placeholder="Choose a Country..." class="form-control form-control-select2" data-fouc>
-                                                                <option></option> 
-                                                                <option value="1">United States</option> 
-                                                                <option value="2">France</option> 
-                                                                <option value="3">Germany</option> 
-                                                                <option value="4">Spain</option> 
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label>Degree level:</label>
-                                                            <input type="text" name="degree-level" placeholder="Bachelor, Master etc." class="form-control">
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <label>Specialization:</label>
-                                                            <input type="text" name="specialization" placeholder="Design, Development etc." class="form-control">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-6">
                                                         <div class="row">
-                                                            <div class="col-md-6">
-                                                                <label>From:</label>
-                                                                <div class="row">
-                                                                    <div class="col-md-6">
-                                                                        <div class="form-group">
-                                                                            <select name="education-from-month" data-placeholder="Month" class="form-control form-control-select2" data-fouc>
-                                                                                <option></option>
-                                                                                <option value="January">January</option> 
-                                                                                <option value="...">...</option> 
-                                                                                <option value="December">December</option> 
-                                                                            </select>
+                                                            <div class="col-12 col-md-12 col-lg-12">
+                                                                <div class="card-group-control card-group-control-right">
+                                                                    <div class="card">
+                                                                        <div class="card-header">
+                                                                            <h5 class="card-title">
+                                                                                <a class="text-default no-loader" data-toggle="collapse" href="#collapsible-control-right-group3" aria-expanded="true"><strong>STRATEGY 01 : WASTE STRATEGY</strong></a>
+                                                                            </h5>
                                                                         </div>
-                                                                    </div>
 
-                                                                    <div class="col-md-6">
-                                                                        <div class="form-group">
-                                                                            <select name="education-from-year" data-placeholder="Year" class="form-control form-control-select2" data-fouc>
-                                                                                <option></option> 
-                                                                                <option value="1995">1995</option> 
-                                                                                <option value="...">...</option> 
-                                                                                <option value="1980">1980</option> 
-                                                                            </select>
+                                                                        <div id="collapsible-control-right-group3" class="collapse show" style="">
+                                                                            <div class="card-body p-0">
+                                                                                <table class="table table-bordered ictms-table">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td class="va-top" width="30%">Expected Outcomes:
+                                                                                                <div class="strategy-list pt-2">
+                                                                                                    <div class="data-details-head item ui-sortable-handle selected" style="width:100%"> OUTCOME 03 - Wastewater treatment meets environmental standards</div>
+                                                                                                </div>
+                                                                                            </td>
+                                                                                            <td class="p-0">  
+                                                                                                <ul class="data-details-list m-0" style="padding-inline-start:0">
+                                                                                                    <li>
+                                                                                                        <div class="data-details-des">
+                                                                                                            <span>Benefits to Target</span>
+                                                                                                            <div class="form-group mb-0">
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="b_t[0]" class="form-input-styled" checked data-fouc>
+                                                                                                                        Long Term
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="b_t[0]" class="form-input-styled" data-fouc>
+                                                                                                                        Short Term
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="data-details-des">
+                                                                                                            <span>Iinvestment Required</span>
+                                                                                                            <div class="form-group mb-0">
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="i_r[0]" class="form-input-styled" checked data-fouc>
+                                                                                                                        High
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="i_r[0]" class="form-input-styled" data-fouc>
+                                                                                                                        Low
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="data-details-des">
+                                                                                                            <span>Gender Participation - Male</span>
+                                                                                                            <div class="form-group mb-0">
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="g_p_male[0]" class="form-input-styled" checked data-fouc>
+                                                                                                                        High
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="g_p_male[0]" class="form-input-styled" data-fouc>
+                                                                                                                        Low
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                                
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="g_p_male[0]" class="form-input-styled" data-fouc>
+                                                                                                                        Moderate
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="data-details-des">
+                                                                                                            <span>Gender Participation - Female</span>
+                                                                                                            <div class="form-group mb-0">
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="g_p_female[0]" class="form-input-styled" checked data-fouc>
+                                                                                                                        High
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="g_p_female[0]" class="form-input-styled" data-fouc>
+                                                                                                                        Low
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                                
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="g_p_female[0]" class="form-input-styled" data-fouc>
+                                                                                                                        Moderate
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="data-details-des">
+                                                                                                            <span>Impact to Target</span>
+                                                                                                            <div class="form-group mb-0">
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="i_t[0]" class="form-input-styled" checked data-fouc>
+                                                                                                                        High
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="i_t[0]" class="form-input-styled" data-fouc>
+                                                                                                                        Low
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="data-details-des">
+                                                                                                            <span>Maintanace</span>
+                                                                                                            <div class="form-group mb-0">
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="m_t[0]" class="form-input-styled" checked data-fouc>
+                                                                                                                        High
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="m_t[0]" class="form-input-styled" data-fouc>
+                                                                                                                        Low
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="data-details-des">Economic Benefits
+                                                                                                            <div class="form-group mb-0">
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="e_b[0]" class="form-input-styled" checked data-fouc>
+                                                                                                                        High
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="e_b[0]" class="form-input-styled" data-fouc>
+                                                                                                                        Low
+                                                                                                                    </label>
+                                                                                                                </div>                                                                                               
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="data-details-des">Technical capabilities to implement
+                                                                                                            <div class="form-group mb-0">
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="t_c_t_i[0]" class="form-input-styled" checked data-fouc>
+                                                                                                                        High
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="t_c_t_i[0]" class="form-input-styled" data-fouc>
+                                                                                                                        Low
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="data-details-des">Environmental impact
+                                                                                                            <div class="form-group mb-0">
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="e_i[0]" class="form-input-styled" checked data-fouc>
+                                                                                                                        High
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="e_i[0]" class="form-input-styled" data-fouc>
+                                                                                                                        Low
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="e_i[0]" class="form-input-styled" data-fouc>
+                                                                                                                        Not Applicable
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="data-details-des">Political Demand
+                                                                                                            <div class="form-group mb-0">
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="p_d[0]" class="form-input-styled" checked data-fouc>
+                                                                                                                        High
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="p_d[0]" class="form-input-styled" data-fouc>
+                                                                                                                        Low
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="data-details-des">Social Implicaion
+                                                                                                            <div class="form-group mb-0">
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="s_i[0]" class="form-input-styled" checked data-fouc>
+                                                                                                                        High
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="s_i[0]" class="form-input-styled" data-fouc>
+                                                                                                                        Low
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="s_i[0]" class="form-input-styled" checked data-fouc>
+                                                                                                                        Moderate
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="s_i[0]" class="form-input-styled" data-fouc>
+                                                                                                                        Not Applicable
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="data-details-des">Legal Implication
+                                                                                                            <div class="form-group mb-0">
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="l_i[0]" class="form-input-styled" data-fouc>
+                                                                                                                        High
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="l_i[0]" class="form-input-styled" data-fouc>
+                                                                                                                        Low
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="l_i[0]" class="form-input-styled" checked data-fouc>
+                                                                                                                        Moderate
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="l_i[0]" class="form-input-styled" data-fouc>
+                                                                                                                        Not Applicable
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>        
+                                                                            </div>
                                                                         </div>
                                                                     </div>
-                                                                </div>
+                                                                    <div class="card">
+                                                                        <div class="card-header">
+                                                                            <h5 class="card-title">
+                                                                                <a class="text-default collapsed no-loader" data-toggle="collapse" href="#collapsible-control-right-group2" aria-expanded="false"><strong>STRATEGY 02 : WASTEWATER STRATEGY</strong></a>
+                                                                            </h5>
+                                                                        </div>
+
+                                                                        <div id="collapsible-control-right-group2" class="collapse" style="">
+                                                                            <div class="card-body p-0">
+                                                                                <table class="table table-bordered ictms-table">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td class="va-top" width="30%">Expected Outcomes:
+                                                                                                <div class="strategy-list pt-2">
+                                                                                                    <div class="data-details-head item ui-sortable-handle selected" style="width:100%"> OUTCOME 03 - Wastewater treatment meets environmental standards</div>
+                                                                                                </div>
+                                                                                            </td>
+                                                                                            <td class="p-0">  
+                                                                                                <ul class="data-details-list m-0" style="padding-inline-start:0">
+                                                                                                    <li>
+                                                                                                        <div class="data-details-des">
+                                                                                                            <span>Benefits to Target</span>
+                                                                                                            <div class="form-group mb-0">
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="b_t[1]" class="form-input-styled" checked data-fouc>
+                                                                                                                        Long Term
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="b_t[1]" class="form-input-styled" data-fouc>
+                                                                                                                        Short Term
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="data-details-des">
+                                                                                                            <span>Iinvestment Required</span>
+                                                                                                            <div class="form-group mb-0">
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="i_r[1]" class="form-input-styled" checked data-fouc>
+                                                                                                                        High
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="i_r[1]" class="form-input-styled" data-fouc>
+                                                                                                                        Low
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="data-details-des">
+                                                                                                            <span>Gender Participation - Male</span>
+                                                                                                            <div class="form-group mb-0">
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="g_p_male[1]" class="form-input-styled" checked data-fouc>
+                                                                                                                        High
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="g_p_male[1]" class="form-input-styled" data-fouc>
+                                                                                                                        Low
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                                
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="g_p_male[1]" class="form-input-styled" data-fouc>
+                                                                                                                        Moderate
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="data-details-des">
+                                                                                                            <span>Gender Participation - Female</span>
+                                                                                                            <div class="form-group mb-0">
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="g_p_female[1]" class="form-input-styled" checked data-fouc>
+                                                                                                                        High
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="g_p_female[1]" class="form-input-styled" data-fouc>
+                                                                                                                        Low
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                                
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="g_p_female[1]" class="form-input-styled" data-fouc>
+                                                                                                                        Moderate
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="data-details-des">
+                                                                                                            <span>Impact to Target</span>
+                                                                                                            <div class="form-group mb-0">
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="i_t[1]" class="form-input-styled" checked data-fouc>
+                                                                                                                        High
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="i_t[1]" class="form-input-styled" data-fouc>
+                                                                                                                        Low
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="data-details-des">
+                                                                                                            <span>Maintanace</span>
+                                                                                                            <div class="form-group mb-0">
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="m_t[1]" class="form-input-styled" checked data-fouc>
+                                                                                                                        High
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="m_t[1]" class="form-input-styled" data-fouc>
+                                                                                                                        Low
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="data-details-des">Economic Benefits
+                                                                                                            <div class="form-group mb-0">
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="e_b[1]" class="form-input-styled" checked data-fouc>
+                                                                                                                        High
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="e_b[1]" class="form-input-styled" data-fouc>
+                                                                                                                        Low
+                                                                                                                    </label>
+                                                                                                                </div>                                                                                               
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="data-details-des">Technical capabilities to implement
+                                                                                                            <div class="form-group mb-0">
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="t_c_t_i[1]" class="form-input-styled" checked data-fouc>
+                                                                                                                        High
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="t_c_t_i[1]" class="form-input-styled" data-fouc>
+                                                                                                                        Low
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="data-details-des">Environmental impact
+                                                                                                            <div class="form-group mb-0">
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="e_i[1]" class="form-input-styled" checked data-fouc>
+                                                                                                                        High
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="e_i[1]" class="form-input-styled" data-fouc>
+                                                                                                                        Low
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="e_i[1]" class="form-input-styled" data-fouc>
+                                                                                                                        Not Applicable
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="data-details-des">Political Demand
+                                                                                                            <div class="form-group mb-0">
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="p_d[1]" class="form-input-styled" checked data-fouc>
+                                                                                                                        High
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="p_d[1]" class="form-input-styled" data-fouc>
+                                                                                                                        Low
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="data-details-des">Social Implicaion
+                                                                                                            <div class="form-group mb-0">
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="s_i[1]" class="form-input-styled" checked data-fouc>
+                                                                                                                        High
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="s_i[1]" class="form-input-styled" data-fouc>
+                                                                                                                        Low
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="s_i[1]" class="form-input-styled" checked data-fouc>
+                                                                                                                        Moderate
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="s_i[1]" class="form-input-styled" data-fouc>
+                                                                                                                        Not Applicable
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="data-details-des">Legal Implication
+                                                                                                            <div class="form-group mb-0">
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="l_i[1]" class="form-input-styled" data-fouc>
+                                                                                                                        High
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="l_i[1]" class="form-input-styled" data-fouc>
+                                                                                                                        Low
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="l_i[1]" class="form-input-styled" checked data-fouc>
+                                                                                                                        Moderate
+                                                                                                                    </label>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-check form-check-inline">
+                                                                                                                    <label class="form-check-label">
+                                                                                                                        <input type="radio" name="l_i[1]" class="form-input-styled" data-fouc>
+                                                                                                                        Not Applicable
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>        
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>                                                    
                                                             </div>
-
-                                                            <div class="col-md-6">
-                                                                <label>To:</label>
-                                                                <div class="row">
-                                                                    <div class="col-md-6">
-                                                                        <div class="form-group">
-                                                                            <select name="education-to-month" data-placeholder="Month" class="form-control form-control-select2" data-fouc>
-                                                                                <option></option>
-                                                                                <option value="January">January</option> 
-                                                                                <option value="...">...</option> 
-                                                                                <option value="December">December</option> 
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="col-md-6">
-                                                                        <div class="form-group">
-                                                                            <select name="education-to-year" data-placeholder="Year" class="form-control form-control-select2" data-fouc>
-                                                                                <option></option> 
-                                                                                <option value="1995">1995</option> 
-                                                                                <option value="...">...</option> 
-                                                                                <option value="1980">1980</option> 
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <label>Language of education:</label>
-                                                            <input type="text" name="education-language" placeholder="English, German etc." class="form-control">
                                                         </div>
                                                     </div>
                                                 </div>

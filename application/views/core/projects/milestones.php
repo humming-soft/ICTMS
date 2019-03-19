@@ -11,19 +11,13 @@
                     <div class="col-sm-12">
                         <div class="card">
                             <div class="card-header header-elements-inline p-3">
-                                <h6 class="card-title"><i class="icon-task mr-2"></i>MILESTONES</h6>
-                                <div class="header-elements">
-                                    <div class="list-icons">                                    
-                                        <a class="list-icons-item btn bg-blue btn-icon" data-action="reload"></a>
-                                        <a class="list-icons-item btn bg-pink-400 btn-icon" data-action="fullscreen"></a>
-                                    </div>
-                                </div>
+                                <h6 class="card-title"><i class="icon-paragraph-right3 mr-2"></i>Activities and Deliverables</h6>
                             </div>
                             
                             <div class="card-body">
                                 <div class="row m-0">
                                     <div class="col-12 col-md-12 col-lg-12">
-                                        <div id="wbs_milestones" style='height:700px;'></div>
+                                        <div id="wbs_milestones" style='min-height:500px;'></div>
                                     </div>
                                 </div>
                             </div>

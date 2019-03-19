@@ -33,67 +33,68 @@
                                     </div> -->
 
                                     <ul class="nav nav-pills ictms-nav-pills nav-pills-bordered">
-                                        <li class="nav-item"><a href="#bordered-pill1" class="nav-link active show no-loader" data-toggle="tab"><i class="icon-circles mr-1"></i> Initiation</a></li>
-                                        <li class="nav-item"><a href="#bordered-pill2" class="nav-link no-loader" data-toggle="tab"><i class="icon-circles2 mr-1"></i> Planning</a></li>
+                                        <li class="nav-item"><a href="#bordered-pill1" class="nav-link completed no-loader" data-toggle="tab"><i class="icon-circles mr-1"></i> Initiation</a></li>
+                                        <li class="nav-item"><a href="#bordered-pill2" class="nav-link active show no-loader" data-toggle="tab"><i class="icon-circles2 mr-1"></i> Planning</a></li>
                                         <li class="nav-item"><a href="#bordered-pill3" class="nav-link no-loader" data-toggle="tab"><i class="icon-circles2 mr-1"></i> Implementation & Control</a></li>
                                         <li class="nav-item"><a href="#bordered-pill4" class="nav-link no-loader" data-toggle="tab"><i class="icon-circles2 mr-1"></i> Closure</a></li>
                                     </ul>
                                     <hr>
                                     <div class="tab-content">
-                                        <div class="tab-pane fade active show" id="bordered-pill1">
+                                        <div class="tab-pane fade" id="bordered-pill1">
                                             <div class="row">
                                                 <div class="col-12 col-md-6 col-lg-3">
                                                     <div class="step-head">
-                                                        <div class="step-number current">01</div>
+                                                        <div class="step-number completed">01</div>
                                                         <div class="step-head-text">
                                                             <h4>Stakeholder Analysis</h4>
                                                             <p><b>Stakeholder Analysis</b> is the process of identifying and analysing stakeholders, and plan for their participation.</p>
                                                             
-                                                            <a href="<?=site_url('projects/02849/stakeholder-analysis')?>">Complete Step →</a>
+                                                            <a href="<?=site_url('projects/02849/stakeholder-analysis')?>">View/Edit →</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-md-6 col-lg-3">
                                                     <div class="step-head">
-                                                        <div class="step-number">02</div>
+                                                        <div class="step-number completed">02</div>
                                                         <div class="step-head-text">
                                                             <h4>Problem Analysis</h4>
                                                             <p><b>Problem Analysis</b> involves identifying what the main problems are and establishing the cause and effect relationships.</p>
-                                                            <a href="<?=site_url('projects/02849/prob-analysis')?>">Complete Step →</a>
+                                                            <a href="<?=site_url('projects/02849/prob-analysis')?>">View/Edit →</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-md-6 col-lg-3">
                                                     <div class="step-head">
-                                                        <div class="step-number">03</div>
+                                                        <div class="step-number completed">03</div>
                                                         <div class="step-head-text">
                                                             <h4>Objectives Analysis</h4>
                                                             <p><b>Objectives Analysis</b> is a methodological approach to describe the situation in the future once identified problems resolved.</p>
-                                                            <a href="<?=site_url('projects/02849/obj-analysis')?>">Complete Step →</a>
+                                                            <a href="<?=site_url('projects/02849/obj-analysis')?>">View/Edit →</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-md-6 col-lg-3">
                                                     <div class="step-head">
-                                                        <div class="step-number">04</div>
+                                                        <div class="step-number completed">04</div>
                                                         <div class="step-head-text">
                                                             <h4>Strategic Analysis</h4>
                                                             <p><b>Strategic Analysis</b> is used to find possible interventions in order to determine the scope of the project.</p>
-                                                            <a href="<?=site_url('projects/02849/stat-analysis')?>">Complete Step →</a>
+                                                            <a href="<?=site_url('projects/02849/stat-analysis')?>">View/Edit →</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="tab-pane fade" id="bordered-pill2">
+                                        <div class="tab-pane fade active show" id="bordered-pill2">
                                             <div class="row">
                                                 <div class="col-12 col-md-6 col-lg-3">
                                                     <div class="step-head">
-                                                        <div class="step-number">01</div>
+                                                        <div class="step-number current">01</div>
                                                         <div class="step-head-text">
-                                                            <h4>Log Frame</h4>
+                                                            <h4>Logframe</h4>
                                                             <p>Your simple personal information required for identification</p>
+                                                            <a href="<?=site_url('projects/02849/logframe')?>">Complete Step →</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -103,6 +104,7 @@
                                                         <div class="step-head-text">
                                                             <h4>Activities and Deliverables</h4>
                                                             <p>Your simple personal information required for identification</p>
+                                                            <a href="<?=site_url('projects/02849/gantt')?>">Complete Step →</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -112,6 +114,7 @@
                                                         <div class="step-head-text">
                                                             <h4>Resources</h4>
                                                             <p>Your simple personal information required for identification</p>
+                                                            <a href="<?=site_url('projects/02849/resources')?>">Complete Step →</a>
                                                         </div>
                                                     </div>
                                                 </div>

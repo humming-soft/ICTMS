@@ -28,7 +28,7 @@
 				</li>
 				<li class="nav-item dropdown">
 					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-						<i class="icon-briefcase mr-2"></i>
+						<i class="icon-archive mr-2"></i>
 						Initiation
 					</a>
 
@@ -36,8 +36,21 @@
 						<div class="dropdown-header">PROJECT INITIATION (LFA)</div>
 						<a href="<?=site_url('projects/02849/stakeholder-analysis')?>" class="dropdown-item"><i class="icon-people"></i> Stakeholder Analysis</a>
 						<a href="<?=site_url('projects/02849/prob-analysis')?>" class="dropdown-item"><i class="icon-tree7"></i> Problem Analysis</a>
-						<a href="<?=site_url('projects/02849/business')?>" class="dropdown-item"><i class="icon-list2"></i> Objective Analysis</a>
-						<a href="<?=site_url('projects/02849/business')?>" class="dropdown-item"><i class="icon-strategy"></i> Strategic Analysis</a>
+						<a href="<?=site_url('projects/02849/obj-analysis')?>" class="dropdown-item"><i class="icon-list2"></i> Objective Analysis</a>
+						<a href="<?=site_url('projects/02849/stat-analysis')?>" class="dropdown-item"><i class="icon-strategy"></i> Strategic Analysis</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+						<i class="icon-clipboard3 mr-2"></i>
+						Planning
+					</a>
+
+					<div class="dropdown-menu">
+						<div class="dropdown-header">PROJECT PLANNING (LFM)</div>
+						<a href="<?=site_url('projects/02849/logframe')?>" class="dropdown-item"><i class="icon-grid7"></i> Logframe</a>
+						<a href="<?=site_url('projects/02849/gantt')?>" class="dropdown-item"><i class="icon-paragraph-right3"></i> Activities and Deliverables</a>
+						<a href="<?=site_url('projects/02849/resources')?>" class="dropdown-item"><i class="icon-users"></i> Resources</a>
 					</div>
 				</li>
 				<!-- <li class="nav-item">

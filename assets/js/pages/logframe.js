@@ -1,4 +1,4 @@
-var StatAnalysis = function() {
+var Js = function() {
     var _componentWizard = function() {
         if (!$().steps) {
             console.warn('Warning - steps.min.js is not loaded.');
@@ -67,23 +67,6 @@ var StatAnalysis = function() {
                 copyHelper = null;
             }
         });
-
-        // $(".sortable-list").sortable({
-        //     connectWith: ".connectList",
-        //     items: ".item",
-        //     start: function(e, li) { 
-        //         $(li.item).css("width","auto");
-        //     },
-        //     remove: function (e, li) {
-        //         li.item.clone().insertAfter(li.item);
-        //         $(this).sortable('cancel');
-        //         return li.item.clone();
-        //     }
-        // }).disableSelection();
-        // $('.sortable-list').bind('sortstop', function(event, ui) {
-        //     $(ui.item[0]).clone(true).appendTo('.connectList');
-        //     $(this).sortable('cancel');
-        // });
     };
     var _componentAddOp = function(s,t){
         s.click(function(){
@@ -129,23 +112,116 @@ var StatAnalysis = function() {
         }
     };
 
-    var _singleCheck = function(c){
-        var checkboxes = document.getElementsByName('m_e_s')
-        checkboxes.forEach((item) => {
-            if (item !== c) item.checked = false; $.uniform.update(item);
-        })
-    }
+    var _componentDrag = function(dragItem, container){
+        // var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+        // if (document.getElementById(elmnt.id + "header")) {
+        //   // if present, the header is where you move the DIV from:
+        //   document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+        // } else {
+        //   // otherwise, move the DIV from anywhere inside the DIV: 
+        //   elmnt.onmousedown = dragMouseDown;
+        // }
+      
+        // function dragMouseDown(e) {
+        //   e = e || window.event;
+        //   e.preventDefault();
+        //   // get the mouse cursor position at startup:
+        //   pos3 = e.clientX;
+        //   pos4 = e.clientY;
+        //   document.onmouseup = closeDragElement;
+        //   // call a function whenever the cursor moves:
+        //   document.onmousemove = elementDrag;
+        // }
+      
+        // function elementDrag(e) {
+        //   e = e || window.event;
+        //   e.preventDefault();
+        //   // calculate the new cursor position:
+        //   pos1 = pos3 - e.clientX;
+        //   pos2 = pos4 - e.clientY;
+        //   pos3 = e.clientX;
+        //   pos4 = e.clientY;
+        //   // set the element's new position:
+        //   elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+        //   elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+        // }
+      
+        // function closeDragElement() {
+        //   // stop moving when mouse button is released:
+        //   document.onmouseup = null;
+        //   document.onmousemove = null;
+        // }
+
+
+        // var dragItem = document.querySelector("#item");
+        // var container = document.querySelector("#container");
+    
+        var active = false;
+        var currentX;
+        var currentY;
+        var initialX;
+        var initialY;
+        var xOffset = 0;
+        var yOffset = 0;
+    
+        container.addEventListener("touchstart", dragStart, false);
+        container.addEventListener("touchend", dragEnd, false);
+        container.addEventListener("touchmove", drag, false);
+    
+        container.addEventListener("mousedown", dragStart, false);
+        container.addEventListener("mouseup", dragEnd, false);
+        container.addEventListener("mousemove", drag, false);
+    
+        function dragStart(e) {
+          if (e.type === "touchstart") {
+            initialX = e.touches[0].clientX - xOffset;
+            initialY = e.touches[0].clientY - yOffset;
+          } else {
+            initialX = e.clientX - xOffset;
+            initialY = e.clientY - yOffset;
+          }
+    
+        //   if (e.target === dragItem) {
+            active = true;
+        //   }
+        }
+    
+        function dragEnd(e) {
+          initialX = currentX;
+          initialY = currentY;
+    
+          active = false;
+        }
+    
+        function drag(e) {
+          if (active) {
+          
+            e.preventDefault();
+          
+            if (e.type === "touchmove") {
+              currentX = e.touches[0].clientX - initialX;
+              currentY = e.touches[0].clientY - initialY;
+            } else {
+              currentX = e.clientX - initialX;
+              currentY = e.clientY - initialY;
+            }
+    
+            xOffset = currentX;
+            yOffset = currentY;
+    
+            setTranslate(currentX, currentY, dragItem);
+          }
+        }
+    
+        function setTranslate(xPos, yPos, el) {
+          el.style.transform = "translate3d(" + xPos + "px, " + yPos + "px, 0)";
+        }
+
+    };
     return {
         init: function() {
             _componentWizard();
-            _componentUniform();
-            _componentSortable();
-            _componentAddOp($("#add-strategy"),$("#strat-groups"));
-            _componentAddCriteria($("#add_crit"),$(".list-criteria"));
-            _componentModal(false,$('#add-criteria'),$('#add-criteria .hmwks-slider-w'));
-        },
-        check : function(t){
-            _singleCheck(t);
+            _componentDrag(document.querySelector(".dtable"), document.querySelector(".dtable-container"));
         }
     }
 }();

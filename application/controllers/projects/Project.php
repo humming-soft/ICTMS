@@ -223,7 +223,7 @@ class Project extends ICTMS_Controller {
         {
             $message='';
         }
-        $_header["support"] = array("steps","uniform","jqueryUi");
+        $_header["support"] = array("steps","uniform","jqueryUi","slick");
         $_header["page_js"] = "stat_analysis";
 
         $this->load->view('core/fragments/header',$_header);
@@ -262,6 +262,30 @@ class Project extends ICTMS_Controller {
             }
         }
         echo $this->arrayToXml(array('status'=>1, 'msg'=>"Objective Tree saved successfully"));
+    }
+
+    public function logframe($pid=null){
+        $session_data = $this->session->userdata('logged_in');
+        $data['username'] =$data1['username'] = $session_data['username'];
+
+        if($this->session->userdata('message'))
+        {
+            $messagehrecord=$this->session->userdata('message');
+            $message=$messagehrecord['message'];
+            $this->session->unset_userdata('message');
+        }
+        else
+        {
+            $message='';
+        }
+        $_header["support"] = array("steps","uniform","jqueryUi","slick");
+        $_header["page_js"] = "logframe";
+
+        $this->load->view('core/fragments/header',$_header);
+        $this->load->view('core/projects/fragments/main_navbar',$data1);
+        $this->load->view('core/projects/fragments/secondary_navbar');
+        $this->load->view('core/projects/logframe',$data);
+        $this->load->view('core/fragments/footer');
     }
 
 

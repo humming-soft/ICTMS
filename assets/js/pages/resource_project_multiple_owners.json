@@ -1,21 +1,10 @@
 {
   "data": [
-	{ "id": 1, "text": "RIDE- Rail Information Data Exchange", "type": "project", "start_date": "01-01-2019 00:00", "duration": 501, "progress": 0.0,"owner_id": ["7","9","10","8"], "parent": 0,"color":"#4f784e"},
-	{ "id": 2, "text": "Project Initiation", "type": "task", "start_date": "01-01-2019 00:00", "duration": 58 , "progress": 0.0,"owner_id": ["12","8","67"], "parent": "1"},
-	  { "id": 3, "text": "Project Setup", "type": "task", "start_date": "01-02-2019 00:00", "duration": 42, "progress": 0.0,"owner_id": ["12","8","31","65","66"], "parent": "1"},
-	{ "id": 4, "text": "Planning", "type": "task", "start_date": "16-03-2019 00:00", "duration": 47 , "parent": "1", "progress": 0.0, "owner_id": ["12","8","31","73","75","74"]},
-	{ "id":5, "text": "Implementation", "type": "task", "start_date": "03-05-2019 00:00", "duration": 305, "parent": "1", "progress": 0.0,"owner_id": ["25","35","69","70","71"], "priority":3},
-	{ "id": 6, "text": "Testing", "type": "task", "start_date": "04-03-2020 00:00", "duration": 92 , "parent": "1", "progress": 0.0,"owner_id": ["33"], "priority":1},
-	{ "id": 7, "text": "Training", "type": "task", "start_date": "05-06-2020 00:00", "duration": 92, "parent": "1", "progress": 0.0, "owner_id": ["33","25","31"], "priority":1},
-	{ "id": 8, "text": "Commissioning", "type": "task", "start_date": "06-09-2020 00:00", "duration": 116, "parent": "1", "progress": 0.0,"owner_id": ["12","8"], "priority":2}
+	{ "id": 1, "text": "Polluters are effectively controlled", "type": "milestone", "start_date": "12-05-2019 00:00", "duration": 290, "progress": 0.0,"parent": 0,"color":"#2196F3"},
+	{ "id": 2, "text": "Population more aware of the danger of waste dumping", "type": "milestone", "start_date": "12-05-2019 00:00", "duration": 142, "progress": 0.0,"parent": 0,"color":"#2196F3"},
+	{ "id": 3, "text": "Pollution management is given a higher political priority", "type": "milestone", "start_date": "12-05-2019 00:00", "duration": 173, "progress": 0.0,"parent": 0,"color":"#2196F3"},
+	{ "id": 4, "text": "Increased capital investment and improved business planning within Local Government is established, including cost of recovery mechanisms", "type": "milestone", "start_date": "12-05-2019 00:00", "duration": 300, "progress": 0.0,"parent": 0,"color":"#2196F3"}
   ],
   "links": [
-
-	{ "id": "2", "source": "2", "target": "4", "type": "0" },
-	  { "id": "3", "source": "4", "target": "5", "type": "0" },
-	  { "id": "5", "source": "5", "target": "6", "type": "0" },
-	  { "id": "6", "source": "6", "target": "7", "type": "0" },
-	  { "id": "7", "source": "7", "target": "8", "type": "0" }
-
   ]
 }

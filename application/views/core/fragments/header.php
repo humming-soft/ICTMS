@@ -140,6 +140,7 @@
     <?php } ?>
     <?php if(in_array("steps",$support)){ ?>
         <script src="<?=site_url('assets/js/plugins/forms/wizards/steps.min.js')?>"></script>
+        <script src="<?=site_url('assets/js/plugins/extensions/cookie.js')?>"></script>
     <?php } ?>
     <?php if(in_array("multiselect",$support)){ ?>
         <script src="<?=site_url('assets/js/plugins/forms/selects/bootstrap_multiselect.js')?>"></script>

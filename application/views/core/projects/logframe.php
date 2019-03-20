@@ -26,13 +26,13 @@
                                             </div>
                                         </div>
                                         <div class="border-2 border-light-gray dtable-container">
-                                            <table class="table table-togglable table-bordered dtable">
+                                            <table class="table table-togglable table-bordered dtable" style="max-width:none;width:2000px;">
                                                 <thead>
                                                     <tr>
-                                                        <th colspan="2" class="text-uppercase text-center" data-hide="phone">Project Description</th>
-                                                        <th class="text-uppercase text-center" data-toggle="true">Indicators</th>
-                                                        <th class="text-uppercase text-center" data-hide="phone,tablet">Means of Verification</th>
-                                                        <th class="text-uppercase text-center" data-hide="phone,tablet">Assumptions</th>
+                                                        <th colspan="2" width="650px" class="text-uppercase text-center" data-hide="phone">Project Description</th>
+                                                        <th width="450px" class="text-uppercase text-center" data-toggle="true">Indicators</th>
+                                                        <th width="450px" class="text-uppercase text-center" data-hide="phone,tablet">Means of Verification</th>
+                                                        <th width="450px" class="text-uppercase text-center" data-hide="phone,tablet">Assumptions</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -51,16 +51,34 @@
                                                                 </li>
                                                             </ul>
                                                         </td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                        <td>-</td>                                                 
+                                                        <td>
+                                                            <ul class="list mb-0 goal_ind_t">-
+                                                            </ul>
+                                                        </td>
+                                                        <td>
+                                                            <ul class="list mb-0 goal_mov_t">-
+                                                            </ul>
+                                                        </td>
+                                                        <td>
+                                                            <ul class="list mb-0 goal_asmp_t">-
+                                                            </ul>
+                                                        </td>                                                 
                                                     </tr>
                                                     <tr>
                                                         <th class="text-uppercase align-center">Outcome</th>
                                                         <td>River water quality is improved</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                        <td>-</td>                                                  
+                                                        <td>
+                                                            <ul class="list mb-0 outc_ind_t">-
+                                                            </ul>
+                                                        </td>
+                                                        <td>
+                                                            <ul class="list mb-0 outc_mov_t">-
+                                                            </ul>
+                                                        </td>
+                                                        <td>
+                                                            <ul class="list mb-0 outc_asmp_t">-
+                                                            </ul>
+                                                        </td>                                                  
                                                     </tr>
                                                     <tr>
                                                         <th class="text-uppercase align-center">Output(s)</th>
@@ -77,9 +95,18 @@
                                                                 </li>
                                                             </ul>
                                                         </td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
+                                                        <td>
+                                                            <ul class="list mb-0 out_ind_t">-
+                                                            </ul>
+                                                        </td>
+                                                        <td>
+                                                            <ul class="list mb-0 out_mov_t">-
+                                                            </ul>
+                                                        </td>
+                                                        <td>
+                                                            <ul class="list mb-0 out_asmp_t">-
+                                                            </ul>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <th class="text-uppercase align-center">Activity(ies)</th>
@@ -114,15 +141,24 @@
                                                                 </li>
                                                             </ul>
                                                         </td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
+                                                        <td>
+                                                            <ul class="list mb-0 act_ind_t">-
+                                                            </ul>
+                                                        </td>
+                                                        <td>
+                                                            <ul class="list mb-0 act_mov_t">-
+                                                            </ul>
+                                                        </td>
+                                                        <td>
+                                                            <ul class="list mb-0 act_asmp_t">-
+                                                            </ul>
+                                                        </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
                                         </div>
                                         <hr>
-                                        <form class="wizard-form steps-state-saving no-loader" action="#" data-fouc>
+                                        <form class="wizard-form steps-logframe no-loader" action="#" data-fouc>
                                             <h6>Personal data</h6>
                                             <fieldset>
                                                 <div class="row">
@@ -248,6 +284,154 @@
                                                                 </ul>
                                                             </div>
                                                         </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-6">
+                                                                <div class="media mt-0 mb-3">
+                                                                    <div class="media-body">
+                                                                        <h6 class="media-title font-weight-semibold text-uppercase">Activity (ies) : </h6>
+                                                                        <ul class="list list-unstyled mb-0">
+                                                                            <li>
+                                                                                <ul class="list list-unstyled ml-3">
+                                                                                    <li>
+                                                                                        <strong>1.1 :</strong> Polluters are effectively controlled.
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <strong>1.2 :</strong> Population more aware of the danger of waste dumping.
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </li>
+                                                                            <li>
+                                                                                <ul class="list list-unstyled ml-3">
+                                                                                    <li>
+                                                                                        <strong>2.1 :</strong> Pollution management is given a higher political priority.
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </li>
+                                                                            <li>
+                                                                                <ul class="list list-unstyled ml-3">
+                                                                                    <li>
+                                                                                        <strong>3.1 :</strong> Increased capital investment and improved business planning within Local Government is established, including cost of recovery mechanisms.
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-lg-6">
+                                                                <div class="media mt-0 mb-3">
+                                                                    <div class="media-body">
+                                                                        <h6 class="media-title font-weight-semibold">Assumptions (Pre-conditions) : <i class="icon-help text-secondary" title="Pre-conditions which are required before the activity starts."></i></h6>
+                                                                        <ul class="list act_asmp_t">
+                                                                        </ul>
+                                                                        <div class="input-group">
+                                                                            <input type="text" id="act_asmp" class="form-control" placeholder="Add New Assumption..">
+                                                                            <span class="input-group-append">
+                                                                                <button data-target=".act_asmp_t" data-source="#act_asmp" class="btn btn-success lfm-data" type="button"><i class="icon-plus2"></i></button>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="row">
+                                                            <div class="col-lg-6">
+                                                                <div class="media mt-0 mb-3">
+                                                                    <div class="media-body">
+                                                                        <h6 class="media-title font-weight-semibold text-uppercase">Output(s) : </h6>
+                                                                        <ul class="list list-unstyled mb-0 ml-3">
+                                                                            <li><strong>OUT-1 :</strong> The quantity of solid waste dumped into the river is reduced.</li>
+                                                                            <li><strong>OUT-2 :</strong> No. of households and factories discharging wastewater directly into the river is reduced.</li>
+                                                                            <li><strong>OUT-3 :</strong> Wastewater treatment meets environmental standards.</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-lg-6">
+                                                                <div class="media mt-0 mb-3">
+                                                                    <div class="media-body">
+                                                                        <h6 class="media-title font-weight-semibold">Assumptions (External Conditions) : <i class="icon-help text-secondary" title="External Conditions which must be met to obtain the expected results on schedule."></i></h6>
+                                                                        <ul class="list out_asmp_t">
+                                                                        </ul>
+                                                                        <div class="input-group">
+                                                                            <input type="text" id="out_asmp" class="form-control" placeholder="Add New Assumption..">
+                                                                            <span class="input-group-append">
+                                                                                <button data-target=".out_asmp_t" data-source="#out_asmp" class="btn btn-success lfm-data" type="button"><i class="icon-plus2"></i></button>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="row">
+                                                            <div class="col-lg-6">
+                                                                <div class="media mt-0 mb-3">
+                                                                    <div class="media-body">
+                                                                        <h6 class="media-title font-weight-semibold text-uppercase">Outcome : </h6>
+                                                                        <ul class="list list-unstyled mb-0 ml-3">
+                                                                            <li>River water quality is improved</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-lg-6">
+                                                                <div class="media mt-0 mb-3">
+                                                                    <div class="media-body">
+                                                                        <h6 class="media-title font-weight-semibold">Assumptions (External Conditions) : <i class="icon-help text-secondary" title="Factors and conditions which are necessary to achieve that objective."></i></h6>
+                                                                        <ul class="list outc_asmp_t">
+                                                                        </ul>
+                                                                        <div class="input-group">
+                                                                            <input type="text" id="outc_asmp" class="form-control" placeholder="Add New Assumption..">
+                                                                            <span class="input-group-append">
+                                                                                <button data-target=".outc_asmp_t" data-source="#outc_asmp" class="btn btn-success lfm-data" type="button"><i class="icon-plus2"></i></button>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="row">
+                                                            <div class="col-lg-6">
+                                                                <div class="media mt-0 mb-3">
+                                                                    <div class="media-body">
+                                                                        <h6 class="media-title font-weight-semibold text-uppercase">Goal(s) : </h6>
+                                                                        <ul class="list list-unstyled mb-0 ml-3">
+                                                                            <li>
+                                                                                <strong> 1.</strong> Threat to the river ecosystem is reduced and fish stocks are increased.
+                                                                            </li>
+                                                                            <li>
+                                                                                <strong>2.</strong> Incidence of water borne diseases and illness is reduced particularly among poor families. 
+                                                                            </li>
+                                                                            <li>
+                                                                                <strong>3.</strong> Catch and income of fishing families is stabilized or increased.
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-lg-6">
+                                                                <div class="media mt-0 mb-3">
+                                                                    <div class="media-body">
+                                                                        <h6 class="media-title font-weight-semibold">Assumptions (External Factors) : <i class="icon-help text-secondary" title="External Factors necessary to sustain objectives in the long term."></i></h6>
+                                                                        <ul class="list goal_asmp_t">
+                                                                        </ul>
+                                                                        <div class="input-group">
+                                                                            <input type="text" id="goal_asmp" class="form-control" placeholder="Add New Assumption..">
+                                                                            <span class="input-group-append">
+                                                                                <button data-target=".goal_asmp_t" data-source="#goal_asmp" class="btn btn-success lfm-data" type="button"><i class="icon-plus2"></i></button>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </fieldset>
@@ -258,286 +442,125 @@
                                                     <div class="col-12 col-md-12 col-lg-12">
                                                         <div class="media flex-column flex-md-row mb-4">
                                                             <div class="media-body text-center p-2">
-                                                                <h4 class="media-title step-title">STEP 03 : Select Most Effective Strategy</h4>
+                                                                <h4 class="media-title step-title">STEP 03 : Key Indicators & Means of Verification</h4>
                                                                 <ul class="list-inline list-inline-dotted mb-0">
-                                                                    <li class="list-inline-item">Please select the strategy that is most effective to the target based on the score.</li>
+                                                                    <li class="list-inline-item">Please provide the Indicators and Means of Verification below.</li>
                                                                 </ul>
                                                             </div>
                                                         </div>
                                                         <div class="row">
-                                                            <div class="ccol-12 col-md-12 col-lg-12">
-                                                                    <ul class="media-list media-list-linked">
-                                                                        <li class="mb-3 border-1 border-light-gray">
-                                                                            <div class="media">
-                                                                                <div class="mr-2">
-                                                                                    <div class="form-check form-check-inline mt-1">
-                                                                                        <label class="form-check-label">
-                                                                                            <input type="checkbox" name="m_e_s" onclick="StatAnalysis.check(this)" class="form-input-styled" data-fouc>
-                                                                                        </label>
-                                                                                    </div>
+                                                            <div class="col-12 col-md-12 col-lg-12">
+                                                                <table class="table">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Indicators : <i class="icon-help text-secondary" title="Key indicators related to the overall goal."></i></th>
+                                                                            <th>Means of Verification  : <i class="icon-help text-secondary" title="Sources of information for the corresponding indicators."></i></th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr class="table-active table-border-double">
+                                                                            <th colspan="2"><h6 class="font-weight-semibold text-uppercase mb-0">Goal(s)</h6></th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="p-3">
+                                                                                <ul class="list goal_ind_t">
+                                                                                </ul>
+                                                                                <div class="input-group">
+                                                                                    <input type="text" id="goal_ind" class="form-control" placeholder="Add New Indicators..">
+                                                                                    <span class="input-group-append">
+                                                                                        <button data-target=".goal_ind_t" data-source="#goal_ind" class="btn btn-success lfm-data" type="button"><i class="icon-plus2"></i></button>
+                                                                                    </span>
                                                                                 </div>
-                                                                                <div class="media-body">
-                                                                                    <a href="#" class="text-default align-middle" data-toggle="collapse" data-target="#james" aria-expanded="true">
-                                                                                        <div class="media-title font-weight-semibold text-primary"><h4>STRATEGY 01 : WASTE STRATEGY</h4></div>
-                                                                                    </a>	
+                                                                            </td>
+                                                                            <td class="p-3">
+                                                                                <ul class="list goal_mov_t">
+                                                                                </ul>
+                                                                                <div class="input-group">
+                                                                                    <input type="text" id="goal_mov" class="form-control" placeholder="Add New Means of Verification..">
+                                                                                    <span class="input-group-append">
+                                                                                        <button data-target=".goal_mov_t" data-source="#goal_mov" class="btn btn-success lfm-data" type="button"><i class="icon-plus2"></i></button>
+                                                                                    </span>
                                                                                 </div>
-                                                                                <div class="align-self-center ml-3">
-                                                                                    <h3 class="text-center text-success mb-0">63.40%</h3>	
-                                                                                    <div class="font-size-sm text-center text-muted line-height-1">Effective</div>							
+                                                                            </td>
+                                                                        </tr>    
+                                                                        <tr class="table-active table-border-double">
+                                                                            <th colspan="2"><h6 class="font-weight-semibold text-uppercase mb-0">Outcome</h6></th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="p-3">
+                                                                                <ul class="list outc_ind_t">
+                                                                                </ul>
+                                                                                <div class="input-group">
+                                                                                    <input type="text" id="outc_ind" class="form-control" placeholder="Add New Indicators..">
+                                                                                    <span class="input-group-append">
+                                                                                        <button data-target=".outc_ind_t" data-source="#outc_ind" class="btn btn-success lfm-data" type="button"><i class="icon-plus2"></i></button>
+                                                                                    </span>
                                                                                 </div>
-                                                                            </div>
-                                                                            <div class="collapsed show" id="james" style="">
-                                                                                <div class="card-body bg-light border-top border-bottom">
-                                                                                    <div class="row">
-                                                                                        <div class="col-12 col-md-6 col-lg-6">
-                                                                                            <h6 class="font-weight-semibold mt-2"><i class="icon-folder6 mr-2"></i> Goals <span class="ml-1"></span></h6>
-                                                                                            <div class="dropdown-divider mb-2"></div>
-                                                                                            <span class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Threat to the river ecosystem is reduced and fish stocks are increased.
-                                                                                            </span>
-                                                                                            <span class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Incidents of water borne diseases and illness is reduced, particularly among poor families.
-                                                                                            </span>
-                                                                                            <span class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Catch and income of fishing families are stabilised or increased.
-                                                                                            </span>
-                                                                                            <h6 class="font-weight-semibold mt-2"><i class="icon-folder6 mr-2"></i> Outcome <span class="ml-1"></span></h6>
-                                                                                            <div class="dropdown-divider mb-2"></div>
-                                                                                            <span class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Rider water quality is improved.
-                                                                                            </span>
-                                                                                        </div>
-                                                                                        <div class="col-12 col-md-6 col-lg-6">
-                                                                                            <h6 class="font-weight-semibold mt-2"><i class="icon-folder6 mr-2"></i> Outputs <span class="ml-1"></span></h6>
-                                                                                            <div class="dropdown-divider mb-2"></div>
-                                                                                            <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> And hello exotic staunch
-                                                                                            </span>
-                                                                                            <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> That and well ecstatically
-                                                                                            </span>
-                                                                                            <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Sheared coasted so concurrent
-                                                                                            </span>
-                                                                                            <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Into darn intrepid belated
-                                                                                            </span>
-                                                                                            <h6 class="font-weight-semibold mt-2"><i class="icon-folder6 mr-2"></i> Activities <span class="ml-1"></span></h6>
-                                                                                            <div class="dropdown-divider mb-2"></div>
-                                                                                            <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> And hello exotic staunch
-                                                                                            </span>
-                                                                                            <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> That and well ecstatically
-                                                                                            </span>
-                                                                                            <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Sheared coasted so concurrent
-                                                                                            </span>
-                                                                                            <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Into darn intrepid belated
-                                                                                            </span>
-                                                                                        </div>
-                                                                                    </div>
+                                                                            </td>
+                                                                            <td class="p-3">
+                                                                                <ul class="list outc_mov_t">
+                                                                                </ul>
+                                                                                <div class="input-group">
+                                                                                    <input type="text" id="outc_mov" class="form-control" placeholder="Add New Means of Verification..">
+                                                                                    <span class="input-group-append">
+                                                                                        <button data-target=".outc_mov_t" data-source="#outc_mov" class="btn btn-success lfm-data" type="button"><i class="icon-plus2"></i></button>
+                                                                                    </span>
                                                                                 </div>
-                                                                            </div>
-                                                                        </li>
-
-                                                                        <li class="mb-3 border-1 border-light-gray">
-                                                                            <div class="media">
-                                                                                <div class="mr-2">
-                                                                                    <div class="form-check form-check-inline mt-1">
-                                                                                        <label class="form-check-label">
-                                                                                            <input type="checkbox" name="m_e_s" onclick="StatAnalysis.check(this)" class="form-input-styled" data-fouc>
-                                                                                        </label>
-                                                                                    </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="table-active table-border-double">
+                                                                            <th colspan="2"><h6 class="font-weight-semibold text-uppercase mb-0">Output(s)</h6></th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="p-3">
+                                                                                <ul class="list out_ind_t">
+                                                                                </ul>
+                                                                                <div class="input-group">
+                                                                                    <input type="text" id="out_ind" class="form-control" placeholder="Add New Indicators..">
+                                                                                    <span class="input-group-append">
+                                                                                        <button data-target=".out_ind_t" data-source="#out_ind" class="btn btn-success lfm-data" type="button"><i class="icon-plus2"></i></button>
+                                                                                    </span>
                                                                                 </div>
-                                                                                <div class="media-body">
-                                                                                    <a href="#" class="text-default align-middle" data-toggle="collapse" data-target="#james2" aria-expanded="true">
-                                                                                        <div class="media-title font-weight-semibold text-primary"><h4>STRATEGY 02 : WASTEWATER STRATEGY</h4></div>
-                                                                                    </a>	
+                                                                            </td>
+                                                                            <td class="p-3">
+                                                                                <ul class="list out_mov_t">
+                                                                                </ul>
+                                                                                <div class="input-group">
+                                                                                    <input type="text" id="out_mov" class="form-control" placeholder="Add New Means of Verification..">
+                                                                                    <span class="input-group-append">
+                                                                                        <button data-target=".out_mov_t" data-source="#out_mov" class="btn btn-success lfm-data" type="button"><i class="icon-plus2"></i></button>
+                                                                                    </span>
                                                                                 </div>
-                                                                                <div class="align-self-center ml-3">
-                                                                                    <h3 class="text-center text-success mb-0">89.21%</h3>	
-                                                                                    <div class="font-size-sm text-center text-muted line-height-1">Effective</div>							
+                                                                            </td>
+                                                                        </tr>      
+                                                                        <tr class="table-active table-border-double">
+                                                                            <th colspan="2"><h6 class="font-weight-semibold text-uppercase mb-0">Activitiy(ies)</h6></th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="p-3">
+                                                                                <ul class="list act_ind_t">
+                                                                                </ul>
+                                                                                <div class="input-group">
+                                                                                    <input type="text" id="act_ind" class="form-control" placeholder="Add New Indicators..">
+                                                                                    <span class="input-group-append">
+                                                                                        <button data-target=".act_ind_t" data-source="#act_ind" class="btn btn-success lfm-data" type="button"><i class="icon-plus2"></i></button>
+                                                                                    </span>
                                                                                 </div>
-                                                                            </div>
-                                                                            <div class="collapsed show" id="james2" style="">
-                                                                                <div class="card-body bg-light border-top border-bottom">
-                                                                                <div class="row">
-                                                                                    <div class="col-12 col-md-6 col-lg-6">
-                                                                                            <h6 class="font-weight-semibold mt-2"><i class="icon-folder6 mr-2"></i> Goals <span class="ml-1"></span></h6>
-                                                                                            <div class="dropdown-divider mb-2"></div>
-                                                                                            <span class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Threat to the river ecosystem is reduced and fish stocks are increased.
-                                                                                            </span>
-                                                                                            <span class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Incidents of water borne diseases and illness is reduced, particularly among poor families.
-                                                                                            </span>
-                                                                                            <span class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Catch and income of fishing families are stabilised or increased.
-                                                                                            </span>
-                                                                                            <h6 class="font-weight-semibold mt-2"><i class="icon-folder6 mr-2"></i> Outcome <span class="ml-1"></span></h6>
-                                                                                            <div class="dropdown-divider mb-2"></div>
-                                                                                            <span class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Rider water quality is improved.
-                                                                                            </span>
-                                                                                        </div>
-                                                                                        <div class="col-12 col-md-6 col-lg-6">
-                                                                                            <h6 class="font-weight-semibold mt-2"><i class="icon-folder6 mr-2"></i> Outputs <span class="ml-1"></span></h6>
-                                                                                            <div class="dropdown-divider mb-2"></div>
-                                                                                            <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> And hello exotic staunch
-                                                                                            </span>
-                                                                                            <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> That and well ecstatically
-                                                                                            </span>
-                                                                                            <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Sheared coasted so concurrent
-                                                                                            </span>
-                                                                                            <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Into darn intrepid belated
-                                                                                            </span>
-                                                                                            <h6 class="font-weight-semibold mt-2"><i class="icon-folder6 mr-2"></i> Activities <span class="ml-1"></span></h6>
-                                                                                            <div class="dropdown-divider mb-2"></div>
-                                                                                            <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> And hello exotic staunch
-                                                                                            </span>
-                                                                                            <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> That and well ecstatically
-                                                                                            </span>
-                                                                                            <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Sheared coasted so concurrent
-                                                                                            </span>
-                                                                                            <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Into darn intrepid belated
-                                                                                            </span>
-                                                                                        </div>
-                                                                                    </div>
+                                                                            </td>
+                                                                            <td class="p-3">
+                                                                                <ul class="list act_mov_t">
+                                                                                </ul>
+                                                                                <div class="input-group">
+                                                                                    <input type="text" id="act_mov" class="form-control" placeholder="Add New Means of Verification..">
+                                                                                    <span class="input-group-append">
+                                                                                        <button data-target=".act_mov_t" data-source="#act_mov" class="btn btn-success lfm-data" type="button"><i class="icon-plus2"></i></button>
+                                                                                    </span>
                                                                                 </div>
-                                                                            </div>
-                                                                        </li>
-                                                                    </ul>
-                                                                <!-- <div class="pay-option">
-                                                                    <input class="pay-option-check" type="radio" id="payeth" name="payOption">
-                                                                    <label class="pay-option-label" for="payeth">
-                                                                        <span class="pay-title">
-                                                                            <em class="pay-icon cf cf-eth"></em>
-                                                                            <span class="pay-cur">STRATEGY 01 : WASTE STRATEGY</span>
-                                                                        </span>
-                                                                        <span class="pay-amount">63.7%</span>
-                                                                    </label>
-                                                                </div>
-                                                                <div class="p-3 border-1 border-light-gray">
-                                                                    <h6 class="font-weight-semibold mt-2"><i class="icon-folder6 mr-2"></i> Goals <span class="ml-1"></span></h6>
-                                                                    <div class="dropdown-divider mb-2"></div>
-                                                                    <span class="dropdown-item">
-                                                                        <i class="icon-file-text2"></i> Threat to the river ecosystem is reduced and fish stocks are increased.
-                                                                    </span>
-                                                                    <span class="dropdown-item">
-                                                                        <i class="icon-file-text2"></i> Incidents of water borne diseases and illness is reduced, particularly among poor families.
-                                                                    </span>
-                                                                    <span class="dropdown-item">
-                                                                        <i class="icon-file-text2"></i> Catch and income of fishing families are stabilised or increased.
-                                                                    </span>
-
-                                                                    <h6 class="font-weight-semibold mt-2"><i class="icon-folder6 mr-2"></i> Outcomes <span class="ml-1"></span></h6>
-                                                                    <div class="dropdown-divider mb-2"></div>
-                                                                    <span class="dropdown-item">
-                                                                        <i class="icon-file-text2"></i> Rider water quality is improved.
-                                                                    </span>
-
-                                                                    <h6 class="font-weight-semibold mt-2"><i class="icon-folder6 mr-2"></i> Outputs <span class="ml-1"></span></h6>
-                                                                    <div class="dropdown-divider mb-2"></div>
-                                                                    <a href="#" class="dropdown-item">
-                                                                        <i class="icon-file-text2"></i> And hello exotic staunch
-                                                                    </a>
-                                                                    <a href="#" class="dropdown-item">
-                                                                        <i class="icon-file-text2"></i> That and well ecstatically
-                                                                    </a>
-                                                                    <a href="#" class="dropdown-item">
-                                                                        <i class="icon-file-text2"></i> Sheared coasted so concurrent
-                                                                    </a>
-                                                                    <a href="#" class="dropdown-item">
-                                                                        <i class="icon-file-text2"></i> Into darn intrepid belated
-                                                                    </a>
-
-                                                                    <h6 class="font-weight-semibold mt-2"><i class="icon-folder6 mr-2"></i> Activities <span class="ml-1"></span></h6>
-                                                                    <div class="dropdown-divider mb-2"></div>
-                                                                    <a href="#" class="dropdown-item">
-                                                                        <i class="icon-file-text2"></i> And hello exotic staunch
-                                                                    </a>
-                                                                    <a href="#" class="dropdown-item">
-                                                                        <i class="icon-file-text2"></i> That and well ecstatically
-                                                                    </a>
-                                                                    <a href="#" class="dropdown-item">
-                                                                        <i class="icon-file-text2"></i> Sheared coasted so concurrent
-                                                                    </a>
-                                                                    <a href="#" class="dropdown-item">
-                                                                        <i class="icon-file-text2"></i> Into darn intrepid belated
-                                                                    </a>
-                                                                </div> -->
+                                                                            </td>
+                                                                        </tr>                                                                                                                                
+                                                                    </tbody>
+                                                                </table>
                                                             </div>
-                                                            <!-- <div class="col-12 col-md-6 col-lg-6">
-                                                                <div class="pay-option">
-                                                                    <input class="pay-option-check" type="radio" id="paylte" name="payOption" checked="">
-                                                                    <label class="pay-option-label" for="paylte">
-                                                                        <span class="pay-title">
-                                                                            <em class="pay-icon cf cf-ltc"></em>
-                                                                            <span class="pay-cur">STRATEGY 02 : WASTEWATER STRATEGY</span>
-                                                                        </span>
-                                                                        <span class="pay-amount">89.2%</span>
-                                                                    </label>
-                                                                </div>
-                                                                <div class="p-3 border-1 border-light-gray">
-                                                                    <h6 class="font-weight-semibold mt-2"><i class="icon-folder6 mr-2"></i> Goals <span class="ml-1"></span></h6>
-                                                                    <div class="dropdown-divider mb-2"></div>
-                                                                    <span class="dropdown-item">
-                                                                        <i class="icon-file-text2"></i> Threat to the river ecosystem is reduced and fish stocks are increased.
-                                                                    </span>
-                                                                    <span class="dropdown-item">
-                                                                        <i class="icon-file-text2"></i> Incidents of water borne diseases and illness is reduced, particularly among poor families.
-                                                                    </span>
-                                                                    <span class="dropdown-item">
-                                                                        <i class="icon-file-text2"></i> Catch and income of fishing families are stabilised or increased.
-                                                                    </span>
-
-                                                                    <h6 class="font-weight-semibold mt-2"><i class="icon-folder6 mr-2"></i> Outcomes <span class="ml-1"></span></h6>
-                                                                    <div class="dropdown-divider mb-2"></div>
-                                                                    <span class="dropdown-item">
-                                                                        <i class="icon-file-text2"></i> Rider water quality is improved.
-                                                                    </span>
-
-                                                                    <h6 class="font-weight-semibold mt-2"><i class="icon-folder6 mr-2"></i> Outputs <span class="ml-1"></span></h6>
-                                                                    <div class="dropdown-divider mb-2"></div>
-                                                                    <a href="#" class="dropdown-item">
-                                                                        <i class="icon-file-text2"></i> And hello exotic staunch
-                                                                    </a>
-                                                                    <a href="#" class="dropdown-item">
-                                                                        <i class="icon-file-text2"></i> That and well ecstatically
-                                                                    </a>
-                                                                    <a href="#" class="dropdown-item">
-                                                                        <i class="icon-file-text2"></i> Sheared coasted so concurrent
-                                                                    </a>
-                                                                    <a href="#" class="dropdown-item">
-                                                                        <i class="icon-file-text2"></i> Into darn intrepid belated
-                                                                    </a>
-
-                                                                    <h6 class="font-weight-semibold mt-2"><i class="icon-folder6 mr-2"></i> Activities <span class="ml-1"></span></h6>
-                                                                    <div class="dropdown-divider mb-2"></div>
-                                                                    <a href="#" class="dropdown-item">
-                                                                        <i class="icon-file-text2"></i> And hello exotic staunch
-                                                                    </a>
-                                                                    <a href="#" class="dropdown-item">
-                                                                        <i class="icon-file-text2"></i> That and well ecstatically
-                                                                    </a>
-                                                                    <a href="#" class="dropdown-item">
-                                                                        <i class="icon-file-text2"></i> Sheared coasted so concurrent
-                                                                    </a>
-                                                                    <a href="#" class="dropdown-item">
-                                                                        <i class="icon-file-text2"></i> Into darn intrepid belated
-                                                                    </a>
-                                                                </div>
-                                                            </div> -->
                                                         </div>
                                                     </div>
                                                 </div>

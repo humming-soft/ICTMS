@@ -4,7 +4,7 @@ var Js = function() {
             console.warn('Warning - steps.min.js is not loaded.');
             return;
         }
-        $('.steps-state-saving').steps({
+        $('.steps-logframe').steps({
             headerTag: 'h6',
             bodyTag: 'fieldset',
             labels: {
@@ -13,7 +13,7 @@ var Js = function() {
                 finish: 'Save <i class="icon-arrow-right14 ml-2" />'
             },
             transitionEffect: 'fade',
-            saveState: true,
+            // saveState: true,
             autoFocus: true,
             onFinished: function (event, currentIndex) {
                 window.location.href = base_url+'projects/02849';
@@ -218,10 +218,26 @@ var Js = function() {
         }
 
     };
+
+    var _component_lfm = function(){
+        $(".lfm-data").click(function(){
+            $t = $(this);
+            $s = $($t.data("source"));
+            $t = $($t.data("target"));
+            $v = '<li>'+$s.val()+'</li>';
+            if($t.children("li").length > 0){
+                $t.append($v);
+            }else{
+                $t.html("").append($v)
+            }
+            $s.val("");
+        })
+    };
     return {
         init: function() {
             _componentWizard();
             _componentDrag(document.querySelector(".dtable"), document.querySelector(".dtable-container"));
+            _component_lfm();
         }
     }
 }();

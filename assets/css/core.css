@@ -16598,7 +16598,7 @@ body.sidebar-visualization-hidden #components{
     width: 100%;
     height: 500px;
     background-color: rgb(135, 135, 135);
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -16610,4 +16610,52 @@ body.sidebar-visualization-hidden #components{
     touch-action: none;
     user-select: none;
     background-color: #fff;
+}
+
+.gantt_grid_scale .gantt_grid_head_cell,
+.gantt_task .gantt_task_scale .gantt_scale_cell {
+    font-weight: bold;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.resource_marker{
+    text-align: center;
+}
+.resource_marker div{
+    width: 28px;
+    height: 28px;
+    line-height: 29px;
+    display: inline-block;
+    border-radius: 15px;
+    color: #FFF;
+    margin: 3px;
+}
+.resource_marker.workday_ok div {
+    background: #51c185;
+}
+
+.resource_marker.workday_over div{
+    background: #ff8686;
+}
+
+.owner-label{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    display: inline-block;
+    border: 1px solid #cccccc;
+    border-radius: 25px;
+    background: #e6e6e6;
+    color: #6f6f6f;
+    margin: 0 3px;
+    font-weight: bold;
+}
+.gantt_cal_larea{
+	overflow:visible;
+}
+.gantt_cal_chosen,
+.gantt_cal_chosen select{
+	width: 100%;
 }

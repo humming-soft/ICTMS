@@ -49,7 +49,7 @@
 					<div class="dropdown-menu">
 						<div class="dropdown-header">PROJECT PLANNING (LFM)</div>
 						<a href="<?=site_url('projects/02849/logframe')?>" class="dropdown-item"><i class="icon-grid7"></i> Logframe</a>
-						<a href="<?=site_url('projects/02849/gantt')?>" class="dropdown-item"><i class="icon-paragraph-right3"></i> Activities and Deliverables</a>
+						<a href="<?=site_url('projects/02849/gantt')?>" class="dropdown-item"><i class="icon-paragraph-right3"></i> Activities & Deliverables</a>
 						<a href="<?=site_url('projects/02849/resources')?>" class="dropdown-item"><i class="icon-users"></i> Resources</a>
 					</div>
 				</li>

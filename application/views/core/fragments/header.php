@@ -52,12 +52,12 @@
     <?php if(in_array("gantt",$support)){ ?>
     <link href="<?=site_url('assets/js/plugins/gantt/dhtmlxgantt.css')?>" rel="stylesheet" type="text/css">
     <script src="<?=site_url('assets/js/plugins/gantt/dhtmlxgantt.js')?>"></script>
-    <script src="<?=site_url('assets/js/plugins/gantt/ext/dhtmlxgantt_smart_rendering.js')?>" type="text/javascript" charset="utf-8"></script>
+    <!-- <script src="<?=site_url('assets/js/plugins/gantt/ext/dhtmlxgantt_smart_rendering.js')?>" type="text/javascript" charset="utf-8"></script>
     <script src="<?=site_url('assets/js/plugins/gantt/ext/dhtmlxgantt_marker.js')?>" type="text/javascript" charset="utf-8"></script>
     <script src="<?=site_url('assets/js/plugins/gantt/ext/dhtmlxgantt_fullscreen.js')?>" type="text/javascript" charset="utf-8"></script>
     <script src="<?=site_url('assets/js/plugins/gantt/ext/dhtmlxgantt_critical_path.js')?>" type="text/javascript" charset="utf-8"></script>
     <script src="<?=site_url('assets/js/plugins/gantt/ext/dhtmlxgantt_auto_scheduling.js')?>" type="text/javascript" charset="utf-8"></script>
-    <script src="<?=site_url('assets/js/plugins/gantt/ext/dhtmlxgantt_undo.js')?>" type="text/javascript" charset="utf-8"></script>
+    <script src="<?=site_url('assets/js/plugins/gantt/ext/dhtmlxgantt_undo.js')?>" type="text/javascript" charset="utf-8"></script> -->
 
     <?php } ?>
     <?php if(in_array("orgchart",$support)){ ?>
@@ -144,6 +144,10 @@
     <?php } ?>
     <?php if(in_array("multiselect",$support)){ ?>
         <script src="<?=site_url('assets/js/plugins/forms/selects/bootstrap_multiselect.js')?>"></script>
+    <?php } ?>
+    <?php if(in_array("chosen",$support)){ ?>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.css?v=6.0.2">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.js?v=6.0.2"></script>
     <?php } ?>
     <?php if(in_array("jqueryUi",$support)){ ?>
         <script src="<?=site_url('assets/js/plugins/extensions/jquery_ui/interactions.min.js')?>"></script>

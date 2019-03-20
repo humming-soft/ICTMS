@@ -399,7 +399,7 @@ class Project extends ICTMS_Controller {
         {
             $message='';
         }
-        $_header["support"] = array("gantt");
+        $_header["support"] = array("gantt","chosen","multiselect","pikadate");
         $_header["page_js"] = "milestones";
 
         $this->load->view('core/fragments/header',$_header);

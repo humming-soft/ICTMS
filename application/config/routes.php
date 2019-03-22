@@ -68,11 +68,14 @@ $route['projects/(:num)/obj-analysis/export'] = 'projects/project/obj_analysis_e
 $route['projects/(:num)/stat-analysis'] = 'projects/project/stat_analysis/$1';
 
 $route['projects/(:num)/logframe'] = 'projects/project/logframe/$1';
+$route['projects/(:num)/gantt'] = 'projects/project/milestones/$1';
+$route['projects/(:num)/resources'] = 'projects/project/resources/$1';
+$route['projects/(:num)/risk'] = 'projects/project/risk/$1';
+$route['projects/(:num)/org'] = 'projects/project/org/$1';
+
 $route['projects/(:num)/business'] = 'projects/project/business/$1';
 $route['projects/(:num)/benefits'] = 'projects/project/benefits/$1';
 $route['projects/(:num)/approach'] = 'projects/project/approach/$1';
 $route['projects/(:num)/architecture'] = 'projects/project/architecture/$1';
-$route['projects/(:num)/gantt'] = 'projects/project/milestones/$1';
 $route['projects/(:num)/deliverables'] = 'projects/project/deliverables/$1';
-$route['projects/(:num)/org'] = 'projects/project/org/$1';
 $route['translate_uri_dashes'] = FALSE;

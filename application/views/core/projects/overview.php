@@ -102,12 +102,32 @@
                                                     <div class="step-head">
                                                         <div class="step-number">02</div>
                                                         <div class="step-head-text">
-                                                            <h4>Deliverables & Resources</h4>
+                                                            <h4>Activities & Deliverables</h4>
                                                             <p>Your simple personal information required for identification</p>
                                                             <a href="<?=site_url('projects/02849/gantt')?>">Complete Step →</a>
                                                         </div>
                                                     </div>
-                                                </div>                                       
+                                                </div>      
+                                                <div class="col-12 col-md-6 col-lg-3">
+                                                    <div class="step-head">
+                                                        <div class="step-number">03</div>
+                                                        <div class="step-head-text">
+                                                            <h4>Resources</h4>
+                                                            <p>Your simple personal information required for identification</p>
+                                                            <a href="<?=site_url('projects/02849/resources')?>">Complete Step →</a>
+                                                        </div>
+                                                    </div>
+                                                </div>   
+                                                <div class="col-12 col-md-6 col-lg-3">
+                                                    <div class="step-head">
+                                                        <div class="step-number">03</div>
+                                                        <div class="step-head-text">
+                                                            <h4>Risk Register</h4>
+                                                            <p>Your simple personal information required for identification</p>
+                                                            <a href="<?=site_url('projects/02849/risk')?>">Complete Step →</a>
+                                                        </div>
+                                                    </div>
+                                                </div>                                   
                                             </div>
                                         </div>
 

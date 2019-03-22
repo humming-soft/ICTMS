@@ -31,7 +31,7 @@
     <script src="<?=site_url('assets/js/plugins/tables/datatables/dataTables.bootstrap4.min.js')?>"></script>
     <script src="<?=site_url('assets/js/plugins/tables/datatables/extensions/buttons.min.js')?>"></script>
     <script src="<?=site_url('assets/js/plugins/tables/datatables/extensions/responsive.min.js')?>"></script>
-    <script src="<?=site_url('assets/js/initlib/datatable.js')?>"></script>
+    <!-- <script src="<?=site_url('assets/js/initlib/datatable.js')?>"></script> -->
     <?php } ?>
     <?php if(in_array("bootBox",$support)){ ?>
     <script src="<?=site_url('assets/js/plugins/notifications/bootbox.min.js')?>"></script>

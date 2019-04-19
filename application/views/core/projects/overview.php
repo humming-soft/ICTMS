@@ -10,7 +10,7 @@
                     <div class="col-12 col-md-12 col-lg-12">
                         <div class="card">
                             <div class="card-header header-elements-sm-inline p-3">
-                                <h5 class="card-title"><i class="icon-stack2 mr-2"></i>PROJECT PROCESS</h5>
+                                <h5 class="card-title"><i class="icon-checkmark-circle mr-2"></i>PROJECT APPROVAL PROCESS</h5>
                             </div>
                             <div class="card-body">
                                 <!-- <div class="d-md-flex align-items-md-center flex-md-wrap text-center text-md-left"> -->
@@ -35,8 +35,9 @@
                                     <ul class="nav nav-pills ictms-nav-pills nav-pills-bordered">
                                         <li class="nav-item"><a href="#bordered-pill1" class="nav-link completed no-loader" data-toggle="tab"><i class="icon-circles mr-1"></i> Initiation</a></li>
                                         <li class="nav-item"><a href="#bordered-pill2" class="nav-link active show no-loader" data-toggle="tab"><i class="icon-circles2 mr-1"></i> Planning</a></li>
-                                        <li class="nav-item"><a href="#bordered-pill3" class="nav-link no-loader" data-toggle="tab"><i class="icon-circles2 mr-1"></i> Implementation & Control</a></li>
-                                        <li class="nav-item"><a href="#bordered-pill4" class="nav-link no-loader" data-toggle="tab"><i class="icon-circles2 mr-1"></i> Closure</a></li>
+                                        <li class="nav-item"><a href="#bordered-pill3" class="nav-link no-loader" data-toggle="tab"><i class="icon-circles2 mr-1"></i> Project Status</a></li>
+                                        <!-- <li class="nav-item"><a href="#bordered-pill3" class="nav-link no-loader" data-toggle="tab"><i class="icon-circles2 mr-1"></i> Implementation & Control</a></li> -->
+                                        <!-- <li class="nav-item"><a href="#bordered-pill4" class="nav-link no-loader" data-toggle="tab"><i class="icon-circles2 mr-1"></i> Closure</a></li> -->
                                     </ul>
                                     <hr>
                                     <div class="tab-content">
@@ -137,12 +138,13 @@
                                                     <div class="step-head">
                                                         <div class="step-number">01</div>
                                                         <div class="step-head-text">
-                                                            <h4>Project Initiation</h4>
-                                                            <p>Your simple personal information required for identification</p>
+                                                            <h4>Approval</h4>
+                                                            <p>Status of the project Approved / Rejected / KIV.</p>
+                                                            <a href="<?=site_url('projects/02849/approval')?>">Complete Step →</a>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-3">
+                                                <!-- <div class="col-12 col-md-6 col-lg-3">
                                                     <div class="step-head">
                                                         <div class="step-number">02</div>
                                                         <div class="step-head-text">
@@ -168,7 +170,7 @@
                                                             <p>Your simple personal information required for identification</p>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
 
@@ -221,6 +223,21 @@
                     <div class="col-12 col-md-8 col-lg-8">
                         <div class="row m-0">
                             <div class="col-12 col-md-12 col-lg-12 p-0">
+                                <div class="card card-body">
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item float-right"><a href="#"><i class="icon-pencil5 mr-1"></i> Edit</a></li>
+                                            </ul>   
+                                            <h6 class="media-title mb-0 font-weight-semibold text-uppercase border-bottom-1 border-bottom">Project Objective <br><small class="d-inline-block">(System Generated)</small></h6>                 
+                                            <span class="d-inline-block p-2-1 font-weight-semibold">"Business problem that is required to be resolved or an opportunity that is required to be created 
+                                                that will enhance or bring benefit to the organization. In January 2018 a mandate was issued by the 
+                                                Ministry of Finance to Ministries, Agencies and Government owned companies that are involved in government procurement. 
+                                                The mandate authorizes the Technology Depository Agency (TDA) to collect, manage and analyze all government procurement 
+                                                related data for the purpose of understanding the usage of local content."</span>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="card">
                                     <div class="card-header header-elements-sm-inline p-3">
                                         <h5 class="card-title"><i class="icon-stack2 mr-2"></i>PROJECT OVERVIEW</h5>
@@ -277,11 +294,14 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td class="font-weight-semibold va-top">Project main Objective:</td>
+                                                            <td class="font-weight-semibold va-top">Project Background:</td>
                                                             <td class="text-left">Business problem that is required to be resolved or an opportunity that is required to be created that will enhance or bring benefit to the organization.
-                                                                In January 2018 a mandate was issued by the Ministry of Finance to Ministries, Agencies and Government owned companies that are involved in government procurement. 
-                                                                The mandate authorizes the Technology Depository Agency (TDA) to collect, manage and analyze all government procurement related data for the purpose of understanding the usage of 
-                                                                local content.</td>
+                                                                In January 2018 a mandate was issued by the Ministry of Finance to Ministries. <br>
+
+                                                                1. Agencies and Government owned companies that are involved in government procurement. <br>
+                                                                2. Agencies and Government owned companies that are involved in government procurement. <br>
+                                                                3. Agencies and Government owned companies that are involved in government procurement. <br>
+                                                            </td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -356,7 +376,8 @@
                                                         <hr>
                                                     </li>
                                                     <li class="mb-3 text-center">
-                                                        <a href="" class="btn btn-primary"><i class="icon-download mr-1"></i> Download Business Case</a>
+                                                        <!-- <a href="<?=site_url("projects/02849/download")?>" class="btn bg-slate no-loader"><i class="icon-download mr-1"></i> Download Business Case</a> -->
+                                                        <a href="<?=site_url("projects/02849/download")?>" class="btn bg-slate no-loader"><i class="icon-download mr-1"></i> Download Project Brief</a>
                                                     </li>
                                                 </ul>
                                             </div>

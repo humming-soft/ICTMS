@@ -185,7 +185,7 @@
                                                                     <div class="card">
                                                                         <div class="card-header">
                                                                             <h5 class="card-title">
-                                                                                <a class="text-primary no-loader" data-toggle="collapse" href="#collapsible-control-right-group3" aria-expanded="true"><strong>STRATEGY 01 : WASTE STRATEGY</strong></a>
+                                                                                <a class="text-primary no-loader" data-toggle="collapse" href="#collapsible-control-right-group3" aria-expanded="true"><strong>STRATEGY 01 : WASTE STRATEGY </strong></a>
                                                                             </h5>
                                                                         </div>
 
@@ -848,7 +848,7 @@
                                                                                 </div>
                                                                                 <div class="media-body">
                                                                                     <a href="#" class="text-default align-middle" data-toggle="collapse" data-target="#james" aria-expanded="true">
-                                                                                        <div class="media-title font-weight-semibold text-primary"><h4>STRATEGY 01 : WASTE STRATEGY</h4></div>
+                                                                                        <div class="media-title font-weight-semibold text-primary"><h4>STRATEGY 01 : WASTE STRATEGY <i class="icon-arrow-down12 ml-1"></i></h4></div>
                                                                                     </a>	
                                                                                 </div>
                                                                                 <div class="align-self-center ml-3">
@@ -856,7 +856,7 @@
                                                                                     <div class="font-size-sm text-center text-muted line-height-1">Effective</div>							
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="collapsed show" id="james" style="">
+                                                                            <div class="collapse" id="james" style="">
                                                                                 <div class="card-body bg-light border-top border-bottom">
                                                                                     <div class="row">
                                                                                         <div class="col-12 col-md-6 col-lg-6">
@@ -923,7 +923,7 @@
                                                                                 </div>
                                                                                 <div class="media-body">
                                                                                     <a href="#" class="text-default align-middle" data-toggle="collapse" data-target="#james2" aria-expanded="true">
-                                                                                        <div class="media-title font-weight-semibold text-primary"><h4>STRATEGY 02 : WASTEWATER STRATEGY</h4></div>
+                                                                                        <div class="media-title font-weight-semibold text-primary"><h4>STRATEGY 02 : WASTEWATER STRATEGY <i class="icon-arrow-down12 ml-1"></i></h4></div>
                                                                                     </a>	
                                                                                 </div>
                                                                                 <div class="align-self-center ml-3">
@@ -931,7 +931,7 @@
                                                                                     <div class="font-size-sm text-center text-muted line-height-1">Effective</div>							
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="collapsed show" id="james2" style="">
+                                                                            <div class="collapse" id="james2" style="">
                                                                                 <div class="card-body bg-light border-top border-bottom">
                                                                                 <div class="row">
                                                                                     <div class="col-12 col-md-6 col-lg-6">

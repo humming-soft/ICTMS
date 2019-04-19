@@ -314,6 +314,58 @@ class Project extends ICTMS_Controller {
         $this->load->view('core/fragments/footer');
     }
 
+    public function maintenance($pid=null){
+        $session_data = $this->session->userdata('logged_in');
+        $data['username'] =$data1['username'] = $session_data['username'];
+
+        if($this->session->userdata('message'))
+        {
+            $messagehrecord=$this->session->userdata('message');
+            $message = $messagehrecord['message'];
+            $this->session->unset_userdata('message');
+        }
+        else
+        {
+            $message='';
+        }
+        $_header["support"] = array();
+        $_header["page_js"] = "maintenance";
+        $_header["pid"] = "02849";
+        $_header["page"] = "maintenance";
+
+        $this->load->view('core/fragments/header',$_header);
+        $this->load->view('core/projects/fragments/main_navbar',$data1);
+        $this->load->view('core/projects/fragments/secondary_navbar');
+        $this->load->view('core/projects/maintenance');
+        $this->load->view('core/fragments/footer');
+    }
+
+    public function approval($pid=null){
+        $session_data = $this->session->userdata('logged_in');
+        $data['username'] =$data1['username'] = $session_data['username'];
+
+        if($this->session->userdata('message'))
+        {
+            $messagehrecord=$this->session->userdata('message');
+            $message = $messagehrecord['message'];
+            $this->session->unset_userdata('message');
+        }
+        else
+        {
+            $message='';
+        }
+        $_header["support"] = array("uniform");
+        $_header["page_js"] = "approval";
+        $_header["pid"] = "02849";
+        $_header["page"] = "approval";
+
+        $this->load->view('core/fragments/header',$_header);
+        $this->load->view('core/projects/fragments/main_navbar',$data1);
+        $this->load->view('core/projects/fragments/secondary_navbar');
+        $this->load->view('core/projects/approval');
+        $this->load->view('core/fragments/footer');
+    }
+
     public function risk($pid=null){
         $session_data = $this->session->userdata('logged_in');
         $data['username'] =$data1['username'] = $session_data['username'];
@@ -336,6 +388,12 @@ class Project extends ICTMS_Controller {
         $this->load->view('core/projects/fragments/secondary_navbar');
         $this->load->view('core/projects/risk');
         $this->load->view('core/fragments/footer');
+    }
+
+    public function download($pid= null){
+        $this->load->helper('download');
+        $data = file_get_contents(APPPATH . "views/resources/download/business_case.pdf");
+        force_download('business_case.pdf', $data);
     }
 
     public function business($pid=null){

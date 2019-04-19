@@ -70,8 +70,11 @@ $route['projects/(:num)/stat-analysis'] = 'projects/project/stat_analysis/$1';
 $route['projects/(:num)/logframe'] = 'projects/project/logframe/$1';
 $route['projects/(:num)/gantt'] = 'projects/project/milestones/$1';
 $route['projects/(:num)/resources'] = 'projects/project/resources/$1';
+$route['projects/(:num)/maintenance'] = 'projects/project/maintenance/$1';
+$route['projects/(:num)/approval'] = 'projects/project/approval/$1';
 $route['projects/(:num)/risk'] = 'projects/project/risk/$1';
 $route['projects/(:num)/org'] = 'projects/project/org/$1';
+$route['projects/(:num)/download'] = 'projects/project/download/$1';
 
 $route['projects/(:num)/business'] = 'projects/project/business/$1';
 $route['projects/(:num)/benefits'] = 'projects/project/benefits/$1';

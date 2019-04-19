@@ -154,8 +154,8 @@
                                     <li class="list-inline-item">Project Visualization (BI)</li>
                                 </ul>
                                 <ul class="list-inline list-inline-dotted mb-0 mt-1 mt-sm-0">
-									<li class="list-inline-item"><a href="http://bi.humworks.d/build/editor">Build</a></li>
-									<li class="list-inline-item"><a href="<?=site_url('projects/02849')?>">View</a></li>
+									<li class="list-inline-item"><a href="http://localhost/humworks-pms/projects/2019/1802"><i class="icon-stats-bars"></i> Business Intelligence</a></li>
+									<li class="list-inline-item"><a href="<?=site_url('projects/02849')?>">Details</a></li>
 								</ul>
                             </div>
                         </div>
@@ -213,8 +213,8 @@
                                     <li class="list-inline-item">Project Visualization (BI)</li>
                                 </ul>
                                 <ul class="list-inline list-inline-dotted mb-0 mt-1 mt-sm-0">
-									<li class="list-inline-item"><a href="http://bi.humworks.d/build/editor">Build</a></li>
-									<li class="list-inline-item"><a href="<?=site_url('projects/02849')?>">View</a></li>
+                                    <li class="list-inline-item"><a href="http://localhost/humworks-pms/projects/2019/1802"><i class="icon-stats-bars"></i> Business Intelligence</a></li>
+									<li class="list-inline-item"><a href="<?=site_url('projects/02849')?>">Details</a></li>
 								</ul>
                             </div>
                         </div>
@@ -273,8 +273,8 @@
                                     <li class="list-inline-item">Project Visualization (BI)</li>
                                 </ul>
                                 <ul class="list-inline list-inline-dotted mb-0 mt-1 mt-sm-0">
-									<li class="list-inline-item"><a href="http://bi.humworks.d/build/editor">Build</a></li>
-									<li class="list-inline-item"><a href="<?=site_url('projects/02849')?>">View</a></li>
+                                    <li class="list-inline-item"><a href="http://localhost/humworks-pms/projects/2019/1802"><i class="icon-stats-bars"></i> Business Intelligence</a></li>
+									<li class="list-inline-item"><a href="<?=site_url('projects/02849')?>">Details</a></li>
 								</ul>
                             </div>
                         </div>
@@ -333,8 +333,8 @@
                                     <li class="list-inline-item">Project Visualization (BI)</li>
                                 </ul>
                                 <ul class="list-inline list-inline-dotted mb-0 mt-1 mt-sm-0">
-									<li class="list-inline-item"><a href="http://bi.humworks.d/build/editor">Build</a></li>
-									<li class="list-inline-item"><a href="<?=site_url('projects/02849')?>">View</a></li>
+                                    <li class="list-inline-item"><a href="http://localhost/humworks-pms/projects/2019/1802"><i class="icon-stats-bars"></i> Business Intelligence</a></li>
+									<li class="list-inline-item"><a href="<?=site_url('projects/02849')?>">Details</a></li>
 								</ul>
                             </div>
                         </div>
@@ -381,17 +381,17 @@
                             <div class="row text-left">
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        <input type="text" id="p_name" name="pjt_name" class="form-control form-control-lg" placeholder="Enter Project Name">
+                                        <input type="text" id="p_name" name="pjt_name" class="form-control form-control-lg" placeholder="Enter Project Name...">
                                     </div>
                                 </div>
                             </div>
-                           <!-- <div class="row text-left">
+                        <div class="row text-left">
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        <textarea  id="p_objective" name="pjt_objective" class="form-control form-control-lg" placeholder="Enter project Objective"></textarea>
+                                        <textarea  id="p_objective" name="pjt_objective" rows="5" class="form-control form-control-lg" placeholder="Enter project Background..."></textarea>
                                     </div>
                                 </div>
-                            </div>-->
+                            </div>
                         </div>
                     </div>
                     <div class="hmwks-slide">
@@ -556,13 +556,9 @@
                                     <div class="form-group text-left"><label for="">Six Strategic Thrusts</label>
                                         <select class=" form-control m-b" id="thrust" name="thrust">
                                             <option>SELECT</option>
-                                            <?php
-                                            foreach ($thrust as $thrust):
-                                                ?>
-                                                <option value="<?php echo $thrust->thrust_id; ?>"><?php echo $thrust->thrust; ?></option>
-                                                <?php
-                                            endforeach;
-                                            ?>
+                                            <?php foreach ($thrust as $thrust): ?>
+                                            <option value="<?php echo $thrust->thrust_id; ?>"><?php echo $thrust->thrust; ?></option>
+                                            <?php endforeach; ?>
                                         </select>
                                     </div>
 

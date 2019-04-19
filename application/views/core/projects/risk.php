@@ -31,8 +31,8 @@
                                                 </thead>
                                                 <tbody>
                                                 <tr>
-                                                    <td class="no">R21</td>
-                                                    <td>Inefficient wastewater cleaning process.</td>
+                                                    <td class="no idr">R21</td>
+                                                    <td id="first">Inefficient wastewater cleaning process.</td>
                                                     <td class="secrads" align="center"> <input type="radio" value="option1" id="question3" name="soft1" class="secrad1"></td>
                                                     <td class="secrads1" align="center">  <input type="radio" value="option2" checked="" id="question4" name="soft1" class="secrad1">  </td>
                                                     <td class="secrads2" align="center"> <input type="radio" value="option3" checked="" id="question4" name="soft1" class="secrad1"> </td>
@@ -46,11 +46,10 @@
                                                             <option value="60">60</option>
                                                             <option value="75">75</option>
                                                         </select></td>
-
                                                 </tr>
                                                 <tr>
-                                                    <td class="no">R22</td>
-                                                    <td>Risk 002</td>
+                                                    <td class="no idr">R22</td>
+                                                    <td id="first">Risk 002</td>
                                                     <td class="secrads" align="center"> <input type="radio" value="option1" id="question3" name="soft2" class="secrad2"></td>
                                                     <td class="secrads1" align="center">  <input type="radio" value="option2" checked="" id="question4" name="soft2" class="secrad2">  </td>
                                                     <td class="secrads2" align="center"> <input type="radio" value="option3" checked="" id="question4" name="soft2" class="secrad2"> </td>
@@ -67,8 +66,8 @@
 
                                                 </tr>
                                                 <tr>
-                                                    <td class="no">R23</td>
-                                                    <td>Risk 003</td>
+                                                    <td class="no idr">R23</td>
+                                                    <td id="first">Risk 003</td>
                                                     <td class="secrads" align="center"> <input type="radio" value="option3" id="question3" name="soft3" class="secrad3"></td>
                                                     <td class="secrads1" align="center">  <input type="radio" value="option2" checked="" id="question4" name="soft3" class="secrad3">  </td>
                                                     <td class="secrads2" align="center"> <input type="radio" value="option3" checked="" id="question4" name="soft3" class="secrad3"> </td>
@@ -85,8 +84,8 @@
 
                                                 </tr>
                                                 <tr>
-                                                    <td class="no">R24</td>
-                                                    <td>Risk 004</td>
+                                                    <td class="no idr">R24</td>
+                                                    <td id="first">Risk 004</td>
                                                     <td class="secrads" align="center"> <input type="radio" value="option1" id="question3" name="soft4" class="secrad4"></td>
                                                     <td class="secrads1" align="center">  <input type="radio" value="option2" checked="" id="question4" name="soft4" class="secrad4">  </td>
                                                     <td class="secrads2" align="center"> <input type="radio" value="option3" checked="" id="question4" name="soft4" class="secrad4"> </td>
@@ -102,8 +101,8 @@
                                                         </select></td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="no">R25</td>
-                                                    <td>Risk 005</td>
+                                                    <td class="no idr">R25</td>
+                                                    <td id="first">Risk 005</td>
                                                     <td class="secrads" align="center"> <input type="radio" value="option1" id="question3" name="soft5" class="secrad5"></td>
                                                     <td class="secrads1" align="center"><input type="radio" value="option2" checked="" id="question4" name="soft5" class="secrad5">  </td>
                                                     <td class="secrads2" align="center"><input type="radio" value="option3" checked="" id="question4" name="soft5" class="secrad5"> </td>
@@ -128,7 +127,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-header header-elements-inline p-3">
-                                    <h5 class="card-title text-uppercase"><i class="icon-shield-notice mr-2"></i>Major Risks</h5>
+                                    <h5 class="card-title text-uppercase"><i class="icon-target2 mr-2"></i>Impact</h5>
                                 </div>                              
                                 <div class="card-body">
                                     <div class="row">
@@ -159,8 +158,396 @@
                             </div>
                         </div>
                     </div>
+                    <fieldset class="card-body text-right">
+                        <a href="<?=site_url('projects/02849')?>" class="btn btn-light ml-3">Cancel</a>
+                        <a href="<?=site_url('projects/02849')?>" class="btn bg-success gx_save"><i class="icon-paperplane mr-1"></i> Save</a>
+                    </fieldset>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".risk").addClass("active");
+     /*   $('#editable1').DataTable();*/
+        $(document).on("change",".select1",function(){
+            var valRad = $(this).closest("tr").find(".no").text();
+            var riskId = $(this).closest("tr").find(".idr").text();
+             if(riskId == 'R21'){
+                var radioValue =  $(this).closest("tr").find("input[type=radio]").val();
+                var selsctVal=$("#riskSelect1").val();
+                if(selsctVal == '75'){
+                    $("#75one").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+                }
+                if(selsctVal == '15'){
+
+                    $("#15three").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+                }
+                if(radioValue == 'option1' && selsctVal == '45') {
+
+                    $("#45one").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+                }
+                if(radioValue == 'option2' && selsctVal == '45') {
+
+                    $("#45two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if(radioValue == 'option3'  && selsctVal == '45') {
+
+                    $("#45three").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+                }
+                if(radioValue == 'option1' && selsctVal == '60') {
+
+                    $("#60two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if(radioValue == 'option2' && selsctVal == '60') {
+
+                    $("#60two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if(radioValue == 'option3'  && selsctVal == '60') {
+
+                    $("#60three").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if(radioValue == 'option1' && selsctVal == '30') {
+
+                    $("#30two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if(radioValue == 'option2' && selsctVal == '30') {
+                    $("#30one").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if(radioValue == 'option3'  && selsctVal == '30') {
+                    $("#30two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+            }
+            if(riskId == 'R22'){
+                var radioValue = $("input[name='soft2']:checked").val();
+                var selsctVal=$("#riskSelect2").val();
+                if(selsctVal == '75'){
+                    $("#75one").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+                }
+                if(selsctVal == '15'){
+
+                    $("#15three").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+                }
+                if($("input[name='soft2']:checked").val() == 'option1' && selsctVal == '45') {
+
+                    $("#45one").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+                }
+                if($("input[name='soft2']:checked").val() == 'option2' && selsctVal == '45') {
+
+                    $("#45two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft2']:checked").val() == 'option3'  && selsctVal == '45') {
+
+                    $("#45three").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+                }
+                if($("input[name='soft2']:checked").val() == 'option1' && selsctVal == '60') {
+
+                    $("#60two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft2']:checked").val() == 'option2' && selsctVal == '60') {
+
+                    $("#60two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft2']:checked").val() == 'option3'  && selsctVal == '60') {
+
+                    $("#60three").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft2']:checked").val() == 'option1' && selsctVal == '30') {
+
+                    $("#30two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft2']:checked").val() == 'option2' && selsctVal == '30') {
+                    $("#30one").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft2']:checked").val() == 'option3'  && selsctVal == '30') {
+                    $("#30two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+            }
+            if(riskId == 'R23'){
+                var radioValue = $("input[name='soft3']:checked").val();
+                var selsctVal=$("#riskSelect3").val();
+                if(selsctVal == '75'){
+                    $("#75one").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+                }
+                if(selsctVal == '15'){
+
+                    $("#15three").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+                }
+                if($("input[name='soft3']:checked").val() == 'option1' && selsctVal == '45') {
+
+                    $("#45one").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+                }
+                if($("input[name='soft3']:checked").val() == 'option2' && selsctVal == '45') {
+
+                    $("#45two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft3']:checked").val() == 'option3'  && selsctVal == '45') {
+
+                    $("#45three").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+                }
+                if($("input[name='soft3']:checked").val() == 'option1' && selsctVal == '60') {
+
+                    $("#60two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft3']:checked").val() == 'option2' && selsctVal == '60') {
+
+                    $("#60two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft3']:checked").val() == 'option3'  && selsctVal == '60') {
+
+                    $("#60three").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft3']:checked").val() == 'option1' && selsctVal == '30') {
+
+                    $("#30two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft3']:checked").val() == 'option2' && selsctVal == '30') {
+                    $("#30one").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft3']:checked").val() == 'option3'  && selsctVal == '30') {
+                    $("#30two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+            }
+            if(riskId == 'R24'){
+                var radioValue = $("input[name='soft4']:checked").val();
+                var selsctVal=$("#riskSelect4").val();
+                if(selsctVal == '75'){
+                    $("#75one").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+                }
+                if(selsctVal == '15'){
+
+                    $("#15three").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+                }
+                if($("input[name='soft4']:checked").val() == 'option1' && selsctVal == '45') {
+
+                    $("#45one").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+                }
+                if($("input[name='soft4']:checked").val() == 'option2' && selsctVal == '45') {
+
+                    $("#45two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft4']:checked").val() == 'option3'  && selsctVal == '45') {
+
+                    $("#45three").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+                }
+                if($("input[name='soft4']:checked").val() == 'option1' && selsctVal == '60') {
+
+                    $("#60two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft4']:checked").val() == 'option2' && selsctVal == '60') {
+
+                    $("#60two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft4']:checked").val() == 'option3'  && selsctVal == '60') {
+
+                    $("#60three").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft4']:checked").val() == 'option1' && selsctVal == '30') {
+
+                    $("#30two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft4']:checked").val() == 'option2' && selsctVal == '30') {
+                    $("#30one").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft4']:checked").val() == 'option3'  && selsctVal == '30') {
+                    $("#30two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+            }
+            if(riskId == 'R25'){
+                var radioValue = $("input[name='soft5']:checked").val();
+                var selsctVal=$("#riskSelect5").val();
+                if(selsctVal == '75'){
+                    $("#75one").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+                }
+                if(selsctVal == '15'){
+
+                    $("#15three").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+                }
+                if($("input[name='soft5']:checked").val() == 'option1' && selsctVal == '45') {
+
+                    $("#45one").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+                }
+                if($("input[name='soft5']:checked").val() == 'option2' && selsctVal == '45') {
+
+                    $("#45two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft5']:checked").val() == 'option3'  && selsctVal == '45') {
+
+                    $("#45three").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+                }
+                if($("input[name='soft5']:checked").val() == 'option1' && selsctVal == '60') {
+
+                    $("#60two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft5']:checked").val() == 'option2' && selsctVal == '60') {
+
+                    $("#60two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft5']:checked").val() == 'option3'  && selsctVal == '60') {
+
+                    $("#60three").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft5']:checked").val() == 'option1' && selsctVal == '30') {
+
+                    $("#30two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft5']:checked").val() == 'option2' && selsctVal == '30') {
+                    $("#30one").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft5']:checked").val() == 'option3'  && selsctVal == '30') {
+                    $("#30two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+            } if(riskId == 'R26'){
+                var radioValue = $("input[name='soft6']:checked").val();
+                var selsctVal=$("#riskSelect6").val();
+                if(selsctVal == '75'){
+                    $("#75one").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+                }
+                if(selsctVal == '15'){
+
+                    $("#15three").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+                }
+                if($("input[name='soft6']:checked").val() == 'option1' && selsctVal == '45') {
+
+                    $("#45one").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+                }
+                if($("input[name='soft6']:checked").val() == 'option2' && selsctVal == '45') {
+
+                    $("#45two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft6']:checked").val() == 'option3'  && selsctVal == '45') {
+
+                    $("#45three").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+                }
+                if($("input[name='soft6']:checked").val() == 'option1' && selsctVal == '60') {
+
+                    $("#60two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft6']:checked").val() == 'option2' && selsctVal == '60') {
+
+                    $("#60two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft6']:checked").val() == 'option3'  && selsctVal == '60') {
+
+                    $("#60three").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft6']:checked").val() == 'option1' && selsctVal == '30') {
+
+                    $("#30two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft6']:checked").val() == 'option2' && selsctVal == '30') {
+                    $("#30one").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft6']:checked").val() == 'option3'  && selsctVal == '30') {
+                    $("#30two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+            }
+            if(riskId == 'R27'){
+                var radioValue = $("input[name='soft7']:checked").val();
+                var selsctVal=$("#riskSelect7").val();
+                if(selsctVal == '75'){
+                    $("#75one").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+                }
+                if(selsctVal == '15'){
+
+                    $("#15three").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+                }
+                if($("input[name='soft7']:checked").val() == 'option1' && selsctVal == '45') {
+
+                    $("#45one").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+                }
+                if($("input[name='soft7']:checked").val() == 'option2' && selsctVal == '45') {
+
+                    $("#45two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft7']:checked").val() == 'option3'  && selsctVal == '45') {
+
+                    $("#45three").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+                }
+                if($("input[name='soft7']:checked").val() == 'option1' && selsctVal == '60') {
+
+                    $("#60two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft7']:checked").val() == 'option2' && selsctVal == '60') {
+
+                    $("#60two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft7']:checked").val() == 'option3'  && selsctVal == '60') {
+
+                    $("#60three").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft7']:checked").val() == 'option1' && selsctVal == '30') {
+
+                    $("#30two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft7']:checked").val() == 'option2' && selsctVal == '30') {
+                    $("#30one").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+                if($("input[name='soft7']:checked").val() == 'option3'  && selsctVal == '30') {
+                    $("#30two").append('<br><span><i class="icon-circle-small"></i>' + riskId + '<span>');
+
+                }
+            }
+        });
+        $( "#addrow1" ).click(function() {
+            $("#editable1").append('<tr> <td class="no">7</td> <td ><input type="text" class="form-control idr" id="riskId7"></td> <td > <textarea  rows="2"    class="form-control" id="first"  ></textarea></td> <td class="secrads" align="center"> <input type="radio"  value="option1" id="question3" name="soft7" class="secrad6"></td> <td class="secrads1" align="center">  <input type="radio" value="option2" checked="" id="question4" name="soft7" class="secrad6">  </td> <td class="secrads2" align="center"> <input type="radio" value="option3" checked="" id="question4" name="soft7" class="secrad6"> </td> <td ><textarea  rows="2"   class="form-control" id="first"  ></textarea></td> <td ><textarea  rows="2"    class="form-control" id="first"  ></textarea></td> <td align="center"><select class=" form-control m-b select1" id="riskSelect7"> <option>%</option> <option value="15">15</option> <option value="30">30</option> <option value="45">45</option> <option value="60">60</option> <option value="75">75</option> </select></td> <td><a href="overview.php" class="btn btn-white btn-sm"> <i class="fa fa-trash"></i> Delete </a></td> </tr>');
+        });
+        /* Init DataTables */
+       /* $('.scroll_content').slimscroll({
+            height: '732px'
+        });*/
+    });
+    /* Apply the jEditable handlers to the table */
+
+
+
+</script>

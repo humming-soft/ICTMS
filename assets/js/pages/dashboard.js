@@ -283,9 +283,7 @@ var Dashboard = function() {
             console.warn('Warning - bootstrap-multiselect.js is not loaded.');
             return;
         }
-        $('.multiselect').multiselect({
-            maxHeight: 120
-        });
+        $('.multiselect').multiselect();
     };
     $(document).on("click",".ogchartShow",function(){
         $targets=$(this).data('org');
@@ -301,7 +299,7 @@ var Dashboard = function() {
             _componentPikaday();
             _componentRepeater();
             _buildOrg(ogchart);
-            _componentMultiselect();
+           // _componentMultiselect();
         }
 
     }

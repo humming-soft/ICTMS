@@ -21,7 +21,7 @@
                             </div>
                             
                             <div class="card-body">
-                                <div id="orgchart-container"></div>
+                                <div id="orgchart-container" style="height:516px;"></div>
                             </div>
                         </div>
                     </div>
@@ -89,13 +89,19 @@
 										<button type="button" class="btn btn-light  btn-block" id="btn-reset">
                                                 <i class="icon-plus2 mr-2"></i>Reset</button>
                                         <button type="button" class="btn btn-primary  btn-block"  id="btn-report-path"><i class="icon-bin mr-2"></i>Report path</button>
-									</div>
+                                    </div>
 								</form>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                <div class="card">
+                    <div class="card-body text-right">
+                        <a href="<?=site_url('projects/02849')?>" class="btn btn-light ml-3">Cancel</a>
+                        <a href="#" class="btn bg-success"><i class="icon-paperplane mr-1"></i> Save</a>
+                        <a href="<?=site_url('projects/02849/reporting-structure')?>" class="btn bg-blue gx_save no-loader">Save and Continue - Reporting Structure <i class="icon-arrow-right7 ml-1"></i></a>
+                    </div>
+                </div>
             </div>
             <!-- /right content -->
         </div>

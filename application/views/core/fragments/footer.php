@@ -1,5 +1,5 @@
 <!-- Bottom right menu -->
-<ul class="fab-menu fab-menu-fixed fab-menu-bottom-right" data-fab-toggle="click">
+<!-- <ul class="fab-menu fab-menu-fixed fab-menu-bottom-right" data-fab-toggle="click">
     <li>
         <a class="fab-menu-btn btn bg-pink-300 btn-float rounded-round btn-icon">
             <i class="fab-icon-open icon-grid3"></i>
@@ -24,7 +24,7 @@
             </li>
         </ul>
     </li>
-</ul>
+</ul> -->
 <!-- /bottom right menu -->
 
 <div class="navbar navbar-expand-lg navbar-light">

@@ -22,14 +22,24 @@ class Project extends ICTMS_Controller {
         {
             $message='';
         }
-        $_header["support"] = array("uniform","slick");
-        $_header["page_js"] = "dashboard";
+        if($session_data['roleid'] == 14){
+            $_header["support"] = array("uniform","slick");
+            $_header["page_js"] = "dashboard";
 
-        $this->load->view('core/fragments/header',$_header);
-        $this->load->view('core/projects/fragments/main_navbar',$data1);
-        $this->load->view('core/projects/fragments/secondary_navbar');
-        $this->load->view('core/projects/overview');
-        $this->load->view('core/fragments/footer');
+            $this->load->view('core/fragments/header',$_header);
+            $this->load->view('core/projects/fragments/main_navbar',$data1);
+            $this->load->view('core/projects/fragments/secondary_navbar');
+            $this->load->view('core/projects/overview');
+            $this->load->view('core/fragments/footer');
+        }else if($session_data['roleid'] == 15){
+            $_header["support"] = array("uniform","slick","orgchart","pikadate","repeater","multiselect");
+            $_header["page_js"] = "dashboard";
+            $this->load->view('core/fragments/header',$_header);
+            $this->load->view('core/projects/fragments/main_navbar',$data1);
+            $this->load->view('core/projects/fragments/secondary_navbar');
+            $this->load->view('core/projects/overview_pprisa');
+            $this->load->view('core/fragments/footer');
+        }
     }
 
     public function create(){
@@ -506,14 +516,26 @@ class Project extends ICTMS_Controller {
         {
             $message='';
         }
-        $_header["support"] = array("gantt","chosen","multiselect","pikadate");
-        $_header["page_js"] = "milestones";
 
-        $this->load->view('core/fragments/header',$_header);
-        $this->load->view('core/projects/fragments/main_navbar',$data1);
-        $this->load->view('core/projects/fragments/secondary_navbar');
-        $this->load->view('core/projects/milestones');
-        $this->load->view('core/fragments/footer');
+        if($session_data['roleid'] == 33){
+            $_header["support"] = array("gantt","chosen","multiselect","pikadate");
+            $_header["page_js"] = "milestones_vendor";
+
+            $this->load->view('core/fragments/header',$_header);
+            $this->load->view('core/projects/fragments/main_navbar',$data1);
+            $this->load->view('core/projects/fragments/secondary_navbar');
+            $this->load->view('core/projects/milestones_vendor');
+            $this->load->view('core/fragments/footer');
+        }else{
+            $_header["support"] = array("gantt","chosen","multiselect","pikadate");
+            $_header["page_js"] = "milestones";
+
+            $this->load->view('core/fragments/header',$_header);
+            $this->load->view('core/projects/fragments/main_navbar',$data1);
+            $this->load->view('core/projects/fragments/secondary_navbar');
+            $this->load->view('core/projects/milestones');
+            $this->load->view('core/fragments/footer');
+        }
     }
 
     public function deliverables($pid=null){
@@ -561,6 +583,56 @@ class Project extends ICTMS_Controller {
         $this->load->view('core/projects/fragments/main_navbar',$data1);
         $this->load->view('core/projects/fragments/secondary_navbar');
         $this->load->view('core/projects/org');
+        $this->load->view('core/fragments/footer');
+    }
+
+    public function reporting_structure($pid=null){
+        $session_data = $this->session->userdata('logged_in');
+        $data['username'] =$data1['username'] = $session_data['username'];
+
+        if($this->session->userdata('message'))
+        {
+            $messagehrecord=$this->session->userdata('message');
+            $message=$messagehrecord['message'];
+            $this->session->unset_userdata('message');
+        }
+        else
+        {
+            $message='';
+        }
+        $_header["support"] = array();
+        $_header["page_js"] = "reporting_structure";
+
+        $this->load->view('core/fragments/header',$_header);
+        $this->load->view('core/projects/fragments/main_navbar',$data1);
+        $this->load->view('core/projects/fragments/secondary_navbar');
+        $this->load->view('core/projects/reporting_structure');
+        $this->load->view('core/fragments/footer');
+    }
+
+    public function info_vendor($pid=null){
+        $session_data = $this->session->userdata('logged_in');
+        $data['username'] =$data1['username'] = $session_data['username'];
+
+        if($this->session->userdata('message'))
+        {
+            $messagehrecord=$this->session->userdata('message');
+            $message=$messagehrecord['message'];
+            $this->session->unset_userdata('message');
+        }
+        else
+        {
+            $message='';
+        }
+        $_header["support"] = array("uniform");
+        $_header["pid"] = "02849";
+        $_header["page"] = "info_vendor";
+        $_header["page_js"] = "info_vendor";
+
+        $this->load->view('core/fragments/header',$_header);
+        $this->load->view('core/projects/fragments/main_navbar',$data1);
+        $this->load->view('core/projects/fragments/secondary_navbar');
+        $this->load->view('core/projects/info_vendor');
         $this->load->view('core/fragments/footer');
     }
 }

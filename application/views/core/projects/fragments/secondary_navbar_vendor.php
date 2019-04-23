@@ -17,41 +17,48 @@
 		<div class="navbar-collapse collapse" id="navbar-navigation">
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<a href="<?=site_url('dashboard')?>" class="navbar-nav-link">
-						<i class="icon-home4 text-success"></i>
-					</a>
-				</li>
-				<li class="nav-item">
 					<a href="<?=site_url('projects/02849')?>" class="navbar-nav-link active">
-						<i class="icon-stack2 mr-2"></i> Overview
+						<i class="icon-stack2 mr-2"></i> Project Overview
 					</a>
 				</li>
 				<li class="nav-item dropdown">
 					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 						<i class="icon-archive mr-2"></i>
-						Initiation
+						Implementation
 					</a>
 
 					<div class="dropdown-menu">
-						<div class="dropdown-header">PROJECT INITIATION (LFA)</div>
-						<a href="<?=site_url('projects/02849/stakeholder-analysis')?>" class="dropdown-item"><i class="icon-people"></i> Stakeholder Analysis</a>
-						<a href="<?=site_url('projects/02849/prob-analysis')?>" class="dropdown-item"><i class="icon-tree7"></i> Problem Analysis</a>
-						<a href="<?=site_url('projects/02849/obj-analysis')?>" class="dropdown-item"><i class="icon-list2"></i> Objective Analysis</a>
-						<a href="<?=site_url('projects/02849/stat-analysis')?>" class="dropdown-item"><i class="icon-strategy"></i> Strategic Analysis</a>
+						<div class="dropdown-header">PROJECT IMPLEMENTATION</div>
+						<a href="<?=site_url('projects/02849/resources')?>" class="dropdown-item"><i class="icon-users"></i>Manage Resources</a>
+						<a href="<?=site_url('projects/02849/gantt')?>" class="dropdown-item"><i class="icon-paragraph-right3"></i>Activities & Deliverables</a>
+						<a href="<?=site_url('projects/02849/risk')?>" class="dropdown-item"><i class="icon-shield-notice"></i>Risk Register</a>
 					</div>
 				</li>
 				<li class="nav-item dropdown">
 					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 						<i class="icon-clipboard3 mr-2"></i>
-						Planning
+						Reporting
 					</a>
 
 					<div class="dropdown-menu">
-						<div class="dropdown-header">PROJECT PLANNING (LFM)</div>
-						<a href="<?=site_url('projects/02849/logframe')?>" class="dropdown-item"><i class="icon-grid7"></i>Logframe</a>
-						<a href="<?=site_url('projects/02849/gantt')?>" class="dropdown-item"><i class="icon-paragraph-right3"></i>Activities & Deliverables</a>
-						<a href="<?=site_url('projects/02849/resources')?>" class="dropdown-item"><i class="icon-users"></i>Resources</a>
-						<a href="<?=site_url('projects/02849/risk')?>" class="dropdown-item"><i class="icon-shield-notice"></i>Risk Register</a>
+						<div class="dropdown-header">PROJECT REPORTING</div>
+						<a href="<?=site_url('projects/02849/logframe')?>" class="dropdown-item"><i class="icon-grid7"></i>Site Diary (Daily Progress Report)</a>
+						<a href="<?=site_url('projects/02849/gantt')?>" class="dropdown-item"><i class="icon-paragraph-right3"></i>Progress Meetings</a>
+						<a href="<?=site_url('projects/02849/gantt')?>" class="dropdown-item"><i class="icon-paragraph-right3"></i>Collaboration</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-cog3 mr-2"></i>Settings
+						<span class="d-md-none ml-2">Settings</span>
+					</a>
+
+					<div class="dropdown-menu dropdown-menu-right">
+						<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
+						<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
+						<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
+						<div class="dropdown-divider"></div>
+						<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
 					</div>
 				</li>
 				<!-- <li class="nav-item">
@@ -144,21 +151,6 @@
 						</div>
 					</div>
 				</li> -->
-
-				<li class="nav-item dropdown">
-					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
-						<i class="icon-cog3"></i>
-						<span class="d-md-none ml-2">Settings</span>
-					</a>
-
-					<div class="dropdown-menu dropdown-menu-right">
-						<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
-						<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
-						<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
-						<div class="dropdown-divider"></div>
-						<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
-					</div>
-				</li>
 			</ul>
 		</div>
 	</div>

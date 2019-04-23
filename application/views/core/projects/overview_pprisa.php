@@ -8,9 +8,21 @@
             <div class="flex-fill overflow-auto">
                 <div class="row m-0">
                     <div class="col-12 col-md-12 col-lg-12">
+                        <div class="card card-body">
+                            <div class="media">
+                                <div class="media-body"> 
+                                    <h6 class="media-title mb-0 font-weight-semibold text-uppercase border-bottom-1 border-bottom">Project Objective </h6>                 
+                                    <span class="d-inline-block p-2-1 font-weight-semibold">"Business problem that is required to be resolved or an opportunity that is required to be created 
+                                        that will enhance or bring benefit to the organization. In January 2018 a mandate was issued by the 
+                                        Ministry of Finance to Ministries, Agencies and Government owned companies that are involved in government procurement. 
+                                        The mandate authorizes the Technology Depository Agency (TDA) to collect, manage and analyze all government procurement 
+                                        related data for the purpose of understanding the usage of local content."</span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card">
                             <div class="card-header header-elements-sm-inline p-3">
-                                <h5 class="card-title"><i class="icon-checkmark-circle mr-2"></i>PROJECT CREATION PROCESS</h5>
+                                <h5 class="card-title"><i class="icon-checkmark-circle mr-2"></i>PROJECT INITIATION PROCESS</h5>
                             </div>
                             <div class="card-body">
                                 <!-- <div class="d-md-flex align-items-md-center flex-md-wrap text-center text-md-left"> -->
@@ -33,15 +45,16 @@
                                     </div> -->
 
                                     <ul class="nav nav-pills ictms-nav-pills nav-pills-bordered">
-                                        <li class="nav-item"><a href="#bordered-pill1" class="nav-link completed no-loader" data-toggle="tab"><i class="icon-circles mr-1"></i> Initiation</a></li>
-                                        <li class="nav-item"><a href="#bordered-pill2" class="nav-link active show no-loader" data-toggle="tab"><i class="icon-circles2 mr-1"></i> Planning</a></li>
-                                        <li class="nav-item"><a href="#bordered-pill3" class="nav-link no-loader" data-toggle="tab"><i class="icon-circles2 mr-1"></i> Project Status</a></li>
-                                        <!-- <li class="nav-item"><a href="#bordered-pill3" class="nav-link no-loader" data-toggle="tab"><i class="icon-circles2 mr-1"></i> Implementation & Control</a></li> -->
-                                        <!-- <li class="nav-item"><a href="#bordered-pill4" class="nav-link no-loader" data-toggle="tab"><i class="icon-circles2 mr-1"></i> Closure</a></li> -->
+                                        <li class="nav-item"><a href="#bordered-pill1" class="nav-link completed show no-loader" data-toggle="tab"><i class="icon-checkmark-circle mr-1"></i> Initiation</a></li>
+                                        <li class="nav-item"><a href="#bordered-pill2" class="nav-link completed no-loader" data-toggle="tab"><i class="icon-checkmark-circle mr-1"></i> Planning</a></li>
+                                        <li class="nav-item"><a href="" class="nav-link completed no-loader" data-toggle="tab"><i class="icon-checkmark-circle mr-1"></i> Approved</a></li>
+                                        <li class="nav-item"><span class="nav-link"><i class="icon-arrow-right16"></i></span></li>
+                                        <li class="nav-item"><a href="<?=site_url('projects/02849/org')?>" class="nav-link"><i class="icon-users4 mr-1"></i> Project Team</a></li>
+                                        <li class="nav-item"><a href="<?=site_url('projects/02849/info-vendor')?>" class="nav-link"><i class="icon-profile mr-1"></i> Vendor Information</a></li>
                                     </ul>
                                     <hr>
                                     <div class="tab-content">
-                                        <div class="tab-pane fade" id="bordered-pill1">
+                                        <div class="tab-pane fade active show" id="bordered-pill1">
                                             <div class="row">
                                                 <div class="col-12 col-md-6 col-lg-3">
                                                     <div class="step-head">
@@ -87,45 +100,45 @@
                                             </div>
                                         </div>
 
-                                        <div class="tab-pane fade active show" id="bordered-pill2">
+                                        <div class="tab-pane fade " id="bordered-pill2">
                                             <div class="row">
                                                 <div class="col-12 col-md-6 col-lg-3">
                                                     <div class="step-head">
-                                                        <div class="step-number current">01</div>
+                                                        <div class="step-number completed">01</div>
                                                         <div class="step-head-text">
                                                             <h4>Logframe</h4>
                                                             <p>Your simple personal information required for identification</p>
-                                                            <a href="<?=site_url('projects/02849/logframe')?>">Complete Step →</a>
+                                                            <a href="<?=site_url('projects/02849/logframe')?>">View/Edit →</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-md-6 col-lg-3">
                                                     <div class="step-head">
-                                                        <div class="step-number">02</div>
+                                                        <div class="step-number completed">02</div>
                                                         <div class="step-head-text">
                                                             <h4>Activities & Deliverables</h4>
                                                             <p>Your simple personal information required for identification</p>
-                                                            <a href="<?=site_url('projects/02849/gantt')?>">Complete Step →</a>
+                                                            <a href="<?=site_url('projects/02849/gantt')?>">View/Edit →</a>
                                                         </div>
                                                     </div>
                                                 </div>      
                                                 <div class="col-12 col-md-6 col-lg-3">
                                                     <div class="step-head">
-                                                        <div class="step-number">03</div>
+                                                        <div class="step-number completed">03</div>
                                                         <div class="step-head-text">
                                                             <h4>Resources</h4>
                                                             <p>Your simple personal information required for identification</p>
-                                                            <a href="<?=site_url('projects/02849/resources')?>">Complete Step →</a>
+                                                            <a href="<?=site_url('projects/02849/resources')?>">View/Edit →</a>
                                                         </div>
                                                     </div>
                                                 </div>   
                                                 <div class="col-12 col-md-6 col-lg-3">
                                                     <div class="step-head">
-                                                        <div class="step-number">03</div>
+                                                        <div class="step-number completed">04</div>
                                                         <div class="step-head-text">
                                                             <h4>Risk Register</h4>
                                                             <p>Your simple personal information required for identification</p>
-                                                            <a href="<?=site_url('projects/02849/risk')?>">Complete Step →</a>
+                                                            <a href="<?=site_url('projects/02849/risk')?>">View/Edit →</a>
                                                         </div>
                                                     </div>
                                                 </div>                                   
@@ -223,21 +236,6 @@
                     <div class="col-12 col-md-8 col-lg-8">
                         <div class="row m-0">
                             <div class="col-12 col-md-12 col-lg-12 p-0">
-                                <div class="card card-body">
-                                    <div class="media">
-                                        <div class="media-body">
-                                            <ul class="list-inline mb-0">
-                                                <li class="list-inline-item float-right"><a href="#"><i class="icon-pencil5 mr-1"></i> Edit</a></li>
-                                            </ul>   
-                                            <h6 class="media-title mb-0 font-weight-semibold text-uppercase border-bottom-1 border-bottom">Project Objective <br><small class="d-inline-block">(System Generated)</small></h6>                 
-                                            <span class="d-inline-block p-2-1 font-weight-semibold">"Business problem that is required to be resolved or an opportunity that is required to be created 
-                                                that will enhance or bring benefit to the organization. In January 2018 a mandate was issued by the 
-                                                Ministry of Finance to Ministries, Agencies and Government owned companies that are involved in government procurement. 
-                                                The mandate authorizes the Technology Depository Agency (TDA) to collect, manage and analyze all government procurement 
-                                                related data for the purpose of understanding the usage of local content."</span>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="card">
                                     <div class="card-header header-elements-sm-inline p-3">
                                         <h5 class="card-title"><i class="icon-stack2 mr-2"></i>PROJECT OVERVIEW</h5>
@@ -246,9 +244,6 @@
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col-12 col-md-12 col-lg-12">
-                                                <ul class="list-inline mb-0">
-                                                    <li class="list-inline-item float-right"><a href="#"><i class="icon-pencil5 mr-1"></i> Edit</a></li>
-                                                </ul>
                                                 <table class="table table-borderless table-xs my-2">
                                                     <tbody>
                                                         <tr>
@@ -306,9 +301,6 @@
                                                     </tbody>
                                                 </table>
                                                 <hr>
-                                                <ul class="list-inline mb-0">
-                                                    <li class="list-inline-item float-right"><a href="#"><i class="icon-pencil5 mr-1"></i> Edit</a></li>
-                                                </ul>
                                                 <table class="table table-borderless table-xs my-2">
                                                     <tbody>
                                                         <tr>
@@ -327,9 +319,6 @@
                                                     </tbody>
                                                 </table>
                                                 <hr>
-                                                <ul class="list-inline mb-0">
-                                                    <li class="list-inline-item float-right"><a href="#"><i class="icon-pencil5 mr-1"></i> Edit</a></li>
-                                                </ul>
                                                 <table class="table table-borderless table-xs my-2">
                                                     <tbody>
                                                         <tr>
@@ -367,17 +356,17 @@
                                             <div class="col-12 col-md-12 col-lg-12">
                                                 <ul class="list-unstyled mt-1">
                                                     <li class="mb-3">
-                                                        <div class="d-flex align-items-center mb-1">Current Activity : <a href="" class="font-weight-bold ml-1"> Approval</a><span class="text-muted ml-auto">100%</span></div>
+                                                        <div class="d-flex align-items-center mb-1"> Current Activity : <a href="" class="font-weight-bold ml-1"> Create Project Team</a><span class="text-muted ml-auto">10%</span></div>
                                                         <div class="progress" style="height: 0.675rem;">
-                                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 100%">
-                                                                <span class="sr-only">100% Complete</span>
+                                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 10%">
+                                                                <span class="sr-only">10% Complete</span>
                                                             </div>
                                                         </div>
                                                         <hr>
                                                     </li>
                                                     <li class="mb-3 text-center">
-                                                        <!-- <a href="<?=site_url("projects/02849/download")?>" class="btn bg-slate no-loader"><i class="icon-download mr-1"></i> Download Business Case</a> -->
-                                                        <a href="<?=site_url("projects/02849/download")?>" class="btn bg-slate no-loader"><i class="icon-download mr-1"></i> Download Project Brief</a>
+                                                        <a href="<?=site_url("projects/02849/download")?>" class="btn bg-slate no-loader"><i class="icon-download mr-1"></i> Download Business Case</a>
+                                                        <!-- <a href="<?=site_url("projects/02849/download")?>" class="btn bg-slate no-loader"><i class="icon-download mr-1"></i> Download Project Brief</a> -->
                                                     </li>
                                                 </ul>
                                             </div>

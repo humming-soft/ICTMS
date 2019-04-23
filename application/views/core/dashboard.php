@@ -111,9 +111,9 @@
                                 <h6 class="card-title font-weight-semibold">
                                     <a href="#"><i class="icon-box mr-1"></i> INTEGRATED LABOUR MARKET ANALYSIS AND REPORTING</a>
                                 </h6>
-                                <div class="header-elements">
+                                <!-- <div class="header-elements">
                                     <span class="badge bg-secondary ml-2">INITIATED</span>
-								</div>                        
+								</div>                         -->
                             </div>
 
                             <div class="card-body">
@@ -124,7 +124,7 @@
                                     <b class="font-weight-semibold">Project Objective :</b>
                                     <p>The inclusion of migrants in the labour market is key to ensure their effective integration into the host societies and their positive impact on the EU economy; this entails fully using their skills and realising their economic potential. They can contribute to addressing skills shortages in certain sectors at all skills levels.</p>
                                 </div>
-                                <div class="mb-3">
+                                <!-- <div class="mb-3">
                                     <b class="font-weight-semibold pb-2">Project Team :</b>
                                     <div class="project-users">
                                         <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36"  src="<?=site_url('assets/img/avatar/av3.png')?>"></div>
@@ -133,12 +133,12 @@
                                         <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36" src="<?=site_url('assets/img/avatar/av1.png')?>"></div>
                                         <div class="more">+ 5 More</div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="mb-3">
-                                    <b class="font-weight-semibold">Project Progress :</b>
+                                    <b class="font-weight-semibold">Project Creation Progress :</b>
                                     <ul class="list-unstyled mt-1">
                                         <li class="mb-3">
-                                            <div class="d-flex align-items-center mb-1">Current Activity : <a href="" class="font-weight-bold">Praparation of Business Case</a><span class="text-muted ml-auto">23%</span></div>
+                                            <div class="d-flex align-items-center mb-1">Current Activity : <a href="<?=site_url('projects/02849/gantt')?>" class="font-weight-bold">Activities & Deliverables</a><span class="text-muted ml-auto">23%</span></div>
                                             <div class="progress" style="height: 0.575rem;">
                                                 <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 23%">
                                                     <span class="sr-only">23% Complete</span>
@@ -151,10 +151,10 @@
 
                             <div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
                                 <ul class="list-inline list-inline-dotted text-muted mb-3 mb-sm-0">
-                                    <li class="list-inline-item">Project Visualization (BI)</li>
+                                    <li class="list-inline-item">Project Creation Process</li>
                                 </ul>
                                 <ul class="list-inline list-inline-dotted mb-0 mt-1 mt-sm-0">
-									<li class="list-inline-item"><a href="http://localhost/humworks-pms/projects/2019/1802"><i class="icon-stats-bars"></i> Business Intelligence</a></li>
+									<!-- <li class="list-inline-item"><a href="http://localhost/humworks-pms/projects/2019/1802"><i class="icon-stats-bars"></i> Business Intelligence</a></li> -->
 									<li class="list-inline-item"><a href="<?=site_url('projects/02849')?>">Details</a></li>
 								</ul>
                             </div>
@@ -171,9 +171,9 @@
                                 <h6 class="card-title font-weight-semibold">
                                     <a href="#"><i class="icon-box mr-1"></i> MALAYSIAN MARINE DEPARTMENT INFORMATION SYSTEM</a>
                                 </h6>
-                                <div class="header-elements">
+                                <!-- <div class="header-elements">
                                     <span class="badge bg-secondary ml-2">INITIATED</span>
-								</div>
+								</div> -->
                             </div>
 
                             <div class="card-body">
@@ -181,10 +181,10 @@
                                     <b class="font-weight-semibold">Date Initiated : <span class="d_init p-1">23-SEP-2018</span></b>
                                 </div>
                                 <div class="mb-3">
-                                    <b class="font-weight-semibold">Project Description :</b>
+                                    <b class="font-weight-semibold">Project Background :</b>
                                     <p> Marine Department has gone through major transformations, evolving into becoming a lead agency in maritime safety in this country. The three Marine Departments of Peninsular Malaysia, Sabah and Sarawak, that previously operated quite independently, are now integrated as one Marine Department of Malaysia.</p>
                                 </div>
-                                <div class="mb-3">
+                                <!-- <div class="mb-3">
                                     <b class="font-weight-semibold pb-2">Project Team :</b>
                                     <div class="project-users">
                                         <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36"  src="<?=site_url('assets/img/avatar/av2.png')?>"></div>
@@ -192,9 +192,9 @@
                                         <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36" src="<?=site_url('assets/img/avatar/av4.png')?>"></div>
                                         <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36" src="<?=site_url('assets/img/avatar/av6.png')?>"></div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="mb-3">
-                                    <b class="font-weight-semibold">Project Progress :</b>
+                                    <b class="font-weight-semibold">Project Creation Progress :</b>
                                     <ul class="list-unstyled mt-1">
                                         <li class="mb-3">
                                             <div class="d-flex align-items-center mb-1">Current Activity : <a href="" class="font-weight-bold">Budget Approval</a><span class="text-muted ml-auto">32%</span></div>
@@ -210,10 +210,10 @@
 
                             <div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
                                 <ul class="list-inline list-inline-dotted text-muted mb-3 mb-sm-0">
-                                    <li class="list-inline-item">Project Visualization (BI)</li>
+                                    <li class="list-inline-item">Project Creation Process</li>
                                 </ul>
                                 <ul class="list-inline list-inline-dotted mb-0 mt-1 mt-sm-0">
-                                    <li class="list-inline-item"><a href="http://localhost/humworks-pms/projects/2019/1802"><i class="icon-stats-bars"></i> Business Intelligence</a></li>
+									<!-- <li class="list-inline-item"><a href="http://localhost/humworks-pms/projects/2019/1802"><i class="icon-stats-bars"></i> Business Intelligence</a></li> -->
 									<li class="list-inline-item"><a href="<?=site_url('projects/02849')?>">Details</a></li>
 								</ul>
                             </div>
@@ -221,129 +221,10 @@
 
                     </div>
                 </div>
-                <div class="row m-0 projects-list">
-                    <div class="col-sm-6">
 
-                        <!-- Clean blog layout #1 -->
-                        <div class="card project">
-                            <div class="card-header header-elements-inline">
-                                <h6 class="card-title font-weight-semibold">
-                                    <a href="#"><i class="icon-box mr-1"></i> EDUCATION NATIONAL REGISTRY </a>
-                                </h6>
-                                <div class="header-elements">
-                                    <span class="badge bg-success ml-2">IMPLIMENTED</span>
-								</div>
-                            </div>
-
-                            <div class="card-body">
-                                <div class="mb-3 mt-1">
-                                    <b class="font-weight-semibold">Date Initiated : <span class="d_init p-1">10-JUN-2017</span></b>
-                                </div>
-                                <div class="mb-3">
-                                    <b class="font-weight-semibold">Project Description :</b>
-                                    <p>Maintain the National Register of Higher Education Providers in accordance with the Tertiary Education Quality and Standards.</p>
-                                </div>
-                                <div class="mb-3">
-                                    <b class="font-weight-semibold pb-2">Project Team :</b>
-                                    <div class="project-users">
-                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36"  src="<?=site_url('assets/img/avatar/av1.png')?>"></div>
-                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36" src="<?=site_url('assets/img/avatar/av2.png')?>"></div>
-                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36" src="<?=site_url('assets/img/avatar/av4.png')?>"></div>
-                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36" src="<?=site_url('assets/img/avatar/av6.png')?>"></div>
-                                        <div class="more">+ 2 More</div>
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <b class="font-weight-semibold">Project Progress :</b>
-                                    <ul class="list-unstyled mt-1">
-                                        <li class="mb-3">
-                                            <div class="d-flex align-items-center mb-1">Current Activity : <a href="" class="font-weight-bold">Implementation</a><span class="text-muted ml-auto">62%</span></div>
-                                            <div class="progress" style="height: 0.575rem;">
-                                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 62%">
-                                                    <span class="sr-only">62% Complete</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                 </div>
-                            </div>
-
-                            <div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
-                                <ul class="list-inline list-inline-dotted text-muted mb-3 mb-sm-0">
-                                    <li class="list-inline-item">Project Visualization (BI)</li>
-                                </ul>
-                                <ul class="list-inline list-inline-dotted mb-0 mt-1 mt-sm-0">
-                                    <li class="list-inline-item"><a href="http://localhost/humworks-pms/projects/2019/1802"><i class="icon-stats-bars"></i> Business Intelligence</a></li>
-									<li class="list-inline-item"><a href="<?=site_url('projects/02849')?>">Details</a></li>
-								</ul>
-                            </div>
-                        </div>
-                        <!-- /clean blog layout #1 -->
-
-                    </div>
-
-                    <div class="col-sm-6">
-
-                        <!-- Clean blog layout #3 -->
-                        <div class="card project">
-                            <div class="card-header header-elements-inline">
-                                <h6 class="card-title font-weight-semibold">
-                                    <a href="#"><i class="icon-box mr-1"></i> TOLL INFORMATION SYSTEM </a>
-                                </h6>
-                                <div class="header-elements">
-                                    <span class="badge bg-success ml-2">IMPLIMENTED</span>
-								</div>
-                            </div>
-
-                            <div class="card-body">
-                                <div class="mb-3 mt-1">
-                                    <b class="font-weight-semibold">Date Initiated : <span class="d_init p-1">30-MAR-2017</span></b>
-                                </div>
-                                <div class="mb-3">
-                                    <b class="font-weight-semibold">Project Description :</b>
-                                    <p>The Multi Lane Free Flow (MLFF) is an electronic toll collection system that allows free flow high speed toll system highway for all its users.</p>
-                                </div>
-                                <div class="mb-3">
-                                    <b class="font-weight-semibold pb-2">Project Team :</b>
-                                    <div class="project-users">
-                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36"  src="<?=site_url('assets/img/avatar/av5.png')?>"></div>
-                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36" src="<?=site_url('assets/img/avatar/av4.png')?>"></div>
-                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36" src="<?=site_url('assets/img/avatar/av2.png')?>"></div>
-                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36" src="<?=site_url('assets/img/avatar/av6.png')?>"></div>
-                                        <div class="more">+ 6 More</div>
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <b class="font-weight-semibold">Project Progress :</b>
-                                    <ul class="list-unstyled mt-1">
-                                        <li class="mb-3">
-                                            <div class="d-flex align-items-center mb-1">Current Activity : <a href="" class="font-weight-bold">Implementation</a><span class="text-muted ml-auto">79%</span></div>
-                                            <div class="progress" style="height: 0.575rem;">
-                                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 79%">
-                                                    <span class="sr-only">79% Complete</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                 </div>
-                            </div>
-
-                            <div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
-                                <ul class="list-inline list-inline-dotted text-muted mb-3 mb-sm-0">
-                                    <li class="list-inline-item">Project Visualization (BI)</li>
-                                </ul>
-                                <ul class="list-inline list-inline-dotted mb-0 mt-1 mt-sm-0">
-                                    <li class="list-inline-item"><a href="http://localhost/humworks-pms/projects/2019/1802"><i class="icon-stats-bars"></i> Business Intelligence</a></li>
-									<li class="list-inline-item"><a href="<?=site_url('projects/02849')?>">Details</a></li>
-								</ul>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
 
                 <!-- Pagination -->
-                <div class="d-flex justify-content-center pt-3 mb-3">
+                <!-- <div class="d-flex justify-content-center pt-3 mb-3">
                     <ul class="pagination">
                         <li class="page-item"><a href="#" class="page-link"><i class="icon-arrow-small-right"></i></a></li>
                         <li class="page-item active"><a href="#" class="page-link">1</a></li>
@@ -353,7 +234,7 @@
                         <li class="page-item"><a href="#" class="page-link">5</a></li>
                         <li class="page-item"><a href="#" class="page-link"><i class="icon-arrow-small-left"></i></a></li>
                     </ul>
-                </div>
+                </div> -->
                 <!-- /pagination -->
 
             </div>
@@ -577,7 +458,7 @@
                                     </div>
                                     <div class="col-md-12"   id="outcomesDiv">
                                         <div class="form-group text-left"><label for="">Outcomes</label>
-                                            <select class="form-control multiselect" multiple="multiple" disabled="true" id="outcomes" name="outcomes[]"  data-fouc>
+                                            <select class="form-control multiselect custom-multiple" multiple="multiple" disabled="true" id="outcomes" name="outcomes[]" aria-hidden="false" data-fouc>
                                             </select>
                                         </div>
                                     </div>
@@ -786,11 +667,18 @@
                         $.each(response,function(index,data){
                             $('#outcomes').append('<option value="'+ data['outcomes_id'] +'">'+ data['outcomes'] +'</option>');
                         });
-                        $('.multiselect').multiselect('destroy');
-                        $('.multiselect').multiselect('rebuild');
+                        var firstConfigurationSet = {
+                            maxHeight: 400,
+                            dropUp: true
+                        };
+                        rebuildMultiselect(firstConfigurationSet);
                 }
             });
         });
+        function rebuildMultiselect(options) {
+            $('.multiselect').multiselect('destroy');
+            $('.multiselect').multiselect(options);
+        }
         $(document).on("change","#focus_area",function(){
             var focusarea = $(this).val();
             $("#stratagies").attr("disabled",false);

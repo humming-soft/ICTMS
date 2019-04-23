@@ -158,7 +158,8 @@
   padding: 3px;
   border: 2px dashed transparent;
   text-align: center;
-  width: 130px;
+  width: 170px;
+  text-transform: uppercase;
 }
 
 .orgchart.l2r .node, .orgchart.r2l .node {
@@ -203,7 +204,7 @@
   text-align: center;
   font-size: 12px;
   font-weight: bold;
-  height: 20px;
+  height: 24px;
   line-height: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -211,6 +212,7 @@
   background-color: #0d636b;
   color: #ffffff;
   border-radius: 4px 4px 0 0; 
+  padding: 4px 0px;
 }
 .orgchart.b2t .node .title {
   transform: rotate(-180deg);
@@ -245,6 +247,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  padding: 0px;
 }
 .orgchart.b2t .node .content {
   transform: rotate(180deg);

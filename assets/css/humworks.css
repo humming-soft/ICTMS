@@ -3087,5 +3087,8 @@ a.badge {
 .alert-unread{
    background: #e8e7e7;
 }
+select.custom-multiple{
+    height: 37px !important;
+}
 
 

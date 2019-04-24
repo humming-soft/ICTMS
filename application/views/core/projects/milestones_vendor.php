@@ -30,6 +30,69 @@
                                     <a href="<?=site_url('projects/02849/maintenance')?>" class="btn bg-blue gx_save">Save And Continue - Maintenance <i class="icon-arrow-right7 ml-1"></i></a>
                                 </fieldset>
                             </div>
+                            <div class="card-body">
+                                <div class="row m-0">
+                                    <div class="col-12 col-md-12 col-lg-12">
+                                        <div class="timed-activities padded">
+                                            <div class="timed-activity">
+                                                <div class="ta-date"><span>21st Jan, 2017</span></div>
+                                                <div class="ta-record-w">
+                                                    <div class="ta-record">
+                                                        <div class="ta-timestamp"><strong>11:55</strong> am</div>
+                                                        <div class="ta-activity">Uploaded Evidence of Activity for <a href="#">Production of TBM Parts in Malaysia</a></div>
+                                                    </div>
+                                                    <div class="ta-record">
+                                                        <div class="ta-timestamp"><strong>2:34</strong> pm</div>
+                                                        <div class="ta-activity">Updated ICV Calculation for <a href="#">Production of TBM Parts in Malaysia</a></div>
+                                                    </div>
+                                                    <div class="ta-record">
+                                                        <div class="ta-timestamp"><strong>7:12</strong> pm</div>
+                                                        <div class="ta-activity">Status of the project <a href="#">Steel Fibre Reinforced Concrete (SFRC) Tunnel Linings</a> changed from <span class="badge badge-info">PROPOSED</span> to <span class="badge badge-success">APPROVED</span></div>
+                                                    </div>
+                                                    <div class="ta-record">
+                                                        <div class="ta-timestamp"><strong>9:39</strong> pm</div>
+                                                        <div class="ta-activity">Schedule A Approved for <a href="#">Steel Fibre Reinforced Concrete (SFRC) Tunnel Linings</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="timed-activity">
+                                                <div class="ta-date"><span>3rd Feb, 2017</span></div>
+                                                <div class="ta-record-w">
+                                                    <div class="ta-record">
+                                                        <div class="ta-timestamp"><strong>9:32</strong> pm</div>
+                                                        <div class="ta-activity">Updated ICV Calculation for <a href="#">Production of TBM Parts in Malaysia</a></div>
+                                                    </div>
+                                                    <div class="ta-record">
+                                                        <div class="ta-timestamp"><strong>5:14</strong> pm</div>
+                                                        <div class="ta-activity">TDA <a href="#">Commented</a> on the project <a href="#">Production of TBM Parts in Malaysia</a>
+                                                            category</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="timed-activity">
+                                                <div class="ta-date"><span>21st Jan, 2017</span></div>
+                                                <div class="ta-record-w">
+                                                    <div class="ta-record">
+                                                        <div class="ta-timestamp"><strong>11:55</strong> am</div>
+                                                        <div class="ta-activity">Schedule A Submitted for the project <a href="#">Production of TBM Parts in Malaysia</a></div>
+                                                    </div>
+                                                    <div class="ta-record">
+                                                        <div class="ta-timestamp"><strong>2:34</strong> pm</div>
+                                                        <div class="ta-activity">Added project benefits for<a href="#">Steel Fibre Reinforced Concrete (SFRC) Tunnel Linings</a> 
+                                                            category</div>
+                                                    </div>
+                                                    <div class="ta-record">
+                                                        <div class="ta-timestamp"><strong>9:39</strong> pm</div>
+                                                        <div class="ta-activity">Initiated A Project called <a href="#">Steel Fibre Reinforced Concrete (SFRC) Tunnel Linings</a> under Programme 
+                                                        <a href="#">TUNNELING AND UNDERGROUND WORKS (MMC GAMUDA)</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

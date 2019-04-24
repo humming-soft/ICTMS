@@ -523,7 +523,7 @@ class Project extends ICTMS_Controller {
 
             $this->load->view('core/fragments/header',$_header);
             $this->load->view('core/projects/fragments/main_navbar',$data1);
-            $this->load->view('core/projects/fragments/secondary_navbar');
+            $this->load->view('core/projects/fragments/secondary_navbar_vendor');
             $this->load->view('core/projects/milestones_vendor');
             $this->load->view('core/fragments/footer');
         }else{

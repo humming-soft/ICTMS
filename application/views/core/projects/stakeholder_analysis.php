@@ -101,35 +101,51 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <ul class="list list-unstyled mb-3">
-                                                        <li>
+                                                    <ul class="list list-unstyled mb-3 mo-ul">
+                                                        <li class="mo-li">
                                                             <i class="icon-arrow-right5 mr-2"></i>
                                                             Building an  integrated need-based transport system
+                                                            <div class="todo-task-buttons">
+                                                                <a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a>
+                                                                <a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a>
+                                                            </div>
                                                         </li>
-                                                        <li>
+                                                        <li class="mo-li">
                                                             <i class="icon-arrow-right5 mr-2"></i>
                                                             Unleashing growth of logistics and enhancing trade facilitation
+                                                            <div class="todo-task-buttons">
+                                                                <a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a>
+                                                                <a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a>
+                                                            </div>
                                                         </li>
                                                     </ul>
                                                     <div class="input-group">
                                                         <input type="text" class="form-control" placeholder="Enter Terms of reference..">
-                                                        <span class="input-group-append"><button class="btn btn-outline-info" type="button">Add</button></span>
+                                                        <span class="input-group-append"><button class="btn btn-outline-info task-btn-add" type="button">Add</button></span>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <ul class="list list-unstyled mb-3">
-                                                        <li>
+                                                    <ul class="list list-unstyled mb-3 mo-ul">
+                                                        <li class="mo-li">
                                                             <i class="icon-arrow-right5 mr-2"></i>
                                                             Building an  integrated need-based transport system
+                                                            <div class="todo-task-buttons">
+                                                                <a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a>
+                                                                <a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a>
+                                                            </div>
                                                         </li>
-                                                        <li>
+                                                        <li class="mo-li">
                                                             <i class="icon-arrow-right5 mr-2"></i>
                                                             Unleashing growth of logistics and enhancing trade facilitation
+                                                            <div class="todo-task-buttons">
+                                                                <a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a>
+                                                                <a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a>
+                                                            </div>
                                                         </li>
                                                     </ul>
                                                     <div class="input-group">
                                                         <input type="text" class="form-control" placeholder="Enter Impacts..">
-                                                        <span class="input-group-append"><button class="btn btn-outline-info" type="button">Add</button></span>
+                                                        <span class="input-group-append"><button class="btn btn-outline-info task-btn-add" type="button">Add</button></span>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -146,35 +162,51 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <ul class="list list-unstyled mb-3">
-                                                        <li>
+                                                <ul class="list list-unstyled mb-3 mo-ul">
+                                                        <li class="mo-li">
                                                             <i class="icon-arrow-right5 mr-2"></i>
                                                             Building an  integrated need-based transport system
+                                                            <div class="todo-task-buttons">
+                                                                <a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a>
+                                                                <a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a>
+                                                            </div>
                                                         </li>
-                                                        <li>
+                                                        <li class="mo-li">
                                                             <i class="icon-arrow-right5 mr-2"></i>
                                                             Unleashing growth of logistics and enhancing trade facilitation
+                                                            <div class="todo-task-buttons">
+                                                                <a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a>
+                                                                <a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a>
+                                                            </div>
                                                         </li>
                                                     </ul>
                                                     <div class="input-group">
                                                         <input type="text" class="form-control" placeholder="Enter Terms of reference..">
-                                                        <span class="input-group-append"><button class="btn btn-outline-info" type="button">Add</button></span>
+                                                        <span class="input-group-append"><button class="btn btn-outline-info task-btn-add" type="button">Add</button></span>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <ul class="list list-unstyled mb-3">
-                                                        <li>
+                                                <ul class="list list-unstyled mb-3 mo-ul">
+                                                        <li class="mo-li">
                                                             <i class="icon-arrow-right5 mr-2"></i>
                                                             Building an  integrated need-based transport system
+                                                            <div class="todo-task-buttons">
+                                                                <a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a>
+                                                                <a class="task-btn-delete no-loader text-danger" href="javascript:;"><i class="icon-bin"></i></a>
+                                                            </div>
                                                         </li>
-                                                        <li>
+                                                        <li class="mo-li">
                                                             <i class="icon-arrow-right5 mr-2"></i>
                                                             Unleashing growth of logistics and enhancing trade facilitation
+                                                            <div class="todo-task-buttons">
+                                                                <a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a>
+                                                                <a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a>
+                                                            </div>
                                                         </li>
                                                     </ul>
                                                     <div class="input-group">
                                                         <input type="text" class="form-control" placeholder="Enter Impacts..">
-                                                        <span class="input-group-append"><button class="btn btn-outline-info" type="button">Add</button></span>
+                                                        <span class="input-group-append"><button class="btn btn-outline-info task-btn-add" type="button">Add</button></span>
                                                     </div>                                                
                                                 </td>
                                             </tr>									
@@ -206,15 +238,17 @@
                                                     </div>
                                                 </td>
                                                 <td>
+                                                    <ul class="list list-unstyled mb-3 mo-ul"></ul>
                                                     <div class="input-group">
                                                         <input type="text" class="form-control" placeholder="Enter Terms of reference..">
-                                                        <span class="input-group-append"><button class="btn btn-outline-info" type="button">Add</button></span>
+                                                        <span class="input-group-append"><button class="btn btn-outline-info task-btn-add" type="button">Add</button></span>
                                                     </div>
                                                 </td>
                                                 <td>
+                                                    <ul class="list list-unstyled mb-3 mo-ul"></ul>
                                                     <div class="input-group">
                                                         <input type="text" class="form-control" placeholder="Enter Impacts..">
-                                                        <span class="input-group-append"><button class="btn btn-outline-info" type="button">Add</button></span>
+                                                        <span class="input-group-append"><button class="btn btn-outline-info task-btn-add" type="button">Add</button></span>
                                                     </div>                                                
                                                 </td>
                                             </tr>										

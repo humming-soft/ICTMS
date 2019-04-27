@@ -390,14 +390,25 @@ class Project extends ICTMS_Controller {
         {
             $message='';
         }
-        $_header["support"] = array("uniform");
-        $_header["page_js"] = "risk";
+        if($session_data['roleid'] == 33){
+            $_header["support"] = array("uniform");
+            $_header["page_js"] = "risk";
 
-        $this->load->view('core/fragments/header',$_header);
-        $this->load->view('core/projects/fragments/main_navbar',$data1);
-        $this->load->view('core/projects/fragments/secondary_navbar');
-        $this->load->view('core/projects/risk');
-        $this->load->view('core/fragments/footer');
+            $this->load->view('core/fragments/header',$_header);
+            $this->load->view('core/projects/fragments/main_navbar',$data1);
+            $this->load->view('core/projects/fragments/secondary_navbar_vendor');
+            $this->load->view('core/projects/risk');
+            $this->load->view('core/fragments/footer');
+        }else{
+            $_header["support"] = array("uniform");
+            $_header["page_js"] = "risk";
+
+            $this->load->view('core/fragments/header',$_header);
+            $this->load->view('core/projects/fragments/main_navbar',$data1);
+            $this->load->view('core/projects/fragments/secondary_navbar');
+            $this->load->view('core/projects/risk');
+            $this->load->view('core/fragments/footer');
+        }
     }
 
     public function download($pid= null){
@@ -633,6 +644,84 @@ class Project extends ICTMS_Controller {
         $this->load->view('core/projects/fragments/main_navbar',$data1);
         $this->load->view('core/projects/fragments/secondary_navbar');
         $this->load->view('core/projects/info_vendor');
+        $this->load->view('core/fragments/footer');
+    }
+
+    public function meeting($pid=null){
+        $session_data = $this->session->userdata('logged_in');
+        $data['username'] =$data1['username'] = $session_data['username'];
+
+        if($this->session->userdata('message'))
+        {
+            $messagehrecord=$this->session->userdata('message');
+            $message=$messagehrecord['message'];
+            $this->session->unset_userdata('message');
+        }
+        else
+        {
+            $message='';
+        }
+        $_header["support"] = array("calender","multiselect","pikadate");
+        $_header["pid"] = "02849";
+        $_header["page"] = "meeting";
+        $_header["page_js"] = "meeting";
+
+        $this->load->view('core/fragments/header',$_header);
+        $this->load->view('core/projects/fragments/main_navbar',$data1);
+        $this->load->view('core/projects/fragments/secondary_navbar_vendor');
+        $this->load->view('core/projects/meeting');
+        $this->load->view('core/fragments/footer');
+    }
+
+    public function collaboration($pid=null){
+        $session_data = $this->session->userdata('logged_in');
+        $data['username'] =$data1['username'] = $session_data['username'];
+
+        if($this->session->userdata('message'))
+        {
+            $messagehrecord=$this->session->userdata('message');
+            $message=$messagehrecord['message'];
+            $this->session->unset_userdata('message');
+        }
+        else
+        {
+            $message='';
+        }
+        $_header["support"] = array("");
+        $_header["pid"] = "02849";
+        $_header["page"] = "collaboration";
+        $_header["page_js"] = "collaboration";
+
+        $this->load->view('core/fragments/header',$_header);
+        $this->load->view('core/projects/fragments/main_navbar',$data1);
+        $this->load->view('core/projects/fragments/secondary_navbar_vendor');
+        $this->load->view('core/projects/collaboration');
+        $this->load->view('core/fragments/footer');
+    }
+
+    public function site_diary($pid=null){
+        $session_data = $this->session->userdata('logged_in');
+        $data['username'] =$data1['username'] = $session_data['username'];
+
+        if($this->session->userdata('message'))
+        {
+            $messagehrecord=$this->session->userdata('message');
+            $message=$messagehrecord['message'];
+            $this->session->unset_userdata('message');
+        }
+        else
+        {
+            $message='';
+        }
+        $_header["support"] = array("");
+        $_header["pid"] = "02849";
+        $_header["page"] = "site_diary";
+        $_header["page_js"] = "site_diary";
+
+        $this->load->view('core/fragments/header',$_header);
+        $this->load->view('core/projects/fragments/main_navbar',$data1);
+        $this->load->view('core/projects/fragments/secondary_navbar_vendor');
+        $this->load->view('core/projects/site_diary');
         $this->load->view('core/fragments/footer');
     }
 }

@@ -9774,6 +9774,7 @@ img.fancytree-icon {
 }
 .fc-unthemed td.fc-today {
     background-color: #e8f5e9;
+    font-weight: 600;
 }
 .fc-highlight {
     background-color: rgba(221, 221, 221, .3);
@@ -10183,6 +10184,9 @@ a[data-goto] {
 .fc-toolbar h2 {
     margin: .30769rem 0;
     font-size: 1.0625rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #0a6ebd;
 }
 .fc-toolbar .fc-left {
     float: left;
@@ -10240,6 +10244,7 @@ a[data-goto] {
 }
 .fc-view-container .fc-view>table .fc-head-container .fc-widget-header {
     border-top: 0;
+    text-transform: uppercase;
 }
 .fc-view-container .fc-view>table .fc-body>tr:first-child>td, .fc-view-container .fc-view>table .fc-body>tr:first-child>th {
     border-top: 0;
@@ -10519,6 +10524,7 @@ a[data-goto] {
 .fc-list-item td {
     transition: all ease-in-out .15s;
 }
+.fc-sun, .fc-sat{background: #fffafa}
 @media screen and (prefers-reduced-motion:reduce) {
     .fc-list-item td {
         transition: none;

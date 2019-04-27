@@ -3201,3 +3201,9 @@ li.mo-li:hover {
 }
 
 .mo-ul li.mo-li:hover .todo-task-buttons{display:block}
+
+.media-list.media-list-linked li.active {
+    z-index: 2;
+    background-color: #dff1ff;
+    border-color: #2196f3;
+}

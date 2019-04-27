@@ -11,7 +11,7 @@
                     <div class="col-sm-12">
                         <div class="card">
                             <div class="card-header header-elements-inline p-3">
-                                <h6 class="card-title text-uppercase"><i class="icon-paragraph-right3 mr-2"></i>Deliverables & Resources</h6>
+                                <h6 class="card-title text-uppercase"><i class="icon-paragraph-right3 mr-2"></i>Activities & Deliverables</h6>
                                 <div class="header-elements">
 									<button type="button" data-toggle="modal" data-target="#gantt-lb" class="btn bg-success"><i class="icon-plus2 mr-1"></i> New Resources</button>
 								</div>
@@ -24,67 +24,74 @@
                                     </div>
                                 </div>
                                 <hr>
-                                <fieldset class="card-body text-right">
+                                <!-- <fieldset class="card-body text-right">
                                     <a href="<?=site_url('projects/02849')?>" class="btn btn-light ml-3">Cancel</a>
                                     <a href="#" class="btn bg-success"><i class="icon-paperplane mr-1"></i> Save</a>
                                     <a href="<?=site_url('projects/02849/maintenance')?>" class="btn bg-blue gx_save">Save And Continue - Maintenance <i class="icon-arrow-right7 ml-1"></i></a>
-                                </fieldset>
-                            </div>
-                            <div class="card-body">
+                                </fieldset> -->
                                 <div class="row m-0">
                                     <div class="col-12 col-md-12 col-lg-12">
+                                        <h6 class="text-uppercase pb-3"><i class="icon-history mr-2"></i>Change Log</h6>
                                         <div class="timed-activities padded">
                                             <div class="timed-activity">
-                                                <div class="ta-date"><span>21st Jan, 2017</span></div>
+                                                <div class="ta-date"><span>21st Apr, 2019</span></div>
                                                 <div class="ta-record-w">
                                                     <div class="ta-record">
                                                         <div class="ta-timestamp"><strong>11:55</strong> am</div>
-                                                        <div class="ta-activity">Uploaded Evidence of Activity for <a href="#">Production of TBM Parts in Malaysia</a></div>
+                                                        <div class="ta-activity">Uploaded Evidence of Activity for <a href="#">Production of TBM Parts in Malaysia.</a></div>
                                                     </div>
                                                     <div class="ta-record">
                                                         <div class="ta-timestamp"><strong>2:34</strong> pm</div>
-                                                        <div class="ta-activity">Updated ICV Calculation for <a href="#">Production of TBM Parts in Malaysia</a></div>
+                                                        <div class="ta-activity">Updated Calculation for <a href="#">Production of TBM Parts in Malaysia.</a></div>
                                                     </div>
                                                     <div class="ta-record">
                                                         <div class="ta-timestamp"><strong>7:12</strong> pm</div>
-                                                        <div class="ta-activity">Status of the project <a href="#">Steel Fibre Reinforced Concrete (SFRC) Tunnel Linings</a> changed from <span class="badge badge-info">PROPOSED</span> to <span class="badge badge-success">APPROVED</span></div>
+                                                        <div class="ta-activity">Status of the project <a href="#">Steel Fibre Reinforced Concrete (SFRC) Tunnel Linings</a> changed from <span class="badge badge-info">PENDING APPROVAL</span> to <span class="badge badge-success">APPROVED</span>.</div>
                                                     </div>
                                                     <div class="ta-record">
                                                         <div class="ta-timestamp"><strong>9:39</strong> pm</div>
-                                                        <div class="ta-activity">Schedule A Approved for <a href="#">Steel Fibre Reinforced Concrete (SFRC) Tunnel Linings</a></div>
+                                                        <div class="ta-activity">Rejected with Comment <b>"Please elaborate the milestone, and simplyfy the activities"</b> by <a href="#">Project Manager.</a> </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="timed-activity">
-                                                <div class="ta-date"><span>3rd Feb, 2017</span></div>
+                                                <div class="ta-date"><span>3rd Apr, 2019</span></div>
                                                 <div class="ta-record-w">
+                                                <div class="ta-record">
+                                                        <div class="ta-timestamp"><strong>9:33</strong> pm</div>
+                                                        <div class="ta-activity">Status changed from <span class="badge badge-dark">NEW</span> to <span class="badge badge-info">PENDING APPROVAL</span>.</div>
+                                                    </div>
                                                     <div class="ta-record">
                                                         <div class="ta-timestamp"><strong>9:32</strong> pm</div>
-                                                        <div class="ta-activity">Updated ICV Calculation for <a href="#">Production of TBM Parts in Malaysia</a></div>
+                                                        <div class="ta-activity">Submitted Work Breakdown Structure for Approval by You.</div>
                                                     </div>
                                                     <div class="ta-record">
                                                         <div class="ta-timestamp"><strong>5:14</strong> pm</div>
-                                                        <div class="ta-activity">TDA <a href="#">Commented</a> on the project <a href="#">Production of TBM Parts in Malaysia</a>
-                                                            category</div>
+                                                        <div class="ta-activity">Updated Start Time to <a href="#">15-Jun-2019</a> and End Time to <a href="#">21-Dec-2019</a> of the Activity 
+                                                            <a href="#">Installing Warning Signs</a> by You.
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="timed-activity">
-                                                <div class="ta-date"><span>21st Jan, 2017</span></div>
+                                                <div class="ta-date"><span>21st Feb, 2019</span></div>
                                                 <div class="ta-record-w">
                                                     <div class="ta-record">
                                                         <div class="ta-timestamp"><strong>11:55</strong> am</div>
-                                                        <div class="ta-activity">Schedule A Submitted for the project <a href="#">Production of TBM Parts in Malaysia</a></div>
+                                                        <div class="ta-activity">Added Activity <a href="#">Installing Warning Signs</a> under MIlestone 
+                                                        <a href="#">Population more aware of the danger of waste dumping</a> by You.
+                                                        </div>
                                                     </div>
                                                     <div class="ta-record">
                                                         <div class="ta-timestamp"><strong>2:34</strong> pm</div>
-                                                        <div class="ta-activity">Added project benefits for<a href="#">Steel Fibre Reinforced Concrete (SFRC) Tunnel Linings</a> 
-                                                            category</div>
+                                                        <div class="ta-activity">Added Milestone <a href="#">Population more aware of the danger of waste dumping</a> under Project 
+                                                        <a href="#">Integrated Labout Market Analysis And Reporting</a> by You.
+                                                        </div>
                                                     </div>
                                                     <div class="ta-record">
                                                         <div class="ta-timestamp"><strong>9:39</strong> pm</div>
-                                                        <div class="ta-activity">Initiated A Project called <a href="#">Steel Fibre Reinforced Concrete (SFRC) Tunnel Linings</a> under Programme 
-                                                        <a href="#">TUNNELING AND UNDERGROUND WORKS (MMC GAMUDA)</a>
+                                                        <div class="ta-activity">Added Milestone <a href="#">Increased capital investment and improved business planning within Local Government is established, including cost of recovery mechanisms</a> 
+                                                        under Project  <a href="#">Integrated Labout Market Analysis And Reporting</a> by You.
                                                         </div>
                                                     </div>
                                                 </div>

@@ -18,12 +18,12 @@
 			<ul class="navbar-nav">
 				<li class="nav-item">
 					<a href="<?=site_url('projects/02849')?>" class="navbar-nav-link active">
-						<i class="icon-stack2 mr-2"></i> Project Overview
+						<i class="icon-briefcase mr-2"></i> Project Overview
 					</a>
 				</li>
 				<li class="nav-item dropdown">
 					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-						<i class="icon-archive mr-2"></i>
+						<i class="icon-box-add mr-2"></i>
 						Implementation
 					</a>
 
@@ -31,7 +31,8 @@
 						<div class="dropdown-header">PROJECT IMPLEMENTATION</div>
 						<a href="<?=site_url('projects/02849/resources')?>" class="dropdown-item"><i class="icon-users"></i>Manage Resources</a>
 						<a href="<?=site_url('projects/02849/gantt')?>" class="dropdown-item"><i class="icon-paragraph-right3"></i>Activities & Deliverables</a>
-						<a href="<?=site_url('projects/02849/risk')?>" class="dropdown-item"><i class="icon-shield-notice"></i>Risk Register</a>
+						<a href="<?=site_url('projects/02849/risk')?>" class="dropdown-item"><i class="icon-shield2"></i>Risk Register</a>
+						<a href="<?=site_url('projects/02849/issues')?>" class="dropdown-item"><i class="icon-shield-notice"></i>Manage Issues</a>
 					</div>
 				</li>
 				<li class="nav-item dropdown">
@@ -42,23 +43,29 @@
 
 					<div class="dropdown-menu">
 						<div class="dropdown-header">PROJECT REPORTING</div>
-						<a href="<?=site_url('projects/02849/logframe')?>" class="dropdown-item"><i class="icon-grid7"></i>Site Diary (Daily Progress Report)</a>
-						<a href="<?=site_url('projects/02849/gantt')?>" class="dropdown-item"><i class="icon-paragraph-right3"></i>Progress Meetings</a>
-						<a href="<?=site_url('projects/02849/gantt')?>" class="dropdown-item"><i class="icon-paragraph-right3"></i>Collaboration</a>
+						<a href="<?=site_url('projects/02849/site-diary')?>" class="dropdown-item"><i class="icon-book"></i>Project Diary (Daily Report)</a>
+						<a href="<?=site_url('projects/02849/meeting')?>" class="dropdown-item"><i class="icon-calendar"></i>Progress Meetings</a>
+						<a href="<?=site_url('projects/02849/collaboration')?>" class="dropdown-item"><i class="icon-bubbles6"></i>Collaboration</a>
 					</div>
 				</li>
+				<li class="nav-item">
+					<a href="<?=site_url('projects/02849/closure')?>" class="navbar-nav-link">
+						<i class="icon-enter6 mr-2"></i>
+						Closure
+					</a>
+				</li>
 				<li class="nav-item dropdown">
-					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
-						<i class="icon-cog3 mr-2"></i>Settings
-						<span class="d-md-none ml-2">Settings</span>
+					<a href="#" class="navbar-nav-link dropdown-toggle"  data-toggle="dropdown" aria-expanded="false">
+						<i class="icon-hammer-wrench mr-2"></i>
+						Maintenance
 					</a>
 
-					<div class="dropdown-menu dropdown-menu-right">
-						<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
-						<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
-						<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
-						<div class="dropdown-divider"></div>
-						<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
+					<div class="dropdown-menu">
+						<div class="dropdown-header">PROJECT MAINTENANCE</div>
+						<a href="<?=site_url('projects/02849/m/gantt')?>" class="dropdown-item"><i class="icon-paragraph-right3"></i>Activities</a>
+						<a href="<?=site_url('projects/02849/m/meeting')?>" class="dropdown-item"><i class="icon-calendar"></i>Progress Meetings</a>
+						<a href="<?=site_url('projects/02849/m/collaboration')?>" class="dropdown-item"><i class="icon-bubbles6"></i>Collaboration</a>
+						<a href="<?=site_url('projects/02849/m/issues')?>" class="dropdown-item"><i class="icon-bug2"></i>Manage Issues (Bugs)</a>
 					</div>
 				</li>
 				<!-- <li class="nav-item">
@@ -103,6 +110,19 @@
 			</ul>
 
 			<ul class="navbar-nav ml-md-auto">
+			<li class="nav-item dropdown">
+					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-cog3 mr-2"></i>Settings
+					</a>
+
+					<div class="dropdown-menu dropdown-menu-right">
+						<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
+						<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
+						<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
+						<div class="dropdown-divider"></div>
+						<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
+					</div>
+				</li>
 				<!-- <li class="nav-item dropdown">
 					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
 						<i class="icon-make-group mr-2"></i>

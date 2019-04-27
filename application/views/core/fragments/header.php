@@ -153,6 +153,10 @@
         <script src="<?=site_url('assets/js/plugins/extensions/jquery_ui/interactions.min.js')?>"></script>
         <script src="<?=site_url('assets/js/plugins/extensions/jquery_ui/touch.min.js')?>"></script>
     <?php } ?>
+    <?php if(in_array("calender",$support)){ ?>
+        <!-- <script src="<?=site_url('assets/js/plugins/ui/moment/moment.min.js')?>"></script> -->
+	    <script src="<?=site_url('assets/js/plugins/ui/fullcalendar/fullcalendar.min.js')?>"></script>
+    <?php } ?>
     <?php if(in_array("slick",$support)){ ?>
     <link href="<?=site_url('assets/js/plugins/ui/slick/slick.css')?>" rel="stylesheet" type="text/css">
     <script src="<?=site_url('assets/js/plugins/ui/slick/slick.min.js')?>"></script>

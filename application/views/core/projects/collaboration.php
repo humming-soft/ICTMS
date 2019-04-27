@@ -126,7 +126,7 @@
                     <div class="col-sm-9">
                         <div class="card">
                             <div class="card-header header-elements-inline p-3">
-                                <h6 class="card-title text-uppercase"><i class="icon-user mr-2"></i>James Alex</h6>
+                                <h6 class="card-title text-uppercase"><i class="icon-user mr-2"></i>MONICA SMITH</h6>
                                 <!-- <div class="header-elements">
 									<button type="button" data-toggle="modal" data-target="#gantt-lb" class="btn bg-success"><i class="icon-plus2 mr-1"></i> New Meeting</button>
 								</div> -->

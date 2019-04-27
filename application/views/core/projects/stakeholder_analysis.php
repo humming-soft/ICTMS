@@ -80,7 +80,7 @@
                                             <tr>
                                                 <th data-toggle="true" class="text-uppercase" width="15%">Stakeholder</th>
                                                 <th data-hide="phone,tablet" class="text-uppercase">Terms of reference (TOR)</th>
-                                                <th data-hide="phone,tablet" class="text-center text-uppercase">Impact</th>
+                                                <th data-hide="phone,tablet" class="text-center text-uppercase">Impact From Project</th>
                                               <!--  <th data-hide="phone,tablet" class="text-center text-uppercase">Negative Impact</th>-->
                                             </tr>
                                         </thead>
@@ -281,7 +281,7 @@
                 <div class="popup-body">
                     <div class="hmwks-slider-w">
                         <div class="hmwks-slide">
-                            <div class="hmwks-content with-gradient text-center">
+                            <div class="hmwks-content with-gradient text-center pb-4">
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="form-group text-left"><label for="">Target Group</label>

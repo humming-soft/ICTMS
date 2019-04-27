@@ -463,11 +463,11 @@ var Js = function() {
 
     return {
         init: function() {
-            _componentWizard();
+            // _componentWizard();
             _componentUniform();
             // _componentDatatableBasic();
-            _componentMxMain(document.getElementById('outlineContainer'),['Node']);
-            _copyToClipboard();
+            // _componentMxMain(document.getElementById('outlineContainer'),['Node']);
+            // _copyToClipboard();
         }
     }
 }();

@@ -15,8 +15,7 @@
                             </div>
                             
                             <div class="card-body">
-                                <form class="wizard-form steps-resources no-loader" action="#" data-fouc>
-                                <h6>Personal data</h6>
+                                <form class="no-loader" action="#">
                                 <fieldset>
                                 <div class="row">
                                     <div class="col-12 col-md-6 col-lg-6">
@@ -251,7 +250,7 @@
                                             <div class="col-12 col-md-12 col-lg-12">
                                                 <div class="card">
                                                     <div class="card-header header-elements-inline p-3">
-                                                        <h6 class="card-title text-center font-weight-semibold">Software</h6>
+                                                        <h6 class="card-title text-center font-weight-semibold">System Software</h6>
                                                         <div class="header-elements">
                                                             <a class="btn btn-success" href="#"><i class="icon-plus2 mr-1"></i> Add</a>
                                                         </div>
@@ -309,49 +308,11 @@
                                     </div>
                                 </div>
                                 </fieldset>
-                                <h6>Your education</h6>
-                                <fieldset>
-                                    <div class="row">
-                                        <div class="col-12 col-sm-12 col-md-10 col-lg-10 mb-3">
-                                            <div id="outlineContainer" style="height:800px;" ></div>
-                                        </div>
-                                        <div class="col-12 col-sm-12 col-md-2 col-lg-2 mb-3">
-                                            <div class="card">
-                                                <div class="card-header bg-transparent header-elements-inline">
-                                                    <span class="text-uppercase font-size-sm font-weight-semibold">Positions</span>
-                                                    <small>Click to Copy</small>
-                                                </div>
-
-                                                <div class="card-body p-0">
-                                                    <div class="list-group list-group-flush">
-                                                        <a href="#" class="list-group-item list-group-item-action no-loader cliptcp">
-                                                            <div class="ctext">Project Manager</div>
-                                                            <span class="ml-auto"><i class="icon-copy4"></i></span>
-                                                        </a>
-                                                        <a href="#" class="list-group-item list-group-item-action no-loader cliptcp">
-                                                            <div class="ctext">Project Director</div>
-                                                            <span class="ml-auto"><i class="icon-copy4"></i></span>
-                                                        </a>
-                                                        <a href="#" class="list-group-item list-group-item-action no-loader cliptcp">
-                                                            <div class="ctext">BI Consultant</div>
-                                                            <span class="ml-auto"><i class="icon-copy4"></i></span>
-                                                        </a>
-                                                        <a href="#" class="list-group-item list-group-item-action no-loader cliptcp">
-                                                            <div class="ctext">Lead Software Developer</div>
-                                                            <span class="ml-auto"><i class="icon-copy4"></i></span>
-                                                        </a>
-                                                        <a href="#" class="list-group-item list-group-item-action no-loader cliptcp">
-                                                            <div class="ctext">Software Developer</div>
-                                                            <span class="ml-auto"><i class="icon-copy4"></i></span>
-                                                        </a>
-                                                        <a href="#" class="list-group-item list-group-item-action no-loader cliptcp">
-                                                            <div class="ctext">QA Specialist</div>
-                                                            <span class="ml-auto"><i class="icon-copy4"></i></span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                    </div>
+                                <hr>
+                                <fieldset class="card-body text-right">
+                                    <a href="<?=site_url('projects/02849')?>" class="btn btn-light ml-3">Cancel</a>
+                                    <a href="#" class="btn bg-success"><i class="icon-paperplane mr-1"></i> Save</a>
+                                    <a href="<?=site_url('projects/02849/risk')?>" class="btn bg-blue gx_save">Save And Continue - Risk Register <i class="icon-arrow-right7 ml-1"></i></a>
                                 </fieldset>
                             </div>
                         </div>

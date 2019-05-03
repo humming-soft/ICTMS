@@ -263,7 +263,7 @@ var Milestones = function() {
                         cost1= 800
                     }
                     else{
-                        cost1= parseInt(cost1) + parseInt(0);
+                        cost1= parseInt(cost1) + parseInt(4000);
                     }
                     const formatter = new Intl.NumberFormat('en-US', {
                         style: 'currency',
@@ -501,7 +501,7 @@ var Milestones = function() {
                         cost2=  parseInt(cost2) + 800;
                     }
                     else{
-                        cost= parseInt(cost) + ( parseInt(0) / parseInt(0) ) ;
+                        cost= parseInt(cost) + 4000;
                     }
                 });
                 var result1= ( parseInt(cost) *  parseInt(perhour) ) +  parseInt(cost2);
@@ -752,6 +752,7 @@ var Milestones = function() {
             {id: 3, text: "OFFICE REQUIREMENTS", parent:null},
             {id: 4, text: "SOFTWARE REQUIREMENTS", parent:null},
             {id: 6, text: "Chief Information Officer", parent:1},
+            {id: 116, text: "Chief Technology Officer", parent:1},
             {id: 7, text: "Program Director", parent:1},
             {id: 8, text: "Project Director", parent:1},
             {id: 9, text: "Service Delivery Director", parent:1},
@@ -759,6 +760,8 @@ var Milestones = function() {
             {id: 11, text: "Insides Sales Manager", parent:1},
             {id: 12, text: "Project Manager", parent:1},
             {id: 13, text: "Business Development Manager", parent:1},
+            {id: 113, text: "Business Analyst", parent:1},
+            {id: 114, text: "Assistant Business Analyst", parent:1},
             {id: 14, text: "IT Supply Chain Manager", parent:1},
             {id: 15, text: "Account Manager", parent:1},
     
@@ -771,6 +774,9 @@ var Milestones = function() {
             {id: 23, text: "Software Development Manager", parent:1},
             {id: 24, text: "Senior Solutions Architect", parent:1},
             {id: 25, text: "Lead Software Developer", parent:1},
+            {id: 125, text: "Extraction Developer", parent:1},
+            {id: 126, text: "Transformation Developer", parent:1},
+            {id: 127, text: "Business Intelligence Developer", parent:1},
             {id: 26, text: "Business Consultant", parent:1},
     
             {id: 27, text: "SAP Consultant", parent:1},
@@ -786,6 +792,7 @@ var Milestones = function() {
     
             {id: 37, text: "Web Designer", parent:1},
             {id: 38, text: "Analyst Programmer", parent:1},
+            {id: 138, text: "Test Manager", parent:1},
             {id: 39, text: "Java Developer", parent:1},
             {id: 40, text: "Programmer", parent:1},
             {id: 41, text: "Billing System Specialist", parent:1},
@@ -805,8 +812,10 @@ var Milestones = function() {
             {id: 54, text: "Billing System Engineer", parent:1},
             {id: 55, text: "Database Administrator", parent:1},
             {id: 56, text: "System Engineer", parent:1},
+            {id: 156, text: "Public Transportation Subject Matter Expert", parent:1},
     
             {id: 57, text: "Technical Consultant", parent:1},
+            {id: 158, text: "Network Engineer", parent:1},
             {id: 58, text: "Network Administrator", parent:1},
             {id: 58, text: "Helpdesk Tech Support(Foreign Language Expertise)", parent:1},
             {id: 60, text: "Help Desk Analyst", parent:1},
@@ -819,11 +828,15 @@ var Milestones = function() {
             {id: 66, text: "Ethernet connection (LAN) OR a wireless adapter (Wi-Fi)", parent:2},
             {id: 67, text: "Processor", parent:2},
             {id: 68, text: "Memory (RAM): Minimum 1 GB", parent:2},
+            {id: 168, text: "Servers", parent:2},
+
     
             {id: 69, text: "Appery.io", parent:4},
             {id: 70, text: "Mobile Roadie", parent:4},
             {id: 71, text: "TheAppBuilder", parent:4},
             {id: 72, text: "AppMachine", parent:4},
+            {id: 171, text: "ETL Tools", parent:4},
+            {id: 172, text: "Analytic Tools", parent:4},
     
             {id: 73, text: "Bookcases", parent:3},
             {id: 74, text: "File cabinets", parent:3},

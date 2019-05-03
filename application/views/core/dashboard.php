@@ -108,8 +108,8 @@
                         <!-- Clean blog layout #1 -->
                         <div class="card project">
                             <div class="card-header header-elements-inline">
-                                <h6 class="card-title font-weight-semibold">
-                                    <a href="#"><i class="icon-box mr-1"></i> INTEGRATED LABOUR MARKET ANALYSIS AND REPORTING</a>
+                                <h6 class="card-title font-weight-semibold text-uppercase">
+                                    <a href="#"><i class="icon-box mr-1"></i> Transport Information Data Exchange (TIDE) </a>
                                 </h6>
                                 <!-- <div class="header-elements">
                                     <span class="badge bg-secondary ml-2">INITIATED</span>

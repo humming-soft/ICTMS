@@ -79,6 +79,7 @@ $route['projects/(:num)/info-vendor'] = 'projects/project/info_vendor/$1';
 $route['projects/(:num)/meeting'] = 'projects/project/meeting/$1';
 $route['projects/(:num)/collaboration'] = 'projects/project/collaboration/$1';
 $route['projects/(:num)/site-diary'] = 'projects/project/site_diary/$1';
+$route['projects/(:num)/issues'] = 'projects/project/issues/$1';
 $route['projects/(:num)/download'] = 'projects/project/download/$1';
 
 $route['projects/(:num)/business'] = 'projects/project/business/$1';

@@ -18,19 +18,19 @@
                                 <div class="row m-0">
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label>Duration of Maintenance:</label>
-                                            <input type="number" class="form-control b-maint" id="num-main" placeholder="Enter Duration of Maintenance...">
+                                            <label>Duration of Maintenance (Year):</label>
+                                            <input type="number" class="form-control b-maint" id="num-main" value="5" placeholder="Enter Duration of Maintenance...">
                                         </div>
                                         <div class="form-group">
                                             <label>% of Cost Equivalent to Main Project/Annum:</label>
                                             <div class="input-group">
-                                                <input type="number" class="form-control b-maint" id="per-main" placeholder="Enter % of Cost Equivalent to Main Project/Annum...">
+                                                <input type="number" class="form-control b-maint" id="per-main" value="20" placeholder="Enter % of Cost Equivalent to Main Project/Annum...">
                                                 <span class="input-group-append">
                                                     <span class="input-group-text">%</span>
                                                 </span>
                                             </div>
                                         </div>
-                                        <div class="main-r font-weight-semibold text-danger"></div>
+                                        <div class="main-r font-weight-semibold text-danger"><div class="main-r font-weight-semibold text-danger">Estimated Maintenance Cost: <b>RM 5,000,000</b></div></div>
                                     </div>
                                     <div class="col-sm-12">
                                     <hr>

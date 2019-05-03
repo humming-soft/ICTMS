@@ -397,7 +397,7 @@ class Project extends ICTMS_Controller {
             $this->load->view('core/fragments/header',$_header);
             $this->load->view('core/projects/fragments/main_navbar',$data1);
             $this->load->view('core/projects/fragments/secondary_navbar_vendor');
-            $this->load->view('core/projects/risk');
+            $this->load->view('core/projects/risk_vendor');
             $this->load->view('core/fragments/footer');
         }else{
             $_header["support"] = array("uniform");
@@ -713,7 +713,7 @@ class Project extends ICTMS_Controller {
         {
             $message='';
         }
-        $_header["support"] = array("");
+        $_header["support"] = array("uniform","noui","pikadate","fancybox");
         $_header["pid"] = "02849";
         $_header["page"] = "site_diary";
         $_header["page_js"] = "site_diary";
@@ -722,6 +722,32 @@ class Project extends ICTMS_Controller {
         $this->load->view('core/projects/fragments/main_navbar',$data1);
         $this->load->view('core/projects/fragments/secondary_navbar_vendor');
         $this->load->view('core/projects/site_diary');
+        $this->load->view('core/fragments/footer');
+    }
+
+    public function issues($pid=null){
+        $session_data = $this->session->userdata('logged_in');
+        $data['username'] =$data1['username'] = $session_data['username'];
+
+        if($this->session->userdata('message'))
+        {
+            $messagehrecord=$this->session->userdata('message');
+            $message=$messagehrecord['message'];
+            $this->session->unset_userdata('message');
+        }
+        else
+        {
+            $message='';
+        }
+        $_header["support"] = array("");
+        $_header["pid"] = "02849";
+        $_header["page"] = "issues";
+        $_header["page_js"] = "issues";
+
+        $this->load->view('core/fragments/header',$_header);
+        $this->load->view('core/projects/fragments/main_navbar',$data1);
+        $this->load->view('core/projects/fragments/secondary_navbar_vendor');
+        $this->load->view('core/projects/issues');
         $this->load->view('core/fragments/footer');
     }
 }

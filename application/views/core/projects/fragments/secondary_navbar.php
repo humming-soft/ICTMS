@@ -1,7 +1,7 @@
 	<div class="page-header page-header-light">
 		<div class="page-header-content p-2">
 			<div class="page-title text-center">
-				<h5 class="text-uppercase">Integrated Labour Market Analysis And Reporting </h5>
+				<h5 class="text-uppercase">Transport Information Data Exchange (TIDE) </h5>
 			</div>
 		</div>
 	</div>	

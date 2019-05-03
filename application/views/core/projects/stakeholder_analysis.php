@@ -25,15 +25,15 @@
                                         <ul class="data-details-list">
                                             <li>
                                                 <div class="data-details-head">Location</div>
-                                                <div class="data-details-des">Federal Territory of Kuala Lumpur</div>
+                                                <div class="data-details-des">Klang Valley</div>
                                             </li>
                                             <li>
                                                 <div class="data-details-head">Sector</div>
-                                                <div class="data-details-des">Information and Communication</div>
+                                                <div class="data-details-des">Transportation & Storage</div>
                                             </li>
                                             <li>
                                                 <div class="data-details-head">Sub-Sector</div>
-                                                <div class="data-details-des">Computer Programming, Consutancy and Related Activites</div>
+                                                <div class="data-details-des">Land Transport and Transport via Pipelines</div>
                                             </li>
                                         </ul>
                                     </div>
@@ -41,15 +41,15 @@
                                         <ul class="data-details-list">
                                             <li>
                                                 <div class="data-details-head">Strategic Thrusts</div>
-                                                <div class="data-details-des">TRUST 5 - Strengtheninig Infrastructure To Support Economic Expansion</div>
+                                                <div class="data-details-des">TRUST 5 - Strengtheninig Infrastructure To Support Economic Expansion.</div>
                                             </li>
                                             <li>
                                                 <div class="data-details-head">Focus Area</div>
-                                                <div class="data-details-des">Focus Area C - Improving Coverage, Quality and Affordability of Digital Infrastructure</div>
+                                                <div class="data-details-des">Focus Area A: Building and Integrated Need Based Transport System.</div>
                                             </li>
                                             <li>
                                                 <div class="data-details-head">Strategy</div>
-                                                <div class="data-details-des">Strengthening Infrastructure For Smart Cities</div>
+                                                <div class="data-details-des">Improving Safety, Efficiency and Service Levels of Transport Operations.</div>
                                             </li>
                                             <li>
                                                 <div class="data-details-head">Outcome</div>
@@ -57,16 +57,8 @@
                                                     <ul class="list list-unstyled mb-0">
                                                         <li>
                                                             <i class="icon-checkmark-circle text-success mr-2"></i>
-                                                            Building an  integrated need-based transport system
-                                                        </li>
-                                                        <li>
-                                                            <i class="icon-checkmark-circle text-success mr-2"></i>
-                                                            Unleashing growth of logistics and enhancing trade facilitation
-                                                        </li>
-                                                        <li>
-                                                            <i class="icon-checkmark-circle text-success mr-2"></i>
-                                                            Continuing the transition to a new water services industry framework
-                                                        </li>
+                                                            Improving Coverage, Quality and Affordability of Digital Infrastructure
+                                                        </li>                                                   
                                                     </ul>
                                                 </div>
                                             </li>
@@ -104,7 +96,7 @@
                                                     <ul class="list list-unstyled mb-3 mo-ul">
                                                         <li class="mo-li">
                                                             <i class="icon-arrow-right5 mr-2"></i>
-                                                            Building an  integrated need-based transport system
+                                                            Defining the Project Vision.
                                                             <div class="todo-task-buttons">
                                                                 <a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a>
                                                                 <a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a>
@@ -112,7 +104,31 @@
                                                         </li>
                                                         <li class="mo-li">
                                                             <i class="icon-arrow-right5 mr-2"></i>
-                                                            Unleashing growth of logistics and enhancing trade facilitation
+                                                            Overseeing the Project Progress.
+                                                            <div class="todo-task-buttons">
+                                                                <a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a>
+                                                                <a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="mo-li">
+                                                            <i class="icon-arrow-right5 mr-2"></i>
+                                                            Anticipating the Target Needs.
+                                                            <div class="todo-task-buttons">
+                                                                <a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a>
+                                                                <a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="mo-li">
+                                                            <i class="icon-arrow-right5 mr-2"></i>
+                                                            Primary Liaison to the Target.
+                                                            <div class="todo-task-buttons">
+                                                                <a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a>
+                                                                <a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="mo-li">
+                                                            <i class="icon-arrow-right5 mr-2"></i>
+                                                            Funding the Project.
                                                             <div class="todo-task-buttons">
                                                                 <a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a>
                                                                 <a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a>
@@ -125,18 +141,10 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <ul class="list list-unstyled mb-3 mo-ul">
+                                                    <ul class="list list-unstyled mb-4 mo-ul">
                                                         <li class="mo-li">
                                                             <i class="icon-arrow-right5 mr-2"></i>
-                                                            Building an  integrated need-based transport system
-                                                            <div class="todo-task-buttons">
-                                                                <a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a>
-                                                                <a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a>
-                                                            </div>
-                                                        </li>
-                                                        <li class="mo-li">
-                                                            <i class="icon-arrow-right5 mr-2"></i>
-                                                            Unleashing growth of logistics and enhancing trade facilitation
+                                                            Centralized Transportation Data Warehouse that facilitates deep analysis and research on various aspects of the eco system.
                                                             <div class="todo-task-buttons">
                                                                 <a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a>
                                                                 <a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a>
@@ -153,7 +161,7 @@
                                                 <td>
                                                     <div class="d-flex align-items-center">
                                                         <div>
-                                                            <a href="#" class="text-default font-weight-semibold">Prasarana</a>
+                                                            <a href="#" class="text-default font-weight-semibold">Public and Land Transportation Agency</a>
                                                             <div class="text-muted font-size-sm">
                                                                 <span class="badge badge-mark border-danger mr-1"></span>
                                                                 Controller
@@ -165,7 +173,7 @@
                                                 <ul class="list list-unstyled mb-3 mo-ul">
                                                         <li class="mo-li">
                                                             <i class="icon-arrow-right5 mr-2"></i>
-                                                            Building an  integrated need-based transport system
+                                                            Appointment of Project Managers.
                                                             <div class="todo-task-buttons">
                                                                 <a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a>
                                                                 <a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a>
@@ -173,7 +181,55 @@
                                                         </li>
                                                         <li class="mo-li">
                                                             <i class="icon-arrow-right5 mr-2"></i>
-                                                            Unleashing growth of logistics and enhancing trade facilitation
+                                                            Provide / Approve Resources.
+                                                            <div class="todo-task-buttons">
+                                                                <a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a>
+                                                                <a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="mo-li">
+                                                            <i class="icon-arrow-right5 mr-2"></i>
+                                                            Defining and verifying the Project Requirements.
+                                                            <div class="todo-task-buttons">
+                                                                <a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a>
+                                                                <a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="mo-li">
+                                                            <i class="icon-arrow-right5 mr-2"></i>
+                                                            Approving the Project Progress.
+                                                            <div class="todo-task-buttons">
+                                                                <a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a>
+                                                                <a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="mo-li">
+                                                            <i class="icon-arrow-right5 mr-2"></i>
+                                                            Approving the Project Deliverables.
+                                                            <div class="todo-task-buttons">
+                                                                <a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a>
+                                                                <a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="mo-li">
+                                                            <i class="icon-arrow-right5 mr-2"></i>
+                                                            Primary Liaison to the Project Owners.
+                                                            <div class="todo-task-buttons">
+                                                                <a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a>
+                                                                <a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="mo-li">
+                                                            <i class="icon-arrow-right5 mr-2"></i>
+                                                            Primary Liaison to the Project Owners.
+                                                            <div class="todo-task-buttons">
+                                                                <a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a>
+                                                                <a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="mo-li">
+                                                            <i class="icon-arrow-right5 mr-2"></i>
+                                                            Manage Project Teams.
                                                             <div class="todo-task-buttons">
                                                                 <a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a>
                                                                 <a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a>
@@ -189,15 +245,7 @@
                                                 <ul class="list list-unstyled mb-3 mo-ul">
                                                         <li class="mo-li">
                                                             <i class="icon-arrow-right5 mr-2"></i>
-                                                            Building an  integrated need-based transport system
-                                                            <div class="todo-task-buttons">
-                                                                <a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a>
-                                                                <a class="task-btn-delete no-loader text-danger" href="javascript:;"><i class="icon-bin"></i></a>
-                                                            </div>
-                                                        </li>
-                                                        <li class="mo-li">
-                                                            <i class="icon-arrow-right5 mr-2"></i>
-                                                            Unleashing growth of logistics and enhancing trade facilitation
+                                                            Crowd Sourcing via Transportation Open API to facilitate the development of Public centric Transportation Mobile Apps
                                                             <div class="todo-task-buttons">
                                                                 <a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a>
                                                                 <a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a>
@@ -230,22 +278,31 @@
                                                 <td width="15%" >
                                                     <div class="d-flex align-items-center">
                                                         <div>
-                                                            <a href="#" class="text-default font-weight-semibold">Indian Community</a>
+                                                            <a href="#" class="text-default font-weight-semibold">Application Developers & Researchers</a>
                                                             <div class="text-muted font-size-sm">
-                                                                Community
+                                                                <span class="badge badge-mark border-success mr-1"></span>
+                                                                Enterprise
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <ul class="list list-unstyled mb-3 mo-ul"></ul>
+                                                    <ul class="list list-unstyled mb-3 mo-ul">
+                                                        <li class="mo-li"><i class="icon-arrow-right5 mr-2"></i>To develop user friendly mobile application using the Transportation Open API.<div class="todo-task-buttons"><a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a><a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a></div></li>
+                                                        <li class="mo-li"><i class="icon-arrow-right5 mr-2"></i>Research on the Transportation Landscape in Malaysia.<div class="todo-task-buttons"><a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a><a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a></div></li>
+                                                    </ul>
                                                     <div class="input-group">
                                                         <input type="text" class="form-control" placeholder="Enter Terms of reference..">
                                                         <span class="input-group-append"><button class="btn btn-outline-info task-btn-add" type="button">Add</button></span>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <ul class="list list-unstyled mb-3 mo-ul"></ul>
+                                                    <ul class="list list-unstyled mb-3 mo-ul">
+                                                        <li class="mo-li"><i class="icon-arrow-right5 mr-2"></i>Smart Travel Planner.<div class="todo-task-buttons"><a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a><a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a></div></li>
+                                                        <li class="mo-li"><i class="icon-arrow-right5 mr-2"></i>On-demand Travel Convenience.<div class="todo-task-buttons"><a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a><a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a></div></li>
+                                                        <li class="mo-li"><i class="icon-arrow-right5 mr-2"></i>Instant Parking Rates, Availability & Location.<div class="todo-task-buttons"><a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a><a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a></div></li>
+                                                        <li class="mo-li"><i class="icon-arrow-right5 mr-2"></i>Convenient Taxi Booking.<div class="todo-task-buttons"><a class="task-btn-edit no-loader" data-target="#taskModal" data-toggle="modal" href="javascript:;"><i class="icon-pencil7"></i></a><a class="task-btn-delete text-danger no-loader" href="javascript:;"><i class="icon-bin"></i></a></div></li>
+                                                    </ul>
                                                     <div class="input-group">
                                                         <input type="text" class="form-control" placeholder="Enter Impacts..">
                                                         <span class="input-group-append"><button class="btn btn-outline-info task-btn-add" type="button">Add</button></span>

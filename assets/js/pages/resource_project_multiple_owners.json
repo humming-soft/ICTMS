@@ -1,9 +1,8 @@
 {
   "data": [
-	{ "id": 1, "text": "Polluters are effectively controlled", "type": "milestone", "start_date": "12-05-2019 00:00", "duration": 290, "progress": 0.0,"owner_id": [7,9,10,8], "parent": 0,"color":"#2196F3"},
-	{ "id": 2, "text": "Population more aware of the danger of waste dumping", "type": "milestone", "start_date": "12-05-2019 00:00", "duration": 142, "progress": 0.0, "owner_id": [12,8,67], "parent": 0,"color":"#2196F3"},
-	{ "id": 3, "text": "Pollution management is given a higher political priority", "type": "milestone", "start_date": "12-05-2019 00:00", "duration": 173, "progress": 0.0, "owner_id": [12,8,67], "parent": 0,"color":"#2196F3"},
-	{ "id": 4, "text": "Increased capital investment and improved business planning within Local Government is established, including cost of recovery mechanisms", "type": "milestone", "start_date": "12-05-2019 00:00", "duration": 300, "progress": 0.0,"owner_id": [33,25,31], "parent": 0,"color":"#2196F3"}
+	{ "id": 1, "text": "Technical Study on Public Transportation Electronic Data Captured by Public Transportation Operators", "type": "milestone", "start_date": "12-05-2019 00:00", "duration": 290, "progress": 0.0,"owner_id": [12,116,113,114,158,138], "parent": 0,"color":"#2196F3"},
+	{ "id": 2, "text": "Design, Supply, Installation, Testing & Commissioning of the ICT Infrastructure ", "type": "milestone", "start_date": "12-05-2019 00:00", "duration": 142, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,65,168,171,172], "parent": 0,"color":"#2196F3"},
+	{ "id": 3, "text": "Public Transportation Analysis", "type": "milestone", "start_date": "12-05-2019 00:00", "duration": 173, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 0,"color":"#2196F3"}
   ],
   "links": [
   ]

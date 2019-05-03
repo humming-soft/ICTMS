@@ -41,31 +41,31 @@
                                                             <tbody>
                                                             <tr class="gradeX">
                                                                 <td>1</td>
-                                                                <td>Project Manager </td>
-                                                                <td> <label> <input type="radio"  value="option1" id="question3" name="man1" class="secrad"> No</label>
-                                                                    <label> <input type="radio" value="option2" checked="" id="question4" name="man1" class="secrad"> Yes </label></td>
-                                                                <td > <select class=" form-control m-b" id="manunit1" style="width: 100%" disabled>
+                                                                <td>Project Manager (x1)</td>
+                                                                <td> <label> <input type="radio"  value="option1" checked="" id="question3" name="man1" class="secrad"> No</label>
+                                                                    <label> <input type="radio" value="option2"  id="question4" name="man1" class="secrad"> Yes </label></td>
+                                                                <td > <select class=" form-control m-b" id="manunit1" style="width: 100%">
                                                                         <option value="1"></option>
-                                                                        <option>Hire</option>
-                                                                        <option>Sub Contract</option>
-                                                                        <option>Outsource</option>
-                                                                    </select></td>
-                                                            </tr>
-                                                            <tr class="gradeX">
-                                                                <td>1</td>
-                                                                <td>Project Director</td>
-                                                                <td> <label> <input type="radio"  value="option1" id="question3" name="man2" class="secrad"> No</label>
-                                                                    <label> <input type="radio" value="option2" checked="" id="question4" name="man2" class="secrad"> Yes </label></td>
-                                                                <td > <select class=" form-control m-b" id="manunit2" style="width: 100%" disabled>
-                                                                        <option value="1"></option>
-                                                                        <option>Hire</option>
+                                                                        <option selected>Hire</option>
                                                                         <option>Sub Contract</option>
                                                                         <option>Outsource</option>
                                                                     </select></td>
                                                             </tr>
                                                             <tr class="gradeX">
                                                                 <td>2</td>
-                                                                <td>BI Consultant </td>
+                                                                <td>Chief Technology Officer (x1)</td>
+                                                                <td> <label> <input type="radio"  value="option1" checked="" id="question3" name="man2" class="secrad"> No</label>
+                                                                    <label> <input type="radio" value="option2" id="question4" name="man2" class="secrad"> Yes </label></td>
+                                                                <td > <select class=" form-control m-b" id="manunit2" style="width: 100%">
+                                                                        <option value="1"></option>
+                                                                        <option>Hire</option>
+                                                                        <option>Sub Contract</option>
+                                                                        <option selected>Outsource</option>
+                                                                    </select></td>
+                                                            </tr>
+                                                            <tr class="gradeX">
+                                                                <td>3</td>
+                                                                <td>Business Analyst (x1)</td>
                                                                 <td> <label> <input type="radio"  value="option1" id="question3" name="man3" class="secrad"> No</label>
                                                                     <label> <input type="radio" value="option2" checked="" id="question4" name="man3" class="secrad"> Yes </label></td>
                                                                 <td > <select class=" form-control m-b" id="manunit3" style="width: 100%" disabled>
@@ -76,32 +76,33 @@
                                                                     </select></td>
                                                             </tr>
                                                             <tr class="gradeX">
-                                                                <td>3</td>
-                                                                <td>Lead Software Developer </td>
-                                                                <td> <label> <input type="radio"  value="option1" id="question3" name="man4" class="secrad"> No</label>
-                                                                    <label> <input type="radio" value="option2" checked="" id="question4" name="man4" class="secrad"> Yes </label></td>
-                                                                <td > <select class=" form-control m-b" id="manunit4" style="width: 100%" disabled>
-                                                                        <option value="1"></option>
-                                                                        <option>Hire</option>
-                                                                        <option>Sub Contract</option>
-                                                                        <option>Outsource</option>
-                                                                    </select></td>
-                                                            </tr>
-                                                            <tr class="gradeX">
                                                                 <td>4</td>
-                                                                <td>Lead Software Developer </td>
-                                                                <td> <label> <input type="radio"  value="option1" id="question3" name="man5" class="secrad"> No</label>
-                                                                    <label> <input type="radio" value="option2" checked="" id="question4" name="man5" class="secrad"> Yes </label></td>
-                                                                <td > <select class=" form-control m-b" id="manunit5" style="width: 100%" disabled>
+                                                                <td>Assistant Business Analysis (x1) </td>
+                                                                <td> <label> <input type="radio"  value="option1" checked=""  id="question3" name="man4" class="secrad"> No</label>
+                                                                    <label> <input type="radio" value="option2" id="question4" name="man4" class="secrad"> Yes </label></td>
+                                                                <td > <select class=" form-control m-b" id="manunit4" style="width: 100%">
                                                                         <option value="1"></option>
                                                                         <option>Hire</option>
                                                                         <option>Sub Contract</option>
-                                                                        <option>Outsource</option>
+                                                                        <option selected>Outsource</option>
                                                                     </select></td>
                                                             </tr>
                                                             <tr class="gradeX">
                                                                 <td>5</td>
-                                                                <td>Software Developer </td>
+                                                                <td>Network Engineer (x1) </td>
+                                                                <td> <label> <input type="radio"  value="option1" checked=""  id="question3" name="man5" class="secrad"> No</label>
+                                                                    <label> <input type="radio" value="option2" id="question4" name="man5" class="secrad"> Yes </label></td>
+                                                                <td > <select class=" form-control m-b" id="manunit5" style="width: 100%">
+                                                                        <option value="1"></option>
+                                                                        <option>Hire</option>
+                                                                        <option>Sub Contract</option>
+                                                                        <option select>Outsource</option>
+                                                                    </select>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="gradeX">
+                                                                <td>6</td>
+                                                                <td>Test Manager (x1)  </td>
                                                                 <td> <label> <input type="radio"  value="option1" id="question3" name="man6" class="secrad"> No</label>
                                                                     <label> <input type="radio" value="option2" checked="" id="question4" name="man6" class="secrad"> Yes </label></td>
                                                                 <td > <select class=" form-control m-b" id="manunit6" style="width: 100%" disabled>
@@ -112,8 +113,44 @@
                                                                     </select></td>
                                                             </tr>
                                                             <tr class="gradeX">
-                                                                <td>6</td>
-                                                                <td>QA Specialist</td>
+                                                                <td>7</td>
+                                                                <td>Lead Developer (x1) </td>
+                                                                <td> <label> <input type="radio"  value="option1" checked="" id="question3" name="man7" class="secrad"> No</label>
+                                                                    <label> <input type="radio" value="option2" id="question4" name="man7" class="secrad"> Yes </label></td>
+                                                                <td > <select class=" form-control m-b" id="manunit7" style="width: 100%">
+                                                                        <option value="1"></option>
+                                                                        <option selected>Hire</option>
+                                                                        <option>Sub Contract</option>
+                                                                        <option>Outsource</option>
+                                                                    </select></td>
+                                                            </tr>
+                                                            <tr class="gradeX">
+                                                                <td>8</td>
+                                                                <td>ETL Developer (x2) </td>
+                                                                <td> <label> <input type="radio"  value="option1" checked=""  id="question3" name="man7" class="secrad"> No</label>
+                                                                    <label> <input type="radio" value="option2" id="question4" name="man7" class="secrad"> Yes </label></td>
+                                                                <td > <select class=" form-control m-b" id="manunit7" style="width: 100%">
+                                                                        <option value="1"></option>
+                                                                        <option>Hire</option>
+                                                                        <option>Sub Contract</option>
+                                                                        <option selected>Outsource</option>
+                                                                    </select></td>
+                                                            </tr>
+                                                            <tr class="gradeX">
+                                                                <td>9</td>
+                                                                <td>Business Intelligence Developer (x2)  </td>
+                                                                <td> <label> <input type="radio"  value="option1" checked="" id="question3" name="man7" class="secrad"> No</label>
+                                                                    <label> <input type="radio" value="option2" id="question4" name="man7" class="secrad"> Yes </label></td>
+                                                                <td > <select class=" form-control m-b" id="manunit7" style="width: 100%">
+                                                                        <option value="1"></option>
+                                                                        <option>Hire</option>
+                                                                        <option>Sub Contract</option>
+                                                                        <option selected>Outsource</option>
+                                                                    </select></td>
+                                                            </tr>
+                                                            <tr class="gradeX">
+                                                                <td>10</td>
+                                                                <td>Public Transportation Subject Matter Experts (x3) </td>
                                                                 <td> <label> <input type="radio"  value="option1" id="question3" name="man7" class="secrad"> No</label>
                                                                     <label> <input type="radio" value="option2" checked="" id="question4" name="man7" class="secrad"> Yes </label></td>
                                                                 <td > <select class=" form-control m-b" id="manunit7" style="width: 100%" disabled>
@@ -126,6 +163,103 @@
                                                             </tbody>
                                                         </table>
 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-6">
+                                        <div class="row">
+                                            <div class="col-12 col-md-12 col-lg-12">
+                                                <div class="card">
+                                                    <div class="card-header header-elements-inline p-3">
+                                                        <h6 class="card-title text-center font-weight-semibold">Hardware Resource</h6>
+                                                        <div class="header-elements">
+                                                            <a class="btn btn-success" href="#"><i class="icon-plus2 mr-1"></i> Add</a>
+                                                        </div>
+                                                    </div>                          
+                                                    <div class="card-body" >
+                                                        <table class="table table-striped table-bordered table-hover " id="editable2" >
+                                                            <thead>
+                                                            <tr>
+                                                                <th><span class="enLabel">No.</span></th>
+                                                                <th width="40%"><span class="enLabel">Resource </span></th>
+                                                                <th><span class="enLabel">Availability</span></th>
+                                                                <th><span class="enLabel">Resolution</span></th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr class="gradeX">
+                                                                <td>1</td>
+                                                                <td> Server (x5)</td>
+                                                                <td> <label> <input type="radio"  value="option1" id="question3" name="hard1" class="secrad"> No</label>
+                                                                    <label> <input type="radio" value="option2" checked="" id="question4" name="hard1" class="secrad"> Yes </label></td>
+                                                                <td > <select class=" form-control m-b" id="unit1" style="width: 100%" disabled>
+                                                                        <option value="1"></option>
+                                                                        <option>Purchase</option>
+                                                                        <option>Lease</option>
+                                                                    </select></td>
+                                                            </tr>
+                                                            <tr class="gradeX">
+                                                                <td>2</td>
+                                                                <td>Storage (x8)</td>
+                                                                <td> <label> <input type="radio"  value="option1" id="question3" name="hard2" class="secrad"> No</label>
+                                                                    <label> <input type="radio" value="option2" checked="" id="question4" name="hard2" class="secrad"> Yes </label></td>
+                                                                <td > <select class=" form-control m-b" id="unit2" style="width: 100%" disabled>
+                                                                        <option value="1"></option>
+                                                                        <option>Purchase</option>
+                                                                        <option>Lease</option>
+                                                                    </select></td>
+                                                            </tr>                                                        
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-12 col-lg-12">
+                                                <div class="card">
+                                                    <div class="card-header header-elements-inline p-3">
+                                                        <h6 class="card-title text-center font-weight-semibold">System Software</h6>
+                                                        <div class="header-elements">
+                                                            <a class="btn btn-success" href="#"><i class="icon-plus2 mr-1"></i> Add</a>
+                                                        </div>
+                                                    </div>                          
+                                                    <div class="card-body">
+                                                        <table class="table table-striped table-bordered table-hover " id="editable3" >
+                                                            <thead>
+                                                            <tr>
+                                                                <th><span class="enLabel">No.</span></th>
+                                                                <th><span class="enLabel">Resource </span></th>
+                                                                <th><span class="enLabel">Availability</span></th>
+                                                                <th><span class="enLabel">Resolution</span></th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr class="gradeX">
+                                                                <td>1</td>
+                                                                <td>ETL Tools (x1)</td>
+                                                                <td> <label> <input type="radio"  value="option1" checked="" id="question3" name="soft1" class="secrad">No </label>
+                                                                    <label> <input type="radio" value="option2" id="question4" name="soft1" class="secrad"> Yes </label></td>
+                                                                <td > <select class=" form-control m-b" id="softunit1" style="width: 100%" >
+                                                                        <option value="1"></option>
+                                                                        <option selected>Purchase</option>
+                                                                        <option>Lease</option>
+                                                                    </select></td>
+                                                            </tr>
+                                                            <tr class="gradeX">
+                                                                <td>2</td>
+                                                                <td>Analyst Tools (x1)</td>
+                                                                <td> <label> <input type="radio"  value="option1" checked="" id="question3" name="soft2" class="secrad"> No</label>
+                                                                    <label> <input type="radio" value="option2" id="question4" name="soft2" class="secrad"> Yes </label></td>
+                                                                <td > <select class=" form-control m-b" id="softunit2" style="width: 100%" >
+                                                                        <option value="1"></option>
+                                                                        <option selected>Purchase</option>
+                                                                        <option>Lease</option>
+                                                                    </select></td>
+                                                            </tr>
+                                                       
+                                                            </tbody>
+                                                        </table>
                                                     </div>
                                                 </div>
                                             </div>
@@ -176,124 +310,6 @@
                                                                 <td> <label> <input type="radio"  value="option1" id="question3" name="off3" class="secrad"> No</label>
                                                                     <label> <input type="radio" value="option2" checked="" id="question4" name="off3" class="secrad"> Yes </label></td>
                                                                 <td > <select class=" form-control m-b" id="offunit3" style="width: 100%" disabled>
-                                                                        <option value="1"></option>
-                                                                        <option>Purchase</option>
-                                                                        <option>Lease</option>
-                                                                    </select></td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6 col-lg-6">
-                                        <div class="row">
-                                            <div class="col-12 col-md-12 col-lg-12">
-                                                <div class="card">
-                                                    <div class="card-header header-elements-inline p-3">
-                                                        <h6 class="card-title text-center font-weight-semibold">Hardware Resource</h6>
-                                                        <div class="header-elements">
-                                                            <a class="btn btn-success" href="#"><i class="icon-plus2 mr-1"></i> Add</a>
-                                                        </div>
-                                                    </div>                          
-                                                    <div class="card-body" style="min-height:404px;">
-                                                        <table class="table table-striped table-bordered table-hover " id="editable2" >
-                                                            <thead>
-                                                            <tr>
-                                                                <th><span class="enLabel">No.</span></th>
-                                                                <th width="40%"><span class="enLabel">Resource </span></th>
-                                                                <th><span class="enLabel">Availability</span></th>
-                                                                <th><span class="enLabel">Resolution</span></th>
-                                                            </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                            <tr class="gradeX">
-                                                                <td>1</td>
-                                                                <td> Processor</td>
-                                                                <td> <label> <input type="radio"  value="option1" id="question3" name="hard1" class="secrad"> No</label>
-                                                                    <label> <input type="radio" value="option2" checked="" id="question4" name="hard1" class="secrad"> Yes </label></td>
-                                                                <td > <select class=" form-control m-b" id="unit1" style="width: 100%" disabled>
-                                                                        <option value="1"></option>
-                                                                        <option>Purchase</option>
-                                                                        <option>Lease</option>
-                                                                    </select></td>
-                                                            </tr>
-                                                            <tr class="gradeX">
-                                                                <td>2</td>
-                                                                <td>Ethernet connection (LAN) OR a wireless adapter (Wi-Fi)</td>
-                                                                <td> <label> <input type="radio"  value="option1" id="question3" name="hard2" class="secrad"> No</label>
-                                                                    <label> <input type="radio" value="option2" checked="" id="question4" name="hard2" class="secrad"> Yes </label></td>
-                                                                <td > <select class=" form-control m-b" id="unit2" style="width: 100%" disabled>
-                                                                        <option value="1"></option>
-                                                                        <option>Purchase</option>
-                                                                        <option>Lease</option>
-                                                                    </select></td>
-                                                            </tr>
-                                                            <tr class="gradeX">
-                                                                <td>3</td>
-                                                                <td>Hard Drive: Minimum 32 GB</td>
-                                                                <td> <label> <input type="radio"  value="option1" id="question3" name="hard3" class="secrad"> No</label>
-                                                                    <label> <input type="radio" value="option2" checked="" id="question4" name="hard3" class="secrad">  Yes </label></td>
-                                                                <td > <select class=" form-control m-b" id="unit3" style="width: 100%" disabled>
-                                                                        <option value="1"></option>
-                                                                        <option>Purchase</option>
-                                                                        <option>Lease</option>
-                                                                    </select></td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-12 col-lg-12">
-                                                <div class="card">
-                                                    <div class="card-header header-elements-inline p-3">
-                                                        <h6 class="card-title text-center font-weight-semibold">System Software</h6>
-                                                        <div class="header-elements">
-                                                            <a class="btn btn-success" href="#"><i class="icon-plus2 mr-1"></i> Add</a>
-                                                        </div>
-                                                    </div>                          
-                                                    <div class="card-body">
-                                                        <table class="table table-striped table-bordered table-hover " id="editable3" >
-                                                            <thead>
-                                                            <tr>
-                                                                <th><span class="enLabel">No.</span></th>
-                                                                <th><span class="enLabel">Resource </span></th>
-                                                                <th><span class="enLabel">Availability</span></th>
-                                                                <th><span class="enLabel">Resolution</span></th>
-                                                            </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                            <tr class="gradeX">
-                                                                <td>1</td>
-                                                                <td>Appery.io</td>
-                                                                <td> <label> <input type="radio"  value="option1" id="question3" name="soft1" class="secrad">No </label>
-                                                                    <label> <input type="radio" value="option2" checked="" id="question4" name="soft1" class="secrad"> Yes </label></td>
-                                                                <td > <select class=" form-control m-b" id="softunit1" style="width: 100%" disabled>
-                                                                        <option value="1"></option>
-                                                                        <option>Purchase</option>
-                                                                        <option>Lease</option>
-                                                                    </select></td>
-                                                            </tr>
-                                                            <tr class="gradeX">
-                                                                <td>1</td>
-                                                                <td>Mobile Roadie</td>
-                                                                <td> <label> <input type="radio"  value="option1" id="question3" name="soft2" class="secrad"> No</label>
-                                                                    <label> <input type="radio" value="option2" checked="" id="question4" name="soft2" class="secrad"> Yes </label></td>
-                                                                <td > <select class=" form-control m-b" id="softunit2" style="width: 100%" disabled>
-                                                                        <option value="1"></option>
-                                                                        <option>Purchase</option>
-                                                                        <option>Lease</option>
-                                                                    </select></td>
-                                                            </tr>
-                                                            <tr class="gradeX">
-                                                                <td>1</td>
-                                                                <td>TheAppBuilder</td>
-                                                                <td> <label> <input type="radio"  value="option1" id="question3" name="soft3" class="secrad"> No</label>
-                                                                    <label> <input type="radio" value="option2" checked="" id="question4" name="soft3" class="secrad"> Yes </label></td>
-                                                                <td > <select class=" form-control m-b" id="softunit3" style="width: 100%" disabled>
                                                                         <option value="1"></option>
                                                                         <option>Purchase</option>
                                                                         <option>Lease</option>

@@ -248,11 +248,11 @@
                                                     <tbody>
                                                         <tr>
                                                             <td class="font-weight-semibold" width="25%">Project Name:</td>
-                                                            <td class="text-left">Integrated Labour Market Analysis And Reporting</td>
+                                                            <td class="text-left">Transport Information Data Exchange (TIDE)</td>
                                                         </tr>
                                                         <tr>
                                                             <td class="font-weight-semibold">Date Initiated:</td>
-                                                            <td class="text-left">12-DEC-2018</td>
+                                                            <td class="text-left">19-APR-2019</td>
                                                         </tr>
                                                         <tr>
                                                         <td class="font-weight-semibold">Status:</td>
@@ -273,6 +273,13 @@
                                                             <td class="text-left">Ministry Of Transport</td>
                                                         </tr>
                                                         <tr>
+                                                            <td colspan="3">
+                                                                <ul class="list-inline mb-0">
+                                                                    <li class="list-inline-item float-right"><a href="<?=site_url('projects/02849/org')?>"><i class="icon-pencil5 mr-1"></i> Edit</a></li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr style="background-color: #f6f6f6;" class="border-top-1 border-light-gray">
                                                             <td class="font-weight-semibold va-top">Project Director:</td>
                                                             <td class="text-left">
                                                                     <p>Dato' Zailani Safari </p>
@@ -280,7 +287,7 @@
                                                                     <p>Technology Depository Agency (TDA) MOF</p>
                                                             </td>
                                                         </tr>
-                                                        <tr>
+                                                        <tr style="background-color: #f6f6f6;" class="border-bottom-1 border-light-gray">
                                                             <td class="font-weight-semibold va-top">Project Manager:</td>
                                                             <td class="text-left">
                                                                     <p>Sharol Jambari </p>
@@ -289,13 +296,15 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
+                                                            <td class="font-weight-semibold va-top">Project Controller:</td>
+                                                            <td class="text-left">
+                                                                    <p>Public and Land Transportation Agency </p>                                                                 
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
                                                             <td class="font-weight-semibold va-top">Project Background:</td>
-                                                            <td class="text-left">Business problem that is required to be resolved or an opportunity that is required to be created that will enhance or bring benefit to the organization.
-                                                                In January 2018 a mandate was issued by the Ministry of Finance to Ministries. <br>
-
-                                                                1. Agencies and Government owned companies that are involved in government procurement. <br>
-                                                                2. Agencies and Government owned companies that are involved in government procurement. <br>
-                                                                3. Agencies and Government owned companies that are involved in government procurement. <br>
+                                                            <td class="text-left">An Interactive Streaming Data Platform that captures and analyzes data from various Public Transport Operators and 
+                                                                Authorities to build insights that will help improve Public Transport Performance, Productivity and Profitability.
                                                             </td>
                                                         </tr>
                                                     </tbody>
@@ -304,17 +313,25 @@
                                                 <table class="table table-borderless table-xs my-2">
                                                     <tbody>
                                                         <tr>
-                                                            <td class="font-weight-semibold" width="25%">Estimated Project Cost:</td>
-                                                            <td class="text-left">RM 830,646,123</td>
+                                                            <td class="font-weight-semibold" width="25%">Location:</td>
+                                                            <td class="text-left">Klang Valley</td>
                                                         </tr>
                                                         <tr>
                                                         <tr>
-                                                            <td class="font-weight-semibold">Anticipated Start Date:</td>
-                                                            <td class="text-left">03-APR-2019</td>
+                                                            <td class="font-weight-semibold">Category:</td>
+                                                            <td class="text-left text-success"><span class="badge bg-primary">NEW</span></td>
                                                         </tr>
                                                         <tr>
-                                                            <td class="font-weight-semibold">Anticipated End Date:</td>
-                                                            <td class="text-left">27-JAN-2021</td>
+                                                            <td class="font-weight-semibold">Sector:</td>
+                                                            <td class="text-left">Transportation & Storage</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="font-weight-semibold">Sub-Sector:</td>
+                                                            <td class="text-left">Land Transport and Transport via Pipelines</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="font-weight-semibold">Planned Start Date:</td>
+                                                            <td class="text-left">02-MAY-2020</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -328,11 +345,19 @@
                                                         <tr>
                                                         <tr>
                                                             <td class="font-weight-semibold va-top">Strategic Thrusts:</td>
-                                                            <td class="text-left">THRUST 5 - Strengthening infrastructure to support economic expansion</td>
+                                                            <td class="text-left">THRUST 5 - Strengthening Infrastructure to Support Economic Expansion.</td>
                                                         </tr>
                                                         <tr>
                                                             <td class="font-weight-semibold va-top">Focus Area:</td>
-                                                            <td class="text-left">Public transport capital share in GKL/KV</td>
+                                                            <td class="text-left">Focus Area A: Building and Integrated Need Based Transport System.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="font-weight-semibold va-top">Strategy:</td>
+                                                            <td class="text-left">Improving Safety, Efficiency and Service Levels of Transport Operations.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="font-weight-semibold va-top">Outcomes:</td>
+                                                            <td class="text-left">Improving Coverage, Quality and Affordability of Digital Infrastructure.</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>

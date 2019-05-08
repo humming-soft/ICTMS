@@ -1,6 +1,24 @@
 var Milestones = function() {
 
      var _wbs = function() {
+        // gantt.templates.scale_cell_class = function (date) {
+        //     if (date.getDay() == 0 || date.getDay() == 6) {
+        //         return "weekend";
+        //     }
+        // };
+        // gantt.templates.task_cell_class = function (item, date) {
+        //     if (date.getDay() == 0 || date.getDay() == 6) {
+        //         return "weekend";
+        //     }
+        // };
+    
+        gantt.templates.rightside_text = function (start, end, task) {
+            if (task.type == gantt.config.types.milestone) {
+                return task.text;
+            }
+            return "";
+        };
+    
         gantt.config.columns = [
             {name: "text", tree: true, width: 170, resize: true},
             {name: "start_date", align: "center", width: 100, resize: true},
@@ -517,7 +535,18 @@ var Milestones = function() {
             },
             {name: "add", width: 30}
         ];
+        var date_to_str = gantt.date.date_to_str(gantt.config.task_date);
+        var today = new Date();
+        gantt.addMarker({ start_date: today, css: "today", text: "Today",  title:date_to_str( today)});
+        var start = new Date(2019, 5, 12);
+        gantt.addMarker({
+            start_date: start,
+            css: "status_line",
+            text: "Start project",
+            title:"Start project: "+ date_to_str(start)
+        });
 
+    
         /* CUSTOM LIGHTBOX : START */
 
         var taskId = null;
@@ -672,13 +701,51 @@ var Milestones = function() {
         };
 
     
-        gantt.locale.labels.section_owner = "Resources";
-        gantt.config.lightbox.sections = [
-            {name: "description", height: 38, map_to: "text", type: "textarea", focus: true},
-            //{name: "owner", height: 22, map_to: "owner_id", type: "select", options: gantt.serverList("people")},
-            {name:"owner",height:60, type:"multiselect", options:gantt.serverList("people"), map_to:"owner_id", unassigned_value:5 },
-            {name: "time", type: "duration", map_to: "auto"}
-        ];
+        // gantt.locale.labels.section_owner = "Resources";
+        // gantt.config.lightbox.sections = [
+        //     {name: "description", height: 38, map_to: "text", type: "textarea", focus: true},
+        //     //{name: "owner", height: 22, map_to: "owner_id", type: "select", options: gantt.serverList("people")},
+        //     {name:"owner",height:60, type:"multiselect", options:gantt.serverList("people"), map_to:"owner_id", unassigned_value:5 },
+        //     {name: "time", type: "duration", map_to: "auto"}
+        // ];
+    
+        // gantt.config.resource_store = "resource";
+        // gantt.config.resource_property = "owner_id";
+        // gantt.config.order_branch = true;
+        // gantt.config.open_tree_initially = true;
+        // gantt.config.layout = {
+        //     css: "gantt_container",
+        //     rows: [
+        //         {
+        //             cols: [
+        //                 {view: "grid", group:"grids", scrollY: "scrollVer"},
+        //                 {resizer: true, width: 1},
+        //                 {view: "timeline", scrollX: "scrollHor", scrollY: "scrollVer"},
+        //                 {view: "scrollbar", id: "scrollVer", group:"vertical"}
+        //             ],
+        //             gravity:2
+        //         },
+        //         {resizer: true, width: 1},
+        //         {
+        //             config: resourceConfig,
+        //             cols: [
+        //                 {view: "resourceGrid", group:"grids", width: 435, scrollY: "resourceVScroll" },
+        //                 {resizer: true, width: 1},
+        //                 {view: "resourceTimeline", scrollX: "scrollHor", scrollY: "resourceVScroll"},
+        //                 {view: "scrollbar", id: "resourceVScroll", group:"vertical"}
+        //             ],
+        //             gravity:1
+        //         },
+        //         {view: "scrollbar", id: "scrollHor"}
+        //     ]
+        // };
+
+        gantt.locale.labels.section_owner = "Owner";
+        // gantt.config.lightbox.sections = [
+        //     {name: "description", height: 38, map_to: "text", type: "textarea", focus: true},
+        //     {name: "owner", height: 22, map_to: "owner_id", type: "select", options: gantt.serverList("people")},
+        //     {name: "time", type: "duration", map_to: "auto"}
+        // ];
     
         gantt.config.resource_store = "resource";
         gantt.config.resource_property = "owner_id";

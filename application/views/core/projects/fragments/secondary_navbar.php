@@ -23,35 +23,47 @@
 				</li>
 				<li class="nav-item">
 					<a href="<?=site_url('projects/02849')?>" class="navbar-nav-link active">
-						<i class="icon-stack2 mr-2"></i> Overview
+						<i class="icon-stack2 mr-2"></i> Project Overview
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="<?=site_url('projects/02849/stakeholder-analysis')?>" class="navbar-nav-link">
+						<i class="icon-people mr-2"></i> Stakeholder Analysis
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="<?=site_url('projects/02849/prob-analysis')?>" class="navbar-nav-link">
+						<i class="icon-tree7 mr-2"></i> Problem Analysis
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="<?=site_url('projects/02849/obj-analysis')?>" class="navbar-nav-link">
+						<i class="icon-list2 mr-2"></i> Objective Analysis
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="<?=site_url('projects/02849/stat-analysis')?>" class="navbar-nav-link">
+						<i class="icon-strategy mr-2"></i> Strategic Analysis
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="<?=site_url('projects/02849/logframe')?>" class="navbar-nav-link">
+						<i class="icon-grid7 mr-2"></i> Logframe (LFM)
 					</a>
 				</li>
 				<li class="nav-item dropdown">
 					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-						<i class="icon-archive mr-2"></i>
-						Initiation
+					<i class="icon-menu mr-2"></i> more
 					</a>
 
 					<div class="dropdown-menu">
-						<div class="dropdown-header">PROJECT INITIATION (LFA)</div>
-						<a href="<?=site_url('projects/02849/stakeholder-analysis')?>" class="dropdown-item"><i class="icon-people"></i> Stakeholder Analysis</a>
-						<a href="<?=site_url('projects/02849/prob-analysis')?>" class="dropdown-item"><i class="icon-tree7"></i> Problem Analysis</a>
-						<a href="<?=site_url('projects/02849/obj-analysis')?>" class="dropdown-item"><i class="icon-list2"></i> Objective Analysis</a>
-						<a href="<?=site_url('projects/02849/stat-analysis')?>" class="dropdown-item"><i class="icon-strategy"></i> Strategic Analysis</a>
-					</div>
-				</li>
-				<li class="nav-item dropdown">
-					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-						<i class="icon-clipboard3 mr-2"></i>
-						Planning
-					</a>
-
-					<div class="dropdown-menu">
-						<div class="dropdown-header">PROJECT PLANNING (LFM)</div>
-						<a href="<?=site_url('projects/02849/logframe')?>" class="dropdown-item"><i class="icon-grid7"></i>Logframe</a>
 						<a href="<?=site_url('projects/02849/gantt')?>" class="dropdown-item"><i class="icon-paragraph-right3"></i>Activities & Deliverables</a>
 						<a href="<?=site_url('projects/02849/resources')?>" class="dropdown-item"><i class="icon-users"></i>Resources</a>
 						<a href="<?=site_url('projects/02849/risk')?>" class="dropdown-item"><i class="icon-shield-notice"></i>Risk Register</a>
+						<div class="dropdown-header">ICT Project Approval Phase</div>
+						<a href="<?=site_url('projects/02849/approval')?>" class="dropdown-item"><i class="icon-checkbox-checked"></i>EPU Approval</a>
+						<a href="<?=site_url('projects/02849/architecture')?>" class="dropdown-item"><i class="icon-file-presentation"></i>Architectures</a>
+						<a href="<?=site_url('projects/02849/approval-stage2')?>" class="dropdown-item"><i class="icon-checkmark-circle"></i>JPICT/JTISA Approval</a>
 					</div>
 				</li>
 				<!-- <li class="nav-item">

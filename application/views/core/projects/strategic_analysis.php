@@ -1,5 +1,16 @@
 <div class="page-content pt-0">
     <div class="content-wrapper">
+        <div class="page-header " style="border-left: 1px solid #ddd; border-right: 1px solid #ddd; margin-bottom: 0;">
+            <div class="page-header-content header-elements-md-inline">
+                <div class="page-title">
+                    <div class="breadcrumb mt-1">
+                        <a href="<?=site_url('dashboard')?>" class="breadcrumb-item py-0 text-primary"><i class="icon-home2"></i></a>
+                        <a href="<?=site_url('projects/02849')?>" class="breadcrumb-item py-0 text-primary">Transport Information Data Exchange (TIDE)</a>
+                        <span class="breadcrumb-item py-0 active">Strategic Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     <!-- Content area -->
     <div class="content">
         <!-- Inner container -->
@@ -35,7 +46,7 @@
                                                         </div>
                                                         <ul class="data-details-list sortable-list">
                                                             <li>
-                                                                <div class="data-details-head item" style="width:70%"><i class="icon-move mr-2"></i> OUTPUT 01 - The quality of solid waste dumped into the river is reduced.</div>
+                                                                <div class="data-details-head item" style="width:70%"><i class="icon-move mr-2"></i> OUTPUT 01 - An Integrated Transportation System is in Place.</div>
                                                                 <div class="data-details-des" style="width:30%">
                                                                     <div class="form-group mb-0">
                                                                         <div class="form-check form-check-inline">
@@ -47,14 +58,14 @@
 
                                                                         <div class="form-check form-check-inline">
                                                                             <label class="form-check-label">
-                                                                                <input type="radio" name="p_priority1" class="form-input-styled" data-fouc>
+                                                                                <input type="radio" name="p_priority1" class="form-input-styled" checked data-fouc>
                                                                                 Medium
                                                                             </label>
                                                                         </div>
 
                                                                         <div class="form-check form-check-inline">
                                                                             <label class="form-check-label">
-                                                                                <input type="radio" name="p_priority1" class="form-input-styled" checked data-fouc>
+                                                                                <input type="radio" name="p_priority1" class="form-input-styled" data-fouc>
                                                                                 Low
                                                                             </label>
                                                                         </div>
@@ -62,7 +73,7 @@
                                                                 </div>
                                                             </li>
                                                             <li>
-                                                                <div class="data-details-head item" style="width:70%"><i class="icon-move mr-2"></i> OUTPUT 02 - No. of households and factories discharging wastewater directly into the river is reduced.</div>
+                                                                <div class="data-details-head item" style="width:70%"><i class="icon-move mr-2"></i> OUTPUT 02 - An effective Public Transportation Scheduling and Control System is in Place.</div>
                                                                 <div class="data-details-des" style="width:30%">
                                                                     <div class="form-group mb-0">
                                                                         <div class="form-check form-check-inline">
@@ -89,34 +100,6 @@
                                                                     </div>
                                                                 </div>
                                                             </li>
-                                                            <li>
-                                                                <div class="data-details-head item" style="width:70%"><i class="icon-move mr-2"></i> OUTPUT 03 - Wastewater treatment meets environmental standards</div>
-                                                                <div class="data-details-des" style="width:30%">
-                                                                    <div class="form-group mb-0">
-                                                                        <div class="form-check form-check-inline">
-                                                                            <label class="form-check-label">
-                                                                                <input type="radio" name="p_priority3" class="form-input-styled" checked data-fouc>
-                                                                                High
-                                                                            </label>
-                                                                        </div>
-
-                                                                        <div class="form-check form-check-inline">
-                                                                            <label class="form-check-label">
-                                                                                <input type="radio" name="p_priority3" class="form-input-styled" data-fouc>
-                                                                                Medium
-                                                                            </label>
-                                                                        </div>
-
-
-                                                                        <div class="form-check form-check-inline">
-                                                                            <label class="form-check-label">
-                                                                                <input type="radio" name="p_priority3" class="form-input-styled" data-fouc>
-                                                                                Low
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
                                                         </ul>
                                                         <hr>
                                                         <div class="row">
@@ -137,7 +120,7 @@
                                                                     <div class="col-12 col-md-4 col-lg-4">
                                                                         <div class="card">
                                                                             <div class="card-header p-3 text-center">
-                                                                                <h6 class="card-title text-uppercase"> Waste Strategy</h6>
+                                                                                <h6 class="card-title text-uppercase"> Integrated Transportation System</h6>
                                                                                 <small><i class="icon-point-up mr-1"></i><b>Drag and Drop output(s) from above list</b></small>
                                                                             </div>                                                                   
                                                                             <div class="card-body">
@@ -149,7 +132,7 @@
                                                                     <div class="col-12 col-md-4 col-lg-4">
                                                                         <div class="card">
                                                                             <div class="card-header p-3 text-center">
-                                                                                <h6 class="card-title text-uppercase"> Wastewater Strategy</h6>
+                                                                                <h6 class="card-title text-uppercase"> Effective Public Transportation Scheduling and Control System</h6>
                                                                                 <small><i class="icon-point-up mr-1"></i><b>Drag and Drop output(s) from above list</b></small>
                                                                             </div>                                                                
                                                                             <div class="card-body">
@@ -185,7 +168,7 @@
                                                                     <div class="card">
                                                                         <div class="card-header">
                                                                             <h5 class="card-title">
-                                                                                <a class="text-primary no-loader" data-toggle="collapse" href="#collapsible-control-right-group3" aria-expanded="true"><strong>STRATEGY 01 : WASTE STRATEGY </strong></a>
+                                                                                <a class="text-primary no-loader text-uppercase" data-toggle="collapse" href="#collapsible-control-right-group3" aria-expanded="true"><strong>STRATEGY 01 : Integrated Transportation System </strong></a>
                                                                             </h5>
                                                                         </div>
 
@@ -202,7 +185,7 @@
                                                                                         <tr>
                                                                                             <td class="va-top">
                                                                                                 <div class="strategy-list pt-2">
-                                                                                                    <div class="data-details-head selected" style="width:100%">OUTPUT 01 - The quality of solid waste dumped into the river is reduced.</div>
+                                                                                                    <div class="data-details-head selected" style="width:100%">OUTPUT 01 - An Integrated Transportation System is in Place.</div>
                                                                                                 </div>
                                                                                             </td>
                                                                                             <td class="p-0">  
@@ -501,7 +484,7 @@
                                                                     <div class="card">
                                                                         <div class="card-header">
                                                                             <h5 class="card-title">
-                                                                                <a class="text-primary no-loader" data-toggle="collapse" href="#collapsible-control-right-group2" aria-expanded="false"><strong>STRATEGY 02 : WASTEWATER STRATEGY</strong></a>
+                                                                                <a class="text-primary no-loader text-uppercase" data-toggle="collapse" href="#collapsible-control-right-group2" aria-expanded="false"><strong>STRATEGY 02 : Effective Public Transportation Scheduling and Control System</strong></a>
                                                                             </h5>
                                                                         </div>
 
@@ -518,8 +501,7 @@
                                                                                         <tr>
                                                                                             <td class="va-top">
                                                                                                 <div class="strategy-list pt-2">
-                                                                                                    <div class="data-details-head selected" style="width: auto;"> OUTPUT 02 - No. of households and factories discharging wastewater directly into the river is reduced.</div>
-                                                                                                    <div class="data-details-head selected" style="width: auto;"> OUTPUT 03 - Wastewater treatment meets environmental standards</div>
+                                                                                                    <div class="data-details-head selected" style="width: auto;"> OUTPUT 02 - An effective Public Transportation Scheduling and Control System is in Place.</div>
                                                                                                 </div>
                                                                                             </td>
                                                                                             <td class="p-0">  
@@ -848,11 +830,11 @@
                                                                                 </div>
                                                                                 <div class="media-body">
                                                                                     <a href="#" class="text-default align-middle" data-toggle="collapse" data-target="#james" aria-expanded="true">
-                                                                                        <div class="media-title font-weight-semibold text-primary"><h4>STRATEGY 01 : WASTE STRATEGY <i class="icon-arrow-down12 ml-1"></i></h4></div>
+                                                                                        <div class="media-title font-weight-semibold text-primary text-uppercase"><h4>STRATEGY 01 : Integrated Transportation System  <i class="icon-arrow-down12 ml-1"></i></h4></div>
                                                                                     </a>	
                                                                                 </div>
                                                                                 <div class="align-self-center ml-3">
-                                                                                    <h3 class="text-center text-success mb-0">63.40%</h3>	
+                                                                                    <h3 class="text-center text-success mb-0">78.40%</h3>	
                                                                                     <div class="font-size-sm text-center text-muted line-height-1">Effective</div>							
                                                                                 </div>
                                                                             </div>
@@ -923,11 +905,11 @@
                                                                                 </div>
                                                                                 <div class="media-body">
                                                                                     <a href="#" class="text-default align-middle" data-toggle="collapse" data-target="#james2" aria-expanded="true">
-                                                                                        <div class="media-title font-weight-semibold text-primary"><h4>STRATEGY 02 : WASTEWATER STRATEGY <i class="icon-arrow-down12 ml-1"></i></h4></div>
+                                                                                        <div class="media-title font-weight-semibold text-primary text-uppercase"><h4>STRATEGY 02 : Effective Public Transportation Scheduling and Control System <i class="icon-arrow-down12 ml-1"></i></h4></div>
                                                                                     </a>	
                                                                                 </div>
                                                                                 <div class="align-self-center ml-3">
-                                                                                    <h3 class="text-center text-success mb-0">89.21%</h3>	
+                                                                                    <h3 class="text-center text-success mb-0">93.21%</h3>	
                                                                                     <div class="font-size-sm text-center text-muted line-height-1">Effective</div>							
                                                                                 </div>
                                                                             </div>

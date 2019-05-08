@@ -1,5 +1,16 @@
 <div class="page-content pt-0">
     <div class="content-wrapper">
+        <div class="page-header " style="border-left: 1px solid #ddd; border-right: 1px solid #ddd; margin-bottom: 0;">
+            <div class="page-header-content header-elements-md-inline">
+                <div class="page-title">
+                    <div class="breadcrumb mt-1">
+                        <a href="<?=site_url('dashboard')?>" class="breadcrumb-item py-0 text-primary"><i class="icon-home2"></i></a>
+                        <a href="<?=site_url('dashboard')?>" class="breadcrumb-item py-0 text-primary">Transport Information Data Exchange (TIDE)</a>
+                        <span class="breadcrumb-item py-0 active">Project Team</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     <!-- Content area -->
     <div class="content">
         <!-- Inner container -->
@@ -11,13 +22,13 @@
                     <div class="col-12 col-sm-12 col-md-9 col-lg-9">
                         <div class="card">
                             <div class="card-header header-elements-inline p-3">
-                                <h6 class="card-title"><i class="icon-stack2 mr-2"></i>ORGANIZATION STRUCTURE</h6>
-                                <div class="header-elements">
+                                <h6 class="card-title"><i class="icon-users mr-2"></i>PROJECT TEAM</h6>
+                                <!-- <div class="header-elements">
                                     <div class="list-icons">                                    
                                         <a class="list-icons-item btn bg-blue btn-icon" data-action="reload"></a>
                                         <a class="list-icons-item btn bg-pink-400 btn-icon" data-action="fullscreen"></a>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                             
                             <div class="card-body">

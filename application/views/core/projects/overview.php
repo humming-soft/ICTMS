@@ -1,5 +1,15 @@
 <div class="page-content pt-0">
     <div class="content-wrapper">
+        <div class="page-header " style="border-left: 1px solid #ddd; border-right: 1px solid #ddd; margin-bottom: 0;">
+            <div class="page-header-content header-elements-md-inline">
+                <div class="page-title">
+                    <div class="breadcrumb mt-1">
+                        <a href="<?=site_url('dashboard')?>" class="breadcrumb-item py-0 text-primary"><i class="icon-home2"></i></a>
+                        <span class="breadcrumb-item py-0 active">Transport Information Data Exchange (TIDE)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     <!-- Content area -->
     <div class="content">
         <!-- Inner container -->
@@ -10,211 +20,134 @@
                     <div class="col-12 col-md-12 col-lg-12">
                         <div class="card">
                             <div class="card-header header-elements-sm-inline p-3">
-                                <h5 class="card-title"><i class="icon-checkmark-circle mr-2"></i>PROJECT CREATION PROCESS</h5>
+                                <h5 class="card-title"><i class="icon-checkmark-circle mr-2"></i>PROJECT INITIATION STEPS</h5>
+                                <div class="header-elements">
+									<div class="d-flex justify-content-between">
+										<div class="list-icons ml-3">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="reload"></a>
+					                	</div>
+				                	</div>
+								</div>
                             </div>
                             <div class="card-body">
-                                <!-- <div class="d-md-flex align-items-md-center flex-md-wrap text-center text-md-left"> -->
-                                    <!-- <div class="token-bonus-ui">
-                                        <div class="bonus-bar">
-                                            <div class="bonus-base"><span class="bonus-base-amount">Project Initiation</span><span class="bonus-base-percent">20%</span></div>
-                                            <div class="bonus-extra">
-                                                <div class="bonus-extra-item active" data-percent="10" style="width: 10%;"><span class="bonus-extra-amount">0.5
-                                                        ETH</span><span class="bonus-extra-percent">10%</span></div>
-                                                <div class="bonus-extra-item active" data-percent="20" style="width: 20%;"><span class="bonus-extra-amount">1
-                                                        ETH</span><span class="bonus-extra-percent">30%</span></div>
-                                                <div class="bonus-extra-item active" data-percent="20" style="width: 20%;"><span class="bonus-extra-amount">5
-                                                        ETH</span><span class="bonus-extra-percent">50%</span></div>
-                                                <div class="bonus-extra-item" data-percent="20" style="width: 20%;"><span class="bonus-extra-amount">10 ETH</span><span
-                                                        class="bonus-extra-percent">70%</span></div>
-                                                <div class="bonus-extra-item" data-percent="30" style="width: 30%;"><span class="bonus-extra-amount">20 ETH</span><span
-                                                        class="bonus-extra-percent">100%</span></div>
-                                            </div>
-                                        </div>
-                                    </div> -->
-
-                                    <ul class="nav nav-pills ictms-nav-pills nav-pills-bordered">
-                                        <li class="nav-item"><a href="#bordered-pill1" class="nav-link completed no-loader" data-toggle="tab"><i class="icon-circles mr-1"></i> Initiation</a></li>
-                                        <li class="nav-item"><a href="#bordered-pill2" class="nav-link active show no-loader" data-toggle="tab"><i class="icon-circles2 mr-1"></i> Planning</a></li>
-                                        <li class="nav-item"><a href="#bordered-pill3" class="nav-link no-loader" data-toggle="tab"><i class="icon-circles2 mr-1"></i> Project Status</a></li>
-                                        <!-- <li class="nav-item"><a href="#bordered-pill3" class="nav-link no-loader" data-toggle="tab"><i class="icon-circles2 mr-1"></i> Implementation & Control</a></li> -->
-                                        <!-- <li class="nav-item"><a href="#bordered-pill4" class="nav-link no-loader" data-toggle="tab"><i class="icon-circles2 mr-1"></i> Closure</a></li> -->
-                                    </ul>
-                                    <hr>
-                                    <div class="tab-content">
-                                        <div class="tab-pane fade" id="bordered-pill1">
-                                            <div class="row">
-                                                <div class="col-12 col-md-6 col-lg-3">
-                                                    <div class="step-head">
-                                                        <div class="step-number completed">01</div>
-                                                        <div class="step-head-text">
-                                                            <h4>Stakeholder Analysis</h4>
-                                                            <p><b>Stakeholder Analysis</b> is the process of identifying and analysing stakeholders, and plan for their participation.</p>
-                                                            
-                                                            <a href="<?=site_url('projects/02849/stakeholder-analysis')?>">View/Edit →</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-md-6 col-lg-3">
-                                                    <div class="step-head">
-                                                        <div class="step-number completed">02</div>
-                                                        <div class="step-head-text">
-                                                            <h4>Problem Analysis</h4>
-                                                            <p><b>Problem Analysis</b> involves identifying what the main problems are and establishing the cause and effect relationships.</p>
-                                                            <a href="<?=site_url('projects/02849/prob-analysis')?>">View/Edit →</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-md-6 col-lg-3">
-                                                    <div class="step-head">
-                                                        <div class="step-number completed">03</div>
-                                                        <div class="step-head-text">
-                                                            <h4>Objectives Analysis</h4>
-                                                            <p><b>Objectives Analysis</b> is a methodological approach to describe the situation in the future once identified problems resolved.</p>
-                                                            <a href="<?=site_url('projects/02849/obj-analysis')?>">View/Edit →</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-md-6 col-lg-3">
-                                                    <div class="step-head">
-                                                        <div class="step-number completed">04</div>
-                                                        <div class="step-head-text">
-                                                            <h4>Strategic Analysis</h4>
-                                                            <p><b>Strategic Analysis</b> is used to find possible interventions in order to determine the scope of the project.</p>
-                                                            <a href="<?=site_url('projects/02849/stat-analysis')?>">View/Edit →</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="tab-pane fade active show" id="bordered-pill2">
-                                            <div class="row">
-                                                <div class="col-12 col-md-6 col-lg-3">
-                                                    <div class="step-head">
-                                                        <div class="step-number current">01</div>
-                                                        <div class="step-head-text">
-                                                            <h4>Logframe</h4>
-                                                            <p>Your simple personal information required for identification</p>
-                                                            <a href="<?=site_url('projects/02849/logframe')?>">Complete Step →</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-md-6 col-lg-3">
-                                                    <div class="step-head">
-                                                        <div class="step-number">02</div>
-                                                        <div class="step-head-text">
-                                                            <h4>Activities & Deliverables</h4>
-                                                            <p>Your simple personal information required for identification</p>
-                                                            <a href="<?=site_url('projects/02849/gantt')?>">Complete Step →</a>
-                                                        </div>
-                                                    </div>
-                                                </div>      
-                                                <div class="col-12 col-md-6 col-lg-3">
-                                                    <div class="step-head">
-                                                        <div class="step-number">03</div>
-                                                        <div class="step-head-text">
-                                                            <h4>Resources</h4>
-                                                            <p>Your simple personal information required for identification</p>
-                                                            <a href="<?=site_url('projects/02849/resources')?>">Complete Step →</a>
-                                                        </div>
-                                                    </div>
-                                                </div>   
-                                                <div class="col-12 col-md-6 col-lg-3">
-                                                    <div class="step-head">
-                                                        <div class="step-number">03</div>
-                                                        <div class="step-head-text">
-                                                            <h4>Risk Register</h4>
-                                                            <p>Your simple personal information required for identification</p>
-                                                            <a href="<?=site_url('projects/02849/risk')?>">Complete Step →</a>
-                                                        </div>
-                                                    </div>
-                                                </div>                                   
-                                            </div>
-                                        </div>
-
-                                        <div class="tab-pane fade" id="bordered-pill3">
-                                            <div class="row">
-                                                <div class="col-12 col-md-6 col-lg-3">
-                                                    <div class="step-head">
-                                                        <div class="step-number">01</div>
-                                                        <div class="step-head-text">
-                                                            <h4>Approval</h4>
-                                                            <p>Status of the project Approved / Rejected / KIV.</p>
-                                                            <a href="<?=site_url('projects/02849/approval')?>">Complete Step →</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- <div class="col-12 col-md-6 col-lg-3">
-                                                    <div class="step-head">
-                                                        <div class="step-number">02</div>
-                                                        <div class="step-head-text">
-                                                            <h4>Stakeholder Analysis</h4>
-                                                            <p>Your simple personal information required for identification</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-md-6 col-lg-3">
-                                                    <div class="step-head">
-                                                        <div class="step-number">03</div>
-                                                        <div class="step-head-text">
-                                                            <h4>Personal Details</h4>
-                                                            <p>Your simple personal information required for identification</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-md-6 col-lg-3">
-                                                    <div class="step-head">
-                                                        <div class="step-number">04</div>
-                                                        <div class="step-head-text">
-                                                            <h4>Personal Details</h4>
-                                                            <p>Your simple personal information required for identification</p>
-                                                        </div>
-                                                    </div>
-                                                </div> -->
-                                            </div>
-                                        </div>
-
-                                        <div class="tab-pane fade" id="bordered-pill4">
-                                            <div class="row">
-                                                <div class="col-12 col-md-6 col-lg-3">
-                                                    <div class="step-head">
-                                                        <div class="step-number">01</div>
-                                                        <div class="step-head-text">
-                                                            <h4>Project Initiation</h4>
-                                                            <p>Your simple personal information required for identification</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-md-6 col-lg-3">
-                                                    <div class="step-head">
-                                                        <div class="step-number">02</div>
-                                                        <div class="step-head-text">
-                                                            <h4>Stakeholder Analysis</h4>
-                                                            <p>Your simple personal information required for identification</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-md-6 col-lg-3">
-                                                    <div class="step-head">
-                                                        <div class="step-number">03</div>
-                                                        <div class="step-head-text">
-                                                            <h4>Personal Details</h4>
-                                                            <p>Your simple personal information required for identification</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-md-6 col-lg-3">
-                                                    <div class="step-head">
-                                                        <div class="step-number">04</div>
-                                                        <div class="step-head-text">
-                                                            <h4>Personal Details</h4>
-                                                            <p>Your simple personal information required for identification</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-3">
+                                        <div class="step-head">
+                                            <div class="step-number completed">01</div>
+                                            <div class="step-head-text">
+                                                <h4>Stakeholder Analysis</h4>
+                                                <p><b>Stakeholder Analysis</b> is the process of identifying and analysing stakeholders, and plan for their participation.</p>
+                                                
+                                                <a href="<?=site_url('projects/02849/stakeholder-analysis')?>">View/Edit →</a>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-12 col-md-6 col-lg-3">
+                                        <div class="step-head">
+                                            <div class="step-number completed">02</div>
+                                            <div class="step-head-text">
+                                                <h4>Problem Analysis</h4>
+                                                <p><b>Problem Analysis</b> involves identifying what the main problems are and establishing the cause and effect relationships.</p>
+                                                <a href="<?=site_url('projects/02849/prob-analysis')?>">View/Edit →</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-3">
+                                        <div class="step-head">
+                                            <div class="step-number completed">03</div>
+                                            <div class="step-head-text">
+                                                <h4>Objectives Analysis</h4>
+                                                <p><b>Objectives Analysis</b> is a methodological approach to describe the situation in the future once identified problems resolved.</p>
+                                                <a href="<?=site_url('projects/02849/obj-analysis')?>">View/Edit →</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-3">
+                                        <div class="step-head">
+                                            <div class="step-number completed">04</div>
+                                            <div class="step-head-text">
+                                                <h4>Strategic Analysis</h4>
+                                                <p><b>Strategic Analysis</b> is used to find possible interventions in order to determine the scope of the project.</p>
+                                                <a href="<?=site_url('projects/02849/stat-analysis')?>">View/Edit →</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-2">
+                                    <div class="col-12 col-md-6 col-lg-3">
+                                        <div class="step-head">
+                                            <div class="step-number completed">05</div>
+                                            <div class="step-head-text">
+                                                <h4>Logframe (LFM)</h4>
+                                                <p>Your simple personal information required for identification</p>
+                                                <a href="<?=site_url('projects/02849/logframe')?>">View/Edit →</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-3">
+                                        <div class="step-head">
+                                            <div class="step-number completed">06</div>
+                                            <div class="step-head-text">
+                                                <h4>Activities & Deliverables</h4>
+                                                <p>Your simple personal information required for identification</p>
+                                                <a href="<?=site_url('projects/02849/gantt')?>">View/Edit →</a>
+                                            </div>
+                                        </div>
+                                    </div>      
+                                    <div class="col-12 col-md-6 col-lg-3">
+                                        <div class="step-head">
+                                            <div class="step-number completed">07</div>
+                                            <div class="step-head-text">
+                                                <h4>Resources</h4>
+                                                <p>Your simple personal information required for identification</p>
+                                                <a href="<?=site_url('projects/02849/resources')?>">View/Edit →</a>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                    <div class="col-12 col-md-6 col-lg-3">
+                                        <div class="step-head">
+                                            <div class="step-number completed">08</div>
+                                            <div class="step-head-text">
+                                                <h4>Risk Register</h4>
+                                                <p>Your simple personal information required for identification</p>
+                                                <a href="<?=site_url('projects/02849/risk')?>">View/Edit →</a>
+                                            </div>
+                                        </div>
+                                    </div>                                   
+                                </div>
+                                <div class="row pt-2">
+                                    <div class="col-12 col-md-6 col-lg-3">
+                                        <div class="step-head">
+                                            <div class="step-number current">09</div>
+                                            <div class="step-head-text">
+                                                <h4>EPU Approval</h4>
+                                                <p>Status of the project Approved / Rejected / KIV.</p>
+                                                <a href="<?=site_url('projects/02849/approval')?>">Complete Step →</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-3">
+                                        <div class="step-head">
+                                            <div class="step-number">10</div>
+                                            <div class="step-head-text">
+                                                <h4>Architectures</h4>
+                                                <p>Architectures related to the project.</p>
+                                                <a href="<?=site_url('projects/02849/architecture')?>">Complete Step →</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-3">
+                                        <div class="step-head">
+                                            <div class="step-number">11</div>
+                                            <div class="step-head-text">
+                                                <h4>JPICT/JTISA Approval</h4>
+                                                <p>Status of the project Approved / Rejected / KIV.</p>
+                                                <a href="<?=site_url('projects/02849/approval-stage2')?>">Complete Step →</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -230,11 +163,8 @@
                                                 <li class="list-inline-item float-right"><a href="#"><i class="icon-pencil5 mr-1"></i> Edit</a></li>
                                             </ul>   
                                             <h6 class="media-title mb-0 font-weight-semibold text-uppercase border-bottom-1 border-bottom">Project Objective <br><small class="d-inline-block">(System Generated)</small></h6>                 
-                                            <span class="d-inline-block p-2-1 font-weight-semibold">"Business problem that is required to be resolved or an opportunity that is required to be created 
-                                                that will enhance or bring benefit to the organization. In January 2018 a mandate was issued by the 
-                                                Ministry of Finance to Ministries, Agencies and Government owned companies that are involved in government procurement. 
-                                                The mandate authorizes the Technology Depository Agency (TDA) to collect, manage and analyze all government procurement 
-                                                related data for the purpose of understanding the usage of local content."</span>
+                                            <span class="d-inline-block p-2-1 font-weight-semibold">"By reduced road traffic congestion and reduced fatality rate due to road accidents and also implementing the effective Public Transportation Scheduling and Control
+                                                System the Commuters are convinced that the Public Transportation System in Malaysia is safe and reliable."</span>
                                         </div>
                                     </div>
                                 </div>
@@ -274,7 +204,7 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td class="font-weight-semibold">Project Owner:</td>
+                                                            <td class="font-weight-semibold">Project Sponsor:</td>
                                                             <td class="text-left">Ministry Of Transport</td>
                                                         </tr>
                                                         <tr>
@@ -294,7 +224,7 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td class="font-weight-semibold va-top">Project Controller:</td>
+                                                            <td class="font-weight-semibold va-top">Project Owner:</td>
                                                             <td class="text-left">
                                                                     <p>Public and Land Transportation Agency </p>                                                                 
                                                             </td>
@@ -320,7 +250,7 @@
                                                         <tr>
                                                         <tr>
                                                             <td class="font-weight-semibold">Category:</td>
-                                                            <td class="text-left text-success"><span class="badge bg-primary">NEW</span></td>
+                                                            <td class="text-left text-success"><span class="badge bg-primary">Application System Development</span></td>
                                                         </tr>
                                                         <tr>
                                                             <td class="font-weight-semibold">Sector:</td>
@@ -387,7 +317,7 @@
                                                     <li class="mb-3">
                                                         <div class="d-flex align-items-center mb-1">Current Activity : <a href="" class="font-weight-bold ml-1"> Approval</a><span class="text-muted ml-auto">100%</span></div>
                                                         <div class="progress" style="height: 0.675rem;">
-                                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 100%">
+                                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning-300" style="width: 100%">
                                                                 <span class="sr-only">100% Complete</span>
                                                             </div>
                                                         </div>

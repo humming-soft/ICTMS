@@ -72,6 +72,7 @@ $route['projects/(:num)/gantt'] = 'projects/project/milestones/$1';
 $route['projects/(:num)/resources'] = 'projects/project/resources/$1';
 $route['projects/(:num)/maintenance'] = 'projects/project/maintenance/$1';
 $route['projects/(:num)/approval'] = 'projects/project/approval/$1';
+$route['projects/(:num)/approval-stage2'] = 'projects/project/approval2/$1';
 $route['projects/(:num)/risk'] = 'projects/project/risk/$1';
 $route['projects/(:num)/org'] = 'projects/project/org/$1';
 $route['projects/(:num)/reporting-structure'] = 'projects/project/reporting_structure/$1';
@@ -81,6 +82,7 @@ $route['projects/(:num)/collaboration'] = 'projects/project/collaboration/$1';
 $route['projects/(:num)/site-diary'] = 'projects/project/site_diary/$1';
 $route['projects/(:num)/issues'] = 'projects/project/issues/$1';
 $route['projects/(:num)/download'] = 'projects/project/download/$1';
+$route['projects/(:num)/pdf-view'] = 'projects/project/pdf_view/$1';
 
 $route['projects/(:num)/business'] = 'projects/project/business/$1';
 $route['projects/(:num)/benefits'] = 'projects/project/benefits/$1';

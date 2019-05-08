@@ -312,16 +312,31 @@ class Project extends ICTMS_Controller {
         {
             $message='';
         }
-        $_header["support"] = array("steps","uniform","diagram");
-        $_header["page_js"] = "resources";
-        $_header["pid"] = "02849";
-        $_header["page"] = "prob-analysis";
 
-        $this->load->view('core/fragments/header',$_header);
-        $this->load->view('core/projects/fragments/main_navbar',$data1);
-        $this->load->view('core/projects/fragments/secondary_navbar');
-        $this->load->view('core/projects/resources');
-        $this->load->view('core/fragments/footer');
+
+        if($session_data['roleid'] == 33){
+            $_header["support"] = array("steps","uniform","diagram");
+            $_header["page_js"] = "resources";
+            $_header["pid"] = "02849";
+            $_header["page"] = "prob-analysis";
+    
+            $this->load->view('core/fragments/header',$_header);
+            $this->load->view('core/projects/fragments/main_navbar',$data1);
+            $this->load->view('core/projects/fragments/secondary_navbar_vendor');
+            $this->load->view('core/projects/resources');
+            $this->load->view('core/fragments/footer');
+        }else{
+            $_header["support"] = array("steps","uniform","diagram");
+            $_header["page_js"] = "resources";
+            $_header["pid"] = "02849";
+            $_header["page"] = "prob-analysis";
+    
+            $this->load->view('core/fragments/header',$_header);
+            $this->load->view('core/projects/fragments/main_navbar',$data1);
+            $this->load->view('core/projects/fragments/secondary_navbar');
+            $this->load->view('core/projects/resources');
+            $this->load->view('core/fragments/footer');
+        }
     }
 
     public function maintenance($pid=null){
@@ -376,6 +391,32 @@ class Project extends ICTMS_Controller {
         $this->load->view('core/fragments/footer');
     }
 
+    public function approval2($pid=null){
+        $session_data = $this->session->userdata('logged_in');
+        $data['username'] =$data1['username'] = $session_data['username'];
+
+        if($this->session->userdata('message'))
+        {
+            $messagehrecord=$this->session->userdata('message');
+            $message = $messagehrecord['message'];
+            $this->session->unset_userdata('message');
+        }
+        else
+        {
+            $message='';
+        }
+        $_header["support"] = array("uniform");
+        $_header["page_js"] = "approval";
+        $_header["pid"] = "02849";
+        $_header["page"] = "approval";
+
+        $this->load->view('core/fragments/header',$_header);
+        $this->load->view('core/projects/fragments/main_navbar',$data1);
+        $this->load->view('core/projects/fragments/secondary_navbar');
+        $this->load->view('core/projects/approval2');
+        $this->load->view('core/fragments/footer');
+    }
+
     public function risk($pid=null){
         $session_data = $this->session->userdata('logged_in');
         $data['username'] =$data1['username'] = $session_data['username'];
@@ -415,6 +456,28 @@ class Project extends ICTMS_Controller {
         $this->load->helper('download');
         $data = file_get_contents(APPPATH . "views/resources/download/business_case.pdf");
         force_download('business_case.pdf', $data);
+    }
+
+    public function pdf_view($pid= null){
+        $session_data = $this->session->userdata('logged_in');
+        $data['username'] =$data1['username'] = $session_data['username'];
+
+        if($this->session->userdata('message'))
+        {
+            $messagehrecord=$this->session->userdata('message');
+            $message=$messagehrecord['message'];
+            $this->session->unset_userdata('message');
+        }
+        else
+        {
+            $message='';
+        }
+        $_header["support"] = array();
+        $_header["page_js"] = "pdf";
+
+
+        $this->load->view('core/projects/pdf_view');
+
     }
 
     public function business($pid=null){
@@ -587,14 +650,25 @@ class Project extends ICTMS_Controller {
         {
             $message='';
         }
-        $_header["support"] = array("orgchart");
-        $_header["page_js"] = "org";
-
-        $this->load->view('core/fragments/header',$_header);
-        $this->load->view('core/projects/fragments/main_navbar',$data1);
-        $this->load->view('core/projects/fragments/secondary_navbar');
-        $this->load->view('core/projects/org');
-        $this->load->view('core/fragments/footer');
+        if($session_data['roleid'] == 15){
+            $_header["support"] = array("orgchart");
+            $_header["page_js"] = "org";
+        
+            $this->load->view('core/fragments/header',$_header);
+            $this->load->view('core/projects/fragments/main_navbar',$data1);
+            $this->load->view('core/projects/fragments/secondary_navbar_pprisa');
+            $this->load->view('core/projects/org');
+            $this->load->view('core/fragments/footer');
+        }else{
+            $_header["support"] = array("orgchart");
+            $_header["page_js"] = "org";
+        
+            $this->load->view('core/fragments/header',$_header);
+            $this->load->view('core/projects/fragments/main_navbar',$data1);
+            $this->load->view('core/projects/fragments/secondary_navbar');
+            $this->load->view('core/projects/org');
+            $this->load->view('core/fragments/footer');
+        }
     }
 
     public function reporting_structure($pid=null){
@@ -611,14 +685,25 @@ class Project extends ICTMS_Controller {
         {
             $message='';
         }
-        $_header["support"] = array();
-        $_header["page_js"] = "reporting_structure";
+        if($session_data['roleid'] == 15){
+            $_header["support"] = array();
+            $_header["page_js"] = "reporting_structure";
 
-        $this->load->view('core/fragments/header',$_header);
-        $this->load->view('core/projects/fragments/main_navbar',$data1);
-        $this->load->view('core/projects/fragments/secondary_navbar');
-        $this->load->view('core/projects/reporting_structure');
-        $this->load->view('core/fragments/footer');
+            $this->load->view('core/fragments/header',$_header);
+            $this->load->view('core/projects/fragments/main_navbar',$data1);
+            $this->load->view('core/projects/fragments/secondary_navbar_pprisa');
+            $this->load->view('core/projects/reporting_structure');
+            $this->load->view('core/fragments/footer');
+        }else{
+            $_header["support"] = array();
+            $_header["page_js"] = "reporting_structure";
+    
+            $this->load->view('core/fragments/header',$_header);
+            $this->load->view('core/projects/fragments/main_navbar',$data1);
+            $this->load->view('core/projects/fragments/secondary_navbar');
+            $this->load->view('core/projects/reporting_structure');
+            $this->load->view('core/fragments/footer');
+        }
     }
 
     public function info_vendor($pid=null){
@@ -635,16 +720,29 @@ class Project extends ICTMS_Controller {
         {
             $message='';
         }
-        $_header["support"] = array("uniform");
-        $_header["pid"] = "02849";
-        $_header["page"] = "info_vendor";
-        $_header["page_js"] = "info_vendor";
+        if($session_data['roleid'] == 15){
+            $_header["support"] = array("uniform");
+            $_header["pid"] = "02849";
+            $_header["page"] = "info_vendor";
+            $_header["page_js"] = "info_vendor";
 
-        $this->load->view('core/fragments/header',$_header);
-        $this->load->view('core/projects/fragments/main_navbar',$data1);
-        $this->load->view('core/projects/fragments/secondary_navbar');
-        $this->load->view('core/projects/info_vendor');
-        $this->load->view('core/fragments/footer');
+            $this->load->view('core/fragments/header',$_header);
+            $this->load->view('core/projects/fragments/main_navbar',$data1);
+            $this->load->view('core/projects/fragments/secondary_navbar_pprisa');
+            $this->load->view('core/projects/info_vendor');
+            $this->load->view('core/fragments/footer');
+        }else{
+            $_header["support"] = array("uniform");
+            $_header["pid"] = "02849";
+            $_header["page"] = "info_vendor";
+            $_header["page_js"] = "info_vendor";
+
+            $this->load->view('core/fragments/header',$_header);
+            $this->load->view('core/projects/fragments/main_navbar',$data1);
+            $this->load->view('core/projects/fragments/secondary_navbar');
+            $this->load->view('core/projects/info_vendor');
+            $this->load->view('core/fragments/footer');
+        }
     }
 
     public function meeting($pid=null){

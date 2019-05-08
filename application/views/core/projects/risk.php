@@ -1,5 +1,16 @@
 <div class="page-content pt-0">
     <div class="content-wrapper">
+    <div class="page-header " style="border-left: 1px solid #ddd; border-right: 1px solid #ddd; margin-bottom: 0;">
+            <div class="page-header-content header-elements-md-inline">
+                <div class="page-title">
+                    <div class="breadcrumb mt-1">
+                        <a href="<?=site_url('dashboard')?>" class="breadcrumb-item py-0 text-primary"><i class="icon-home2"></i></a>
+                        <a href="<?=site_url('projects/02849')?>" class="breadcrumb-item py-0 text-primary">Transport Information Data Exchange (TIDE)</a>
+                        <span class="breadcrumb-item py-0 active">Risk Register</span>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="content">
             <div class="d-md-flex align-items-md-start">
                 <div class="flex-fill overflow-auto">
@@ -32,34 +43,34 @@
                                                 <tbody>
                                                 <tr>
                                                     <td class="no idr">R21</td>
-                                                    <td id="first">Inefficient wastewater cleaning process.</td>
+                                                    <td id="first">Real-time Commuting Data extracted from the various Public Transportation Authorities and Operators are inaccurate.</td>
                                                     <td class="secrads" align="center"> <input type="radio" value="option1" id="question3" name="soft1" class="secrad1"></td>
-                                                    <td class="secrads1" align="center">  <input type="radio" value="option2" checked="" id="question4" name="soft1" class="secrad1">  </td>
+                                                    <td class="secrads1" align="center">  <input type="radio" value="option2" id="question4" name="soft1" class="secrad1">  </td>
                                                     <td class="secrads2" align="center"> <input type="radio" value="option3" checked="" id="question4" name="soft1" class="secrad1"> </td>
-                                                    <td><textarea rows="2" class="form-control" id="first"></textarea></td>
+                                                    <td><textarea rows="2" class="form-control" id="first">Data Quality Test to be included as part of the Technical Study Phase</textarea></td>
                                                     <td><textarea rows="2" class="form-control" id="first"></textarea></td>
                                                     <td align="center"><select class=" form-control m-b select1" id="riskSelect1">
                                                             <option>%</option>
                                                             <option value="15">15</option>
                                                             <option value="30">30</option>
-                                                            <option value="45">45</option>
+                                                            <option value="45" selected>45</option>
                                                             <option value="60">60</option>
                                                             <option value="75">75</option>
                                                         </select></td>
                                                 </tr>
                                                 <tr>
                                                     <td class="no idr">R22</td>
-                                                    <td id="first">Risk 002</td>
+                                                    <td id="first">Carbon emission data collected by Jabatan Alam Sekitar is inaccurate.</td>
                                                     <td class="secrads" align="center"> <input type="radio" value="option1" id="question3" name="soft2" class="secrad2"></td>
-                                                    <td class="secrads1" align="center">  <input type="radio" value="option2" checked="" id="question4" name="soft2" class="secrad2">  </td>
+                                                    <td class="secrads1" align="center">  <input type="radio" value="option2" id="question4" name="soft2" class="secrad2">  </td>
                                                     <td class="secrads2" align="center"> <input type="radio" value="option3" checked="" id="question4" name="soft2" class="secrad2"> </td>
-                                                    <td><textarea rows="2" class="form-control" id="first"></textarea></td>
+                                                    <td><textarea rows="2" class="form-control" id="first">Data Quality Test to be included as part of the Technical Study Phase</textarea></td>
                                                     <td><textarea rows="2" class="form-control" id="first"></textarea></td>
                                                     <td align="center"><select class=" form-control m-b select1" id="riskSelect2">
                                                             <option>%</option>
                                                             <option value="15">15</option>
                                                             <option value="30">30</option>
-                                                            <option value="45">45</option>
+                                                            <option value="45" selected>45</option>
                                                             <option value="60">60</option>
                                                             <option value="75">75</option>
                                                         </select></td>
@@ -67,15 +78,15 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="no idr">R23</td>
-                                                    <td id="first">Risk 003</td>
-                                                    <td class="secrads" align="center"> <input type="radio" value="option3" id="question3" name="soft3" class="secrad3"></td>
-                                                    <td class="secrads1" align="center">  <input type="radio" value="option2" checked="" id="question4" name="soft3" class="secrad3">  </td>
+                                                    <td id="first">Hospitals do not have accurate data on Accident cases.</td>
+                                                    <td class="secrads" align="center"> <input type="radio" value="option1" id="question3" name="soft3" class="secrad3"></td>
+                                                    <td class="secrads1" align="center">  <input type="radio" value="option2" id="question4" name="soft3" class="secrad3">  </td>
                                                     <td class="secrads2" align="center"> <input type="radio" value="option3" checked="" id="question4" name="soft3" class="secrad3"> </td>
-                                                    <td><textarea rows="2" class="form-control" id="first"></textarea></td>
+                                                    <td><textarea rows="2" class="form-control" id="first">Data Quality Test to be included as part of the Technical Study Phase</textarea></td>
                                                     <td><textarea rows="2" class="form-control" id="first"></textarea></td>
                                                     <td align="center"><select class=" form-control m-b select1" id="riskSelect3">
                                                             <option>%</option>
-                                                            <option value="15">15</option>
+                                                            <option value="15" selected>15</option>
                                                             <option value="30">30</option>
                                                             <option value="45">45</option>
                                                             <option value="60">60</option>
@@ -85,16 +96,16 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="no idr">R24</td>
-                                                    <td id="first">Risk 004</td>
+                                                    <td id="first">LLM is capturing inaccurate data on Traffic and Road Maintenance.</td>
                                                     <td class="secrads" align="center"> <input type="radio" value="option1" id="question3" name="soft4" class="secrad4"></td>
-                                                    <td class="secrads1" align="center">  <input type="radio" value="option2" checked="" id="question4" name="soft4" class="secrad4">  </td>
+                                                    <td class="secrads1" align="center">  <input type="radio" value="option2" id="question4" name="soft4" class="secrad4">  </td>
                                                     <td class="secrads2" align="center"> <input type="radio" value="option3" checked="" id="question4" name="soft4" class="secrad4"> </td>
-                                                    <td><textarea rows="2" class="form-control" id="first"></textarea></td>
+                                                    <td><textarea rows="2" class="form-control" id="first">Data Quality Test to be included as part of the Technical Study Phase</textarea></td>
                                                     <td><textarea rows="2" class="form-control" id="first"></textarea></td>
                                                     <td align="center"><select class=" form-control m-b select1" id="riskSelect4">
                                                             <option>%</option>
                                                             <option value="15">15</option>
-                                                            <option value="30">30</option>
+                                                            <option value="30" selected>30</option>
                                                             <option value="45">45</option>
                                                             <option value="60">60</option>
                                                             <option value="75">75</option>
@@ -102,18 +113,18 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="no idr">R25</td>
-                                                    <td id="first">Risk 005</td>
-                                                    <td class="secrads" align="center"> <input type="radio" value="option1" id="question3" name="soft5" class="secrad5"></td>
-                                                    <td class="secrads1" align="center"><input type="radio" value="option2" checked="" id="question4" name="soft5" class="secrad5">  </td>
-                                                    <td class="secrads2" align="center"><input type="radio" value="option3" checked="" id="question4" name="soft5" class="secrad5"> </td>
+                                                    <td id="first">Collaboration efforts has not been agreed between the Public Transportation Operators and Authority.</td>
+                                                    <td class="secrads" align="center"> <input type="radio" value="option1" checked="" id="question3" name="soft5" class="secrad5"></td>
+                                                    <td class="secrads1" align="center"><input type="radio" value="option2" id="question4" name="soft5" class="secrad5">  </td>
+                                                    <td class="secrads2" align="center"><input type="radio" value="option3" id="question4" name="soft5" class="secrad5"> </td>
                                                     <td><textarea rows="2" class="form-control" id="first"></textarea></td>
-                                                    <td><textarea rows="2" class="form-control" id="first"></textarea></td>
+                                                    <td><textarea rows="2" class="form-control" id="first">Top Managements from all Public Transportation Operators, Authority and Ministry meet to establish collaboration</textarea></td>
                                                     <td align="center"><select class=" form-control m-b select1" id="riskSelect5">
                                                             <option>%</option>
                                                             <option value="15">15</option>
                                                             <option value="30">30</option>
                                                             <option value="45">45</option>
-                                                            <option value="60">60</option>
+                                                            <option value="60" selected>60</option>
                                                             <option value="75">75</option>
                                                         </select></td>
 
@@ -135,19 +146,19 @@
                                             <table class="table table-bordered table-hover ">
                                                 <tbody>
                                                 <tr>
-                                                    <td><input type="text" value="45%" style="font-weight: bold; width: 97%; height: 20px; text-align: center " readonly=""><br><div id="45one" style="font-weight: bold; width: 97%; height: 82px;"><div></div></div></td>
+                                                    <td><input type="text" value="45%" style="font-weight: bold; width: 97%; height: 20px; text-align: center " readonly=""><br><div id="45one" style="font-weight: bold; width: 97%; height: 82px;"><div></div><br><span><i class="icon-circle-small"></i>R21<span></div></td>
                                                     <td><input type="text" value="60%" style="font-weight: bold; width: 97%; height: 20px; text-align: center " readonly=""><br><div type="text" id="60one" style="font-weight: bold; width: 97%; height: 82px;"><div></div></div></td>
                                                     <td><input type="text" value="75%" style="font-weight: bold; width: 97%; height: 20px; text-align: center " readonly=""><br><div type="text" id="75one" style="font-weight: bold; width: 97%; height: 82px;"><div></div></div></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><input type="text" value="30%" style="font-weight: bold; width: 97%; height: 20px; text-align: center " readonly=""><br><div type="text" id="30two" style="font-weight: bold; width: 97%; height: 82px;"><div></div></div></td>
+                                                    <td><input type="text" value="30%" style="font-weight: bold; width: 97%; height: 20px; text-align: center " readonly=""><br><div type="text" id="30two" style="font-weight: bold; width: 97%; height: 82px;"><div></div><br><span><i class="icon-circle-small"></i>R24<span></div></td>
                                                     <td><input type="text" value="45%" style="font-weight: bold; width: 97%; height: 20px; text-align: center " readonly=""><br><div type="text" id="45two" style="font-weight: bold; width: 97%; height: 82px;"><div></div></div></td>
-                                                    <td><input type="text" value="60%" style="font-weight: bold; width: 97%; height: 20px; text-align: center " readonly=""><br><div type="text" id="60two" style="font-weight: bold; width: 97%; height: 82px;"><div></div></div></td>
+                                                    <td><input type="text" value="60%" style="font-weight: bold; width: 97%; height: 20px; text-align: center " readonly=""><br><div type="text" id="60two" style="font-weight: bold; width: 97%; height: 82px;"><div></div><br><span><i class="icon-circle-small"></i>R25<span></div></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><input type="text" value="15%" style="font-weight: bold; width: 97%; height: 20px; text-align: center " readonly=""><br><div type="text" id="15three" style="font-weight: bold; width: 97%; height: 82px;"><div></div></div></td>
+                                                    <td><input type="text" value="15%" style="font-weight: bold; width: 97%; height: 20px; text-align: center " readonly=""><br><div type="text" id="15three" style="font-weight: bold; width: 97%; height: 82px;"><div></div><br><span><i class="icon-circle-small"></i>R23<span></div></td>
                                                     <td><input type="text" value="30%" style="font-weight: bold; width: 97%; height: 20px; text-align: center " readonly=""><br><div type="text" id="30three" style="font-weight: bold; width: 97%; height: 82px;"><div></div></div></td>
-                                                    <td><input type="text" value="45%" style="font-weight: bold; width: 97%; height: 20px; text-align: center " readonly=""><br><div type="text" id="45three" style="font-weight: bold; width: 97%; height: 82px;"><div></div></div></td>
+                                                    <td><input type="text" value="45%" style="font-weight: bold; width: 97%; height: 20px; text-align: center " readonly=""><br><div type="text" id="45three" style="font-weight: bold; width: 97%; height: 82px;"><div></div><br><span><i class="icon-circle-small"></i>R22<span></div></td>
                                                 </tr>
                                                 </tbody>
                                             </table>

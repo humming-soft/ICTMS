@@ -13,11 +13,8 @@
                             <div class="card-header header-elements-inline p-3">
                                 <h6 class="card-title"><i class="icon-shield-notice mr-2"></i>ISSUE LOG</h6>
                                 <div class="header-elements">
-                                    <!-- <div class="list-icons">                                    
-                                        <a class="list-icons-item btn bg-blue btn-icon" data-action="reload"></a>
-                                        <a class="list-icons-item btn bg-pink-400 btn-icon" data-action="fullscreen"></a>
-                                    </div> -->
-                                </div>
+									<button type="button" data-toggle="modal" data-target="#gantt-lb" class="btn bg-success btn-sm"><i class="icon-plus2 mr-1"></i> New Issue</button>
+								</div>
                             </div>
                             
                             <div class="card-body p-0">
@@ -321,6 +318,11 @@
                         <div class="card tab-pane fade show active" id="issue013-tab">
                             <div class="card-header header-elements-inline p-3">
                                 <h6 class="card-title"><i class="icon-stack-text mr-2"></i>ISSUE DETAILS</h6>
+                                <div class="header-elements">
+                                    <div class="list-icons">                                    
+                                        <a  href="#" class="list-icons-item text-primary"><i class="icon-pencil5"></i> Edit</a>
+                                    </div>
+                                </div>
                             </div>
                             
                             <div class="card-body">
@@ -424,9 +426,14 @@
 								</form>
                             </div>
                         </div>
-                        <div class="card tab-pane fade show active" id="issue012-tab">
+                        <div class="card tab-pane fade" id="issue012-tab">
                             <div class="card-header header-elements-inline p-3">
                                 <h6 class="card-title"><i class="icon-stack-text mr-2"></i>ISSUE DETAILS</h6>
+                                <div class="header-elements">
+                                    <div class="list-icons">                                    
+                                        <a  href="#" class="list-icons-item text-primary"><i class="icon-pencil5"></i> Edit</a>
+                                    </div>
+                                </div>
                             </div>
                             
                             <div class="card-body">

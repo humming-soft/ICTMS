@@ -12,11 +12,8 @@
                             <div class="media">
                                 <div class="media-body"> 
                                     <h6 class="media-title mb-0 font-weight-semibold text-uppercase border-bottom-1 border-bottom">Project Objective </h6>                 
-                                    <span class="d-inline-block p-2-1 font-weight-semibold">"Business problem that is required to be resolved or an opportunity that is required to be created 
-                                        that will enhance or bring benefit to the organization. In January 2018 a mandate was issued by the 
-                                        Ministry of Finance to Ministries, Agencies and Government owned companies that are involved in government procurement. 
-                                        The mandate authorizes the Technology Depository Agency (TDA) to collect, manage and analyze all government procurement 
-                                        related data for the purpose of understanding the usage of local content."</span>
+                                    <span class="d-inline-block p-2-1 font-weight-semibold">"By reduced road traffic congestion and reduced fatality rate due to road accidents and also implementing the effective Public Transportation Scheduling and Control
+                                                System the Commuters are convinced that the Public Transportation System in Malaysia is safe and reliable."</span>
                                 </div>
                             </div>
                         </div>
@@ -33,22 +30,22 @@
                                     
                                     <div class="card-body">
                                         <div class="row">
-                                            <div class="col-12 col-md-12 col-lg-12">
+                                        <div class="col-12 col-md-12 col-lg-12">
                                                 <table class="table table-borderless table-xs my-2">
                                                     <tbody>
                                                         <tr>
                                                             <td class="font-weight-semibold" width="25%">Project Name:</td>
-                                                            <td class="text-left">Integrated Labour Market Analysis And Reporting</td>
+                                                            <td class="text-left">Transport Information Data Exchange (TIDE)</td>
                                                         </tr>
                                                         <tr>
                                                             <td class="font-weight-semibold">Date Initiated:</td>
-                                                            <td class="text-left">12-DEC-2018</td>
+                                                            <td class="text-left">19-APR-2019</td>
                                                         </tr>
                                                         <tr>
                                                         <td class="font-weight-semibold">Status:</td>
                                                             <td class="text-left">
                                                                 <div class="btn-group">
-                                                                    <a href="#" class="badge bg-success dropdown-toggle" data-toggle="dropdown">IN PROGRESS</a>
+                                                                    <a href="#" class="badge bg-success dropdown-toggle" data-toggle="dropdown">ACTIVE</a>
                                                                     <div class="dropdown-menu dropdown-menu-right">
                                                                         <a href="#" class="dropdown-item active"><span class="badge badge-mark mr-2 bg-danger border-danger"></span> Blocker</a>
                                                                         <a href="#" class="dropdown-item"><span class="badge badge-mark mr-2 bg-orange border-orange"></span> High priority</a>
@@ -79,31 +76,48 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
+                                                            <td class="font-weight-semibold va-top">Project Controller:</td>
+                                                            <td class="text-left">
+                                                                    <p>Public and Land Transportation Agency </p>                                                                 
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
                                                             <td class="font-weight-semibold va-top">Project Background:</td>
-                                                            <td class="text-left">Business problem that is required to be resolved or an opportunity that is required to be created that will enhance or bring benefit to the organization.
-                                                                In January 2018 a mandate was issued by the Ministry of Finance to Ministries. <br>
-
-                                                                1. Agencies and Government owned companies that are involved in government procurement. <br>
-                                                                2. Agencies and Government owned companies that are involved in government procurement. <br>
-                                                                3. Agencies and Government owned companies that are involved in government procurement. <br>
+                                                            <td class="text-left">An Interactive Streaming Data Platform that captures and analyzes data from various Public Transport Operators and 
+                                                                Authorities to build insights that will help improve Public Transport Performance, Productivity and Profitability.
                                                             </td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
                                                 <hr>
+
                                                 <table class="table table-borderless table-xs my-2">
                                                     <tbody>
                                                         <tr>
-                                                            <td class="font-weight-semibold" width="25%">Anticipated Start Date:</td>
-                                                            <td class="text-left">03-APR-2019</td>
+                                                            <td class="font-weight-semibold" width="25%">Location:</td>
+                                                            <td class="text-left">Klang Valley</td>
                                                         </tr>
                                                         <tr>
-                                                            <td class="font-weight-semibold">Anticipated End Date:</td>
-                                                            <td class="text-left">27-JAN-2021</td>
+                                                        <tr>
+                                                            <td class="font-weight-semibold">Category:</td>
+                                                            <td class="text-left text-success"><span class="badge bg-primary">NEW</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="font-weight-semibold">Sector:</td>
+                                                            <td class="text-left">Transportation & Storage</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="font-weight-semibold">Sub-Sector:</td>
+                                                            <td class="text-left">Land Transport and Transport via Pipelines</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="font-weight-semibold">Planned Start Date:</td>
+                                                            <td class="text-left">02-MAY-2020</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
                                                 <hr>
+
                                                 <table class="table table-borderless table-xs my-2">
                                                     <tbody>
                                                         <tr>
@@ -111,12 +125,21 @@
                                                             <td class="text-left">RMK-11</td>
                                                         </tr>
                                                         <tr>
+                                                        <tr>
                                                             <td class="font-weight-semibold va-top">Strategic Thrusts:</td>
-                                                            <td class="text-left">THRUST 5 - Strengthening infrastructure to support economic expansion</td>
+                                                            <td class="text-left">THRUST 5 - Strengthening Infrastructure to Support Economic Expansion.</td>
                                                         </tr>
                                                         <tr>
                                                             <td class="font-weight-semibold va-top">Focus Area:</td>
-                                                            <td class="text-left">Public transport capital share in GKL/KV</td>
+                                                            <td class="text-left">Focus Area A: Building and Integrated Need Based Transport System.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="font-weight-semibold va-top">Strategy:</td>
+                                                            <td class="text-left">Improving Safety, Efficiency and Service Levels of Transport Operations.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="font-weight-semibold va-top">Outcomes:</td>
+                                                            <td class="text-left">Improving Coverage, Quality and Affordability of Digital Infrastructure.</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>

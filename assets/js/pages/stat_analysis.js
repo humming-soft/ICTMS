@@ -13,7 +13,7 @@ var StatAnalysis = function() {
                 finish: 'Save <i class="icon-arrow-right14 ml-2" />'
             },
             transitionEffect: 'fade',
-            saveState: true,
+            // saveState: true,
             autoFocus: true,
             onFinished: function (event, currentIndex) {
                 window.location.href = base_url+'projects/02849';

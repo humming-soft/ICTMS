@@ -362,7 +362,7 @@ EditorUi = function(editor, container, lightbox,labels)
 	{
 		try
 		{
-			graph.container.focus();
+			//graph.container.focus();
 		}
 		catch (e)
 		{
@@ -1031,7 +1031,7 @@ EditorUi.prototype.init = function()
 
 	// Updates action states
 	this.addUndoListener();
-	this.addBeforeUnloadListener();
+	// this.addBeforeUnloadListener();
 	
 	graph.getSelectionModel().addListener(mxEvent.CHANGE, mxUtils.bind(this, function()
 	{

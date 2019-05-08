@@ -121,8 +121,12 @@
                                     <b class="font-weight-semibold">Date Initiated : <span class="d_init p-1">07-NOV-2018</span></b>
                                 </div>
                                 <div class="mb-3">
+                                    <b class="font-weight-semibold">Project Background :</b>
+                                    <p>An Interactive Streaming Data Platform that captures and analyzes data from various Public Transport Operators and Authorities to build insights that will help improve Public Transport Performance, Productivity and Profitability.</p>
+                                </div>
+                                <div class="mb-3">
                                     <b class="font-weight-semibold">Project Objective :</b>
-                                    <p>The inclusion of migrants in the labour market is key to ensure their effective integration into the host societies and their positive impact on the EU economy; this entails fully using their skills and realising their economic potential. They can contribute to addressing skills shortages in certain sectors at all skills levels.</p>
+                                    <p>By reduced road traffic congestion and reduced fatality rate due to road accidents and also implementing the effective Public Transportation Scheduling and Control System the Commuters are convinced that the Public Transportation System in Malaysia is safe and reliable.</p>
                                 </div>
                                 <!-- <div class="mb-3">
                                     <b class="font-weight-semibold pb-2">Project Team :</b>
@@ -135,7 +139,7 @@
                                     </div>
                                 </div> -->
                                 <div class="mb-3">
-                                    <b class="font-weight-semibold">Project Creation Progress :</b>
+                                    <b class="font-weight-semibold">Project Initiation :</b>
                                     <ul class="list-unstyled mt-1">
                                         <li class="mb-3">
                                             <div class="d-flex align-items-center mb-1">Current Activity : <a href="<?=site_url('projects/02849/gantt')?>" class="font-weight-bold">Activities & Deliverables</a><span class="text-muted ml-auto">23%</span></div>
@@ -151,11 +155,14 @@
 
                             <div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
                                 <ul class="list-inline list-inline-dotted text-muted mb-3 mb-sm-0">
-                                    <li class="list-inline-item">Project Creation Process</li>
+                                    <li class="list-inline-item">Project Initiation</li>
                                 </ul>
                                 <ul class="list-inline list-inline-dotted mb-0 mt-1 mt-sm-0">
 									<!-- <li class="list-inline-item"><a href="http://localhost/humworks-pms/projects/2019/1802"><i class="icon-stats-bars"></i> Business Intelligence</a></li> -->
-									<li class="list-inline-item"><a href="<?=site_url('projects/02849')?>">Details</a></li>
+                                    <li class="list-inline-item">
+                                        <a class="float-right text-right link-modal" href="<?=site_url('projects/02849')?>" tabindex="0"><i class="icon-stack-text mr-1"></i><span>Details</span></a>
+                                    </li>
+                                    
 								</ul>
                             </div>
                         </div>
@@ -184,6 +191,10 @@
                                     <b class="font-weight-semibold">Project Background :</b>
                                     <p> Marine Department has gone through major transformations, evolving into becoming a lead agency in maritime safety in this country. The three Marine Departments of Peninsular Malaysia, Sabah and Sarawak, that previously operated quite independently, are now integrated as one Marine Department of Malaysia.</p>
                                 </div>
+                                <div class="mb-3">
+                                    <b class="font-weight-semibold">Project Objective :</b>
+                                    <p>The inclusion of migrants in the labour market is key to ensure their effective integration into the host societies and their positive impact on the EU economy; this entails fully using their skills and realising their economic potential. They can contribute to addressing skills shortages in certain sectors at all skills levels.</p>
+                                </div>
                                 <!-- <div class="mb-3">
                                     <b class="font-weight-semibold pb-2">Project Team :</b>
                                     <div class="project-users">
@@ -194,7 +205,7 @@
                                     </div>
                                 </div> -->
                                 <div class="mb-3">
-                                    <b class="font-weight-semibold">Project Creation Progress :</b>
+                                    <b class="font-weight-semibold">Project Initiation :</b>
                                     <ul class="list-unstyled mt-1">
                                         <li class="mb-3">
                                             <div class="d-flex align-items-center mb-1">Current Activity : <a href="" class="font-weight-bold">Budget Approval</a><span class="text-muted ml-auto">32%</span></div>
@@ -210,11 +221,13 @@
 
                             <div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
                                 <ul class="list-inline list-inline-dotted text-muted mb-3 mb-sm-0">
-                                    <li class="list-inline-item">Project Creation Process</li>
+                                    <li class="list-inline-item">Project Initiation</li>
                                 </ul>
                                 <ul class="list-inline list-inline-dotted mb-0 mt-1 mt-sm-0">
 									<!-- <li class="list-inline-item"><a href="http://localhost/humworks-pms/projects/2019/1802"><i class="icon-stats-bars"></i> Business Intelligence</a></li> -->
-									<li class="list-inline-item"><a href="<?=site_url('projects/02849')?>">Details</a></li>
+									<li class="list-inline-item">
+                                    <a class="float-right text-right link-modal" href="<?=site_url('projects/02849')?>" tabindex="0"><i class="icon-stack-text mr-1"></i><span>Details</span></a>
+                                    </li>
 								</ul>
                             </div>
                         </div>
@@ -262,6 +275,7 @@
                             <div class="row text-left">
                                 <div class="col-sm-12">
                                     <div class="form-group">
+                                        <label for="">Project Name</label>
                                         <input type="text" id="p_name" name="pjt_name" class="form-control form-control-lg" placeholder="Enter Project Name...">
                                     </div>
                                 </div>
@@ -269,7 +283,8 @@
                         <div class="row text-left">
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        <textarea  id="p_objective" name="pjt_objective" rows="5" class="form-control form-control-lg" placeholder="Enter project Background..."></textarea>
+                                        <label for="">Project Background</label>
+                                        <textarea  id="p_objective" name="pjt_objective" rows="5" class="form-control form-control-lg" placeholder="Enter Project Background..."></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -281,7 +296,7 @@
                             <div class="hmwks-text">Please provide the following project information.</div>
                                 <div class="row text-left">
                                     <div class="col-sm-6">
-                                        <div class="form-group"><label for="">Project Owner</label>
+                                        <div class="form-group"><label for="">Project Sponsor</label>
                                             <input type="hidden" name="datasourse[]"  id="one" value="<?=$ogchart; ?>">
                                             <input type="text" class="form-control" readonly value="<?=$owner_name; ?>" name="pjt_ownerStr">
                                         </div>
@@ -306,7 +321,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
-                                        <div class="form-group"><label for="">Project Controller</label>
+                                        <div class="form-group"><label for="">Project Owner</label>
                                             <select class=" form-control m-b" id="implementers" name="implementers">
                                                 <option>SELECT</option>
                                                 <?php
@@ -544,7 +559,7 @@
                                 </div>
                                 <div class="col-sm-3">
                                     <div class="card">
-                                        <div class="card-header header-elements-inline p-3">
+                                        <div class="card-header header-elements-inline">
                                             <h6 class="card-title"><i class="icon-plus2 mr-2"></i>ADD NEW</h6>
                                         </div>
                                         
@@ -600,13 +615,16 @@
                                                     </div>
                                                 </fieldset>
 
-                                                <div class="text-center mb-2">
-                                                    <button type="button" class="btn btn-success btn-block" id="btn-add-nodes"><i class="icon-paper-plan mr-2"></i>Save</button>
-                                                    <button type="button" class="btn btn-danger btn-block" id="btn-delete-nodes"><i class="icon-bin mr-2"></i>Delete</button>
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-6 col-lg-6 pb-2">
+                                                        <button type="button" class="btn btn-primary btn-block" id="btn-add-nodes"><i class="icon-plus2 mr-2"></i>Add</button>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-6">
+                                                        <button type="button" class="btn btn-danger btn-block" id="btn-delete-nodes"><i class="icon-bin mr-2"></i>Delete</button>
+                                                    </div>
                                                 </div>
-                                                <hr>
                                                 <div class="text-center">
-                                                    <button type="button" class="btn btn-primary  btn-block" id="saveProject" data-target="#hmwks-cnp" data-toggle="modal" data-dismiss="modal"><i class="icon-plus2 mr-2"></i>Add Selected</button>
+                                                    <button type="button" class="btn btn-success btn-block" id="saveProject" data-target="#hmwks-cnp" data-toggle="modal" data-dismiss="modal"><i class="icon-paperplane mr-2"></i>Save</button>
                                                 </div>
                                             </form>
                                         </div>

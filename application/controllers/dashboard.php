@@ -50,7 +50,7 @@ class Dashboard extends ICTMS_Controller {
             $_header["page_js"] = "dashboard";
             $this->load->view('core/fragments/header',$_header);
             $this->load->view('core/projects/fragments/main_navbar',$data1);
-            $this->load->view('core/projects/fragments/secondary_navbar');
+            $this->load->view('core/projects/fragments/secondary_navbar_pprisa');
             $this->load->view('core/projects/overview_pprisa',$data);
             $this->load->view('core/fragments/footer');
         }else{

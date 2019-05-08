@@ -1,5 +1,16 @@
 <div class="page-content pt-0">
     <div class="content-wrapper">
+        <div class="page-header " style="border-left: 1px solid #ddd; border-right: 1px solid #ddd; margin-bottom: 0;">
+            <div class="page-header-content header-elements-md-inline">
+                <div class="page-title">
+                    <div class="breadcrumb mt-1">
+                        <a href="<?=site_url('dashboard')?>" class="breadcrumb-item py-0 text-primary"><i class="icon-home2"></i></a>
+                        <a href="<?=site_url('projects/02849')?>" class="breadcrumb-item py-0 text-primary">Transport Information Data Exchange (TIDE)</a>
+                        <span class="breadcrumb-item py-0 active">EPU Approval</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     <!-- Content area -->
     <div class="content">
         <!-- Inner container -->
@@ -11,7 +22,7 @@
                     <div class="col-sm-12">
                         <div class="card">
                             <div class="card-header header-elements-inline p-3">
-                                <h5 class="card-title text-uppercase"><i class="icon-checkmark-circle2 mr-2"></i>Approval</h5>
+                                <h5 class="card-title text-uppercase"><i class="icon-checkmark-circle2 mr-2"></i>EPU Approval</h5>
                             </div>
                             
                             <div class="card-body">

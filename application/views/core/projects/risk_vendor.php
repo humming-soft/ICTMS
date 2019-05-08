@@ -131,9 +131,9 @@
                                 </div>                              
                                 <div class="card-body">
                                     <!-- <div class="row"> -->
-                                        <!-- <div class="text-center pt-2 vertical-text"> <label style="font-weight: bold">OCCURRENCE PROBABILITY</label></div>
+                                        <!-- <div class="text-center pt-2 vertical-text"> <label style="font-weight: bold">OCCURRENCE PROBABILITY</label></div> -->
                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                            <div class="ram-grid">
+                                            <!-- <div class="ram-grid">
                                                 <div>3</div>
                                                 <div>4</div>
                                                 <div>5</div>
@@ -145,7 +145,7 @@
                                                 <div>3</div>  
                                             </div>
                                         <div class="text-center pt-2"> <label style="font-weight: bold">IMPACT ON THE PROJECT <br> (Deadlines,Cost,Quality)</label></div> -->
-                                            <div class="row row-tile no-gutters">
+                                            <!-- <div class="row row-tile no-gutters">
                                             <div class="text-center vertical-text"> <label style="font-weight: bold">IMPACT ON THE PROJECT</div>
                                                 <div class="col-4">
                                                     <a href="#" class="btn btn-light btn-block btn-float m-0">
@@ -185,9 +185,9 @@
                                                     </a>
                                                 </div>
                                                 
-                                            </div>
-                                            <div class="text-center pt-2"> <label style="font-weight: bold">IMPACT ON THE PROJECT <br> (Deadlines,Cost,Quality)</label></div>
-                                            <!-- <table class="table table-bordered table-hover ">
+                                            </div> -->
+                                            <!-- <div class="text-center pt-2"> <label style="font-weight: bold">IMPACT ON THE PROJECT <br> (Deadlines,Cost,Quality)</label></div> -->
+                                           <table class="table table-bordered table-hover ">
                                                 <tbody>
                                                 <tr>
                                                     <td><input type="text" value="45%" style="font-weight: bold; width: 97%; height: 20px; text-align: center " readonly=""><br><div id="45one" style="font-weight: bold; width: 97%; height: 82px;"><div></div></div></td>
@@ -206,8 +206,8 @@
                                                 </tr>
                                                 </tbody>
                                             </table>
-                                            <div class="text-center pt-2"> <label style="font-weight: bold">IMPACT ON THE PROJECT <br> (Deadlines,Cost,Quality)</label></div> -->
-                                        <!-- </div> -->
+                                            <div class="text-center pt-2"> <label style="font-weight: bold">IMPACT ON THE PROJECT <br> (Deadlines,Cost,Quality)</label></div>
+                                        </div> 
                                     <!-- </div> -->
                                 </div>
                             </div>

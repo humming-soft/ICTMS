@@ -148,7 +148,7 @@
                 </li>
             </ul>
 
-            <span class="badge bg-success-400 badge-pill ml-md-3 mr-md-auto">31 Projects</span>
+            <span class="badge bg-success-400 badge-pill ml-md-3 mr-md-auto">2 Projects</span>
             <?php 
             $lang = $this->input->cookie('user_lang',TRUE);
             if(!isset($lang)){

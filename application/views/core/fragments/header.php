@@ -52,8 +52,8 @@
     <?php if(in_array("gantt",$support)){ ?>
     <link href="<?=site_url('assets/js/plugins/gantt/dhtmlxgantt.css')?>" rel="stylesheet" type="text/css">
     <script src="<?=site_url('assets/js/plugins/gantt/dhtmlxgantt.js')?>"></script>
-    <!-- <script src="<?=site_url('assets/js/plugins/gantt/ext/dhtmlxgantt_smart_rendering.js')?>" type="text/javascript" charset="utf-8"></script>
     <script src="<?=site_url('assets/js/plugins/gantt/ext/dhtmlxgantt_marker.js')?>" type="text/javascript" charset="utf-8"></script>
+    <!-- <script src="<?=site_url('assets/js/plugins/gantt/ext/dhtmlxgantt_smart_rendering.js')?>" type="text/javascript" charset="utf-8"></script>
     <script src="<?=site_url('assets/js/plugins/gantt/ext/dhtmlxgantt_fullscreen.js')?>" type="text/javascript" charset="utf-8"></script>
     <script src="<?=site_url('assets/js/plugins/gantt/ext/dhtmlxgantt_critical_path.js')?>" type="text/javascript" charset="utf-8"></script>
     <script src="<?=site_url('assets/js/plugins/gantt/ext/dhtmlxgantt_auto_scheduling.js')?>" type="text/javascript" charset="utf-8"></script>

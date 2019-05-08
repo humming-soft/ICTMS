@@ -24,6 +24,7 @@
   background-size: 10px 10px;
   border: 1px dashed rgba(0,0,0,0);
   padding: 20px;
+  min-height: 538px;
 }
 
 .orgchart .hidden, .orgchart~.hidden {

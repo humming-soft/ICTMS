@@ -1,5 +1,16 @@
 <div class="page-content pt-0">
     <div class="content-wrapper">
+        <div class="page-header " style="border-left: 1px solid #ddd; border-right: 1px solid #ddd; margin-bottom: 0;">
+            <div class="page-header-content header-elements-md-inline">
+                <div class="page-title">
+                    <div class="breadcrumb mt-1">
+                        <a href="<?=site_url('dashboard')?>" class="breadcrumb-item py-0 text-primary"><i class="icon-home2"></i></a>
+                        <a href="<?=site_url('projects/02849')?>" class="breadcrumb-item py-0 text-primary">Transport Information Data Exchange (TIDE)</a>
+                        <span class="breadcrumb-item py-0 active">Logframe (LFM)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     <!-- Content area -->
     <div class="content">
         <!-- Inner container -->
@@ -11,7 +22,7 @@
                     <div class="col-sm-12">
                         <div class="card">
                             <div class="card-header header-elements-inline p-3">
-                                <h5 class="card-title text-uppercase"><i class="icon-grid7 mr-2"></i>Logframe</h5>
+                                <h5 class="card-title text-uppercase"><i class="icon-grid7 mr-2"></i>Logframe (LFM)</h5>
                             </div>
                             
                             <div class="card-body">
@@ -40,43 +51,54 @@
                                                         <th class="text-uppercase align-center">Goal(s)</th>
                                                         <td>
                                                             <ul class="list list-numbered mb-0">
-                                                                <li>
-                                                                    Threat to the river ecosystem is reduced and fish stocks are increased.
-                                                                </li>
-                                                                <li>
-                                                                    Incidence of water borne diseases and illness is reduced particularly among poor families. 
-                                                                </li>
-                                                                <li>
-                                                                    Catch and income of fishing families is stabilized or increased.
-                                                                </li>
+                                                                <li>1.	Reduction on Carbon Emission from Land Vehicle.</li>
+                                                                <li>2.	Reduction on Fatality Rate from Road Accidents</li>
+                                                                <li>3.	Reduction in Road Congestion</li>
+                                                                <li>4.	Reduction in Road Maintenance Cost </li>
                                                             </ul>
                                                         </td>
                                                         <td>
-                                                            <ul class="list mb-0 goal_ind_t">-
+                                                            <ul class="list mb-0 goal_ind_t">
+                                                                <li>Increase in Commuters by 20%.</li>
                                                             </ul>
                                                         </td>
                                                         <td>
-                                                            <ul class="list mb-0 goal_mov_t">-
+                                                            <ul class="list mb-0 goal_mov_t">
+                                                                <li>Real-time Descriptive Analytics in comparison to past trends.</li>
                                                             </ul>
                                                         </td>
                                                         <td>
-                                                            <ul class="list mb-0 goal_asmp_t">-
+                                                            <ul class="list mb-0 goal_asmp_t">
+                                                                <li>
+                                                                    Real-time Commuting Data extracted from the various Public Transportation Authorities and Operators are accurate.
+                                                                </li>
                                                             </ul>
                                                         </td>                                                 
                                                     </tr>
                                                     <tr>
                                                         <th class="text-uppercase align-center">Outcome</th>
-                                                        <td>River water quality is improved</td>
+                                                        <td>Public Transportation System in Malaysia is safe and reliable</td>
                                                         <td>
-                                                            <ul class="list mb-0 outc_ind_t">-
+                                                            <ul class="list mb-0 outc_ind_t">
+                                                                <li>10% Reduction in Environmental Carbon Reading from “Jabatan Alam Sekitar”.</li>
+                                                                <li>10% Reduction in Road Accidents reported at hospitals.</li>
+                                                                <li>10% Reduction in Road Traffic.</li>
+                                                                <li>10% Reduction in Actual Road Maintenance Cost.</li>
                                                             </ul>
                                                         </td>
                                                         <td>
-                                                            <ul class="list mb-0 outc_mov_t">-
+                                                            <ul class="list mb-0 outc_mov_t">
+                                                                <li>Jabatan Alam Sekitar</li>
+                                                                <li>Accident Reports from Hospitals</li>
+                                                                <li>Traffic Report from LLM</li>
+                                                                <li>Road Maintenance report from LLM</li>
                                                             </ul>
                                                         </td>
                                                         <td>
-                                                            <ul class="list mb-0 outc_asmp_t">-
+                                                            <ul class="list mb-0 outc_asmp_t">
+                                                                <li>Jabatan Alam Sekitar is capturing accurate data on Carbon Emission.</li>
+                                                                <li>Hospitals are capturing accurate data on Accident cases.</li>
+                                                                <li>LLM is capturing accurate data on Traffic and Road Maintenance.</li>
                                                             </ul>
                                                         </td>                                                  
                                                     </tr>
@@ -84,27 +106,24 @@
                                                         <th class="text-uppercase align-center">Output(s)</th>
                                                         <td>
                                                             <ul class="list list-unstyled mb-0">
-                                                                <li>
-                                                                    <strong>OUT-1 :</strong> The quantity of solid waste dumped into the river is reduced.
-                                                                </li>
-                                                                <li>
-                                                                    <strong>OUT-2 :</strong> No. of households and factories discharging wastewater directly into the river is reduced.
-                                                                </li>
-                                                                <li>
-                                                                    <strong>OUT-3 :</strong> Wastewater treatment meets environmental standards.
-                                                                </li>
+                                                            <li><strong>OUT-1 :</strong> An Integrated Transportation System is in place</li>
+                                                                                <li><strong>OUT-2 :</strong>An effective Public Transportation Scheduling and Control System is in place</li>
                                                             </ul>
                                                         </td>
                                                         <td>
-                                                            <ul class="list mb-0 out_ind_t">-
+                                                            <ul class="list mb-0 out_ind_t">
+                                                                <li>Real-time transportation data from all Public Transportation Operators are integrated with a centralized system at the Public Transportation Authority within 24-months.</li>
+                                                                <li>Accurate Public Transportation Scheduling is achieved within 48-months.</li>
                                                             </ul>
                                                         </td>
                                                         <td>
-                                                            <ul class="list mb-0 out_mov_t">-
+                                                            <ul class="list mb-0 out_mov_t">
+                                                                <li>TIDE is operational within 24-months.</li>
                                                             </ul>
                                                         </td>
                                                         <td>
-                                                            <ul class="list mb-0 out_asmp_t">-
+                                                            <ul class="list mb-0 out_asmp_t">
+                                                                <li>Collaboration efforts has been agreed between the Public Transportation Operators and Authority.</li>
                                                             </ul>
                                                         </td>
                                                     </tr>
@@ -112,45 +131,29 @@
                                                         <th class="text-uppercase align-center">Activity(ies)</th>
                                                         <td>
                                                             <ul class="list list-unstyled mb-0">
-                                                                <li>
-                                                                    <strong>OUT-1</strong>
-                                                                    <ul class="list list-unstyled ml-3">
-                                                                        <li>
-                                                                            <strong>1.1 :</strong> Polluters are effectively controlled.
-                                                                        </li>
-                                                                        <li>
-                                                                            <strong>1.2 :</strong> Population more aware of the danger of waste dumping.
-                                                                        </li>
-                                                                    </ul>
+                                                                <li>1.	Technical Study on the systems currently available at each Public Transportation Operators
                                                                 </li>
-                                                                <li>
-                                                                    <strong>OUT-2</strong>
-                                                                    <ul class="list list-unstyled ml-3">
-                                                                        <li>
-                                                                            <strong>2.1 :</strong> Pollution management is given a higher political priority.
-                                                                        </li>
-                                                                    </ul>
+                                                                <li>2.	Develop and ICT Infrastructure to store and analyze Public Transportation Data extracted from all Public Transportation Operators
                                                                 </li>
-                                                                <li>
-                                                                    <strong>OUT-3</strong>
-                                                                    <ul class="list list-unstyled ml-3">
-                                                                        <li>
-                                                                            <strong>3.1 :</strong> Increased capital investment and improved business planning within Local Government is established, including cost of recovery mechanisms.
-                                                                        </li>
-                                                                    </ul>
+                                                                <li>3.	Advise the Enforcement Division at the Public Transportation Authorities to minimize the gaps between the Baseline and Actual Public Transportation Scheduling through various Enforcement Intervention Programmes 
                                                                 </li>
                                                             </ul>
                                                         </td>
                                                         <td>
-                                                            <ul class="list mb-0 act_ind_t">-
+                                                            <ul class="list mb-0 act_ind_t">
+                                                                <li>Technical Study Report from all Public Transportation Operators must be available within 6-months.</li>
+                                                                <li>Design, Supply, Installation, Testing and Commissioning of the ICT Infrastructure at Public Transportation Authority is completed 12-months upon completion of the Technical Study.</li>
+                                                                <li>Public Transportation Scheduling Gap Analysis report is presented to the Enforcement Division within 6-months from commissioning of the ICT Infrastructure.</li>
                                                             </ul>
                                                         </td>
                                                         <td>
-                                                            <ul class="list mb-0 act_mov_t">-
+                                                            <ul class="list mb-0 act_mov_t">
+                                                                <li>Project Progress Report.</li>
                                                             </ul>
                                                         </td>
                                                         <td>
-                                                            <ul class="list mb-0 act_asmp_t">-
+                                                            <ul class="list mb-0 act_asmp_t">
+                                                                <li>Collaboration efforts has been agreed between the Public Transportation Operators and Authority.</li>
                                                             </ul>
                                                         </td>
                                                     </tr>
@@ -182,9 +185,10 @@
                                                                         <td class="font-weight-semibold va-top" width="150px">GOAL:</td>
                                                                         <td class="text-left">
                                                                             <ul class="list list-unstyled mb-0">
-                                                                                <li>1. Threat to the river ecosystem is reduced and fish stocks are increased.</li>
-                                                                                <li>2. Incidence of water borne diseases and illness is reduced particularly among poor families.</li>
-                                                                                <li>3. Catch and income of fishing families is stabilized or increased.</li>
+                                                                                <li>1.	Reduction on Carbon Emission from Land Vehicle.</li>
+                                                                                <li>2.	Reduction on Fatality Rate from Road Accidents</li>
+                                                                                <li>3.	Reduction in Road Congestion</li>
+                                                                                <li>4.	Reduction in Road Maintenance Cost </li>
                                                                             </ul>
                                                                         </td>
                                                                     </tr>
@@ -200,7 +204,7 @@
                                                                         <td class="font-weight-semibold va-top" width="150px">OUTCOME:</td>
                                                                         <td class="text-left">
                                                                             <ul class="list list-unstyled mb-0">
-                                                                                <li> River water quality is improved</li>
+                                                                                <li>Public Transportation System in Malaysia is safe and reliable</li>
                                                                             </ul>                                                           
                                                                         </td>
                                                                     </tr>                                                            
@@ -216,9 +220,8 @@
                                                                         <td class="font-weight-semibold va-top" width="150px">OUTPUT(S):</td>
                                                                         <td class="text-left">
                                                                             <ul class="list list-unstyled mb-0">
-                                                                                <li><strong>OUT-1 :</strong> The quantity of solid waste dumped into the river is reduced.</li>
-                                                                                <li><strong>OUT-2 :</strong> No. of households and factories discharging wastewater directly into the river is reduced.</li>
-                                                                                <li><strong>OUT-3 :</strong> Wastewater treatment meets environmental standards.</li>
+                                                                                <li><strong>OUT-1 :</strong> An Integrated Transportation System is in place</li>
+                                                                                <li><strong>OUT-2 :</strong> 2.	An effective Public Transportation Scheduling and Control System is in place</li>
                                                                             </ul>
                                                                         </td>
                                                                     </tr>                                                                   
@@ -234,32 +237,11 @@
                                                                         <td class="font-weight-semibold va-top" width="150px">ACTIVITY(IES):</td>
                                                                         <td class="text-left">
                                                                             <ul class="list list-unstyled mb-0">
-                                                                                <li>
-                                                                                    <strong>OUT-1</strong>
-                                                                                    <ul class="list list-unstyled ml-3">
-                                                                                        <li>
-                                                                                            <strong>1.1 :</strong> Polluters are effectively controlled.
-                                                                                        </li>
-                                                                                        <li>
-                                                                                            <strong>1.2 :</strong> Population more aware of the danger of waste dumping.
-                                                                                        </li>
-                                                                                    </ul>
+                                                                                <li>1.	Technical Study on the systems currently available at each Public Transportation Operators
                                                                                 </li>
-                                                                                <li>
-                                                                                    <strong>OUT-2</strong>
-                                                                                    <ul class="list list-unstyled ml-3">
-                                                                                        <li>
-                                                                                            <strong>2.1 :</strong> Pollution management is given a higher political priority.
-                                                                                        </li>
-                                                                                    </ul>
+                                                                                <li>2.	Develop and ICT Infrastructure to store and analyze Public Transportation Data extracted from all Public Transportation Operators
                                                                                 </li>
-                                                                                <li>
-                                                                                    <strong>OUT-3</strong>
-                                                                                    <ul class="list list-unstyled ml-3">
-                                                                                        <li>
-                                                                                            <strong>3.1 :</strong> Increased capital investment and improved business planning within Local Government is established, including cost of recovery mechanisms.
-                                                                                        </li>
-                                                                                    </ul>
+                                                                                <li>3.	Advise the Enforcement Division at the Public Transportation Authorities to minimize the gaps between the Baseline and Actual Public Transportation Scheduling through various Enforcement Intervention Programmes 
                                                                                 </li>
                                                                             </ul>
                                                                         </td>
@@ -290,30 +272,13 @@
                                                                     <div class="media-body">
                                                                         <h6 class="media-title font-weight-semibold text-uppercase">Activity (ies) : </h6>
                                                                         <ul class="list list-unstyled mb-0">
-                                                                            <li>
-                                                                                <ul class="list list-unstyled ml-3">
-                                                                                    <li>
-                                                                                        <strong>1.1 :</strong> Polluters are effectively controlled.
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <strong>1.2 :</strong> Population more aware of the danger of waste dumping.
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </li>
-                                                                            <li>
-                                                                                <ul class="list list-unstyled ml-3">
-                                                                                    <li>
-                                                                                        <strong>2.1 :</strong> Pollution management is given a higher political priority.
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </li>
-                                                                            <li>
-                                                                                <ul class="list list-unstyled ml-3">
-                                                                                    <li>
-                                                                                        <strong>3.1 :</strong> Increased capital investment and improved business planning within Local Government is established, including cost of recovery mechanisms.
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </li>
+                                                                           
+                                                                                <li>1.	Technical Study on the systems currently available at each Public Transportation Operators
+                                                                                </li>
+                                                                                <li>2.	Develop and ICT Infrastructure to store and analyze Public Transportation Data extracted from all Public Transportation Operators
+                                                                                </li>
+                                                                                <li>3.	Advise the Enforcement Division at the Public Transportation Authorities to minimize the gaps between the Baseline and Actual Public Transportation Scheduling through various Enforcement Intervention Programmes 
+                                                                                </li>
                                                                         </ul>
                                                                     </div>
                                                                 </div>
@@ -324,6 +289,7 @@
                                                                     <div class="media-body">
                                                                         <h6 class="media-title font-weight-semibold">Assumptions (Pre-conditions) : <i class="icon-help text-secondary" title="Pre-conditions which are required before the activity starts."></i></h6>
                                                                         <ul class="list act_asmp_t">
+                                                                            <li>Collaboration efforts has been agreed between the Public Transportation Operators and Authority.</li>
                                                                         </ul>
                                                                         <div class="input-group">
                                                                             <input type="text" id="act_asmp" class="form-control" placeholder="Add New Assumption..">
@@ -342,9 +308,8 @@
                                                                     <div class="media-body">
                                                                         <h6 class="media-title font-weight-semibold text-uppercase">Output(s) : </h6>
                                                                         <ul class="list list-unstyled mb-0 ml-3">
-                                                                            <li><strong>OUT-1 :</strong> The quantity of solid waste dumped into the river is reduced.</li>
-                                                                            <li><strong>OUT-2 :</strong> No. of households and factories discharging wastewater directly into the river is reduced.</li>
-                                                                            <li><strong>OUT-3 :</strong> Wastewater treatment meets environmental standards.</li>
+                                                                            <li><strong>OUT-1 :</strong> An Integrated Transportation System is in place</li>
+                                                                            <li><strong>OUT-2 :</strong>An effective Public Transportation Scheduling and Control System is in place</li>
                                                                         </ul>
                                                                     </div>
                                                                 </div>
@@ -355,6 +320,7 @@
                                                                     <div class="media-body">
                                                                         <h6 class="media-title font-weight-semibold">Assumptions (External Conditions) : <i class="icon-help text-secondary" title="External Conditions which must be met to obtain the expected results on schedule."></i></h6>
                                                                         <ul class="list out_asmp_t">
+                                                                            <li>Collaboration efforts has been agreed between the Public Transportation Operators and Authority.</li>
                                                                         </ul>
                                                                         <div class="input-group">
                                                                             <input type="text" id="out_asmp" class="form-control" placeholder="Add New Assumption..">
@@ -373,7 +339,7 @@
                                                                     <div class="media-body">
                                                                         <h6 class="media-title font-weight-semibold text-uppercase">Outcome : </h6>
                                                                         <ul class="list list-unstyled mb-0 ml-3">
-                                                                            <li>River water quality is improved</li>
+                                                                            <li>Public Transportation System in Malaysia is safe and reliable</li>
                                                                         </ul>
                                                                     </div>
                                                                 </div>
@@ -384,6 +350,9 @@
                                                                     <div class="media-body">
                                                                         <h6 class="media-title font-weight-semibold">Assumptions (External Conditions) : <i class="icon-help text-secondary" title="Factors and conditions which are necessary to achieve that objective."></i></h6>
                                                                         <ul class="list outc_asmp_t">
+                                                                            <li>Jabatan Alam Sekitar is capturing accurate data on Carbon Emission.</li>
+                                                                            <li>Hospitals are capturing accurate data on Accident cases.</li>
+                                                                            <li>LLM is capturing accurate data on Traffic and Road Maintenance.</li>
                                                                         </ul>
                                                                         <div class="input-group">
                                                                             <input type="text" id="outc_asmp" class="form-control" placeholder="Add New Assumption..">
@@ -402,15 +371,10 @@
                                                                     <div class="media-body">
                                                                         <h6 class="media-title font-weight-semibold text-uppercase">Goal(s) : </h6>
                                                                         <ul class="list list-unstyled mb-0 ml-3">
-                                                                            <li>
-                                                                                <strong> 1.</strong> Threat to the river ecosystem is reduced and fish stocks are increased.
-                                                                            </li>
-                                                                            <li>
-                                                                                <strong>2.</strong> Incidence of water borne diseases and illness is reduced particularly among poor families. 
-                                                                            </li>
-                                                                            <li>
-                                                                                <strong>3.</strong> Catch and income of fishing families is stabilized or increased.
-                                                                            </li>
+                                                                            <li>1.	Reduction on Carbon Emission from Land Vehicle.</li>
+                                                                            <li>2.	Reduction on Fatality Rate from Road Accidents</li>
+                                                                            <li>3.	Reduction in Road Congestion</li>
+                                                                            <li>4.	Reduction in Road Maintenance Cost </li>
                                                                         </ul>
                                                                     </div>
                                                                 </div>
@@ -421,6 +385,7 @@
                                                                     <div class="media-body">
                                                                         <h6 class="media-title font-weight-semibold">Assumptions (External Factors) : <i class="icon-help text-secondary" title="External Factors necessary to sustain objectives in the long term."></i></h6>
                                                                         <ul class="list goal_asmp_t">
+                                                                            <li>Real-time Commuting Data extracted from the various Public Transportation Authorities and Operators are accurate.</li>
                                                                         </ul>
                                                                         <div class="input-group">
                                                                             <input type="text" id="goal_asmp" class="form-control" placeholder="Add New Assumption..">
@@ -462,9 +427,19 @@
                                                                             <th colspan="2"><h6 class="font-weight-semibold text-uppercase mb-0">Goal(s)</h6></th>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td class="p-3">
+                                                                            <td class="p-1">
                                                                                 <ul class="list goal_ind_t">
+                                                                                    <li>Increase in Commuters by 20%.</li>
                                                                                 </ul>
+                                                                            </td>
+                                                                            <td class="p-1">
+                                                                                <ul class="list goal_mov_t">
+                                                                                    <li>Real-time Descriptive Analytics in comparison to past trends.</li>
+                                                                                </ul>
+                                                                            </td>
+                                                                        </tr>   
+                                                                        <tr>
+                                                                            <td class="border-top-0">
                                                                                 <div class="input-group">
                                                                                     <input type="text" id="goal_ind" class="form-control" placeholder="Add New Indicators..">
                                                                                     <span class="input-group-append">
@@ -472,9 +447,7 @@
                                                                                     </span>
                                                                                 </div>
                                                                             </td>
-                                                                            <td class="p-3">
-                                                                                <ul class="list goal_mov_t">
-                                                                                </ul>
+                                                                            <td class="border-top-0">
                                                                                 <div class="input-group">
                                                                                     <input type="text" id="goal_mov" class="form-control" placeholder="Add New Means of Verification..">
                                                                                     <span class="input-group-append">
@@ -482,14 +455,30 @@
                                                                                     </span>
                                                                                 </div>
                                                                             </td>
-                                                                        </tr>    
+                                                                        </tr> 
                                                                         <tr class="table-active table-border-double">
                                                                             <th colspan="2"><h6 class="font-weight-semibold text-uppercase mb-0">Outcome</h6></th>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td class="p-3">
+                                                                            <td class="p-1">
                                                                                 <ul class="list outc_ind_t">
+                                                                                    <li>10% Reduction in Environmental Carbon Reading from “Jabatan Alam Sekitar”.</li>
+                                                                                    <li>10% Reduction in Road Accidents reported at hospitals.</li>
+                                                                                    <li>10% Reduction in Road Traffic.</li>
+                                                                                    <li>10% Reduction in Actual Road Maintenance Cost.</li>
                                                                                 </ul>
+                                                                            </td>
+                                                                            <td class="p-1">
+                                                                                <ul class="list outc_mov_t">
+                                                                                    <li>Jabatan Alam Sekitar</li>
+                                                                                    <li>Accident Reports from Hospitals</li>
+                                                                                    <li>Traffic Report from LLM</li>
+                                                                                    <li>Road Maintenance report from LLM</li>
+                                                                                </ul>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="border-top-0">
                                                                                 <div class="input-group">
                                                                                     <input type="text" id="outc_ind" class="form-control" placeholder="Add New Indicators..">
                                                                                     <span class="input-group-append">
@@ -497,9 +486,7 @@
                                                                                     </span>
                                                                                 </div>
                                                                             </td>
-                                                                            <td class="p-3">
-                                                                                <ul class="list outc_mov_t">
-                                                                                </ul>
+                                                                            <td class="border-top-0">
                                                                                 <div class="input-group">
                                                                                     <input type="text" id="outc_mov" class="form-control" placeholder="Add New Means of Verification..">
                                                                                     <span class="input-group-append">
@@ -507,14 +494,25 @@
                                                                                     </span>
                                                                                 </div>
                                                                             </td>
-                                                                        </tr>
+                                                                        </tr> 
                                                                         <tr class="table-active table-border-double">
                                                                             <th colspan="2"><h6 class="font-weight-semibold text-uppercase mb-0">Output(s)</h6></th>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td class="p-3">
+                                                                            <td class="p-1">
                                                                                 <ul class="list out_ind_t">
+                                                                                    <li>Real-time transportation data from all Public Transportation Operators are integrated with a centralized system at the Public Transportation Authority within 24-months.</li>
+                                                                                    <li>Accurate Public Transportation Scheduling is achieved within 48-months.</li>
                                                                                 </ul>
+                                                                            </td>
+                                                                            <td class="p-1">
+                                                                                <ul class="list out_mov_t">
+                                                                                    <li>TIDE is operational within 24-months.</li>
+                                                                                </ul>
+                                                                            </td>
+                                                                        </tr>   
+                                                                        <tr>
+                                                                            <td class="border-top-0">
                                                                                 <div class="input-group">
                                                                                     <input type="text" id="out_ind" class="form-control" placeholder="Add New Indicators..">
                                                                                     <span class="input-group-append">
@@ -522,9 +520,7 @@
                                                                                     </span>
                                                                                 </div>
                                                                             </td>
-                                                                            <td class="p-3">
-                                                                                <ul class="list out_mov_t">
-                                                                                </ul>
+                                                                            <td class="border-top-0">
                                                                                 <div class="input-group">
                                                                                     <input type="text" id="out_mov" class="form-control" placeholder="Add New Means of Verification..">
                                                                                     <span class="input-group-append">
@@ -532,14 +528,26 @@
                                                                                     </span>
                                                                                 </div>
                                                                             </td>
-                                                                        </tr>      
+                                                                        </tr>    
                                                                         <tr class="table-active table-border-double">
                                                                             <th colspan="2"><h6 class="font-weight-semibold text-uppercase mb-0">Activitiy(ies)</h6></th>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td class="p-3">
+                                                                            <td class="p-1">
                                                                                 <ul class="list act_ind_t">
+                                                                                    <li>Technical Study Report from all Public Transportation Operators must be available within 6-months.</li>
+                                                                                    <li>Design, Supply, Installation, Testing and Commissioning of the ICT Infrastructure at Public Transportation Authority is completed 12-months upon completion of the Technical Study.</li>
+                                                                                    <li>Public Transportation Scheduling Gap Analysis report is presented to the Enforcement Division within 6-months from commissioning of the ICT Infrastructure.</li>
                                                                                 </ul>
+                                                                            </td>
+                                                                            <td class="p-1">
+                                                                                <ul class="list act_mov_t">
+                                                                                    <li>Project Progress Report.</li>
+                                                                                </ul>
+                                                                            </td>
+                                                                        </tr>   
+                                                                        <tr>
+                                                                            <td class="border-top-0">
                                                                                 <div class="input-group">
                                                                                     <input type="text" id="act_ind" class="form-control" placeholder="Add New Indicators..">
                                                                                     <span class="input-group-append">
@@ -547,9 +555,7 @@
                                                                                     </span>
                                                                                 </div>
                                                                             </td>
-                                                                            <td class="p-3">
-                                                                                <ul class="list act_mov_t">
-                                                                                </ul>
+                                                                            <td class="border-top-0">
                                                                                 <div class="input-group">
                                                                                     <input type="text" id="act_mov" class="form-control" placeholder="Add New Means of Verification..">
                                                                                     <span class="input-group-append">

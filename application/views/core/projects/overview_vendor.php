@@ -1,5 +1,15 @@
 <div class="page-content pt-0">
     <div class="content-wrapper">
+        <div class="page-header " style="border-left: 1px solid #ddd; border-right: 1px solid #ddd; margin-bottom: 0;">
+            <div class="page-header-content header-elements-md-inline">
+                <div class="page-title">
+                    <div class="breadcrumb mt-1">
+                        <a href="<?=site_url('dashboard')?>" class="breadcrumb-item py-0 text-primary"><i class="icon-home2"></i></a>
+                        <span class="breadcrumb-item py-0 active">Transport Information Data Exchange (TIDE)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     <!-- Content area -->
     <div class="content">
         <!-- Inner container -->

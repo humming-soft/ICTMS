@@ -572,16 +572,28 @@
                                                         <input type="text" id="position-node" hidden="">
                                                         <input type="text" id="parent-id" hidden="">
                                                     </div>
-
-                                                    <div class="form-group" id="new-nodelist">
-                                                        <label>Employee:</label>
-                                                        <input type="text" class="form-control new-node" placeholder="Enter Emloyee Name">
-                                                    </div>
-                                                    <div class="form-group" id="new-nodelist">
-                                                        <label>Email:</label>
-                                                        <input type="text" class="form-control new-node-email" placeholder="Enter Email">
-                                                    </div>
                                                     <div class="form-group">
+                                                        <label class="d-block">Position Type:</label>
+
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" class="custom-control-input pos_type" value="1" name="node-type2" id="type_member" checked>
+                                                            <label class="custom-control-label" for="type_member">Member</label>
+                                                        </div>
+
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" class="custom-control-input pos_type" value="2" name="node-type2" id="type_header">
+                                                            <label class="custom-control-label" for="type_header">Committee Header</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group" id="new-nodelist">
+                                                        <label>Member/Committee Header:</label>
+                                                        <input type="text" class="form-control new-node" placeholder="Enter Member/Committee Header Name...">
+                                                    </div>
+                                                    <div class="form-group om-show" id="new-nodelist">
+                                                        <label>Email:</label>
+                                                        <input type="text" class="form-control new-node-email" placeholder="Enter Email...">
+                                                    </div>
+                                                    <div class="form-group om-show">
                                                         <label>Position:</label>
                                                         <select class=" form-control" id="position">
                                                             <option>SELECT</option>
@@ -640,8 +652,31 @@
 </div>
 <script type ="text/javascript">
         document.addEventListener('DOMContentLoaded', function() {
-            ogchart = <?php echo $ogchart; ?>;
+            //ogchart = <?php echo $ogchart; ?>;
+            //ogchart = {id: "1", name: "Mr. Idrul Fairuz Ali Khan", title: "Project Manager", children: Array(0)};
+            ogchart = {
+                    'name': 'Steering Committee',
+                    'className': 'committee',
+                    'children': [
+                        { 'name': 'Technical Committee', 'className': 'committee',
+                        'children': [
+                            { 'name': 'Working Committee', 'className': 'committee',
+                            'children': [
+                                {'id': "1", 'name': "Mr. Idrul Fairuz Ali Khan", 'title': "Project Manager", 'children': Array(0)}
+                            ]
+                            }
+                        ]
+                        },                      
+                    ]
+                };
             Dashboard.init(ogchart);
+        });
+        $('input[name="node-type2"]').change(function(){
+            if($(this).val()=='1'){
+                $(".om-show").show();
+            }else{
+                $(".om-show").hide();
+            }
         });
         $(document).on("change","#sector",function(){
             var subSector = $(this).val();

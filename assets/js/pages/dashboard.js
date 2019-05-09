@@ -87,6 +87,7 @@ var Dashboard = function() {
                 return;
             }
             var nodeType = $('input[name="node-type"]:checked');
+            var nodeType2 = $('input[name="node-type2"]:checked');
             if (!nodeType.length) {
                 alert('Please select a node type');
                 return;
@@ -99,7 +100,7 @@ var Dashboard = function() {
                 alert('Please select one node in orgchart');
                 return;
             }
-            console.log(nodeType.val());
+            //console.log(nodeType.val());
             if (nodeType.val() === '1') {
                 if (!$chartContainer.children('.orgchart').length) {// if the original chart has been deleted
                     oc = $chartContainer.orgchart({
@@ -114,7 +115,11 @@ var Dashboard = function() {
                     });
                     oc.$chart.addClass('view-state');
                 } else {
-                    oc.addParent($chartContainer.find('.node:first'), {'name': nodeVals[0], 'title': position,'id': getId()});
+                    if (nodeType2.val() === '1') {
+                        oc.addParent($chartContainer.find('.node:first'), {'name': nodeVals[0], 'title': position,'id': getId()});
+                    }else{
+                        oc.addParent($chartContainer.find('.node:first'), {'name': nodeVals[0], 'id': getId(),'className': 'committee'});
+                    }
                 }
             } else if (nodeType.val() === '2') {
                 if ($node[0].id === oc.$chart.find('.node:first')[0].id) {
@@ -122,18 +127,30 @@ var Dashboard = function() {
                     return;
                 }
                 oc.addSiblings($node, nodeVals.map(function (item) {
-                    return {'name': item, 'title': position, 'relationship': '110', 'id': getId()};
+                    if (nodeType2.val() === '1') {
+                        return {'name': item, 'title': position, 'relationship': '110', 'id': getId()};
+                    }else{
+                        return {'name': item, 'relationship': '110', 'id': getId(),'className': 'committee'};
+                    }
                 }));
             } else {
                 var hasChild = $node.parent().attr('colspan') > 0 ? true : false;
                 if (!hasChild) {
                     var rel = nodeVals.length > 1 ? '110' : '100';
                     oc.addChildren($node, nodeVals.map(function (item) {
-                        return {'name': item, 'title': position, 'relationship': rel, 'id': getId()};
+                        if (nodeType2.val() === '1') {
+                            return {'name': item, 'title': position, 'relationship': rel, 'id': getId()};
+                        }else{
+                            return {'name': item, 'relationship': rel, 'id': getId(),'className': 'committee'};
+                        }
                     }));
                 } else {
                     oc.addSiblings($node.closest('tr').siblings('.nodes').find('.node:first'), nodeVals.map(function (item) {
-                        return {'name': item, 'title': position, 'relationship': '110', 'id': getId()};
+                        if (nodeType2.val() === '1') {
+                            return {'name': item, 'title': position, 'relationship': '110', 'id': getId()};
+                        }else{
+                            return {'name': item, 'relationship': '110', 'id': getId(),'className': 'committee'};
+                        }
                     }));
                 }
             }

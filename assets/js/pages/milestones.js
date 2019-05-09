@@ -1,16 +1,22 @@
 var Milestones = function() {
 
      var _wbs = function() {
-        // gantt.templates.scale_cell_class = function (date) {
-        //     if (date.getDay() == 0 || date.getDay() == 6) {
-        //         return "weekend";
-        //     }
-        // };
-        // gantt.templates.task_cell_class = function (item, date) {
-        //     if (date.getDay() == 0 || date.getDay() == 6) {
-        //         return "weekend";
-        //     }
-        // };
+        gantt.templates.scale_cell_class = function (date) {
+            if (date.getDay() == 0 || date.getDay() == 6) {
+                return "weekend";
+            }
+        };
+        gantt.templates.task_cell_class = function (item, date) {
+            if (date.getDay() == 0 || date.getDay() == 6) {
+                return "weekend"
+            }
+        };
+
+         //Progress Text - START
+        gantt.templates.progress_text = function (start, end, task) {
+            return "<span style='text-align:left;'>" + Math.round(task.progress * 100) + "% </span>";
+        };
+        //Progress Text - ENDS
     
         gantt.templates.rightside_text = function (start, end, task) {
             if (task.type == gantt.config.types.milestone) {
@@ -21,42 +27,42 @@ var Milestones = function() {
     
         gantt.config.columns = [
             {name: "text", tree: true, width: 170, resize: true},
-            {name: "start_date", align: "center", width: 100, resize: true},
-            {name: "end_date", align: "center",label: "End time",width: 100, resize: true},
+            {name: "start_date", align: "center", label: "Start Date", width: 100, resize: true},
+            {name: "end_date", align: "center",label: "End Date",width: 100, resize: true},
             {name: "owner", align: "center", width: 160, label: "Resources", template: function (task) {
-                if (task.type == gantt.config.types.project) {
-                    return "";
-                }
-    
-                var result = "";
-                var store = gantt.getDatastore("resource");
-                var owners = task[gantt.config.resource_property];
-    
-                if (!owners || !owners.length) {
-                    return "-";
-                }
-    
-                if(owners.length == 1){
-                    return store.getItem(owners[0]).text;
-                }
-    
-                owners.forEach(function(ownerId) {
-                    var owner = store.getItem(ownerId);
-                    if (!owner)
-                        return;
-                    result += "<div class='owner-label' title='" + owner.text + "'>" + owner.text.substr(0, 1) + "</div>";
-    
-                });
-    
-                return result;
-            }, resize: true
+                    if (task.type == gantt.config.types.project) {
+                        return "";
+                    }
+        
+                    var result = "";
+                    var store = gantt.getDatastore("resource");
+                    var owners = task[gantt.config.resource_property];
+        
+                    if (!owners || !owners.length) {
+                        return "-";
+                    }
+        
+                    if(owners.length == 1){
+                        return store.getItem(owners[0]).text;
+                    }
+        
+                    owners.forEach(function(ownerId) {
+                        var owner = store.getItem(ownerId);
+                        if (!owner)
+                            return;
+                        result += "<div class='owner-label' title='" + owner.text + "'>" + owner.text.substr(0, 1) + "</div>";
+        
+                    });
+        
+                    return result;
+                }, resize: true
             },
     
             {name: "duration", width: 58, align: "center"},
             {name: "cost", align: "center", width: 120, label: "Cost", template: function (task) {
-                if (task.type == gantt.config.types.project) {
-                    return "";
-                }
+                // if (task.type == gantt.config.types.project) {
+                //     return "";
+                // }
     
                 var result = "";
                 var store = gantt.getDatastore("resource");
@@ -538,14 +544,93 @@ var Milestones = function() {
         var date_to_str = gantt.date.date_to_str(gantt.config.task_date);
         var today = new Date();
         gantt.addMarker({ start_date: today, css: "today", text: "Today",  title:date_to_str( today)});
-        var start = new Date(2019, 5, 12);
+        var start = new Date(2017,08, 25);
         gantt.addMarker({
             start_date: start,
             css: "status_line",
-            text: "Start project",
+            text: "Start Project",
             title:"Start project: "+ date_to_str(start)
         });
 
+
+        var _setScaleConfig = function(value) {
+            switch (value) {
+                case 1:
+                    gantt.config.scale_unit = "day";
+                    gantt.config.step = 1;
+                    gantt.config.date_scale = "%d %M";
+                    gantt.config.subscales = [];
+                    gantt.config.scale_height = 27;
+                    gantt.templates.date_scale = null;
+                    break;
+                case 2:
+                    var weekScaleTemplate = function (date) {
+                        var dateToStr = gantt.date.date_to_str("%d %M");
+                        var startDate = gantt.date.week_start(new Date(date));
+                        var endDate = gantt.date.add(gantt.date.add(startDate, 1, "week"), -1, "day");
+                        return dateToStr(startDate) + " - " + dateToStr(endDate);
+                    };
+    
+                    gantt.config.scale_unit = "week";
+                    gantt.config.step = 1;
+                    gantt.templates.date_scale = weekScaleTemplate;
+                    gantt.config.subscales = [
+                        {unit: "day", step: 1, date: "%D"}
+                    ];
+                    gantt.config.scale_height = 50;
+                    break;
+                case 3:
+                    gantt.config.scale_unit = "month";
+                    gantt.config.date_scale = "%F, %Y";
+                    gantt.config.subscales = [
+                        {unit: "day", step: 1, date: "%j, %D"}
+                    ];
+                    gantt.config.scale_height = 50;
+                    gantt.templates.date_scale = null;
+                    break;
+                case 4:
+                    gantt.config.scale_unit = "year";
+                    gantt.config.step = 1;
+                    gantt.config.date_scale = "%Y";
+                    gantt.config.min_column_width = 50;
+                    gantt.config.scale_height = 90;
+                    gantt.templates.date_scale = null;
+    
+                    var quarterLabel = function(date) {
+                        var month = date.getMonth();
+                        var q_num;
+                
+                        if (month >= 9) {
+                            q_num = 4;
+                        } else if (month >= 6) {
+                            q_num = 3;
+                        } else if (month >= 3) {
+                            q_num = 2;
+                        } else {
+                            q_num = 1;
+                        }
+                
+                        return "Q" + q_num;
+                    };
+    
+                    gantt.config.subscales = [
+                        {unit: "quarter", step: 1, template: quarterLabel},
+                        {unit: "month", step: 1, date: "%M"}
+                    ];
+                    break;
+                case 5:
+                    gantt.config.scale_unit = "year";
+                    gantt.config.step = 1;
+                    gantt.config.date_scale = "%Y";
+                    gantt.config.min_column_width = 50;
+                    gantt.config.scale_height = 90;
+                    gantt.templates.date_scale = null;
+                    gantt.config.subscales = [
+                        {unit: "month", step: 1, date: "%M"}
+                    ];
+                    break;
+            }
+        };
     
         /* CUSTOM LIGHTBOX : START */
 
@@ -747,36 +832,37 @@ var Milestones = function() {
         //     {name: "time", type: "duration", map_to: "auto"}
         // ];
     
+        gantt.config.autosize = true;
         gantt.config.resource_store = "resource";
         gantt.config.resource_property = "owner_id";
         gantt.config.order_branch = true;
         gantt.config.open_tree_initially = true;
-        gantt.config.layout = {
-            css: "gantt_container",
-            rows: [
-                {
-                    cols: [
-                        {view: "grid", group:"grids", scrollY: "scrollVer"},
-                        {resizer: true, width: 1},
-                        {view: "timeline", scrollX: "scrollHor", scrollY: "scrollVer"},
-                        {view: "scrollbar", id: "scrollVer", group:"vertical"}
-                    ],
-                    gravity:2
-                },
-                {resizer: true, width: 1},
-                {
-                    config: resourceConfig,
-                    cols: [
-                        {view: "resourceGrid", group:"grids", width: 435, scrollY: "resourceVScroll" },
-                        {resizer: true, width: 1},
-                        {view: "resourceTimeline", scrollX: "scrollHor", scrollY: "resourceVScroll"},
-                        {view: "scrollbar", id: "resourceVScroll", group:"vertical"}
-                    ],
-                    gravity:1
-                },
-                {view: "scrollbar", id: "scrollHor"}
-            ]
-        };
+        // gantt.config.layout = {
+        //     css: "gantt_container",
+        //     rows: [
+        //         {
+        //             cols: [
+        //                 {view: "grid", group:"grids", scrollY: "scrollVer"},
+        //                 {resizer: true, width: 1},
+        //                 {view: "timeline", scrollX: "scrollHor", scrollY: "scrollVer"},
+        //                 {view: "scrollbar", id: "scrollVer", group:"vertical"}
+        //             ],
+        //             gravity:2
+        //         },
+        //         {resizer: true, width: 1},
+        //         {
+        //             config: resourceConfig,
+        //             cols: [
+        //                 {view: "resourceGrid", group:"grids", width: 435, scrollY: "resourceVScroll" },
+        //                 {resizer: true, width: 1},
+        //                 {view: "resourceTimeline", scrollX: "scrollHor", scrollY: "resourceVScroll"},
+        //                 {view: "scrollbar", id: "resourceVScroll", group:"vertical"}
+        //             ],
+        //             gravity:1
+        //         },
+        //         {view: "scrollbar", id: "scrollHor"}
+        //     ]
+        // };
     
         var resourcesStore = gantt.createDatastore({
             name: gantt.config.resource_store,
@@ -788,9 +874,9 @@ var Milestones = function() {
                 return item;
             }
         });
-        gantt.config.scale_unit = "month";
-        gantt.config.date_scale = "%m - %Y";
-        gantt.config.date_grid = "%d-%M-%Y";
+        // gantt.config.scale_unit = "day";
+        // gantt.config.date_scale = "%m - %Y";
+        // gantt.config.date_grid = "%d-%M-%Y";
         gantt.init("wbs_milestones");
         gantt.load(base_url+"assets/js/pages/resource_project_multiple_owners.json");
     
@@ -811,6 +897,41 @@ var Milestones = function() {
                 }
             });
             gantt.updateCollection("people", people);
+
+            var currentScale = 4;
+            _setScaleConfig(currentScale);
+            $(".gantt-control").on("click",function(){
+                switch ($(this).data('control')) {
+                    case 'undo' :
+                        gantt.undo();
+                    break;
+                    case 'redo' :
+                        gantt.redo();
+                    break;
+                    case 'fullscreen' :
+                        gantt.expand();
+                    break;
+                    case 'zoom-in' :
+                        if(currentScale < 5 && currentScale >= 1){
+                            $(this).next().removeClass("disabled");
+                            _setScaleConfig(++currentScale);
+                            gantt.render();
+                        }else{
+                            $(this).addClass("disabled")
+                        }
+                    break;
+                    case 'zoom-out' :
+                        if(currentScale <= 5 && currentScale > 1){
+                            $(this).prev().removeClass("disabled");
+                            $(this).removeClass("disabled");
+                            _setScaleConfig(--currentScale);
+                            gantt.render();
+                        }else{
+                            $(this).addClass("disabled")
+                        }
+                    break;
+                }
+            })
         });
     
         resourcesStore.parse([

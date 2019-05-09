@@ -24,14 +24,36 @@
                             <div class="card-header header-elements-inline p-3">
                                 <h6 class="card-title text-uppercase"><i class="icon-paragraph-right3 mr-2"></i>Activities & Deliverables</h6>
                                 <div class="header-elements">
-									<button type="button" data-toggle="modal" data-target="#gantt-lb" class="btn bg-success"><i class="icon-plus2 mr-1"></i> New Resources</button>
+                                    <div class="text-right">
+                                        <div class="btn-group">
+                                            <a class="btn btn-light" href="#"><i class="icon-reload-alt"></i></a>
+                                            <a class="btn btn-light" href="#"><i class="icon-add"></i></a>
+                                        </div>
+
+                                        <div class="btn-group">
+                                            <a class="btn btn-light gantt-control" data-control="undo" href="#"><i class="icon-undo2"></i></a>
+                                            <a class="btn btn-light gantt-control" data-control="redo" href="#"><i class="icon-redo2"></i></a>
+                                        </div>
+
+                                        <div class="btn-group">
+                                            <a class="btn btn-light gantt-control" data-control="fullscreen" href="#"><i class="icon-enlarge"></i></a>
+                                        </div>
+
+                                        <div class="btn-group">
+                                            <a class="btn btn-light gantt-control" data-control="zoom-in" href="#"><i class="icon-zoomout3"></i></a>
+                                            <a class="btn btn-light gantt-control" data-control="zoom-out" href="#"><i class="icon-zoomin3"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="btn-group ml-2">
+                                        <a href="#" data-toggle="modal" data-target="#gantt-lb" class="btn btn-light"><i class="icon-plus2 mr-1"></i> New Resources</a>
+                                    </div>
 								</div>
                             </div>
                             
                             <div class="card-body">
                                 <div class="row m-0">
                                     <div class="col-12 col-md-12 col-lg-12">
-                                        <div id="wbs_milestones" style='min-height:500px;'></div>
+                                        <div id="wbs_milestones" style='min-height:500px; height: 650px;'></div>
                                     </div>
                                 </div>
                                 <hr>

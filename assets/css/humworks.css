@@ -3207,3 +3207,22 @@ li.mo-li:hover {
     background-color: #dff1ff;
     border-color: #2196f3;
 }
+
+.node.committee .title{
+    background-color: transparent !important;
+    color: #ff5970 !important;
+}
+.node.committee .content{
+    display: none;
+}
+
+.orgchart .node.committee:hover {
+    border: 2px solid #c6c6c6;
+    border-radius: 3px;
+    transition: .5s;
+    cursor: default;
+    z-index: 20;
+}
+.orgchart .node.committee.focused {
+    background-color: #ffe2e2;
+}

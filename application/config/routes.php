@@ -69,6 +69,7 @@ $route['projects/(:num)/stat-analysis'] = 'projects/project/stat_analysis/$1';
 
 $route['projects/(:num)/logframe'] = 'projects/project/logframe/$1';
 $route['projects/(:num)/gantt'] = 'projects/project/milestones/$1';
+$route['projects/(:num)/gantt/save'] = 'projects/project/milestones_save/$1';
 $route['projects/(:num)/resources'] = 'projects/project/resources/$1';
 $route['projects/(:num)/maintenance'] = 'projects/project/maintenance/$1';
 $route['projects/(:num)/approval'] = 'projects/project/approval/$1';

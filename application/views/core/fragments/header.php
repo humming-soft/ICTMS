@@ -50,14 +50,18 @@
     <script src="<?=site_url('assets/js/plugins/tables/footable/footable.min.js')?>"></script>
     <?php } ?>
     <?php if(in_array("gantt",$support)){ ?>
-    <link href="<?=site_url('assets/js/plugins/gantt/dhtmlxgantt.css')?>" rel="stylesheet" type="text/css">
-    <script src="<?=site_url('assets/js/plugins/gantt/dhtmlxgantt.js')?>"></script>
-    <script src="<?=site_url('assets/js/plugins/gantt/ext/dhtmlxgantt_marker.js')?>" type="text/javascript" charset="utf-8"></script>
-    <script src="<?=site_url('assets/js/plugins/gantt/ext/dhtmlxgantt_fullscreen.js')?>" type="text/javascript" charset="utf-8"></script>
-    <!-- <script src="<?=site_url('assets/js/plugins/gantt/ext/dhtmlxgantt_smart_rendering.js')?>" type="text/javascript" charset="utf-8"></script>
-    <script src="<?=site_url('assets/js/plugins/gantt/ext/dhtmlxgantt_critical_path.js')?>" type="text/javascript" charset="utf-8"></script>
-    <script src="<?=site_url('assets/js/plugins/gantt/ext/dhtmlxgantt_auto_scheduling.js')?>" type="text/javascript" charset="utf-8"></script>-->
-    <script src="<?=site_url('assets/js/plugins/gantt/ext/dhtmlxgantt_undo.js')?>" type="text/javascript" charset="utf-8"></script> 
+    <link href="<?=site_url('assets/js/plugins/gantt/t/dhtmlxgantt.css')?>" rel="stylesheet" type="text/css">
+    <script src="<?=site_url('assets/js/plugins/gantt/t/dhtmlxgantt.js')?>"></script>
+    <script src="<?=site_url('assets/js/plugins/gantt/t/ext/dhtmlxgantt_marker.js')?>" type="text/javascript" charset="utf-8"></script>
+    <script src="<?=site_url('assets/js/plugins/gantt/t/ext/dhtmlxgantt_fullscreen.js')?>" type="text/javascript" charset="utf-8"></script>
+    <script src="<?=site_url('assets/js/plugins/gantt/t/ext/dhtmlxgantt_smart_rendering.js')?>" type="text/javascript" charset="utf-8"></script>
+    <script src="<?=site_url('assets/js/plugins/gantt/t/ext/dhtmlxgantt_critical_path.js')?>" type="text/javascript" charset="utf-8"></script>
+    <script src="<?=site_url('assets/js/plugins/gantt/t/ext/dhtmlxgantt_auto_scheduling.js')?>" type="text/javascript" charset="utf-8"></script>
+    <script src="<?=site_url('assets/js/plugins/gantt/t/ext/dhtmlxgantt_undo.js')?>" type="text/javascript" charset="utf-8"></script> 
+    <script src="<?=site_url('assets/js/plugins/gantt/t/ext/dhtmlxgantt_overlay.js')?>" type="text/javascript" charset="utf-8"></script> 
+    <script src="<?=site_url('assets/js/plugins/gantt/t/ext/dhtmlxgantt_tooltip.js')?>" type="text/javascript" charset="utf-8"></script> 
+    <script src="<?=site_url('assets/js/plugins/gantt/t/ext/dhtmlxgantt_api.js')?>" type="text/javascript" charset="utf-8"></script> 
+
 
     <?php } ?>
     <?php if(in_array("orgchart",$support)){ ?>

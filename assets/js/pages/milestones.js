@@ -1,16 +1,30 @@
 var Milestones = function() {
 
-     var _wbs = function() {
-        gantt.templates.scale_cell_class = function (date) {
+     var _wbs = function(d_data) {
+       
+        // gantt.templates.scale_cell_class = function (date) {
+        //     if (date.getDay() == 0 || date.getDay() == 6) {
+        //         return "weekend";
+        //     }
+        // };
+        // gantt.templates.task_cell_class = function (item, date) {
+        //     if (date.getDay() == 0 || date.getDay() == 6) {
+        //         return "weekend"
+        //     }
+        // };
+
+        var _scale_cell_class_weekend = function (date, cell_class) {
             if (date.getDay() == 0 || date.getDay() == 6) {
-                return "weekend";
+                return cell_class;
             }
         };
-        gantt.templates.task_cell_class = function (item, date) {
+        var _task_cell_class_weekend = function (item, date, cell_class) {
             if (date.getDay() == 0 || date.getDay() == 6) {
-                return "weekend"
+                return cell_class;
             }
         };
+
+        
 
          //Progress Text - START
         gantt.templates.progress_text = function (start, end, task) {
@@ -24,11 +38,50 @@ var Milestones = function() {
             }
             return "";
         };
+
+        gantt.config.editor_types.custom_editor = {
+            show: function (id, column, config, placeholder) {
+              // called when input is displayed, put html markup of the editor into placeholder 
+              // and initialize your editor if needed:
+                  var html = "<div><input type='text' name='" + column.name + "'></div>";
+                  placeholder.innerHTML = html;
+            },
+            hide: function () {
+              // called when input is hidden 
+              // destroy any complex editors or detach event listeners from here
+            },
+           
+            set_value: function (value, id, column, node) {
+              // set input value
+            },
+           
+            get_value: function (id, column, node) {
+              // return input value
+            },
+           
+            is_changed: function (value, id, column, node) {
+              // called before save/close. Return true if new value differs from the original one
+              // returning true will trigger saving changes, returning false will skip saving 
+            },
+           
+            is_valid: function (value, id, column, node) {
+              // validate, changes will be discarded if the method returns false
+              return true/false;
+            },
+           
+            save: function (id, column, node) {
+               // only for inputs with map_to:auto. complex save behavior goes here
+            },
+            focus: function (node) {
+            }
+          }
+        var textEditor = { type: "custom_editor", map_to: "text_comment"};
     
         gantt.config.columns = [
-            {name: "text", tree: true, width: 170, resize: true},
+            {name: "id", label: "Activity ID", align: "center", resize: true},
+            {name: "text", tree: true, width: 370,label: "Activity Name", resize: true},
             {name: "start_date", align: "center", label: "Start Date", width: 100, resize: true},
-            {name: "end_date", align: "center",label: "End Date",width: 100, resize: true},
+            {name: "end_date", align: "center",label: "End Date",width: 100, resize: true, hide: true},
             {name: "owner", align: "center", width: 160, label: "Resources", template: function (task) {
                     if (task.type == gantt.config.types.project) {
                         return "";
@@ -55,10 +108,10 @@ var Milestones = function() {
                     });
         
                     return result;
-                }, resize: true
+                }, resize: true, hide: true
             },
     
-            {name: "duration", width: 58, align: "center"},
+            {name: "duration", width: 58, align: "center", resize: true},
             {name: "cost", align: "center", width: 120, label: "Cost", template: function (task) {
                 // if (task.type == gantt.config.types.project) {
                 //     return "";
@@ -537,7 +590,11 @@ var Milestones = function() {
                 /*    var result2 = result1.formatCurrency();*/
                 result = formatter.format(result1) ;
                 return result;
-            }, resize: true
+            }, resize: true, hide: true
+            },
+            {name: "text_comment", label: "Comment", tree: false, width: 70, resize: true, hide: true, editor: textEditor, template: function (task) {
+                    return "-";
+                }
             },
             {name: "add", width: 30}
         ];
@@ -562,6 +619,8 @@ var Milestones = function() {
                     gantt.config.subscales = [];
                     gantt.config.scale_height = 27;
                     gantt.templates.date_scale = null;
+                    gantt.templates.scale_cell_class = function (date){ return _scale_cell_class_weekend(date, "weekend") };
+                    gantt.templates.task_cell_class = function (item, date){ return _task_cell_class_weekend(item, date, "weekend") };
                     break;
                 case 2:
                     var weekScaleTemplate = function (date) {
@@ -574,6 +633,8 @@ var Milestones = function() {
                     gantt.config.scale_unit = "week";
                     gantt.config.step = 1;
                     gantt.templates.date_scale = weekScaleTemplate;
+                    gantt.templates.scale_cell_class = function (date){ return _scale_cell_class_weekend(date, "weekend") };
+                    gantt.templates.task_cell_class = function (item, date){ return _task_cell_class_weekend(item, date, "weekend") };
                     gantt.config.subscales = [
                         {unit: "day", step: 1, date: "%D"}
                     ];
@@ -587,6 +648,8 @@ var Milestones = function() {
                     ];
                     gantt.config.scale_height = 50;
                     gantt.templates.date_scale = null;
+                    gantt.templates.scale_cell_class = function (date){ return _scale_cell_class_weekend(date, "weekend") };
+                    gantt.templates.task_cell_class = function (item, date){ return _task_cell_class_weekend(item, date, "weekend") };
                     break;
                 case 4:
                     gantt.config.scale_unit = "year";
@@ -594,6 +657,8 @@ var Milestones = function() {
                     gantt.config.date_scale = "%Y";
                     gantt.config.min_column_width = 50;
                     gantt.config.scale_height = 90;
+                    gantt.templates.scale_cell_class = function (date){ return _scale_cell_class_weekend(date, "") };
+                    gantt.templates.task_cell_class = function (item, date){ return _task_cell_class_weekend(item, date, "") };
                     gantt.templates.date_scale = null;
     
                     var quarterLabel = function(date) {
@@ -625,6 +690,8 @@ var Milestones = function() {
                     gantt.config.min_column_width = 50;
                     gantt.config.scale_height = 90;
                     gantt.templates.date_scale = null;
+                    gantt.templates.scale_cell_class = function (date){ return _scale_cell_class_weekend(date, "") };
+                    gantt.templates.task_cell_class = function (item, date){ return _task_cell_class_weekend(item, date, "") };
                     gantt.config.subscales = [
                         {unit: "month", step: 1, date: "%M"}
                     ];
@@ -874,10 +941,13 @@ var Milestones = function() {
                 return item;
             }
         });
-        // gantt.config.scale_unit = "day";
-        // gantt.config.date_scale = "%m - %Y";
-        // gantt.config.date_grid = "%d-%M-%Y";
+        gantt.attachEvent("onGanttReady", function(){
+            var tooltips = gantt.ext.tooltips;
+            tooltips.tooltip.setViewport(gantt.$task_data);
+        });
         gantt.init("wbs_milestones");
+        // gantt.serialize();
+        // gantt.parse(d_data);
         gantt.load(base_url+"assets/js/pages/resource_project_multiple_owners.json");
     
         resourcesStore.attachEvent("onParse", function(){
@@ -908,8 +978,38 @@ var Milestones = function() {
                     case 'redo' :
                         gantt.redo();
                     break;
+                    case 'save' :
+                    gantt.exportToJSON({
+                        server: base_url+"projects/02849/gantt/save",
+                        callback: function(res){
+                            alert(res.st);
+                        }
+                     });
+                    break;
+                    case "critical-path" :
+                        if(!$(this).hasClass("active")){
+                            $(this).addClass("active");
+                            gantt.config.highlight_critical_path = true;
+                        } else{
+                            $(this).removeClass("active");
+                            gantt.config.highlight_critical_path = false;
+                        }
+                        gantt.render();
+                    break;
                     case 'fullscreen' :
                         gantt.expand();
+                    break;
+                    case 'column-view' :
+                        var isVisible = $(this).hasClass("active");
+                        var column = $(this).data('column');
+                        if(isVisible){
+                            $(this).removeClass("active")
+                            gantt.getGridColumn(column).hide = true;
+                        }else{
+                            $(this).addClass("active")
+                            gantt.getGridColumn(column).hide = false;
+                        }    
+                        gantt.render();
                     break;
                     case 'zoom-in' :
                         if(currentScale < 5 && currentScale >= 1){
@@ -1120,8 +1220,8 @@ var Milestones = function() {
         });
     };
     return {
-        init: function() {
-            _wbs();
+        init: function(data) {
+            _wbs(data);
             _componentPikaday($("#start_date")[0]);
             _componentPikaday($("#end_date")[0]);
             _componentMultiselect();
@@ -1132,7 +1232,3 @@ var Milestones = function() {
 
 // Initialize module
 // ------------------------------
-
-document.addEventListener('DOMContentLoaded', function() {
-    Milestones.init();
-});

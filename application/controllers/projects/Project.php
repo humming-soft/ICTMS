@@ -601,14 +601,60 @@ class Project extends ICTMS_Controller {
             $this->load->view('core/projects/milestones_vendor');
             $this->load->view('core/fragments/footer');
         }else{
+            $file_location = APPPATH . "views";
+            $json = file_get_contents($file_location."/resources/_pj/02849/gantt/001.json");
+            $data['p_a_json'] = $json;
             $_header["support"] = array("gantt","chosen","multiselect","pikadate");
             $_header["page_js"] = "milestones";
 
             $this->load->view('core/fragments/header',$_header);
             $this->load->view('core/projects/fragments/main_navbar',$data1);
             $this->load->view('core/projects/fragments/secondary_navbar');
-            $this->load->view('core/projects/milestones');
+            $this->load->view('core/projects/milestones',$data);
             $this->load->view('core/fragments/footer');
+        }
+    }
+
+
+    public function milestones_save($pid=null){
+        $session_data = $this->session->userdata('logged_in');
+        $data['username'] =$data1['username'] = $session_data['username'];
+
+        if($this->session->userdata('message'))
+        {
+            $messagehrecord=$this->session->userdata('message');
+            $message=$messagehrecord['message'];
+            $this->session->unset_userdata('message');
+        }
+        else
+        {
+            $message='';
+        }
+
+        if($session_data['roleid'] == 33){
+            $_header["support"] = array("gantt","chosen","multiselect","pikadate");
+            $_header["page_js"] = "milestones_vendor";
+
+            $this->load->view('core/fragments/header',$_header);
+            $this->load->view('core/projects/fragments/main_navbar',$data1);
+            $this->load->view('core/projects/fragments/secondary_navbar_vendor');
+            $this->load->view('core/projects/milestones_vendor');
+            $this->load->view('core/fragments/footer');
+        }else{
+            $wbs_data = $this->input->post('data');
+            $wbs_data_type =  $this->input->post('type');
+
+            $json = json_encode(json_decode($wbs_data)->data);
+            if(strlen($json) > 0){
+                $file_location = APPPATH . "views";
+                $file_path = $file_location."/resources/_pj/02849/gantt/001.json";
+                $file_instance = fopen($file_path, 'w');
+                fwrite($file_instance, $json);
+                fclose($file_instance);
+            }
+            $result['st'] = 1;
+            $result['message'] = "Saved Successfully!";
+            echo json_encode($result);
         }
     }
 

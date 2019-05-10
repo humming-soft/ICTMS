@@ -25,10 +25,6 @@
                                 <h6 class="card-title text-uppercase"><i class="icon-paragraph-right3 mr-2"></i>Activities & Deliverables</h6>
                                 <div class="header-elements">
                                     <div class="text-right">
-                                        <div class="btn-group">
-                                            <a class="btn btn-light" href="#"><i class="icon-reload-alt"></i></a>
-                                            <a class="btn btn-light" href="#"><i class="icon-add"></i></a>
-                                        </div>
 
                                         <div class="btn-group">
                                             <a class="btn btn-light gantt-control" data-control="undo" href="#"><i class="icon-undo2"></i></a>
@@ -43,6 +39,25 @@
                                             <a class="btn btn-light gantt-control" data-control="zoom-in" href="#"><i class="icon-zoomout3"></i></a>
                                             <a class="btn btn-light gantt-control" data-control="zoom-out" href="#"><i class="icon-zoomin3"></i></a>
                                         </div>
+                                        <div class="btn-group">
+                                            <a class="btn btn-light gantt-control" data-control="save" href="#" title="Save"><i class="icon-floppy-disk"></i></a>
+                                        </div>
+                                        <div class="btn-group">
+                                            <a href="#" class="btn btn-light gantt-control" data-control="critical-path"><i class="icon-split text-danger"></i> Critical Path</a>
+                                        </div>
+                                        <div class="btn-group">
+                                            <a href="#" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false">View</a>
+                                            <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-73px, 36px, 0px);">
+                                                <a href="#" class="dropdown-item gantt-control active" data-column="" data-control="column-view"> Activity ID</a>
+                                                <a href="#" class="dropdown-item gantt-control active" data-column="text" data-control="column-view"> Activity Name</a>
+                                                <a href="#" class="dropdown-item gantt-control active" data-column="start_date" data-control="column-view"> Start Date</a>
+                                                <a href="#" class="dropdown-item gantt-control" data-column="end_date" data-control="column-view"> End Date</a>
+                                                <a href="#" class="dropdown-item gantt-control active" data-column="duration" data-control="column-view"> Duration</a>
+                                                <a href="#" class="dropdown-item gantt-control" data-column="cost" data-control="column-view"> Cost</a>
+                                                <a href="#" class="dropdown-item gantt-control" data-column="owner" data-control="column-view"> Resources</a>
+                                                <a href="#" class="dropdown-item gantt-control" data-column="text_comment" data-control="column-view">  Comment</a>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="btn-group ml-2">
                                         <a href="#" data-toggle="modal" data-target="#gantt-lb" class="btn btn-light"><i class="icon-plus2 mr-1"></i> New Resources</a>
@@ -53,7 +68,7 @@
                             <div class="card-body">
                                 <div class="row m-0">
                                     <div class="col-12 col-md-12 col-lg-12">
-                                        <div id="wbs_milestones" style='min-height:500px; height: 650px;'></div>
+                                        <div id="wbs_milestones" style='min-height:300px; height: 350px;'></div>
                                     </div>
                                 </div>
                                 <hr>
@@ -225,3 +240,9 @@
         </div>
     </div>
 </div>
+<script type ="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+        d_data = <?php echo $p_a_json; ?>;
+        Milestones.init(d_data);
+    });
+</script>

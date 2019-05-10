@@ -1,37 +1,37 @@
 {
   "data": [
     { "id": 1, "text": "TRANSPORT INFORMATION DATA EXCHANGE (TIDE)", "type": "project", "start_date": "25-09-2017 00:00", "duration": 743, "progress": 0.0,"owner_id": [12,116,113,114,158,138,25,125,126,127,65,168,171], "parent": 0,"color":"#2196F3"},
-    { "id": 2, "text": "Project Management", "type": "", "start_date": "25-09-2017 00:00", "duration": 480, "progress": 0.0,"owner_id": [12,116,113,114,158,138], "parent": 1,"color":"#2196F3"},
-    { "id": 3, "text": "Analysis", "type": "milestone", "start_date": "27-09-2017 00:00", "duration": 148, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,65,168,171,172], "parent": 1,"color":"#2196F3"},
-    { "id": 4, "text": "Planning", "type": "milestone", "start_date": "25-04-2018 00:00", "duration": 80, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 1,"color":"#2196F3"},
-    { "id": 5, "text": "Execution", "type": "milestone", "start_date": "15-08-2018 00:00", "duration": 170, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 1,"color":"#2196F3"},
-    { "id": 6, "text": "Testing", "type": "milestone", "start_date": "10-04-2019 00:00", "duration": 50, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 1,"color":"#2196F3"},
-    { "id": 7, "text": "Training", "type": "milestone", "start_date": "19-06-2019 00:00", "duration": 20, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 1,"color":"#2196F3"},
-    { "id": 8, "text": "Closure", "type": "milestone", "start_date": "17-07-2019 00:00", "duration": 60, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 1,"color":"#2196F3"},
+    { "id": 2, "text": "Project Management", "type": "task", "start_date": "25-09-2017 00:00", "duration": 480, "progress": 0.0,"owner_id": [12,116,113,114,158,138], "parent": 1,"color":"#2196F3"},
+    { "id": 3, "text": "Analysis", "type": "project", "start_date": "27-09-2017 00:00", "duration": 148, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,65,168,171,172], "parent": 1,"color":"#2196F3"},
+    { "id": 4, "text": "Planning", "type": "project", "start_date": "25-04-2018 00:00", "duration": 80, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 1,"color":"#2196F3"},
+    { "id": 5, "text": "Execution", "type": "project", "start_date": "15-08-2018 00:00", "duration": 170, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 1,"color":"#2196F3"},
+    { "id": 6, "text": "Testing", "type": "project", "start_date": "10-04-2019 00:00", "duration": 50, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 1,"color":"#2196F3"},
+    { "id": 7, "text": "Training", "type": "project", "start_date": "19-06-2019 00:00", "duration": 20, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 1,"color":"#2196F3"},
+    { "id": 8, "text": "Closure", "type": "project", "start_date": "17-07-2019 00:00", "duration": 60, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 1,"color":"#2196F3"},
 
-    { "id": 9, "text": "User Requirement Analysis", "type": "milestone", "start_date": "27-09-2017 00:00", "duration": 98, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 3,"color":"#2196F3"},
-    { "id": 10, "text": "System Requirement Specification(SRS)", "type": "milestone", "start_date": "14-02-2018 00:00", "duration": 50, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 3,"color":"#2196F3"},
+    { "id": 9, "text": "User Requirement Analysis", "type": "task", "start_date": "27-09-2017 00:00", "duration": 98, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 3,"color":"#2196F3"},
+    { "id": 10, "text": "System Requirement Specification(SRS)", "type": "task", "start_date": "14-02-2018 00:00", "duration": 50, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 3,"color":"#2196F3"},
 
-    { "id": 11, "text": "Work Breakdown Structure", "type": "milestone", "start_date": "25-04-2018 00:00", "duration": 20, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 4,"color":"#2196F3"},
-    { "id": 12, "text": "System Design Specification (SDS) Preliminary", "type": "milestone", "start_date": "23-05-2018 00:00", "duration": 50, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 4,"color":"#2196F3"},
+    { "id": 11, "text": "Work Breakdown Structure", "type": "task", "start_date": "25-04-2018 00:00", "duration": 20, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 4,"color":"#2196F3"},
+    { "id": 12, "text": "System Design Specification (SDS) Preliminary", "type": "task", "start_date": "23-05-2018 00:00", "duration": 50, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 4,"color":"#2196F3"},
 
-    { "id": 13, "text": "Hardware Supply Installation, Testing & Commissioning", "type": "milestone", "start_date": "15-08-2018 00:00", "duration": 60, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 5,"color":"#2196F3"},
-    { "id": 14, "text": "System Software Supply, Installation, Testing & Commissioning", "type": "milestone", "start_date": "15-08-2018 00:00", "duration": 60, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 5,"color":"#2196F3"},
-    { "id": 15, "text": "Development", "type": "milestone", "start_date": "15-08-2018 00:00", "duration": 170, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 5,"color":"#2196F3"},
+    { "id": 13, "text": "Hardware Supply Installation, Testing & Commissioning", "type": "task", "start_date": "15-08-2018 00:00", "duration": 60, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 5,"color":"#2196F3"},
+    { "id": 14, "text": "System Software Supply, Installation, Testing & Commissioning", "type": "task", "start_date": "15-08-2018 00:00", "duration": 60, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 5,"color":"#2196F3"},
+    { "id": 15, "text": "Development", "type": "project", "start_date": "15-08-2018 00:00", "duration": 170, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 5,"color":"#2196F3"},
 
-    { "id": 16, "text": "Non-Functional Test", "type": "milestone", "start_date": "10-04-2019 00:00", "duration": 20, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 6,"color":"#2196F3"},
-    { "id": 17, "text": "UAT", "type": "milestone", "start_date": "08-05-2019 00:00", "duration": 10, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 6,"color":"#2196F3"},
-    { "id": 21, "text": "Document Deliverables: UAT Test Incident Report (TIR)", "type": "milestone", "start_date": "22-05-2019 00:00", "duration": 10, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 6,"color":"#2196F3"},
-    { "id": 22, "text": "Acceptance Test", "type": "milestone", "start_date": "08-05-2019 00:00", "duration": 30, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 6,"color":"#2196F3"},
+    { "id": 16, "text": "Non-Functional Test", "type": "task", "start_date": "10-04-2019 00:00", "duration": 20, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 6,"color":"#2196F3"},
+    { "id": 17, "text": "UAT", "type": "task", "start_date": "08-05-2019 00:00", "duration": 10, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 6,"color":"#2196F3"},
+    { "id": 21, "text": "Document Deliverables: UAT Test Incident Report (TIR)", "type": "task", "start_date": "22-05-2019 00:00", "duration": 10, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 6,"color":"#2196F3"},
+    { "id": 22, "text": "Acceptance Test", "type": "task", "start_date": "08-05-2019 00:00", "duration": 30, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 6,"color":"#2196F3"},
 
-    { "id": 18, "text": "ETL Training", "type": "milestone", "start_date": "19-06-2019 00:00", "duration": 10, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 7,"color":"#2196F3"},
-    { "id": 19, "text": "BI Training", "type": "milestone", "start_date": "03-07-2019 00:00", "duration": 10, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 7,"color":"#2196F3"},
+    { "id": 18, "text": "ETL Training", "type": "task", "start_date": "19-06-2019 00:00", "duration": 10, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 7,"color":"#2196F3"},
+    { "id": 19, "text": "BI Training", "type": "task", "start_date": "03-07-2019 00:00", "duration": 10, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 7,"color":"#2196F3"},
 
-    { "id": 20, "text": "Document Deliverables", "type": "milestone", "start_date": "17-07-2019 00:00", "duration": 60, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 8,"color":"#2196F3"},
-    { "id": 34, "text": "Data Extration Plan", "type": "milestone", "start_date": "01-08-2018 00:00", "duration": 10, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 4,"color":"#2196F3"},
+    { "id": 20, "text": "Document Deliverables", "type": "task", "start_date": "17-07-2019 00:00", "duration": 60, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 8,"color":"#2196F3"},
+    { "id": 34, "text": "Data Extration Plan", "type": "task", "start_date": "01-08-2018 00:00", "duration": 10, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 4,"color":"#2196F3"},
 
-    { "id": 40, "text": "Integrated Transportation System", "type": "milestone", "start_date": "15-08-2018 00:00", "duration": 70, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 15,"color":"#2196F3"},
-    { "id": 41, "text": "Public Transportation Scheduling & Transportation System", "type": "milestone", "start_date": "21-11-2018 00:00", "duration": 100, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 15,"color":"#2196F3"}
+    { "id": 40, "text": "Integrated Transportation System", "type": "task", "start_date": "15-08-2018 00:00", "duration": 70, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 15,"color":"#2196F3"},
+    { "id": 41, "text": "Public Transportation Scheduling & Transportation System", "type": "task", "start_date": "21-11-2018 00:00", "duration": 100, "progress": 0.0, "owner_id": [12,116,113,114,158,138,25,125,126,127,156], "parent": 15,"color":"#2196F3"}
   ],
   "links": [
     {"id": 1, "source": 9, "target": 10, "type": "0"},

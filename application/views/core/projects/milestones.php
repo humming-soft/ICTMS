@@ -20,7 +20,7 @@
 
                 <div class="row m-0">
                     <div class="col-sm-12">
-                        <div class="alert bg-success-400 text-white alert-dismissible" style="display:none">
+                    <div class="alert bg-success-400 text-white alert-dismissible" style="display:none">
                             <button type="button" class="close" data-dismiss="alert"><span>×</span></button>
                             <span class="font-weight-semibold message"></span>
                         </div>
@@ -52,7 +52,7 @@
                                         <div class="btn-group">
                                             <a href="#" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false">View</a>
                                             <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-73px, 36px, 0px);">
-                                                <a href="#" class="dropdown-item gantt-control active" data-column="" data-control="column-view"> Activity ID</a>
+                                                <a href="#" class="dropdown-item gantt-control active" data-column="id" data-control="column-view"> Activity ID</a>
                                                 <a href="#" class="dropdown-item gantt-control active" data-column="text" data-control="column-view"> Activity Name</a>
                                                 <a href="#" class="dropdown-item gantt-control active" data-column="start_date" data-control="column-view"> Start Date</a>
                                                 <a href="#" class="dropdown-item gantt-control" data-column="end_date" data-control="column-view"> End Date</a>
@@ -62,9 +62,16 @@
                                                 <a href="#" class="dropdown-item gantt-control" data-column="text_comment" data-control="column-view">  Comment</a>
                                             </div>
                                         </div>
+                                        <div class="btn-group">
+                                            <a href="#" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false">import</a>
+                                            <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-73px, 36px, 0px);">
+                                                <a href="#" class="dropdown-item gantt-control" data-toggle="modal" data-target="#gantt-import-m" data-type="msp"> Microsoft Project (MPP or XML)</a>
+                                                <a href="#" class="dropdown-item gantt-control" data-toggle="modal" data-target="#gantt-import-m" data-type="xlsx"> Microsoft Excel (XLSX)</a>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="btn-group ml-2">
-                                        <a href="#" data-toggle="modal" data-target="#gantt-lb" class="btn btn-light"><i class="icon-plus2 mr-1"></i> New Resources</a>
+                                        <a href="#" data-toggle="modal" data-target="#resources-add-m" class="btn btn-light"><i class="icon-plus2 mr-1"></i> New Resources</a>
                                     </div>
 								</div>
                             </div>
@@ -240,6 +247,120 @@
                         </div>
                     </div>
                 </div>           
+            </div>
+        </div>
+    </div>
+</div>
+<div aria-hidden="true" class="hmwks-modal modal show fade animated" id="resources-add-m" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content"><button aria-label="Close" class="close" data-dismiss="modal"
+                type="button"><span class="close-label">Close</span><span class="icon-cross"></span></button>
+            <div class="hmwks-slider-w">
+                <div class="hmwks-slide">
+                    <div class="hmwks-side-by-side">
+                        <div class="hmwks-media"><img alt="" src="img/bigicon5.png"
+                                width="200px"></div>
+                        <div class="hmwks-content with-gradient">
+                            <h4 class="hmwks-title">Example Request Information
+                            </h4>
+                            <div class="hmwks-text">In this example you can see a
+                                form where you can request some additional information
+                                from the customer when they land on the app page.</div>
+                            <form>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group"><label for="">Your Full
+                                                Name</label><input class="form-control"
+                                                placeholder="Enter your full name..."
+                                                type="text" value=""></div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group"><label for="">Your
+                                                Role</label><select
+                                                class="form-control">
+                                                <option>Web Developer</option>
+                                                <option>Business Owner</option>
+                                                <option>Other</option>
+                                            </select></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="hmwks-slide">
+                    <div class="hmwks-side-by-side">
+                        <div class="hmwks-media"><img alt="" src="img/bigicon6.png"
+                                width="200px"></div>
+                        <div class="hmwks-content with-gradient">
+                            <h4 class="hmwks-title">Showcase App Features</h4>
+                            <div class="hmwks-text">In this example you can
+                                showcase some of the features of your application, it is
+                                very handy to make new users aware of your hidden
+                                features. You can use boostrap columns to split them up.
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <ul class="features-list">
+                                        <li>Fully Responsive design</li>
+                                        <li>Pre-built app layouts</li>
+                                        <li>Incredible Flexibility</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul class="features-list">
+                                        <li>Boxed & Full Layouts</li>
+                                        <li>Based on Bootstrap 4</li>
+                                        <li>Developer Friendly </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hmwks-slide">
+                    <div class="hmwks-side-by-side">
+                        <div class="hmwks-media"><img alt="" src="img/bigicon2.png"
+                                width="200px"></div>
+                        <div class="hmwks-content with-gradient">
+                            <h4 class="hmwks-title">Example of hmwks screen!
+                            </h4>
+                            <div class="hmwks-text">This is an example of a
+                                multistep hmwks screen, you can use it to introduce
+                                your customers to your app, or collect additional
+                                information from them before they start using your app.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div aria-hidden="true" class="hmwks-modal modal show fade animated" id="gantt-import-m" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+        <div class="modal-content"><button aria-label="Close" class="close" data-dismiss="modal"
+                type="button"><span class="close-label">Close</span><span class="icon-cross"></span></button>
+            <div class="hmwks-slider-w">
+                <div class="hmwks-slide">
+                    <div class="hmwks-content with-gradient text-center" style="padding:30px">
+                        <h4 class="hmwks-title">New Task</h4>
+                        <div class="hmwks-text mb-2">Please add new Milestone/Activity</div>
+                        <form id="mspImport" action="" method="POST" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                    <input type="file" class="form-input-styled" data-fouc id="mspFile" name="file" accept=".mpp,.xml, text/xml, application/xml, application/vnd.ms-project, application/msproj, application/msproject, application/x-msproject, application/x-ms-project, application/x-dos_ms_project, application/mpp, zz-application/zz-winassoc-mpp"/>
+                                    <span class="form-text text-muted">Accepted formats: mpp, xml</span>
+                                    <div class="d-flex align-items-center mt-2">
+                                        <a href="login_password_recover.html"></a>
+
+                                        <button type="submit" id="mspImportBtn" class="btn btn-primary ml-auto"><i class="icon-upload mr-2"></i> Import File</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

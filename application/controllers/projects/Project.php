@@ -621,7 +621,7 @@ class Project extends ICTMS_Controller {
             $file_location = APPPATH . "views";
             $json = file_get_contents($file_location."/resources/_pj/02849/gantt/001.json");
             $data['p_a_json'] = $json;
-            $_header["support"] = array("gantt","chosen","multiselect","pikadate");
+            $_header["support"] = array("gantt","chosen","multiselect","pikadate","uniform");
             $_header["page_js"] = "milestones";
 
             $this->load->view('core/fragments/header',$_header);

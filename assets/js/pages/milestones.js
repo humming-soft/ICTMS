@@ -1191,6 +1191,46 @@ var Milestones = function() {
        }else{
            defineMultiselect(window.gantt);
        }
+
+    //    var fileDnD = fileDragAndDrop();
+    //    fileDnD.init(gantt.$container);
+
+       function sendFile(file) {
+            // fileDnD.showUpload();
+            upload(file, function () {
+                $('#gantt-import-m').modal('hide');
+                $('.splash').fadeOut('slow');
+            })
+        }
+
+        function upload(file, callback) {
+            gantt.importFromMSProject({
+                data: file,
+                callback: function (project) {
+                    if (project) {
+                        gantt.clearAll();
+    
+                        if (project.config.duration_unit) {
+                            gantt.config.duration_unit = project.config.duration_unit;
+                        }
+    
+                        gantt.parse(project.data);
+                    }
+    
+                    if (callback)
+                        callback(project);
+                }
+            });
+        }
+
+    //    fileDnD.onDrop(sendFile);
+       var form = document.getElementById("mspImport");
+       form.onsubmit = function (event) {
+           event.preventDefault();
+           var fileInput = document.getElementById("mspFile");
+           if (fileInput.files[0])
+               sendFile(fileInput.files[0]);
+       };
    
    };
 
@@ -1220,12 +1260,26 @@ var Milestones = function() {
            enableCaseInsensitiveFiltering: true
        });
    };
+
+   var _componentUniform = function() {
+    if (!$().uniform) {
+        console.warn('Warning - uniform.min.js is not loaded.');
+        return;
+    }
+
+    // Initialize
+    $('.form-input-styled').uniform({
+        fileButtonClass: 'action btn bg-pink-400',
+        fileButtonHtml: '<i class="icon-plus2"></i>'
+    });
+    };
    return {
        init: function(data) {
            _wbs(data);
            _componentPikaday($("#start_date")[0]);
            _componentPikaday($("#end_date")[0]);
            _componentMultiselect();
+           _componentUniform();
        }
    }
 }();

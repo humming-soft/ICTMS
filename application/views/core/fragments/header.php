@@ -61,7 +61,7 @@
     <script src="<?=site_url('assets/js/plugins/gantt/t/ext/dhtmlxgantt_overlay.js')?>" type="text/javascript" charset="utf-8"></script> 
     <script src="<?=site_url('assets/js/plugins/gantt/t/ext/dhtmlxgantt_tooltip.js')?>" type="text/javascript" charset="utf-8"></script> 
     <script src="<?=site_url('assets/js/plugins/gantt/t/ext/dhtmlxgantt_api.js')?>" type="text/javascript" charset="utf-8"></script> 
-
+    <script src="<?=site_url('assets/js/plugins/gantt/t/ext/dhtmlxgantt_file_dnd.js')?>" type="text/javascript" charset="utf-8"></script> 
 
     <?php } ?>
     <?php if(in_array("orgchart",$support)){ ?>

@@ -35,7 +35,7 @@
                                                     <div class="col-12 col-md-12 col-lg-12">
                                                         <div class="media flex-column flex-md-row mb-4">
                                                             <div class="media-body text-center p-2">
-                                                                <h4 class="media-title step-title">STEP 01 : Prioritize the Output(s)</h4>
+                                                                <h4 class="media-title step-title">STEP 01 : Prioritize the Output(s) Components</h4>
                                                                 <ul class="list-inline list-inline-dotted mb-0">
                                                                     <li class="list-inline-item">Please select the priority of the output(s) i.e, result of the project intervention strategy.</li>
                                                                 </ul>
@@ -46,7 +46,7 @@
                                                         </div>
                                                         <ul class="data-details-list sortable-list">
                                                             <li>
-                                                                <div class="data-details-head item" style="width:70%"><i class="icon-move mr-2"></i> OUTPUT 01 - An Integrated Transportation System is in Place.</div>
+                                                                <div class="data-details-head item" style="width:70%"><i class="icon-move mr-2"></i> OUTPUT 01 - Reduced Number of Vendors.</div>
                                                                 <div class="data-details-des" style="width:30%">
                                                                     <div class="form-group mb-0">
                                                                         <div class="form-check form-check-inline">
@@ -73,7 +73,7 @@
                                                                 </div>
                                                             </li>
                                                             <li>
-                                                                <div class="data-details-head item" style="width:70%"><i class="icon-move mr-2"></i> OUTPUT 02 - An effective Public Transportation Scheduling and Control System is in Place.</div>
+                                                                <div class="data-details-head item" style="width:70%"><i class="icon-move mr-2"></i> OUTPUT 02 - Effective Implementation and Enforcementof Public Transportation Scheduling and Control System.</div>
                                                                 <div class="data-details-des" style="width:30%">
                                                                     <div class="form-group mb-0">
                                                                         <div class="form-check form-check-inline">

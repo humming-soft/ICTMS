@@ -981,10 +981,10 @@ var Milestones = function() {
                    break;
                    case 'save' :
                    gantt.exportToJSON({
-                       server: base_url+"projects/02849/gantt/save",
-                       callback: function(res){
-                           alert(res.st);
-                       }
+                        server: base_url+"projects/02849/gantt/save",
+                        callback: function(res){
+                            $(".alert").show().find(".message").html(res.message);
+                        }
                     });
                    break;
                    case "critical-path" :

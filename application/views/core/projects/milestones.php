@@ -20,6 +20,10 @@
 
                 <div class="row m-0">
                     <div class="col-sm-12">
+                        <div class="alert bg-success-400 text-white alert-dismissible" style="display:none">
+                            <button type="button" class="close" data-dismiss="alert"><span>×</span></button>
+                            <span class="font-weight-semibold message"></span>
+                        </div>
                         <div class="card">
                             <div class="card-header header-elements-inline p-3">
                                 <h6 class="card-title text-uppercase"><i class="icon-paragraph-right3 mr-2"></i>Activities & Deliverables</h6>

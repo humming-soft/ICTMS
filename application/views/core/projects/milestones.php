@@ -258,10 +258,11 @@
             <div class="hmwks-slider-w">
                 <div class="hmwks-slide">
                     <div class="hmwks-side-by-side">
-                        <div class="hmwks-media"><img alt="" src="img/bigicon5.png"
-                                width="200px"></div>
-                        <div class="hmwks-content with-gradient">
-                            <h4 class="hmwks-title">Example Request Information
+                        <div class="hmwks-media" width="200px">
+
+                        </div>
+                        <div class="hmwks-content with-gradient text-center" style="padding:30px">
+                            <h4 class="hmwks-title">Add Human Resource
                             </h4>
                             <div class="hmwks-text">In this example you can see a
                                 form where you can request some additional information
@@ -285,51 +286,6 @@
                                     </div>
                                 </div>
                             </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="hmwks-slide">
-                    <div class="hmwks-side-by-side">
-                        <div class="hmwks-media"><img alt="" src="img/bigicon6.png"
-                                width="200px"></div>
-                        <div class="hmwks-content with-gradient">
-                            <h4 class="hmwks-title">Showcase App Features</h4>
-                            <div class="hmwks-text">In this example you can
-                                showcase some of the features of your application, it is
-                                very handy to make new users aware of your hidden
-                                features. You can use boostrap columns to split them up.
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <ul class="features-list">
-                                        <li>Fully Responsive design</li>
-                                        <li>Pre-built app layouts</li>
-                                        <li>Incredible Flexibility</li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-6">
-                                    <ul class="features-list">
-                                        <li>Boxed & Full Layouts</li>
-                                        <li>Based on Bootstrap 4</li>
-                                        <li>Developer Friendly </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hmwks-slide">
-                    <div class="hmwks-side-by-side">
-                        <div class="hmwks-media"><img alt="" src="img/bigicon2.png"
-                                width="200px"></div>
-                        <div class="hmwks-content with-gradient">
-                            <h4 class="hmwks-title">Example of hmwks screen!
-                            </h4>
-                            <div class="hmwks-text">This is an example of a
-                                multistep hmwks screen, you can use it to introduce
-                                your customers to your app, or collect additional
-                                information from them before they start using your app.
-                            </div>
                         </div>
                     </div>
                 </div>

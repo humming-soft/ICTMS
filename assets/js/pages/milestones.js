@@ -904,6 +904,7 @@ var Milestones = function() {
        gantt.config.resource_property = "owner_id";
        gantt.config.order_branch = true;
        gantt.config.open_tree_initially = true;
+       gantt.config.xml_date = "%Y-%m-%d %H:%i";
        // gantt.config.layout = {
        //     css: "gantt_container",
        //     rows: [

@@ -57,136 +57,108 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <div class="border-2 border-light-gray dtable-container">
-                                            <table class="table table-togglable table-bordered dtable" style="max-width:none;width:2000px;">
-                                                <thead>
-                                                    <tr>
-                                                        <th colspan="2" width="650px" class="text-uppercase text-center" data-hide="phone">Project Description</th>
-                                                        <th width="450px" class="text-uppercase text-center" data-toggle="true">Indicators</th>
-                                                        <th width="450px" class="text-uppercase text-center" data-hide="phone,tablet">Means of Verification</th>
-                                                        <th width="450px" class="text-uppercase text-center" data-hide="phone,tablet">Assumptions</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th class="text-uppercase align-center">Goal(s)</th>
-                                                        <td>
-                                                            <ul class="list list-numbered mb-0">
-                                                                <li>1.	Reduction on Carbon Emission from Land Vehicle.</li>
-                                                                <li>2.	Reduction on Fatality Rate from Road Accidents</li>
-                                                                <li>3.	Reduction in Road Congestion</li>
-                                                                <li>4.	Reduction in Road Maintenance Cost </li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>
-                                                            <ul class="list mb-0 goal_ind_t">
-                                                                <li>Increase in Commuters by 20%.</li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>
-                                                            <ul class="list mb-0 goal_mov_t">
-                                                                <li>Real-time Descriptive Analytics in comparison to past trends.</li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>
-                                                            <ul class="list mb-0 goal_asmp_t">
-                                                                <li>
-                                                                    Real-time Commuting Data extracted from the various Public Transportation Authorities and Operators are accurate.
-                                                                </li>
-                                                            </ul>
-                                                        </td>                                                 
-                                                    </tr>
-                                                    <tr>
-                                                        <th class="text-uppercase align-center">Outcome</th>
-                                                        <td>Public Transportation System in Malaysia is safe and reliable</td>
-                                                        <td>
-                                                            <ul class="list mb-0 outc_ind_t">
-                                                                <li>10% Reduction in Environmental Carbon Reading from “Jabatan Alam Sekitar”.</li>
-                                                                <li>10% Reduction in Road Accidents reported at hospitals.</li>
-                                                                <li>10% Reduction in Road Traffic.</li>
-                                                                <li>10% Reduction in Actual Road Maintenance Cost.</li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>
-                                                            <ul class="list mb-0 outc_mov_t">
-                                                                <li>Jabatan Alam Sekitar</li>
-                                                                <li>Accident Reports from Hospitals</li>
-                                                                <li>Traffic Report from LLM</li>
-                                                                <li>Road Maintenance report from LLM</li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>
-                                                            <ul class="list mb-0 outc_asmp_t">
-                                                                <li>Jabatan Alam Sekitar is capturing accurate data on Carbon Emission.</li>
-                                                                <li>Hospitals are capturing accurate data on Accident cases.</li>
-                                                                <li>LLM is capturing accurate data on Traffic and Road Maintenance.</li>
-                                                            </ul>
-                                                        </td>                                                  
-                                                    </tr>
-                                                    <tr>
-                                                        <th class="text-uppercase align-center">Output(s)</th>
-                                                        <td>
-                                                            <ul class="list list-unstyled mb-0">
-                                                            <li><strong>OUT-1 :</strong> An Integrated Transportation System is in place</li>
-                                                                                <li><strong>OUT-2 :</strong>An effective Public Transportation Scheduling and Control System is in place</li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>
-                                                            <ul class="list mb-0 out_ind_t">
-                                                                <li>Real-time transportation data from all Public Transportation Operators are integrated with a centralized system at the Public Transportation Authority within 24-months.</li>
-                                                                <li>Accurate Public Transportation Scheduling is achieved within 48-months.</li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>
-                                                            <ul class="list mb-0 out_mov_t">
-                                                                <li>TIDE is operational within 24-months.</li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>
-                                                            <ul class="list mb-0 out_asmp_t">
-                                                                <li>Collaboration efforts has been agreed between the Public Transportation Operators and Authority.</li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th class="text-uppercase align-center">Activity(ies)</th>
-                                                        <td>
-                                                            <ul class="list list-unstyled mb-0">
-                                                                <li>1.	Technical Study on the systems currently available at each Public Transportation Operators
-                                                                </li>
-                                                                <li>2.	Develop and ICT Infrastructure to store and analyze Public Transportation Data extracted from all Public Transportation Operators
-                                                                </li>
-                                                                <li>3.	Advise the Enforcement Division at the Public Transportation Authorities to minimize the gaps between the Baseline and Actual Public Transportation Scheduling through various Enforcement Intervention Programmes 
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>
-                                                            <ul class="list mb-0 act_ind_t">
-                                                                <li>Technical Study Report from all Public Transportation Operators must be available within 6-months.</li>
-                                                                <li>Design, Supply, Installation, Testing and Commissioning of the ICT Infrastructure at Public Transportation Authority is completed 12-months upon completion of the Technical Study.</li>
-                                                                <li>Public Transportation Scheduling Gap Analysis report is presented to the Enforcement Division within 6-months from commissioning of the ICT Infrastructure.</li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>
-                                                            <ul class="list mb-0 act_mov_t">
-                                                                <li>Project Progress Report.</li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>
-                                                            <ul class="list mb-0 act_asmp_t">
-                                                                <li>Collaboration efforts has been agreed between the Public Transportation Operators and Authority.</li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <hr>
                                         <form class="wizard-form steps-logframe no-loader" action="#" data-fouc>
                                             <h6>Personal data</h6>
                                             <fieldset>
                                                 <div class="row">
                                                     <div class="col-12 col-md-12 col-lg-12">
+                                                    <div class="border-2 border-light-gray dtable-container">
+                                                        <table class="table table-togglable table-bordered dtable" style="max-width:none;width:2000px;">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th colspan="2" width="650px" class="text-uppercase text-center" data-hide="phone">Project Description</th>
+                                                                    <th width="450px" class="text-uppercase text-center" data-toggle="true">Indicators</th>
+                                                                    <th width="450px" class="text-uppercase text-center" data-hide="phone,tablet">Means of Verification</th>
+                                                                    <th width="450px" class="text-uppercase text-center" data-hide="phone,tablet">Assumptions</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th class="text-uppercase align-center">Goal(s)</th>
+                                                                    <td>
+                                                                        <ul class="list list-numbered mb-0">
+                                                                            <li>1.	Reduction on Carbon Emission from Land Vehicle.</li>
+                                                                            <li>2.	Reduction on Fatality Rate from Road Accidents</li>
+                                                                            <li>3.	Reduction in Road Congestion</li>
+                                                                            <li>4.	Reduction in Road Maintenance Cost </li>
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td>
+                                                                        <ul class="list mb-0 goal_ind_t">-
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td>
+                                                                        <ul class="list mb-0 goal_mov_t">-
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td>
+                                                                        <ul class="list mb-0 goal_asmp_t">-
+                                                                        </ul>
+                                                                    </td>                                                 
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="text-uppercase align-center">Outcome</th>
+                                                                    <td>Public Transportation System in Malaysia is safe and reliable</td>
+                                                                    <td>
+                                                                        <ul class="list mb-0 outc_ind_t">-
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td>
+                                                                        <ul class="list mb-0 outc_mov_t">-
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td>
+                                                                        <ul class="list mb-0 outc_asmp_t">-
+                                                                        </ul>
+                                                                    </td>                                                  
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="text-uppercase align-center">Output(s)</th>
+                                                                    <td>
+                                                                        <ul class="list list-unstyled mb-0">
+                                                                        <li><strong>OUT-1 :</strong> An Integrated Transportation System is in place</li>
+                                                                                            <li><strong>OUT-2 :</strong>An effective Public Transportation Scheduling and Control System is in place</li>
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td>
+                                                                        <ul class="list mb-0 out_ind_t">-
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td>
+                                                                        <ul class="list mb-0 out_mov_t">-
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td>
+                                                                        <ul class="list mb-0 out_asmp_t">-
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="text-uppercase align-center">Activity(ies)</th>
+                                                                    <td>
+                                                                        <ul class="list list-unstyled mb-0">
+                                                                            <li>1.	Technical Study on the systems currently available at each Public Transportation Operators
+                                                                            </li>
+                                                                            <li>2.	Develop and ICT Infrastructure to store and analyze Public Transportation Data extracted from all Public Transportation Operators
+                                                                            </li>
+                                                                            <li>3.	Advise the Enforcement Division at the Public Transportation Authorities to minimize the gaps between the Baseline and Actual Public Transportation Scheduling through various Enforcement Intervention Programmes 
+                                                                            </li>
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td>
+                                                                        <ul class="list mb-0 act_ind_t">-</ul>
+                                                                    </td>
+                                                                    <td>
+                                                                        <ul class="list mb-0 act_mov_t">-</ul>
+                                                                    </td>
+                                                                    <td>
+                                                                        <ul class="list mb-0 act_asmp_t">-</ul>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <hr>
                                                         <div class="row">
                                                         <div class="col-12 col-md-12 col-lg-12">
                                                             <div class="media flex-column flex-md-row mb-4">
@@ -277,6 +249,115 @@
 
                                             <h6>Your education</h6>
                                             <fieldset>
+                                                <div class="border-2 border-light-gray dtable-container1">
+                                                    <table class="table table-togglable table-bordered dtable1" style="max-width:none;width:2000px;">
+                                                        <thead>
+                                                            <tr>
+                                                                <th colspan="2" width="650px" class="text-uppercase text-center" data-hide="phone">Project Description</th>
+                                                                <th width="450px" class="text-uppercase text-center" data-toggle="true">Indicators</th>
+                                                                <th width="450px" class="text-uppercase text-center" data-hide="phone,tablet">Means of Verification</th>
+                                                                <th width="450px" class="text-uppercase text-center" data-hide="phone,tablet">Assumptions</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th class="text-uppercase align-center">Goal(s)</th>
+                                                                <td>
+                                                                    <ul class="list list-numbered mb-0">
+                                                                        <li>1.	Reduction on Carbon Emission from Land Vehicle.</li>
+                                                                        <li>2.	Reduction on Fatality Rate from Road Accidents</li>
+                                                                        <li>3.	Reduction in Road Congestion</li>
+                                                                        <li>4.	Reduction in Road Maintenance Cost </li>
+                                                                    </ul>
+                                                                </td>
+                                                                <td>
+                                                                    <ul class="list mb-0 goal_ind_t">
+                                                                       -
+                                                                    </ul>
+                                                                </td>
+                                                                <td>
+                                                                    <ul class="list mb-0 goal_mov_t">
+                                                                      -
+                                                                    </ul>
+                                                                </td>
+                                                                <td>
+                                                                    <ul class="list mb-0 goal_asmp_t">
+                                                                        <li>
+                                                                            Real-time Commuting Data extracted from the various Public Transportation Authorities and Operators are accurate.
+                                                                        </li>
+                                                                    </ul>
+                                                                </td>                                                 
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="text-uppercase align-center">Outcome</th>
+                                                                <td>Public Transportation System in Malaysia is safe and reliable</td>
+                                                                <td>
+                                                                    <ul class="list mb-0 outc_ind_t">
+                                                                        -
+                                                                    </ul>
+                                                                </td>
+                                                                <td>
+                                                                    <ul class="list mb-0 outc_mov_t">
+                                                                      -
+                                                                    </ul>
+                                                                </td>
+                                                                <td>
+                                                                    <ul class="list mb-0 outc_asmp_t">
+                                                                        <li>Jabatan Alam Sekitar is capturing accurate data on Carbon Emission.</li>
+                                                                        <li>Hospitals are capturing accurate data on Accident cases.</li>
+                                                                        <li>LLM is capturing accurate data on Traffic and Road Maintenance.</li>
+                                                                    </ul>
+                                                                </td>                                                  
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="text-uppercase align-center">Output(s)</th>
+                                                                <td>
+                                                                    <ul class="list list-unstyled mb-0">
+                                                                    <li><strong>OUT-1 :</strong> An Integrated Transportation System is in place</li>
+                                                                                        <li><strong>OUT-2 :</strong>An effective Public Transportation Scheduling and Control System is in place</li>
+                                                                    </ul>
+                                                                </td>
+                                                                <td>
+                                                                    <ul class="list mb-0 out_ind_t">-</ul>
+                                                                </td>
+                                                                <td>
+                                                                    <ul class="list mb-0 out_mov_t">-
+                                                                    </ul>
+                                                                </td>
+                                                                <td>
+                                                                    <ul class="list mb-0 out_asmp_t">
+                                                                        <li>Collaboration efforts has been agreed between the Public Transportation Operators and Authority.</li>
+                                                                    </ul>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="text-uppercase align-center">Activity(ies)</th>
+                                                                <td>
+                                                                    <ul class="list list-unstyled mb-0">
+                                                                        <li>1.	Technical Study on the systems currently available at each Public Transportation Operators
+                                                                        </li>
+                                                                        <li>2.	Develop and ICT Infrastructure to store and analyze Public Transportation Data extracted from all Public Transportation Operators
+                                                                        </li>
+                                                                        <li>3.	Advise the Enforcement Division at the Public Transportation Authorities to minimize the gaps between the Baseline and Actual Public Transportation Scheduling through various Enforcement Intervention Programmes 
+                                                                        </li>
+                                                                    </ul>
+                                                                </td>
+                                                                <td>
+                                                                    <ul class="list mb-0 act_ind_t">-</ul>
+                                                                </td>
+                                                                <td>
+                                                                    <ul class="list mb-0 act_mov_t">-</ul>
+                                                                </td>
+                                                                <td>
+                                                                    <ul class="list mb-0 act_asmp_t">
+                                                                        <li>Collaboration efforts has been agreed between the Public Transportation Operators and Authority.</li>
+                                                                    </ul>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <hr>
                                                 <div class="row">
                                                     <div class="col-12 col-md-12 col-lg-12">
                                                         <div class="media flex-column flex-md-row mb-4">
@@ -425,6 +506,131 @@
                                             <h6>Your experience</h6>
                                             <fieldset>
                                                 <div class="row">
+                                                    <div class="border-2 border-light-gray dtable-container2">
+                                                        <table class="table table-togglable table-bordered dtable2" style="max-width:none;width:2000px;">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th colspan="2" width="650px" class="text-uppercase text-center" data-hide="phone">Project Description</th>
+                                                                    <th width="450px" class="text-uppercase text-center" data-toggle="true">Indicators</th>
+                                                                    <th width="450px" class="text-uppercase text-center" data-hide="phone,tablet">Means of Verification</th>
+                                                                    <th width="450px" class="text-uppercase text-center" data-hide="phone,tablet">Assumptions</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th class="text-uppercase align-center">Goal(s)</th>
+                                                                    <td>
+                                                                        <ul class="list list-numbered mb-0">
+                                                                            <li>1.	Reduction on Carbon Emission from Land Vehicle.</li>
+                                                                            <li>2.	Reduction on Fatality Rate from Road Accidents</li>
+                                                                            <li>3.	Reduction in Road Congestion</li>
+                                                                            <li>4.	Reduction in Road Maintenance Cost </li>
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td>
+                                                                        <ul class="list mb-0 goal_ind_t">
+                                                                            <li>Increase in Commuters by 20%.</li>
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td>
+                                                                        <ul class="list mb-0 goal_mov_t">
+                                                                            <li>Real-time Descriptive Analytics in comparison to past trends.</li>
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td>
+                                                                        <ul class="list mb-0 goal_asmp_t">
+                                                                            <li>
+                                                                                Real-time Commuting Data extracted from the various Public Transportation Authorities and Operators are accurate.
+                                                                            </li>
+                                                                        </ul>
+                                                                    </td>                                                 
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="text-uppercase align-center">Outcome</th>
+                                                                    <td>Public Transportation System in Malaysia is safe and reliable</td>
+                                                                    <td>
+                                                                        <ul class="list mb-0 outc_ind_t">
+                                                                            <li>10% Reduction in Environmental Carbon Reading from “Jabatan Alam Sekitar”.</li>
+                                                                            <li>10% Reduction in Road Accidents reported at hospitals.</li>
+                                                                            <li>10% Reduction in Road Traffic.</li>
+                                                                            <li>10% Reduction in Actual Road Maintenance Cost.</li>
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td>
+                                                                        <ul class="list mb-0 outc_mov_t">
+                                                                            <li>Jabatan Alam Sekitar</li>
+                                                                            <li>Accident Reports from Hospitals</li>
+                                                                            <li>Traffic Report from LLM</li>
+                                                                            <li>Road Maintenance report from LLM</li>
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td>
+                                                                        <ul class="list mb-0 outc_asmp_t">
+                                                                            <li>Jabatan Alam Sekitar is capturing accurate data on Carbon Emission.</li>
+                                                                            <li>Hospitals are capturing accurate data on Accident cases.</li>
+                                                                            <li>LLM is capturing accurate data on Traffic and Road Maintenance.</li>
+                                                                        </ul>
+                                                                    </td>                                                  
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="text-uppercase align-center">Output(s)</th>
+                                                                    <td>
+                                                                        <ul class="list list-unstyled mb-0">
+                                                                        <li><strong>OUT-1 :</strong> An Integrated Transportation System is in place</li>
+                                                                                            <li><strong>OUT-2 :</strong>An effective Public Transportation Scheduling and Control System is in place</li>
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td>
+                                                                        <ul class="list mb-0 out_ind_t">
+                                                                            <li>Real-time transportation data from all Public Transportation Operators are integrated with a centralized system at the Public Transportation Authority within 24-months.</li>
+                                                                            <li>Accurate Public Transportation Scheduling is achieved within 48-months.</li>
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td>
+                                                                        <ul class="list mb-0 out_mov_t">
+                                                                            <li>TIDE is operational within 24-months.</li>
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td>
+                                                                        <ul class="list mb-0 out_asmp_t">
+                                                                            <li>Collaboration efforts has been agreed between the Public Transportation Operators and Authority.</li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="text-uppercase align-center">Activity(ies)</th>
+                                                                    <td>
+                                                                        <ul class="list list-unstyled mb-0">
+                                                                            <li>1.	Technical Study on the systems currently available at each Public Transportation Operators
+                                                                            </li>
+                                                                            <li>2.	Develop and ICT Infrastructure to store and analyze Public Transportation Data extracted from all Public Transportation Operators
+                                                                            </li>
+                                                                            <li>3.	Advise the Enforcement Division at the Public Transportation Authorities to minimize the gaps between the Baseline and Actual Public Transportation Scheduling through various Enforcement Intervention Programmes 
+                                                                            </li>
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td>
+                                                                        <ul class="list mb-0 act_ind_t">
+                                                                            <li>Technical Study Report from all Public Transportation Operators must be available within 6-months.</li>
+                                                                            <li>Design, Supply, Installation, Testing and Commissioning of the ICT Infrastructure at Public Transportation Authority is completed 12-months upon completion of the Technical Study.</li>
+                                                                            <li>Public Transportation Scheduling Gap Analysis report is presented to the Enforcement Division within 6-months from commissioning of the ICT Infrastructure.</li>
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td>
+                                                                        <ul class="list mb-0 act_mov_t">
+                                                                            <li>Project Progress Report.</li>
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td>
+                                                                        <ul class="list mb-0 act_asmp_t">
+                                                                            <li>Collaboration efforts has been agreed between the Public Transportation Operators and Authority.</li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <hr>
                                                     <div class="col-12 col-md-12 col-lg-12">
                                                         <div class="media flex-column flex-md-row mb-4">
                                                             <div class="media-body text-center p-2">

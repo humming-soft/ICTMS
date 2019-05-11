@@ -237,6 +237,8 @@ var Js = function() {
         init: function() {
             _componentWizard();
             _componentDrag(document.querySelector(".dtable"), document.querySelector(".dtable-container"));
+            _componentDrag(document.querySelector(".dtable1"), document.querySelector(".dtable-container1"));
+            _componentDrag(document.querySelector(".dtable2"), document.querySelector(".dtable-container2"));
             _component_lfm();
         }
     }

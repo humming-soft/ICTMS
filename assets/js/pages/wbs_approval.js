@@ -1,4 +1,4 @@
-var Milestones = function() {
+var Js = function() {
 
      var _wbs = function(d_data) {
        

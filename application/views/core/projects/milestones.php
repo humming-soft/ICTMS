@@ -47,7 +47,7 @@
                                             <a class="btn btn-light gantt-control" data-control="save" href="#" title="Save"><i class="icon-floppy-disk"></i></a>
                                         </div>
                                         <div class="btn-group">
-                                            <a href="#" class="btn btn-light gantt-control" data-control="critical-path"><i class="icon-split text-danger"></i> Critical Path</a>
+                                            <a href="#" class="btn btn-light gantt-control" data-control="critical-path"><i class="icon-split text-danger"></i> <span class="cp-label">Show Critical Path</span></a>
                                         </div>
                                         <div class="btn-group">
                                             <a href="#" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false">View</a>

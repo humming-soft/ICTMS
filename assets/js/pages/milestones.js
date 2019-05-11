@@ -991,9 +991,11 @@ var Milestones = function() {
                        if(!$(this).hasClass("active")){
                            $(this).addClass("active");
                            gantt.config.highlight_critical_path = true;
+                           $(this).find(".cp-label").text("Hide Critical Path");
                        } else{
                            $(this).removeClass("active");
                            gantt.config.highlight_critical_path = false;
+                           $(this).find(".cp-label").text("Show Critical Path");
                        }
                        gantt.render();
                    break;

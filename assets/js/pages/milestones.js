@@ -1198,7 +1198,7 @@ var Milestones = function() {
        function sendFile(file) {
             // fileDnD.showUpload();
             upload(file, function () {
-                $('#gantt-import-m').modal('hide');
+                $('#gantt-import-mp-m').modal('hide');
                 $('.splash').fadeOut('slow');
             })
         }
@@ -1269,7 +1269,7 @@ var Milestones = function() {
 
     // Initialize
     $('.form-input-styled').uniform({
-        fileButtonClass: 'action btn bg-pink-400',
+        fileButtonClass: 'action btn bg-success-400',
         fileButtonHtml: '<i class="icon-plus2"></i>'
     });
     };

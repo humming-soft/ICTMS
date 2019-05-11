@@ -65,8 +65,8 @@
                                         <div class="btn-group">
                                             <a href="#" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false">import</a>
                                             <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-73px, 36px, 0px);">
-                                                <a href="#" class="dropdown-item gantt-control" data-toggle="modal" data-target="#gantt-import-m" data-type="msp"> Microsoft Project (MPP or XML)</a>
-                                                <a href="#" class="dropdown-item gantt-control" data-toggle="modal" data-target="#gantt-import-m" data-type="xlsx"> Microsoft Excel (XLSX)</a>
+                                                <a href="#" class="dropdown-item gantt-control" data-toggle="modal" data-target="#gantt-import-mp-m" data-type="msp"> Microsoft Project (MPP or XML)</a>
+                                                <a href="#" class="dropdown-item gantt-control" data-toggle="modal" data-target="#gantt-import-xl-m" data-type="xlsx"> Microsoft Excel (XLSX)</a>
                                             </div>
                                         </div>
                                     </div>
@@ -337,23 +337,51 @@
         </div>
     </div>
 </div>
-<div aria-hidden="true" class="hmwks-modal modal show fade animated" id="gantt-import-m" role="dialog" tabindex="-1">
+<div aria-hidden="true" class="hmwks-modal modal show fade animated" id="gantt-import-mp-m" role="dialog" tabindex="-1">
     <div class="modal-dialog modal-md modal-dialog-centered" role="document">
         <div class="modal-content"><button aria-label="Close" class="close" data-dismiss="modal"
                 type="button"><span class="close-label">Close</span><span class="icon-cross"></span></button>
             <div class="hmwks-slider-w">
                 <div class="hmwks-slide">
                     <div class="hmwks-content with-gradient text-center" style="padding:30px">
-                        <h4 class="hmwks-title">New Task</h4>
-                        <div class="hmwks-text mb-2">Please add new Milestone/Activity</div>
+                        <h4 class="hmwks-title">Import - Microsoft Project</h4>
+                        <div class="hmwks-text mb-2">Please select the Microsoft Project file (MPP or XML) to load into the Gantt Chart.</div>
                         <form id="mspImport" action="" method="POST" enctype="multipart/form-data">
                             <div class="row">
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                     <input type="file" class="form-input-styled" data-fouc id="mspFile" name="file" accept=".mpp,.xml, text/xml, application/xml, application/vnd.ms-project, application/msproj, application/msproject, application/x-msproject, application/x-ms-project, application/x-dos_ms_project, application/mpp, zz-application/zz-winassoc-mpp"/>
-                                    <span class="form-text text-muted">Accepted formats: mpp, xml</span>
+                                    <span class="form-text text-muted">Accepted formats: MPP, XML</span>
+                                    <hr>
                                     <div class="d-flex align-items-center mt-2">
-                                        <a href="login_password_recover.html"></a>
-
+                                        <button type="button" class="btn btn-light" data-dismiss="modal"><i class="icon-cross mr-2"></i> Cancel</button>
+                                        <button type="submit" id="mspImportBtn" class="btn btn-primary ml-auto"><i class="icon-upload mr-2"></i> Import File</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div aria-hidden="true" class="hmwks-modal modal show fade animated" id="gantt-import-xl-m" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+        <div class="modal-content"><button aria-label="Close" class="close" data-dismiss="modal"
+                type="button"><span class="close-label">Close</span><span class="icon-cross"></span></button>
+            <div class="hmwks-slider-w">
+                <div class="hmwks-slide">
+                    <div class="hmwks-content with-gradient text-center" style="padding:30px">
+                        <h4 class="hmwks-title">Import - Microsoft Excel</h4>
+                        <div class="hmwks-text mb-2">Please select the Microsoft Excel file (XLSX) to load into the Gantt Chart.</div>
+                        <form id="mspImport" action="" method="POST" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                    <input type="file" class="form-input-styled" data-fouc id="mspFile" name="file" accept=".xlsx,.xls"/>
+                                    <span class="form-text text-muted">Accepted formats: XLSX</span>
+                                    <hr>
+                                    <div class="d-flex align-items-center mt-2">
+                                        <button type="button" class="btn btn-light" data-dismiss="modal"><i class="icon-cross mr-2"></i> Cancel</button>
                                         <button type="submit" id="mspImportBtn" class="btn btn-primary ml-auto"><i class="icon-upload mr-2"></i> Import File</button>
                                     </div>
                                 </div>

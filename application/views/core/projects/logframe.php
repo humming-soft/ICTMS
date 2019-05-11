@@ -17,7 +17,28 @@
         <div class="d-md-flex align-items-md-start">
             <!-- Right content -->
             <div class="flex-fill overflow-auto">
-
+            <div class="row m-0">
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-header header-elements-inline p-3">
+                                <h5 class="card-title text-uppercase"><i class="icon-stack2 mr-2"></i>PROJECT STRATEGY(IES)</h5>
+                            </div>
+                            
+                            <div class="card-body">
+                                <div class="row">
+                                    <ul class="list">
+										<li>
+											<h5 class="d-block">Integrated Transportation System.</h5>
+										</li>
+										<li>
+                                            <h5 class="d-block">Effective Public Transportation Scheduling and Control System .</h5>								
+										</li>
+									</ul>                          
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row m-0">
                     <div class="col-sm-12">
                         <div class="card">

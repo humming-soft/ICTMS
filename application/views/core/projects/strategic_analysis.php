@@ -185,7 +185,7 @@
                                                                                         <tr>
                                                                                             <td class="va-top">
                                                                                                 <div class="strategy-list pt-2">
-                                                                                                    <div class="data-details-head selected" style="width:100%">OUTPUT 01 - An Integrated Transportation System is in Place.</div>
+                                                                                                    <div class="data-details-head selected" style="width:100%">OUTPUT COMPONENT 01 - Reduced Number of Vendors.</div>
                                                                                                 </div>
                                                                                             </td>
                                                                                             <td class="p-0">  
@@ -501,7 +501,7 @@
                                                                                         <tr>
                                                                                             <td class="va-top">
                                                                                                 <div class="strategy-list pt-2">
-                                                                                                    <div class="data-details-head selected" style="width: auto;"> OUTPUT 02 - An effective Public Transportation Scheduling and Control System is in Place.</div>
+                                                                                                    <div class="data-details-head selected" style="width: auto;"> OUTPUT COMPONENT 02 - Effective Implementation and Enforcementof Public Transportation Scheduling and Control System.</div>
                                                                                                 </div>
                                                                                             </td>
                                                                                             <td class="p-0">  
@@ -824,7 +824,7 @@
                                                                                 <div class="mr-2">
                                                                                     <div class="form-check form-check-inline mt-1">
                                                                                         <label class="form-check-label">
-                                                                                            <input type="checkbox" name="m_e_s" onclick="StatAnalysis.check(this)" class="form-input-styled" data-fouc>
+                                                                                            <input type="checkbox" name="m_e_s" class="form-input-styled" data-fouc>
                                                                                         </label>
                                                                                     </div>
                                                                                 </div>
@@ -845,48 +845,30 @@
                                                                                             <h6 class="font-weight-semibold mt-2"><i class="icon-folder6 mr-2"></i> Goals <span class="ml-1"></span></h6>
                                                                                             <div class="dropdown-divider mb-2"></div>
                                                                                             <span class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Threat to the river ecosystem is reduced and fish stocks are increased.
+                                                                                                <i class="icon-file-text2"></i> Reduction on Carbon Emission from Land Vehicle.
                                                                                             </span>
                                                                                             <span class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Incidents of water borne diseases and illness is reduced, particularly among poor families.
+                                                                                                <i class="icon-file-text2"></i> Reduction on Fatality Rate from Road Accidents.
                                                                                             </span>
                                                                                             <span class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Catch and income of fishing families are stabilised or increased.
+                                                                                                <i class="icon-file-text2"></i> Reduction in Road Congestion.
                                                                                             </span>
                                                                                             <h6 class="font-weight-semibold mt-2"><i class="icon-folder6 mr-2"></i> Outcome <span class="ml-1"></span></h6>
                                                                                             <div class="dropdown-divider mb-2"></div>
                                                                                             <span class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Rider water quality is improved.
+                                                                                                <i class="icon-file-text2"></i> Public Transportation System in Malaysia is safe and reliable.
                                                                                             </span>
                                                                                         </div>
                                                                                         <div class="col-12 col-md-6 col-lg-6">
-                                                                                            <h6 class="font-weight-semibold mt-2"><i class="icon-folder6 mr-2"></i> Outputs <span class="ml-1"></span></h6>
+                                                                                            <h6 class="font-weight-semibold mt-2"><i class="icon-folder6 mr-2"></i> Output(s) Components <span class="ml-1"></span></h6>
                                                                                             <div class="dropdown-divider mb-2"></div>
                                                                                             <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> And hello exotic staunch
-                                                                                            </span>
-                                                                                            <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> That and well ecstatically
-                                                                                            </span>
-                                                                                            <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Sheared coasted so concurrent
-                                                                                            </span>
-                                                                                            <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Into darn intrepid belated
+                                                                                                <i class="icon-file-text2"></i> Reduced Number of Vendors.
                                                                                             </span>
                                                                                             <h6 class="font-weight-semibold mt-2"><i class="icon-folder6 mr-2"></i> Activities <span class="ml-1"></span></h6>
                                                                                             <div class="dropdown-divider mb-2"></div>
                                                                                             <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> And hello exotic staunch
-                                                                                            </span>
-                                                                                            <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> That and well ecstatically
-                                                                                            </span>
-                                                                                            <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Sheared coasted so concurrent
-                                                                                            </span>
-                                                                                            <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Into darn intrepid belated
+                                                                                                <i class="icon-file-text2"></i> Technical Study on the systems currently available at each Public Transportation Operators
                                                                                             </span>
                                                                                         </div>
                                                                                     </div>
@@ -899,7 +881,7 @@
                                                                                 <div class="mr-2">
                                                                                     <div class="form-check form-check-inline mt-1">
                                                                                         <label class="form-check-label">
-                                                                                            <input type="checkbox" name="m_e_s" onclick="StatAnalysis.check(this)" class="form-input-styled" data-fouc>
+                                                                                            <input type="checkbox" name="m_e_s" class="form-input-styled" data-fouc>
                                                                                         </label>
                                                                                     </div>
                                                                                 </div>
@@ -915,57 +897,41 @@
                                                                             </div>
                                                                             <div class="collapse" id="james2" style="">
                                                                                 <div class="card-body bg-light border-top border-bottom">
-                                                                                <div class="row">
-                                                                                    <div class="col-12 col-md-6 col-lg-6">
+                                                                                    <div class="row">
+                                                                                        <div class="col-12 col-md-6 col-lg-6">
                                                                                             <h6 class="font-weight-semibold mt-2"><i class="icon-folder6 mr-2"></i> Goals <span class="ml-1"></span></h6>
                                                                                             <div class="dropdown-divider mb-2"></div>
                                                                                             <span class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Threat to the river ecosystem is reduced and fish stocks are increased.
+                                                                                                <i class="icon-file-text2"></i> Reduction on Carbon Emission from Land Vehicle.
                                                                                             </span>
                                                                                             <span class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Incidents of water borne diseases and illness is reduced, particularly among poor families.
+                                                                                                <i class="icon-file-text2"></i> Reduction on Fatality Rate from Road Accidents.
                                                                                             </span>
                                                                                             <span class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Catch and income of fishing families are stabilised or increased.
+                                                                                                <i class="icon-file-text2"></i> Reduction in Road Congestion.
                                                                                             </span>
                                                                                             <h6 class="font-weight-semibold mt-2"><i class="icon-folder6 mr-2"></i> Outcome <span class="ml-1"></span></h6>
                                                                                             <div class="dropdown-divider mb-2"></div>
                                                                                             <span class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Rider water quality is improved.
+                                                                                                <i class="icon-file-text2"></i> Public Transportation System in Malaysia is safe and reliable.
                                                                                             </span>
                                                                                         </div>
                                                                                         <div class="col-12 col-md-6 col-lg-6">
-                                                                                            <h6 class="font-weight-semibold mt-2"><i class="icon-folder6 mr-2"></i> Outputs <span class="ml-1"></span></h6>
+                                                                                            <h6 class="font-weight-semibold mt-2"><i class="icon-folder6 mr-2"></i> Output(s) Components <span class="ml-1"></span></h6>
                                                                                             <div class="dropdown-divider mb-2"></div>
                                                                                             <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> And hello exotic staunch
-                                                                                            </span>
-                                                                                            <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> That and well ecstatically
-                                                                                            </span>
-                                                                                            <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Sheared coasted so concurrent
-                                                                                            </span>
-                                                                                            <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Into darn intrepid belated
+                                                                                                <i class="icon-file-text2"></i> Effective Implementation and Enforcementof Public Transportation Scheduling and Control System.
                                                                                             </span>
                                                                                             <h6 class="font-weight-semibold mt-2"><i class="icon-folder6 mr-2"></i> Activities <span class="ml-1"></span></h6>
                                                                                             <div class="dropdown-divider mb-2"></div>
                                                                                             <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> And hello exotic staunch
+                                                                                                <i class="icon-file-text2"></i> Develop and ICT Infrastructure to store and analyze Public <br>Transportation Data extracted from all Public Transportation Operators.
                                                                                             </span>
                                                                                             <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> That and well ecstatically
-                                                                                            </span>
-                                                                                            <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Sheared coasted so concurrent
-                                                                                            </span>
-                                                                                            <span href="#" class="dropdown-item">
-                                                                                                <i class="icon-file-text2"></i> Into darn intrepid belated
+                                                                                                <i class="icon-file-text2"></i> Advise the Enforcement Division at the Public Transportation Authorities <br>to minimize the gaps between the Baseline and Actual Public Transportation Scheduling <br>through various Enforcement Intervention Programmes.
                                                                                             </span>
                                                                                         </div>
                                                                                     </div>
-                                                                                </div>
                                                                             </div>
                                                                         </li>
                                                                     </ul>

@@ -18,7 +18,7 @@
             <div class="flex-fill overflow-auto">
                 <div class="row m-0">
                     <div class="col-12 col-md-12 col-lg-12">
-                        <div class="card">
+                        <!-- <div class="card">
                             <div class="card-header header-elements-sm-inline p-3">
                                 <h5 class="card-title"><i class="icon-checkmark-circle mr-2"></i>PROJECT PLANNING STEPS</h5>
                                 <div class="header-elements">
@@ -65,7 +65,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="card card-body">
                             <div class="media">
                                 <div class="media-body"> 

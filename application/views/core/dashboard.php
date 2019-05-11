@@ -302,25 +302,6 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
-                                        <div class="form-group"><label for="">Project Director</label>
-                                            <div class="input-group">
-                                                <input type="text" class="form-control" id="pjt_directorStr" name="pjt_directorStr" disabled placeholder="Add Project Director..">
-                                                <input type="hidden" class="form-control" id="pjt_directorID" name="pjt_directorID" >
-                                                <span class="input-group-append">
-                                                 <a class="input-group-text ogchartShow" data-org="1" data-toggle="modal" data-dismiss="modal" href="#"><i class="icon-add"></i></a>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row text-left">
-                                    <div class="col-sm-6">
-                                        <div class="form-group"><label for="">Project Manager</label>
-                                             <input type="text" class="form-control" readonly value="<?=$userfullname; ?>" name="pjt_managerStr">
-                                             <input type="hidden" class="form-control" readonly value="<?=$userid; ?>" name="pjt_managerID">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
                                         <div class="form-group"><label for="">Project Owner</label>
                                             <select class=" form-control m-b" id="implementers" name="implementers">
                                                 <option>SELECT</option>
@@ -332,6 +313,25 @@
                                                 endforeach;
                                                 ?>
                                             </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row text-left">
+                                    <div class="col-sm-6">
+                                        <div class="form-group"><label for="">Project Director</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="pjt_directorStr" name="pjt_directorStr" disabled placeholder="Add Project Director..">
+                                                <input type="hidden" class="form-control" id="pjt_directorID" name="pjt_directorID" >
+                                                <span class="input-group-append">
+                                                 <a class="input-group-text ogchartShow" data-org="1" data-toggle="modal" data-dismiss="modal" href="#"><i class="icon-add"></i></a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group"><label for="">Project Manager</label>
+                                             <input type="text" class="form-control" readonly value="<?=$userfullname; ?>" name="pjt_managerStr">
+                                             <input type="hidden" class="form-control" readonly value="<?=$userid; ?>" name="pjt_managerID">
                                         </div>
                                     </div>
                                 </div>

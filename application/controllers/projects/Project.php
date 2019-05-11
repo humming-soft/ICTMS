@@ -590,15 +590,32 @@ class Project extends ICTMS_Controller {
         {
             $message='';
         }
-
         if($session_data['roleid'] == 33){
+            $file_location = APPPATH . "views";
+            $json = file_get_contents($file_location."/resources/_pj/02849/gantt/002.json");
+            $data['p_a_json'] = $json;
+        
             $_header["support"] = array("gantt","chosen","multiselect","pikadate");
             $_header["page_js"] = "milestones_vendor";
 
             $this->load->view('core/fragments/header',$_header);
             $this->load->view('core/projects/fragments/main_navbar',$data1);
             $this->load->view('core/projects/fragments/secondary_navbar_vendor');
-            $this->load->view('core/projects/milestones_vendor');
+            $this->load->view('core/projects/milestones_vendor', $data);
+            $this->load->view('core/fragments/footer');
+
+        }else if($session_data['roleid'] == 15){
+            $file_location = APPPATH . "views";
+            $json = file_get_contents($file_location."/resources/_pj/02849/gantt/002.json");
+            $data['p_a_json'] = $json;
+            
+            $_header["support"] = array("gantt");
+            $_header["page_js"] = "wbs_approval";
+
+            $this->load->view('core/fragments/header',$_header);
+            $this->load->view('core/projects/fragments/main_navbar',$data1);
+            $this->load->view('core/projects/fragments/secondary_navbar_vendor');
+            $this->load->view('core/projects/milestones_vendor',$data);
             $this->load->view('core/fragments/footer');
         }else{
             $file_location = APPPATH . "views";
@@ -631,20 +648,53 @@ class Project extends ICTMS_Controller {
             $message='';
         }
 
+        $wbs_data = $this->input->post('data');
+        $wbs_data_type =  $this->input->post('type');
+        $json = json_encode(json_decode($wbs_data)->data);
+
         if($session_data['roleid'] == 33){
-            $_header["support"] = array("gantt","chosen","multiselect","pikadate");
-            $_header["page_js"] = "milestones_vendor";
 
-            $this->load->view('core/fragments/header',$_header);
-            $this->load->view('core/projects/fragments/main_navbar',$data1);
-            $this->load->view('core/projects/fragments/secondary_navbar_vendor');
-            $this->load->view('core/projects/milestones_vendor');
-            $this->load->view('core/fragments/footer');
+            if(strlen($json) > 0){
+                $file_location = APPPATH . "views";
+                if(!is_dir($file_location .'/resources')) {
+                    mkdir($file_location .'/resources', 0777, true);
+                }
+                if(!is_dir($file_location .'/resources/_pj')) {
+                    mkdir($file_location .'/resources/_pj', 0777, true);
+                }
+                if(!is_dir($file_location .'/resources/_pj/'. $pid)) {
+                    mkdir($file_location .'/resources/_pj/'. $pid, 0777, true);
+                }
+                if(!is_dir($file_location .'/resources/_pj/'. $pid . '/gantt')) {
+                    mkdir($file_location .'/resources/_pj/'. $pid . '/gantt', 0777, true);
+                }
+                $file_path = $file_location .'/resources/_pj/'. $pid . '/gantt/002.json';
+                //$file_instance;
+                // echo $file_path;
+                // exit();
+                file_put_contents($file_path, $json);
+                // if(!file_exists($file_path)){
+                //     // $file_instance = fopen($file_path, 'w');
+                //     // fwrite($file_instance, $json);
+                //     // fclose($file_instance);
+                //     file_put_contents($file_path, $json);
+                // }else{
+                //     $file_instance = fopen($file_path, 'w');
+                //     fwrite($file_instance, $json);
+                //     fclose($file_instance);
+                // }
+            }
+
+            // if(strlen($json) > 0){
+            //     $file_location = APPPATH . "views";
+            //     $file_path = $file_location."/resources/_pj/02849/gantt/002.json";
+            //     $file_instance = fopen($file_path, 'w');
+            //     echo $file_path;
+            //     exit();
+            //     fwrite($file_instance, $json);
+            //     fclose($file_instance);
+            // }
         }else{
-            $wbs_data = $this->input->post('data');
-            $wbs_data_type =  $this->input->post('type');
-
-            $json = json_encode(json_decode($wbs_data)->data);
             if(strlen($json) > 0){
                 $file_location = APPPATH . "views";
                 $file_path = $file_location."/resources/_pj/02849/gantt/001.json";
@@ -652,10 +702,10 @@ class Project extends ICTMS_Controller {
                 fwrite($file_instance, $json);
                 fclose($file_instance);
             }
-            $result['st'] = 1;
-            $result['message'] = "Saved Successfully!";
-            echo json_encode($result);
         }
+        $result['st'] = 1;
+        $result['message'] = "Activites and Deliverables under Project <b>Transport Information Data Exchange (TIDE)</b> have saved successfully!";
+        echo json_encode($result);
     }
 
     public function deliverables($pid=null){

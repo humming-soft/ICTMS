@@ -26,135 +26,34 @@
 						<i class="icon-stack2 mr-2"></i> Project Overview
 					</a>
 				</li>
-				<li class="nav-item">
-					<a href="<?=site_url('projects/02849/org')?>" class="navbar-nav-link">
-						<i class="icon-users mr-2"></i> Manage Project Team
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="<?=site_url('projects/02849/reporting-structure')?>" class="navbar-nav-link">
-						<i class="icon-tree7 mr-2"></i> Reporting Structure
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="<?=site_url('projects/02849/info-vendor')?>" class="navbar-nav-link">
-						<i class="icon-profile mr-2"></i> Vendor Information
-					</a>
-				</li>
-				<!-- <li class="nav-item">
-					<a href="<?=site_url('projects/02849')?>" class="navbar-nav-link">
-						<i class="icon-strategy mr-2"></i> Strategic Analysis
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="<?=site_url('projects/02849')?>" class="navbar-nav-link">
-						<i class="icon-grid7 mr-2"></i> Logframe (LFM)
-					</a>
-				</li>
 				<li class="nav-item dropdown">
 					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-					<i class="icon-menu mr-2"></i> more
+					<i class="icon-stack-text mr-2"></i> Planning
 					</a>
 
 					<div class="dropdown-menu">
-						<a href="<?=site_url('projects/02849/gantt')?>" class="dropdown-item"><i class="icon-paragraph-right3"></i>Activities & Deliverables</a>
-						<a href="<?=site_url('projects/02849/resources')?>" class="dropdown-item"><i class="icon-users"></i>Resources</a>
-						<a href="<?=site_url('projects/02849/risk')?>" class="dropdown-item"><i class="icon-shield-notice"></i>Risk Register</a>
-						<div class="dropdown-header">ICT Project Approval</div>
-						<a href="<?=site_url('projects/02849/approval')?>" class="dropdown-item"><i class="icon-checkbox-checked"></i>EPU Approval</a>
-						<a href="<?=site_url('projects/02849/approval-stage2')?>" class="dropdown-item"><i class="icon-checkmark-circle"></i>JPICT/JTISA Approval</a>
+						<a href="<?=site_url('projects/02849/org')?>" class="dropdown-item"><i class="icon-users"></i> Manage Project Team</a>
+						<a href="<?=site_url('projects/02849/reporting-structure')?>" class="dropdown-item"><i class="icon-tree7"></i> Reporting Structure</a>
+						<a href="<?=site_url('projects/02849/info-vendor')?>" class="dropdown-item"><i class="icon-profile"></i> Vendor Information</a>
+						<a href="<?=site_url('projects/02849/gantt')?>" class="dropdown-item"><i class="icon-paragraph-right3"></i> Activities & Deliverables Approval</a>
+						<a href="<?=site_url('projects/02849/info-vendor')?>" class="dropdown-item"><i class="icon-equalizer"></i> Liquidated & Ascertained Damages(LAD) Mapping</a>
 					</div>
-				</li> -->
-				<!-- <li class="nav-item">
-					<a href="<?=site_url('projects/02849/business')?>" class="navbar-nav-link">
-						<i class="icon-split mr-2"></i> Business Options
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="<?=site_url('projects/02849/benefits')?>" class="navbar-nav-link">
-						<i class="icon-stars mr-2"></i> Expected Benefits
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="<?=site_url('projects/02849/approach')?>" class="navbar-nav-link">
-						<i class="icon-enter3 mr-2"></i> Approach
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="<?=site_url('projects/02849/architecture')?>" class="navbar-nav-link">
-						<i class="icon-design mr-2"></i> Architecture
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="<?=site_url('projects/02849/milestones')?>" class="navbar-nav-link">
-						<i class="icon-task mr-2"></i> Milestones
-					</a>
-				</li>
+				</li> 
 				<li class="nav-item dropdown">
-					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
-						<i class="icon-menu"></i>
-						<span class="d-md-none ml-2">More</span>
+					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+					<i class="icon-clipboard2 mr-2"></i> Monitor & Control
 					</a>
 
 					<div class="dropdown-menu">
-						<a href="<?=site_url('projects/02849/deliverables')?>" class="dropdown-item"><i class="icon-inbox"></i> Deliverables</a>
-						<a href="<?=site_url('projects/02849/resources')?>" class="dropdown-item"><i class="icon-man-woman"></i> Resources</a>
-						<a href="<?=site_url('projects/02849/cost')?>" class="dropdown-item"><i class="icon-cash4"></i> Cost</a>
-						<a href="<?=site_url('projects/02849/risk')?>" class="dropdown-item"><i class="icon-menu6"></i> Risk Register</a>
-						<a href="<?=site_url('projects/02849/org')?>" class="dropdown-item"><i class="icon-tree6"></i> Org. Strucure</a>
+						<a href="<?=site_url('projects/02849/info-vendor')?>" class="dropdown-item"><i class="icon-screen3"></i> Dashboard</a>
+						<a href="<?=site_url('projects/02849/org')?>" class="dropdown-item"><i class="icon-statistics"></i> Progress Diary Approval</a>
+						<a href="<?=site_url('projects/02849/reporting-structure')?>" class="dropdown-item"><i class="icon-bubbles6"></i> Collaboration</a>
+						
 					</div>
-				</li> -->
+				</li> 
 			</ul>
 
 			<ul class="navbar-nav ml-md-auto">
-				<!-- <li class="nav-item dropdown">
-					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
-						<i class="icon-make-group mr-2"></i>
-						Connect
-					</a>
-
-					<div class="dropdown-menu dropdown-menu-right dropdown-content wmin-md-350">
-						<div class="dropdown-content-body p-2">
-							<div class="row no-gutters">
-								<div class="col-12 col-sm-4">
-									<a href="#" class="d-block text-default text-center ripple-dark rounded p-3">
-										<i class="icon-portfolio icon-2x"></i>
-										<div class="font-size-sm font-weight-semibold text-uppercase mt-2">Roles</div>
-									</a>
-
-									<a href="#" class="d-block text-default text-center ripple-dark rounded p-3">
-										<i class="icon-bin text-blue-400 icon-2x"></i>
-										<div class="font-size-sm font-weight-semibold text-uppercase mt-2">Trash</div>
-									</a>
-								</div>
-								
-								<div class="col-12 col-sm-4">
-									<a href="#" class="d-block text-default text-center ripple-dark rounded p-3">
-										<i class="icon-people text-pink-400 icon-2x"></i>
-										<div class="font-size-sm font-weight-semibold text-uppercase mt-2">People</div>
-									</a>
-
-									<a href="#" class="d-block text-default text-center ripple-dark rounded p-3">
-										<i class="icon-statistics text-success-400 icon-2x"></i>
-										<div class="font-size-sm font-weight-semibold text-uppercase mt-2">Status</div>
-									</a>
-								</div>
-
-								<div class="col-12 col-sm-4">
-									<a href="#" class="d-block text-default text-center ripple-dark rounded p-3">
-										<i class="icon-make-group text-info-400 icon-2x"></i>
-										<div class="font-size-sm font-weight-semibold text-uppercase mt-2">Groups</div>
-									</a>
-
-									<a href="#" class="d-block text-default text-center ripple-dark rounded p-3">
-										<i class="icon-cogs text-danger icon-2x"></i>
-										<div class="font-size-sm font-weight-semibold text-uppercase mt-2">Preferences</div>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</li> -->
 
 				<li class="nav-item dropdown">
 					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">

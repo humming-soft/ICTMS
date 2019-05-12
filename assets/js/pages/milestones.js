@@ -785,6 +785,14 @@ var Milestones = function() {
            return "<div>" + tasks.length * 8 + "</div>";
        };
 
+        gantt.templates.task_text = function(start,end,task){
+            return "";
+        };
+
+        gantt.templates.rightside_text = function(start, end, task){
+            return task.text;
+        };
+
    
        // gantt.locale.labels.section_owner = "Resources";
        // gantt.config.lightbox.sections = [

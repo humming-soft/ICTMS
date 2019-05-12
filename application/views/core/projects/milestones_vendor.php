@@ -26,15 +26,15 @@
                         </div>
                         <div class="card">
                             <div class="card-header header-elements-inline p-3">
-                                <h6 class="card-title text-uppercase"><i class="icon-paragraph-right3 mr-2"></i>Activities & Deliverables</h6>
+<h6 class="card-title text-uppercase"><i class="icon-paragraph-right3 mr-2"></i>Activities & Deliverables  <?php if($u == 15) { ?> Approval <?php }?></h6>
                                 <div class="header-elements">
                                     <div class="text-right">
-
+                                        <?php if($u == 33) { ?>
                                         <div class="btn-group">
                                             <a class="btn btn-light gantt-control" data-control="undo" href="#"><i class="icon-undo2"></i></a>
                                             <a class="btn btn-light gantt-control" data-control="redo" href="#"><i class="icon-redo2"></i></a>
                                         </div>
-
+                                        <?php } ?>
                                         <div class="btn-group">
                                             <a class="btn btn-light gantt-control" data-control="fullscreen" href="#"><i class="icon-enlarge"></i></a>
                                         </div>
@@ -43,9 +43,11 @@
                                             <a class="btn btn-light gantt-control" data-control="zoom-in" href="#"><i class="icon-zoomout3"></i></a>
                                             <a class="btn btn-light gantt-control" data-control="zoom-out" href="#"><i class="icon-zoomin3"></i></a>
                                         </div>
+                                        <?php if($u == 33) { ?>
                                         <div class="btn-group">
                                             <a class="btn btn-light gantt-control" data-control="save" href="#" title="Save"><i class="icon-floppy-disk"></i></a>
                                         </div>
+                                        <?php } ?>
                                         <div class="btn-group">
                                             <a href="#" class="btn btn-light gantt-control" data-control="critical-path"><i class="icon-split text-danger"></i> Critical Path</a>
                                         </div>
@@ -63,9 +65,11 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <?php if($u == 33) { ?>
                                     <div class="btn-group ml-2">
                                         <a href="#" data-toggle="modal" data-target="#gantt-lb" class="btn btn-light"><i class="icon-plus2 mr-1"></i> New Resources</a>
                                     </div>
+                                    <?php } ?>
 								</div>
                             </div>
                             
@@ -82,7 +86,7 @@
                                     <a href="#" class="btn bg-success"><i class="icon-paperplane mr-1"></i> Save</a>
                                     <a href="<?=site_url('dashboard')?>" class="btn bg-blue gx_save">Get Approval <i class="icon-arrow-right7 ml-1"></i></a>
                                 <?php }else{ ?>                                                                                              
-                                    <a href="#" class="btn bg-danger"><i class="icon-cross mr-1"></i> Reject & Comment</a>
+                                    <a href="#" class="btn bg-danger" data-toggle="modal" data-target="#comment-rej"><i class="icon-cross mr-1"></i> Reject & Comment</a>
                                     <a href="<?=site_url('dashboard')?>" class="btn bg-success gx_save"><i class="icon-arrow-right7 mr-1"></i> Approve</a>
                                 <?php } ?>
                                 </fieldset>
@@ -316,6 +320,37 @@
                         </div>
                     </div>
                 </div>           
+            </div>
+        </div>
+    </div>
+</div>
+<div aria-hidden="true" class="hmwks-modal modal show fade animated" id="comment-rej" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+        <div class="modal-content"><button aria-label="Close" class="close" data-dismiss="modal"
+                type="button"><span class="close-label">Close</span><span class="icon-cross"></span></button>
+            <div class="hmwks-slider-w">
+                <div class="hmwks-slide">
+                    <div class="hmwks-content with-gradient text-center" style="padding:30px">
+                        <h4 class="hmwks-title">Reject WBS</h4>
+                        <div class="hmwks-text mb-2">Please provide the reason to reject the Work Breakdown Structure (WBS)</div>
+                        <form id="mspImport" action="" method="POST" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="form-group">
+                                        <label>Comments</label>
+                                        <textarea name="" id="" cols="30" class="form-control b-maint" rows="3"></textarea>
+                                        <small>Comments Separated by Comma(,)</small>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex align-items-center mt-2">
+                                        <button type="button" class="btn btn-light" data-dismiss="modal"><i class="icon-cross mr-2"></i> Cancel</button>
+                                        <a href="<?=site_url("dashboard")?>" id="comRejBtn" class="btn btn-danger ml-auto"><i class="icon-cross mr-2"></i> Reject</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

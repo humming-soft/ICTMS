@@ -845,6 +845,35 @@ class Project extends ICTMS_Controller {
         }
     }
 
+
+    public function lad($pid=null){
+        $session_data = $this->session->userdata('logged_in');
+        $data['username'] =$data1['username'] = $session_data['username'];
+
+        if($this->session->userdata('message'))
+        {
+            $messagehrecord=$this->session->userdata('message');
+            $message=$messagehrecord['message'];
+            $this->session->unset_userdata('message');
+        }
+        else
+        {
+            $message='';
+        }
+  
+        $_header["support"] = array("uniform");
+        $_header["pid"] = "02849";
+        $_header["page"] = "lad";
+        $_header["page_js"] = "lad";
+
+        $this->load->view('core/fragments/header',$_header);
+        $this->load->view('core/projects/fragments/main_navbar',$data1);
+        $this->load->view('core/projects/fragments/secondary_navbar_pprisa');
+        $this->load->view('core/projects/lad');
+        $this->load->view('core/fragments/footer');
+
+    }
+
     public function meeting($pid=null){
         $session_data = $this->session->userdata('logged_in');
         $data['username'] =$data1['username'] = $session_data['username'];

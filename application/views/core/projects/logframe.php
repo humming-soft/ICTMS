@@ -529,7 +529,8 @@
                                                                     </td>
                                                                     <td>
                                                                         <ul class="list mb-0 goal_ind_t">
-                                                                            <li>Increase in Commuters by 20%.</li>
+                                                                            <li>Increase in Commuters by 335,800,000 to 402,960,000 (+20%).</li>
+                                                                            <li>Impact on Revenue (+56,414,400,000).</li>
                                                                         </ul>
                                                                     </td>
                                                                     <td>
@@ -656,7 +657,8 @@
                                                                         <tr>
                                                                             <td class="p-1">
                                                                                 <ul class="list goal_ind_t">
-                                                                                    <li>Increase in Commuters by 20%.</li>
+                                                                                    <li>Increase in Commuters by 335,800,000 to 402,960,000 (+20%).</li>
+                                                                                    <li>Impact on Revenue (+56,414,400,000).</li>
                                                                                 </ul>
                                                                             </td>
                                                                             <td class="p-1">

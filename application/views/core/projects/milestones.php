@@ -52,7 +52,7 @@
                                         <div class="btn-group">
                                             <a href="#" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false">View</a>
                                             <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-73px, 36px, 0px);">
-                                                <a href="#" class="dropdown-item gantt-control active" data-column="id" data-control="column-view"> Activity ID</a>
+                                                <a href="#" class="dropdown-item gantt-control active" data-column="wbs" data-control="column-view"> Activity ID</a>
                                                 <a href="#" class="dropdown-item gantt-control active" data-column="text" data-control="column-view"> Activity Name</a>
                                                 <a href="#" class="dropdown-item gantt-control active" data-column="start_date" data-control="column-view"> Start Date</a>
                                                 <a href="#" class="dropdown-item gantt-control" data-column="end_date" data-control="column-view"> End Date</a>
@@ -259,7 +259,82 @@
                 <div class="hmwks-slide">
                     <div class="hmwks-side-by-side">
                         <div class="hmwks-media" width="200px">
+                            <div class="card-group-control card-group-control-right">
+                                <div class="card mb-2">
+                                    <div class="card-header">
+                                        <h6 class="card-title">
+                                            <a class="text-default collapsed" data-toggle="collapse" href="#question1" aria-expanded="false">
+                                                A without walking some objective?
+                                            </a>
+                                        </h6>
+                                    </div>
 
+                                    <div id="question1" class="collapse" style="">
+                                        <div class="card-body">
+                                            She exposed painted fifteen are noisier mistake led waiting. Surprise not wandered speedily husbands although yet end. Are court tiled cease young built fat one man taken. We highest ye friends is exposed equally in. Ignorant had too strictly followed. Astonished as travelling assistance or unreserved oh pianoforte ye. Five with seen put need tore add neat.
+                                        </div>
+
+                                        <div class="card-footer bg-transparent d-sm-flex align-items-sm-center border-top-0 pt-0">
+                                            <span class="text-muted">Latest update: May 25, 2015</span>
+
+                                            <ul class="list-inline text-nowrap mb-0 ml-auto mt-2 mt-sm-0">
+                                                <li class="list-inline-item"><a href="#" class="text-primary mr-2"><i class="icon-thumbs-up2"></i></a> 320</li>
+                                                <li class="list-inline-item"><a href="#" class="text-muted mr-2"><i class="icon-thumbs-down2"></i></a> 14</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card mb-2">
+                                    <div class="card-header">
+                                        <h6 class="card-title">
+                                            <a class="text-default collapsed" data-toggle="collapse" href="#question2" aria-expanded="false">
+                                                <i class="icon-help mr-2 text-slate"></i> She exposed painted fifteen are noisier?
+                                            </a>
+                                        </h6>
+                                    </div>
+
+                                    <div id="question2" class="collapse" style="">
+                                        <div class="card-body">
+                                            There worse by an of miles civil. Manner before lively wholly am mr indeed expect. Among every merry his yet has her. You mistress get dashwood children off. Met whose marry under the merit. In it do continual consulted no listening. Devonshire sir sex motionless travelling six themselves. So colonel as greatly shewing herself observe ashamed.
+                                        </div>
+
+                                        <div class="card-footer bg-transparent d-sm-flex align-items-sm-center border-top-0 pt-0">
+                                            <span class="text-muted">Latest update: May 22, 2015</span>
+
+                                            <ul class="list-inline text-nowrap mb-0 ml-auto mt-2 mt-sm-0">
+                                                <li class="list-inline-item"><a href="#" class="text-primary mr-2"><i class="icon-thumbs-up2"></i></a> 278</li>
+                                                <li class="list-inline-item"><a href="#" class="text-muted mr-2"><i class="icon-thumbs-down2"></i></a> 25</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card mb-2">
+                                    <div class="card-header">
+                                        <h6 class="card-title">
+                                            <a class="text-default collapsed" data-toggle="collapse" href="#question3">
+                                                <i class="icon-help mr-2 text-slate"></i> Surprise not wandered speedily?
+                                            </a>
+                                        </h6>
+                                    </div>
+
+                                    <div id="question3" class="collapse">
+                                        <div class="card-body">
+                                            Do ashamed assured on related offence at equally totally. Use mile her whom they its. Kept hold an want as he bred of. Was dashwood landlord cheerful husbands two. Estate why theirs indeed him polite old settle though she. In as at regard easily narrow roused adieus. Parlors visited noisier how explain pleased his see suppose. He oppose at thrown desire.
+                                        </div>
+
+                                        <div class="card-footer bg-transparent d-sm-flex align-items-sm-center border-top-0 pt-0">
+                                            <span class="text-muted">Latest update: May 12, 2015</span>
+
+                                            <ul class="list-inline text-nowrap mb-0 ml-auto mt-2 mt-sm-0">
+                                                <li class="list-inline-item"><a href="#" class="text-primary mr-2"><i class="icon-thumbs-up2"></i></a> 438</li>
+                                                <li class="list-inline-item"><a href="#" class="text-muted mr-2"><i class="icon-thumbs-down2"></i></a> 16</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>               
+                            </div>
                         </div>
                         <div class="hmwks-content with-gradient text-center" style="padding:30px">
                             <h4 class="hmwks-title">Add Human Resource

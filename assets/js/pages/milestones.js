@@ -27,9 +27,9 @@ var Milestones = function() {
        
 
         //Progress Text - START
-       gantt.templates.progress_text = function (start, end, task) {
-           return "<span style='text-align:left;'>" + Math.round(task.progress * 100) + "% </span>";
-       };
+        gantt.templates.progress_text = function (start, end, task) {
+            return "<span style='text-align:left;'>" + Math.round(task.progress * 100) + "% </span>";
+        };    
        //Progress Text - ENDS
    
        gantt.templates.rightside_text = function (start, end, task) {
@@ -78,7 +78,7 @@ var Milestones = function() {
        var textEditor = { type: "custom_editor", map_to: "text_comment"};
    
        gantt.config.columns = [
-           {name: "id", label: "Activity ID", align: "center", resize: true},
+           {name: "wbs", label: "Activity ID", width: 100, template: gantt.getWBSCode, resize: true},
            {name: "text", tree: true, width: 370,label: "Activity Name", resize: true},
            {name: "start_date", align: "center", label: "Start Date", width: 100, resize: true},
            {name: "end_date", align: "center",label: "End Date",width: 100, resize: true, hide: true},
@@ -344,7 +344,7 @@ var Milestones = function() {
                    }
                    const formatter = new Intl.NumberFormat('en-US', {
                        style: 'currency',
-                       currency: 'USD',
+                       currency: 'MYR',
                        minimumFractionDigits: 2
                    });
                    return  formatter.format(cost1 );
@@ -725,8 +725,8 @@ var Milestones = function() {
            $("#gantt-lb").modal("show");
            if(!task.$new){
                // $('.multiselect').multiselect('deselect_all');
-               // $('.multiselect').multiselect("select",task.owner_id);
-               $('.multiselect').val(task.owner_id);
+               // $('.multiselect').multiselect("select",task.resource);
+               $('.multiselect').val(task.resource);
                //$('.multiselect').trigger("change");
                // $('.multiselect').multiselect('refresh');
            }
@@ -807,6 +807,8 @@ var Milestones = function() {
        /* CUSTOM LIGHTBOX : END */
 
    
+       
+
        var resourceConfig = {
            columns: [
                {
@@ -856,13 +858,13 @@ var Milestones = function() {
        // gantt.locale.labels.section_owner = "Resources";
        // gantt.config.lightbox.sections = [
        //     {name: "description", height: 38, map_to: "text", type: "textarea", focus: true},
-       //     //{name: "owner", height: 22, map_to: "owner_id", type: "select", options: gantt.serverList("people")},
-       //     {name:"owner",height:60, type:"multiselect", options:gantt.serverList("people"), map_to:"owner_id", unassigned_value:5 },
+       //     //{name: "owner", height: 22, map_to: "resource", type: "select", options: gantt.serverList("people")},
+       //     {name:"owner",height:60, type:"multiselect", options:gantt.serverList("people"), map_to:"resource", unassigned_value:5 },
        //     {name: "time", type: "duration", map_to: "auto"}
        // ];
    
        // gantt.config.resource_store = "resource";
-       // gantt.config.resource_property = "owner_id";
+       // gantt.config.resource_property = "resource";
        // gantt.config.order_branch = true;
        // gantt.config.open_tree_initially = true;
        // gantt.config.layout = {
@@ -895,42 +897,40 @@ var Milestones = function() {
        gantt.locale.labels.section_owner = "Owner";
        // gantt.config.lightbox.sections = [
        //     {name: "description", height: 38, map_to: "text", type: "textarea", focus: true},
-       //     {name: "owner", height: 22, map_to: "owner_id", type: "select", options: gantt.serverList("people")},
+       //     {name: "owner", height: 22, map_to: "resource", type: "select", options: gantt.serverList("people")},
        //     {name: "time", type: "duration", map_to: "auto"}
        // ];
-   
-       gantt.config.autosize = true;
-       gantt.config.resource_store = "resource";
-       gantt.config.resource_property = "owner_id";
-       gantt.config.order_branch = true;
-       gantt.config.open_tree_initially = true;
-       gantt.config.xml_date = "%Y-%m-%d %H:%i";
-       // gantt.config.layout = {
-       //     css: "gantt_container",
-       //     rows: [
-       //         {
-       //             cols: [
-       //                 {view: "grid", group:"grids", scrollY: "scrollVer"},
-       //                 {resizer: true, width: 1},
-       //                 {view: "timeline", scrollX: "scrollHor", scrollY: "scrollVer"},
-       //                 {view: "scrollbar", id: "scrollVer", group:"vertical"}
-       //             ],
-       //             gravity:2
-       //         },
-       //         {resizer: true, width: 1},
-       //         {
-       //             config: resourceConfig,
-       //             cols: [
-       //                 {view: "resourceGrid", group:"grids", width: 435, scrollY: "resourceVScroll" },
-       //                 {resizer: true, width: 1},
-       //                 {view: "resourceTimeline", scrollX: "scrollHor", scrollY: "resourceVScroll"},
-       //                 {view: "scrollbar", id: "resourceVScroll", group:"vertical"}
-       //             ],
-       //             gravity:1
-       //         },
-       //         {view: "scrollbar", id: "scrollHor"}
-       //     ]
-       // };
+        gantt.config.auto_scheduling = true;
+        gantt.config.auto_scheduling_strict = true;
+        gantt.config.autosize = true;
+        gantt.config.auto_types = true;
+        gantt.config.resource_store = "resource";
+        gantt.config.resource_property = "resource";
+        gantt.config.order_branch = true;
+        gantt.config.open_tree_initially = true;
+        gantt.config.xml_date = "%Y-%m-%d %H:%i";
+        // gantt.config.layout = {
+        //     css: "gantt_container",
+        //     cols: [
+        //         {
+        //             width:400,
+        //             min_width: 300,
+        //             rows:[
+        //                 {view: "grid", scrollX: "gridScroll", scrollable: true, scrollY: "scrollVer"},
+        //                 {view: "scrollbar", id: "gridScroll", group:"horizontal"}
+        //             ]
+        //         },
+        //         {resizer: true, width: 1},
+        //         {
+        //             rows:[
+        //                 {view: "timeline", scrollX: "scrollHor", scrollY: "scrollVer"},
+        //                 {view: "scrollbar", id: "scrollHor", group:"horizontal"}
+        //             ]
+        //         },
+        //         {view: "scrollbar", id: "scrollVer"}
+        //     ]
+        // };
+
    
        var resourcesStore = gantt.createDatastore({
            name: gantt.config.resource_store,
@@ -970,73 +970,75 @@ var Milestones = function() {
            });
            gantt.updateCollection("people", people);
 
-           var currentScale = 4;
-           _setScaleConfig(currentScale);
-           $(".gantt-control").on("click",function(){
-               switch ($(this).data('control')) {
-                   case 'undo' :
-                       gantt.undo();
-                   break;
-                   case 'redo' :
-                       gantt.redo();
-                   break;
-                   case 'save' :
-                   gantt.exportToJSON({
-                        server: base_url+"projects/02849/gantt/save",
-                        callback: function(res){
-                            $(".alert").show().find(".message").html(res.message);
-                        }
-                    });
-                   break;
-                   case "critical-path" :
-                       if(!$(this).hasClass("active")){
-                           $(this).addClass("active");
-                           gantt.config.highlight_critical_path = true;
-                           $(this).find(".cp-label").text("Hide Critical Path");
-                       } else{
-                           $(this).removeClass("active");
-                           gantt.config.highlight_critical_path = false;
-                           $(this).find(".cp-label").text("Show Critical Path");
-                       }
-                       gantt.render();
-                   break;
-                   case 'fullscreen' :
-                       gantt.expand();
-                   break;
-                   case 'column-view' :
-                       var isVisible = $(this).hasClass("active");
-                       var column = $(this).data('column');
-                       if(isVisible){
-                           $(this).removeClass("active")
-                           gantt.getGridColumn(column).hide = true;
-                       }else{
-                           $(this).addClass("active")
-                           gantt.getGridColumn(column).hide = false;
-                       }    
-                       gantt.render();
-                   break;
-                   case 'zoom-in' :
-                       if(currentScale < 5 && currentScale >= 1){
-                           $(this).next().removeClass("disabled");
-                           _setScaleConfig(++currentScale);
-                           gantt.render();
-                       }else{
-                           $(this).addClass("disabled")
-                       }
-                   break;
-                   case 'zoom-out' :
-                       if(currentScale <= 5 && currentScale > 1){
-                           $(this).prev().removeClass("disabled");
-                           $(this).removeClass("disabled");
-                           _setScaleConfig(--currentScale);
-                           gantt.render();
-                       }else{
-                           $(this).addClass("disabled")
-                       }
-                   break;
-               }
-           })
+         
        });
+
+       var currentScale = 4;
+       _setScaleConfig(currentScale);
+       $(".gantt-control").on("click",function(){
+           switch ($(this).data('control')) {
+               case 'undo' :
+                   gantt.undo();
+               break;
+               case 'redo' :
+                   gantt.redo();
+               break;
+               case 'save' :
+               gantt.exportToJSON({
+                    server: base_url+"projects/02849/gantt/save",
+                    callback: function(res){
+                        $(".alert").show().find(".message").html(res.message);
+                    }
+                });
+               break;
+               case "critical-path" :
+                   if(!$(this).hasClass("active")){
+                       $(this).addClass("active");
+                       gantt.config.highlight_critical_path = true;
+                       $(this).find(".cp-label").text("Hide Critical Path");
+                   } else{
+                       $(this).removeClass("active");
+                       gantt.config.highlight_critical_path = false;
+                       $(this).find(".cp-label").text("Show Critical Path");
+                   }
+                   gantt.render();
+               break;
+               case 'fullscreen' :
+                   gantt.expand();
+               break;
+               case 'column-view' :
+                   var isVisible = $(this).hasClass("active");
+                   var column = $(this).data('column');
+                   if(isVisible){
+                       $(this).removeClass("active")
+                       gantt.getGridColumn(column).hide = true;
+                   }else{
+                       $(this).addClass("active")
+                       gantt.getGridColumn(column).hide = false;
+                   }    
+                   gantt.render();
+               break;
+               case 'zoom-in' :
+                   if(currentScale < 5 && currentScale >= 1){
+                       $(this).next().removeClass("disabled");
+                       _setScaleConfig(++currentScale);
+                       gantt.render();
+                   }else{
+                       $(this).addClass("disabled")
+                   }
+               break;
+               case 'zoom-out' :
+                   if(currentScale <= 5 && currentScale > 1){
+                       $(this).prev().removeClass("disabled");
+                       $(this).removeClass("disabled");
+                       _setScaleConfig(--currentScale);
+                       gantt.render();
+                   }else{
+                       $(this).addClass("disabled")
+                   }
+               break;
+           }
+       })
    
        resourcesStore.parse([
            {id: 1, text: "HUMAN RESOURCES", parent:null},

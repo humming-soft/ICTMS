@@ -39,6 +39,158 @@ var Milestones = function() {
            return "";
        };
 
+       gantt.templates.task_class = function (start, end, task) {
+            if (task.type == gantt.config.types.project)
+                return "hide_project_progress_drag";
+        };
+
+
+        // (function dynamicTaskType() {
+        //     var delTaskParent;
+    
+        //     function checkParents(id) {
+        //         setTaskType(id);
+        //         var parent = gantt.getParent(id);
+        //         if (parent != gantt.config.root_id) {
+        //             checkParents(parent);
+        //         }
+        //     }
+    
+        //     function setTaskType(id) {
+        //         id = id.id ? id.id : id;
+        //         var task = gantt.getTask(id);
+        //         var type = gantt.hasChild(task.id) ? gantt.config.types.project : gantt.config.types.task;
+        //         if (type != task.type) {
+        //             task.type = type;
+        //             gantt.updateTask(id);
+        //         }
+        //     }
+    
+        //     gantt.attachEvent("onParse", function () {
+        //         gantt.eachTask(function (task) {
+        //             setTaskType(task);
+        //         });
+        //     });
+    
+        //     gantt.attachEvent("onAfterTaskAdd", function onAfterTaskAdd(id) {
+        //         gantt.batchUpdate(checkParents(id));
+        //     });
+    
+        //     gantt.attachEvent("onBeforeTaskDelete", function onBeforeTaskDelete(id, task) {
+        //         delTaskParent = gantt.getParent(id);
+        //         return true;
+        //     });
+    
+        //     gantt.attachEvent("onAfterTaskDelete", function onAfterTaskDelete(id, task) {
+        //         if (delTaskParent != gantt.config.root_id) {
+        //             gantt.batchUpdate(checkParents(delTaskParent));
+        //         }
+        //     });
+    
+        // })();
+
+
+        // recalculate progress of summary tasks when the progress of subtasks changes
+        (function dynamicProgress() {
+
+            function calculateSummaryProgress(task) {
+                if (task.type != gantt.config.types.project)
+                    return task.progress;
+                var totalToDo = 0;
+                var totalDone = 0;
+                gantt.eachTask(function (child) {
+                    if (child.type != gantt.config.types.project) {
+                        totalToDo += child.duration;
+                        totalDone += (child.progress || 0) * child.duration;
+                    }
+                }, task.id);
+                if (!totalToDo) return 0;
+                else return totalDone / totalToDo;
+            }
+
+            function calculateSummaryCost(task) {              
+                if (task.type != gantt.config.types.project)
+                    return task._6;
+                var totalCost = 0;
+                // console.log(task);
+                gantt.eachTask(function (child) {
+                    //console.log(child);
+                    if (child.type != gantt.config.types.project) {
+                        if(child._6 != "-"){
+                            totalCost += parseInt((child._6).replace(",","").replace("$",""));
+                        }
+                    }else{
+                        totalCost += calculateSummaryCost(child);
+                    }
+                }, task.id);
+
+
+                if (!totalCost) return 0;
+                else return totalCost;
+            }
+    
+            function refreshSummaryProgress(id, submit) {
+                if (!gantt.isTaskExists(id))
+                    return;
+    
+                var task = gantt.getTask(id);
+                task.progress = calculateSummaryProgress(task);    
+                //task._6 = calculateSummaryCost(task);           
+    
+                if (!submit) {
+                    gantt.refreshTask(id);
+                } else {
+                    gantt.updateTask(id);
+                    
+                }
+    
+                if (!submit && gantt.getParent(id) !== gantt.config.root_id) {
+                    refreshSummaryProgress(gantt.getParent(id), submit);
+                }
+            }
+    
+            // gantt.attachEvent("onBeforeParse", function(){ 
+            //     gantt.eachTask(function (task) {
+            //         task._6 = "calculateSummaryCost(task)";
+            //     });
+            // });
+            gantt.attachEvent("onParse", function () {
+                gantt.eachTask(function (task) {
+                    task.progress = calculateSummaryProgress(task);
+                    const formatter = new Intl.NumberFormat('en-US', {
+                        style: 'currency',
+                        currency: 'USD',
+                        minimumFractionDigits: 2
+                    });
+                    task._6 = formatter.format(calculateSummaryCost(task));
+                    
+                });
+            });
+
+    
+            gantt.attachEvent("onAfterTaskUpdate", function (id) {
+                refreshSummaryProgress(gantt.getParent(id), true);
+            });
+    
+            gantt.attachEvent("onTaskDrag", function (id) {
+                refreshSummaryProgress(gantt.getParent(id), false);
+            });
+            gantt.attachEvent("onAfterTaskAdd", function (id) {
+                refreshSummaryProgress(gantt.getParent(id), true);
+            });
+    
+    
+            (function () {
+                var idParentBeforeDeleteTask = 0;
+                gantt.attachEvent("onBeforeTaskDelete", function (id) {
+                    idParentBeforeDeleteTask = gantt.getParent(id);
+                });
+                gantt.attachEvent("onAfterTaskDelete", function () {
+                    refreshSummaryProgress(idParentBeforeDeleteTask, true);
+                });
+            })();
+        })();
+
        gantt.config.editor_types.custom_editor = {
            show: function (id, column, config, placeholder) {
              // called when input is displayed, put html markup of the editor into placeholder 
@@ -79,7 +231,7 @@ var Milestones = function() {
    
        gantt.config.columns = [
            {name: "wbs", label: "Activity ID", width: 100, template: gantt.getWBSCode, resize: true},
-           {name: "text", tree: true, width: 370,label: "Activity Name", resize: true},
+           {name: "text", tree: true, width: 370,label: "Activity Name", resize: true, template: highlightProject},
            {name: "start_date", align: "center", label: "Start Date", width: 100, resize: true},
            {name: "end_date", align: "center",label: "End Date",width: 100, resize: true, hide: true},
            {name: "owner", align: "center", width: 160, label: "Resources", template: function (task) {
@@ -113,484 +265,29 @@ var Milestones = function() {
    
            {name: "duration", width: 58, align: "center", resize: true},
            {name: "cost", align: "center", width: 120, label: "Cost", template: function (task) {
-               // if (task.type == gantt.config.types.project) {
-               //     return "";
-               // }
-   
-               var result = "";
-               var store = gantt.getDatastore("resource");
-               var owners = task[gantt.config.resource_property];
-               if (!owners || !owners.length) {
-                   return "-";
-               }
-                   var cost1 = 0;
-                 var durations;
-   
-               if(owners.length == 1){
-                   durations = task.duration;
-   
-   
-                  /* alert(owners[0].duration);*/
-                   if(owners[0] == 6){
-                       cost1=  ( parseInt(42000) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 7){
-                       cost1=  ( parseInt(37000) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 8){
-                       cost1=  ( parseInt(26000) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 9){
-                       cost1=  ( parseInt(26000) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 10){
-                       cost1=  ( parseInt(26000) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 11){
-                       cost1=  ( parseInt(10000) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 12){
-                       cost1=  ( parseInt(14000) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 13){
-                       cost1=  ( parseInt(8500) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 14){
-                       cost1=  ( parseInt(8500) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 15) {
-                       cost1 = ( parseInt(7500) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 16){
-                       cost1=  ( parseInt(6500) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 17){
-                       cost1=  ( parseInt(5000) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 18){
-                       cost1=  ( parseInt(7500) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 19){
-                       cost1=  ( parseInt(6500) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 20){
-                       cost1=  ( parseInt(6500) / parseInt(20) ) * parseInt(durations);
-                   }
-   
-                   else if(owners[0] == 22){
-                       cost1=  ( parseInt(32000) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 23){
-                       cost1=  ( parseInt(23000) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 24){
-                       cost1=  ( parseInt(16000) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 25){
-                       cost1=  ( parseInt(16000) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 26){
-                       cost1=  ( parseInt(9500) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 27){
-                       cost1=  ( parseInt(13500) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 28){
-                       cost1=  ( parseInt(9500) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 29){
-                       cost1=  ( parseInt(8500) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 30){
-                       cost1=  ( parseInt(10500) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 31){
-                       cost1=  ( parseInt(10500) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 32){
-                       cost1=  ( parseInt(9000) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 33){
-                       cost1=  ( parseInt(7500) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 34){
-                       cost1=  ( parseInt(7500) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 35){
-                       cost1=  ( parseInt(6300) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 36){
-                       cost1=  ( parseInt(5800) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 37){
-                       cost1=  ( parseInt(5300) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 38){
-                       cost1=  ( parseInt(6300) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 39){
-                       cost1=  ( parseInt(7500) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 40){
-                       cost1=  ( parseInt(4800) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 41){
-                       cost1=  ( parseInt(15500) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 42){
-                       cost1=  ( parseInt(15500) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 43){
-                       cost1=  ( parseInt(15500) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 44){
-                       cost1=  ( parseInt(12500) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 45){
-                       cost1=  ( parseInt(10500) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 46){
-                       cost1=  ( parseInt(8500) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 47){
-                       cost1=  ( parseInt(9500) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 48){
-                       cost1=  ( parseInt(8500) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 49){
-                       cost1=  ( parseInt(8500) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 50){
-                       cost1=  ( parseInt(8500) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 51){
-                       cost1=  ( parseInt(8500) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 52){
-                       cost1=  ( parseInt(8500) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 53){
-                       cost1=  ( parseInt(6300) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 54){
-                       cost1=  ( parseInt(6300) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 55){
-                       cost1=  ( parseInt(8000) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 56){
-                       cost1=  ( parseInt(6500) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 57){
-                       cost1=  ( parseInt(6300) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 58){
-                       cost1=  ( parseInt(5800) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 59){
-                       cost1=  ( parseInt(8400) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 60){
-                       cost1=  ( parseInt(5800) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 61){
-                       cost1=  ( parseInt(4700) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 62){
-                       cost1=  ( parseInt(5700) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 63){
-                       cost1=  ( parseInt(4700) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 64){
-                       cost1=  ( parseInt(4200) / parseInt(20) ) * parseInt(durations);
-                   }
-                   else if(owners[0] == 65){
-                       cost1= 4000;
-                   }
-                   else if(owners[0] == 66){
-                       cost1= 2000;
-                   }
-                   else if(owners[0] == 67){
-                       cost1= 10000;
-                   }
-                   else if(owners[0] == 68){
-                       cost1=  1000;
-                   }
-                   else if(owners[0] == 69){
-                       cost1=  7000;
-                   }
-                   else if(owners[0] == 70){
-                       cost1= 5000;
-                   }
-                   else if(owners[0] == 71){
-                       cost1= 5500;
-                   }
-                   else if(owners[0] == 72){
-                       cost1=  7933;
-                   }
-                   else if(owners[0] == 73){
-                       cost1= 400;
-                   }
-                   else if(owners[0] == 74){
-                       cost1=  300
-                   }
-                   else if(owners[0] == 75){
-                       cost1= 800
-                   }
-                   else{
-                       cost1= parseInt(cost1) + parseInt(4000);
-                   }
-                   const formatter = new Intl.NumberFormat('en-US', {
-                       style: 'currency',
-                       currency: 'MYR',
-                       minimumFractionDigits: 2
-                   });
-                   return  formatter.format(cost1 );
-               }
-               var cost= 0;
-               var cost2 = 0;
-               var duration;
-               var perhour = 0;
-               duration = task.duration;
-          /*     {id: 6, text: "Chief Information Officer", parent:1},
-               {id: 7, text: "Program Director", parent:2},
-               {id: 8, text: "Project Director", parent:2},
-               {id: 9, text: "Service Delivery Director", parent:3},
-               {id: 10, text: "Sales Director", parent:3},
-               {id: 11, text: "Insides Sales Manager", parent:1},
-               {id: 12, text: "Project Manager", parent:2},
-               {id: 13, text: "Business Development Manager", parent:2},
-               {id: 14, text: "IT Supply Chain Manager", parent:3},
-               {id: 15, text: "Account Manager", parent:3},*/
-               perhour = parseInt(duration);
-               owners.forEach(function(ownerId) {
-                   var owner = store.getItem(ownerId);
-                   if (!owner)
-                       return;
-   
-                   if(owner.id == 6){
-                       cost= parseInt(cost) + ( parseInt(42000) / parseInt(20) );
-                   }
-                   else if(owner.id == 7){
-                       cost =  parseInt(cost) + ( parseInt(37000) / parseInt(20) );
-                   }
-                   else if(owner.id == 8){
-                       cost =  parseInt(cost) + ( parseInt(26000) / parseInt(20) );
-                   }
-                   else if(owner.id == 9){
-                       cost =  parseInt(cost) + ( parseInt(26000) / parseInt(20) );
-                   }
-                   else if(owner.id == 10){
-                       cost =  parseInt(cost) + ( parseInt(26000)/ parseInt(20) );
-                   }
-                  else if(owner.id == 11){
-                       cost =  parseInt(cost) + ( parseInt(10000) / parseInt(20) );
-                   }
-                   else if(owner.id == 12){
-                       cost=  parseInt(cost) + ( parseInt(14000) / parseInt(20) );
-                   }
-                   else if(owner.id == 13){
-                       cost= parseInt(cost) + ( parseInt(8500) / parseInt(20) );
-                   }
-                   else if(owner.id == 14){
-                       cost= parseInt(cost) + ( parseInt(8500) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 15) {
-                       cost = parseInt(cost) + ( parseInt(7500) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 16){
-                       cost= parseInt(cost) + ( parseInt(6500) / parseInt(20) );
-                   }
-                   else if(owner.id == 17){
-                       cost= parseInt(cost) + ( parseInt(5000) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 18){
-                       cost= parseInt(cost) + ( parseInt(7500) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 19){
-                       cost= parseInt(cost) + ( parseInt(6500) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 20){
-                       cost= parseInt(cost) + ( parseInt(6500) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 22){
-                       cost= parseInt(cost) + ( parseInt(32000) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 23){
-                       cost= parseInt(cost) + ( parseInt(23000) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 24){
-                       cost= parseInt(cost) + ( parseInt(16000) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 25){
-                       cost= parseInt(cost) + ( parseInt(16000) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 26){
-                       cost= parseInt(cost) + ( parseInt(9500) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 27){
-                       cost= parseInt(cost) + ( parseInt(13500) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 28){
-                       cost=  parseInt(cost) +( parseInt(9500) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 29){
-                       cost= parseInt(cost) + ( parseInt(8500) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 30){
-                       cost= parseInt(cost) + ( parseInt(10500) / parseInt(20) );
-                   }
-                   else if(owner.id == 31){
-                       cost= parseInt(cost) + ( parseInt(10500) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 32){
-                       cost= parseInt(cost) + ( parseInt(9000) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 33){
-                       cost= parseInt(cost) + ( parseInt(7500) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 34){
-                       cost= parseInt(cost) + ( parseInt(7500) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 35){
-                       cost= parseInt(cost) + ( parseInt(6300) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 36){
-                       cost= parseInt(cost) + ( parseInt(5800) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 37){
-                       cost= parseInt(cost) + ( parseInt(5300) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 38){
-                       cost= parseInt(cost) + ( parseInt(6300) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 39){
-                       cost= parseInt(cost) + ( parseInt(7500) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 40){
-                       cost= parseInt(cost) + ( parseInt(4800) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 41){
-                       cost= parseInt(cost) + ( parseInt(15500) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 42){
-                       cost= parseInt(cost) + ( parseInt(15500) / parseInt(20) ) ;
-                   }
-                   else if(owner.id== 43){
-                       cost=  parseInt(cost) + ( parseInt(15500) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 44){
-                       cost=  parseInt(cost) + ( parseInt(12500) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 45){
-                       cost=  parseInt(cost) + ( parseInt(10500) / parseInt(20) );
-                   }
-                   else if(owner.id == 46){
-                       cost= parseInt(cost) + ( parseInt(8500) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 47){
-                       cost=  parseInt(cost) + ( parseInt(9500) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 48){
-                       cost= parseInt(cost) + ( parseInt(8500) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 49){
-                       cost= parseInt(cost) + ( parseInt(8500) / parseInt(20) );
-                   }
-                   else if(owner.id == 50){
-                       cost= parseInt(cost) + ( parseInt(8500) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 51){
-                       cost= parseInt(cost) + ( parseInt(8500) / parseInt(20) );
-                   }
-                   else if(owner.id == 52){
-                       cost= parseInt(cost) + ( parseInt(8500) / parseInt(20) );
-                   }
-                   else if(owner.id == 53){
-                       cost= parseInt(cost) + ( parseInt(6300) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 54){
-                       cost= parseInt(cost) + ( parseInt(6300) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 55){
-                       cost= parseInt(cost) + ( parseInt(8000) / parseInt(20) );
-                   }
-                   else if(owner.id == 56){
-                       cost= parseInt(cost) + ( parseInt(6500) / parseInt(20) ) ;
-                   }
-                   else if(owner.id== 57){
-                       cost= parseInt(cost) + ( parseInt(6300) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 58){
-                       cost= parseInt(cost) + ( parseInt(5800) / parseInt(20) ) ;
-                   }
-                   else if(owner.id== 59){
-                       cost=  parseInt(cost) + ( parseInt(8400) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 60){
-                       cost= parseInt(cost) + ( parseInt(5800) / parseInt(20) );
-                   }
-                   else if(owner.id == 61){
-                       cost= parseInt(cost) + ( parseInt(4700) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 62){
-                       cost= parseInt(cost) + ( parseInt(5700) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 63){
-                       cost= parseInt(cost) + ( parseInt(4700) / parseInt(20) ) ;
-                   }
-                   else if(owner.id == 64){
-                       cost= parseInt(cost) + ( parseInt(4200) / parseInt(20) ) ;
-                   }
-                   else if(owner.id  == 65){
-                       cost2=  parseInt(cost2) + 4000;
-                   }
-                   else if(owner.id == 66){
-                       cost2= parseInt(cost2) + 2000;
-                   }
-                   else if(owner.id  == 67){
-                       cost2=  parseInt(cost2) + 10000;
-                   }
-                   else if(owner.id == 68){
-                       cost2=   parseInt(cost2) + 1000;
-                   }
-                   else if(owner.id == 69){
-                       cost2=   parseInt(cost2) + 7000;
-                   }
-                   else if(owner.id == 70){
-                       cost2=  parseInt(cost2) + 5000;
-                   }
-                   else if(owner.id== 71){
-                       cost2= parseInt(cost2) +  5500;
-                   }
-                   else if(owner.id == 72){
-                       cost2=  parseInt(cost2) + 7933;
-                   }
-                   else if(owner.id  == 73){
-                       cost2=  parseInt(cost2) + 400;
-                   }
-                   else if(owner.id  == 74){
-                       cost2=  parseInt(cost2) + 300;
-                   }
-                   else if(owner.id  == 75){
-                       cost2=  parseInt(cost2) + 800;
-                   }
-                   else{
-                       cost= parseInt(cost) + 4000;
-                   }
-               });
-               var result1= ( parseInt(cost) *  parseInt(perhour) ) +  parseInt(cost2);
-               const formatter = new Intl.NumberFormat('en-US', {
-                   style: 'currency',
-                   currency: 'USD',
-                   minimumFractionDigits: 2
-               });
-               /*    var result2 = result1.formatCurrency();*/
-               result = formatter.format(result1) ;
-               return result;
-           }, resize: true, hide: true
+                const formatter = new Intl.NumberFormat('en-US', {
+                    style: 'currency',
+                    currency: 'USD',
+                    minimumFractionDigits: 2
+                });
+                var owners = task[gantt.config.resource_property];
+                var duration = task.duration;
+                if (task.type == gantt.config.types.project) {
+                        return task._6;
+                        // var totalCost = 0;
+                        // gantt.eachTask(function (child) {
+                        //     console.log(child);
+                        //     var owners2 = task[gantt.config.resource_property];
+                        //     if (child.type != gantt.config.types.project) {
+                        //         totalCost += getTaskCost(owners2,duration);
+                        //     }
+                        // }, task.id);
+                        // if (!totalCost) return 0;
+                        // else return formatter.format(totalCost);
+                }
+            
+                return formatter.format(getTaskCost(owners,duration));
+           }, resize: true
            },
            {name: "text_comment", label: "Comment", tree: false, width: 70, resize: true, hide: true, editor: textEditor, template: function (task) {
                    return "-";
@@ -598,6 +295,240 @@ var Milestones = function() {
            },
            {name: "add", width: 30}
        ];
+
+       function highlightProject(task){
+            if(task.type == gantt.config.types.project)
+                return "<div class='gantt_tree_content font-weight-bold'>"+task.text+"</div>";
+            return "<div class='gantt_tree_content'>"+task.text+"</div>";
+        };
+
+       function getTaskCost(owners,duration){
+            if (!owners || !owners.length) {
+                return 0;
+            }
+            var cost= 0;
+            var cost2 = 0;
+            var perhour = 0;
+            perhour = parseInt(duration);
+            var store = gantt.getDatastore("resource");
+            owners.forEach(function(ownerId) {
+                var owner = store.getItem(ownerId);
+                if (!owner)
+                    return;
+
+                if(owner.id == 6){
+                    cost= parseInt(cost) + ( parseInt(42000) / parseInt(20) );
+                }
+                else if(owner.id == 7){
+                    cost =  parseInt(cost) + ( parseInt(37000) / parseInt(20) );
+                }
+                else if(owner.id == 8){
+                    cost =  parseInt(cost) + ( parseInt(26000) / parseInt(20) );
+                }
+                else if(owner.id == 9){
+                    cost =  parseInt(cost) + ( parseInt(26000) / parseInt(20) );
+                }
+                else if(owner.id == 10){
+                    cost =  parseInt(cost) + ( parseInt(26000)/ parseInt(20) );
+                }
+                else if(owner.id == 11){
+                    cost =  parseInt(cost) + ( parseInt(10000) / parseInt(20) );
+                }
+                else if(owner.id == 12){
+                    cost=  parseInt(cost) + ( parseInt(14000) / parseInt(20) );
+                }
+                else if(owner.id == 13){
+                    cost= parseInt(cost) + ( parseInt(8500) / parseInt(20) );
+                }
+                else if(owner.id == 14){
+                    cost= parseInt(cost) + ( parseInt(8500) / parseInt(20) ) ;
+                }
+                else if(owner.id == 15) {
+                    cost = parseInt(cost) + ( parseInt(7500) / parseInt(20) ) ;
+                }
+                else if(owner.id == 16){
+                    cost= parseInt(cost) + ( parseInt(6500) / parseInt(20) );
+                }
+                else if(owner.id == 17){
+                    cost= parseInt(cost) + ( parseInt(5000) / parseInt(20) ) ;
+                }
+                else if(owner.id == 18){
+                    cost= parseInt(cost) + ( parseInt(7500) / parseInt(20) ) ;
+                }
+                else if(owner.id == 19){
+                    cost= parseInt(cost) + ( parseInt(6500) / parseInt(20) ) ;
+                }
+                else if(owner.id == 20){
+                    cost= parseInt(cost) + ( parseInt(6500) / parseInt(20) ) ;
+                }
+                else if(owner.id == 22){
+                    cost= parseInt(cost) + ( parseInt(32000) / parseInt(20) ) ;
+                }
+                else if(owner.id == 23){
+                    cost= parseInt(cost) + ( parseInt(23000) / parseInt(20) ) ;
+                }
+                else if(owner.id == 24){
+                    cost= parseInt(cost) + ( parseInt(16000) / parseInt(20) ) ;
+                }
+                else if(owner.id == 25){
+                    cost= parseInt(cost) + ( parseInt(16000) / parseInt(20) ) ;
+                }
+                else if(owner.id == 26){
+                    cost= parseInt(cost) + ( parseInt(9500) / parseInt(20) ) ;
+                }
+                else if(owner.id == 27){
+                    cost= parseInt(cost) + ( parseInt(13500) / parseInt(20) ) ;
+                }
+                else if(owner.id == 28){
+                    cost=  parseInt(cost) +( parseInt(9500) / parseInt(20) ) ;
+                }
+                else if(owner.id == 29){
+                    cost= parseInt(cost) + ( parseInt(8500) / parseInt(20) ) ;
+                }
+                else if(owner.id == 30){
+                    cost= parseInt(cost) + ( parseInt(10500) / parseInt(20) );
+                }
+                else if(owner.id == 31){
+                    cost= parseInt(cost) + ( parseInt(10500) / parseInt(20) ) ;
+                }
+                else if(owner.id == 32){
+                    cost= parseInt(cost) + ( parseInt(9000) / parseInt(20) ) ;
+                }
+                else if(owner.id == 33){
+                    cost= parseInt(cost) + ( parseInt(7500) / parseInt(20) ) ;
+                }
+                else if(owner.id == 34){
+                    cost= parseInt(cost) + ( parseInt(7500) / parseInt(20) ) ;
+                }
+                else if(owner.id == 35){
+                    cost= parseInt(cost) + ( parseInt(6300) / parseInt(20) ) ;
+                }
+                else if(owner.id == 36){
+                    cost= parseInt(cost) + ( parseInt(5800) / parseInt(20) ) ;
+                }
+                else if(owner.id == 37){
+                    cost= parseInt(cost) + ( parseInt(5300) / parseInt(20) ) ;
+                }
+                else if(owner.id == 38){
+                    cost= parseInt(cost) + ( parseInt(6300) / parseInt(20) ) ;
+                }
+                else if(owner.id == 39){
+                    cost= parseInt(cost) + ( parseInt(7500) / parseInt(20) ) ;
+                }
+                else if(owner.id == 40){
+                    cost= parseInt(cost) + ( parseInt(4800) / parseInt(20) ) ;
+                }
+                else if(owner.id == 41){
+                    cost= parseInt(cost) + ( parseInt(15500) / parseInt(20) ) ;
+                }
+                else if(owner.id == 42){
+                    cost= parseInt(cost) + ( parseInt(15500) / parseInt(20) ) ;
+                }
+                else if(owner.id== 43){
+                    cost=  parseInt(cost) + ( parseInt(15500) / parseInt(20) ) ;
+                }
+                else if(owner.id == 44){
+                    cost=  parseInt(cost) + ( parseInt(12500) / parseInt(20) ) ;
+                }
+                else if(owner.id == 45){
+                    cost=  parseInt(cost) + ( parseInt(10500) / parseInt(20) );
+                }
+                else if(owner.id == 46){
+                    cost= parseInt(cost) + ( parseInt(8500) / parseInt(20) ) ;
+                }
+                else if(owner.id == 47){
+                    cost=  parseInt(cost) + ( parseInt(9500) / parseInt(20) ) ;
+                }
+                else if(owner.id == 48){
+                    cost= parseInt(cost) + ( parseInt(8500) / parseInt(20) ) ;
+                }
+                else if(owner.id == 49){
+                    cost= parseInt(cost) + ( parseInt(8500) / parseInt(20) );
+                }
+                else if(owner.id == 50){
+                    cost= parseInt(cost) + ( parseInt(8500) / parseInt(20) ) ;
+                }
+                else if(owner.id == 51){
+                    cost= parseInt(cost) + ( parseInt(8500) / parseInt(20) );
+                }
+                else if(owner.id == 52){
+                    cost= parseInt(cost) + ( parseInt(8500) / parseInt(20) );
+                }
+                else if(owner.id == 53){
+                    cost= parseInt(cost) + ( parseInt(6300) / parseInt(20) ) ;
+                }
+                else if(owner.id == 54){
+                    cost= parseInt(cost) + ( parseInt(6300) / parseInt(20) ) ;
+                }
+                else if(owner.id == 55){
+                    cost= parseInt(cost) + ( parseInt(8000) / parseInt(20) );
+                }
+                else if(owner.id == 56){
+                    cost= parseInt(cost) + ( parseInt(6500) / parseInt(20) ) ;
+                }
+                else if(owner.id== 57){
+                    cost= parseInt(cost) + ( parseInt(6300) / parseInt(20) ) ;
+                }
+                else if(owner.id == 58){
+                    cost= parseInt(cost) + ( parseInt(5800) / parseInt(20) ) ;
+                }
+                else if(owner.id== 59){
+                    cost=  parseInt(cost) + ( parseInt(8400) / parseInt(20) ) ;
+                }
+                else if(owner.id == 60){
+                    cost= parseInt(cost) + ( parseInt(5800) / parseInt(20) );
+                }
+                else if(owner.id == 61){
+                    cost= parseInt(cost) + ( parseInt(4700) / parseInt(20) ) ;
+                }
+                else if(owner.id == 62){
+                    cost= parseInt(cost) + ( parseInt(5700) / parseInt(20) ) ;
+                }
+                else if(owner.id == 63){
+                    cost= parseInt(cost) + ( parseInt(4700) / parseInt(20) ) ;
+                }
+                else if(owner.id == 64){
+                    cost= parseInt(cost) + ( parseInt(4200) / parseInt(20) ) ;
+                }
+                else if(owner.id  == 65){
+                    cost2=  parseInt(cost2) + 4000;
+                }
+                else if(owner.id == 66){
+                    cost2= parseInt(cost2) + 2000;
+                }
+                else if(owner.id  == 67){
+                    cost2=  parseInt(cost2) + 10000;
+                }
+                else if(owner.id == 68){
+                    cost2=   parseInt(cost2) + 1000;
+                }
+                else if(owner.id == 69){
+                    cost2=   parseInt(cost2) + 7000;
+                }
+                else if(owner.id == 70){
+                    cost2=  parseInt(cost2) + 5000;
+                }
+                else if(owner.id== 71){
+                    cost2= parseInt(cost2) +  5500;
+                }
+                else if(owner.id == 72){
+                    cost2=  parseInt(cost2) + 7933;
+                }
+                else if(owner.id  == 73){
+                    cost2=  parseInt(cost2) + 400;
+                }
+                else if(owner.id  == 74){
+                    cost2=  parseInt(cost2) + 300;
+                }
+                else if(owner.id  == 75){
+                    cost2=  parseInt(cost2) + 800;
+                }
+                else{
+                    cost= parseInt(cost) + 4000;
+                }
+            });
+            return ( parseInt(cost) *  parseInt(perhour) ) +  parseInt(cost2);
+       }
        var date_to_str = gantt.date.date_to_str(gantt.config.task_date);
        var today = new Date();
        gantt.addMarker({ start_date: today, css: "today", text: "Today",  title:date_to_str( today)});
@@ -707,7 +638,7 @@ var Milestones = function() {
            taskId = id;
            var task = gantt.getTask(id);
        
-           console.log(task);
+        //    console.log(task);
 
            var form = getForm();
            var tname = form.querySelector("[name='description']");
@@ -909,6 +840,7 @@ var Milestones = function() {
         gantt.config.order_branch = true;
         gantt.config.open_tree_initially = true;
         gantt.config.xml_date = "%Y-%m-%d %H:%i";
+        
         // gantt.config.layout = {
         //     css: "gantt_container",
         //     cols: [

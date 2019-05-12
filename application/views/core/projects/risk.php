@@ -26,11 +26,11 @@
                                             <table class="table table-bordered table-hover" id="editable1">
                                                 <thead>
                                                 <tr>
-                                                    <th rowspan="2">NO</th>
-                                                    <th rowspan="2">RISK CAUSE</th>
-                                                    <th style="text-align: center;" colspan="3">IMPACT</th>
-                                                    <th style="text-align: center;" colspan="2">COUNTER MEASURES</th>
-                                                    <th style="text-align: center;" rowspan="2">&nbsp;PROB(%)</th>
+                                                    <th rowspan="2" width="5%">NO</th>
+                                                    <th rowspan="2" width="25%">RISK CAUSE</th>
+                                                    <th style="text-align: center;" colspan="3" width="15%">IMPACT</th>
+                                                    <th style="text-align: center;" colspan="2" width="30%">COUNTER MEASURES</th>
+                                                    <th style="text-align: center;" rowspan="2" width="10%">PROB(%)</th>
                                                 </tr>
                                                 <tr>
                                                     <td>DEADLINE</td>
@@ -146,9 +146,9 @@
                                             <table class="table table-bordered table-hover ">
                                                 <tbody>
                                                 <tr>
-                                                    <td><input type="text" value="45%" style="font-weight: bold; width: 97%; height: 20px; text-align: center " readonly=""><br><div id="45one" style="font-weight: bold; width: 97%; height: 82px;"><div></div><br><span><i class="icon-circle-small"></i>R21<span></div></td>
-                                                    <td><input type="text" value="60%" style="font-weight: bold; width: 97%; height: 20px; text-align: center " readonly=""><br><div type="text" id="60one" style="font-weight: bold; width: 97%; height: 82px;"><div></div></div></td>
-                                                    <td><input type="text" value="75%" style="font-weight: bold; width: 97%; height: 20px; text-align: center " readonly=""><br><div type="text" id="75one" style="font-weight: bold; width: 97%; height: 82px;"><div></div></div></td>
+                                                    <td><span style="font-weight: bold; width: 97%; height: 20px; text-align: center;display: block;">45%</span><div id="45one" style="font-weight: bold; width: 97%; height: 82px;"><div></div><br><span><i class="icon-circle-small"></i>R21<span></div></td>
+                                                    <td><span style="font-weight: bold; width: 97%; height: 20px; text-align: center;display: block;">60%</span><div type="text" id="60one" style="font-weight: bold; width: 97%; height: 82px;"><div></div></div></td>
+                                                    <td><span style="font-weight: bold; width: 97%; height: 20px; text-align: center;display: block;">75%</span><div type="text" id="75one" style="font-weight: bold; width: 97%; height: 82px;"><div></div></div></td>
                                                 </tr>
                                                 <tr>
                                                     <td><input type="text" value="30%" style="font-weight: bold; width: 97%; height: 20px; text-align: center " readonly=""><br><div type="text" id="30two" style="font-weight: bold; width: 97%; height: 82px;"><div></div><br><span><i class="icon-circle-small"></i>R24<span></div></td>

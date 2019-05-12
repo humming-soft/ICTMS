@@ -958,7 +958,7 @@ var Milestones = function() {
                    }    
                    gantt.render();
                break;
-               case 'zoom-in' :
+               case 'zoom-out' :
                    if(currentScale < 5 && currentScale >= 1){
                        $(this).next().removeClass("disabled");
                        _setScaleConfig(++currentScale);
@@ -967,7 +967,7 @@ var Milestones = function() {
                        $(this).addClass("disabled")
                    }
                break;
-               case 'zoom-out' :
+               case 'zoom-in' :
                    if(currentScale <= 5 && currentScale > 1){
                        $(this).prev().removeClass("disabled");
                        $(this).removeClass("disabled");

@@ -146,23 +146,24 @@
                                             <table class="table table-bordered table-hover ">
                                                 <tbody>
                                                 <tr>
-                                                    <td><span style="font-weight: bold; width: 97%; height: 20px; text-align: center;display: block;">45%</span><div id="45one" style="font-weight: bold; width: 97%; height: 82px;"><div></div><br><span><i class="icon-circle-small"></i>R21<span></div></td>
-                                                    <td><span style="font-weight: bold; width: 97%; height: 20px; text-align: center;display: block;">60%</span><div type="text" id="60one" style="font-weight: bold; width: 97%; height: 82px;"><div></div></div></td>
-                                                    <td><span style="font-weight: bold; width: 97%; height: 20px; text-align: center;display: block;">75%</span><div type="text" id="75one" style="font-weight: bold; width: 97%; height: 82px;"><div></div></div></td>
+                                                    <td class="bg-warning"><span style="font-weight: bold; width: 97%; height: 20px; text-align: center;display: block;">45%</span><div id="45one" style="font-weight: bold; width: 97%; height: 82px;"><div></div><br><span><i class="icon-circle-small"></i>R21<span></div></td>
+                                                    <td class="bg-danger"><span style="font-weight: bold; width: 97%; height: 20px; text-align: center;display: block;">60%</span><div type="text" id="60one" style="font-weight: bold; width: 97%; height: 82px;"><div></div></div></td>
+                                                    <td class="bg-danger"><span style="font-weight: bold; width: 97%; height: 20px; text-align: center;display: block;">75%</span><div type="text" id="75one" style="font-weight: bold; width: 97%; height: 82px;"><div></div></div></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><span style="font-weight: bold; width: 97%; height: 20px; text-align: center;display: block;">30%</span><div type="text" id="30two" style="font-weight: bold; width: 97%; height: 82px;"><div></div><br><span><i class="icon-circle-small"></i>R24<span></div></td>
-                                                    <td><span style="font-weight: bold; width: 97%; height: 20px; text-align: center;display: block;">45%</span><div type="text" id="45two" style="font-weight: bold; width: 97%; height: 82px;"><div></div></div></td>
-                                                    <td><span style="font-weight: bold; width: 97%; height: 20px; text-align: center;display: block;">60%</span><div type="text" id="60two" style="font-weight: bold; width: 97%; height: 82px;"><div></div><br><span><i class="icon-circle-small"></i>R25<span></div></td>
+                                                    <td class="bg-success"><span style="font-weight: bold; width: 97%; height: 20px; text-align: center;display: block;">30%</span><div type="text" id="30two" style="font-weight: bold; width: 97%; height: 82px;"><div></div><br><span><i class="icon-circle-small"></i>R24<span></div></td>
+                                                    <td class="bg-warning"><span style="font-weight: bold; width: 97%; height: 20px; text-align: center;display: block;">45%</span><div type="text" id="45two" style="font-weight: bold; width: 97%; height: 82px;"><div></div></div></td>
+                                                    <td class="bg-danger"><span style="font-weight: bold; width: 97%; height: 20px; text-align: center;display: block;">60%</span><div type="text" id="60two" style="font-weight: bold; width: 97%; height: 82px;"><div></div><br><span><i class="icon-circle-small"></i>R25<span></div></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><span style="font-weight: bold; width: 97%; height: 20px; text-align: center;display: block;">15%</span><div type="text" id="15three" style="font-weight: bold; width: 97%; height: 82px;"><div></div><br><span><i class="icon-circle-small"></i>R23<span></div></td>
-                                                    <td><span style="font-weight: bold; width: 97%; height: 20px; text-align: center;display: block;">30%</span><div type="text" id="30three" style="font-weight: bold; width: 97%; height: 82px;"><div></div></div></td>
-                                                    <td><span style="font-weight: bold; width: 97%; height: 20px; text-align: center;display: block;">45%</span><div type="text" id="45three" style="font-weight: bold; width: 97%; height: 82px;"><div></div><br><span><i class="icon-circle-small"></i>R22<span></div></td>
+                                                    <td class="bg-success"><span style="font-weight: bold; width: 97%; height: 20px; text-align: center;display: block;">15%</span><div type="text" id="15three" style="font-weight: bold; width: 97%; height: 82px;"><div></div><br><span><i class="icon-circle-small"></i>R23<span></div></td>
+                                                    <td class="bg-success"><span style="font-weight: bold; width: 97%; height: 20px; text-align: center;display: block;">30%</span><div type="text" id="30three" style="font-weight: bold; width: 97%; height: 82px;"><div></div></div></td>
+                                                    <td class="bg-warning"><span style="font-weight: bold; width: 97%; height: 20px; text-align: center;display: block;">45%</span><div type="text" id="45three" style="font-weight: bold; width: 97%; height: 82px;"><div></div><br><span><i class="icon-circle-small"></i>R22<span></div></td>
                                                 </tr>
                                                 </tbody>
                                             </table>
                                             <div class="text-center pt-2"> <label style="font-weight: bold">IMPACT ON THE PROJECT <br> (Deadlines,Cost,Quality)</label></div>
+                                            <div class="text-center pt-2 d-block"> <label style="font-weight: bold"><i class="icon-square text-success mr-1"></i> Low <i class="icon-square text-warning mr-1"></i> Medium <i class="icon-square text-danger mr-1"></i>High</div>
                                         </div>
                                     </div>
                                 </div>

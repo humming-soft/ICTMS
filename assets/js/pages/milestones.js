@@ -230,8 +230,8 @@ var Milestones = function() {
        var textEditor = { type: "custom_editor", map_to: "text_comment"};
    
        gantt.config.columns = [
-           {name: "wbs", label: "Activity ID", width: 100, template: gantt.getWBSCode, resize: true},
-           {name: "text", tree: true, width: 370,label: "Activity Name", resize: true, template: highlightProject},
+           {name: "wbs", label: "Activity ID", width: 80, template: gantt.getWBSCode, resize: true},
+           {name: "text", tree: true, width: 370, label: "Activity Name", resize: true, template: highlightProject},
            {name: "start_date", align: "center", label: "Start Date", width: 100, resize: true},
            {name: "end_date", align: "center",label: "End Date",width: 100, resize: true, hide: true},
            {name: "owner", align: "center", width: 160, label: "Resources", template: function (task) {

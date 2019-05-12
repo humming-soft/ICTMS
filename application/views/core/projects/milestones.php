@@ -57,7 +57,7 @@
                                                 <a href="#" class="dropdown-item gantt-control active" data-column="start_date" data-control="column-view"> Start Date</a>
                                                 <a href="#" class="dropdown-item gantt-control" data-column="end_date" data-control="column-view"> End Date</a>
                                                 <a href="#" class="dropdown-item gantt-control active" data-column="duration" data-control="column-view"> Duration</a>
-                                                <a href="#" class="dropdown-item gantt-control" data-column="cost" data-control="column-view"> Cost</a>
+                                                <a href="#" class="dropdown-item gantt-control active" data-column="cost" data-control="column-view"> Cost</a>
                                                 <a href="#" class="dropdown-item gantt-control" data-column="owner" data-control="column-view"> Resources</a>
                                                 <a href="#" class="dropdown-item gantt-control" data-column="text_comment" data-control="column-view">  Comment</a>
                                             </div>

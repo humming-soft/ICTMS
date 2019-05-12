@@ -60,7 +60,7 @@
                                         <div class="col-sm-3">
                                             <div class="form-group">
                                                 <label>EPU Approved Project Value:</label>
-                                                <h4 class="font-weight-semibold mb-0"><span>RM 10,230,120.00</span></h4>
+                                                <h4 class="font-weight-semibold mb-0"><span>RM 18,545,905.00</span></h4>
                                                 
                                             </div>
                                         </div>

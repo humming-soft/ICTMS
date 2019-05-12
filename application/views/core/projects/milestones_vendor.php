@@ -75,10 +75,16 @@
                                         <div id="wbs_milestones" style='min-height:500px;'></div>
                                     </div>
                                 </div>
+                                
                                 <fieldset class="card-body text-right">
-                                    <a href="<?=site_url('projects/02849')?>" class="btn btn-light ml-3">Cancel</a>
+                                <?php if($u == 33) { ?>
+                                    <a href="<?=site_url('dashboard')?>" class="btn btn-light ml-3">Cancel</a>
                                     <a href="#" class="btn bg-success"><i class="icon-paperplane mr-1"></i> Save</a>
-                                    <a href="<?=site_url('projects/02849/maintenance')?>" class="btn bg-blue gx_save">Save And Continue - Maintenance <i class="icon-arrow-right7 ml-1"></i></a>
+                                    <a href="<?=site_url('dashboard')?>" class="btn bg-blue gx_save">Get Approval <i class="icon-arrow-right7 ml-1"></i></a>
+                                <?php }else{ ?>                                                                                              
+                                    <a href="#" class="btn bg-danger"><i class="icon-cross mr-1"></i> Reject & Comment</a>
+                                    <a href="<?=site_url('dashboard')?>" class="btn bg-success gx_save"><i class="icon-arrow-right7 mr-1"></i> Approve</a>
+                                <?php } ?>
                                 </fieldset>
                                 <hr>
                                 <div class="row m-0">

@@ -231,7 +231,7 @@ var Milestones = function() {
    
        gantt.config.columns = [
            {name: "wbs", label: "Activity ID", width: 80, template: gantt.getWBSCode, resize: true},
-           {name: "text", tree: true, width: 370, label: "Activity Name", resize: true, template: highlightProject},
+           {name: "text", tree: true, width: 360, label: "Activity Name", resize: true, template: highlightProject},
            {name: "start_date", align: "center", label: "Start Date", width: 100, resize: true},
            {name: "end_date", align: "center",label: "End Date",width: 100, resize: true, hide: true},
            {name: "owner", align: "center", width: 160, label: "Resources", template: function (task) {
@@ -543,7 +543,7 @@ var Milestones = function() {
 
        var _setScaleConfig = function(value) {
            switch (value) {
-               case 1:
+                case 1:
                    gantt.config.scale_unit = "day";
                    gantt.config.step = 1;
                    gantt.config.date_scale = "%d %M";
@@ -552,8 +552,8 @@ var Milestones = function() {
                    gantt.templates.date_scale = null;
                    gantt.templates.scale_cell_class = function (date){ return _scale_cell_class_weekend(date, "weekend") };
                    gantt.templates.task_cell_class = function (item, date){ return _task_cell_class_weekend(item, date, "weekend") };
-                   break;
-               case 2:
+                break;
+                case 2:
                    var weekScaleTemplate = function (date) {
                        var dateToStr = gantt.date.date_to_str("%d %M");
                        var startDate = gantt.date.week_start(new Date(date));
@@ -570,8 +570,8 @@ var Milestones = function() {
                        {unit: "day", step: 1, date: "%D"}
                    ];
                    gantt.config.scale_height = 50;
-                   break;
-               case 3:
+                break;
+                case 3:
                    gantt.config.scale_unit = "month";
                    gantt.config.date_scale = "%F, %Y";
                    gantt.config.subscales = [
@@ -581,8 +581,8 @@ var Milestones = function() {
                    gantt.templates.date_scale = null;
                    gantt.templates.scale_cell_class = function (date){ return _scale_cell_class_weekend(date, "weekend") };
                    gantt.templates.task_cell_class = function (item, date){ return _task_cell_class_weekend(item, date, "weekend") };
-                   break;
-               case 4:
+                break;
+                case 4:
                    gantt.config.scale_unit = "year";
                    gantt.config.step = 1;
                    gantt.config.date_scale = "%Y";
@@ -613,8 +613,8 @@ var Milestones = function() {
                        {unit: "quarter", step: 1, template: quarterLabel},
                        {unit: "month", step: 1, date: "%M"}
                    ];
-                   break;
-               case 5:
+                break;
+                case 5:
                    gantt.config.scale_unit = "year";
                    gantt.config.step = 1;
                    gantt.config.date_scale = "%Y";
@@ -626,7 +626,7 @@ var Milestones = function() {
                    gantt.config.subscales = [
                        {unit: "month", step: 1, date: "%M"}
                    ];
-                   break;
+                break;
            }
        };
    
@@ -790,6 +790,8 @@ var Milestones = function() {
         };
 
         gantt.templates.rightside_text = function(start, end, task){
+            if(task.type == gantt.config.types.project)
+                return "<b>"+task.text+"</b>";
             return task.text;
         };
 

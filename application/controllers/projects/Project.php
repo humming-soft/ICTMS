@@ -598,6 +598,8 @@ class Project extends ICTMS_Controller {
             $_header["support"] = array("gantt","chosen","multiselect","pikadate");
             $_header["page_js"] = "milestones_vendor";
 
+            $data["u"] = 33;
+
             $this->load->view('core/fragments/header',$_header);
             $this->load->view('core/projects/fragments/main_navbar',$data1);
             $this->load->view('core/projects/fragments/secondary_navbar_vendor');
@@ -612,9 +614,11 @@ class Project extends ICTMS_Controller {
             $_header["support"] = array("gantt");
             $_header["page_js"] = "wbs_approval";
 
+            $data["u"] = 15;
+
             $this->load->view('core/fragments/header',$_header);
             $this->load->view('core/projects/fragments/main_navbar',$data1);
-            $this->load->view('core/projects/fragments/secondary_navbar_vendor');
+            $this->load->view('core/projects/fragments/secondary_navbar_pprisa');
             $this->load->view('core/projects/milestones_vendor',$data);
             $this->load->view('core/fragments/footer');
         }else{

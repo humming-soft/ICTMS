@@ -79,7 +79,7 @@ var Js = function() {
     
         gantt.config.columns = [
             {name: "id", label: "Activity ID", align: "center", resize: true},
-            {name: "text", tree: true, width: 370,label: "Activity Name", resize: true},
+            {name: "text", tree: true, width: 370,label: "Activity Name", resize: true, template: highlightProject},
             {name: "start_date", align: "center", label: "Start Date", width: 100, resize: true},
             {name: "end_date", align: "center",label: "End Date",width: 100, resize: true, hide: true},
             {name: "owner", align: "center", width: 160, label: "Resources", template: function (task) {
@@ -598,6 +598,13 @@ var Js = function() {
             },
             {name: "add", width: 30}
         ];
+
+        function highlightProject(task){
+            if(task.type == gantt.config.types.project)
+                return "<div class='gantt_tree_content font-weight-bold'>"+task.text+"</div>";
+            return "<div class='gantt_tree_content'>"+task.text+"</div>";
+        };
+
         var date_to_str = gantt.date.date_to_str(gantt.config.task_date);
         var today = new Date();
         gantt.addMarker({ start_date: today, css: "today", text: "Today",  title:date_to_str( today)});
@@ -702,6 +709,7 @@ var Js = function() {
         /* CUSTOM LIGHTBOX : START */
 
         var taskId = null;
+        gantt.config.readonly = true;
  
         gantt.showLightbox = function(id) {
             taskId = id;
@@ -982,7 +990,7 @@ var Js = function() {
                     gantt.exportToJSON({
                         server: base_url+"projects/02849/gantt/save",
                         callback: function(res){
-                            alert(res.st);
+                            // alert(res.st);
                         }
                      });
                     break;
@@ -1222,13 +1230,6 @@ var Js = function() {
     return {
         init: function(data) {
             _wbs(data);
-            // _componentPikaday($("#start_date")[0]);
-            // _componentPikaday($("#end_date")[0]);
-            // _componentMultiselect();
         }
     }
 }();
-
-
-// Initialize module
-// ------------------------------

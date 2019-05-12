@@ -60,7 +60,7 @@
                                         <div class="col-sm-3">
                                             <div class="form-group">
                                                 <label>Estimated Project Value:</label>
-                                                <h4 class="font-weight-semibold mb-0"><span>RM 12,930,678.00</span></h4>
+                                                <h4 class="font-weight-semibold mb-0"><span>RM 48,545,905.00</span></h4>
                                                 
                                             </div>
                                         </div>

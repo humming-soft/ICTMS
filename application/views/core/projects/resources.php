@@ -339,7 +339,7 @@
                                 <fieldset class="card-body text-right">
                                     <a href="<?=site_url('projects/02849')?>" class="btn btn-light ml-3">Cancel</a>
                                     <a href="#" class="btn bg-success"><i class="icon-paperplane mr-1"></i> Save</a>
-                                    <a href="<?=site_url('projects/02849/risk')?>" class="btn bg-blue gx_save">Save And Continue - Risk Register <i class="icon-arrow-right7 ml-1"></i></a>
+                                    <a href="<?=site_url('projects/02849/maintenance')?>" class="btn bg-blue gx_save">Save And Continue - Maintenance <i class="icon-arrow-right7 ml-1"></i></a>
                                 </fieldset>
                             </div>
                         </div>

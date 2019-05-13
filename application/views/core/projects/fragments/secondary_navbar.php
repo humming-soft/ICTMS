@@ -58,8 +58,8 @@
 
 					<div class="dropdown-menu">
 						<a href="<?=site_url('projects/02849/gantt')?>" class="dropdown-item"><i class="icon-paragraph-right3"></i>Activities & Deliverables</a>
-						<a href="<?=site_url('projects/02849/maintenance')?>" class="dropdown-item"><i class="icon-package"></i>Maintenance</a>
 						<a href="<?=site_url('projects/02849/resources')?>" class="dropdown-item"><i class="icon-users"></i>Resources</a>
+						<a href="<?=site_url('projects/02849/maintenance')?>" class="dropdown-item"><i class="icon-package"></i>Maintenance</a>
 						<a href="<?=site_url('projects/02849/risk')?>" class="dropdown-item"><i class="icon-shield-notice"></i>Risk Register</a>
 						<div class="dropdown-header">ICT Project Approval Phase</div>
 						<a href="<?=site_url('projects/02849/approval')?>" class="dropdown-item"><i class="icon-checkbox-checked"></i>EPU Approval</a>

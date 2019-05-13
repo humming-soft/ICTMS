@@ -128,16 +128,14 @@
                                                             <td class="font-weight-semibold va-top">Project Director:</td>
                                                             <td class="text-left">
                                                                     <p>Dato' Zailani Safari </p>
-                                                                    <p>Chief Executive Officer </p>
-                                                                    <p>Technology Depository Agency (TDA) MOF</p>
+                                                                    <p>Ministry of Transport </p>
                                                             </td>
                                                         </tr>
                                                         <tr style="background-color: #f6f6f6;" class="border-bottom-1 border-light-gray">
-                                                            <td class="font-weight-semibold va-top">Project Manager:</td>
+                                                        <td class="font-weight-semibold va-top">Project Manager:</td>
                                                             <td class="text-left">
-                                                                    <p>Sharol Jambari </p>
-                                                                    <p>Senior Manager </p>
-                                                                    <p>Technology Depository Agency (TDA), MOF</p>
+                                                                    <p>Mr. Idrul Fairuz Ali</p>
+                                                                    <p>Ministry of Transport </p>
                                                             </td>
                                                         </tr>
                                                         <tr>

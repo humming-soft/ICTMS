@@ -673,35 +673,21 @@ class Project extends ICTMS_Controller {
                     mkdir($file_location .'/resources/_pj/'. $pid . '/gantt', 0777, true);
                 }
                 $file_path = $file_location .'/resources/_pj/'. $pid . '/gantt/002.json';
-                //$file_instance;
-                // echo $file_path;
-                // exit();
                 file_put_contents($file_path, $json);
-                // if(!file_exists($file_path)){
-                //     // $file_instance = fopen($file_path, 'w');
-                //     // fwrite($file_instance, $json);
-                //     // fclose($file_instance);
-                //     file_put_contents($file_path, $json);
-                // }else{
-                //     $file_instance = fopen($file_path, 'w');
-                //     fwrite($file_instance, $json);
-                //     fclose($file_instance);
-                // }
             }
 
-            // if(strlen($json) > 0){
-            //     $file_location = APPPATH . "views";
-            //     $file_path = $file_location."/resources/_pj/02849/gantt/002.json";
-            //     $file_instance = fopen($file_path, 'w');
-            //     echo $file_path;
-            //     exit();
-            //     fwrite($file_instance, $json);
-            //     fclose($file_instance);
-            // }
-        }else{
+        }else if($session_data['roleid'] == 14){
             if(strlen($json) > 0){
                 $file_location = APPPATH . "views";
                 $file_path = $file_location."/resources/_pj/02849/gantt/001.json";
+                $file_instance = fopen($file_path, 'w');
+                fwrite($file_instance, $json);
+                fclose($file_instance);
+            }
+        }else{
+            if(strlen($json) > 0){
+                $file_location = APPPATH . "views";
+                $file_path = $file_location."/resources/_pj/02849/gantt/002.json";
                 $file_instance = fopen($file_path, 'w');
                 fwrite($file_instance, $json);
                 fclose($file_instance);
@@ -750,14 +736,25 @@ class Project extends ICTMS_Controller {
         {
             $message='';
         }
+        $data["u"] = $session_data['roleid'];
         if($session_data['roleid'] == 15){
+            $_header["support"] = array("orgchart");
+            $_header["page_js"] = "org";
+            
+        
+            $this->load->view('core/fragments/header',$_header);
+            $this->load->view('core/projects/fragments/main_navbar',$data1);
+            $this->load->view('core/projects/fragments/secondary_navbar_pprisa');
+            $this->load->view('core/projects/org', $data);
+            $this->load->view('core/fragments/footer');
+        }else if($session_data['roleid'] == 33){
             $_header["support"] = array("orgchart");
             $_header["page_js"] = "org";
         
             $this->load->view('core/fragments/header',$_header);
             $this->load->view('core/projects/fragments/main_navbar',$data1);
-            $this->load->view('core/projects/fragments/secondary_navbar_pprisa');
-            $this->load->view('core/projects/org');
+            $this->load->view('core/projects/fragments/secondary_navbar_vendor');
+            $this->load->view('core/projects/org', $data);
             $this->load->view('core/fragments/footer');
         }else{
             $_header["support"] = array("orgchart");

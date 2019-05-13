@@ -36,7 +36,7 @@
 						<a href="<?=site_url('projects/02849/reporting-structure')?>" class="dropdown-item"><i class="icon-tree7"></i> Reporting Structure</a>
 						<a href="<?=site_url('projects/02849/info-vendor')?>" class="dropdown-item"><i class="icon-profile"></i> Vendor Information</a>
 						<a href="<?=site_url('projects/02849/gantt')?>" class="dropdown-item"><i class="icon-paragraph-right3"></i> Activities & Deliverables Approval</a>
-						<a href="<?=site_url('projects/02849/lad')?>" class="dropdown-item"><i class="icon-equalizer"></i> Liquidated & Ascertained Damages(LAD) Mapping</a>
+						<a href="<?=site_url('projects/02849/lad')?>" class="dropdown-item"><i class="icon-equalizer"></i> Liquidated & Ascertained Damages(LAD) Points</a>
 					</div>
 				</li> 
 				<li class="nav-item dropdown">

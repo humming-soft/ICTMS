@@ -64,31 +64,24 @@
                                                 <option>Finance Manager</option>
                                             </select>
 										</div>
-
                                         <div class="form-group">
-											<label class="d-block">Position Type:</label>
+                                            <label class="d-block">Position Type:</label>
 
-											<div class="form-check form-check-inline">
-												<label class="form-check-label">
-													<div class="uniform-choice"><span class="checked"><input type="radio" name="node-type" id="rd-parent" class="form-input-styled" data-fouc=""></span></div>
-													Parent (Root)
-												</label>
-											</div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" class="custom-control-input pos_type" value="1" name="node-type" id="pos_type_parent" checked>
+                                                <label class="custom-control-label" for="pos_type_parent">Parent</label>
+                                            </div>
 
-											<div class="form-check form-check-inline">
-												<label class="form-check-label">
-													<div class="uniform-choice"><span><input type="radio" name="node-type" id="rd-sibling" class="form-input-styled" data-fouc=""></span></div>
-													Sibling
-												</label>
-											</div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" class="custom-control-input pos_type" value="2" name="node-type" id="pos_type_sibling">
+                                                <label class="custom-control-label" for="pos_type_sibling">Sibling</label>
+                                            </div>
 
-                                            <div class="form-check form-check-inline">
-												<label class="form-check-label">
-													<div class="uniform-choice"><span><input type="radio" name="node-type" id="rd-child" class="form-input-styled" checked="" data-fouc=""></span></div>
-													Child
-												</label>
-											</div>
-			                			</div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" class="custom-control-input pos_type" value="3" name="node-type" id="pos_type_child">
+                                                <label class="custom-control-label" for="pos_type_child">Child</label>
+                                            </div>
+                                        </div>
 									</fieldset>
 
 									<div class="text-center mb-2">
@@ -121,3 +114,48 @@
     <!-- /content area -->
     </div>
 </div>
+<script type ="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            <?php if($u == 15){ ?>
+            var datascource =  {
+                'name': 'Mr. Idrul Fairuz Ali', 
+                'title': 'Project Manager',
+                'children': [
+                    {
+                        'name': 'Mohd Nizam bin Morad', 'title': 'Department manager',
+                        'children': [
+                            {'name': 'Mazmi bin Mohamad', 'title': 'Senior engineer'},
+                            {
+                                'name': 'Roslan bin Ramli', 'title': 'Senior engineer',
+                                'children': [
+                                    {'name': 'Syafiqa binti Talib', 'title': 'Engineer'},
+                                    {'name': 'Faizal bin Osman', 'title': 'Engineer'},
+                                    {'name': 'Zulhaimi bin Mat Hussin', 'title': 'Engineer'}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        'name': 'Marni binti Hasmar', 'title': 'Department manager',
+                        'children': [
+                            {'name': 'Mat Hussin', 'title': 'Senior engineer'},
+                            {
+                                'name': 'Roslan bin Ramli', 'title': 'Senior engineer',
+                                'children': [
+                                    {'name': 'Xiang Xiang', 'title': 'UE engineer'},
+                                    {'name': 'Maszlee bin Malik', 'title': 'Engineer'},
+                                    {'name': 'Rohani binti Karim', 'title': 'Engineer'}
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            };
+            <?php }else{ ?>
+                var datascource =  {
+                'name': 'Mr. Muhammed Faizal Bin Ahamed', 
+                'title': 'Project Manager'};
+            <?php }?>
+            Org.init(datascource);
+        });
+</script>

@@ -28,16 +28,14 @@
 
 					<div class="dropdown-menu">
 						<div class="dropdown-header">PROJECT PLANNING</div>
-						<a href="<?=site_url('projects/02849/resources')?>" class="dropdown-item"><i class="icon-users"></i>Manage Resources</a>
+						<a href="<?=site_url('projects/02849/org')?>" class="dropdown-item"><i class="icon-users"></i>Manage Team</a>
 						<a href="<?=site_url('projects/02849/gantt')?>" class="dropdown-item"><i class="icon-paragraph-right3"></i>Activities & Deliverables</a>
-						<a href="<?=site_url('projects/02849/risk')?>" class="dropdown-item"><i class="icon-shield2"></i>Risk Register</a>
-						<a href="<?=site_url('projects/02849/issues')?>" class="dropdown-item"><i class="icon-shield-notice"></i>Manage Issues</a>
+						<a href="<?=site_url('projects/02849/risk')?>" class="dropdown-item"><i class="icon-shield2"></i>Risk Register</a>					
 					</div>
 				</li>
 				<li class="nav-item dropdown">
 					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-						<i class="icon-box-add mr-2"></i>
-						Implementation
+						<i class="icon-box-add mr-2"></i> Implementation
 					</a>
 
 					<div class="dropdown-menu">
@@ -45,6 +43,7 @@
 						<a href="<?=site_url('projects/02849/site-diary')?>" class="dropdown-item"><i class="icon-book"></i>Project Diary (Progress Report)</a>
 						<a href="<?=site_url('projects/02849/meeting')?>" class="dropdown-item"><i class="icon-calendar"></i>Progress Meetings</a>
 						<a href="<?=site_url('projects/02849/collaboration')?>" class="dropdown-item"><i class="icon-bubbles6"></i>Collaboration</a>
+						<a href="<?=site_url('projects/02849/issues')?>" class="dropdown-item"><i class="icon-shield-notice"></i>Manage Issues</a>
 					</div>
 				</li>
 				<li class="nav-item">

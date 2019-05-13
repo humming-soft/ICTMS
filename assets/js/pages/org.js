@@ -168,51 +168,18 @@ var Org = function() {
         });
 
     };
+    var _componentUniform = function() {
+        if (!$().uniform) {
+            console.warn('Warning - uniform.min.js is not loaded.');
+            return;
+        }
+        $('.form-input-styled').uniform();
+    };
+
     return {
-        init: function() {
-            var datascource = {
-                'name': 'Norehan binti Yahya',
-                'title': 'General manager',
-                'children': [
-                    {
-                        'name': 'Mohd Nizam bin Morad', 'title': 'Department manager',
-                        'children': [
-                            {'name': 'Mazmi bin Mohamad', 'title': 'Senior engineer'},
-                            {
-                                'name': 'Roslan bin Ramli', 'title': 'Senior engineer',
-                                'children': [
-                                    {'name': 'Syafiqa binti Talib', 'title': 'Engineer'},
-                                    {'name': 'Faizal bin Osman', 'title': 'Engineer'},
-                                    {'name': 'Zulhaimi bin Mat Hussin', 'title': 'Engineer'}
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        'name': 'Marni binti Hasmar', 'title': 'Department manager',
-                        'children': [
-                            {'name': 'Mat Hussin', 'title': 'Senior engineer'},
-                            {
-                                'name': 'Roslan bin Ramli', 'title': 'Senior engineer',
-                                'children': [
-                                    {'name': 'Xiang Xiang', 'title': 'UE engineer'},
-                                    {'name': 'Maszlee bin Malik', 'title': 'Engineer'},
-                                    {'name': 'Rohani binti Karim', 'title': 'Engineer'}
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            };
+        init: function(datascource) {
             _buildOrg(datascource);
+            _componentUniform();
         }
     }
 }();
-
-
-// Initialize module
-// ------------------------------
-
-document.addEventListener('DOMContentLoaded', function() {
-    Org.init();
-});

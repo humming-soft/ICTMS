@@ -233,7 +233,7 @@ var Milestones = function() {
            {name: "wbs", label: "Activity ID", width: 80, template: gantt.getWBSCode, resize: true},
            {name: "text", tree: true, width: 360, label: "Activity Name", resize: true, template: highlightProject},
            {name: "start_date", align: "center", label: "Start Date", width: 100, resize: true},
-           {name: "end_date", align: "center",label: "End Date",width: 100, resize: true, hide: true},
+           {name: "end_date", align: "center",label: "End Date",width: 100, resize: true},
            {name: "owner", align: "center", width: 160, label: "Resources", template: function (task) {
                    if (task.type == gantt.config.types.project) {
                        return "";
@@ -287,7 +287,7 @@ var Milestones = function() {
                 }
             
                 return formatter.format(getTaskCost(owners,duration));
-           }, resize: true
+           }, resize: true, hide: true
            },
            {name: "text_comment", label: "Comment", tree: false, width: 70, resize: true, hide: true, editor: textEditor, template: function (task) {
                    return "-";

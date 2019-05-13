@@ -19,6 +19,13 @@ var Dashboard = function() {
             'chartClass': 'edit-state',
             'nodeContent': 'title',
             'nodeID': 'id',
+            'draggable': true,
+            'dropCriteria': function dropCriteria(draggedNode, dragZone, dropZone) {
+                if (draggedNode.querySelector(':scope > .content').textContent.includes('manager') && dropZone.querySelector(':scope > .content').textContent.includes('engineer')) {
+                    return false;
+                }
+                return true;
+            },
             'exportButton': false,
             'exportFilename': 'SportsChart',
             'parentNodeSymbol': 'fa-th-large'

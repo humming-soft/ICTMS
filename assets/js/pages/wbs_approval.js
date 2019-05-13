@@ -954,9 +954,9 @@ var Js = function() {
             tooltips.tooltip.setViewport(gantt.$task_data);
         });
         gantt.init("wbs_milestones");
-        // gantt.serialize();
-        // gantt.parse(d_data);
-        gantt.load(base_url+"assets/js/pages/resource_project_multiple_owners.json");
+        gantt.serialize();
+        gantt.parse(d_data);
+        //gantt.load(base_url+"assets/js/pages/resource_project_multiple_owners.json");
     
         resourcesStore.attachEvent("onParse", function(){
             var people = [];

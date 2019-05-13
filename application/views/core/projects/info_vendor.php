@@ -156,7 +156,7 @@
 								</form>
                                 <div class="card-body text-right">
                                     <a href="<?=site_url('projects/02849')?>" class="btn btn-light ml-3">Cancel</a>
-                                    <a href="#" class="btn bg-success"><i class="icon-paperplane mr-1"></i> Save</a>
+                                    <a href="<?=site_url('projects/02849')?>" class="btn bg-success"><i class="icon-paperplane mr-1"></i> Save</a>
                                 </div>
                             </div>
 

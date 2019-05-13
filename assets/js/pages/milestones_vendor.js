@@ -950,7 +950,7 @@ var Js = function() {
        gantt.serialize();
        gantt.parse(d_data);
     //    gantt.clearAll(); 
-    //    gantt.load(base_url+"assets/js/pages/resource_project_multiple_owners.json");
+    //gantt.load(base_url+"assets/js/pages/resource_project_multiple_owners.json");
 
        //gantt.attachEvent("onBeforeParse", function(){ gantt.clearAll(); });
    

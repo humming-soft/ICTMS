@@ -529,8 +529,8 @@
                                                                     </td>
                                                                     <td>
                                                                         <ul class="list mb-0 goal_ind_t">
-                                                                            <li>Increase in Commuters by 335,800,000 to 402,960,000 (+20%).</li>
-                                                                            <li>Impact on Revenue (+56,414,400,000).</li>
+                                                                            <li>Increase in Commuters from 35,800,000 P/A to 39,380,000 P/A (+10%).</li>
+                                                                            <li>Impact on Revenue (+3,580,000 @ RM 840 = 3,007,200,000) P/A.</li>
                                                                         </ul>
                                                                     </td>
                                                                     <td>
@@ -657,8 +657,8 @@
                                                                         <tr>
                                                                             <td class="p-1">
                                                                                 <ul class="list goal_ind_t">
-                                                                                    <li>Increase in Commuters by 335,800,000 to 402,960,000 (+20%).</li>
-                                                                                    <li>Impact on Revenue (+56,414,400,000).</li>
+                                                                                    <li>Increase in Commuters from 35,800,000 P/A to 39,380,000 P/A (+10%).</li>
+                                                                                    <li>Impact on Revenue (+3,580,000 @ RM 840 = 3,007,200,000) P/A.</li>
                                                                                 </ul>
                                                                             </td>
                                                                             <td class="p-1">

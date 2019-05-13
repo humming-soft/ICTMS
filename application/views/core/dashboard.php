@@ -103,7 +103,7 @@
                 </div>
                 <!-- /filter toolbar -->
                 <div class="row m-0 projects-list">
-                    <div class="col-sm-6">
+                    <div class="col-sm-12">
 
                         <!-- Clean blog layout #1 -->
                         <div class="card project">
@@ -142,10 +142,10 @@
                                     <b class="font-weight-semibold">Project Initiation :</b>
                                     <ul class="list-unstyled mt-1">
                                         <li class="mb-3">
-                                            <div class="d-flex align-items-center mb-1">Current Activity : <a href="<?=site_url('projects/02849/gantt')?>" class="font-weight-bold">Activities & Deliverables</a><span class="text-muted ml-auto">23%</span></div>
-                                            <div class="progress" style="height: 0.575rem;">
-                                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 23%">
-                                                    <span class="sr-only">23% Complete</span>
+                                            <div class="d-flex align-items-center mb-1">Current Activity : <a href="<?=site_url('projects/02849/gantt')?>" class="font-weight-bold"> EPU Approval</a><span class="text-muted ml-auto">81.8%</span></div>
+                                            <div class="progress" style="height: 0.775rem;">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 81.8%">
+                                                    <span class="sr-only">81.8% Complete</span>
                                                 </div>
                                             </div>
                                         </li>
@@ -170,17 +170,13 @@
 
                     </div>
 
-                    <div class="col-sm-6">
+                    <!-- <div class="col-sm-6">
 
-                        <!-- Clean blog layout #3 -->
                         <div class="card project">
                             <div class="card-header header-elements-inline">
                                 <h6 class="card-title font-weight-semibold">
                                     <a href="#"><i class="icon-box mr-1"></i> MALAYSIAN MARINE DEPARTMENT INFORMATION SYSTEM</a>
                                 </h6>
-                                <!-- <div class="header-elements">
-                                    <span class="badge bg-secondary ml-2">INITIATED</span>
-								</div> -->
                             </div>
 
                             <div class="card-body">
@@ -195,15 +191,6 @@
                                     <b class="font-weight-semibold">Project Objective :</b>
                                     <p>The inclusion of migrants in the labour market is key to ensure their effective integration into the host societies and their positive impact on the EU economy; this entails fully using their skills and realising their economic potential. They can contribute to addressing skills shortages in certain sectors at all skills levels.</p>
                                 </div>
-                                <!-- <div class="mb-3">
-                                    <b class="font-weight-semibold pb-2">Project Team :</b>
-                                    <div class="project-users">
-                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36"  src="<?=site_url('assets/img/avatar/av2.png')?>"></div>
-                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36" src="<?=site_url('assets/img/avatar/av3.png')?>"></div>
-                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36" src="<?=site_url('assets/img/avatar/av4.png')?>"></div>
-                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36" src="<?=site_url('assets/img/avatar/av6.png')?>"></div>
-                                    </div>
-                                </div> -->
                                 <div class="mb-3">
                                     <b class="font-weight-semibold">Project Initiation :</b>
                                     <ul class="list-unstyled mt-1">
@@ -224,15 +211,14 @@
                                     <li class="list-inline-item">Project Initiation</li>
                                 </ul>
                                 <ul class="list-inline list-inline-dotted mb-0 mt-1 mt-sm-0">
-									<!-- <li class="list-inline-item"><a href="http://localhost/humworks-pms/projects/2019/1802"><i class="icon-stats-bars"></i> Business Intelligence</a></li> -->
-									<li class="list-inline-item">
+                                    <li class="list-inline-item">
                                     <a class="float-right text-right link-modal" href="<?=site_url('projects/02849')?>" tabindex="0"><i class="icon-stack-text mr-1"></i><span>Details</span></a>
                                     </li>
 								</ul>
                             </div>
                         </div>
 
-                    </div>
+                    </div> -->
                 </div>
 
 
@@ -655,15 +641,16 @@
             //ogchart = <?php echo $ogchart; ?>;
             //ogchart = {id: "1", name: "Mr. Idrul Fairuz Ali Khan", title: "Project Manager", children: Array(0)};
             ogchart = {
+                    'id': "12",
                     'name': 'Steering Committee',
                     'className': 'committee',
                     'children': [
-                        { 'name': 'Technical Committee', 'className': 'committee',
+                        { 'id': "11", 'name': 'Technical Committee', 'className': 'committee',
                         'children': [
-                            { 'name': 'Working Committee', 'className': 'committee',
+                            { 'id': "10",'name': 'Working Committee', 'className': 'committee',
                             'children': [
                                 {'id': "1", 'name': "Mr. Idrul Fairuz Ali Khan", 'title': "Project Manager", 'children': Array(0)}
-                            ]
+                                ]
                             }
                         ]
                         },                      

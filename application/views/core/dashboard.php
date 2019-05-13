@@ -305,13 +305,17 @@
                                 <div class="row text-left">
                                     <div class="col-sm-6">
                                         <div class="form-group"><label for="">Project Director</label>
-                                            <div class="input-group">
+                                            <select class=" form-control m-b" id="implementers" name="implementers">
+                                                <option>SELECT</option>
+                                                <option value="">Dato' Zailani Safari</option>
+                                            </select>
+                                            <!-- <div class="input-group">
                                                 <input type="text" class="form-control" id="pjt_directorStr" name="pjt_directorStr" disabled placeholder="Add Project Director..">
-                                                <input type="hidden" class="form-control" id="pjt_directorID" name="pjt_directorID" >
-                                                <span class="input-group-append">
+                                                <input type="hidden" class="form-control" id="pjt_directorID" name="pjt_directorID" > -->
+                                                <!-- <span class="input-group-append">
                                                  <a class="input-group-text ogchartShow" data-org="1" data-toggle="modal" data-dismiss="modal" href="#"><i class="icon-add"></i></a>
-                                                </span>
-                                            </div>
+                                                </span> -->
+                                            <!-- </div> -->
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
@@ -337,6 +341,25 @@
                             <a class="float-right text-right link-modal ogchartShow" data-toggle="modal" data-org="2" data-dismiss="modal" href="#"><i class="icon-plus2 mr-1"></i><span>Add Member</span></a>
                             </div>
                             <div class="row" id="p-team">
+                                <div class="col-xl-4 col-md-6 director">
+                                    <div class="card card-body">
+                                        <div class="media">
+                                            <div class="card-img-actions d-inline-block">
+                                                <img class="img-fluid rounded-circle" src="<?=site_url('assets/img/avatar/av0.png')?>" width="42" height="42" alt="">
+                                                <div class="card-img-actions-overlay card-img rounded-circle">
+                                                    <a href="#" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round">
+                                                        <i class="icon-bin"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="media-body">
+                                                <h6 class="mb-0">Dato' Zailani Safari</h6>
+                                                <span class="text-muted">Project Director</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="col-xl-4 col-md-6">
                                     <div class="card card-body">
                                         <div class="media">
@@ -355,9 +378,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-xl-4 col-md-6 director">
-
                                 </div>
                             </div>
                         </div>
@@ -640,22 +660,15 @@
         document.addEventListener('DOMContentLoaded', function() {
             //ogchart = <?php echo $ogchart; ?>;
             //ogchart = {id: "1", name: "Mr. Idrul Fairuz Ali Khan", title: "Project Manager", children: Array(0)};
-            ogchart = {
-                    'id': "12",
-                    'name': 'Steering Committee',
-                    'className': 'committee',
+            ogchart ={ 
+                    'id': "10",'name': 'Working Committee', 'className': 'committee',
                     'children': [
-                        { 'id': "11", 'name': 'Technical Committee', 'className': 'committee',
-                        'children': [
-                            { 'id': "10",'name': 'Working Committee', 'className': 'committee',
-                            'children': [
-                                {'id': "1", 'name': "Mr. Idrul Fairuz Ali Khan", 'title': "Project Manager", 'children': Array(0)}
+                        {'id': "1", 'name': "Dato' Zailani Safari", 'title': "Project Director", 'children': [
+                                    {'id': "1", 'name': "Mr. Idrul Fairuz Ali Khan", 'title': "Project Manager"}
                                 ]
                             }
                         ]
-                        },                      
-                    ]
-                };
+                    }
             Dashboard.init(ogchart);
         });
         $('input[name="node-type2"]').change(function(){

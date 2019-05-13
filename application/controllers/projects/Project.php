@@ -911,16 +911,30 @@ class Project extends ICTMS_Controller {
         {
             $message='';
         }
-        $_header["support"] = array("");
-        $_header["pid"] = "02849";
-        $_header["page"] = "collaboration";
-        $_header["page_js"] = "collaboration";
+        $data["u"] = $session_data['roleid'];
+        if($session_data['roleid'] == 33){
+            $_header["support"] = array("");
+            $_header["pid"] = "02849";
+            $_header["page"] = "collaboration";
+            $_header["page_js"] = "collaboration";
 
-        $this->load->view('core/fragments/header',$_header);
-        $this->load->view('core/projects/fragments/main_navbar',$data1);
-        $this->load->view('core/projects/fragments/secondary_navbar_vendor');
-        $this->load->view('core/projects/collaboration');
-        $this->load->view('core/fragments/footer');
+            $this->load->view('core/fragments/header',$_header);
+            $this->load->view('core/projects/fragments/main_navbar',$data1);
+            $this->load->view('core/projects/fragments/secondary_navbar_vendor');
+            $this->load->view('core/projects/collaboration', $data);
+            $this->load->view('core/fragments/footer');
+        }else{
+            $_header["support"] = array("");
+            $_header["pid"] = "02849";
+            $_header["page"] = "collaboration";
+            $_header["page_js"] = "collaboration";
+
+            $this->load->view('core/fragments/header',$_header);
+            $this->load->view('core/projects/fragments/main_navbar',$data1);
+            $this->load->view('core/projects/fragments/secondary_navbar_pprisa');
+            $this->load->view('core/projects/collaboration', $data);
+            $this->load->view('core/fragments/footer');
+        }
     }
 
     public function site_diary($pid=null){
@@ -937,16 +951,30 @@ class Project extends ICTMS_Controller {
         {
             $message='';
         }
-        $_header["support"] = array("uniform","noui","pikadate","fancybox");
-        $_header["pid"] = "02849";
-        $_header["page"] = "site_diary";
-        $_header["page_js"] = "site_diary";
+        $data["u"] = $session_data['roleid'];
+        if($session_data['roleid'] == 33){
+            $_header["support"] = array("uniform","noui","pikadate","fancybox");
+            $_header["pid"] = "02849";
+            $_header["page"] = "site_diary";
+            $_header["page_js"] = "site_diary";
 
-        $this->load->view('core/fragments/header',$_header);
-        $this->load->view('core/projects/fragments/main_navbar',$data1);
-        $this->load->view('core/projects/fragments/secondary_navbar_vendor');
-        $this->load->view('core/projects/site_diary');
-        $this->load->view('core/fragments/footer');
+            $this->load->view('core/fragments/header',$_header);
+            $this->load->view('core/projects/fragments/main_navbar',$data1);
+            $this->load->view('core/projects/fragments/secondary_navbar_vendor');
+            $this->load->view('core/projects/site_diary', $data);
+            $this->load->view('core/fragments/footer');
+        }else{
+            $_header["support"] = array("uniform","noui","pikadate","fancybox");
+            $_header["pid"] = "02849";
+            $_header["page"] = "site_diary";
+            $_header["page_js"] = "site_diary";
+
+            $this->load->view('core/fragments/header',$_header);
+            $this->load->view('core/projects/fragments/main_navbar',$data1);
+            $this->load->view('core/projects/fragments/secondary_navbar_pprisa');
+            $this->load->view('core/projects/site_diary', $data);
+            $this->load->view('core/fragments/footer');
+        }
     }
 
     public function issues($pid=null){

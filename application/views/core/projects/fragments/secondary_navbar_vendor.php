@@ -41,7 +41,7 @@
 					<div class="dropdown-menu">
 						<div class="dropdown-header">PROJECT IMPLEMENTATION</div>
 						<a href="<?=site_url('projects/02849/site-diary')?>" class="dropdown-item"><i class="icon-book"></i>Project Diary (Progress Report)</a>
-						<a href="<?=site_url('projects/02849/meeting')?>" class="dropdown-item"><i class="icon-calendar"></i>Progress Meetings</a>
+						<a href="<?=site_url('projects/02849/meeting')?>" class="dropdown-item"><i class="icon-calendar"></i>Project Meetings</a>
 						<a href="<?=site_url('projects/02849/collaboration')?>" class="dropdown-item"><i class="icon-bubbles6"></i>Collaboration</a>
 						<a href="<?=site_url('projects/02849/issues')?>" class="dropdown-item"><i class="icon-shield-notice"></i>Manage Issues</a>
 					</div>

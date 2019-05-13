@@ -46,8 +46,8 @@
 
 					<div class="dropdown-menu">
 						<a href="http://localhost/ictms-dashboard/projects/2019/1002" target="_blank" class="dropdown-item no-loader"><i class="icon-screen3"></i> Dashboard</a>
-						<a href="<?=site_url('projects/02849/org')?>" class="dropdown-item"><i class="icon-statistics"></i> Progress Diary Approval</a>
-						<a href="<?=site_url('projects/02849/reporting-structure')?>" class="dropdown-item"><i class="icon-bubbles6"></i> Collaboration</a>
+						<a href="<?=site_url('projects/02849/site-diary')?>" class="dropdown-item"><i class="icon-statistics"></i> Progress Diary Approval</a>
+						<a href="<?=site_url('projects/02849/collaboration')?>" class="dropdown-item"><i class="icon-bubbles6"></i> Collaboration</a>
 						
 					</div>
 				</li> 

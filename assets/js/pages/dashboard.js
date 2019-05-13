@@ -12,9 +12,9 @@ var Dashboard = function() {
         return (new Date().getTime()) * 1000 + Math.floor(Math.random() * 1001);
     };
 
-     var _buildOrg = function(datascource) {
+     var _buildOrg = function(datascource, target_org) {
 
-        var oc = $('#orgchart-container').orgchart({
+        var oc = target_org.orgchart({
             'data': datascource,
             'chartClass': 'edit-state',
             'nodeContent': 'title',
@@ -47,10 +47,10 @@ var Dashboard = function() {
             }
         });
          $('input[name="chart-state"]').on('click', function () {
-            $('.orgchart').toggleClass('edit-state', this.value !== 'view');
+            target_org.find('.orgchart').toggleClass('edit-state', this.value !== 'view');
             $('#edit-panel').toggleClass('edit-state', this.value === 'view');
             if ($(this).val() === 'edit') {
-                $('.orgchart').find('tr').removeClass('hidden')
+                 target_org.find('.orgchart').find('tr').removeClass('hidden')
                     .find('td').removeClass('hidden')
                     .find('.node').removeClass('slide-up slide-down slide-right slide-left');
             } else {
@@ -73,7 +73,7 @@ var Dashboard = function() {
             }
         });
         $('#btn-add-nodes').on('click', function () {
-            var $chartContainer = $('#orgchart-container');
+            var $chartContainer = target_org;
             var nodeVals = [];
             var position = $("#position").find(":selected").text();
             var positionid = $("#position").val();
@@ -94,12 +94,12 @@ var Dashboard = function() {
                 return;
             }
             var nodeType = $('input[name="node-type"]:checked');
-            var nodeType2 = $('input[name="node-type2"]:checked');
+            // var nodeType2 = $('input[name="node-type2"]:checked');
             if (!nodeType.length) {
                 alert('Please select a node type');
                 return;
             }
-            if (nodeType.val() !== 'parent' && !$('.orgchart').length) {
+            if (nodeType.val() !== 'parent' && !$chartContainer.find('.orgchart').length) {
                 alert('Please creat the root node firstly when you want to build up the orgchart from the scratch');
                 return;
             }
@@ -122,11 +122,11 @@ var Dashboard = function() {
                     });
                     oc.$chart.addClass('view-state');
                 } else {
-                    if (nodeType2.val() === '1') {
-                        oc.addParent($chartContainer.find('.node:first'), {'name': nodeVals[0], 'title': position,'id': getId()});
-                    }else{
+                    // if (nodeType2.val() === '1') {
+                    //     oc.addParent($chartContainer.find('.node:first'), {'name': nodeVals[0], 'title': position,'id': getId()});
+                    // }else{
                         oc.addParent($chartContainer.find('.node:first'), {'name': nodeVals[0], 'id': getId(),'className': 'committee'});
-                    }
+                    // }
                 }
             } else if (nodeType.val() === '2') {
                 if ($node[0].id === oc.$chart.find('.node:first')[0].id) {
@@ -134,30 +134,30 @@ var Dashboard = function() {
                     return;
                 }
                 oc.addSiblings($node, nodeVals.map(function (item) {
-                    if (nodeType2.val() === '1') {
-                        return {'name': item, 'title': position, 'relationship': '110', 'id': getId()};
-                    }else{
+                    // if (nodeType2.val() === '1') {
+                    //     return {'name': item, 'title': position, 'relationship': '110', 'id': getId()};
+                    // }else{
                         return {'name': item, 'relationship': '110', 'id': getId(),'className': 'committee'};
-                    }
+                    // }
                 }));
             } else {
                 var hasChild = $node.parent().attr('colspan') > 0 ? true : false;
                 if (!hasChild) {
                     var rel = nodeVals.length > 1 ? '110' : '100';
                     oc.addChildren($node, nodeVals.map(function (item) {
-                        if (nodeType2.val() === '1') {
-                            return {'name': item, 'title': position, 'relationship': rel, 'id': getId()};
-                        }else{
+                        // if (nodeType2.val() === '1') {
+                        //     return {'name': item, 'title': position, 'relationship': rel, 'id': getId()};
+                        // }else{
                             return {'name': item, 'relationship': rel, 'id': getId(),'className': 'committee'};
-                        }
+                        // }
                     }));
                 } else {
                     oc.addSiblings($node.closest('tr').siblings('.nodes').find('.node:first'), nodeVals.map(function (item) {
-                        if (nodeType2.val() === '1') {
-                            return {'name': item, 'title': position, 'relationship': '110', 'id': getId()};
-                        }else{
+                        // if (nodeType2.val() === '1') {
+                        //     return {'name': item, 'title': position, 'relationship': '110', 'id': getId()};
+                        // }else{
                             return {'name': item, 'relationship': '110', 'id': getId(),'className': 'committee'};
-                        }
+                        // }
                     }));
                 }
             }
@@ -174,7 +174,7 @@ var Dashboard = function() {
             if (!$node) {
                 alert('Please select one node in orgchart');
                 return;
-            } else if ($node[0] === $('.orgchart').find('.node:first')[0]) {
+            } else if ($node[0] ===  target_org.find('.orgchart').find('.node:first')[0]) {
                 if (!window.confirm('Are you sure you want to delete the whole chart?')) {
                     return;
                 }
@@ -183,7 +183,7 @@ var Dashboard = function() {
             $('#selected-node').val('').data('node', null);
         });
         $('#btn-report-path').on('click', function () {
-            var $selected = $('#orgchart-container').find('.node.focused');
+            var $selected = target_org.find('.node.focused');
             if ($selected.length) {
                 $selected.parents('.nodes').children(':has(.focused)').find('.node:first').each(function (index, superior) {
                     if (!$(superior).find('.horizontalEdge:first').closest('table').parent().siblings().is('.hidden')) {
@@ -196,7 +196,7 @@ var Dashboard = function() {
             }
         });
         $('#btn-reset').on('click', function () {
-            $('#orgchart-container').find('.hidden').removeClass('hidden')
+            target_org.find('.hidden').removeClass('hidden')
                 .end().find('.slide-up, .slide-right, .slide-left, .focused').removeClass('slide-up slide-right slide-left focused');
             $('#btn-report-path').prop('disabled', false);
             $('#selected-node').val('');
@@ -314,15 +314,17 @@ var Dashboard = function() {
         $('#hmwks-adtm').modal('show');
     });
     return {
-        init: function(ogchart) {
+        init: function(ogchart, ogchart1, ogchart2) {
             _componentUniform();
             _componentModal(true,$('#hmwks-cnp'),$('#hmwks-cnp .hmwks-slider-w'));
-            _componentModal(false,$('#hmwks-adtm'),$('#hmwks-adtm .hmwks-slider-w'));
+            // _componentModal(false,$('#hmwks-adtm'),$('#hmwks-adtm .hmwks-slider-w'));
             _checkboxStatusBO();
             _checkboxStatusR();
             _componentPikaday();
             _componentRepeater();
-            _buildOrg(ogchart);
+            _buildOrg(ogchart, $("#orgchart-container"));
+            // _buildOrg(ogchart1, $("#orgchart-container2"));
+            // _buildOrg(ogchart2, $("#orgchart-container3"));
            // _componentMultiselect();
         }
 

@@ -431,7 +431,7 @@
   transform: translateX(-40px);
 }
 
-#orgchart-container {
+#orgchart-container, #orgchart-container2, #orgchart-container3 {
   position: relative;
   display: inline-block;
   top: 10px;

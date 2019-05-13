@@ -556,13 +556,34 @@
                     <div class="hmwks-slide">
                         <div class="hmwks-content with-gradient text-center">
                             <h4 class="hmwks-title">Organizational Chart</h4>
-                            <div class="hmwks-text">This is a multistep project creation process, you
+                            <!-- <div class="hmwks-text">This is a multistep project creation process, you
                                 can use it to provide project information which includes scope, objective of the project
-                                and project team etc. before you start your project.</div>
+                                and project team etc. before you start your project.</div> -->
                             <div class="row text-left">
+                                <ul class="nav nav-tabs nav-tabs-bottom nav-justified col-sm-9 mb-0">
+									<li class="nav-item"><a href="#bottom-justified-tab1" style="background: transparent" class="nav-link active show no-loader" data-toggle="tab">WORKNG COMMITTEE</a></li>
+									<li class="nav-item"><a href="#bottom-justified-tab2" style="background: transparent" class="nav-link  no-loader" data-toggle="tab">TECHNICAL COMMITTEE</a></li>
+                                    <li class="nav-item"><a href="#bottom-justified-tab3" style="background: transparent" class="nav-link  no-loader" data-toggle="tab">STEERING COMMITTEE</a></li>
+								</ul>
                                 <div class="col-sm-9">
-                                    <div id="orgchart-container"></div>
-                                </div>
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade active show" id="bottom-justified-tab1">
+                                            <div id="orgchart-container"></div>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="bottom-justified-tab2">
+                                            <div id="orgchart-container2">
+                                                <div class="orgchart edit-state"><table><tr><td><div draggable="true" id="10" class="node committee"><div class="title">Technical Committee</div><div class="content"></div></div></td></tr></table></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="bottom-justified-tab3">
+                                            <div id="orgchart-container3">
+                                                <div class="orgchart edit-state"><table><tr><td><div draggable="true" id="10" class="node committee"><div class="title">Steering Committee</div><div class="content"></div></div></td></tr></table></div>
+                                            </div>
+                                        </div>
+                                    </div>
+								</div>
                                 <div class="col-sm-3">
                                     <div class="card">
                                         <div class="card-header header-elements-inline">
@@ -578,7 +599,7 @@
                                                         <input type="text" id="position-node" hidden="">
                                                         <input type="text" id="parent-id" hidden="">
                                                     </div>
-                                                    <div class="form-group">
+                                                    <!-- <div class="form-group">
                                                         <label class="d-block">Position Type:</label>
 
                                                         <div class="custom-control custom-radio custom-control-inline">
@@ -590,7 +611,7 @@
                                                             <input type="radio" class="custom-control-input pos_type" value="2" name="node-type2" id="type_header">
                                                             <label class="custom-control-label" for="type_header">Committee Header</label>
                                                         </div>
-                                                    </div>
+                                                    </div> -->
                                                     <div class="form-group" id="new-nodelist">
                                                         <label>Member/Committee Header:</label>
                                                         <input type="text" class="form-control new-node" placeholder="Enter Member/Committee Header Name...">
@@ -660,7 +681,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             //ogchart = <?php echo $ogchart; ?>;
             //ogchart = {id: "1", name: "Mr. Idrul Fairuz Ali Khan", title: "Project Manager", children: Array(0)};
-            ogchart ={ 
+                ogchart ={ 
                     'id': "10",'name': 'Working Committee', 'className': 'committee',
                     'children': [
                         {'id': "1", 'name': "Dato' Zailani Safari", 'title': "Project Director", 'children': [
@@ -668,8 +689,14 @@
                                 ]
                             }
                         ]
-                    }
-            Dashboard.init(ogchart);
+                    };
+                ogchart2 ={ 
+                    'id': "10",'name': 'Technical Committee', 'className': 'committee',
+                    };
+                ogchart3 ={ 
+                    'id': "10",'name': 'Steering Committee', 'className': 'committee',
+                    };
+            Dashboard.init(ogchart, ogchart2, ogchart3);
         });
         $('input[name="node-type2"]').change(function(){
             if($(this).val()=='1'){

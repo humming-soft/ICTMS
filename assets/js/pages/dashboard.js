@@ -123,9 +123,9 @@ var Dashboard = function() {
                     oc.$chart.addClass('view-state');
                 } else {
                     // if (nodeType2.val() === '1') {
-                    //     oc.addParent($chartContainer.find('.node:first'), {'name': nodeVals[0], 'title': position,'id': getId()});
+                       oc.addParent($chartContainer.find('.node:first'), {'name': nodeVals[0], 'title': position,'id': getId()});
                     // }else{
-                        oc.addParent($chartContainer.find('.node:first'), {'name': nodeVals[0], 'id': getId(),'className': 'committee'});
+                       //   oc.addParent($chartContainer.find('.node:first'), {'name': nodeVals[0], 'id': getId(),'className': 'committee'});
                     // }
                 }
             } else if (nodeType.val() === '2') {
@@ -135,9 +135,9 @@ var Dashboard = function() {
                 }
                 oc.addSiblings($node, nodeVals.map(function (item) {
                     // if (nodeType2.val() === '1') {
-                    //     return {'name': item, 'title': position, 'relationship': '110', 'id': getId()};
+                        return {'name': item, 'title': position, 'relationship': '110', 'id': getId()};
                     // }else{
-                        return {'name': item, 'relationship': '110', 'id': getId(),'className': 'committee'};
+                    //     return {'name': item, 'relationship': '110', 'id': getId(),'className': 'committee'};
                     // }
                 }));
             } else {
@@ -146,17 +146,17 @@ var Dashboard = function() {
                     var rel = nodeVals.length > 1 ? '110' : '100';
                     oc.addChildren($node, nodeVals.map(function (item) {
                         // if (nodeType2.val() === '1') {
-                        //     return {'name': item, 'title': position, 'relationship': rel, 'id': getId()};
+                             return {'name': item, 'title': position, 'relationship': rel, 'id': getId()};
                         // }else{
-                            return {'name': item, 'relationship': rel, 'id': getId(),'className': 'committee'};
+                           // return {'name': item, 'relationship': rel, 'id': getId(),'className': 'committee'};
                         // }
                     }));
                 } else {
                     oc.addSiblings($node.closest('tr').siblings('.nodes').find('.node:first'), nodeVals.map(function (item) {
                         // if (nodeType2.val() === '1') {
-                        //     return {'name': item, 'title': position, 'relationship': '110', 'id': getId()};
+                            return {'name': item, 'title': position, 'relationship': '110', 'id': getId()};
                         // }else{
-                            return {'name': item, 'relationship': '110', 'id': getId(),'className': 'committee'};
+                         //    return {'name': item, 'relationship': '110', 'id': getId(),'className': 'committee'};
                         // }
                     }));
                 }

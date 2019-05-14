@@ -80,7 +80,7 @@
                                             <div class="step-number completed">05</div>
                                             <div class="step-head-text">
                                                 <h4>Logframe (LFM)</h4>
-                                                <p>Your simple personal information required for identification</p>
+                                                <p><b>Logical Framework</b> Approach is a methodology mainly used for designing, monitoring, and evaluating international development projects. </p>
                                                 <a href="<?=site_url('projects/02849/logframe')?>">View/Edit →</a>
                                             </div>
                                         </div>
@@ -90,7 +90,7 @@
                                             <div class="step-number completed">06</div>
                                             <div class="step-head-text">
                                                 <h4>Activities & Deliverables</h4>
-                                                <p>Your simple personal information required for identification</p>
+                                                <p>An <b>activity</b> is a task that contributes to project objectives.A <b>deliverable</b> is an output of value to the customer that contributes to a project achieving its objectives. </p>
                                                 <a href="<?=site_url('projects/02849/gantt')?>">View/Edit →</a>
                                             </div>
                                         </div>

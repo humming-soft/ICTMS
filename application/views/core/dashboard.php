@@ -538,7 +538,7 @@
                             </div>-->
                             <div class="text-right">
                                 <button type="button" class="btn btn-light" data-dismiss="modal">Cancel <i class="icon-cross2 ml-2"></i></button>
-								<button type="submit" class="btn btn-primary">Save <i class="icon-paperplane ml-2"></i></button>
+								<button type="button" class="btn btn-primary"  data-dismiss="modal">Save <i class="icon-paperplane ml-2"></i></button>
 							</div>
                         </div>
                     </div>                          

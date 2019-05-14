@@ -100,7 +100,7 @@
                                             <div class="step-number completed">07</div>
                                             <div class="step-head-text">
                                                 <h4>Resources</h4>
-                                                <p>Your simple personal information required for identification</p>
+                                                <p>In project management, <b>resources</b> are required to carry out the project tasks. They can be people, equipment, facilities, funding etc.</p>
                                                 <a href="<?=site_url('projects/02849/resources')?>">View/Edit →</a>
                                             </div>
                                         </div>
@@ -110,7 +110,7 @@
                                             <div class="step-number completed">08</div>
                                             <div class="step-head-text">
                                                 <h4>Risk Register</h4>
-                                                <p>Your simple personal information required for identification</p>
+                                                <p>A <b>Risk Register</b> is a tool for documenting risks, and actions to manage each risk. It is essential to the successful management of risk.</p>
                                                 <a href="<?=site_url('projects/02849/risk')?>">View/Edit →</a>
                                             </div>
                                         </div>
@@ -122,7 +122,7 @@
                                             <div class="step-number current">09</div>
                                             <div class="step-head-text">
                                                 <h4>EPU Approval</h4>
-                                                <p>Status of the project Approved / Rejected / KIV.</p>
+                                                <p>Approval from <b>Economic Planning Unit (EPU)</b> is essential for continuation of further process. Please update the status of the project.</p>
                                                 <a href="<?=site_url('projects/02849/approval')?>">Complete Step →</a>
                                             </div>
                                         </div>
@@ -132,7 +132,7 @@
                                             <div class="step-number">10</div>
                                             <div class="step-head-text">
                                                 <h4>Architectures</h4>
-                                                <p>Architectures related to the project.</p>
+                                                <p><b>Architecture designs</b> for the project development includes Business, Application, Technical and Data Architectures.</p>
                                                 <a href="<?=site_url('projects/02849/architecture')?>">Complete Step →</a>
                                             </div>
                                         </div>
@@ -142,7 +142,7 @@
                                             <div class="step-number">11</div>
                                             <div class="step-head-text">
                                                 <h4>JPICT/JTISA Approval</h4>
-                                                <p>Status of the project Approved / Rejected / KIV.</p>
+                                                <p>Approval status from <b>Jawatankuasa Pemandu Project ICT / Jawatankuasa Teknkal ICT Sektor Awam.</b> </p>
                                                 <a href="<?=site_url('projects/02849/approval-stage2')?>">Complete Step →</a>
                                             </div>
                                         </div>
@@ -313,7 +313,7 @@
                                             <div class="col-12 col-md-12 col-lg-12">
                                                 <ul class="list-unstyled mt-1">
                                                     <li class="mb-3">
-                                                        <div class="d-flex align-items-center mb-1">Current Activity : <a href="" class="font-weight-bold ml-1"> Approval</a><span class="text-muted ml-auto">100%</span></div>
+                                                        <div class="d-flex align-items-center mb-1">Current Activity : <a href="<?=site_url('projects/02849/approval')?>" class="font-weight-bold ml-1">EPU Approval</a><span class="text-muted ml-auto">100%</span></div>
                                                         <div class="progress" style="height: 0.675rem;">
                                                             <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning-300" style="width: 100%">
                                                                 <span class="sr-only">100% Complete</span>

@@ -528,28 +528,6 @@
                                                                         </ul>
                                                                     </td>
                                                                     <td>
-                                                                        <ul class="list mb-0 goal_ind_t">
-                                                                            <li>Increase in Commuters from 35,800,000 P/A to 39,380,000 P/A (+10%).</li>
-                                                                            <li>Impact on Revenue (+3,580,000 @ RM 840 = 3,007,200,000) P/A.</li>
-                                                                        </ul>
-                                                                    </td>
-                                                                    <td>
-                                                                        <ul class="list mb-0 goal_mov_t">
-                                                                            <li>Real-time Descriptive Analytics in comparison to past trends.</li>
-                                                                        </ul>
-                                                                    </td>
-                                                                    <td>
-                                                                        <ul class="list mb-0 goal_asmp_t">
-                                                                            <li>
-                                                                                Real-time Commuting Data extracted from the various Public Transportation Authorities and Operators are accurate.
-                                                                            </li>
-                                                                        </ul>
-                                                                    </td>                                                 
-                                                                </tr>
-                                                                <tr>
-                                                                    <th class="text-uppercase align-center">Outcome</th>
-                                                                    <td>Public Transportation System in Malaysia is safe and reliable</td>
-                                                                    <td>
                                                                         <ul class="list mb-0 outc_ind_t">
                                                                             <li>10% Reduction in Environmental Carbon Reading from “Jabatan Alam Sekitar”.</li>
                                                                             <li>10% Reduction in Road Accidents reported at hospitals.</li>
@@ -565,6 +543,29 @@
                                                                             <li>Road Maintenance report from LLM</li>
                                                                         </ul>
                                                                     </td>
+                                                                    <td>
+                                                                        <ul class="list mb-0 goal_asmp_t">
+                                                                            <li>
+                                                                                Real-time Commuting Data extracted from the various Public Transportation Authorities and Operators are accurate.
+                                                                            </li>
+                                                                        </ul>
+                                                                    </td>                                                 
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="text-uppercase align-center">Outcome</th>
+                                                                    <td>Public Transportation System in Malaysia is safe and reliable</td>
+                                                                    <td>
+                                                                        <ul class="list mb-0 goal_ind_t">
+                                                                            <li>Increase in Commuters from 35,800,000 P/A to 39,380,000 P/A (+10%).</li>
+                                                                            <li>Impact on Revenue (+3,580,000 @ RM 840 = RM 3,007,200,000) P/A.</li>
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td>
+                                                                        <ul class="list mb-0 goal_mov_t">
+                                                                            <li>Real-time Descriptive Analytics in comparison to past trends.</li>
+                                                                        </ul>
+                                                                    </td>
+                                                                  
                                                                     <td>
                                                                         <ul class="list mb-0 outc_asmp_t">
                                                                             <li>Jabatan Alam Sekitar is capturing accurate data on Carbon Emission.</li>
@@ -653,20 +654,25 @@
                                                                     <tbody>
                                                                         <tr class="table-active table-border-double">
                                                                             <th colspan="2"><h6 class="font-weight-semibold text-uppercase mb-0">Goal(s)</h6></th>
-                                                                        </tr>
+                                                                        </tr> 
                                                                         <tr>
                                                                             <td class="p-1">
-                                                                                <ul class="list goal_ind_t">
-                                                                                    <li>Increase in Commuters from 35,800,000 P/A to 39,380,000 P/A (+10%).</li>
-                                                                                    <li>Impact on Revenue (+3,580,000 @ RM 840 = 3,007,200,000) P/A.</li>
+                                                                                <ul class="list outc_ind_t">
+                                                                                    <li>10% Reduction in Environmental Carbon Reading from “Jabatan Alam Sekitar”.</li>
+                                                                                    <li>10% Reduction in Road Accidents reported at hospitals.</li>
+                                                                                    <li>10% Reduction in Road Traffic.</li>
+                                                                                    <li>10% Reduction in Actual Road Maintenance Cost.</li>
                                                                                 </ul>
                                                                             </td>
                                                                             <td class="p-1">
-                                                                                <ul class="list goal_mov_t">
-                                                                                    <li>Real-time Descriptive Analytics in comparison to past trends.</li>
+                                                                                <ul class="list outc_mov_t">
+                                                                                    <li>Jabatan Alam Sekitar</li>
+                                                                                    <li>Accident Reports from Hospitals</li>
+                                                                                    <li>Traffic Report from LLM</li>
+                                                                                    <li>Road Maintenance report from LLM</li>
                                                                                 </ul>
                                                                             </td>
-                                                                        </tr>   
+                                                                        </tr>
                                                                         <tr>
                                                                             <td class="border-top-0">
                                                                                 <div class="input-group">
@@ -690,22 +696,17 @@
                                                                         </tr>
                                                                         <tr>
                                                                             <td class="p-1">
-                                                                                <ul class="list outc_ind_t">
-                                                                                    <li>10% Reduction in Environmental Carbon Reading from “Jabatan Alam Sekitar”.</li>
-                                                                                    <li>10% Reduction in Road Accidents reported at hospitals.</li>
-                                                                                    <li>10% Reduction in Road Traffic.</li>
-                                                                                    <li>10% Reduction in Actual Road Maintenance Cost.</li>
+                                                                                <ul class="list goal_ind_t">
+                                                                                    <li>Increase in Commuters from 35,800,000 P/A to 39,380,000 P/A (+10%).</li>
+                                                                                    <li>Impact on Revenue (+3,580,000 @ RM 840 = RM 3,007,200,000) P/A.</li>
                                                                                 </ul>
                                                                             </td>
                                                                             <td class="p-1">
-                                                                                <ul class="list outc_mov_t">
-                                                                                    <li>Jabatan Alam Sekitar</li>
-                                                                                    <li>Accident Reports from Hospitals</li>
-                                                                                    <li>Traffic Report from LLM</li>
-                                                                                    <li>Road Maintenance report from LLM</li>
+                                                                                <ul class="list goal_mov_t">
+                                                                                    <li>Real-time Descriptive Analytics in comparison to past trends.</li>
                                                                                 </ul>
                                                                             </td>
-                                                                        </tr>
+                                                                        </tr>  
                                                                         <tr>
                                                                             <td class="border-top-0">
                                                                                 <div class="input-group">

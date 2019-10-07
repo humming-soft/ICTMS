@@ -453,9 +453,20 @@ class Project extends ICTMS_Controller {
     }
 
     public function download($pid= null){
-        $this->load->helper('download');
-        $data = file_get_contents(APPPATH . "views/resources/download/business_case.pdf");
-        force_download('business_case.pdf', $data);
+        $session_data = $this->session->userdata('logged_in');
+        if($session_data['roleid'] == 15){
+            $this->load->helper('download');
+            $data = file_get_contents(APPPATH . "views/resources/download/business_case.pdf");
+            force_download('business_case.pdf', $data);
+        }else if($session_data['roleid'] == 33){
+            $this->load->helper('download');
+            $data = file_get_contents(APPPATH . "views/resources/download/business_case.pdf");
+            force_download('business_case.pdf', $data);
+        }else{
+            $this->load->helper('download');
+            $data = file_get_contents(APPPATH . "views/resources/download/Project_Brief_v2.0.pdf");
+            force_download('Project_Brief_v2.0.pdf', $data);
+        }
     }
 
     public function pdf_view($pid= null){

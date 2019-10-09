@@ -647,15 +647,24 @@
                                                                 <table class="table">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th>Indicators : <i class="icon-help text-secondary" title="Key indicators related to the overall goal."></i></th>
+                                                                            <th width="30%">Project Description : <i class="icon-help text-secondary" title="Project Description"></i></th>
+                                                                            <th width="40%">Indicators : <i class="icon-help text-secondary" title="Key indicators related to the overall goal."></i></th>
                                                                             <th>Means of Verification  : <i class="icon-help text-secondary" title="Sources of information for the corresponding indicators."></i></th>
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
                                                                         <tr class="table-active table-border-double">
-                                                                            <th colspan="2"><h6 class="font-weight-semibold text-uppercase mb-0">Goal(s)</h6></th>
+                                                                            <th colspan="3"><h6 class="font-weight-semibold text-uppercase mb-0">Goal(s)</h6></th>
                                                                         </tr> 
                                                                         <tr>
+                                                                            <td class="p-1">
+                                                                                    <ol >
+                                                                                        <li>Reduction on Carbon Emission from Land Vehicle.</li>
+                                                                                        <li>Reduction on Fatality Rate from Road Accidents</li>
+                                                                                        <li>Reduction in Road Congestion</li>
+                                                                                        <li>Reduction in Road Maintenance Cost </li>
+                                                                                    </ol>
+                                                                            </td>
                                                                             <td class="p-1">
                                                                                 <ul class="list outc_ind_t">
                                                                                     <li>10% Reduction in Environmental Carbon Reading from “Jabatan Alam Sekitar”.</li>
@@ -674,6 +683,7 @@
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
+                                                                            <td class="border-top-0"></td>
                                                                             <td class="border-top-0">
                                                                                 <div class="input-group">
                                                                                     <input type="text" id="goal_ind" class="form-control" placeholder="Add New Indicators..">
@@ -692,9 +702,14 @@
                                                                             </td>
                                                                         </tr> 
                                                                         <tr class="table-active table-border-double">
-                                                                            <th colspan="2"><h6 class="font-weight-semibold text-uppercase mb-0">Outcome</h6></th>
+                                                                            <th colspan="3"><h6 class="font-weight-semibold text-uppercase mb-0">Outcome</h6></th>
                                                                         </tr>
                                                                         <tr>
+                                                                            <td class="p-1">
+                                                                                <ul class="list goal_ind_t">
+                                                                                    <li>Public Transportation System in Malaysia is safe and reliable</li>
+                                                                                </ul>
+                                                                            </td>
                                                                             <td class="p-1">
                                                                                 <ul class="list goal_ind_t">
                                                                                     <li>Increase in Commuters from 35,800,000 P/A to 39,380,000 P/A (+10%).</li>
@@ -708,6 +723,7 @@
                                                                             </td>
                                                                         </tr>  
                                                                         <tr>
+                                                                            <td class="border-top-0"></td>
                                                                             <td class="border-top-0">
                                                                                 <div class="input-group">
                                                                                     <input type="text" id="outc_ind" class="form-control" placeholder="Add New Indicators..">
@@ -726,9 +742,15 @@
                                                                             </td>
                                                                         </tr> 
                                                                         <tr class="table-active table-border-double">
-                                                                            <th colspan="2"><h6 class="font-weight-semibold text-uppercase mb-0">Output(s)</h6></th>
+                                                                            <th colspan="3"><h6 class="font-weight-semibold text-uppercase mb-0">Output(s)</h6></th>
                                                                         </tr>
                                                                         <tr>
+                                                                            <td class="p-1">
+                                                                                <ul class="list out_ind_t">
+                                                                                    <li><strong>OUT-1 :</strong> An Integrated Transportation System is in place</li>
+                                                                                    <li><strong>OUT-2 :</strong>An effective Public Transportation Scheduling and Control System is in place</li>
+                                                                                </ul>
+                                                                            </td>
                                                                             <td class="p-1">
                                                                                 <ul class="list out_ind_t">
                                                                                     <li>Real-time transportation data from all Public Transportation Operators are integrated with a centralized system at the Public Transportation Authority within 24-months.</li>
@@ -742,6 +764,7 @@
                                                                             </td>
                                                                         </tr>   
                                                                         <tr>
+                                                                            <td class="border-top-0"></td>
                                                                             <td class="border-top-0">
                                                                                 <div class="input-group">
                                                                                     <input type="text" id="out_ind" class="form-control" placeholder="Add New Indicators..">
@@ -760,9 +783,21 @@
                                                                             </td>
                                                                         </tr>    
                                                                         <tr class="table-active table-border-double">
-                                                                            <th colspan="2"><h6 class="font-weight-semibold text-uppercase mb-0">Activitiy(ies)</h6></th>
+                                                                            <th colspan="3"><h6 class="font-weight-semibold text-uppercase mb-0">Activitiy(ies)</h6></th>
                                                                         </tr>
                                                                         <tr>
+                                                                            <td class="p-1">
+                                                                                <ul class="list list-unstyled mb-0">
+
+                                                                                    <li>1.	Technical Study on the systems currently available at each Public Transportation Operators
+                                                                                    </li>
+                                                                                    <li>2.	Develop and ICT Infrastructure to store and analyze Public Transportation Data extracted from all Public Transportation Operators
+                                                                                    </li>
+                                                                                    <li>3.	Advise the Enforcement Division at the Public Transportation Authorities to minimize the gaps between the Baseline and Actual Public Transportation Scheduling through various Enforcement Intervention Programmes
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </td>
+
                                                                             <td class="p-1">
                                                                                 <ul class="list act_ind_t">
                                                                                     <li>Technical Study Report from all Public Transportation Operators must be available within 6-months.</li>
@@ -777,6 +812,7 @@
                                                                             </td>
                                                                         </tr>   
                                                                         <tr>
+                                                                            <td class="border-top-0"></td>
                                                                             <td class="border-top-0">
                                                                                 <div class="input-group">
                                                                                     <input type="text" id="act_ind" class="form-control" placeholder="Add New Indicators..">

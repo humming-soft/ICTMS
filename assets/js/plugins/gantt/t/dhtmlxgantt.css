@@ -323,7 +323,7 @@
     height: 100%;
     overflow: hidden;
     white-space: nowrap;
-    font-size: 13px
+    font-size: 12px
 }
 
 .gantt_grid_data .gantt_last_cell,
@@ -713,7 +713,7 @@ div.dhx_modal_cover {
 .gantt_task_progress {
     text-align: center;
     z-index: 0;
-    background: #299cb4
+    background: #2f6898
 }
 
 .gantt_task_progress_wrapper {
@@ -728,8 +728,8 @@ div.dhx_modal_cover {
     border-radius: 2px;
     position: absolute;
     box-sizing: border-box;
-    background-color: #3db9d3;
-    border: 1px solid #2898b0;
+    background-color: #7ab8ec;
+    border: 1px solid #2f6898;
     -webkit-user-select: none;
     -moz-user-select: none;
     -moz-user-select: -moz-none
@@ -781,11 +781,11 @@ div.dhx_modal_cover {
 }
 
 .gantt_line_wrapper div {
-    background-color: #ffa011
+    background-color: #2f6898
 }
 
 .gantt_task_link:hover .gantt_line_wrapper div {
-    box-shadow: 0 0 5px 0 #ffa011
+    box-shadow: 0 0 5px 0 #2f6898
 }
 
 .gantt_task_link div.gantt_link_arrow {
@@ -883,7 +883,7 @@ div.dhx_modal_cover {
     border-top-color: transparent !important;
     border-right-color: transparent !important;
     border-bottom-color: transparent !important;
-    border-left-color: #ffa011;
+    border-left-color: #2f6898;
     margin-top: -1px
 }
 
@@ -891,23 +891,23 @@ div.dhx_modal_cover {
     border-width: 4px 6px 4px 0;
     margin-top: -1px;
     border-top-color: transparent !important;
-    border-right-color: #ffa011;
+    border-right-color: #2f6898;
     border-bottom-color: transparent !important;
     border-left-color: transparent !important
 }
 
 .gantt_link_arrow_up {
     border-width: 0 4px 6px;
-    border-color: transparent transparent #ffa011;
+    border-color: transparent transparent #2f6898;
     border-top-color: transparent !important;
     border-right-color: transparent !important;
-    border-bottom-color: #ffa011;
+    border-bottom-color: #2f6898;
     border-left-color: transparent !important
 }
 
 .gantt_link_arrow_down {
     border-width: 4px 6px 0 4px;
-    border-top-color: #ffa011;
+    border-top-color: #2f6898;
     border-right-color: transparent !important;
     border-bottom-color: transparent !important;
     border-left-color: transparent !important
@@ -2070,12 +2070,12 @@ div.dhx_modal_cover {
 }
 
 .gantt_task_line.gantt_dependent_task {
-    background-color: #65c16f;
-    border: 1px solid #3c9445;
+    background-color: #f5f5f5;
+    border: 1px solid #0e0e0e;
 }
 
 .gantt_task_line.gantt_dependent_task .gantt_task_progress {
-    background-color: #46ad51;
+    background-color: #0e0e0e;
 }
 
 .gantt_task_progress {

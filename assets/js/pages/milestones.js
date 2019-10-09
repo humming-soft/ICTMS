@@ -888,6 +888,8 @@ var Milestones = function() {
            var tooltips = gantt.ext.tooltips;
            tooltips.tooltip.setViewport(gantt.$task_data);
        });
+        gantt.config.row_height = 20;
+        gantt.config.link_line_width = 1;
        gantt.init("wbs_milestones");
        gantt.clearAll();
        gantt.serialize();

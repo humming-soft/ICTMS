@@ -63,13 +63,13 @@
                                                 <div class="row">
                                                     <div class="col-12 col-md-12 col-lg-12">
                                                     <div class="border-2 border-light-gray dtable-container">
-                                                        <table class="table table-togglable table-bordered dtable" style="max-width:none;width:2000px;">
+                                                        <table class="table table-togglable table-bordered dtable" style="max-width:none;width:100%;">
                                                             <thead>
                                                                 <tr>
-                                                                    <th colspan="2" width="650px" class="text-uppercase text-center" data-hide="phone">Project Description</th>
-                                                                    <th width="450px" class="text-uppercase text-center" data-toggle="true">Indicators</th>
-                                                                    <th width="450px" class="text-uppercase text-center" data-hide="phone,tablet">Means of Verification</th>
-                                                                    <th width="450px" class="text-uppercase text-center" data-hide="phone,tablet">Assumptions</th>
+                                                                    <th colspan="2" width="30%" class="text-uppercase text-center" data-hide="phone">Project Description</th>
+                                                                    <th width="25%" class="text-uppercase text-center" data-toggle="true">Indicators</th>
+                                                                    <th width="25%" class="text-uppercase text-center" data-hide="phone,tablet">Means of Verification</th>
+                                                                    <th width="20%" class="text-uppercase text-center" data-hide="phone,tablet">Assumptions</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -250,13 +250,13 @@
                                             <h6>Your education</h6>
                                             <fieldset>
                                                 <div class="border-2 border-light-gray dtable-container1">
-                                                    <table class="table table-togglable table-bordered dtable1" style="max-width:none;width:2000px;">
+                                                    <table class="table table-togglable table-bordered dtable1" style="max-width:none;width:100%;">
                                                         <thead>
                                                             <tr>
-                                                                <th colspan="2" width="650px" class="text-uppercase text-center" data-hide="phone">Project Description</th>
-                                                                <th width="450px" class="text-uppercase text-center" data-toggle="true">Indicators</th>
-                                                                <th width="450px" class="text-uppercase text-center" data-hide="phone,tablet">Means of Verification</th>
-                                                                <th width="450px" class="text-uppercase text-center" data-hide="phone,tablet">Assumptions</th>
+                                                                <th colspan="2" width="30%" class="text-uppercase text-center" data-hide="phone">Project Description</th>
+                                                                <th width="25%" class="text-uppercase text-center" data-toggle="true">Indicators</th>
+                                                                <th width="25%" class="text-uppercase text-center" data-hide="phone,tablet">Means of Verification</th>
+                                                                <th width="20%" class="text-uppercase text-center" data-hide="phone,tablet">Assumptions</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>

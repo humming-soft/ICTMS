@@ -109,7 +109,7 @@
                         <div class="card project">
                             <div class="card-header header-elements-inline">
                                 <h6 class="card-title font-weight-semibold text-uppercase">
-                                    <a href="#"><i class="icon-box mr-1"></i> Transport Information Data Exchange (TIDE) </a>
+                                    <a href="#"><i class="icon-box mr-1"></i>MALAYSIAN MARINE DEPARTMENT INFORMATION SYSTEM </a>
                                 </h6>
                                 <!-- <div class="header-elements">
                                     <span class="badge bg-secondary ml-2">INITIATED</span>
@@ -119,6 +119,70 @@
                             <div class="card-body">
                                 <div class="mb-3 mt-1">
                                     <b class="font-weight-semibold">Date Initiated : <span class="d_init p-1">07-NOV-2018</span></b>
+                                </div>
+                                <div class="mb-3">
+                                    <b class="font-weight-semibold">Project Background :</b>
+                                    <p>Marine Department has gone through major transformations, evolving into becoming a lead agency in maritime safety in this country. The three Marine Departments of Peninsular Malaysia, Sabah and Sarawak, that previously operated quite independently, are now integrated as one Marine Department of Malaysia.</div>
+                                <div class="mb-3">
+                                    <b class="font-weight-semibold">Project Objective :</b>
+                                    <p>The inclusion of migrants in the labour market is key to ensure their effective integration into the host societies and their positive impact on the EU economy; this entails fully using their skills and realising their economic potential. They can contribute to addressing skills shortages in certain sectors at all skills levels. </div>
+                                <!-- <div class="mb-3">
+                                    <b class="font-weight-semibold pb-2">Project Team :</b>
+                                    <div class="project-users">
+                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36"  src="<?=site_url('assets/img/avatar/av3.png')?>"></div>
+                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36" src="<?=site_url('assets/img/avatar/av6.png')?>"></div>
+                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36" src="<?=site_url('assets/img/avatar/av5.png')?>"></div>
+                                        <div class="avatar"><img alt="" class="rounded-circle" width="36" height="36" src="<?=site_url('assets/img/avatar/av1.png')?>"></div>
+                                        <div class="more">+ 5 More</div>
+                                    </div>
+                                </div> -->
+                                <div class="mb-3">
+                                    <b class="font-weight-semibold">Project Initiation :</b>
+                                    <ul class="list-unstyled mt-1">
+                                        <li class="mb-3">
+                                            <div class="d-flex align-items-center mb-1">Current Activity : <a href="<?=site_url('projects/02849/gantt')?>" class="font-weight-bold"> Budget Approval</a><span class="text-muted ml-auto">81.8%</span></div>
+                                            <div class="progress" style="height: 0.775rem;">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 90.8%">
+                                                    <span class="sr-only">81.8% Complete</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                 </div>
+                            </div>
+
+                            <div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+                                <ul class="list-inline list-inline-dotted text-muted mb-3 mb-sm-0">
+                                    <li class="list-inline-item">Project Initiation</li>
+                                </ul>
+                                <ul class="list-inline list-inline-dotted mb-0 mt-1 mt-sm-0">
+									<!-- <li class="list-inline-item"><a href="http://localhost/humworks-pms/projects/2019/1802"><i class="icon-stats-bars"></i> Business Intelligence</a></li> -->
+                                    <li class="list-inline-item">
+                                        <a class="float-right text-right link-modal" href="<?=site_url('projects/02849')?>" tabindex="0"><i class="icon-stack-text mr-1"></i><span>Details</span></a>
+                                    </li>
+
+								</ul>
+                            </div>
+                        </div>
+                        <!-- /clean blog layout #1 -->
+
+                    </div>
+
+                    <div class="col-sm-6 hide1" hidden>
+
+                        <div class="card project">
+                            <div class="card-header header-elements-inline">
+                                <h6 class="card-title font-weight-semibold text-uppercase">
+                                    <a href="#"><i class="icon-box mr-1"></i> Transport Information Data Exchange (TIDE) </a>
+                                </h6>
+                                <!-- <div class="header-elements">
+                                    <span class="badge bg-secondary ml-2">INITIATED</span>
+								</div>                         -->
+                            </div>
+
+                            <div class="card-body">
+                                <div class="mb-3 mt-1">
+                                    <b class="font-weight-semibold">Date Initiated : <span class="d_init p-1">10-OCT-2019</span></b>
                                 </div>
                                 <div class="mb-3">
                                     <b class="font-weight-semibold">Project Background :</b>
@@ -150,7 +214,7 @@
                                             </div>
                                         </li>
                                     </ul>
-                                 </div>
+                                </div>
                             </div>
 
                             <div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
@@ -158,66 +222,12 @@
                                     <li class="list-inline-item">Project Initiation</li>
                                 </ul>
                                 <ul class="list-inline list-inline-dotted mb-0 mt-1 mt-sm-0">
-									<!-- <li class="list-inline-item"><a href="http://localhost/humworks-pms/projects/2019/1802"><i class="icon-stats-bars"></i> Business Intelligence</a></li> -->
+                                    <!-- <li class="list-inline-item"><a href="http://localhost/humworks-pms/projects/2019/1802"><i class="icon-stats-bars"></i> Business Intelligence</a></li> -->
                                     <li class="list-inline-item">
                                         <a class="float-right text-right link-modal" href="<?=site_url('projects/02849')?>" tabindex="0"><i class="icon-stack-text mr-1"></i><span>Details</span></a>
                                     </li>
-                                    
-								</ul>
-                            </div>
-                        </div>
-                        <!-- /clean blog layout #1 -->
 
-                    </div>
-
-                    <div class="col-sm-6 hide1" hidden>
-
-                        <div class="card project">
-                            <div class="card-header header-elements-inline">
-                                <h6 class="card-title font-weight-semibold">
-                                    <a href="#"><i class="icon-box mr-1"></i> MALAYSIAN MARINE DEPARTMENT INFORMATION SYSTEM</a>
-                                </h6>
-                            </div>
-
-                            <div class="card-body">
-                                <div class="mb-3 mt-1">
-                                    <b class="font-weight-semibold">Date Initiated : <span class="d_init p-1">10-OCT-2019</span></b>
-                                </div>
-                                <div class="mb-3">
-                                    <b class="font-weight-semibold">Project Background :</b>
-                                    <p> Marine Department has gone through major transformations, evolving into becoming a lead agency in maritime safety in this country. The three Marine Departments of Peninsular Malaysia, Sabah and Sarawak, that previously operated quite independently, are now integrated as one Marine Department of Malaysia.</p>
-                                </div>
-                                <div class="mb-3">
-                                    <b class="font-weight-semibold">Project Objective :</b<p>The inclusion of migrants in the labour market is key to ensure their effective integration into the host societies and their positive impact on the EU economy; this entails fully using their skills and realising their economic potential. They can contribute to addressing skills shortages in certain sectors at all skills levels.</p>
-                                </div>
-                                <div class="mb-3">
-                                    <b class="font-weight-semibold">Project Initiation :</b>
-                                    <ul class="list-unstyled mt-1">
-                                        <li class="mb-3">
-                                            <div class="d-flex align-items-center mb-1">Current Activity : <a href="" class="font-weight-bold">Budget Approval</a><span class="text-muted ml-auto">32%</span></div>
-                                            <div class="progress" style="height: 0.575rem;">
-                                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 32%">
-                                                    <span class="sr-only">32% Complete</span>
-                                                </div>
-                                            </div>EPU Approval
-                                            EPU Approval
-                                            EPU Approval
-                                            EPU Approval
-
-                                        </li>
-                                    </ul>
-                                 </div>
-                            </div>
-
-                            <div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
-                                <ul class="list-inline list-inline-dotted text-muted mb-3 mb-sm-0">
-                                    <li class="list-inline-item">Project Initiation</li>
                                 </ul>
-                                <ul class="list-inline list-inline-dotted mb-0 mt-1 mt-sm-0">
-                                    <li class="list-inline-item">
-                                    <a class="float-right text-right link-modal" href="<?=site_url('projects/02849')?>" tabindex="0"><i class="icon-stack-text mr-1"></i><span>Details</span></a>
-                                    </li>
-								</ul>
                             </div>
                         </div>
 

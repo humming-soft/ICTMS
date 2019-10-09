@@ -103,7 +103,7 @@
                 </div>
                 <!-- /filter toolbar -->
                 <div class="row m-0 projects-list">
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
 
                         <!-- Clean blog layout #1 -->
                         <div class="card project">
@@ -170,7 +170,7 @@
 
                     </div>
 
-                    <!-- <div class="col-sm-6">
+                    <div class="col-sm-6 hide1" hidden>
 
                         <div class="card project">
                             <div class="card-header header-elements-inline">
@@ -181,15 +181,14 @@
 
                             <div class="card-body">
                                 <div class="mb-3 mt-1">
-                                    <b class="font-weight-semibold">Date Initiated : <span class="d_init p-1">23-SEP-2018</span></b>
+                                    <b class="font-weight-semibold">Date Initiated : <span class="d_init p-1">10-OCT-2019</span></b>
                                 </div>
                                 <div class="mb-3">
                                     <b class="font-weight-semibold">Project Background :</b>
                                     <p> Marine Department has gone through major transformations, evolving into becoming a lead agency in maritime safety in this country. The three Marine Departments of Peninsular Malaysia, Sabah and Sarawak, that previously operated quite independently, are now integrated as one Marine Department of Malaysia.</p>
                                 </div>
                                 <div class="mb-3">
-                                    <b class="font-weight-semibold">Project Objective :</b>
-                                    <p>The inclusion of migrants in the labour market is key to ensure their effective integration into the host societies and their positive impact on the EU economy; this entails fully using their skills and realising their economic potential. They can contribute to addressing skills shortages in certain sectors at all skills levels.</p>
+                                    <b class="font-weight-semibold">Project Objective :</b<p>The inclusion of migrants in the labour market is key to ensure their effective integration into the host societies and their positive impact on the EU economy; this entails fully using their skills and realising their economic potential. They can contribute to addressing skills shortages in certain sectors at all skills levels.</p>
                                 </div>
                                 <div class="mb-3">
                                     <b class="font-weight-semibold">Project Initiation :</b>
@@ -200,7 +199,11 @@
                                                 <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 32%">
                                                     <span class="sr-only">32% Complete</span>
                                                 </div>
-                                            </div>
+                                            </div>EPU Approval
+                                            EPU Approval
+                                            EPU Approval
+                                            EPU Approval
+
                                         </li>
                                     </ul>
                                  </div>
@@ -218,7 +221,7 @@
                             </div>
                         </div>
 
-                    </div> -->
+                    </div>
                 </div>
 
 
@@ -538,7 +541,7 @@
                             </div>-->
                             <div class="text-right">
                                 <button type="button" class="btn btn-light" data-dismiss="modal">Cancel <i class="icon-cross2 ml-2"></i></button>
-								<button type="button" class="btn btn-primary"  data-dismiss="modal">Save <i class="icon-paperplane ml-2"></i></button>
+								<button type="button" class="btn btn-primary saveproject"  data-dismiss="modal">Save <i class="icon-paperplane ml-2"></i></button>
 							</div>
                         </div>
                     </div>                          
@@ -759,6 +762,9 @@
             $('.multiselect').multiselect('destroy');
             $('.multiselect').multiselect(options);
         }
+        $(document).on("click",".saveproject",function(){
+            $('.hide1').removeAttr('hidden');
+        });
         $(document).on("change","#focus_area",function(){
             var focusarea = $(this).val();
             $("#stratagies").attr("disabled",false);

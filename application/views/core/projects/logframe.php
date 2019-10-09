@@ -76,12 +76,12 @@
                                                                 <tr>
                                                                     <th class="text-uppercase align-center">Goal(s)</th>
                                                                     <td>
-                                                                        <ul class="list list-numbered mb-0">
+                                                                        <ol class="list list-numbered mb-0">
                                                                             <li>Reduction on Carbon Emission from Land Vehicle.</li>
                                                                             <li>Reduction on Fatality Rate from Road Accidents</li>
                                                                             <li>Reduction in Road Congestion</li>
                                                                             <li>Reduction in Road Maintenance Cost </li>
-                                                                        </ul>
+                                                                        </ol>
                                                                     </td>
                                                                     <td>
                                                                         <ul class="list mb-0 goal_ind_t">-
@@ -263,12 +263,12 @@
                                                             <tr>
                                                                 <th class="text-uppercase align-center">Goal(s)</th>
                                                                 <td>
-                                                                    <ul class="list list-numbered mb-0">
+                                                                    <ol class="list list-numbered mb-0">
                                                                         <li>Reduction on Carbon Emission from Land Vehicle.</li>
                                                                         <li>Reduction on Fatality Rate from Road Accidents</li>
                                                                         <li>Reduction in Road Congestion</li>
                                                                         <li>Reduction in Road Maintenance Cost </li>
-                                                                    </ul>
+                                                                    </ol>
                                                                 </td>
                                                                 <td>
                                                                     <ul class="list mb-0 goal_ind_t">
@@ -520,12 +520,12 @@
                                                                 <tr>
                                                                     <th class="text-uppercase align-center">Goal(s)</th>
                                                                     <td>
-                                                                        <ul class="list list-numbered mb-0">
+                                                                        <ol class="list list-numbered mb-0">
                                                                             <li>Reduction on Carbon Emission from Land Vehicle.</li>
                                                                             <li>Reduction on Fatality Rate from Road Accidents</li>
                                                                             <li>Reduction in Road Congestion</li>
                                                                             <li>Reduction in Road Maintenance Cost </li>
-                                                                        </ul>
+                                                                        </ol>
                                                                     </td>
                                                                     <td>
                                                                         <ul class="list mb-0 outc_ind_t">

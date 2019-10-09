@@ -852,6 +852,15 @@ var Js = function() {
            return "<div>" + tasks.length * 8 + "</div>";
        };
 
+        gantt.templates.task_text = function(start,end,task){
+            return "";
+        };
+
+        gantt.templates.rightside_text = function(start, end, task){
+            if(task.type == gantt.config.types.project)
+                return "<b>"+task.text+"</b>";
+            return task.text;
+        };
    
        // gantt.locale.labels.section_owner = "Resources";
        // gantt.config.lightbox.sections = [
@@ -945,6 +954,8 @@ var Js = function() {
            var tooltips = gantt.ext.tooltips;
            tooltips.tooltip.setViewport(gantt.$task_data);
        });
+        gantt.config.row_height = 20;
+        gantt.config.link_line_width = 1;
        gantt.init("wbs_milestones");
        gantt.clearAll();
        gantt.serialize();

@@ -77,10 +77,10 @@
                                                                     <th class="text-uppercase align-center">Goal(s)</th>
                                                                     <td>
                                                                         <ul class="list list-numbered mb-0">
-                                                                            <li>1.	Reduction on Carbon Emission from Land Vehicle.</li>
-                                                                            <li>2.	Reduction on Fatality Rate from Road Accidents</li>
-                                                                            <li>3.	Reduction in Road Congestion</li>
-                                                                            <li>4.	Reduction in Road Maintenance Cost </li>
+                                                                            <li>Reduction on Carbon Emission from Land Vehicle.</li>
+                                                                            <li>Reduction on Fatality Rate from Road Accidents</li>
+                                                                            <li>Reduction in Road Congestion</li>
+                                                                            <li>Reduction in Road Maintenance Cost </li>
                                                                         </ul>
                                                                     </td>
                                                                     <td>
@@ -178,10 +178,10 @@
                                                                         <td class="font-weight-semibold va-top" width="150px">GOAL:</td>
                                                                         <td class="text-left">
                                                                             <ul class="list list-unstyled mb-0">
-                                                                                <li>1.	Reduction on Carbon Emission from Land Vehicle.</li>
-                                                                                <li>2.	Reduction on Fatality Rate from Road Accidents</li>
-                                                                                <li>3.	Reduction in Road Congestion</li>
-                                                                                <li>4.	Reduction in Road Maintenance Cost </li>
+                                                                                <li>Reduction on Carbon Emission from Land Vehicle.</li>
+                                                                                <li>Reduction on Fatality Rate from Road Accidents</li>
+                                                                                <li>Reduction in Road Congestion</li>
+                                                                                <li>Reduction in Road Maintenance Cost </li>
                                                                             </ul>
                                                                         </td>
                                                                     </tr>
@@ -254,9 +254,9 @@
                                                         <thead>
                                                             <tr>
                                                                 <th colspan="2" width="30%" class="text-uppercase text-center" data-hide="phone">Project Description</th>
-                                                                <th width="25%" class="text-uppercase text-center" data-toggle="true">Indicators</th>
-                                                                <th width="25%" class="text-uppercase text-center" data-hide="phone,tablet">Means of Verification</th>
-                                                                <th width="20%" class="text-uppercase text-center" data-hide="phone,tablet">Assumptions</th>
+                                                                <th width="20%" class="text-uppercase text-center" data-toggle="true">Indicators</th>
+                                                                <th width="20%" class="text-uppercase text-center" data-hide="phone,tablet">Means of Verification</th>
+                                                                <th width="30%" class="text-uppercase text-center" data-hide="phone,tablet">Assumptions</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
@@ -264,10 +264,10 @@
                                                                 <th class="text-uppercase align-center">Goal(s)</th>
                                                                 <td>
                                                                     <ul class="list list-numbered mb-0">
-                                                                        <li>1.	Reduction on Carbon Emission from Land Vehicle.</li>
-                                                                        <li>2.	Reduction on Fatality Rate from Road Accidents</li>
-                                                                        <li>3.	Reduction in Road Congestion</li>
-                                                                        <li>4.	Reduction in Road Maintenance Cost </li>
+                                                                        <li>Reduction on Carbon Emission from Land Vehicle.</li>
+                                                                        <li>Reduction on Fatality Rate from Road Accidents</li>
+                                                                        <li>Reduction in Road Congestion</li>
+                                                                        <li>Reduction in Road Maintenance Cost </li>
                                                                     </ul>
                                                                 </td>
                                                                 <td>
@@ -473,10 +473,10 @@
                                                                     <div class="media-body">
                                                                         <h6 class="media-title font-weight-semibold text-uppercase">Goal(s) : </h6>
                                                                         <ul class="list list-unstyled mb-0 ml-3">
-                                                                            <li>1.	Reduction on Carbon Emission from Land Vehicle.</li>
-                                                                            <li>2.	Reduction on Fatality Rate from Road Accidents</li>
-                                                                            <li>3.	Reduction in Road Congestion</li>
-                                                                            <li>4.	Reduction in Road Maintenance Cost </li>
+                                                                            <li>Reduction on Carbon Emission from Land Vehicle.</li>
+                                                                            <li>Reduction on Fatality Rate from Road Accidents</li>
+                                                                            <li>Reduction in Road Congestion</li>
+                                                                            <li>Reduction in Road Maintenance Cost </li>
                                                                         </ul>
                                                                     </div>
                                                                 </div>
@@ -507,13 +507,13 @@
                                             <fieldset>
                                                 <div class="row">
                                                     <div class="border-2 border-light-gray dtable-container2">
-                                                        <table class="table table-togglable table-bordered dtable2" style="max-width:none;width:2000px;">
+                                                        <table class="table table-togglable table-bordered dtable2" style="max-width:none;width:100%;">
                                                             <thead>
                                                                 <tr>
-                                                                    <th colspan="2" width="650px" class="text-uppercase text-center" data-hide="phone">Project Description</th>
-                                                                    <th width="450px" class="text-uppercase text-center" data-toggle="true">Indicators</th>
-                                                                    <th width="450px" class="text-uppercase text-center" data-hide="phone,tablet">Means of Verification</th>
-                                                                    <th width="450px" class="text-uppercase text-center" data-hide="phone,tablet">Assumptions</th>
+                                                                    <th colspan="2" width="30%" class="text-uppercase text-center" data-hide="phone">Project Description</th>
+                                                                    <th width="23%" class="text-uppercase text-center" data-toggle="true">Indicators</th>
+                                                                    <th width="19%" class="text-uppercase text-center" data-hide="phone,tablet">Means of Verification</th>
+                                                                    <th width="28%" class="text-uppercase text-center" data-hide="phone,tablet">Assumptions</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -521,10 +521,10 @@
                                                                     <th class="text-uppercase align-center">Goal(s)</th>
                                                                     <td>
                                                                         <ul class="list list-numbered mb-0">
-                                                                            <li>1.	Reduction on Carbon Emission from Land Vehicle.</li>
-                                                                            <li>2.	Reduction on Fatality Rate from Road Accidents</li>
-                                                                            <li>3.	Reduction in Road Congestion</li>
-                                                                            <li>4.	Reduction in Road Maintenance Cost </li>
+                                                                            <li>Reduction on Carbon Emission from Land Vehicle.</li>
+                                                                            <li>Reduction on Fatality Rate from Road Accidents</li>
+                                                                            <li>Reduction in Road Congestion</li>
+                                                                            <li>Reduction in Road Maintenance Cost </li>
                                                                         </ul>
                                                                     </td>
                                                                     <td>
